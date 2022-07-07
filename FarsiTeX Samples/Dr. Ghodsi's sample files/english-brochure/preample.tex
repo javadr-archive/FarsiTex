@@ -1,0 +1,176 @@
+\textwidth=16cm
+\textheight=23cm
+\topmargin=-1cm
+\oddsidemargin=-1mm
+\font\arm=arm20
+\font\titr=titr20
+\newsavebox{\logo}
+\savebox{\logo}{\parbox[b]{5cm}{
+\begin{center}
+\ \vskip-2cm
+{\small “‰‚ ÷‰‘ô ¡‰À} \\
+{\InE{}\arm a\EnE{}} \\ \vskip-1mm
+{\large ¢÷‰È‰Ø‰Àùı  õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â}
+\end{center}}}
+\newsavebox{\coursename}
+\savebox{\coursename}{\parbox[b]{10cm}{
+\begin{flushleft}
+\raggedleft
+\ \vskip-2cm
+{\Large\sayedar ¨‰‘¡‰µ‰Ş‰‘öû‰‘ı ¢¢ùı ø ó‰Ú‰¤ş‰µ‰İû‰‘ )422-04(} \\[2mm]
+{\beginR \InE{}\kern-2mm\Large\bf Data Structures and Algorithms\EnE{}} \\[7mm]
+ õ‰À¤§:   õ‰½‰\tashdid Ş‰À ì‰À¨‰ü 
+\end{flushleft}}}
+\def\title#1{
+\usebox{\logo}\hfill\usebox{\coursename}
+\begin{mybox}
+\begin{minipage}{14cm}
+\beginR #1
+\end{minipage}
+\end{mybox}}
+%\hrule height 3pt
+%\vskip0.3cm
+\normalsize
+%\noindent{  #1 }
+%\vskip0.3cm
+%\hrule height 3pt
+%\vskip0.5cm}
+%\addtolength{\topmargin}{1cm}}
+
+
+\newlength{\myleng}
+\newenvironment{procedure}[1]
+    {\begin{figure}[#1]
+      \begin{Sbox}%
+      \setlength{\myleng}{\textwidth}%
+      \addtolength{\myleng}{-2\fboxsep}%
+      \addtolength{\myleng}{-2\fboxrule}%
+      \begin{minipage}{\myleng}\begin{center}\vskip0.5cm}%
+{\vskip0.5cm\end{center}\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{figure}}%
+
+\newenvironment{mybox}
+    { \vskip0.1cm\noindent
+      \begin{Sbox}%
+      \setlength{\myleng}{\textwidth}%
+      \setlength{\fboxsep}{3mm}%
+      %\setlength{\fboxrule}{5mm}
+      \addtolength{\myleng}{-2\fboxsep}%
+      \addtolength{\myleng}{-2\fboxrule}%
+      \begin{minipage}{\myleng}\begin{center}\vskip0.1cm}%
+{\vskip0.3cm\end{center}\end{minipage}\end{Sbox}\hspace*{2cm}\shadowbox{\TheSbox}\vskip0.3cm}%
+
+
+\newtheorem{pretheorem}{{\bf ì‰Ì‰ƒ‰‚ }}
+\renewcommand{\thepretheorem}{{\arabic{pretheorem}}}
+\newenvironment{theorem}{\begin{pretheorem}{\hspace{-0.5em} {\bf.}}}
+                          {\end{pretheorem}}
+
+\newtheorem{prelemma}{{\bf ó‰İ }}
+\renewcommand{\theprelemma}{{\arabic{prelemma}}}
+\newenvironment{lemma}{\begin{prelemma}{\hspace{-0.5em} {\bf.}}}
+                          {\end{prelemma}}
+
+
+\newtheorem{prealgorithm}{{\Large \bf ó‰Ú‰¤ş‰µ‰İ }}
+\renewcommand{\theprealgorithm}{{\arabic{prealgorithm}}}
+\newenvironment{algorithm}{\begin{prealgorithm}}
+                            {\end{prealgorithm}}
+
+
+\newtheorem{preexample}{{\bf õ‰·‰‘ñ }}
+\renewcommand{\thepreexample}{{\arabic{preexample}}}
+\newenvironment{example}{\begin{preexample}{\hspace{-0.5em} {\bf.}}}
+                          {\end{preexample}}
+
+\newtheorem{preprob}{{\bf õ‰Æ‰ÿ‰Ü‰‚ }}
+\renewcommand{\thepreprob}{{\arabic{preprob}}}
+\newenvironment{prob}{\vspace{-5mm}\begin{preprob}{\hspace{-0.5em} {\bf.}}}
+                          {\end{preprob}}
+
+\newtheorem{preprobb}{{\bf õ‰Æ‰ÿ‰Ü‰‚ }}
+\renewcommand{\thepreprobb}{}
+\newenvironment{probb}{\begin{preprobb}{\hspace{-0.5em} {\bf.}}}
+                          {\end{preprobb}}
+
+\newtheorem{preconj}{{\bf Ÿ‰À§ }}
+\renewcommand{\thepreconj}{}
+\newenvironment{conj}{\begin{preconj}{\hspace{-0.5em} {\bf.}}}
+                          {\end{preconj}}
+
+\newenvironment{proof}{{\bf ™‰±‰‘–.} \rm }{\hfill{\InE{}$\Box$\EnE{}}}
+
+
+\def\emline#1#2#3#4#5#6{%
+       \put(#1,#2){\special{em:moveto}}%
+       \put(#4,#5){\special{em:lineto}}}
+\def\newpic#1{}
+
+
+\newcounter{mnum}
+\newenvironment{mlist}{\setcounter{mnum}{0}     % 1) 2) 3)
+\begin{list}{\arabic{mnum}(}{\usecounter{mnum}\rightmargin=6mm
+    \labelwidth=7mm\labelsep=2mm\setlength{\parsep}{\parskip}
+    \setlength{\listparindent}{\parindent}
+    }}{\end{list}}
+
+\newenvironment{elist}{\setcounter{mnum}{0}      % 1. 2. 3.
+\begin{list}{\arabic{mnum}.}{\usecounter{mnum}\rightmargin=6mm
+    \labelwidth=7mm\labelsep=2mm
+    }}{\end{list}}
+
+\newcounter{snum}         %  a  b  c
+\newenvironment{slist}{\setcounter{snum}{0}
+\begin{list}{\insertenglish(\alph{snum}\endenglish}{\usecounter{snum}\rightmargin=4mm
+    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+    \setlength{\listparindent}{\parindent}
+    \partopsep=0cm\itemsep=0mm\topsep=0mm}}{\end{list}}
+
+\newenvironment{ilist}{     %itemized list with bullete
+\begin{list}{$\bullet$}{\rightmargin=4mm
+    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+    \setlength{\listparindent}{\parindent}
+    \partopsep=0cm\itemsep=0mm\topsep=0mm}}{\end{list}}
+
+
+\newenvironment{tilist}{     %itemized list with triangleleft
+\begin{list}{$\triangleleft$}{\rightmargin=4mm
+    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+    \setlength{\listparindent}{\parindent}
+    \partopsep=0cm\itemsep=0mm\topsep=0mm}}{\end{list}}
+
+
+
+
+\def\emline#1#2#3#4#5#6{%
+       \put(#1,#2){\special{em:moveto}}%
+       \put(#4,#5){\special{em:lineto}}}
+\def\newpic#1{}
+
+
+
+\def\alef{\hbox to 7mm{\hfill:\kern2mm }}
+\def\be{\hbox to 7mm{’\hfill:\kern2mm }}
+\def\jim{\hbox to 7mm{š\hfill:\kern2mm }}
+\def\dal{\hbox to 7mm{¢\hfill:\kern2mm }}
+\newcommand{\fourj}[4]{\par\vskip5mm
+    \noindent{\quad\alef#1}\hfill
+             {\be#2}\hfill
+             {\jim#3}\hfill
+             {\dal#4}\hfill
+   \par\vskip3mmm}
+\newcommand{\twoj}[4]{\par\vskip5mm
+   \noindent\makebox[5cm][l]{\quad\alef#1}\hfill
+            \makebox[5cm][l]{\be#2}\newline
+            \makebox[5cm][l]{\quad\jim#3}\hfill
+            \makebox[5cm][l]{\dal#4}
+   \par\vskip3mm}
+\newcommand{\onej}[4]{\par\vskip5mm
+   \noindent\makebox[10cm][l]{\quad\alef\parbox[t]{14cm}{\beginR #1}}\newline
+            \makebox[10cm][l]{\quad\be\parbox[t]{14cm}{\beginR #2}}\newline
+            \makebox[10cm][l]{\quad\jim\parbox[t]{14cm}{\beginR #3}}\newline
+            \makebox[10cm][l]{\quad\dal\parbox[t]{14cm}{\beginR #4}}\newline
+  \par\vskip3mm}
+
+
+\def\DOTS{\hbox to 4cm {\dotfill}}
+

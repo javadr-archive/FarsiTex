@@ -1,0 +1,27 @@
+Archive:  F:/work/miktex/manufacture/etex.zip
+ Length    Date    Time    Name
+ ------    ----    ----    ----
+  68492  06-28-98  16:17   doc/etex/base/etex-man.dvi
+ 204476  05-30-99  20:48   doc/etex/base/etex-man.pdf
+  68492  04-06-00  08:37   doc/etex/base/etex_man.dvi
+ 297592  07-02-00  20:39   doc/etex/base/etex_man.pdf
+   3027  03-04-98  14:46   doc/etex/base/etex_man.sty
+  49063  03-26-98  19:01   doc/etex/base/etex_man.tex
+      0  12-25-00  20:50   etex/latex/config/
+     29  11-30-97  14:53   etex/latex/config/elatex.ini
+      0  12-25-00  20:50   etex/latex/misc/
+  14669  03-26-98  10:00   etex/latex/misc/etex.sty
+      0  12-25-00  20:50   etex/plain/base/
+  31688  03-22-99  14:59   etex/plain/base/etex.src
+   3591  03-24-98  16:47   etex/plain/base/etexdefs.lib
+      0  12-25-00  20:50   etex/plain/config/
+     69  02-22-99  13:28   etex/plain/config/etex.ini
+   1275  03-07-98  16:15   etex/plain/config/language.def
+    171  10-25-96  22:46   fonts/source/public/xbmc/xbmc10.mf
+  16384  01-20-01  22:09   miktex/bin/einitex.exe
+ 270336  01-20-01  22:09   miktex/bin/etex.dll
+  16384  01-20-01  22:09   miktex/bin/etex.exe
+  27686  01-20-01  22:09   miktex/fmt/etex.pool
+  16384  01-20-01  22:09   miktex/bin/evirtex.exe
+ ------                    -------
+1089808                    22 files

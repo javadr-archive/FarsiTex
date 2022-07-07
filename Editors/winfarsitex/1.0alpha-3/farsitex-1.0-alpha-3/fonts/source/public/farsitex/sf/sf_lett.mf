@@ -1,0 +1,1381 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+%******************************************************************************
+%*                     C H A R A C T E R S   P R O G R A M S                  *
+%******************************************************************************
+%********************************* A L E F ************************************
+beginchar(code[1],18u#,body_height#+3.5v#,0);              % A
+  case:=1;
+  adjust_fit(0,0);
+  temp:=body_height; save body_height; body_height:=.9temp;
+  if linot_mad :
+    pickup tiny_pen;
+    penpos5(ending_width-tiny, 72+90);
+    penpos6(.9horiz_width-tiny, 71);
+    penpos7(.8horiz_width-tiny, 79);
+    penpos8(ending_width-tiny, 47+90);
+    lft x5.r=0;              y5=body_height+2.4v;
+    rt  x8.l=hround(w);      y8=body_height+5.8v;
+        x6=4.9u;             y6=body_height+4.7v;
+        x7=12u;              y7=body_height+2.8v;
+    filldraw stroke z5e...z6e{dir -8}...z7e...z8e;   % Mad or Hat
+    alef (6.5u);
+  else :
+    show "U N D E F I N E D   M A D   I N  ... A ..."
+  fi;
+endchar;
+
+beginchar(code[2],l_alef_len/u*u#,body_height#,0);         % Last Alef
+  case:=2;
+  adjust_fit(cheshmi#+.4u#, 0);
+  l_alef_mac;
+endchar;
+
+beginchar(code[3],4.2u#,body_height#,0);                   % Alef
+  case:=1;
+  adjust_fit(cheshmi#+.6u#, 0);
+  alef(.5u);
+endchar;
+
+%*********************************** B E **************************************
+beginchar(code[4],31.5u#,16v#,8.0v#);                      % Big Be
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_be_mac;
+  x16:=16.0u;      y16:=-d;
+  one_point(16);
+endchar;
+
+beginchar(code[5],l_be_len/u*u#,15v#,8.0v#);               % Last Be
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_be_mac;
+  x16:=17.0u;      y16:=-d;
+  one_point(16);
+endchar;
+
+beginchar(code[6],m_be_len/u*u#,10v#,8.0v#);               % Mid Be
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=6.5u ;      y16:=-d;
+  one_point(16);
+endchar;
+
+beginchar(code[7],9.4u#,12v#,8.0v#);                       % First Be
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=4.8u;       y16:=-d;
+  one_point(16);
+endchar;
+
+%*********************************** P E **************************************
+beginchar(code[8],31.5u#,16v#,13.0v#);                     % Big Pe
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_be_mac;
+  x16:=16.0u;      y16:=-d+6v;
+  thr_point(16,false,false);
+endchar;
+
+beginchar(code[9],l_be_len/u*u#,15v#,13.0v#);              % Last Pe
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_be_mac;
+  x16:=17.0u;      y16:=-d+6v;
+  thr_point(16,false,false);
+endchar;
+
+beginchar(code[10],m_be_len/u*u#,10v#,13.0v#);             % Mid Pe
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=6.5u;       y16:=-d+6v;
+  thr_point(16,true,false);
+endchar;
+
+beginchar(code[11],9.4u#,12v#,13.0v#);                     % First Be
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=4.7u;       y16:=-d+6v;
+  thr_point(16,true,false);
+endchar;
+
+%*********************************** T E **************************************
+beginchar(code[12],31.5u#,17v#,0);                         % Big Te
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_be_mac;
+  x16:=16.0u;      y16:=h;
+  two_point(16,false);
+endchar;
+
+beginchar(code[13],l_be_len/u*u#,17v#,0);                  % Last Te
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_be_mac;
+  x16:=17.0u;      y16:=h;
+  two_point(16,false);
+endchar;
+
+beginchar(code[14],m_be_len/u*u#,17v#,0);                  % Mid Te
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=6.5u;       y16:=h;
+  two_point(16,true);
+endchar;
+
+beginchar(code[15],9.4u#,17v#,0);                          % First Te
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=4.8u;       y16:=h;
+  two_point(16,true);
+endchar;
+
+%*********************************** S E **************************************
+beginchar(code[16],31.5u#,22v#,0);                         % Big Se
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_be_mac;
+  x16:=16.0u;      y16:=h-5v;
+  thr_point(16,false,true);
+endchar;
+
+beginchar(code[17],l_be_len/u*u#,22v#,0);                  % Last Se
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_be_mac;
+  x16:=17.0u;      y16:=h-5v;
+  thr_point(16,false,true);
+endchar;
+
+beginchar(code[18],m_be_len/u*u#,22v#,0);                  % Mid Se
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=6.5u;       y16:=h-5v;
+  thr_point(16,true,true);
+endchar;
+
+beginchar(code[19],9.4u#,22v#,0);                          % First Se
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=4.8u;       y16:=h-5v;
+  thr_point(16,true,true);
+endchar;
+
+%********************************** J I M *************************************
+beginchar(code[20], 24.0u#,12v#,21.3v#);                   % Big Jim
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_jim_mac;
+  x16:=14.5u;      y16:=-6.0v;
+  one_point(16);
+endchar;
+
+beginchar(code[21],l_jim_len/u*u#,13v#,21.85v#);           % Last Jim
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_jim_mac;
+  x16:=12.5u;      y16:=-5.0v;
+  one_point(16);
+endchar;
+
+beginchar(code[22], m_jim_len/u*u#,14v#,6v#);                % Mid Jim
+  case:=3;
+  adjust_fit(0, 0);
+  m_jim_mac;
+  x16:=12.0u;      y16:=-d;
+  one_point(16);
+endchar;
+
+beginchar(code[23], 24.4u#,14v#,6v#);                        % First Jim
+  case:=4;
+  adjust_fit(0, 0);
+  f_jim_mac;
+  x16:=12.0u;      y16:=-d;
+  one_point(16);
+endchar;
+
+%********************************** C H E *************************************
+beginchar(code[24], 24.0u#,12v#,21.3v#);                   % Big Che
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_jim_mac;
+  x16:=14.5u;      y16:=-6.0v;
+  thr_point(16,false,false);
+endchar;
+
+beginchar(code[25],l_jim_len/u*u#,13v#,21.85v#);           % Last Che
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_jim_mac;
+  x16:=12.5u;      y16:=-5.0v;
+  thr_point(16,false,false);
+endchar;
+
+beginchar(code[26], m_jim_len/u*u#,14v#,12v#);                % Mid Che
+  case:=3;
+  adjust_fit(0, 0);
+  m_jim_mac;
+  x16:=12.0u;      y16:=-d+6.0v;
+  thr_point(16,true,false);
+endchar;
+
+beginchar(code[27], 24.4u#,14v#,12v#);                       % First Che
+  case:=4;
+  adjust_fit(0, 0);
+  f_jim_mac;
+  x16:=12.0u;      y16:=-d+6.0v;
+  thr_point(16,true,false);
+endchar;
+
+%*********************************** H A **************************************
+beginchar(code[28], 24.0u#,12v#,21.3v#);                   % Big Ha
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_jim_mac;
+endchar;
+
+beginchar(code[29],l_jim_len/u*u#,13v#,21.85v#);           % Last Ha
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_jim_mac;
+endchar;
+
+beginchar(code[30], m_jim_len/u*u#,14v#,0);                % Mid Ha
+  case:=3;
+  adjust_fit(0, 0);
+  m_jim_mac;
+endchar;
+
+beginchar(code[31], 24.4u#,14v#,0);                        % First Ha
+  case:=4;
+  adjust_fit(0, 0);
+  f_jim_mac;
+endchar;
+
+%********************************** K H E *************************************
+beginchar(code[32], 24.0u#,22.7v#,21.3v#);                 % Big Khe
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_jim_mac;
+  x16:=12.0u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[33],l_jim_len/u*u#,22.7v#,21.85v#);         % Last Khe
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_jim_mac;
+  x16:=10.0u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[34], m_jim_len/u*u#,22.7v#,0);              % Mid Khe
+  case:=3;
+  adjust_fit(0, 0);
+  m_jim_mac;
+  x16:= 9.0u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[35], 24.4u#,22.7v#,0);                      % First Khe
+  case:=4;
+  adjust_fit(0, 0);
+  f_jim_mac;
+  x16:= 9.0u;      y16:=h;
+  one_point(16);
+endchar;
+
+%********************************** D A L *************************************
+beginchar(code[36],14.3u#,17.9v#,0);                       % Big Dal
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_dal_mac;
+endchar;
+
+beginchar(code[37],l_dal_len/u*u#,21.2v#,0);               % Last Dal
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_dal_mac;
+endchar;
+
+%********************************** Z A L *************************************
+beginchar(code[38],14.3u#,28.5v#,0);                       % Big Zal
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_dal_mac;
+  x16:= 3.8u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[39],l_dal_len/u*u#,30.0v#,0);               % Last Zal
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_dal_mac;
+  x16:=11.6u;      y16:=h;
+  one_point(16);
+endchar;
+
+%*********************************** R E **************************************
+beginchar(code[40],14.9u#,8.7v#,11.9v#);                   % Big Re
+  case:=1;
+  adjust_fit(0, 0);
+  b_re_mac(-3.5u);
+endchar;
+
+beginchar(code[41],l_re_len/u*u#-3.3u#,7v#,11.9v#);          % last Re
+  case:=2;
+  adjust_fit(0, 0);
+  l_re_mac(-3.2u);
+endchar;
+
+%*********************************** Z E **************************************
+beginchar(code[42],15.4u#,18.0v#,11.9v#);                  % Big Ze
+  case:=1;
+  adjust_fit(0, 0);
+  b_re_mac(-3u);
+  x16:= 7.2u;     y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[43],l_re_len/u*u#-3u#,19.0v#,11.9v#);     % last Ze
+  case:=2;
+  adjust_fit(0, 0);
+  l_re_mac(-3.5u);
+  x16:= 7.2u;     y16:=h;
+  one_point(16);
+endchar;
+
+%*********************************** J E **************************************
+beginchar(code[44],16.9u#,22.0v#,11.9v#);                  % Big Je
+  case:=1;
+  adjust_fit(0, 0);
+  b_re_mac(-1.5u);
+  x16:= 10.0u;     y16:=h-5v;
+  thr_point(16,true,true);
+endchar;
+
+beginchar(code[45],l_re_len/u*u#-1.5u#,22.0v#,11.9v#);       % last Je
+  case:=2;
+  adjust_fit(0, 0);
+  l_re_mac(-1.5u);
+  x16:= 10.0u;     y16:=h-5v;
+  thr_point(16,true,true);
+endchar;
+
+%********************************** S I N *************************************
+beginchar(code[46],39.3u#,13.7v#,12.4v#);                  %Big Sin
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_sin_mac;
+endchar;
+
+beginchar(code[47],l_sin_len/u*u#,9.2v#,12.4v#);           %Last Sin
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_sin_mac;
+endchar;
+
+beginchar(code[48],m_sin_len/u*u#,9.2v#,0);                %Mid Sin
+  case:=3;
+  adjust_fit(0, 0);
+  m_sin_mac;
+endchar;
+
+beginchar(code[49],22.2u#,13.7v#,0);                       %First Sin
+  case:=4;
+  adjust_fit(0, 0);
+  f_sin_mac;
+endchar;
+
+%********************************* S H I N ************************************
+beginchar(code[50],39.3u#,22.0v#,12.4v#);                  %Big Shin
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_sin_mac;
+  x16:=28.3u;      y16:=h-5v;
+  thr_point(16,false,true);
+endchar;
+
+beginchar(code[51],l_sin_len/u*u#,21v#,12.4v#);            %Last Shin
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_sin_mac;
+  x16:=32.0u;      y16:=h-5v;
+  thr_point(16,false,true);
+endchar;
+
+beginchar(code[52],m_sin_len/u*u#,21v#,0);                 %Mid Shin
+  case:=3;
+  adjust_fit(0, 0);
+  m_sin_mac;
+  x16:=12.2u;      y16:=h-5v;
+  thr_point(16,false,true);
+endchar;
+
+beginchar(code[53],22.2u#,22.0v#,0);                       %First Shin
+  case:=4;
+  adjust_fit(0, 0);
+  f_sin_mac;
+  x16:=12.8u;      y16:=h-5v;
+  thr_point(16,false,true);
+endchar;
+
+%********************************** S A D *************************************
+beginchar(code[54],50u#,16.4v#,12.4v#);                    % Big Sad
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_sad_mac;
+endchar;
+
+beginchar(code[55],52.8u#,16.4v#,12.4v#);                  % Last Sad
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_sad_mac;
+endchar;
+
+beginchar(code[56],36.1u#,16.4v#,0);                       % Mid Sad
+  case:=3;
+  adjust_fit(0, 0);
+  m_sad_mac;
+endchar;
+
+beginchar(code[57],33.3u#,16.4v#,0);                       % First Sad
+  case:=4;
+  adjust_fit(0, 0);
+  f_sad_mac;
+endchar;
+
+%********************************** Z A D *************************************
+beginchar(code[58],50u#,22.5v#,12.4v#);                    % Big Zad
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_sad_mac;
+  x16:= 35.0u;     y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[59],52.8u#,22.5v#,12.4v#);                  % Last Zad
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_sad_mac;
+  x16:= 35.0u;     y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[60],36.1u#,22.5v#,0);                       % Mid Zad
+  case:=3;
+  adjust_fit(0, 0);
+  m_sad_mac;
+  x16:= left_tooth_length+11.8u;    y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[61],33.3u#,22.5v#,0);                       % First Zad
+  case:=4;
+  adjust_fit(0, 0);
+  f_sad_mac;
+  x16:= left_tooth_length+11.8u;    y16:=h;
+  one_point(16);
+endchar;
+
+%*********************************** T A **************************************
+beginchar(code[62],28.5u#,body_height#,0);                 % Big Ta
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_za_mac;
+endchar;
+
+beginchar(code[63],31.2u#,body_height#,0);                 % Last Ta
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_za_mac;
+endchar;
+
+beginchar(code[64],25.7u#,body_height#,0);                 % Mid Ta
+  case:=3;
+  adjust_fit(0, 0);
+  m_za_mac;
+endchar;
+
+beginchar(code[65],23.1u#,body_height#,0);                 % First Ta
+  case:=4;
+  adjust_fit(0, 0);
+  f_za_mac;
+endchar;
+
+%*********************************** Z A **************************************
+beginchar(code[66],28.5u#,body_height#,0)                  % Big Za
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_za_mac;
+  x16:=15u+5.5u;    y16:=23.0v;
+  one_point(16);
+endchar;
+
+beginchar(code[67],31.2u#,body_height#,0);                 % Last Za
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_za_mac;
+  x16:=15u+5.5u;    y16:=23.0v;
+  one_point(16);
+endchar;
+
+beginchar(code[68],25.7u#,body_height#,0);                 % Mid Za
+  case:=3;
+  adjust_fit(0, 0);
+  m_za_mac;
+  x16:= 15.0u;     y16:=23.0v;
+  one_point(16);
+endchar;
+
+beginchar(code[69],23.1u#,body_height#,0);                 % First Za
+  case:=4;
+  adjust_fit(0, 0);
+  f_za_mac;
+  x16:= 15.0u;     y16:=23.0v;
+  one_point(16);
+endchar;
+
+%********************************** E I N *************************************
+beginchar(code[70],24u#,20.1v#,22.2v#);                    % Big Ein
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_ein_mac;
+endchar;
+
+beginchar(code[71],l_ein_len/u*u#,13.6v#,21.6v#);          % Last Ein
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_ein_mac;
+endchar;
+
+beginchar(code[72],m_ein_len/u*u#,13.6v#,0);               % Mid Ein
+  case:=3;
+  adjust_fit(0, 0);
+  m_ein_mac;
+endchar;
+
+beginchar(code[73],21u#,17.4v#,0);                         % First Ein
+  case:=4;
+  adjust_fit(0, 0);
+  f_ein_mac;
+endchar;
+
+%******************************** G H E I N ***********************************
+beginchar(code[74],24u#,28.0v#,22.2v#);                    % Big Ghein
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_ein_mac;
+  x16:= 8.0u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[75],l_ein_len/u*u#,21.5v#,21.6v#);          % Last Ghein
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_ein_mac;
+  x16:=10.6u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[76],m_ein_len/u*u#,21.5v#,0);               % Mid Ghein
+  case:=3;
+  adjust_fit(0, 0);
+  m_ein_mac;
+  x16:= 7.5u;      y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[77],21u#,25v#,0);                           % First Ghein
+  case:=4;
+  adjust_fit(0, 0);
+  f_ein_mac;
+  x16:= 8.8u;      y16:=h;
+  one_point(16);
+endchar;
+
+%*********************************** F E **************************************
+beginchar(code[78],32.9u#,25.2v#,0);                       % Big Fe
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  smoothing:=2;
+  pickup tiny_pen;
+  x1:=29.9u;             y1:=12.6v;
+  x2:=24.3u;             y2:=13.6v *(vav_height/11v);
+  penpos1(.82horiz_width-tiny, -70);
+  penpos2(vav_lneckwidth-tiny, 168);
+  defpos_vt3(27.5u ,17.4v *(vav_height/11v),vav_tneckwidth, 75);
+  defpos_hr4(30.45u,13.3v *(vav_height/11v),vav_rneckwidth, 15);
+  ld:=168-90;
+  td:=75-90;
+  rd:=12-90;
+  dd:=-135;
+  filldraw stroke z1e{dir dd} .. tension .82 .. {dir ld}z2e.. tension 1.3..
+                  {dir td}z3e ..tension 1.12 .. {dir rd}z4e;
+  draw z1l{dir dd} ..tension .8 .. {dir 98}z2l;
+  draw z2l ..tension 1.4..{dir 6}z3l{right}..tension 1.45 .. z4l;
+  smoothing:=0;
+  x6:=6.2u;               y6:=3.3v;
+  x7:=3.1u;               y7:=13.3v;
+  defpos_vb5(29u,4.8v,arc_width, 180+horizmidpenang_be_group);
+  filldraw stroke z4e {dir rd} .. tension .95 .. {dir horizmiddir_be_group} z5e;
+  horiz_mid_arc(5,6,horizmiddir_be_group,horizmidpenang_be_group);
+  endingup_arc(6,7,endingupdir_be_group);
+  x16:=24u;               y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[79],36.7u#,25.2v#,0);                       % Last Fe
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  alfa:=67;
+  beta:=69;
+  x1:=36.7u;            y1:=horiz_width/2;
+  x2:=30.0u;            y2:=horiz_width*(1+2*sind((90-alfa)/2)**2)/2+ 1.9v;
+  x3:=27.0u;            y3:=10.1v;
+  x5:=33.9u;            y5:=9.6v;
+  x6:=28.4u;            y6:=horiz_width*(1+2*sind((90-beta)/2)**2)/2+1.9v;
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, -90);
+  penpos2(horiz_width-tiny, 180+alfa);
+  penpos3(ghaf_lneckwidth-tiny, 168);
+  defpos_vt4(31.4u,14.9v,ghaf_tneckwidth, 78);
+  penpos5(ghaf_rneckwidth-tiny, -8);
+  penpos6(horiz_width-tiny, 180+beta);
+  ld:=168-90;
+  td:=78-90+5;
+  rd:=-8-90;
+  a:=82+alfa;
+  b:=270-beta;
+  filldraw stroke z1e{left} ..tension .9 .. {dir a}z2e;
+  filldraw stroke z2e{dir a} ..tension .9 .. {dir ld}z3e..tension 1.6 ..
+            {dir td} z4e ..tension 1.35.. {dir rd} z5e {dir rd} .. {dir b} z6e;
+  x8:=6.2u;               y8:=2.1v;
+  x9:=3.1u;               y9:=12.1v;
+  defpos_vb7(26.5u,3.6v,arc_width, 180+horizmidpenang_be_group);
+  filldraw stroke z6e .. {dir horizmiddir_be_group} z7e;
+  horiz_mid_arc(7,8,horizmiddir_be_group,horizmidpenang_be_group);
+  endingup_arc(8,9,endingupdir_be_group);
+  x16:=25.4u;              y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[80],m_fe_len/u*u#,25.2v#,0);                % Mid Fe
+  case:=3;
+  adjust_fit(0, 0);
+  smoothing:=2;
+  m_fe_mac;
+  x16:=8.2u;       y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[81],12.3u#,25.2v#,0);                       % First Fe
+  case:=4;
+  adjust_fit(0, 0);
+  f_fe_mac;
+  x16:=7.2u;       y16:=h;
+  one_point(16);
+endchar;
+
+%********************************* G H A F ************************************
+beginchar(code[82],25.8u#,18.2v#,11v#);                    % Big Ghaf
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  smoothing:=2;
+  pickup tiny_pen;
+  x1:=23.6u;            y1:=3.4v;
+  x2:=17.3u;            y2:=5.0v *(vav_height/11v);
+  penpos1(.82horiz_width-tiny, -70);
+  penpos2(vav_lneckwidth-tiny, 168);
+  defpos_vt3(20.5u,8.8v *(vav_height/11v),vav_tneckwidth, 75);
+  defpos_hr4(23.45u,4.70v *(vav_height/11v),vav_rneckwidth, 8);
+  ld:=168-90;
+  td:=75-90;
+  rd:=5-90;
+  dd:=-135;
+  filldraw stroke z1e{dir dd} .. tension .8 .. {dir ld}z2e.. tension 1.3..
+                  {dir td}z3e ..tension 1.12 .. {dir rd}z4e;
+  draw z1l{dir dd} ..tension .8 .. {dir 98}z2l;
+  draw z2l ..tension 1.4..{dir 6}z3l{right}..tension 1.45 .. z4l;
+  smoothing:=0;
+  x6:=7.0u;             y6:=-7.8v;
+  x7:=4.6u;             y7:=7.1v;
+  defpos_vb5(22.4u,-4.8v,arc_width,180+horizmidpenang_noon_group);
+  ang := 90+startdir_endingup;
+  penpos6(arc_width-tiny, ang);
+  filldraw stroke z4e{dir rd}..tension .85 ..{dir horizmiddir_noon_group}z5e;
+  horiz_mid_arc(5,6,horizmiddir_noon_group, horizmidpenang_noon_group);
+  endingup_arc(6,7, endingupdir_noon_group);
+  x16:=19.4u;           y16:=h;
+  two_point(16,true);
+endchar;
+
+beginchar(code[83],25.9u#,19.6v#,10.8v#);                  % Last Ghaf
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  x1:=25.9u;            y1:=horiz_width/2;
+  x2:=21.2u;            y2:=horiz_width/2;
+  x5:=23.6u;            y5:=5.1v *(lvav_height/10.4v);
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, -90);
+  penpos2(horiz_width-tiny, -93);
+  defpos_hl3(17.4u,6.1v *(lvav_height/10.4v),lvav_lneckwidth, 155);
+  defpos_vt4(20.7u,8.8v *(lvav_height/10.4v),lvav_tneckwidth, 78);
+  penpos5(lvav_rneckwidth-tiny, 16);
+  ld:=158-90;
+  td:=78-90;
+  rd:=12-90;
+  filldraw stroke z1e{left}...{left}z2e;
+  filldraw stroke z2e{left} .. tension .8 .. {dir ld}z3e...
+                  {dir td}z4e ... {dir rd}z5e;
+  x7:=6.7u;             y7:=-7.9v;
+  x8:=4.2u;             y8:=5.7v;
+  temp:=arc_width; save arc_width; arc_width := .92temp;
+  defpos_vb6(22.6u,-4.7v,arc_width, 180+horizmidpenang_noon_group);
+  filldraw stroke z5e{dir rd}...{dir horizmiddir_noon_group}z6e;
+  horiz_mid_arc(6,7,horizmiddir_noon_group, horizmidpenang_noon_group);
+  endingup_arc(7,8, endingupdir_noon_group);
+  x16:=19.0u;           y16:=h;
+  two_point(16,true);
+endchar;
+
+beginchar(code[84],m_fe_len/u*u#,25.2v#,0);                % Mid Ghaf
+  case:=3;
+  adjust_fit(0, 0);
+  m_fe_mac;
+  x16:=8.2u;       y16:=h;
+  two_point(16,false);
+endchar;
+
+beginchar(code[85],12.3u#,25.2v#,0);                       % First Ghaf
+  case:=4;
+  adjust_fit(0, 0);
+  f_fe_mac;
+  x16:=7.2u;       y16:=h;
+  two_point(16,false);
+endchar;
+
+%********************************** K A F *************************************
+beginchar(code[86],36.8u#,body_height#,0);                 % Big Kaf;
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_kaf_mac(false);
+endchar;
+
+beginchar(code[87],l_kaf_len/u*u#,body_height#,0);         % Last Kaf;
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_kaf_mac(false);
+endchar;
+
+beginchar(code[88],m_kaf_len/u*u#,body_height#,0);         % Mid Kaf;
+  case:=3;
+  adjust_fit(0, 0);
+  m_kaf_mac(false);
+endchar;
+
+beginchar(code[89],16.2u#,body_height#,0);                 % First Kaf;
+  case:=4;
+  adjust_fit(0, 0);
+  f_kaf_mac(false);
+endchar;
+
+%********************************** G A F *************************************
+beginchar(code[90],36.8u#,body_height#,0);                 % Big Gaf;
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_kaf_mac(true);
+endchar;
+
+beginchar(code[91],l_kaf_len/u*u#,body_height#,0);         % Last Gaf;
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_kaf_mac(true);
+endchar;
+
+beginchar(code[92],m_kaf_len/u*u#,body_height#,0);         % Mid Gaf;
+  case:=3;
+  adjust_fit(0, 0);
+  m_kaf_mac(true);
+endchar;
+
+beginchar(code[93],16.3u#,body_height#,0);                 % First Gaf;
+  case:=4;
+  adjust_fit(0, 0);
+  f_kaf_mac(true);
+endchar;
+
+%********************************** L A M *************************************
+beginchar(code[94],20.6u#,body_height#,9v#);               % Big Lam
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  if lam_extra=2 :   %**** Then compset Lam ****
+    temp:=body_height;save body_height; body_height:=round(.95temp);
+  fi;
+  x3:=17.35u;              y3:=-3.2v;
+  x4:=6.1u;                y4:=-5.7v;
+  x5:=3.9u;                y5:=5.8v;
+  pickup tiny_pen;
+  penpos1(.97alef_head_width-tiny, alef_head_ang);
+  penpos3(arc_width-tiny, 180+horizmidpenang_noon_group);
+  ang := 90+startdir_endingup;
+  penpos4(arc_width-tiny, ang);
+  if linot_lam :
+    penpos2(.95alef_width-tiny,0);
+  else :
+    penpos2(lam_neck_width-tiny,0);
+  fi;
+  lft x1.l=hround(17.1u-lam_diff);    top y1.r=body_height;
+  lft x2.l=hround(17.5u);                 y2=.1body_height;
+  filldraw stroke z1e{down}...z2e{down}..tension .9..{dir horizmiddir_noon_group}z3e;
+  draw z2l{down}..{dir 254}z3l;
+  horiz_mid_arc(3,4,horizmiddir_noon_group, horizmidpenang_noon_group);
+  endingup_arc(4,5, endingupdir_noon_group);
+  if lam_extra=1 :  %**** Then  linotron Lam ****
+    penpos6(.97alef_head_width-tiny, alef_head_ang+4);
+    rt x6.r=hround(22.4u-lam_diff);           top y6.r=round(.9body_height);
+    filldraw stroke z1e {dir 250} ...{dir -27} z6e;
+  else:
+    if lam_extra=2 :   %**** Then compset Lam ****
+      penpos6(.97alef_head_width-tiny, -alef_head_ang+6);
+      penpos7(.9alef_head_width-tiny, -alef_head_ang+4);
+      x6l = x1r-.1u;     y6l = y1r+1.5v;
+      x7l = x1l;         y7l = y1l;
+      filldraw stroke z6e ...{dir -84} z7e;
+    fi;
+  fi;
+endchar;
+
+beginchar(code[95],26.5u#,body_height#,12.2v#);            % Last Lam
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  x1:=26.5u;               y1:=horiz_width/2;
+  x6:=6.8u;                y6:=-9.2v;
+  x7:=4.2u;                y7:=4v;
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(.95alef_width-tiny, 10);
+  penpos3(.97alef_head_width-tiny, alef_head_ang);
+  penpos5(arc_width-tiny, 180+horizmidpenang_noon_group);
+  ang := 90+startdir_endingup;
+  penpos6(arc_width-tiny, ang);
+  if linot_lam :
+    penpos4(.95alef_width-tiny,0);
+  else :
+    penpos4(lam_neck_width-tiny,0);
+  fi;
+  rt  x2.r=hround(22.2u);              y2=.2body_height;
+  lft x3.l=hround(18.2u);          top y3.r=body_height;
+  lft x4.l=hround(19.0u);              y4=0;
+  lft x5.l=hround(19.0u);              y5=-6.75v;
+  filldraw stroke z1e{left}..tension .98 ..z2e..tension 4..z3e;
+  filldraw stroke z3e{down}...z4e{down}..tension .9..{dir horizmiddir_noon_group}z5e;
+  draw z4l{down}..{dir 260}z5l;
+  horiz_mid_arc(5,6,horizmiddir_noon_group, horizmidpenang_noon_group);
+  endingup_arc(6,7, endingupdir_noon_group);
+endchar;
+
+beginchar(code[96],12.5u#,body_height#,0);                 % Mid Lam
+  case:=3;
+  adjust_fit(0, 0);
+  l_extra_bar:=.5u;
+  x1:=l_extra_bar+12.0u;     y1:=horiz_width/2;
+  x5:=l_extra_bar;           y5:=horiz_width/2;
+  x6:=0;                     y6:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(1.2alef_width-tiny, 10);
+  penpos3(.85alef_head_width-tiny, .92alef_head_ang);
+  penpos4(lam_neck_width-tiny, -78);
+  penpos5(horiz_width-tiny, -90);
+  penpos6(horiz_width-tiny, -90);
+  rt  x2.r=hround(l_extra_bar+8.8u);       y2=.2body_height;
+  lft x3.l=hround(l_extra_bar+3.5u);   top y3.r=body_height;
+  lft x4.l=hround(l_extra_bar+4.5u);       y4=.2body_height;
+  filldraw stroke z1e{left} .. tension.88 ..z2e..tension1.55..{dir 93}z3e;
+  filldraw stroke z3e{down}..tension 3..z4e..tension 1.03..{left} z5e--z6e;
+endchar;
+
+beginchar(code[97],8.9u#,body_height#,0);                  % First Lam
+  case:=4;
+  adjust_fit(0, 0);
+  if lam_extra=2 :   %**** Then compset Lam ****
+    temp:=body_height;save body_height; body_height:=round(.95temp);
+  fi;
+  extra_bar:=1.7u;
+  x3:=extra_bar;                  y3:=horiz_width/2;
+  x4:=0;                          y4:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(alef_head_width-tiny, .9alef_head_ang);
+  penpos2(lam_neck_width-tiny, -25);
+  penpos3(horiz_width-tiny, -90);
+  penpos4(horiz_width-tiny, -90);
+  rt x1.r=hround(extra_bar+6.6u-lam_diff);    top y1.r=body_height;
+  rt x2.r=hround(extra_bar+6.95u);                y2=.2body_height;
+  if linot_lam :
+    penpos5(.97alef_width-tiny,0);
+    rt x5.r=hround(extra_bar+6.95u);              y5=.26body_height;
+    filldraw stroke z1e..tension 4..z5e...z2e..tension .85..{left} z3e--z4e;
+  else :
+    filldraw stroke z1e{down}..tension 3..z2e..tension .85..{left} z3e--z4e;
+  fi;
+  if lam_extra=1 :  %**** Then  linotron Lam ****
+    penpos6(.97alef_head_width-tiny, alef_head_ang+4);
+    rt x6.r=hround(10.1u-lam_diff);           top y6.r=round(.9body_height);
+    filldraw stroke z1e {dir 250} ...{dir -27} z6e;
+  else:
+    if lam_extra=2 :   %**** Then compset Lam ****
+      penpos6(.97alef_head_width-tiny, -alef_head_ang+6);
+      penpos7(.9alef_head_width-tiny, -alef_head_ang+5);
+      x6l = x1r-.1u;    y6l = y1r+1.5v;
+      x7l = x1l;        y7l = y1l;
+      filldraw stroke z6e ...{dir -84} z7e;
+    fi;
+  fi;
+endchar;
+
+%********************************** M I M *************************************
+beginchar(code[98],15.1u#,13.7v#,body_depth#);                  % Big Mim
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  x1:=4.9u;                 y1:=3.5v+mim_height_fact*5.9v;
+  x2:=7.7u;                 y2:=3.5v+mim_height_fact*7.7v;
+  pickup tiny_pen;
+  penpos1(ending_width-tiny, 135);
+  penpos2(bmim_mheadwidth-tiny, 70);
+  defpos_br3(13.3u,3.5v+mim_height_fact*2.6v,bmim_eheadwidth, 58);
+  penpos4(mim_ttailwidth-tiny,-125);
+  penpos5(alef_width-tiny, 180);
+  penpos6(.92alef_width-tiny, 180);
+  penpos7(ending_width-tiny, 180);
+  lft x4.r=hround(.16u);            y4=0;
+  lft x5.r=hround(.38u);            y5=-.36body_depth;
+  lft x6.r=hround(.70u);            y6=-.76body_depth;
+  lft x7.r=hround(.78u);        bot y7=vround(-body_depth);
+  filldraw stroke z1e..tension 1.66 ..z2e..tension 1.54 and 4.5..z3e;
+  filldraw stroke z3e{dir 176}...{dir -88}z4e...{dir -88}z5e...z6e{down}...z7e;
+endchar;
+
+beginchar(code[99],19.4u#,8.6v#,body_depth#);              % Last Mim
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  x0:=19.3u;                y0:=horiz_width/2;
+  x1:=19.2u;                y1:=horiz_width/2;
+  x2:=10.0u;                y2:=mim_height_fact*6.3v;
+  x3:=12.3u;                y3:=mim_height_fact*-1.9v;
+  x4:=10.34u;               y4:=mim_height_fact*.25v;
+  x5:=10.1u;                y5:=mim_height_fact*5.48v;
+  pickup tiny_pen;
+  penpos0(horiz_width-tiny, 90);
+  penpos1(horiz_width-tiny, 90);
+  penpos2(horiz_width-tiny, 70);
+  penpos3(lmim_rneckwidth-tiny, -80);
+  penpos4(lmim_lneckwidth-tiny, -140);
+  penpos5(.93arc_width-tiny, 84);
+  penpos6(mim_ttailwidth-tiny,-125);
+  penpos7(alef_width-tiny, 180);
+  penpos8(.92alef_width-tiny, 180);
+  penpos9(ending_width-tiny, 180);
+  lft x6.r=hround(.16u);              y6=-1.54v;
+  lft x7.r=hround(.38u);              y7=-.36body_depth;
+  lft x8.r=hround(.70u);              y8=-.76body_depth;
+  lft x9.r=hround(.78u);          bot y9=vround(-body_depth);
+  filldraw stroke z0e--z1e{left}..z2e;
+  filldraw stroke z2e{dir -40}..tension .95 and 2.2 ..z3e{dir 175}
+           ..tension 1.1 ..z4e .. tension 1.03 ..z5e;
+  filldraw stroke z5e{dir 182}...{dir -88}z6e...{dir -88}z7e...z8e{down}...z9e;
+endchar;
+
+beginchar(code[100],20.3u#,11.6v#,0);                      % Mid Mim
+  case:=3;
+  adjust_fit(0, 0);
+  x1:=6.7u;                 y1:=mim_height_fact*5.5v;
+  x2:=13.2u;                y2:=mim_height_fact*2.85v;
+  x3:=10.6u;                y3:=mim_height_fact*9.8v;
+  x4:=4.8u;                 y4:=mim_height_fact*4.55v;
+  x5:=1.1u;                 y5:=horiz_width/2;
+  x6:=0.1u;                 y6:=horiz_width/2;
+  x7:=20.2u;                y7:=horiz_width/2;
+  x8:=x7+.1u;               y8:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(mmim_dneckwidth-tiny, 60);
+  penpos2(mmim_rneckwidth-tiny, 120);
+  penpos3(mmim_tneckwidth-tiny, 180+68);
+  penpos4(mmim_lneckwidth-tiny, 180+130);
+  penpos5(horiz_width-tiny, -90);
+  penpos6(horiz_width-tiny, -90);
+  penpos7(horiz_width-tiny, -90);
+  penpos8(horiz_width-tiny, -90);
+  dd:=-60;
+  rd:=130-90+5;
+  td:=68+98;
+  filldraw stroke z1e{dir dd}..tension 3.5 and 1.1..{dir rd}z2e..tension 1.8
+                  ..{dir td}z3e..tension 1.3..z4e..tension1.1..{left}z5e--z6e;
+  filldraw stroke z3e{dir -31}..tension 1.3 and .9 ..{right}z7e--z8e;
+  path p;
+  pair aa;
+  p :=  z1r{dir dd}..tension 3.5 and 1.1..{dir rd}z2r;
+  aa := point .77 of p;
+  x9 := xpart(aa);              y9:=ypart(aa);
+  draw z9.. tension 1 and 1.8 ..{dir td} z3r;
+  aa := point .21 of p;
+  x9 := xpart(aa);              y9:=ypart(aa);
+  draw z3r{dir td}.. tension 1.3 and 1 ..{dir dd} z9;
+endchar;
+
+beginchar(code[101],15.6u#,12.6v#,0);                      % First Mim
+  case:=4;
+  adjust_fit(0, 0);
+  x0:=7.1u;                 y0:=mim_height_fact*5.9v;
+  x1:=10.1u;                y1:=mim_height_fact*3.7v;
+  x2:=13.3u;                y2:=mim_height_fact*5.4v;
+  x3:=11.7u;                y3:=mim_height_fact*10.1v;
+  x4:=4.8u;                 y4:=mim_height_fact*4.3v;
+  x5:=1.1u;                 y5:=horiz_width/2;
+  x6:=0.1u;                 y6:=horiz_width/2;
+  pickup tiny_pen;
+  penpos0(mim_dneckwidth-tiny, 54);
+  penpos1(mim_dneckwidth-tiny, 55);
+  penpos2(mim_rneckwidth-tiny, 171);
+  penpos3(mim_tneckwidth-tiny, 180+67);
+  penpos4(mim_lneckwidth-tiny, 180+125);
+  penpos5(horiz_width-tiny, -90);
+  penpos6(horiz_width-tiny, -90);
+  rd:=171-90+5;
+  td:=67+90;
+  filldraw stroke z0e...z1e..tension .85and.8..{dir rd}z2e..tension 1.7 and 1.8
+                  ..{dir td} z3e .. tension 1.3 .. z4e... {left} z5e--z6e;
+  path p;
+  pair aa;
+  p := z0r...z1r..tension.85and.8..{dir rd}z2r..tension1.7and1.8..{dir td} z3r;
+  aa := point .7 of p;
+  x9 := xpart(aa);              y9:=ypart(aa);
+  draw z9.. tension 1 and 1.8 ..{dir td} z3r;
+endchar;
+
+%********************************* N O O N ************************************
+beginchar(code[102],20.7u#,16v#,9.2v#);                    % Big Noon
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  pickup tiny_pen;
+  temp:=arc_width; save arc_width; arc_width := .94temp;
+  defpos_lt1(17.4u,8.1v,startpenwidth_tooth_be,startpenang_bnoon);
+  penpos2(arc_width-tiny, horizmidpenang_noon_group+180);
+  x2 = 17.68u;            y2 = -4.1v;
+  x3 = 5.7u;              y3 = -6.3v;
+  x4 = 4.2u;              y4 =  5.5v;
+  filldraw stroke z1e {dir-68}...{dir horizmiddir_noon_group}z2e;
+  horiz_mid_arc(2,3,horizmiddir_noon_group, horizmidpenang_noon_group);
+  endingup_arc(3,4,endingupdir_noon_group);
+  x16:=11.2u;                y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[103],27.1u#,11.7v#,12.4v#);                 % Last Noon
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  x1:=27.1u;
+  dos(1,.1u);
+  x16:=11.5u;                y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[104],m_be_len/u*u#,17v#,0);                 %Mid Noon
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=6.5u;       y16:=h;
+  one_point(16);
+endchar;
+
+beginchar(code[105],9.4u#,17v#,0);                         %First Noon
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=4.8u;       y16:=h;
+  one_point(16);
+endchar;
+
+%********************************** V A V *************************************
+beginchar(code[106],16.5u#,(11.4vav_height/11v)*v#,11.3v#); % Big Vav
+  case:=1;
+  adjust_fit(0, 0);
+  b_vav_mac;
+endchar;
+
+beginchar(code[107],l_vav_len/u*u#-2u#,(11.1lvav_height/10.4v)*v#,11.3v#); %LV
+  case:=2;
+  adjust_fit(0, 0);
+  l_vav_mac;
+endchar;
+
+
+%*********************************** H E **************************************
+beginchar(code[108],10.6u#,14.6v#,0);                      % Big He
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_he_mac;
+endchar;
+
+beginchar(code[109],15.9u#,19v#,0);                        % Last He
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_he_mac;
+endchar;
+
+beginchar(code[110],20.5u#,16.8v#,11.1v#);                 % Mid He
+  case:=3;
+  adjust_fit(0, 0);
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(horiz_width-tiny, 90);
+  penpos3(.92horiz_width-tiny, 90);
+  defpos_hr4(14.2u,-5.4v,he_brneckwidth, -5);
+  defpos_vb5(12.5u,-8.1v,he_bneckwidth, -92);
+  defpos_hl6( 5.9u, 3.0v,he_lneckwidth, 178);
+  defpos_vt7(12.6u,14.2v,he_tneckwidth,  62);
+  defpos_hr8(14.0u, 9.2v,he_trneckwidth,-12);
+  penpos9(horiz_width-tiny, -90);
+  penpos10(horiz_width-tiny,-90);
+  x1 = 20.5u;           y1  = horiz_width/2;
+  x2 = 19.0u;           y2  = horiz_width/2;
+  x3 = 3.7u;        top y3.r= vround(.96horiz_width-1.5v);
+  x9 = 3.0u;            y9  = horiz_width/2;
+  x10= 0;               y10 = horiz_width/2;
+  trd:=-12-90;
+  filldraw stroke z1e--z2e{left}...{left}z3e;
+  filldraw stroke z3e{dir -9}..tension 1.05 and 1..{dir -96}z4e..tension1.05
+                        ..z5e .. tension 1.15 and .85 ..{dir 88}z6e;
+  filldraw stroke z6e{dir 85}..tension 4 and 1.6..{dir -12}z7e
+                  ..tension 2.5 and .85..{dir trd}z8e;
+  filldraw stroke z8e{dir trd}..tension 1.2 ..{left}z9e--z10e;
+endchar;
+
+beginchar(code[111],19.2u#,19v#,0);                        % First He
+  case:=4;
+  adjust_fit(0, 0);
+  pickup tiny_pen;
+  defpos_lt1(6.4u,16.1v,startpenwidth_tooth_he,startpenang_tooth_he);
+  penpos2(he_neck_width-tiny, 70);
+  penpos3(.98horiz_width-tiny, -86);
+  penpos4(.96horiz_width-tiny, 180+alfa);
+  penpos5(.92ghaf_lneckwidth-tiny, 168);
+  penpos6(ghaf_tneckwidth-tiny, 78);
+  penpos7(1.06ghaf_rneckwidth-tiny, -8);
+  penpos8(.88horiz_width-tiny, 180+beta);
+  penpos9(horiz_width-tiny, -90);
+  penpos10(horiz_width-tiny, -90);
+  alfa:=67;
+  beta:=72;
+  x2 = 17.6u;            y2 = 7.8v;
+  x3 = 15.8u;            y3 = horiz_width/2+1.1v;
+  x4 = 7.5u;             y4 = horiz_width*(1+2*sind((90-alfa)/2)**2)/2+ 2.2v;
+  x5 = 5.4u;             y5 = 9.4v;
+  x6 = 9.6u;             y6 = 14.1v;
+  x7 = 12.0u;            y7 = 8.8v;
+  x8 = 7.8u;             y8 = horiz_width*(1+2*sind((90-beta)/2)**2)/2+1.55v;
+  x9 = .5u;              y9 = horiz_width/2;
+  x10= 0u;              y10 = horiz_width/2;
+  ld:=168-90;
+  td:=78-90+5;
+  rd:=-8-90;
+  a:=86+alfa;
+  b:=270-beta;
+  filldraw stroke z1e{dir -24}..tension1.7..z2e
+                  ..tension 1.5 and 1.35..{dir 183}z3e;
+  filldraw stroke z3e{dir 180} ..tension 1.3.. {dir a}z4e;
+  filldraw stroke z4e{dir a} ..tension1.1and.85.. {dir ld}z5e..tension 1.6 ..
+            {dir td} z6e ..tension 1.35.. {dir rd} z7e {dir rd} .. {dir b} z8e;
+  filldraw stroke z8e{dir b}..tension .95..{left}z9e--z10e;
+  inv_rd:=rd+180;
+  path p;
+  pair pp;
+  p :=  z3l{dir 180} ..tension 1.3.. {dir a}z4l;
+  pp:= point .12 of p;
+  x11:=xpart(pp);        y11:=ypart(pp);
+  draw z11{left}..tension .80..z7r{dir inv_rd}..tension .89 and 1.8 ..z2l;
+  draw z2l...{left}z11;
+endchar;
+
+%*********************************** Y E **************************************
+beginchar(code[112],30.9u#,16.9v#,8.9v#);                  % Big Ye
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_ye_mac;
+endchar;
+
+beginchar(code[113],l_ye_len/u*u#,horiz_width/u*u#,14.2v#);% Last Ye
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_ye_mac
+endchar;
+
+beginchar(code[114],m_be_len/u*u#,10v#,8v#);               %Mid Ye
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=6.5u ;      y16:=-d+v;
+  two_point(16,true);
+endchar;
+
+beginchar(code[115],9.4u#,12v#,8v#);                       %First Ye
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=4.7u;       y16:=-d+2v;
+  two_point(16,true);
+endchar;
+
+%*********************************** L A **************************************
+beginchar(code[116],23.0u#,body_height#,0);                % Big La
+  case:=1;
+  adjust_fit(cheshmi#-1.5u#, 0);
+  pickup tiny_pen;
+  penpos1(.85alef_head_width-tiny, .92alef_head_ang);
+  penpos2(.8lam_neck_width-tiny, -15);
+  penpos3(.8lam_neck_width-tiny, -58);
+  penpos4(horiz_width-tiny, -90);
+  lft x1.l=hround(19.7u);  top y1.r=body_height;
+  lft x2.l=hround(18.3u);      y2=.5body_height;
+  lft x3.l=hround(14.5u);      y3=horiz_width+2.1v;
+  lft x4=hround(10u);          y4=horiz_width/2;
+  filldraw stroke z1e{down}...z2e...z3e...z4e;
+  penpos5(1.70alef_width-tiny, 76);
+  penpos6(1.25alef_width-tiny, 72);
+  penpos7(1.10alef_width-tiny, 20);
+  penpos8(horiz_width-tiny, -90);
+  lft x5.l=0;              top y5.r=round(body_height-v);
+  lft x6.l=hround(9.2u);   top y6.r=.72body_height;
+  lft x7.l=hround(17.5u);      y7=horiz_width+1.4v;
+      x8=17u;                  y8=horiz_width/2;
+  filldraw stroke z5e...z6e..tension1.05..z7e..tension.95..{left}z8e;
+  penpos9(horiz_width-tiny, -90);
+  lft x9=hround(9u);           y9=horiz_width/2;
+  filldraw stroke z8e--z9e;
+  if lam_extra>0 :
+    penpos10(1.70alef_width-tiny, 10);
+    lft x10.l=hround(2.2u);  bot y10.l=round(.75body_height-v);
+    filldraw stroke z5e...z10e;
+    penpos11(.85alef_head_width-tiny, .92alef_head_ang);
+    rt x11.r=hround(24.5u);  top y11.r=round(.9body_height);
+    filldraw stroke z1e {dir 250} ...{dir -27} z11e;
+  fi;
+endchar;
+
+beginchar(code[117],26.0u#,body_height#,0);                % Last La
+  case:=2;
+  adjust_fit(cheshmi#-.4u#,0);
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(1.25alef_width-tiny, 10);
+  penpos3(.85alef_head_width-tiny, .92alef_head_ang);
+  penpos4(.8lam_neck_width-tiny, -15);
+  penpos5(1.23alef_width-tiny, -60);
+  penpos6(ending_width-tiny, -90);
+  x1=26.0u;                       y1=horiz_width/2;
+  rt  x2.r=hround(22.8u);         y2=.2body_height;
+  lft x3.l=hround(17.9u);     top y3.r=body_height;
+  lft x4.l=hround(16.3u);;        y4=.5body_height;
+  lft x5.l=hround( 8.0u);         y5=3.2v;
+  lft x6=0;                   bot y6.r=0;
+  filldraw stroke z1e{left} .. tension.88 ..z2e..tension1.55..{dir 93}z3e;
+  filldraw stroke z3e{down}...z4e...z5e..tension 1.35 and 1.65 ..z6e;
+  penpos7(1.70alef_width-tiny, 76);
+  penpos8(1.45alef_width-tiny, 72);
+  penpos9(1.65alef_width-tiny, 80);
+  lft x7.l=0;              top y7.r=round(body_height-v);
+  lft x8.l=hround(9u);     top y8.r=.71body_height;
+      x9=14u;                  y9=.3body_height;
+  filldraw stroke z7e...z8e..tension .9..{dir -85}z9e;
+  if lam_extra>0 :
+    penpos10(1.70alef_width-tiny, 10);
+    lft x10.l=hround(2.2u);  bot y10.l=round(.75body_height-v);
+    filldraw stroke z7e...z10e;
+  fi;
+endchar;
+
+%********************************** Hamze *************************************
+beginchar(code[118],14.5u#,13v#,0);                        % Big(single) Hamze
+  case:=1;
+  adjust_fit(0,0);
+  pickup tiny_pen;
+  penpos1(.75horiz_width-tiny, 46);
+  penpos2(1.6horiz_width-tiny, 42);
+  penpos3(1.03horiz_width-tiny, 200);
+  penpos4(1.3horiz_width-tiny, -140);
+  penpos5(.70horiz_width-tiny, -116);
+  penpos6(max(.35horiz_width,tiny)-tiny, -45);
+  rt  x1.r=hround(11.4u);     bot y1.l=round(8.8v);
+      x2=6.9u;                top y2.r=round(13.3v);
+  lft x3.r=0;                    y3=6.7v;
+      x4=5.7u;                   y4=3.6v;
+  rt  x5.l=hround(12.9u);    top y5.l=round(6.4v);
+  lft x6.l=hround(.8u);      bot y6.r=0;
+  filldraw stroke z1e..z2e..tension1.65..z3e..tension .9and 4..z4e;
+  filldraw stroke z5e..tension 1.2..z4e..tension 1.2..z6e;
+endchar;
+
+beginchar(code[120],m_be_len/u*u#,26v#,0);                 % Mid Hamze
+  case:=3;
+  adjust_fit(0, 0);
+  m_be_mac;
+  x16:=0.5u;       y16:=h-11v;
+  small_hamze(16);
+endchar;
+
+beginchar(code[119],9.2u#,26v#,0);                         % First Hamze
+  case:=4;
+  adjust_fit(0, 0);
+  f_be_mac;
+  x16:=1.0u;       y16:=h-11v;
+  small_hamze(16);
+endchar;
+
+%******************************* Circled TE **********************************
+beginchar(code[121],10.6u#,21.6v#,0);                      % Big He
+  case:=1;
+  adjust_fit(cheshmi#, 0);
+  b_he_mac;
+  x16:=4.0u;       y16:=h;
+  two_point(16,true);
+endchar;
+
+beginchar(code[122],15.9u#,26v#,0);                        % Last He
+  case:=2;
+  adjust_fit(cheshmi#, 0);
+  l_he_mac;
+  x16:=6.2u;       y16:=h;
+  two_point(16,true);
+endchar;
+

@@ -1,0 +1,36 @@
+<
+<ÒdocumentstyleÓfarsiÑÞarticle×
+>\addtolength{\textheight}{0.5in}
+>\addtolength{\voffset}{-1in}
+<ÒnewfontÞÐ\smallsfÐ×ÞÐsflt10Ð×
+<ÒnewfontÞÐ\sfshÐ×ÞÐsfshlt25Ð×
+<ÒbeginÞdocument×
+<ÒbeginÞtable×
+<Òcentering
+<ÒbeginÞtabular×ÞÐ|r|r||c|Ð×ÚÒhline
+<ÒsmallsfÚ¡‘÷ùÚ¨‘¢ùÚ¸
+<ÒmulticolumnÞÐ2Ð×ÞÐc|Ð×ÞÒparboxÓÐcÐÑÞÐ8cmÐ×Þ\vskip3mmÚ
+<ÚÚÚÚÚÚÚÚÚÚÒLargeÚÚÚÚÚÚÚÒsayedarÚ¡‘÷ùýÚÚõ¤î’Ú“¤ýÚÒÚÒFarsiTeXÒÚ\vskip3mm××ÚÚÒÒ
+<ÒclineÞÐ2-3Ð×
+<ÒsmallsfÚ¤¢þêüÚ¢þð¤Ú¸
+<ÒmulticolumnÞÐ2Ð×ÞÐc|Ð×ÞÒsmallsfÚä¢¢×ÒÒ
+<Òhline
+<ÒsayedarÚ—íÚ¨—ø÷ùÚ¸Ú„†‡Ú¸Ú…ˆ‰ÚÒÒÚÒhlineÚÒhline
+<\TeX\ is ok!Ú¸ÚÚ†€‡Åˆ†\$Ú¸
+>\parbox[c]{5cm}{\vskip3mm
+<þöÚþíÚõ—öÚ¯øò÷üÚ¨–ÚøÚ“ùÚ¬ø¤–Ú•‘¤ð¤éÚ÷øª—ùÚª¢ùÚ¨–
+<ÒFarsiTeXÒÚ¡ø¢Ú›‘ýÚò¥ôÚ“¤ýÚþöÚõ—öÚ¤Ú¢¤Ú›¢øñÚ•þ¢
+<õüî÷¢ÚøÚ“ùÚ¬ø¤–Úõ÷‘¨“üÚöÚ¤ÚŸ¤øêþ÷üÚõüî÷¢ÆÚ\vskip3mmÚÚ×ÚÒÒÚÒhline
+<
+<ÒsmallsfÚê¤õøóú‘Ú¸
+>${\displaystyle \int_{x=0}^\infty {x+y^2\over k+1}}$ &
+>\parbox[c]{8cm}{\vskip3mm
+>$\sqrt{1+\sqrt{1+\sqrt{1+  \sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+x}}}}}}}$
+>\vskip3mm}
+<ÒÒ
+<Òhline
+<ÒmulticolumnÞÐ3Ð×ÞÐ|c|Ð×ÞÒsmallsfÚ÷¢Ú¨—ø÷ù×ÚÒÒÚÒhline
+<ÒendÞtabular×
+<ÒcaptionÞÚ÷õø÷ùýÚ¥ÚþíÚ›¢øñÚ•þþ¢ùÚŸ¤øêþ÷üÚª¢ùÚ—ø¨ÁÚÒFarsiTeXÒÚÚÆ×
+<ÒendÞtable×
+<ÒendÞdocument×

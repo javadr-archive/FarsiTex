@@ -1,0 +1,38 @@
+>\documentstyle[farsi,12pt,fancybox,ffancyhe]{article}
+>\input{cvr-head}
+>\font\namef=sfbirn8
+>\font\nameff=sfbirn9
+<
+<ÒpagestyleÞÐemptyÐ×
+<ÒbeginÞdocument×
+<ÒbeginÞcenter×
+<ÒÚÒÒÓÐ-3cmÐÑ
+<ÞÒnamefÚ“ùÚ÷‘ôÚöÚîùÚ›‘öÚ¤Úêî¤–Úõø¡–×ÚÒÒÓÐ5mmÐÑ
+>{\sharifarm a}\\
+<¢÷ªî¢ùýÚõú÷¢¨üÚî‘õ•þø—¤ÒÒ
+<¢÷ªð‘ùÚ¬÷ã—üÚª¤þéÒÒÓÐ0.7cmÐÑ
+<ÞÒLARGEÒbfÚî‘¤¨øëû‘ýÚÚäóøôÚî‘õ•þø—¤×ÒÒÓÐ.3cmÐÑ
+<Þ\title Computer Science Workshops×ÒÒÓÐ0.7cmÐÑ
+<ÞÒLargeÚõŸõ¢Úõú¢þ‘ö×ÚÒÒ
+<ÞÚ¢÷ªî¢ùýÚäóøôÚî‘õ•þø—¤ŠÚ¢÷ªð‘ùÚ—ø¤÷—ø×ÒÒÓÐ2.5cmÐÑ
+<
+<ÒbeginÞhereproc×
+<ÒvspaceÈÞÐ-2cmÐ×
+<ÒbeginÞcenter×
+<î‘¤¨øëÚÊÚÒÒ
+<ÞÒtitrÚ÷à¤þùýÚ¨þ¨—ôû‘ýÚ—ø¥þâª¢ù×ÚÒÒÓÐ3mmÐÑ
+<Þ\LARGE\bf Theory of Distributed Systems×ÚÒÒÓÐ1cmÐÑ
+<î‘¤¨øëÚ‚ÊÚÒÒÚ
+<ÞÒtitrÚ•þþ¢ðüÚóðø¤þ—ôû‘×ÚÚÒÒÓÐ3mmÐÑ
+<Þ\LARGE\bf Complexity of Algorithms×
+<ÒendÞcenter×
+<ÒendÞhereproc×
+<
+<·ÒbeginÞcenter×
+<ÞÒLargeÚ¥õ‘öÊÚ¢øÚûê—ùýÚƒ‚Úõ¤¢¢Ú—‘Ú„Úªú¤þø¤ÚÒÒÚÞÒsmall¾“¤÷‘õùýÚ¢ìþëÚ“¥ø¢ýÚäòôÚõüªø¢½××ÚÒÒ
+<ÞÒLargeÚõî‘öÊÚ—‘ò¤Ú¡ø¤¥õüŠÚ¢÷ªî¢ùýÚõú÷¢¨üÚî‘õ•þø—¤×ÒÒÓÐ2cmÐÑ
+<Ú¥Ú¢÷©›øþ‘öÚäòìùõ÷¢Ú¢äø–Úõüªø¢ÚîùÚû¤ÚùÚ¥ø¢—¤Ú¢¤Ú¢ê—¤Ú—Ÿ¬þò–Ú—îõþóü
+<Ú™“–Ú÷‘ôÚ÷õ‘þ÷¢Æ
+<ÒendÞcenter×
+<ÒendÞdocument×
+<

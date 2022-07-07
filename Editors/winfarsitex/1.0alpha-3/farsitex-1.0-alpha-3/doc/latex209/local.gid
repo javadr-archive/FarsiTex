@@ -1,0 +1,10 @@
+
+                       HOW TO RUN LaTeX WITH emTeX
+
+                              18 March 1995
+
+To run LaTeX on the file named  foo.tex  type:
+ 
+    latex209 foo
+
+This produces an output file named  foo.dvi .

@@ -1,0 +1,287 @@
+
+%%% ====================================================================
+%%%  @OmegaTranslationProcess-file{
+%%%     author          = "Behdad Esfahbod, Alireza Kheirkhahan"
+%%%     version         = "1.0",
+%%%     date            = "2002-10-10"
+%%%     time            = "23:59:59 IRT"
+%%%     filename        = "TeXFarsiToUnicode.otp",
+%%%     address         = "Computing Center, Sharif Univ. of Tech.,
+%%%                        Azadi Ave., Tehran, Iran"
+%%%     telephone       = "+98 21 6022372",
+%%%     FAX             = "",
+%%%     checksum        = "",
+%%%     email           = "omega@behdad.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "",
+%%%     supported       = "yes",
+%%%     docstring       = "This will be part of the public domain
+%%%                        faanoos Omega system.
+%%%                        Omega is a TeX extension (C) John Plaice
+%%%                        and Yannis Haralambous, 2002"
+%%%  }
+%%% ====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Map optional marks to the actual ones by default.  This may be overrided in
+% the included file below.
+
+
+
+
+
+
+
+
+
+input: 1;
+output: 2;
+
+states: IN, OUT, NUM;
+
+aliases:
+
+LETTERS	= (`a'-`z'|`A'-`Z'|`_'|``'|`''|`"'|`@'|`^'|`|'|`=');
+L	= ({LETTERS});
+NL	= ^({LETTERS});
+
+expressions:
+
+
+% Special ligatures
+<IN>	"ALLAH"	=> @"FDF2;
+<IN>	"RIAL"	=> @"FDFC ;
+
+
+% Contextual analysis
+
+<IN>	"-e"{L}		=> @"200C		<= \(*+1)	<OUT>;
+<IN>	"-e"		=> @"F650		<OUT>;
+<IN>	"-E"{L}		=> @"200C		<= \(*+1)	<OUT>;
+<IN>	"-E"		=> @"0650			<OUT>;
+<IN>	"-ye"{L}	=> @"200C		<= \(*+1)	<OUT>;
+<IN>	"-ye"		=> @"F6CC			<OUT>;
+<IN>	"-yE"{L}	=> @"200C		<= \(*+1)	<OUT>;
+<IN>	"-yE"		=> @"F6CC @"0650	<OUT>;
+<IN>	"-ee"{L}	=> @"200C		<= \(*+1)	<OUT>;
+<IN>	"-ee"		=> @"200C @"06CC			<OUT>;
+
+<OUT>	"o"{L}	=> @"0627			<= \*		<IN>;
+<OUT>	"o"	=> @"0648;
+<OUT>	"O"{L}	=> @"0627			<= \*		<IN>;
+<OUT>	"O"	=> @"0648;
+<OUT>	"n"(`a'|`A'){L}	=>		<= \*		<IN>;
+<OUT>	"n"(`a'|`A')	=>		<= \*"h"	<IN>;
+
+<OUT>	(`a'|`A')(`a'|`A')	=> @"0622	<IN>;
+<OUT>	(`a'|`e'|`A'|`E'|`i'|`u')	=> @"0627	<= \*	<IN>;
+
+% Escaped BiDi/Joining Marks
+<IN>	"""_"	=> @"200D ;			% ZERO WIDTH JOINER - ZWJ
+<IN>	"""="	=> @"200D ;			% ZERO WIDTH JOINER - ZWJ
+<IN>	""">"	=> @"200E ;			% LEFT-TO-RIGHT MARK
+<IN>	"""<"	=> @"200F ;			% RIGHT-TO-LEFT MARK
+
+% Punctuation marks
+<OUT>	"<<"	=> @"00AB ;			% LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+<OUT>	">>"	=> @"00BB ;			% RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+% TODO: use something smarter for above
+<OUT>	"---"	=> @"2014 ;			% EM DASH
+<OUT>	"--"	=> @"2013 ;			% EN DASH
+<OUT>	"-"	=> @"200C ;			% ZERO WIDTH NON-JOINER - ZWNJ
+
+% TODO: a`  generates two alefs
+
+% Mirroring
+<OUT>	"<"	=> ">" ;
+<OUT>	">"	=> "<" ;
+
+<IN>	.`='"-"	=>	<=	\1"-"\2\3"-";		% DASH
+<IN>	`='"-"	=>	<=	"-"\1\2"-";		% DASH
+<OUT>	`='"-"	=>	"-"; % @"2010;			% DASH
+
+<IN>	"___"	=>	<= \*	<OUT>;			% ZWNJ TATWEEL TATWEEL TATWEEL ZWNJ
+<OUT>	"___"	=> @"200C@"0640@"0640@"0640@"200C;	% ZWNJ TATWEEL TATWEEL TATWEEL ZWNJ
+<IN>	"__"	=>	<= "__";			% ZWNJ TATWEEL TATWEEL ZWNJ
+<OUT>	"__"	=> @"200C@"0640@"0640@"200C;		% ZWNJ TATWEEL TATWEEL ZWNJ
+<IN>	"_"	=> @"0640;				% ARABIC TATWEEL
+<IN>	"""|"	=> @"0640;				% ARABIC TATWEEL
+
+<IN>	.`='"_"	=>	<=	\1"-"\2\3"-";		% LOW LINE
+<IN>	`='"_"	=>	<=	"-"\1\2"-";		% LOW LINE
+<OUT>	`='"_"	=>	@"005F;				% LOW LINE
+
+<OUT>	","	=> @"060C ;			% ARABIC COMMA
+<OUT>	";"	=> @"061B ;			% ARABIC SEMICOLON
+<OUT>	"?"	=> @"061F ;			% ARABIC QUESTION MARK
+
+
+% Digits and math symbols
+<OUT>	`0'-`9'		=>		<= \*	<NUM>;	% Go in to NUM state
+<NUM>	`0'-`9'		=> #(\1+@"06F0-@"0030);		% EXTENDED ARABIC-INDIC NUMS
+<NUM>	"."(`0'-`9')	=> @"066B	<= \(*+1);	% ARABIC DECIMAL SEPARATOR
+<NUM>	"'"(`0'-`9')	=> @"066C	<= \(*+1);	% ARABIC THOUSANDS SEPARATOR
+<NUM>	.		=>		<= \*	<OUT>;	% Get out of NUM state
+<OUT>	"%"		=> @"066A;			% ARABIC PERCENT SIGN
+
+
+% Semi-common consonants
+<IN>	"th" "th"	=> @"062B @"F651 ;	<IN>	"th"	=> @"062B ;		% ARABIC LETTER THEH
+<IN>	"ch" "ch"	=> @"0686 @"F651 ;	<IN>	"ch"	=> @"0686 ;		% ARABIC LETTER TCHEH
+<IN>	"kh" "kh"	=> @"062E @"F651 ;	<IN>	"kh"	=> @"062E ;		% ARABIC LETTER KHAH
+<IN>	"Th" "Th"	=> @"0630 @"F651 ;	<IN>	"Th"	=> @"0630 ;		% ARABIC LETTER THAL
+<IN>	"zh" "zh"	=> @"0698 @"F651 ;	<IN>	"zh"	=> @"0698 ;		% ARABIC LETTER JEH
+<IN>	"sh" "sh"	=> @"0634 @"F651 ;	<IN>	"sh"	=> @"0634 ;		% ARABIC LETTER SHEEN
+<IN>	"gh" "gh"	=> @"0642 @"F651 ;	<IN>	"gh"	=> @"0642 ;		% ARABIC LETTER QAF
+% Shortcuts
+<IN>	"dh" "dh"	=> @"0630 @"F651 ;	<IN>	"dh"	=> @"0630 ;		% ARABIC LETTER THAL
+<IN>	"c" "c"	=> @"062B @"F651 ;	<IN>	"c"	=> @"062B ;		% ARABIC LETTER THEH
+<IN>	"x"	=> @"062E @"0648 ;		% KHAH WAW
+
+% Common consonants
+<IN>	"b" "b"	=> @"0628 @"F651 ;	<IN>	"b"	=> @"0628 ;		% ARABIC LETTER BEH
+<IN>	"p" "p"	=> @"067E @"F651 ;	<IN>	"p"	=> @"067E ;		% ARABIC LETTER PEH
+<IN>	"t" "t"	=> @"062A @"F651 ;	<IN>	"t"	=> @"062A ;		% ARABIC LETTER TEH
+<IN>	"j" "j"	=> @"062C @"F651 ;	<IN>	"j"	=> @"062C ;		% ARABIC LETTER JEEM
+<IN>	"d" "d"	=> @"062F @"F651 ;	<IN>	"d"	=> @"062F ;		% ARABIC LETTER DAL
+<IN>	"r" "r"	=> @"0631 @"F651 ;	<IN>	"r"	=> @"0631 ;		% ARABIC LETTER REH
+<IN>	"z" "z"	=> @"0632 @"F651 ;	<IN>	"z"	=> @"0632 ;		% ARABIC LETTER ZAIN
+<IN>	"s" "s"	=> @"0633 @"F651 ;	<IN>	"s"	=> @"0633 ;		% ARABIC LETTER SEEN
+<IN>	"f" "f"	=> @"0641 @"F651 ;	<IN>	"f"	=> @"0641 ;		% ARABIC LETTER FEH
+<IN>	"k" "k"	=> @"06A9 @"F651 ;	<IN>	"k"	=> @"06A9 ;		% ARABIC LETTER KEHEH
+<IN>	"g" "g"	=> @"06AF @"F651 ;	<IN>	"g"	=> @"06AF ;		% ARABIC LETTER GAF
+<IN>	"l" "l"	=> @"0644 @"F651 ;	<IN>	"l"	=> @"0644 ;		% ARABIC LETTER LAM
+<IN>	"m" "m"	=> @"0645 @"F651 ;	<IN>	"m"	=> @"0645 ;		% ARABIC LETTER MEEM
+<IN>	"n" "n"	=> @"0646 @"F651 ;	<IN>	"n"	=> @"0646 ;		% ARABIC LETTER NOON
+
+% Other consonants
+<IN>	"``" "``"	=> @"0621 @"F651 ;	<IN>	"``"	=> @"0621 ;		% ARABIC LETTER HAMZA
+<IN>	"H" "H"	=> @"062D @"F651 ;	<IN>	"H"	=> @"062D ;		% ARABIC LETTER HAH
+<IN>	"S" "S"	=> @"0635 @"F651 ;	<IN>	"S"	=> @"0635 ;		% ARABIC LETTER SAD
+<IN>	"D" "D"	=> @"0636 @"F651 ;	<IN>	"D"	=> @"0636 ;		% ARABIC LETTER DAD
+<IN>	"T" "T"	=> @"0637 @"F651 ;	<IN>	"T"	=> @"0637 ;		% ARABIC LETTER TAH
+<IN>	"Z" "Z"	=> @"0638 @"F651 ;	<IN>	"Z"	=> @"0638 ;		% ARABIC LETTER ZAH
+<IN>	"'" "'"	=> @"0639 @"F651 ;	<IN>	"'"	=> @"0639 ;		% ARABIC LETTER AIN
+<IN>	"q" "q"	=> @"063A @"F651 ;	<IN>	"q"	=> @"063A ;		% ARABIC LETTER GHAIN
+<IN>	"h" "h"	=> @"0647 @"F651 ;	<IN>	"h"	=> @"0647 ;		% ARABIC LETTER HEH
+
+% Arabic letters
+<IN>	"K" "K"	=> @"0643 @"F651 ;	<IN>	"K"	=> @"0643 ;		% ARABIC LETTER KAF
+<IN>	"""h" """h"	=> @"0629 @"F651 ;	<IN>	"""h"	=> @"0629 ;		% ARABIC LETTER TEH MARBUTA
+<IN>	"Y" "Y"	=> @"064A @"F651 ;	<IN>	"Y"	=> @"064A ;		% ARABIC LETTER YEH
+<IN>	"I" "I"	=> @"0649 @"F651 ;	<IN>	"I"	=> @"0649 ;		% ARABIC LETTER ALEF MAKSURA
+
+% Consonant vowels!!!
+<IN>	`v' `v'	=> @"0648 @"F651 ;	<IN>	`v'	=> @"0648 ;		% ARABIC LETTER WAW
+<IN>	`w' `w'	=> @"0648 @"F651 ;	<IN>	`w'	=> @"0648 ;		% ARABIC LETTER WAW
+<IN>	`y' `y'	=> @"06CC @"F651 ;	<IN>	`y'	=> @"06CC ;		% ARABIC LETTER FARSI YEH
+
+% Vowels
+<IN>	"A"(`A'|`a')	=> @"0622 ;	% ARABIC LETTER ALEF WITH MADDA ABOVE
+<IN>	"aa"	=> @"0627 ;		% ARABIC LETTER ALEF
+<IN>	"oo"	=> @"0648 ;		% ARABIC LETTER WAW
+<IN>	"eo"	=> @"0648 ;		% ARABIC LETTER WAW
+<IN>	"u"	=> @"0648 ;		% ARABIC LETTER WAW
+<IN>	"ee"	=> @"06CC ;		% ARABIC LETTER FARSI YEH
+<IN>	"ea"	=> @"06CC ;		% ARABIC LETTER FARSI YEH
+<IN>	"ae"	=> @"06CC ;		% ARABIC LETTER FARSI YEH
+<IN>	"iy"	=> @"06CC ;		% ARABIC LETTER FARSI YEH
+<IN>	"i"	=> @"06CC ;		% ARABIC LETTER FARSI YEH
+<IN>	"""A"	=> @"0671 ;		% ARABIC LETTER ALEF WASLA
+
+
+% Diacritics
+<IN>	"aN"	=> @"0627 @"064B ;		% ALEF FATHATAN
+<IN>	"AN"	=> @"064B ;		% ARABIC FATHATAN
+<IN>	"EN"	=> @"064D ;		% ARABIC KASRATAN
+<IN>	"ON"	=> @"064C ;		% ARABIC DAMMATAN
+<IN>	"A"	=> @"064E ;		% ARABIC FATHA
+<IN>	"E"	=> @"0650 ;		% ARABIC KASRA
+<IN>	"O"	=> @"064F ;		% ARABIC DAMMA
+<IN>	""""	=> @"0651 ;		% ARABIC SHADDA
+<IN>	"^"	=> @"0652 ;		% ARABIC SUKUN
+<IN>	"@"	=> @"0653 ;		% ARABIC MADDAH ABOVE
+<IN>	"`"	=> @"0654 ;		% ARABIC HAMZA ABOVE
+<IN>	"`"""	=> @"0655 ;		% ARABIC HAMZA BELOW
+<IN>	"|"	=> @"0670 ;		% ARABIC LETTER SUPERSCRIPT ALEF
+% Help HAMZA ABOVE and HAMZA BELOW
+<IN>	(`a'|`e'|`o')"`"	=>	<= \1\*;
+<IN>	(`a'|`e'|`o')"`"""	=>	<= \1\*;
+
+
+% Contextual analysis
+<IN>	"e"{L}	=>			<= \$;
+<IN>	"e"	=> @"0647;
+<IN>	"E"{L}	=> @"0650		<= \$;
+<IN>	"E"	=> @"0650 @"0647;
+<IN>	"o"{L}	=>			<= \$;
+<IN>	"o"	=> @"0648;
+<IN>	"O"{L}	=> @"0647		<= \$;
+<IN>	"O"	=> @"0647 @"0648;
+<IN>	"a"	=>;
+<IN>	"A"	=> @"064E;
+
+
+% Handle neutral character
+<IN>	`=' `='	=>			<= \$	<OUT>;
+<IN>	`='	=> ;
+<OUT>	`=' `='	=> `=';
+
+% Other characters
+<IN>	{L}	=> @"FFFD "\errmessage{Invalid char in faanoos input: \*}"; 		% Not a character mark
+<OUT>	{L}	=>			<= \*	<IN>;	% Go to IN state
+<IN>	.	=>			<= \*	<OUT>;	% Go to OUT state
+<OUT>	@"00-@"7F	=> \*;				% We are ASCII, map to themselves
+<OUT>	.	=>			<= \*	<pop:>;	% Fall back to default process
+
+% Handle other characters
+@"00-@"7F	=>			<= \*	<push:OUT>;	% Go to OUT state on ASCII input
+% Treat as UTF-8 if possible
+%
+% by Behdad Esfahbod, 2002
+% Part of faanoos Transcription Schema for Persian Text
+%
+% This file is not copyrighted -- public domain
+%
+
+
+% Handle single octet characters
+@"00-@"7F
+	=> \1;
+
+% Handle two octet characters
+(@"C2-@"DF)(@"80-@"BF)
+	=> #(((\1-@"C0)*@"40) + (\2-@"80));
+
+% Handle three octet characters
+(@"E0-@"EF)(@"80-@"BF)<2,2>
+	=> #(((\1-@"E0)*@"1000) + ((\2-@"80)*@"40) + (\3-@"80));
+
+% Handle four octet characters
+% Generate surrogate pairs while Omega is 16bit
+% It has bad side-effects, so should be changed as soon as Omega becomes 32bit
+(@"F0-@"F7)(@"80-@"BF)<3,3>
+	=> #(((\1-@"F0)*@"100) + ((\2-@"80)*@"4) + ((\3-@"80)div:@"10) - @"40 + @"D800)
+	   #((((\3-@"80)mod:@"10)*@"40) + (\4-@"80) + @"DC00);
+
+% Others pass through
+(@"0100-@"FFFC)
+	=> \*;
+
+.	=> @"FFFD "\errmessage{Malformed UTF-8 sequence in faanoos input: \*}";
+
+
+%
+% End of file

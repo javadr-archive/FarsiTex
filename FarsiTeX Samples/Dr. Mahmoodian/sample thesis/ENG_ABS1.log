@@ -1,0 +1,13 @@
+This is e-TeX, Version 3.141592-2.2 (MiKTeX 2.4) (preloaded format=farsitex 2006.2.22)  24 JUN 2006 17:07
+entering extended mode
+**&farsitex ENG_ABS1
+(ENG_ABS1.tex
+LaTeX Version 2.09 <25 March 1992>
+LaTeX error.  See LaTeX manual for explanation.
+              Type  H <return>  for immediate help.
+! Environment englishabstract undefined.
+\@latexerr ...for immediate help.}\errmessage {#1}
+                                                  
+l.4 \begin{englishabstract}
+                           
+? 

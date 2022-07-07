@@ -1,0 +1,73 @@
+==============================================================================
+LEGAL.TXT  (FarsiTeX Distribution)
+==============================================================================
+
+                           FarsiTeX Copyright,
+                 Warranty and Distribution Restrictions
+
+
+COPYRIGHT
+=========
+
+FarsiTeX is Copyright 1996--2001 Dr Mohammad Ghodsi and
+the FarsiTeX Project Team.
+
+Any individual files is Copyright their respective author
+which is listed at the file header.
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program, in a file named "copying.txt"; if not,
+write to the FarsiTeX Project Team, Computer Engineering Department,
+Sharif University of Technology, PO Box 11365-9517, Tehran, IRAN.
+
+
+PEOPLE
+======
+
+This project has been supported by:
+
+  - Vice Minister on Education, Ministry of Culture and Higher Education,
+  - Vice Chancellor on Research, Sharif University of Technology,
+  - Iran High Council of Informatics,
+  - Data Processing Deputy, Statistical Center of Iran, and
+  - Computing Center, Sharif University of Technology.
+
+The FarsiTeX Project Team are currently:
+
+   Mohammad Ghodsi        (Project Director)
+   Roozbeh Pournader      (Technical Manager)
+   Mehrdad Sabetzadeh
+   Shiva Nejati
+   Hadi Karimi
+   Behdad Esfahbod
+   Mehran Mehr
+   Mohammad Mahdian
+
+The following people had been involved in early development
+of FarsiTeX:
+
+   Hassan Abolhassani	  (designed the first working farsi.sty)
+   Mehran Sharghi	  (designer of SF fonts)
+   Kiarash Bazargan	  (designed and implemented FTEXED)
+   Okhtay Ilghami         (helped with the Windows editor)
+   Sasan Dashtinezhad     (worked as the web page administrator)
+
+Other individuals who have contributed to FarsiTeX are:
+
+   Parvaneh Asghari	  (early designer of Traffic fonts)
+   Jafar Haghollahi	  (first work to design Persian fonts)
+   Jamshid Yousefi	  (early designer of Titr fonts.)
+
+--- Mohammad Ghodsi (ghodsi@sharif.ac.ir) ------------------------------
+--- Roozbeh Pournader (roozbeh@sharif.edu) -----------------------------
+--- Copyright 1996--2001, FarsiTeX Project Team. All rights reserved ---

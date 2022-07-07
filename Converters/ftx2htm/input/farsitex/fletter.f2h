@@ -1,0 +1,34 @@
+>\def\date#1{\def\valdate{#1}}
+>\def\valdate{}
+>%
+>\def\toaddress{}
+>%%%%%%
+>\def\name#1{\def\fromname{#1}}
+>\def\fromname{}
+>%
+>\def\signature#1{\def\fromsig{#1}}
+>\def\fromsig{}
+>%
+>\def\address#1{\def\fromaddress{#1}}%\long
+>\def\fromaddress{}
+>%
+>\def\location#1{\def\fromlocation{#1}}
+>\def\fromlocation{}
+>%
+>\def\telephone#1{\def\telephonenum{#1}}
+>\def\telephonenum{}
+>%
+>\def\cc#1{\par {\rm ¤ø÷øª–:\\ } #1 \par}
+>%
+>\def\encl#1{\par {\rm •þø¨–:\\ } #1 \par}
+>%
+>\def\endletter{}
+>\def\letter#1{\def\toname{#1}}%\long
+>\def\toname{}
+>%
+>\def\opening#1{
+>{\fromaddress \\ \valdate \par}
+>\toname \\ \toaddress \par
+>#1 \par}
+>%
+>\def\closing#1{\par #1\\ \fromsig \par}%\long

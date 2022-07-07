@@ -1,0 +1,86 @@
+This is e-TeX, Version 3.141592-2.2 (MiKTeX 2.4) (preloaded format=farsitex 2006.6.24)  24 JUN 2006 18:30
+entering extended mode
+**&farsitex SLIDE
+(SLIDE.tex
+LaTeX Version 2.09 <25 March 1992>
+(C:\Program Files\MiKTeX\tex\latex209\base\article.sty
+Standard Document Style `article' <14 Jan 92>.
+(C:\Program Files\MiKTeX\tex\latex209\base\art12.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+(C:\Program Files\MiKTeX\tex\farsitex\base\farsi.sty
+Farsi style, R. Pournader and H. Abolhassani, The FarsiTeX Project Group.
+Version 0.51beta, 29 December 2000
+(C:\Program Files\MiKTeX\tex\farsitex\base\ftoday.sty
+\FT@i=\count87
+\FT@y=\count88
+\FT@m=\count89
+\FT@d=\count90
+\FT@latini=\count91
+\FT@farsii=\count92
+\FT@latinii=\count93
+\FT@farsiii=\count94
+\FT@latiniii=\count95
+\FT@farsiiii=\count96
+\FT@latiniv=\count97
+\FT@farsiiv=\count98
+\FT@latinv=\count99
+\FT@farsiv=\count100
+\FT@latinvi=\count101
+\FT@farsivi=\count102
+\FT@latinvii=\count103
+\FT@farsivii=\count104
+\FT@latinviii=\count105
+\FT@farsiviii=\count106
+\FT@latinix=\count107
+\FT@farsiix=\count108
+\FT@latinx=\count109
+\FT@farsix=\count110
+\FT@latinxi=\count111
+\FT@farsixi=\count112
+\FT@latinxii=\count113
+\FT@farsixii=\count114
+\FT@farsixiii=\count115
+\FT@temp=\count116
+\FT@temptwo=\count117
+\FT@tempthree=\count118
+\FT@yModHundred=\count119
+\FT@thirtytwo=\count120
+\FT@dn=\count121
+\FT@sn=\count122
+\FT@mminusone=\count123
+))
+(C:\Program Files\MiKTeX\tex\farsitex\base\fancybox.sty
+Style option: `fancybox' v1.0 <93/02/10> (tvz)
+\@fancybox=\box25
+\@tempdimc=\dimen100
+\shadowsize=\dimen101
+\@Sbox=\box26
+\do@VerbBox=\toks11
+\the@fancyput=\toks12
+\this@fancyput=\toks13
+\EndVerbatimTokens=\toks14
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (C:\Program Files\MiKTeX\tex\farsitex\base\ffancyhe.sty
+\headrulewidth=\dimen102
+\footrulewidth=\dimen103
+\plainheadrulewidth=\dimen104
+\plainfootrulewidth=\dimen105
+\headwidth=\dimen106
+) (SLIDE.aux)
+! Undefined control sequence.
+l.7 \slide
+          {¢ê¢˘®âë°âµâë§˚âë}
+? 
+! Undefined control sequence.
+l.8 \sub
+        {¢®âµâÇìâÄâ¿˝}
+? 

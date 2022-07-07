@@ -1,0 +1,50 @@
+{ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BiLUgfxaSR9DDKYzU0gTY1LWcDumLiS6RsYavBMCNtwGA8QQQARgBIOHmmwIoAzgAUNu_pfQCYO2C74PUD6oBEWZhc3Rmb29kX3NmX3BhZ2VzsgEPc291cmNlZm9yZ2UubmV0ugEJNzI4eDkwX2pzyAEB2gEoaHR0cDovL3NvdXJjZWZvcmdlLm5ldC9wcm9qZWN0cy9mYXJzaXRleIACAakCqwijkF54wD6oAwHoA-YD6APbBegDBegD4AX1AwAEAAA&amp;num=1&amp;adurl=http://www.heliosoft.co.uk&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.heliosoft.co.uk"; 
+google_ad.line1 = "2D \x26amp; 3D Visualization"; 
+google_ad.line2 = "of 2D/3D seismic data and"; 
+google_ad.line3 = "horizon surface auto-tracking."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BrlaifxaSR9DDKYzU0gTY1LWcDsy8ow6ci9HKAcCNtwHgzS8QAhgCIOHmmwIoAzgAUPKiqQJg7YLvg9QPoAH04fT-A6oBEWZhc3Rmb29kX3NmX3BhZ2VzsgEPc291cmNlZm9yZ2UubmV0ugEJNzI4eDkwX2pzyAEB2gEoaHR0cDovL3NvdXJjZWZvcmdlLm5ldC9wcm9qZWN0cy9mYXJzaXRleIACAagDAegD5gPoA9sF6AMF6APgBfUDAAQAAA&amp;num=2&amp;adurl=http://www.all-wall.com/acatalog/A000_Portable_Sprayers_9.php&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.all-wall.com/Texture_Sprayers"; 
+google_ad.line1 = "drywall texture sprayer"; 
+google_ad.line2 = "Portable Kodiak Graco MarkV EZ-TEX"; 
+google_ad.line3 = "Buy Online - Free Shipping"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=B6rGcfxaSR9DDKYzU0gTY1LWcDor0tyqu1fiBBMCNtwGQThADGAMg4eabAigDOABQhIGtx_3_____AWDtgu-D1A-qARFmYXN0Zm9vZF9zZl9wYWdlc7IBD3NvdXJjZWZvcmdlLm5ldLoBCTcyOHg5MF9qc8gBAdoBKGh0dHA6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvZmFyc2l0ZXioAwHoA-YD6APbBegDBegD4AX1AwAEAAA&amp;num=3&amp;adurl=http://fonts-4-free.com&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "fonts-4-free.com"; 
+google_ad.line1 = "Download Fonts for Free"; 
+google_ad.line2 = "1000\x26#39;s of Free downloadable Fonts"; 
+google_ad.line3 = "Easy Downloads today."; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://services.google.com/feedback/abg?url=http://sourceforge.net/projects/farsitex&amp;hl=en&amp;client=ca-ostg_js&amp;adU=www.heliosoft.co.uk&amp;adT=2D+%26amp%3B+3D+Visualization&amp;adU=www.all-wall.com/Texture_Sprayers&amp;adT=drywall+texture+sprayer&amp;adU=fonts-4-free.com&amp;adT=Download+Fonts+for+Free&amp;done=1"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}

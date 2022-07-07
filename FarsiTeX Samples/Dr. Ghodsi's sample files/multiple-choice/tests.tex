@@ -1,0 +1,91 @@
+\documentstyle[farsi,fancybox]{article}
+
+\input{preample}
+\begin{document}
+
+
+\begin{mybox}
+÷‰‘ô ø ÷‰‘ô ¡‰‘÷‰¢ğ‰ü: \DOTS ª‰Ş‰‘¤ùı ¢÷‰Ç›‰ş‰ü :\DOTS
+\end{mybox}
+
+\begin{mlist}
+
+\item  î‰Àôş‰× ¥ ¢¢ù¨‰‘¡‰µ‰‘¤û‰‘ı ¥ş‰Â \underline{\beginR ÷‰Ş‰ü—‰÷‰À} 
+“‰Âı  õ‰Â—‰°¨‰‘¥ı õ‰±‰µ‰€‰ü “‰Â  õ‰Ö‰‘ş‰Æ‰‚ı î‰‘¤ õ‰¤¢ ¨‰µ‰Ô‰‘¢ù ì‰Â¤ ğ‰ƒ‰Â¢?
+\fourj
+{¢¤¡‰´ \InE{}AVL\EnE{}}
+{¢¤¡‰´ ì‰Âõ‰Ã¨‰ƒ‰‘ù}
+{›‰Àøñ •‰Âî‰€‰Àğ‰ü } %@@@
+{¬‰Ó øó‰ş‰´ }
+
+\item õ‰Â—‰°¨‰‘¥ı 5 ä‰€‰Ê‰Â Ÿ‰Àì‰Û ‰€‰À—‰‘ õ‰Ö‰‘ş‰Æ‰‚ „¥ô ¢¤¢? “‰ú‰µ‰Âş‰ß Ÿ‰À •‰‘ş‰ƒ‰ß 
+î‰Àô ¨‰´?
+\twoj
+{6 õ‰Ö‰‘ş‰Æ‰‚ „¥ô ¨‰´.}
+{7 õ‰Ö‰‘ş‰Æ‰‚ „¥ô ¨‰´.}
+{6 õ‰Ö‰‘ş‰Æ‰‚ „¥ô ø î‰‘ê‰ü ¨‰´.}
+{7 õ‰Ö‰‘ş‰Æ‰‚ „¥ô ø î‰‘ê‰ü ¨‰´.} %@@
+
+\item
+ó‰Ú‰¤ş‰µ‰İ ¥ş‰Â “‰Âı õ‰Â—‰°¨‰‘¥ı ¤ş‰‚ı  \InE{}$n$\EnE{}—‰‘ş‰ü \InE{}A\EnE{}  Ÿ‰‘øı ä‰À¢ 
+è‰ƒ‰Â—‰Ø‰Â¤ı 1 —‰‘ \InE{}$n$\EnE{} ¢¢ù ª‰Àù ¨‰´:
+
+\english
+\begin{hereproc}
+\vbox{\baselineskip=0.9\baselineskip
+\begin{BVerbatim}
+ for i = 1 to n do
+    while A[i] <> i do  Swap(A[i], A[A[i]])
+\end{BVerbatim}}
+\end{hereproc}
+\farsi
+
+
+\onej
+{ş‰ß ó‰Ú‰¤ş‰µ‰İ û‰Ş‰¤ù ¢¤¨‰´  ø ¥ õ‰Â—‰±‰‚ı \InE{}$O(n)$\EnE{} ¨‰´ } %%%
+{ş‰ß ó‰Ú‰¤ş‰µ‰İ û‰Ş‰¤ù ¢¤¨‰´ ¨‰´ ø ¥ õ‰Â—‰±‰‚ı \InE{}$O(n\log n)$\EnE{} ¨‰´}
+{ş‰ß ó‰Ú‰¤ş‰µ‰İ û‰Ş‰¤ù ¢¤¨‰´ ¨‰´ ø ¥ õ‰Â—‰±‰‚ı \InE{}$O(n^2)$\EnE{} ¨‰´}
+{ş‰ß ó‰Ú‰¤ş‰µ‰İ  û‰Ş‰ƒ‰È‰‚ ¢¤¨‰´ ÷‰ƒ‰Æ‰´.}
+
+
+\newpage
+\item ó‰Ú‰¤ş‰µ‰İ ¥ş‰Â ‰‚î‰‘¤ õ‰üî‰€‰À?
+
+\english
+\mathenumber
+\vbox
+{\begin{hereproc}
+\centering
+\bf
+\begin{minipage}{8cm}
+\begin{tabbing}
+\\[-1cm]
+for \=$i:= 1$ to $m$  do $c[i,0] := 0;$ \\
+for $j:= 1$ to $m$  do $c[0,j] := 0;$ \\
+for $i:=1$ to $m$ do \\
+    \>for \= $j:=1$ to $n$ do  \\
+    \>    \> if \= $x_i=y_j$ then\ begin \\
+    \>    \>    \> $c[i,j]:=c[i-1,j-1] +1;$ \\
+    \>    \>    \> $b[i,j] := \mbox{`}\nwarrow\mbox{'}$ \\
+    \>    \> end \\
+    \>    \> else \= if  $c[i-1,j] \ge c[i,j-1]$ \\
+    \>    \>      \> then\=\ begin\\
+    \>    \>      \>     \> $c[i,j] := c[i-1,j];$ \\ 
+    \>    \>      \>     \> $b[i,j] := \mbox{`}\uparrow\mbox{'}$ \\
+    \>    \>      \> end  \\
+    \>    \>      \> else\=\ begin \\
+    \>    \>      \>     \> $c[i,j] := c[i,j-1];$ \\ 
+    \>    \>      \>     \> $b[i,j] := \mbox{`}\leftarrow\mbox{'}$ \\
+    \>    \>      \> end 
+\end{tabbing}
+\end{minipage}
+%\end{center}
+\end{hereproc}}
+\mathfnumber\farsi
+
+\fourj
+{û‰ƒ‰»‰ü}{÷‰Ş‰ü¢ø÷‰İ}{ŠŠŠ}{û‰ƒ‰»‰Ø‰Àô}
+\end{mlist}
+%ŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠ%Š
+\end{document}
+1

@@ -1,0 +1,24 @@
+input: 2;
+output: 2;
+
+expressions:
+
+% Farsi Yeh
+@"E0CC	=> @"E049;
+@"E1CC	=> @"E14A;
+@"E2CC	=> @"E24A;
+@"E3CC	=> @"E349;
+
+% EM Dash
+@"2014	=> @"2013;
+
+% << and >>
+@"00AB	=> "{\scriptsize ((}";
+@"00BB	=> "{\scriptsize ))}";
+
+% Persian Digits
+(@"06F0-@"06FF) => #(\1-@"06F0+@"0660) ;
+
+% Persian Decimal and Thousands Separator
+@"066B	=> "{\fanomlgc\lower.5ex\hbox{/}}";
+@"066C	=> "{\fanomlgc'}";

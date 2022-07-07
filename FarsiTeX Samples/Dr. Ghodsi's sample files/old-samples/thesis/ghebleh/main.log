@@ -1,0 +1,110 @@
+This is e-TeX, Version 3.14159-2.0 (Web2C 7.2) (format=lplain 1998.12.8)  17 JUL 2000 13:43
+entering extended mode
+**&farsitex MAIN.TEX
+(MAIN.TEX
+LaTeX Version 2.09 <25 March 1992>
+(MaThesis.sty
+
+Document Style `MaThesis' (Math Thesis)
+By Mohammad Ghebleh, 12 June 1999
+
+(c:\tex\ftex/texinput/latex209/rep10.sty)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+
+(c:\tex\ftex/texinput/latex209/titlepag.sty
+Document Style Option `titlepage' -- Released 16 June 1991.
+)
+\c@figure=\count86
+\c@table=\count87
+\c@preathm=\count88
+\c@pthm=\count89
+\c@preconjj=\count90
+ (c:\tex\ftex/texinput/farsitex/ftoday.sty
+\FT@i=\count91
+\FT@y=\count92
+\FT@m=\count93
+\FT@d=\count94
+\FT@latini=\count95
+\FT@farsii=\count96
+\FT@latinii=\count97
+\FT@farsiii=\count98
+\FT@latiniii=\count99
+\FT@farsiiii=\count100
+\FT@latiniv=\count101
+\FT@farsiiv=\count102
+\FT@latinv=\count103
+\FT@farsiv=\count104
+\FT@latinvi=\count105
+\FT@farsivi=\count106
+\FT@latinvii=\count107
+\FT@farsivii=\count108
+\FT@latinviii=\count109
+\FT@farsiviii=\count110
+\FT@latinix=\count111
+\FT@farsiix=\count112
+\FT@latinx=\count113
+\FT@farsix=\count114
+\FT@latinxi=\count115
+\FT@farsixi=\count116
+\FT@latinxii=\count117
+\FT@farsixii=\count118
+\FT@farsixiii=\count119
+\FT@temp=\count120
+\FT@temptwo=\count121
+\FT@yModHundred=\count122
+\FT@thirtytwo=\count123
+\FT@dn=\count124
+\FT@sn=\count125
+\FT@mminusone=\count126
+))
+(c:\tex\ftex/texinput/latex209/makeidx.sty
+Document style option `makeidx' - released 21 Oct 91
+) (c:\tex\ftex/texinput/latex209/bezier.sty
+\c@@sc=\count127
+\c@@scp=\count128
+\c@@t=\count129
+\@x=\skip41
+\@xa=\skip42
+\@xb=\skip43
+\@y=\skip44
+\@ya=\skip45
+\@yb=\skip46
+\@pt=\box25
+)
+! I can't find file `amssym'.
+l.4 \input amssym
+                 
+Please type another input file name: 
+! I can't find file `'.
+l.4 \input amssym
+                 
+Please type another input file name: 
+! I can't find file `'.
+l.4 \input amssym
+                 
+Please type another input file name: ^^X
+! I can't find file `^^X'.
+l.4 \input amssym
+                 
+Please type another input file name: 
+! Emergency stop.
+l.4 \input amssym
+                 
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 357 strings out of 11689
+ 3405 string characters out of 85628
+ 33594 words of memory out of 263001
+ 2514 multiletter control sequences out of 10000+0
+ 20855 words of font info for 87 fonts, out of 200000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 13i,0n,15p,161b,16s stack positions out of 300i,100n,500p,30000b,4000s
+No pages of output.

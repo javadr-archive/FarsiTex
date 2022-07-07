@@ -1,0 +1,91 @@
+
+\english 
+\addtolength{\baselineskip}{-4mm}
+\begin{verbatim}
+{$A+,B-,D+,E+,F-,G-,I+,L+,N+,O-,P-,Q-,R-,S+,T-,V+,X+,Y+}
+{$M 16384,0,655360}
+
+program AllPairsShortestPath;
+
+  uses Crt, Geodesic, Graph;
+
+  type
+    TArr = array[1..MaxP] of real;
+
+  var
+    Path: TPath;
+    lsource: Byte;
+    G: array[1..MaxP] of ^TArr;
+    D: array[1..MaxP, 1..MaxP] of Byte;
+    i, j, k: Integer;
+    Pt: array[1..MaxP] of Byte;
+    PtLen: Byte;
+
+  procedure FindGPath(i, j: Byte);
+  begin
+    if D[i, j] = 0 then
+    begin
+      Inc(PtLen);
+      Pt[PtLen] := i;
+      Inc(PtLen);
+      Pt[PtLen] := j;
+      Exit;
+    end;
+    FindGPath(i, D[i, j]);
+    Dec(PtLen);
+    FindGPath(D[i, j], j);
+  end;
+
+begin
+  Input(ParamStr(1));
+  lsource := source;
+  for i := 1 to NumP do
+    New(G[i]);
+  for source := 1 to NumP do
+  begin
+    FindShortestPath;
+    for i := 1 to NumP do
+      G[source]^[i] := MinLen[i];
+    DisposeTree;
+    WriteLn(source);
+  end;
+
+  { Floyd-Warshall Algorithm }
+  fillChar(D, sizeof(D), 0);
+  for k := 1 to NumP do
+    for i := 1 to NumP do
+      for j := 1 to NumP do
+      begin
+        if G[i]^[j] > G[i]^[k] + G[k]^[j] then
+        begin
+          G[i]^[j] := G[i]^[k] + G[k]^[j];
+          D[i, j] := k;
+        end;
+      end;
+
+  Show;
+  PtLen := 0;
+  FindGPath(lsource, destination);
+  for i := 1 to PtLen-1 do
+  begin
+    source := Pt[i];
+    FindShortestPath;
+    if MinLen[Pt[i+1]] < 1e30 then
+    begin
+      FindPath(Pt[i+1], Path);
+      SetLineStyle(SolidLn, 0, ThickWidth);
+      SetColor(LightMagenta);
+      ShowPath(Path);
+      Output(ParamStr(2), Path);
+    end;
+    DisposeTree;
+  end;
+
+  for i := 1 to NumP do
+    Dispose(G[i]);
+  ReadKey;
+end.
+
+\end{verbatim}
+\addtolength{\baselineskip}{4mm}
+\farsi 

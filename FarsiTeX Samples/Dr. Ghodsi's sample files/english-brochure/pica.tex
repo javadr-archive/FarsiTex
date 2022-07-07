@@ -1,0 +1,26 @@
+\newbox\picabox
+\newdimen\picaw
+\font\picaa=picaa at 57.816truept
+\font\picab=picab at 57.816truept
+\font\picac=picac at 57.816truept
+\font\picad=picad at 57.816truept
+\font\picae=picae at 57.816truept
+\font\picaf=picaf at 57.816truept
+\font\picag=picag at 57.816truept
+\font\picah=picah at 57.816truept
+\font\picai=picai at 57.816truept
+\font\picaj=picaj at 57.816truept
+\setbox\picabox=\vbox{\hbox{%
+\picaa\char0\char1\picab\char0\char1\picac\char0}}
+\picaw=\wd\picabox
+\setbox\picabox=\hbox{\vbox{\hsize=\picaw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picaa\char0\char1\picab\char0\char1\picac\char0}
+\hbox{\picac\char1\picad\char0\char1\picae\char0\char1}
+\hbox{\picaf\char0\char1\picag\char0\char1\picah\char0}
+\hbox{\picah\char1\picai\char0\char1\char2\picaj\char0}}}
+\ifx\parbox\undefined
+    \def\setpica{\box\picabox}
+\else
+    \def\setpica{\parbox{\wd\picabox}{\box\picabox}}
+\fi

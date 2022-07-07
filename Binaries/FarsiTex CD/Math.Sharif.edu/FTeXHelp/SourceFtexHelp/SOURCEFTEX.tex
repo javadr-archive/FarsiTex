@@ -1,0 +1,107 @@
+\documentstyle[farsi,ffancyhe,fancybox,adad]{report}
+%\input amssym
+\input{preample}
+\pagestyle{fancyplain}
+%\makeindex
+
+\title{
+\ \\ \vspace*{-8cm} 
+\tiny  “‰‚ ÷‰‘ô ø î‰‚ ¢÷‰‘ ø —‰÷‰‘¨‰´  \\[40mm]
+{\arm  a}  \\  \InE{}\vskip1cm\EnE{}
+%\titr  
+\Huge \bf ¤ù÷‰Ş‰‘ı \FTeX
+}
+\author{ {\siah ¨‰ƒ‰À õ‰¹‰À û‰‘ª‰Ş‰ü  \hspace{1cm} õ‰Æ‰ã‰¢ ş‰ã‰Ö‰“‰ü}
+\\ \\ 
+  ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó \vspace*{4cm} }
+\date{—‰‘“‰Æ‰µ‰‘ö 3831}
+%\pagestyle{empty}
+
+%\includeonly{cha3,cha4}
+
+\begin{document}
+\maketitle 
+\thispagestyle{empty}
+\input{copyrigh}
+\pagenumbering{adadi}
+%to make bold page numbering
+\makeatletter
+\def\ps@plain{\let\@mkboth\@gobbletwo
+  \let\@oddhead\empty
+  \def\@oddfoot{\reset@font\siah\hfil\thepage\hfil}%
+  \let\@evenhead\@empty
+  \let\@evenfoot\@oddfoot}
+\makeatother
+\pagestyle{plain}
+\count1=1
+\addtocounter{page}{-1}
+\tableofcontents
+\pagenumbering{farsifoo}
+\count1=2
+\pagestyle{fancyplain}
+
+
+\include{preface}
+
+\pagestyle{fancy}
+\include{cha1_ma}
+\include{keyinf}
+%\include{cha2}
+
+\include{cha3_ma}
+
+%\include{cha4}
+
+%\include{cha5}
+%\include{edman}
+\begin{thebibliography}{99}
+\english
+\bibitem{knuth:texbook}
+   Donald Knuth. {\em The \TeX{}book}. Addison-Wesley,
+   Readings, Massachusetts, 1994.
+\bibitem{lamport:latex}
+   Leslie Lamport. {\em \LaTeX: A Document
+   Preparation System}. Addison-Wesley,
+   Readings, Massachusetts, 1985.
+\bibitem{gms:companion}
+   Michel Goossens, Frank Mittelbach and Alexander Samarin. 
+   {\em The \LaTeX{} Companion}. 
+   Addison-Wesley, Readings, Massachusetts, 1994.
+\bibitem{knuth-mackay} D. E. Knuth and P. Mackay, {\em Mixing right-to-left 
+texts with left-to-right texts,} TUGboat vol.~8, 1987, No.~1.
+\farsi
+\bibitem{farsitex:paper} õ‰½‰Ş‰À ì‰À¨‰ü,
+{\iranic ¤û‰€‰Ş‰‘ı \FarsiTeX, } ¢÷‰È‰Ø‰Àù î‰‘õ‰³‰ƒ‰—‰Â ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó, ¨‰Ô‰€‰À 67. 
+%\bibitem{farsitex:paper} õ‰½‰Ş‰À ì‰À¨‰ü, Ÿ‰Æ‰ß “‰ó‰½‰Æ‰€‰ü ø õ‰ú‰Âö ª‰Âì‰ü,
+%{\iranic \FarsiTeX: ÷‰Âôê‰Ã¤ı “‰Âı Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ä‰Ü‰Ş‰ü,} õ‰¹‰Ş‰ä‰‚ õ‰Ö‰‘„– ¢øõ‰ƒ‰ß
+%î‰€‰Ô‰Â÷‰Å î‰‘õ‰³‰ƒ‰—‰Â ş‰Âö: õ‰¥©, •‰Äøû‰Ç ø î‰‘¤“‰Â¢, 02-91 “‰ú‰Ş‰ß~2731, ¢÷‰È‰Ú‰‘ù
+%ä‰Ü‰İ ø ¬‰€‰ã‰´ ş‰Âö, ¬‰Ô‰½‰‚ı~402-591.
+%\bibitem{ahasani:thesis} Ÿ‰Æ‰ß “‰ó‰½‰Æ‰€‰ü, {\iranic Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ê‰‘¤¨‰ü
+%“‰‘ \InE{}\TeX\EnE{},} ¤¨‰‘ó‰‚ı î‰‘¤ª‰€‰‘¨‰ü ¤ª‰À, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó,
+%“‰ú‰Ş‰ß 2731.
+%\bibitem{sharghi:thesis} õ‰ú‰Âö ª‰Âì‰ü, {\iranic Ï‰ÂŸ‰ü ä‰Ü‰Ş‰ü ì‰Ü‰İû‰‘ı ê‰‘¤¨‰ü,}
+%¤¨‰‘ó‰‚ı î‰‘¤ª‰€‰‘¨‰ü ¤ª‰À, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó, “‰ú‰Ş‰ß 2731.
+%\bibitem{hagh:proj} ›‰ã‰Ô‰Â Ÿ‰Õó‰ú‰ü, {\iranic Ï‰ÂŸ‰ü ì‰Ü‰Ş‰ú‰‘ı ê‰‘¤¨‰ü “‰‘ õ‰µ‰‘ê‰÷‰´,}
+%¤¨‰‘ó‰‚ı î‰‘¤ª‰€‰‘¨‰ü, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â,
+%¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó, ª‰ú‰Âş‰¤ 1731.
+%\bibitem{asghari:proj} •‰Âø÷‰‚ ¬‰ç‰Âı, {\iranic Ï‰ÂŸ‰ü ä‰Ü‰Ş‰ü ì‰Ü‰Ş‰ú‰‘ı
+%—‰Âê‰ƒ‰× “‰‘ õ‰µ‰‘ê‰÷‰´,} ¤¨‰‘ó‰‚ı î‰‘¤ª‰€‰‘¨‰ü, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â,
+%¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó, ª‰ú‰Âş‰¤ 2731.
+%\bibitem{taj:proj} „ó‰‚ —‰¹‰Â“‰‚î‰‘¤, {\iranic Ï‰ÂŸ‰ü “‰‘ \zamme •‰Æ‰´¨‰Ø‰Âş‰³‰´ ¢¤
+%õ‰½‰ƒ‰Í ê‰‘¤¨‰ü,} ¤¨‰‘ó‰‚ı î‰‘¤ª‰€‰‘¨‰ü, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â,
+%¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó, 2731.
+%\bibitem{kiarash:paper} õ‰½‰Ş‰À ì‰À¨‰ü  ø î‰ƒ‰‘¤© “‰‘¥¤ğ‰‘ö,
+%{\iranic —‰ó‰ƒ‰À ¡‰¢î‰‘¤ Ÿ‰Âøé ¡‰Í  ÷‰Æ‰µ‰ã‰Ü‰ƒ‰Õ,}
+%øó‰ƒ‰ß î‰€‰Ô‰Â÷‰Å ¨‰‘„÷‰‚ı ÷‰¹‰Ş‰ß î‰‘õ‰³‰ƒ‰—‰Â ş‰Âö,
+%¢ı 4731, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó.
+%\bibitem{yousefi:thesis} ›‰Ş‰È‰ƒ‰À ş‰¨‰Ô‰ü, {\iranic Ï‰ÂŸ‰ü ¡‰¢î‰‘¤ •‰‘¤õ‰µ‰Âû‰‘ı
+% ì‰Ü‰İû‰‘ı ê‰‘¤¨‰ü,} ¤¨‰‘ó‰‚ı î‰‘¤ª‰€‰‘¨‰ü ¤ª‰À, ¢÷‰È‰Ø‰Àùı õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â,
+%¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âş‰Ó, õ‰Â¢¢ 5731.
+\end{thebibliography}
+
+\break
+
+%\printindex
+
+\end{document}
+

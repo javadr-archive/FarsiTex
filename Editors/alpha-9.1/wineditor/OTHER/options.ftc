@@ -1,0 +1,23 @@
+#Set syntax_highlighting to false if you want Syntax Highligher
+#Engine disable, by default.
+syntax_highlighting: true
+
+#Set save_backups to no if you do not want to backup your .ftx files
+#prior to saving a newer copy.
+save_backups: yes
+
+#Text lines in FarsiTeX Editor cannot grow longer than 255 characters.
+#Because of this defect, FarsiTeX Editor has to break long line into
+#smaller ones when importing text from Windows clipboard.
+#clipboard_wrap_size lets you define the desired size for 
+#text lines that are imported from Windows clipboard.
+#clipboard_wrap_size should be larger than 30 and smaller than 254.
+clipboard_wrap_size: 80
+
+#Determines if pressing a bracket or brace symbol should also produce the
+#the pair of the symbol.
+pair_brackets_and_braces: no
+
+#Instructs the editor whether to treat Farsi dash as Farsi precision point
+#Iranian postal codes, etc. can be typed more conveniently if you turn this feature on. 
+dash_is_number_separator: yes

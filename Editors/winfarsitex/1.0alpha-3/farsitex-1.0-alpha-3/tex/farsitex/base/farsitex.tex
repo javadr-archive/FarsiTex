@@ -1,0 +1,1004 @@
+%%
+%%  This file is a part of FarsiTeX, a Persian/English typesetting system.
+%%
+%%  Copyright (C) 1996 Hassan Abolhassani
+%%  Copyright (C) 1996-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%%
+%%  FarsiTeX is free software; you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation; either version 2 of the License, or
+%%  (at your option) any later version.
+%%
+%%  FarsiTeX is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%
+%%  You should have received a copy of the GNU General Public License
+%%  along with FarsiTeX; if not, write to the Free Software
+%%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%%  USA.
+%%
+%%  Any licensing or usage questions should be directed to Roozbeh
+%%  Pournader <roozbeh@sharif.edu>.
+%%
+
+\typeout{Farsi format, Sharif University of Technology, version 0.1beta, 1996}
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input fcatcode.sty
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   LINE						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\leftline#1{\hbox to \columnwidth{\if@farsi\beginR\hss\fi#1\if@farsi\endR\else\hss\fi}}	 %   " left line macro
+\def\rightline#1{\hbox to \columnwidth{\if@farsi\beginR\else\hss\fi#1\if@farsi\hss\endR\fi}}	 %   " right line macro
+\def\centerline#1{\hbox to \columnwidth{\if@farsi\beginR\fi\hss#1\hss\if@farsi\endR\fi}} %   " center line macro
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Loading Farsi fonts.			   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% a new \@getfont named \@ftex@getfont
+%\def\@ftex@getfont#1#2#3{\@ifundefined{\string #1\string #2}{\global\expandafter
+%    \font \csname \string #1\string #2\endcsname #3\relax
+%    \@addfontinfo#2{\def#1{\csname\string #1\string #2\endcsname}}}{}#2#1}
+\def\@ftex@getfont#1#2#3{\@ifundefined{#1#2}{\global\expandafter
+    \font \csname #1#2\endcsname #3\relax
+    \expandafter\@addfontinfo\csname @#2\endcsname{\@namedef{#1}{\@nameuse{#1#2}}}}{}
+    \csname @#2\endcsname\@nameuse{#1}}
+
+% fonts for digits (argham). --Changed 26 Dec 2001, RP
+ \font\fivrgm   = sfmm0700
+ \font\sixrgm   = sfmm0840
+ \font\sevrgm   = sfmm0980
+ \font\egtrgm   = sfmm1120
+ \font\ninrgm   = sfmm1260
+ \font\tenrgm   = sfmm1400
+ \font\elvrgm   = sfmm1534
+ \font\twlrgm   = sfmm1680
+ \font\frtnrgm  = sfmm2016
+ \font\svtnrgm  = sfmm2419
+ \font\twtyrgm  = sfmm2903
+
+% They may be used just like the LaTeX \rm \bf \it \tt.
+% When in Farsi mode \rm \bf \it \tt and \sl are defined to be
+% \nazok \siah \iranic \tahrir and \khabide respectively.
+\def\nazok{\protect\pnazok}
+\def\iranic{\protect\piranic}
+\def\siah{\protect\psiah}
+\def\khabide{\protect\pkhabide}
+\def\siahir{\protect\psiahir}
+\def\siahkh{\protect\psiahkh}
+\def\tookhali{\protect\ptookhali}
+\def\sayedar{\protect\psayedar}
+\def\tahrir{\protect\ptahrir}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MATH FONTS						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newfam\fardig			  % font family 11
+\textfont\fardig=\tenrgm
+\scriptfont\fardig=\sevrgm
+\scriptscriptfont\fardig=\fivrgm
+\def\mom{\ifmmode\mathmom\else\textmom\fi}
+\chardef\textmom="2A
+\mathchardef\mathmom="0B2A
+\def\mathfnumber{
+  \mathcode`0="7B30
+  \mathcode`1="7B31
+  \mathcode`2="7B32
+  \mathcode`3="7B33
+  \mathcode`4="7B34
+  \mathcode`5="7B35
+  \mathcode`6="7B36
+  \mathcode`7="7B37
+  \mathcode`8="7B38
+  \mathcode`9="7B39
+}
+\def\mathenumber{
+  \mathcode`0="7030
+  \mathcode`1="7031
+  \mathcode`2="7032
+  \mathcode`3="7033
+  \mathcode`4="7034
+  \mathcode`5="7035
+  \mathcode`6="7036
+  \mathcode`7="7037
+  \mathcode`8="7038
+  \mathcode`9="7039
+}
+
+% Size definitions for Farsi fonts.
+% The macros \<roman number in pt>pt are called by the LaTeX
+% sizing commands (\Huge \large etc.)
+%
+\newcommand{\@advancebase}[1]{\advance\baselineskip by #1}
+\newcommand{\@multiplybase}[1]{\baselineskip=#1\baselineskip}
+\newcommand{\@increasebaseline}{\@multiplybase{1.4}}
+
+% Start of change 26 Dec 2000 --RP
+\let\oldvpt\vpt
+\def\vpt{\oldvpt%
+   \textfont\fardig=\fivrgm
+   \scriptfont\fardig=\fivrgm
+   \scriptscriptfont\fardig=\fivrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{vpt}{sfmn0700}}%
+   \def\piranic{\@ftex@getfont{piranic}{vpt}{sfms0700}}%
+   \def\psiah{\@ftex@getfont{psiah}{vpt}{sfbn0700}}%
+   \def\pkhabide{\@subfont\khabide\nazok}%
+   \def\psiahir{\@subfont\siahir\nazok}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@subfont\tookhali\nazok}%
+   \def\psayedar{\@subfont\sayedar\nazok}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldvipt\vipt
+\def\vipt{\oldvipt%
+   \textfont\fardig=\sixrgm
+   \scriptfont\fardig=\fivrgm
+   \scriptscriptfont\fardig=\fivrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{vipt}{sfmn0840}}%
+   \def\piranic{\@ftex@getfont{piranic}{vipt}{sfms0840}}%
+   \def\psiah{\@ftex@getfont{psiah}{vipt}{sfbn0840}}%
+   \def\pkhabide{\@subfont\khabide\nazok}%
+   \def\psiahir{\@subfont\siahir\nazok}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@subfont\tookhali\nazok}%
+   \def\psayedar{\@subfont\sayedar\nazok}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldviipt\viipt
+\def\viipt{\oldviipt%
+   \textfont\fardig=\sevrgm
+   \scriptfont\fardig=\fivrgm
+   \scriptscriptfont\fardig=\fivrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{viipt}{sfmn0980}}%
+   \def\piranic{\@ftex@getfont{piranic}{viipt}{sfms0980}}%
+   \def\psiah{\@ftex@getfont{psiah}{viipt}{sfbn0980}}%
+   \def\pkhabide{\@subfont\khabide\nazok}%
+   \def\psiahir{\@subfont\siahir\nazok}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@subfont\tookhali\nazok}%
+   \def\psayedar{\@subfont\sayedar\nazok}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldviiipt\viiipt
+\def\viiipt{\oldviiipt%
+   \textfont\fardig=\egtrgm
+   \scriptfont\fardig=\sixrgm
+   \scriptscriptfont\fardig=\fivrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{viiipt}{sfmn1120}}%
+   \def\piranic{\@ftex@getfont{piranic}{viiipt}{sfms1120}}%
+   \def\psiah{\@ftex@getfont{psiah}{viiipt}{sfbn1120}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{viiipt}{sfmb1120}}%
+   \def\psiahir{\@subfont\siahir\nazok}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@subfont\tookhali\nazok}%
+   \def\psayedar{\@subfont\sayedar\nazok}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldixpt\ixpt
+\def\ixpt{\oldixpt%
+   \textfont\fardig=\ninrgm
+   \scriptfont\fardig=\sixrgm
+   \scriptscriptfont\fardig=\fivrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{ixpt}{sfmn1260}}%
+   \def\piranic{\@ftex@getfont{piranic}{ixpt}{sfms1260}}%
+   \def\psiah{\@ftex@getfont{psiah}{ixpt}{sfbn1260}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{ixpt}{sfmb1260}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{ixpt}{sfbs1260}}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@subfont\tookhali\nazok}%
+   \def\psayedar{\@subfont\sayedar\nazok}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxpt\xpt
+\def\xpt{\oldxpt%
+   \textfont\fardig=\tenrgm
+   \scriptfont\fardig=\sevrgm
+   \scriptscriptfont\fardig=\fivrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xpt}{sfmn1400}}%
+   \def\piranic{\@ftex@getfont{piranic}{xpt}{sfms1400}}%
+   \def\psiah{\@ftex@getfont{psiah}{xpt}{sfbn1400}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{xpt}{sfmb1400}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{xpt}{sfbs1400}}%
+   \def\psiahkh{\@ftex@getfont{psiahkh}{xpt}{sfbb1400}}%
+   \def\ptookhali{\@ftex@getfont{ptookhali}{xpt}{sfon1400}}%
+   \def\psayedar{\@ftex@getfont{psayedar}{xpt}{sfsn1400}}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxipt\xipt
+\def\xipt{\oldxipt%
+   \textfont\fardig=\elvrgm
+   \scriptfont\fardig=\egtrgm
+   \scriptscriptfont\fardig=\sixrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xipt}{sfmn1534}}%
+   \def\piranic{\@ftex@getfont{piranic}{xipt}{sfms1534}}%
+   \def\psiah{\@ftex@getfont{psiah}{xipt}{sfbn1534}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{xipt}{sfmb1534}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{xipt}{sfbs1534}}%
+   \def\psiahkh{\@ftex@getfont{psiahkh}{xipt}{sfbb1534}}%
+   \def\ptookhali{\@subfont\tookhali\nazok}%
+   \def\psayedar{\@subfont\sayedar\nazok}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxiipt\xiipt
+\def\xiipt{\oldxiipt%
+   \textfont\fardig=\twlrgm
+   \scriptfont\fardig=\egtrgm
+   \scriptscriptfont\fardig=\sixrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xiipt}{sfmn1680}}%
+   \def\piranic{\@ftex@getfont{piranic}{xiipt}{sfms1680}}%
+   \def\psiah{\@ftex@getfont{psiah}{xiipt}{sfbn1680}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{xiipt}{sfmb1680}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{xiipt}{sfbs1680}}%
+   \def\psiahkh{\@ftex@getfont{psiahkh}{xiipt}{sfbb1680}}%
+   \def\ptookhali{\@ftex@getfont{ptookhali}{xiipt}{sfon1680}}%
+   \def\psayedar{\@ftex@getfont{psayedar}{xiipt}{sfsn1680}}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxivpt\xivpt
+\def\xivpt{\oldxivpt%
+   \textfont\fardig=\frtnrgm
+   \scriptfont\fardig=\tenrgm
+   \scriptscriptfont\fardig=\sevrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xivpt}{sfmn2016}}%
+   \def\piranic{\@ftex@getfont{piranic}{xivpt}{sfms2016}}%
+   \def\psiah{\@ftex@getfont{psiah}{xivpt}{sfbn2016}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{xivpt}{sfmb2016}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{xivpt}{sfbs2016}}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@ftex@getfont{ptookhali}{xivpt}{sfon2016}}%
+   \def\psayedar{\@ftex@getfont{psayedar}{xivpt}{sfsn2016}}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxviipt\xviipt
+\def\xviipt{\oldxviipt%
+   \textfont\fardig=\svtnrgm
+   \scriptfont\fardig=\twlrgm
+   \scriptscriptfont\fardig=\tenrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xviipt}{sfmn2419}}%
+   \def\piranic{\@ftex@getfont{piranic}{xviipt}{sfms2419}}%
+   \def\psiah{\@ftex@getfont{psiah}{xviipt}{sfbn2419}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{xviipt}{sfmb2419}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{xviipt}{sfbs2419}}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@ftex@getfont{ptookhali}{xviipt}{sfon2419}}%
+   \def\psayedar{\@ftex@getfont{psayedar}{xviipt}{sfsn2419}}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxxpt\xxpt
+\def\xxpt{\oldxxpt%
+   \textfont\fardig=\twtyrgm
+   \scriptfont\fardig=\frtnrgm
+   \scriptscriptfont\fardig=\twlrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xxpt}{sfmn2903}}%
+   \def\piranic{\@ftex@getfont{piranic}{xxpt}{sfms2903}}%
+   \def\psiah{\@ftex@getfont{psiah}{xxpt}{sfbn2903}}%
+   \def\pkhabide{\@ftex@getfont{pkhabide}{xxpt}{sfmb2903}}%
+   \def\psiahir{\@ftex@getfont{psiahir}{xxpt}{sfbs2903}}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\ptookhali{\@ftex@getfont{ptookhali}{xxpt}{sfon2903}}%
+   \def\psayedar{\@ftex@getfont{psayedar}{xxpt}{sfsn2903}}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+\let\oldxxvpt\xxvpt
+\def\xxvpt{\oldxxvpt%
+   \textfont\fardig=\twtyrgm
+   \scriptfont\fardig=\twtyrgm
+   \scriptscriptfont\fardig=\svtnrgm
+   \def\pnazok{\@ftex@getfont{pnazok}{xxvpt}{sfmn3484}}%
+   \def\piranic{\@subfont\iranic\nazok}%
+   \def\psiah{\@ftex@getfont{psiah}{xxvpt}{sfbn3484}}%
+   \def\pkhabide{\@subfont\khabide\nazok}%
+   \def\psiahkh{\@subfont\siahkh\nazok}%
+   \def\psiahir{\@subfont\siahir\nazok}%
+   \def\ptookhali{\@ftex@getfont{ptookhali}{xxvpt}{sfon3484}}%
+   \def\psayedar{\@ftex@getfont{psayedar}{xxvpt}{sfsn3484}}%
+   \def\ptahrir{\@subfont\tahrir\nazok}%
+   \if@farsi\nazok\fi%
+   \@increasebaseline%
+}
+
+% End of change, 26 Dec 2000
+
+\let\oldbf\bf
+\let\oldsl\sl
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EVERY PAR TOKEN  & noindent				   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\s@teverypart@ken{\everypar{\if@farsi%
+		 \kern-\parindent\beginR\indent%
+		 \fi}}%
+\let\n@noindent=\noindent
+\def\s@tenoindent{\global\let\noindent=\n@noindent}
+\def\s@tfnoindent{\global\def\noindent{\everypar{\beginR
+		\everypar{\kern-\parindent\beginR\indent}}
+		\n@noindent}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MACROS FOR FARSI/LATIN TYPESETTING			   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\t@bpre@mble{}   % to use in tabing macros
+\def\t@bpost@mble{}  %
+\newif\if@farsi  % logical variable to hold current mode
+	       % (true for farsi mode and false for english)
+\@farsifalse
+\def\farsi{\if@farsi\else%
+	\relax\par
+	\s@tfnoindent
+	\global\def\t@bpre@mble{\beginR}%
+	\global\def\t@bpost@mble{\endR}%
+%	 \global\let\line=\fline%
+%	 \global\let\leftline=\erightline%
+%	 \global\let\rightline=\eleftline%
+	\s@teverypart@ken
+	\global\def\rm{\nazok} \global\def\bf{\siah}%
+	\global\def\it{\iranic} \global\def\tt{\tahrir}%
+	\global\def\sl{\khabide}%
+	\rm%
+	\global\@farsitrue
+	\fi\relax}
+
+\def\english{\if@farsi%
+	  \relax\par%
+	  \s@tenoindent%
+	  \global\def\t@bpre@mble{}%
+	  \global\def\t@bpost@mble{}%
+%	  \global\let\line=\eline%
+%	  \global\let\leftline=\eleftline%
+%	  \global\let\rightline=\erightline%
+	  \global\everypar{}%
+	  \global\def\rm{\protect\prm}%
+	  \global\def\bf{\oldbf}%
+	  \global\def\it{\protect\pit}%
+	  \global\def\tt{\protect\ptt}%
+	  \global\def\sl{\oldsl}%
+	  \rm%
+	  \global\@farsifalse%
+\fi\relax}
+
+\def\insertfarsi{%
+\bgroup%
+\beginR%
+\aftergroup\endR%
+\def\rm{\nazok}\def\bf{\siah}%
+\def\it{\iranic}\def\tt{\tahrir}%
+\def\sl{\khabide}%
+\rm}
+
+\def\endfarsi{\egroup}
+
+% Added Oct 20, 1998--RP
+\newif\if@subeng
+\@subengfalse
+
+\def\insertenglish{%
+   \bgroup%
+   \beginL%
+   \aftergroup\endL%
+   \@subengtrue
+   \def\rm{\protect\prm}\def\bf{\oldbf}%
+   \def\it{\protect\pit}\def\tt{\protect\ptt}%
+   \def\sl{\oldsl}%
+   \rm}
+
+\def\endenglish{\@subengfalse\egroup}
+
+% Added Oct 9, 1996--RP
+% Changed Oct 20, 1998--RP
+\def\InE{\protect\insertenglish}
+\def\EnE{\protect\endenglish}
+\def\InF{\protect\insertfarsi}
+\def\EnF{\protect\endfarsi}
+% Added Sep 19, 1996--RP
+\newcommand{\IE}[1]{\InE#1\EnE{}}
+\newcommand{\IF}[1]{\InF#1\EnF{}}
+
+\def\setfarsi{\@farsitrue\beginR\tofarsi}
+\def\setenglish{\@farsifalse\beginL\toenglish}
+
+\def\tofarsi
+{
+\global\def\rm{\nazok} \global\def\bf{\siah}%
+\global\def\it{\iranic} \global\def\tt{\tahrir}%
+\def\sl{\khabide}%
+\hyphenpenalty=\@MM
+\binoppenalty=\@MM
+\relpenalty=\@MM
+\nazok
+}
+
+\def\toenglish{\def\rm{\protect\prm}\def\bf{\oldbf}%
+\def\it{\protect\pit}%
+\def\sl{\oldsl}%
+\def\tt{\protect\ptt}%
+\hyphenpenalty=50 % Restore the lplain.tex penalties.
+\binoppenalty=700
+\relpenalty=500
+\rm }
+
+\let\next=\
+\def\L{\protect\afterassignment\moreL \let\next= }
+\def\moreL{\bracetext \aftergroup\endL \beginL \toenglish}
+\def\R{\protect\afterassignment\moreR \let\next= }
+\def\moreR{\bracetext \aftergroup\endR \beginR \tofarsi}
+\def\bracetext{\ifcat\next{\else\ifcat\next}\fi
+ \errmessage{Missing left brace has been substituted}\fi
+ \bgroup}
+\everydisplay{\if@farsi\aftergroup\beginR\fi}
+
+% Useful vbox commands. All text in math
+% formulas is best enclosed in these.
+% ex: $P=\{x|\engmbox{There is no } y
+% \engmbox{ such that } y \engmbox{ divides }x\}$
+%     $P=\{x|x\farmbox{farsi text } y\farmbox{ Kach She }
+% y\farmbox{ Lo Kayam }\}$
+% \mbox{} is useless for both cases,
+% since it typesets in LR Farsi.
+\newcommand{\farmbox}[1]{\mbox{\R{#1}}}
+\newcommand{\engmbox}[1]{\mbox{\L{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FARSI FOO						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\farsifoo#1{\@farsifoo{\@nameuse{c@#1}}}
+\def\@farsifoo#1{{\beginL\nazok \number#1\endL}}
+\def\@@farsifoo#1{{\number#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EQUATION NUMBERING					   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\englisheqno{\def\theequation{\oldarabic{equation}}
+		  \def\@eqnnum{{\rm (\theequation)}}}
+\def\farsieqno{\def\theequation{\arabic{equation}}
+	       \def\@eqnnum{{\nazok (\theequation)}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABBING  (changes in tabbing environment of latex)	   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@stopline{\unskip\@stopfield\if@rjfield
+\global\@rjfieldfalse
+\@tempdima\@totalleftmargin \advance\@tempdima\linewidth
+\hbox to\@tempdima{\t@bpre@mble\@itemfudge
+\hskip\dimen\@curtabmar
+\box\@curline\hfil
+\box\@curfield\t@bpost@mble}\else\@addfield
+\hbox to\linewidth{\t@bpre@mble\@itemfudge
+\hskip\dimen\@curtabmar\box\@curline\hfil\t@bpost@mble}
+\fi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENVIRONMENTS (changes in latex)			   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@doendpe{\@endpetrue\def\par{\@restorepar%
+     \s@teverypart@ken%
+     \par\@endpefalse}%
+     \everypar{\setbox0=\lastbox%
+	       \s@teverypart@ken%
+	       \@endpefalse
+	      \if@farsi\beginR\fi
+}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST (changes in latex)				   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% List environments in Farsi,
+%are ticked and indented from the right
+% instead of from the left.
+% All the definitions that caused indentation
+% are revised for Farsi. LaTeX keeps
+% track on the indentation with the
+% \leftmargin and \rightmargin values.
+% The changes below are mostly to
+% exchange these values in Farsi mode.
+%
+
+\def\@item[#1]{\if@noparitem \@donoparitem
+  \else \if@inlabel \indent \par \fi
+	 \ifhmode \unskip\unskip \par \fi
+	 \if@newlist \if@nobreak \@nbitem \else
+	   \addpenalty\@beginparpenalty
+	   \addvspace\@topsep \addvspace{-\parskip}\fi
+	   \else \addpenalty\@itempenalty \addvspace\itemsep
+	  \fi
+    \global\@inlabeltrue
+ \fi
+ \everypar{\if@farsi\kern-\parindent\beginR\indent\fi
+\global\@minipagefalse\global\@newlistfalse
+	   \if@inlabel\global\@inlabelfalse
+\hskip -\parindent
+	      \box\@labels
+	      \penalty\z@ \fi
+    \everypar{\if@farsi\kern-\parindent\beginR\indent\fi}}%
+\global\@nobreakfalse
+\if@noitemarg \@noitemargfalse \if@nmbrlist
+\refstepcounter{\@listctr}\fi \fi
+\setbox\@tempboxa\hbox{\makelabel{#1}}%
+\global\setbox\@labels
+\hbox{%
+\unhbox\@labels \hskip \itemindent
+       \hskip -\labelwidth \hskip -\labelsep
+       \ifdim \wd\@tempboxa >\labelwidth
+		\box\@tempboxa
+	  \else
+\hbox to\labelwidth {\makelabel{#1}}\fi
+       \hskip \labelsep
+}\ignorespaces}
+
+\def\list#1#2{\ifnum \@listdepth >5\relax \@toodeep
+     \else \global\advance\@listdepth\@ne \fi
+  \rightmargin \z@ \listparindent\z@ \itemindent\z@
+  \csname @@list\romannumeral\the\@listdepth\endcsname
+  \def\@itemlabel{#1}%
+  \let\makelabel\@mklab \@nmbrlistfalse #2\relax
+  \@trivlist
+  \parskip\parsep \parindent\listparindent
+  \advance\linewidth -\rightmargin
+  \advance\linewidth -\leftmargin
+  \advance\@totalleftmargin \leftmargin
+  \parshape \@ne
+  \@totalleftmargin \linewidth
+  \ignorespaces}
+
+\newdimen\tempdimen
+\def\@@listi{\csname @listi\endcsname
+\if@farsi\tempdimen\rightmargin
+\rightmargin\leftmargin \leftmargin\tempdimen\fi
+}
+
+\def\@@listii{\csname @listii\endcsname
+\if@farsi\tempdimen\rightmargin
+\rightmargin\leftmargin \leftmargin\tempdimen\fi
+}
+
+\def\@@listiii{\csname @listiii\endcsname
+\if@farsi\tempdimen\rightmargin
+\rightmargin\leftmargin \leftmargin\tempdimen\fi
+}
+
+\def\@@listiv{\csname @listiv\endcsname
+\if@farsi\tempdimen\rightmargin
+\rightmargin\leftmargin \leftmargin\tempdimen\fi
+}
+
+\def\@@listv{\csname @listv\endcsname
+\if@farsi\tempdimen\rightmargin
+\rightmargin\leftmargin \leftmargin\tempdimen\fi
+}
+
+\def\@@listvi{\csname @listvi\endcsname
+\if@farsi\tempdimen\rightmargin
+\rightmargin\leftmargin \leftmargin\tempdimen\fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SECTIONING						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@xsect#1{\@tempskipa #1\relax
+      \ifdim \@tempskipa>\z@
+      \par \nobreak
+      \vskip \@tempskipa
+      \@afterheading
+    \else \global\@nobreakfalse \global\@noskipsectrue
+      \everypar{\if@farsi \kern-\parindent\beginR\indent \fi
+		 \if@noskipsec \global\@noskipsecfalse
+		 \clubpenalty\@M \hskip -\parindent
+		 \begingroup \@svsechd \endgroup \unskip
+		 \hskip -#1
+		 \else \clubpenalty \@clubpenalty
+    \everypar{\if@farsi\kern-\parindent\beginR\indent\fi}
+		 \fi}
+		 \fi\ignorespaces}
+\def\@afterheading{\global\@nobreaktrue
+      \everypar{\if@farsi\kern-\parindent\beginR\indent\fi
+		\if@nobreak
+		\global\@nobreakfalse
+		\clubpenalty \@M
+		\if@afterindent \else {\setbox0=\lastbox}\fi
+		\else \clubpenalty \@clubpenalty
+       \everypar{\if@farsi\kern-\parindent\beginR\indent\fi}
+		\fi}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		      Footnotes 			   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\efootnoterule{\global\def\footnoterule{\kern-3\p@
+ \hrule width .4\columnwidth
+ \kern 2.6\p@}}
+\def\ffootnoterule{\global\def\footnoterule{%
+   \hbox to \columnwidth
+   {\beginR \vbox{\kern -3\p@
+    \hrule width .4\columnwidth \kern2.6\p@}\hfil\endR}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% tabular						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newif\if@tabsw
+\global\@tabswfalse
+\def\@tabular{\if@farsi\global\@tabswtrue\fi
+     \leavevmode \hbox \bgroup \if@tabsw\beginR \fi
+     $\let\@acol\@tabacol
+     \let\@classz\@tabclassz
+     \let\@classiv\@tabclassiv \let\\\@tabularcr\@tabarray}
+%\def\endtabular{\crcr\egroup\egroup$\endR\egroup}
+\def\endtabular{\crcr\egroup\if@tabsw\egroup\endR\egroup\fi
+		 \egroup $\if@tabsw\endR\fi \egroup
+		 \global\@tabswfalse}
+\def\@array[#1]#2{\setbox\@arstrutbox=\hbox{\vrule
+     height\arraystretch \ht\strutbox
+     depth\arraystretch \dp\strutbox
+     width\z@}\@mkpream{#2}\edef\@preamble{%
+\halign \noexpand\@halignto
+\bgroup \tabskip\z@ \@arstrut \@preamble \tabskip\z@ \cr}%
+\let\@startpbox\@@startpbox \let\@endpbox\@@endpbox
+\if #1t\vtop \else \if#1b\vbox \else \vcenter \fi\fi
+\bgroup \let\par\relax
+\let\@sharp##\let\protect\relax \lineskip\z@\baselineskip\z@
+\if@tabsw\hbox\bgroup\beginR\vbox\bgroup\fi
+\@preamble}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% table of contents (changes in article style)		   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@dottedtocline#1#2#3#4#5{\ifnum #1>\c@tocdepth \else
+  \vskip \z@ plus .2pt
+  {\hangindent #2\relax
+    \if@farsi \leftskip \else \rightskip \fi
+    \@tocrmarg \parfillskip -\if@farsi \leftskip \else
+    \rightskip \fi
+    \parindent #2\relax\@afterindenttrue
+   \interlinepenalty\@M
+   \leavevmode
+   \@tempdima #3\relax
+    #4\nobreak\leaders
+    \hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep
+    mu$}\hfill \nobreak
+    \hbox to\@pnumwidth{\hfil\rm \beginL#5\endL}\par}\fi}
+
+% The toc entry for section did not work in article style.
+% Also it does not print dots, which is funny when
+% most of your work
+% is divided into sections.
+% revised to use \@dottedtocline as in report.sty
+%
+% Moved to farsi.sty--RP
+
+%\def\l@section{\noindent\@dottedtocline{1}{1.5em}{2.3em}}%2.3em
+%\def\l@figure{\noindent\@dottedtocline{1}{1.5em}{2.3em}}%2.3em
+%\let\l@table\l@figure
+
+% For table of contents: Page numbers have to be LR
+
+%\def\l@part#1#2{\addpenalty{-\@highpenalty}
+%   \addvspace{2.25em plus 1pt}  % space above part line
+%   \begingroup
+%   \@tempdima 3em % width of box holding part number,used by
+%     \parindent \z@ \rightskip \@pnumwidth    %% \numberline
+%     \parfillskip -\@pnumwidth
+%     {\large \bf    % set line in \large boldface
+%     \leavevmode    % TeX command to enter horizontal mode.
+%     #1\hfil \hbox to\@pnumwidth{\hss \beginL #2 \endL}}\par
+%     \nobreak		   % Never break after part entry
+%   \endgroup}
+
+%Let @starttoc be defined outside, so that we can use
+%it at low level
+
+%\let\starttoc\@starttoc
+
+%\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+% \refstepcounter{chapter}
+% \typeout{Chapter\space\oldarabic{chapter}.}
+% \addcontentsline{toc}{chapter}{\protect
+% \numberline{\thechapter}#1}\else
+% \addcontentsline{toc}{chapter}{#1}\fi
+% \chaptermark{#1}
+% \addtocontents{lof}{\protect\addvspace{10pt}}
+%\addtocontents{lot}{\protect\addvspace{10pt}} \if@twocolumn
+%\@topnewpage[\@makechapterhead{#2}]
+% \else \@makechapterhead{#2}
+% \@afterheading \fi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OUTPUT - for two column support in farsi mode 	   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\farsioutputdblcol{\if@firstcolumn
+\global\@firstcolumnfalse
+    \global\setbox\@leftcolumn\box\@outputbox
+  \else \global\@firstcolumntrue
+    \setbox\@outputbox\vbox{
+     \hbox to\textwidth{
+      \hbox to\columnwidth{\box\@outputbox \hss}
+      \hfil \vrule width\columnseprule\hfil
+      \hbox to\columnwidth{\box\@leftcolumn \hss}
+   }} \@combinedblfloats
+\@outputpage \begingroup \@dblfloatplacement
+\@startdblcolumn
+\@whilesw\if@fcolmade \fi
+{\@outputpage\@startdblcolumn}\endgroup
+    \fi}
+
+\def\englishoutputdblcol{\if@firstcolumn
+\global\@firstcolumnfalse
+    \global\setbox\@leftcolumn\box\@outputbox
+  \else \global\@firstcolumntrue
+    \setbox\@outputbox\vbox{\hbox to\textwidth{%
+      \hbox to\columnwidth
+      {\box\@leftcolumn \hss}\hfil
+       \vrule width\columnseprule\hfil
+       \hbox to\columnwidth{\box\@outputbox \hss}}}%
+       \@combinedblfloats
+       \@outputpage \begingroup \@dblfloatplacement
+       \@startdblcolumn
+       \@whilesw\if@fcolmade \fi
+       {\@outputpage\@startdblcolumn}\endgroup
+    \fi}
+\def\@outpitdbcol{\if@farsi\farsioutputdblcol\else
+\englishoutputdblcol\fi}
+
+\def\@outputpage{\begingroup\catcode`\ =10
+  \let\-\@dischyph \let\'\@acci \let\`\@accii
+  \let\=\@acciii
+  \if@specialpage
+  \global\@specialpagefalse\@nameuse{ps@\@specialstyle}\fi
+  \if@twoside
+  \ifodd\count\z@ \let\@thehead\@oddhead \let\@thefoot\@oddfoot
+  \let\@themargin\oddsidemargin
+  \else \let\@thehead\@evenhead
+  \let\@thefoot\@evenfoot \let\@themargin\evensidemargin
+  \fi\fi
+  \shipout
+  \vbox{\normalsize \baselineskip\z@ \lineskip\z@
+  \let\par\@@par %% 15 Sep 87
+  \vskip \topmargin
+  \moveright\@themargin
+  \vbox{\setbox\@tempboxa
+  \vbox to\headheight{\vfil \hbox to\textwidth
+  {\let\label\@gobble \let\index\@gobble
+  {\def\sl{\khabide}\@thehead}}} %% 22 Feb 87
+  \dp\@tempboxa\z@
+  \box\@tempboxa
+  \vskip \headsep
+  \box\@outputbox
+  \baselineskip\footskip
+  \hbox to\textwidth{\let\label\@gobble
+  \let\index\@gobble  %% 22 Feb 87
+  \@thefoot}}}\global\@colht\textheight
+  \endgroup\stepcounter{page}\let\firstmark\botmark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% minipage  & parbox					   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\long\def\@iparbox[#1]#2#3{\leavevmode \@pboxswfalse
+   \if #1b\vbox
+     \else \if #1t\vtop
+	      \else \ifmmode \vcenter
+		       \else \@pboxswtrue $\vcenter
+		    \fi
+	    \fi
+   \fi{%\if@farsi\hbox\bgroup\beginR\vbox\bgroup\fi
+       \hsize #2\@parboxrestore #3
+%      \if@farsi\egroup\endR\egroup\fi
+}
+       \if@pboxsw $\fi}
+
+\def\@arrayparboxrestore{\let\par\@@par
+  \let\-\@dischyph
+  \let\'\@acci \let\`\@accii \let\=\@acciii
+  \parindent\z@ \parskip\z@
+  \everypar{\if@farsi\hskip-\parindent\beginR\indent\fi}
+  \linewidth\hsize
+  \@totalleftmargin\z@ \leftskip\z@ \rightskip\z@
+  \@rightskip\z@
+  \parfillskip\@flushglue \lineskip\normallineskip
+  \baselineskip\normalbaselineskip\sloppy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  change in \document command				   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\document{\endgroup
+  \@colht\textheight  \@colroom\textheight \vsize\textheight
+   \columnwidth\textwidth \@clubpenalty\clubpenalty
+   \if@twocolumn \advance\columnwidth -\columnsep
+      \divide\columnwidth\tw@ \hsize\columnwidth
+      \@firstcolumntrue
+   \fi
+  \hsize\columnwidth \linewidth\hsize
+  \begingroup\@floatplacement\@dblfloatplacement
+   \makeatletter\let\@writefile\@gobbletwo
+   \@input{\jobname.aux}\endgroup
+  \if@filesw \immediate\openout\@mainaux=\jobname.aux
+    \immediate\write\@mainaux{\relax}\fi
+  \def\do##1{\let ##1\@notprerr}%
+  \@preamblecmds
+  \let\do\noexpand
+  \@normalsize
+  \everypar{\if@farsi\hskip-\parindent\beginR\indent\fi}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page numbering					   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@@arabic#1{\number #1}  %% changed 29 Apr 86
+\def\@@roman#1{\romannumeral #1}
+\def\@@Roman#1{\expandafter\uppercase
+\expandafter{\romannumeral #1}}
+\def\@@alph#1{\ifcase#1\or a\or b\or c\or d%
+\else\@ialph{#1}\fi}
+\def\@@Alph#1{\ifcase#1\or A\or B\or C\or D%
+\else\@Ialph{#1}\fi}
+\def\@@fnsymbol#1{\ifcase#1\or *\or \dagger\or \ddagger\or
+   \mathchar "278\or \mathchar "27B\or \|\or **%
+   \or \dagger\dagger
+   \or \ddagger\ddagger \else\@ctrerr\fi\relax}
+
+\def\pagenumbering#1{\global\c@page \@ne %
+\gdef\thepage{\csname @#1\endcsname\c@page}%
+\gdef\newthepage{\csname @@#1\endcsname\c@page}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      \the<thing> and \labelenum<thing> things.	   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The \the<thing> and \labelenum<thing>
+% commands generate LR text
+% (usually numbers). They are revised to work in farsi.
+%
+%
+% \def\@biblabel#1{\if@farsi]#1[\hfill \else [#1]\hfill\fi} %---orig
+\def\@biblabel#1{\if@farsi ]#1[\hfill \else [#1]\hfill\fi}
+\let\oldarabic=\arabic
+\let\oldref\ref
+\let\oldcite\cite
+\def\@cite#1#2{\if@farsi]\else[\fi{#1\if@tempswa , #2\fi}\if@farsi[\else]\fi}
+%\def\@biblabel#1{\if@farsi]\else[\fi#1\if@farsi[\else]\fi\hfill}
+\def\cite#1{\L{\nazok\oldcite{#1}}}
+\def\ref#1{\beginR\nazok\oldref{#1}\endR}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Counting in Farsi			   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\farsiupper{\if@farsi\else\uppercase\fi}
+\def\arabic#1{%
+\ifmmode\else\beginL\fi
+\@arabic{\@nameuse{c@#1}}\ifmmode
+\else\endL\fi
+}
+\let\newarabic\arabic
+
+\def\roman#1{\ifmmode\else\beginL\fi%
+\@roman{\@nameuse{c@#1}}\ifmmode\else\endL\fi}
+
+\def\Roman#1{\ifmmode\else\beginL\fi
+\@Roman{\@nameuse{c@#1}}\ifmmode\else\endL\fi
+}
+
+\def\alph#1{{\fam0 \@alph{\@nameuse{c@#1}}}%
+}
+\def\Alph#1{{\fam0 \@Alph{\@nameuse{c@#1}}}%
+}
+
+\def\@arabic#1{{%\nazok%
+\number #1}}
+\def\@roman#1{{\protect\prm\romannumeral #1}}
+
+\def\@Roman#1{{\protect\prm \expandafter\uppercase%
+   \expandafter{\romannumeral
+   #1}}}
+\def\@alph#1{{\protect\prm\ifcase#1\or a\or b\or c%
+   \or d\else\@ialph{#1}\fi}}
+\def\@Alph#1{{\protect\prm\ifcase#1\or A\or B\or C%
+   \or D\else\@Ialph{#1}\fi}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% I N D E X I N G					   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@wrindex#1{\let\newthepage\relax % <---
+   \xdef\@gtempa{\write\@indexfile{\string
+      \indexentry{#1}\newthepage}}\endgroup\@gtempa % <---
+   \if@nobreak \ifvmode\nobreak\fi\fi\@esphack}
+
+\def\makeindex{\if@filesw \newwrite\@indexfile
+  \immediate\openout\@indexfile=\jobname.idx
+  \def\index{\@streatchfalse\@bsphack\begingroup
+	     \def\protect####1{\string####1\space}\@sanitize
+	     \@wrindex}\typeout
+  {Writing index file \jobname.idx }\fi}
+
+\def\@wrglossary#1{\let\newthepage\relax  % <----
+ \xdef\@gtempa{\write\@glossaryfile{\string
+ \glossaryentry{#1}\newthepage}}\endgroup\@gtempa % <----
+ \if@nobreak \ifvmode\nobreak\fi\fi\@esphack}
+
+\def\makeglossary{\if@filesw \newwrite\@glossaryfile
+  \immediate\openout\@glossaryfile=\jobname.glo
+  \def\glossary{\@streatchfalse\@bsphack\begingroup%
+  \@sanitize\@wrglossary}
+  \typeout  {Writing glossary file \jobname.glo }\fi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Captions						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Moved to farsi.sty--RP
+%\long\def\@makecaption#1#2{
+% \vskip 10pt
+% \setbox\@tempboxa\hbox{#1: #2}
+% \ifdim \wd\@tempboxa >\hsize \if@farsi\beginR\fi#1: #2\par%
+% \else \hbox
+%to\hsize{\if@farsi\beginR\fi\hfil\box\@tempboxa\hfil%
+%\if@farsi\endR\fi}
+% \fi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% accents						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\myoalign#1{\leavevmode\vtop{\baselineskip0pt
+\lineskip.1ex%
+\ialign{##\crcr#1\crcr}}}
+\def\tashdid#1{{\accent'141 #1}}             % tashdid
+\def\hamze#1{{\accent'142 #1}}               % hamzeh
+\def\fathe#1{{\accent'144 #1}}               % fatheh
+\def\zamme#1{{\accent'145 #1}}               % zammeh
+\def\nasb#1{{\accent'146 #1}}                % tanvin-e-nasb
+\def\raff#1{{\accent'147 #1}}                % tanvin-e-raf'
+\def\saken#1{{\accent'150 #1}}               % saken
+\def\alef#1{{\accent'151 #1}}                % alef-e-maghsooreh
+\def\mkasre#1{{\myoalign{#1\protect\crcr%
+\hidewidth\hss\char'143\hss\hidewidth}}}    % kasreh
+\def\skasre{{\raisebox{-0.6ex}{\char'143}}} % single kasreh
+% Added Oct 1998
+\def\kasre{\protect\mkasre}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% today 						   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Moved to farsi.sty--RP
+%\input ftoday.sty          % added Aug 96--RP
+
+% roman math operators
+% the command like \sin came out in `Math Italic' font,
+% now they are at `Roman.'
+
+\input fmathop.sty          % added 22 Sep 96--RP
+
+\catcode137=\active
+\newif\if@streatch
+\@streatchtrue
+\def\tireh{\if@streatch\nobreak\leaders\hrule width 1pt height%
+\fontdimen9\the\font
+\hskip 0pt plus \fontdimen8\the\font\fi}
+\def‰{\protect\tireh}
+
+\def\FarsiTeX{%
+ê‰‘¤\kern-0.1em¨‰ü~\kern-0.63em\raise0.15em\hbox{\protect\kasre —‰×}}
+
+% Added Oct 20, 1998
+\def\underline#1{\relax\ifmmode\@@underline{#1}\else
+   $\@@underline{\hbox{\if@subeng\beginL#1\endL
+   \else\beginR#1\endR\fi}}\m@th$\relax\fi}
+
+% Added Oct 20, 1998
+\let\FO@reversemarginpar\reversemarginpar
+\let\reversemarginpar\normalmarginpar
+\let\normalmarginpar\FO@reversemarginpar
+\normalmarginpar
+
+% Added Oct 20, 1998
+\let\FO@equation\equation
+\def\equation{\beginL\FO@equation}
+
+\makeatother
+\dump

@@ -1,0 +1,58 @@
+<
+<ÒbeginÞthebibliography×Þ‰‰×
+<ÒenglishÚ
+>\bibitem{alps} M.~de~Berg, M.~van~Kreveld, ``Trekking in the
+>Alps Without Freezing or Getting Tired'', {\em Proc. 1st European
+>Symp. on Algorithms (ESA'93)}, Lecture Notes in Comp. Science 726,
+>Springer-Verlag, 121--132.
+>\bibitem{paper} J.~Chen, and  Y.~Han, ``Shortest Paths on a Polyhedron,
+> Part I: Computing Shortest Paths'', {\em International Journal of Computational
+>Geometry \& Applications}, Vol. 6, No. 2 (1996) 127-144.
+>\bibitem{approx1} S.~Har-Peled, M.~Sharir, and K.~R.~Varadarjan,
+>``Appriximating Shortest Paths on a Convex Polytope in Three
+>Dimentions'', {\em Proc. 12th Annual Symp. on Computatioinal 
+>Geometry}, Philadelphia, PA, 1996, 329--338.
+>\bibitem{sref83} J.~Hershberger, and S.~Suri, ``Efficient
+>computation of Euclidean shortest paths in the plane'', {\em Proc. 34th
+>Annu. IEEE Sympos. Found. Comput. Sci. (FOCS 93)}, 508--517, 1993.
+>\bibitem{approx} J.~Hershberger, and S.~Suri, ``Practical
+>Methods for Approximating Shortest Paths on a Convex Polytope in $R^{\rm 3}$'', 
+>{\em SODA'95}, 1995.
+>\bibitem{sref84} J.~Hershberger, and S.~Suri, ``An optimal
+>algorithm for Euclidean shortest paths in the plane'', Manuscript, 
+>Washington University, 1995.
+>\bibitem{quality} M.~van~Kreveld, ``On Quality Paths on Polyhedral
+>Terrains'', {\em IGIS'94: Geographic Information Systems}, Lecture
+>Notes in Comp. Science 884, Springer-Verlag, 113--122.
+>\bibitem{tinsurvey} M.~van~Kreveld, ``Digital Elevation Models:
+>overview and selected TIN algorithms'', {\em Course Notes for the
+> CISM Advanced School on Algorithmic foundations on Geographical Information
+> Systems}, Utrecht University, 1996.
+>\bibitem{weighted} M.~Lanthier, A.~Maheshwari, and J.~Sack,
+>``Approximating Weighted Shortest Paths on Polyhedral Surfaces''.
+>\bibitem{mmp} J.~S.~B.~Mitchell, D.~M.~Mount, and C.~H.~Papadimitriou, 
+>``The discrete geodesic problem'', {\em SIAM J. Comput.},
+>Vol 16, No. 4, August 1987.
+>\bibitem{weighted1} J.~S.~B.~Mitchel, S.~Suri, ``The Weighted
+>Region Problem: Finding Shortest Paths Through a Weighted Planar
+>Subdivision'', {\em Journal of the ACM}, 38, January 1991, 18--73.
+>\bibitem{survey} J.~S.~Mitchell, ``Shortest Paths and Networks'', 
+>{\em a chapter for CRC Handbook on Computational Geometry}, to appear.
+>\bibitem{ref15} D.~M.~Mount, ``On  Finding Shortest Paths on Covex
+>Polyhedra'', {\em Technical Report 1495}, Department of Computer Science, 
+>University of Maryland, Baltimore, MD, 1985.
+>\bibitem{ref17} J.~O'Rourke, S.~Suri, and H.~Booth, ``Shortest Path
+>on Polyhedral Surfaces'', Manuscript, The Johns Hopkins Univ., Baltimore, 
+>MD, 1984.
+>\bibitem{tin1} A.K.~Pankaj, and S.~Suri, ``Surface approximation
+>and geometric partitions'', {\em Proc. 5th ACM-SIAM Sympos. Discrete
+>Algorithms}, 24--33, 1994.
+>\bibitem{tin89} T.K.~Peucker, R.J.~Fowler, J.J.~Little, and D.M.~Mark,
+>``The triangulated irregular network'', {\em Proc. DTM Sympos. Am. Soc. 
+>of Photogrammetry--Am. Congress on Survey and Mapping}, 24--31, 1978.
+>\bibitem{compgeo} F.~P.~Preparata, and  M.~I.~Shamos,  {\em Computational
+>Geometry: An Introduction}, Springer-Verlag, 1985.
+>\bibitem{ref23} M.~Sharir, and A.~Schorr, ``On Shortest Paths in Polyhedral
+>Spaces'', {\em SIAM J. Comput}, 15 (1986), 193-215.
+<ÒendÞthebibliography×
+<ÒfarsiÚ

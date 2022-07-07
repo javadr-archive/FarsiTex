@@ -1,0 +1,652 @@
+>%                                                             ¢¡ ô‘÷ ù“
+>% ö¢¤î ù¢¤ø¤“ ¤øà÷õ ù“ Æ–¨ í—ü¨¤‘ê ¤¢ ¢ø›øõ ñþ‘ê ù¨ ¥ ü“þî¤— ñþ‘ê öþ
+>%  ñþ‘ê ù¨ öþ ¤¢ Šùõ‘÷ö‘þ‘• ùþú— ý¤“ ù‘ðª÷¢ ý¥î¤õ ù÷‘¡“‘—î ñõãó¤ø—¨¢
+>%    ü—¤þþç— 'sharifth.sty' ø Š'farsi.sty' Š'freport.sty' ¥ ¢÷—¤‘“ä ùî
+>%                                                          Æ–¨ ù¢ª ù¢¢
+>\def\filename{ziari.sty}
+>\def\fileversion{0.2beta}
+>\def\filedate{4 June 1999}
+>\typeout{}
+>\typeout{Document Style `MaThesis' (Math Thesis)}
+>\typeout{By Jafar Ziari,  13 Nov. 2001}
+>\typeout{}
+>
+>\def\@ptsize{0} \@namedef{ds@11pt}{\def\@ptsize{1}}
+>\@namedef{ds@12pt}{\def\@ptsize{2}}
+>\def\ds@twoside{\@twosidetrue \@mparswitchtrue} \def\ds@draft{\overfullrule
+>5pt}
+>\@options
+>\input rep1\@ptsize.sty\relax
+>
+>\def\labelitemi{$\bullet$}
+>\def\labelitemii{\bf --}
+>\def\labelitemiii{$\ast$}
+>\def\labelitemiv{$\cdot$}
+>
+>\arraycolsep 5pt \tabcolsep 6pt \arrayrulewidth .4pt \doublerulesep 2pt
+>\tabbingsep \labelsep
+>\skip\@mpfootins = \skip\footins
+>\fboxsep = 3pt \fboxrule = .4pt
+>
+>\newcounter {part}
+>\newcounter {chapter}
+>\newcounter {section}[chapter]
+>\newcounter {subsection}[section]
+>\newcounter {subsubsection}[subsection]
+>\newcounter {paragraph}[subsubsection]
+>\newcounter {subparagraph}[paragraph]
+>
+>\def\thepart {\Roman{part}}
+>\def\thechapter {\beginL\arabic{chapter}\endL}
+>\def\thesection {\thechapter-\beginL\arabic{section}\endL}
+>\def\thesubsection {\thesection-\beginL\arabic{subsection}\endL}
+>\def\thesubsubsection {\thesubsection-\beginL\arabic{subsubsection}\endL}
+>\def\theparagraph {\thesubsubsection-\beginL\arabic{paragraph}\endL}
+>\def\thesubparagraph {\theparagraph-\beginL\arabic{subparagraph}\endL}
+>
+>\def\@chapapp{\chaptername}
+>
+>\newif\if@restonecol
+>
+>\setcounter{topnumber}{2}
+>\def\topfraction{.7}
+>\setcounter{bottomnumber}{1}
+>\def\bottomfraction{.3}
+>\setcounter{totalnumber}{3}
+>\def\textfraction{.2}
+>\def\floatpagefraction{.5}
+>\setcounter{dbltopnumber}{2}
+>\def\dbltopfraction{.7}
+>\def\dblfloatpagefraction{.5}
+>\input titlepag.sty
+>
+>\mark{{}{}}
+>
+>\if@twoside \def\ps@headings{\let\@mkboth\markboth
+>\def\@oddfoot{}\def\@evenfoot{}
+>%\def\@evenhead{\rm \thepage\hfil \sl\leftmark}
+>\def\@evenhead{\rm \thepage\ \ \ \small\siah \leftmark\hfill}%        Left heading.
+>\def\@oddhead{\hbox{}\sl \rightmark \hfil
+>\rm\thepage}\def\chaptermark##1{\markboth {\uppercase{\ifnum \c@secnumdepth
+>\m@ne
+> \@chapapp\ \thechapter \ \fi ##1}}{}}\def\sectionmark##1{\markright
+>{\uppercase{\ifnum \c@secnumdepth >\z@
+> \thesection \ \fi ##1}}}}
+>\else
+>%\def\ps@headings{\let\@mkboth\markboth
+>%\def\@oddfoot{}\def\@evenfoot{}
+>%\def\@oddhead{\hbox {}\sl \rightmark \hfil\rm\thepage}
+>%\def\@oddhead{\hfill{\small\siah \rightmark}\ \ \ \rm\thepage}% Right heading.
+>%\def\chaptermark##1{\markright {\uppercase{\ifnum \c@secnumdepth
+>%>\m@ne
+>% \@chapapp\ \thechapter \ \fi ##1}}}}
+>%\fi
+>%\def\ps@myheadings{\let\@mkboth\@gobbletwo
+>%\def\@oddhead{\hbox{}\sl\rightmark \hfil
+>%\rm\thepage}\def\@oddfoot{}\def\@evenhead{\rm \thepage\hfil\sl\leftmark\hbox
+>%{}}\def\@evenfoot{}\def\chaptermark##1{}\def\sectionmark##1{}%
+>%\def\subsectionmark##1{}}
+>%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>\def\ps@headings{\let\@mkboth\markboth
+> \def\@oddfoot{}\def\@evenfoot{}%       No feet.
+> \def\@evenhead{\rm \thepage\ \ \ \small\siah \leftmark\hfill}%        Left heading.
+> \def\@oddhead{\hfill{\small\siah \rightmark}\ \ \ \rm\thepage}% Right heading.
+> \def\@oddhead{\thesection\ \ {\small\siah \rightmark}\ \hrulefill\ \rm\thepage}% Right heading.
+> \def\chaptermark##1{\markboth {\uppercase{\ifnum \c@secnumdepth >\m@ne
+>      \fi ##1}}{}}%
+> \def\sectionmark##1{\markright {\uppercase{\ifnum \c@secnumdepth >\z@
+>   \fi ##1}}}}
+>\def\ps@myheadings{\let\@mkboth\@gobbletwo
+> \def\@oddhead{{\sl\rightmark}\hfil \rm\thepage}%
+> \def\@oddfoot{}\def\@evenhead{\rm \thepage\hfil\sl\leftmark}%
+> \def\@evenfoot{}\def\chaptermark##1{}\def\sectionmark##1{}%
+> \def\subsectionmark##1{}}
+>%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>
+>\@addtoreset{equation}{chapter}
+>\def\theequation{\thechapter-\beginL\arabic{equation}\endL}
+>
+>\ps@plain \pagenumbering{arabic} \onecolumn \if@twoside\else\raggedbottom\fi
+>
+>\def\fcnt#1{\ifcase#1\or
+>  þ‰× \or ¢ø \or ¨‰‚ \or ‰ú‰‘¤ \or •‰€‰¸ \or ª‰Ç \or û‰Ô‰´ \or
+>  û‰È‰´ \or ÷‰‚ \or ¢ù \or þ‰‘¥¢ù \or ¢ø¥¢ù \or ¨‰ƒ‰Ã¢ù \or
+>  ‰ú‰‘¤¢ù \or •‰‘÷‰Ã¢ù \or ª‰‘÷‰Ã¢ù \or û‰Ô‰Àù \or û‰¹‰Àù \or
+>  ÷‰¥¢ù \or “‰ƒ‰Æ‰´\else ¨‰Â¤þ‰Ã\fi
+>}
+>\def\fcountpagenum{\def\thepage{\beginR\pnazok\fcnt{\value{page}}\endR}}
+>\def\normalpagenum{\def\thepage{\number\value{page}}}
+>
+>\begingroup \newlinechar`\/
+>\expandafter\ifx\csname FarsiTeX\endcsname\relax
+>\errmessage{%
+>  Non-FarsiTeX format file; \filename\space can only be used with FarsiTeX./%
+>! Enter h if you need more information%
+>}
+>\aftergroup\stop
+>\fi
+>\endgroup
+>
+>% This is needed for e-TeX. --RP
+>% Added: 14 May 1998
+>
+>\TeXXeTstate=1
+>
+>% Here is some changes that should be executed after reading
+>% the main style file. (e.g., article.sty)
+>
+>\def\@biblabel#1{[#1]}
+>\def\l@chapter{\noindent\@dottedtocline{1}{1.5em}{2.3em}}
+>\def\l@section{\noindent\@dottedtocline{1}{1.7em}{4em}}
+>\def\l@subsection{\noindent\@dottedtocline{1}{5.6em}{5em}}
+>\def\l@subsubsection{\noindent\@dottedtocline{1}{12em}{2em}}
+>\def\l@figure{\noindent\@dottedtocline{1}{5em}{2.3em}}
+>\let\l@table\l@figure
+>
+>\def\labelenumi{\if@farsi\beginL(\arabic{enumi}\endL\else%
+>\arabic{enumi}.\fi}
+>\def\theenumi{\beginL{\arabic{enumi}}\endL}
+>\def\labelenumii{\if@farsi)\alph{enumii}(\else (\alph{enumii})\fi}
+>\def\theenumii{\alph{enumii}}
+>\def\p@enumii{\theenumi}
+>\def\labelenumiii{\beginL\roman{enumiii}.\endL}
+>\def\theenumiii{\beginL\roman{enumiii}\endL}
+>\def\p@enumiii{\beginL\theenumi(\theenumii)\endL}
+>\def\labelenumiv{\beginL\alph{enumiv}.\endL}
+>\def\theenumiv{\beginL\Alph{enumiv}\endL}
+>\def\p@enumiv{\beginL\p@enumiii\theenumiii\endL}
+>
+>\def\descriptionlabel#1{\hspace\labelsep \bf #1}
+>\def\description{\list{}{\labelwidth\z@ \itemindent-
+> \if@farsi\rightmargin\else\leftmargin\fi
+> \let\makelabel\descriptionlabel}}
+>\let\enddescription\endlist
+>
+>\def\verse{\let\\=\@centercr
+>\if@farsi
+> \list{}{\itemsep\z@ \itemindent -1.5em
+> \listparindent \itemindent
+> \leftmargin\rightmargin\advance\rightmargin 1.5em}\item[]
+>\else
+> \list{}{\itemsep\z@ \itemindent -1.5em
+> \listparindent \itemindent
+> \rightmargin\leftmargin\advance\leftmargin 1.5em}\item[]
+> \fi}
+>\let\endverse\endlist
+>
+>\def\quotation{\list{}{\listparindent 1.5em
+> \itemindent\listparindent
+>  \if@farsi
+>    \leftmargin\rightmargin
+>  \else
+>    \rightmargin\leftmargin
+>  \fi
+>  \parsep 0pt plus 1pt}\item[]}
+>\let\endquotation=\endlist
+>
+>\def\quote{\list{}{\if@farsi\leftmargin\rightmargin
+>\else\rightmargin\leftmargin\fi}\item[]}
+>\let\endquote=\endlist
+>
+>\long\def\@makecaption#1#2{
+> \vskip 10pt
+> \setbox\@tempboxa\hbox{#1: #2}
+> \ifdim \wd\@tempboxa >\hsize \if@farsi\beginR\fi#1: #2\par%
+> \else \hbox
+>to\hsize{\if@farsi\beginR\fi\hfil\box\@tempboxa\hfil%
+>\if@farsi\endR\fi}
+> \fi}
+>
+>\let\oldps@headings\ps@headings
+>\let\oldps@myheadings\ps@myheadings
+>\def\ps@headings{%
+>   \def\sl{\khabide}
+>   \oldps@headings
+>   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+>   \def\@oddhead{\beginR\tempodd\endR}\fi
+>   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+>   \def\@evenhead{\beginR\tempeven\endR}\fi
+>}
+>
+>\def\ps@myheadings{%
+>   \def\sl{\khabide}
+>   \oldps@myheadings
+>   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+>   \def\@oddhead{\beginR\tempodd\endR}\fi
+>   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+>   \def\@evenhead{\beginR\tempeven\endR}\fi
+>}
+>
+>\pagenumbering{farsifoo}
+>\ifx\@empty\@oddhead\else\pagestyle{headings}\fi
+>
+>\def\@outputdblcol{\farsioutputdblcol}
+>
+>\advance\textheight by -10\baselineskip
+>
+>%% added to solve reference problem (13 Aug 1998) --RP
+>\def\ref#1{\beginR\pnazok\oldref{#1}\endR}
+>
+>%% added to solve tabular* problem (24 Oct 1998) --RP
+>\expandafter \let \csname endtabular*\endcsname = \endtabular
+>
+>%% added to make `fnsymbol's better (24 Oct 1998) --RP
+>\def\@fnsymbol#1{\ifcase#1\or *\or **\or ***\or \ddagger\or
+>   \ddagger\ddagger\or \ddagger\ddagger\ddagger\or \mathchar "278
+>   \or \mathchar "27B\or \| \or \dagger\or \dagger\dagger\else\@ctrerr
+>   \fi\relax}
+>
+>\def\contentsname{ê‰ú‰Â¨‰´}             %         –¨¤úê
+>\def\listfigurename{ê‰ú‰Â¨‰´ ª‰Ø‰Ü‰ú‰‘} %   ‘úóîª –¨¤úê
+>\def\listtablename{ê‰ú‰Â¨‰´ ›‰Àøó‰ú‰‘}  %  ‘úóø¢› –¨¤úê
+>\def\refname{õ‰Â›‰â}                   %         â›¤õ
+>\def\indexname{ê‰ú‰Â¨‰´ ¤û‰€‰Þ‰‘}      %  ‘õ÷û¤ –¨¤úê
+>\def\figurename{ª‰Ø‰Û}                  %           ñîª
+>\def\tablename{›‰Àøñ}                   %          ñø¢›
+>\def\abstractname{‰Ø‰ƒ‰Àù}             %         ù¢þî
+>\def\appendixname{•‰ƒ‰¨‰´}             %         –¨øþ•
+>\def\partname{“‰¿‰Ç}                    %           ©¡“
+>\def\chaptername{ê‰Ê‰Û}                 %           ñ¬ê
+>\def\bibname{î‰µ‰‘’÷‰‘õ‰‚}              %      ùõ‘÷’‘—î
+>
+>%-----------
+>\def\part{\cleardoublepage \thispagestyle{plain} \if@twocolumn \onecolumn
+>\@tempswatrue \else \@tempswafalse \fi \hbox{}\vfil \secdef\@part\@spart}
+>
+>\def\@part[#1]#2{\ifnum \c@secnumdepth >-2\relax \refstepcounter{part}
+>\addcontentsline{toc}{part}{\thepart \hspace{3em}#1}\else
+>\addcontentsline{toc}{part}{#1}\fi \markboth{}{}
+> {\centering \ifnum \c@secnumdepth >-2\relax \huge\bf\partname{} \thepart \par
+>\vskip 20pt \fi \Huge \bf #2\par}\@endpart}
+>\def\@endpart{\vfil\newpage \if@twoside \hbox{} \thispagestyle{empty}
+> \newpage
+> \fi \if@tempswa \twocolumn \fi}
+>\def\@spart#1{{\centering \Huge \bf #1\par}\@endpart}
+>
+>%-----------
+>\def\@makechapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright
+> \ifnum \c@secnumdepth >\m@ne \Huge\sayedar \thechapter \par
+> \vskip 20pt \fi \Huge \bf #1\par
+> \nobreak \vskip 40pt } }
+>
+>%-----------
+>\newcounter{figure}[chapter]
+>\def\thefigure{\thechapter-\beginL\@arabic\c@figure\endL}
+>\def\fps@figure{tbp}
+>\def\ftype@figure{1}
+>\def\ext@figure{lof}
+>
+>\def\fnum@figure{\figurename{} \thefigure}
+>\def\figure{\@float{figure}}
+>\let\endfigure\end@float
+>\@namedef{figure*}{\@dblfloat{figure}}
+>\@namedef{endfigure*}{\end@dblfloat}
+>
+>%-----------
+>\newcounter{table}[chapter]
+>\def\thetable{\thechapter-\beginL\@arabic\c@table\endL}
+>\def\fps@table{tbp}
+>\def\ftype@table{2}
+>\def\ext@table{lot}
+>
+>\def\fnum@table{\tablename{} \thetable}
+>\def\table{\@float{table}}
+>\let\endtable\end@float
+>\@namedef{table*}{\@dblfloat{table}}
+>\@namedef{endtable*}{\end@dblfloat}
+>
+>%-----------
+>\font\sharifarm=arm50             % Sharif arm font
+>
+>\headheight 19pt
+>\headsep 15mm
+>
+>\footskip 1cm
+>\footnotesep 12pt
+>
+>\parindent 1cm
+>
+>% \title and \author already exist
+>\def\department#1{\gdef\@department{#1}}
+>\def\branch#1{\gdef\@branch{#1}}
+>\def\degree#1{\gdef\@degree{#1}}
+>\def\thesisdate#1{\gdef\@thesisdate{#1}}
+>\def\supervisor#1{\gdef\@supervisor{#1}}
+>
+>\def\englishtitle#1{\gdef\@englishtitle{#1}}
+>\def\englishauthor#1{\gdef\@englishauthor{#1}}
+>\def\englishdegree#1{\gdef\@englishdegree{#1}}
+>\def\englishdepartment#1{\gdef\@englishdepartment{#1}}
+>\def\englishbranch#1{\gdef\@englishbranch{#1}}
+>\def\englishthesisdate#1{\gdef\@englishthesisdate{#1}}
+>\def\englishsupervisor#1{\gdef\@englishsupervisor{#1}}
+>
+>\def\maketitle{\begin{titlepage}
+>\vskip -10mm
+>{\centerline{\hspace*{-2.5cm}\sharifarm a}}
+>%{\centerline{\hspace*{-2.5cm}\univlogo}}
+>%\vskip -4mm
+>\par
+>{\large\bf ¢÷ÈÚ‘ù ¬€ãµü ªÂþÓ}
+>\par
+>{\LARGE\sayedar ¢÷‰È‰Ø‰Àù \@department}
+>\par
+>\vskip 1cm
+>{\Large\bf
+>•‘þ‘ö÷‘õ‰‚ \@degree
+>\par
+>\Large\bf ð¤þÇ \@branch}
+>\vskip 17mm
+>{\Large\tookhali ä€øö\par\vskip 3mm
+>\Huge\bf \@title}
+>\par
+>\vskip 14mm
+>{\large\tookhali ¨µ‘¢ ¤û€Þ‘\par\vskip 2mm
+>\LARGE\bf \@supervisor}
+>\vskip 17mm
+>{\large\tookhali ÷Ú‘¤©} \par\vskip 2mm
+>{\LARGE\bf \@author} \par
+>\par
+>\vskip 17mm
+>{\Large \@thesisdate}
+>\par
+>\vfill
+>\end{titlepage}%
+>}
+>
+>% this environment should probably be called abstract,
+>% but we want people to also be able to get at the more
+>% basic abstact environment
+>\def\abstractpage{\newpage
+>%\thispagestyle{empty}
+>\vskip 15mm
+>\begin{center}
+>{\Large{\bf \@title} \\}
+>\end{center}
+>\par
+>\begin{abstract}}
+>\def\endabstractpage{\end{abstract}
+>\newpage
+>}
+>
+>\def\englishabstract{\newpage
+>\thispagestyle{empty}
+>\vskip 10mm
+>\begin{center}
+>{\Large\bf \@englishtitle \\[15mm]}
+>\end{center}
+>{\large\bf Abstract}\par
+>\english}
+>
+>\def\endenglishabstract{\newpage}
+>
+>\def\acknowledgementpage{\newpage
+>\thispagestyle{empty}
+>\centerline{\Large \bf ì‰À¤¢÷‰ü}
+>\vspace{1cm}
+>\par\noindent}
+>\def\endacknowledgementpage{\newpage}
+>
+>% You can use the titlepage environment to do it all yourself if you
+>% don't want to use \maketitle.  If the titlepage environment, the
+>% paragraph skip is infinitely stretchable, so if you leave a blank line
+>% between lines that you want space between, the space will stretch so
+>% that the title page fills up the entire page.
+>\def\titlepage{\newpage\centering
+>  \thispagestyle{empty}
+>  \parindent 0pt \parskip 10pt plus 1fil minus 1fil
+>  \def\baselinestretch{1}\@normalsize\vbox to \vsize\bgroup\vbox to 9in\bgroup}
+>% The \kern0pt pushes any depth into the height.  Thanks to Richard Stone.
+>\def\endtitlepage{\par\kern 0pt\egroup\vss\egroup\newpage}
+>
+>\def\signature#1#2{\par\noindent#1\dotfill\null\\*
+>  {\raggedright #2\par}}
+>
+>\def\abstract{\subsection*{\abstractname}\small\def\baselinestretch{1}
+>\@normalsize}
+>\def\endabstract{\par}
+>
+>\def\l@chapter#1#2{\addpenalty{-\@highpenalty}
+> \vskip 1.0em plus 1pt \@tempdima 1.5em \begingroup
+> \parindent \z@ \rightskip \@pnumwidth
+> \parfillskip -\@pnumwidth
+> \Large \bf \leavevmode \advance\leftskip\@tempdima \hskip -\leftskip #1\nobreak\hfil
+>\nobreak\hbox to\@pnumwidth{\hss #2}\par
+> \penalty\@highpenalty \endgroup}
+>
+>\pagestyle{plain} %{headings}
+>
+>\def\@makechapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright
+> \ifnum \c@secnumdepth >\m@ne \Large\sayedar \@chapapp{} \thechapter \par
+> \vskip 20pt \fi \Huge \bf #1\par
+> \nobreak \vskip 40pt } }
+>
+>\def\keywords#1{\par \vspace{5mm}
+>\noindent \bf ø¦ùû‰‘ý î‰Ü‰ƒ‰Àý:\iranic #1
+>}
+>\def\englishkeywords#1{\par \vspace{5mm}
+>\noindent {\bf Keywords:} {\it #1}}
+>
+>\font\titlefont=cmssbx10 scaled 2074
+>\font\supervisorfont=cmbxti10
+>\def\makeenglishtitle{\english\begin{titlepage}
+>\vskip -10mm
+>{\centerline{\hspace*{2.3cm}\sharifarm a}}
+>%{\centerline{\hspace*{2.3cm}\univlogo}}
+>%\vskip -4mm
+>\par
+>{\large Sharif University of Technology}
+>\par
+>\Large\bf
+>\@englishdepartment
+>\par
+>\vskip 5mm
+>{\LARGE
+>\@englishdegree\ Thesis in
+>\par
+>\LARGE\bf \@englishbranch}
+>\vskip 17mm
+>\addtolength{\baselineskip}{5mm}
+>{\Large\sf Title\par\vskip 0mm
+>\Huge \@englishtitle}
+>\addtolength{\baselineskip}{-5mm}
+>\par
+>\vskip 14mm
+>{\Large\sf Supervisor\par\vskip 2mm
+>\LARGE\@englishsupervisor}
+>\vskip 17mm
+>{\Large\sf Author} \par\vskip 2mm
+>{\LARGE\@englishauthor} \par
+>\par
+>\vskip 17mm
+>{\Large\bf \@englishthesisdate}
+>\par
+>\vfill
+>\end{titlepage}%
+>\farsi%
+>}
+>
+>\def\@pnumwidth{1.55em}
+>\def\@tocrmarg {2.55em}
+>\def\@dotsep{4.5}
+>\setcounter{tocdepth}{3}
+>%\input{besm}
+>\def\besm{{\siah “‰‚÷‰‘ô ¡‰Àø÷‰À “‰¿‰È‰€‰Àù õ‰ú‰Â“‰‘ö}}
+>%\def\tableofcontents{\@restonecolfalse
+>%  \if@twocolumn\@restonecoltrue\onecolumn\fi
+>%  \chapter*{\huge\contentsname
+>%        \@mkboth{\uppercase{\contentsname}}{\uppercase{\contentsname}}}%
+>% \@starttoc{toc}\if@restonecol\twocolumn\fi}
+>
+>
+>\def\tableofcontents{\@restonecolfalse
+>  \if@twocolumn\@restonecoltrue\onecolumn\fi
+>  \chapter*{\centering\bf\normalsize\besm\\[2cm]\huge\bf\contentsname}%
+>  \@starttoc{toc}\if@restonecol\twocolumn\fi}
+>
+>\def\l@part#1#2{\addpenalty{-\@highpenalty}
+> \addvspace{2.25em plus 1pt} \begingroup
+> \@tempdima 3em \parindent \z@ \rightskip \@pnumwidth \parfillskip
+> -\@pnumwidth
+> {\large \bf \leavevmode #1\hfil \hbox to\@pnumwidth{\hss #2}}\par
+> \nobreak \global\@nobreaktrue \everypar{\global\@nobreakfalse\everypar{}}
+>\endgroup}
+>
+>\def\l@chapter#1#2{\addpenalty{-\@highpenalty}%
+>   \vskip 1em\vskip 1.0em plus\p@
+>   \@tempdima 1.5em
+>   \begingroup
+>     \parindent \z@ \rightskip \@pnumwidth
+>     \parfillskip -\@pnumwidth
+>     \bf
+>     \leavevmode
+>      \advance\leftskip\@tempdima
+>      \hskip -\leftskip
+>     \bf\Large #1\rm\hfill\ \par
+>     \penalty\@highpenalty
+>   \endgroup}
+>
+>
+>
+>%\def\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+>%\def\l@subsection{\@dottedtocline{2}{3.8em}{3.2em}}
+>%\def\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
+>%\def\l@paragraph{\@dottedtocline{4}{10em}{5em}}
+>%\def\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
+>
+>\def\listoffigures{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+> \fi\chapter*{\listfigurename\@mkboth
+> {\uppercase{\listfigurename}}{\uppercase{\listfigurename}}}\@starttoc
+> {lof}\if@restonecol
+> \twocolumn\fi}
+>\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
+>
+>\def\listoftables{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+> \fi\chapter*{\listtablename\@mkboth
+> {\uppercase{\listtablename}}{\uppercase{\listtablename}}}\@starttoc
+> {lot}\if@restonecol
+> \twocolumn\fi}
+>\let\l@table\l@figure
+>
+>\def\thebibliography#1{\chapter*{\huge\bibname\@mkboth
+> {\uppercase{\bibname}}{\uppercase{\bibname}}}\list
+> {[{\pnazok\arabic{enumi}}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+> \advance\leftmargin\labelsep
+> \usecounter{enumi}}
+> \def\newblock{\hskip .11em plus .33em minus .07em}
+> \sloppy\clubpenalty4000\widowpenalty4000
+> \sfcode`\.=1000\relax}
+>\let\endthebibliography=\endlist
+>
+>
+>
+>
+>\def\theindex{\@restonecoltrue\if@twocolumn\@restonecolfalse\fi
+> \columnseprule \z@
+> \columnsep 35pt\twocolumn[\@makeschapterhead{\huge\indexname}]
+> \@mkboth{\uppercase{\indexname}}{\uppercase{\indexname}}%
+> \thispagestyle{plain}\parindent\z@
+> \parskip\z@ plus .3pt\relax\let\item\@idxitem}
+>\def\@idxitem{\par\hangindent 40pt}
+>\def\subitem{\par\hangindent 40pt \hspace*{20pt}}
+>\def\subsubitem{\par\hangindent 40pt \hspace*{30pt}}
+>\def\endtheindex{\if@restonecol\onecolumn\else\clearpage\fi}
+>\def\indexspace{\par \vskip 10pt plus 5pt minus 3pt\relax}
+>
+>\def\thefootnote{\oldarabic{footnote}}
+>\def\footnoterule{\kern 3\p@
+> \hrule width .4\columnwidth
+> \kern 2.6\p@}
+>\@addtoreset{footnote}{chapter}
+>\long\def\@makefntext#1{\parindent 1em\noindent
+> \hbox to 1.8em{\hss$^{\@thefnmark}$}\,#1}
+>
+>%-----------emlines and bezier macros
+>
+>\def\emline#1#2#3#4#5#6{%
+>       \put(#1,#2){\special{em:moveto}}%
+>       \put(#4,#5){\special{em:lineto}}}
+>\def\newpic#1{}
+>
+>%-----------Math environments
+>
+>\newtheorem{preathm}{\siah\large ì‰Ì‰ƒ‰‚}
+>\def\thepreathm{\hspace{.31ex}\falpha{preathm}\hspace{.31ex}}
+>\newenvironment{athm}{\vspace{-1.2em}\begin{preathm}}{\end{preathm}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{preaconj}[preathm]{\siah\large Ÿ‰À§}
+>\def\thepreathm{\hspace{.31ex}\falpha{preathm}\hspace{.31ex}}
+>\newenvironment{aconj}{\vspace{-1.2em}\begin{preaconj}}{\end{preaconj}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pthm}{\siah\large ì‰Ì‰ƒ‰‚}[chapter]
+>\newenvironment{thm}{\vspace{-1.2em}\begin{pthm}}{\end{pthm}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pconj}[pthm]{\siah\large Ÿ‰À§}
+>\newenvironment{conj}{\vspace{-1.2em}\begin{pconj}}{\end{pconj}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pcor}[pthm]{\siah\large ÷‰µ‰ƒ‰¹‰‚}
+>\newenvironment{cor}{\vspace{-1.2em}\begin{pcor}}{\end{pcor}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pprop}[pthm]{\siah\large ð‰Ã¤ù}
+>\newenvironment{prop}{\vspace{-1.2em}\begin{pprop}}{\end{pprop}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pdfn}[pthm]{\siah\large —‰ã‰Âþ‰Ó}
+>\newenvironment{dfn}{\vspace{-1.2em}\begin{pdfn}}{\end{pdfn}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{plem}[pthm]{\siah\large ó‰Ý}
+>\newenvironment{lem}{\vspace{-1.2em}\begin{plem}}{\end{plem}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pexmpl}[pthm]{\siah\large õ‰·‰‘ñ}
+>\newenvironment{exmpl}{\vspace{-1.2em}\begin{pexmpl}}{\hfill%
+>                       {\InE{}$\vartriangle$\EnE{}}\end{pexmpl}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{pques}[pthm]{\siah\large •‰Â¨‰Ç}
+>\newenvironment{ques}{\vspace{-1.2em}\begin{pques}}{\end{pques}
+>                       \vspace{0.5em}}
+>
+>\newtheorem{preconjj}{\siah\large Ÿ‰À§}
+>\newenvironment{conjj}{\vspace{-1.2em}\begin{preconjj}}{\end{pconjj}
+>                       \vspace{0.5em}}
+>
+>\newenvironment{rem}{{\noindent\bf\large —‰±‰Ê‰Âù.} \rm }{}
+>
+>\newenvironment{proof}{{\noindent\bf\large “‰Âû‰‘ö.} \rm }{
+>                      \hfill{\InE{}$\square$\EnE{}}\newline\vspace{-.7em}}
+>
+>\setlength{\textheight}{240mm}
+>\setlength{\textwidth}{144mm}
+>\setlength{\topmargin}{-1mm}
+>\setlength{\oddsidemargin}{-4mm}
+>\setlength{\parskip}{1mm}
+>\headheight= 5pt
+>\headsep= 20pt
+>\footskip=36pt
+>\hoffset=0pt
+>\textheight=610pt
+>\farsi
+>
+>\input ftoday.sty
+>
+>\farsieqno
+>\mathfnumber
+>\ffootnoterule
+>
+>%%%%%%%%%%%%%%%%%%%%%%%ChapterHead%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>\def\@makechapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedleft
+> \ifnum \c@secnumdepth >\m@ne \Huge \thechapter \par
+> \vskip 20pt \fi \huge \bf #1\par
+> \nobreak \vskip 40pt } }
+>
+> %%%%%%%%%%%%%%%%%%%%%Heading%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>
+>\normalsize
+<

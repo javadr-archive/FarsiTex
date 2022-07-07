@@ -1,0 +1,194 @@
+<·Ú“¨ôÚóóùÚó¤ŸõöÚó¤Ÿþô
+<
+<ÒdocumentstyleÓoz,farsi,sharifth,lotusfont,exclralg,epsf,urlÑÞfreport×
+<
+<·ÒinputÞpsfig×
+<·ÒinputÞepsf×
+<·ÒinputÚÐamssymÐ
+<·ÒusepackageÞgraphics×
+<
+<·ÒinputÞÐheaderÐ×ÚÚÚÚÚÚ·Úê‘þñÚheaderÚª‘õñÚ“ã®üÚ—ã‘¤þéÚ¨–ÚîùÚ¢¤Ú•‘þ‘ö÷‘õù
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Ú“ùÚî‘¤Ú¤ê—ùÚ¨–Æ
+<·ÒincludeonlyÞÐintro,historyÐ×
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Ú“‘Ú¨—ê‘¢ùÚ¥Ú¢¨—ø¤ÚincludeonlyÚõü—øöÚ—÷ú‘Úì¨õ—ü
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Ú¥Úõ—öÚ¤ÚŸ¤øêþ÷üÚî¤¢ÆÚþöÚ¢¨—ø¤Ú¢¤ÚŸþöÚ—úþùý
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Úð¥¤©û‘ýÚ“¥¤ïÚîùÚª‘õñÚê¬ñû‘ýÚõ¡—óéÚû¨—÷¢Úî‘¤“¤¢
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Ú¢¤¢ÆÚ“¤ýÚ“ùÚ¢¨–Úø¤¢öÚ¯òä‘–Ú“þª—¤Ú¢¤ÚþöÚõø¤¢
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Ú“ùÚî—‘’Ú¤û÷õ‘ýÚLaTeXÚõ¤›ãùÚî÷þ¢Æ
+<
+<
+>
+>%ÑMaThes1.sty¢¨—ø¤û‘ýÚªõ‘¤ùÚð£¤ýÚê‘¤¨üÚ¬êŸ‘–ÚøóþùÚÓ—ø¨ÁÚŸõþ¢Ú¤®‘Úªú¤þ‘¤ýŠ¥Ú
+>% shahriari@yahoo.com
+>
+>\def\fcnt#1{\ifcase#1\or
+>þí \or ¢ø \or ¨ù \or ú‘¤ \or •÷š \or ª© \or 
+>ûê– \orÚûª– \or÷ù \or¢ù \orþ‘¥¢ù \or¢ø¥¢ù \or 
+>¨þ¥¢ù \orú‘¤¢ù \elseÚ¨¤¤þ¥Ý
+>\fi
+>}
+>\def\fcountpagenum{\def\thepage{\beginR\pnazok\fcnt{\value{page}}\endR}}
+>\def\normalpagenum{\def\thepage{\number\value{page}}}
+>
+>%\def\@oddhead{\thesection\ \ {\small\siah \rightmark}\ \hrulefill\ \rm\thepage}% Right heading.
+>
+>%¢¨—ø¤û‘ýÚªõ‘¤ùÚð£¤ýÚ•þø¨—ú‘Ú“ùÚê‘¤¨üÚ
+>%Ó—ø¨ÁÚŸõþ¢Ú¤®‘Úªú¤þ‘¤ýÑ
+>\def\alphafcnt#1{\ifcase#1\or
+>  Ú\or’Ú\or”Ú \or–Ú \or˜Ú \oršÚ
+>\elseÚ¨¤¤þ¥Ý
+>\fi
+>}
+>%\def\AlphaFChapNum{\def\thechapter{\beginR\psiah\alphafcnt{\value{chapter}}\endR}}
+>\def\AlphaFChapNum{\def\thechapter{\alphafcnt{\value{chapter}}}}
+<
+>\def\contentsname{êú¤¨–}
+>\def\listfigurename{êú¤¨–Úªîñû‘}
+>\def\listtablename{êú¤¨–Ú›¢øñû‘}
+<
+<ÒnewtheoremÞÐcorollaryÐ×ÞÒsiahÒlargeÚ÷—þ›ù×ÓÐchapterÐÑ
+<ÒnewtheoremÞÐlemmaÐ×ÞÒsiahÒlargeÚóô×ÓÐchapterÐÑ
+<ÒnewtheoremÞÐtheoremÐ×ÞÒsiahÒlargeÚì®þù×ÓÐchapterÐÑ
+<ÒnewtheoremÞÐassumÐ×ÞÒsiahÒlargeÚê¤­×ÓÐchapterÐÑ
+<ÒnewtheoremÞÐdefnÐ×ÞÒsiahÒlargeÚ—ã¤þé×ÓÐchapterÐÑ
+<
+>\newenvironment{myproof}{{\noindent\bf\large“¤û‘öÆ} \rm }
+>                        {\hfill{$\square$}\newline\vspace{-.7em} \farsi}
+>%                      \hfill{\InE{}$\square$\EnE{}}\newline\vspace{-.7em} \farsi}
+>\newcommand{\binom}[2]{{#1 \choose #2}}
+>\newcommand{\N}[1]{\left| #1 \right|}
+>\newcommand{\mbf}[1]{\mbox{\bf #1}}
+<
+<
+>% Fixing the bug of refering labels with more than two digits
+>%\renewcommand{\theequation}{\beginL\arabic{equation}\endL}
+>%\renewcommand{\thefigure}{\beginL\arabic{figure}\endL}
+>% Fix the bug + Adding chapter number
+>\renewcommand{\theequation}{\beginL\arabic{equation}-\thechapter\endL}
+>\renewcommand{\thefigure}{\beginL\arabic{figure}-\thechapter\endL}
+>%\renewcommand{\thealgline}{\beginL\arabic{algline}\endL}
+>%\newcommand{\aref}[1]{\beginL\arabic{\ref{#1}}\endL}
+>
+>%\renewcommand{\thealgline}{\beginL\arabic{algline}\endL}
+>
+>\mathenumber
+>%¥Ú÷›‘ÚîùÚä¢¢Úê¤õøóú‘Úò—þöÚ¨–ŠÚ¢¨—ø¤Ú¥þ¤Ú“¤ýÚê‘¤¨üÚª¢öÚä¢¢Ú•‘÷øþ§û‘Ú¨–Æ
+>\newcommand{\ftnote}[1]{\hspace{-1mm}\mathfnumber\footnote{#1}\mathenumber\hspace{-1mm}}
+<
+<
+>%
+>%ÚÚ“¤ýÚ¤›‘áÚ¢¢öÚ“ùÚûõ¤ùÚªõ‘¤ùÚ¬êŸùÚ
+>%Ð×ÚÆÆÆÚÚdefn:vulnÞÐfullrefÚõ™‘ñÊÚÆÆÆõ¯‘“ëÚ—ã¤þéÚÒ
+>\newcommand{\fullref}[1]{\ref{#1}Ú¢¤Ú¬êŸùÚ\pageref{#1}}
+<
+<
+<ÒbeginÞdocument×
+<
+<ÒtitleÞõ¢ó¨‘¥ýÚøÚ—ŸóþñÚ¨þ’•£þ¤ýÚª“îùû‘ýÚî‘õ•þø—¤ý×
+<ÒauthorÞŸõþ¢¤®‘Úªú¤þ‘¤ý×
+<ÒdegreeÞ¢î—¤ýÚõú÷¢¨üÚî‘õ•þø—¤×
+<ÒthesisdateÞÒtoday×
+<ÒsupervisorÞ¢î—¤Ú¤¨øñÚ›óþóü×
+<ÒdepartmentÞõú÷¢¨üÚî‘õ•þø—¤×
+<ÒmaketitleÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ·Ú¬êŸùýÚøñÚ¾ä÷øö½Ú—øóþ¢Úõüªø¢Æ
+<
+<Òpagebreak
+<ÒthispagestyleÞÐemptyÐ×
+<
+<ÒbeginÞcenter×
+<“¨ôÚóó´ùÚó¤´ŸõöÚó¤´ŸþôÚÒÒ
+<ÒvspaceÞÐ3cmÐ×
+<ÞÒLargeÚÒsayedarÚÚ—ì¢þôÚ“ùÚÆÆÆ×
+<ÒendÞcenter×
+<
+<Òpagebreak
+<
+<
+<ÒbeginÞacknowledgementpage×ÚÚÚ·Ú¬êŸùýÚì¢¤¢÷ü
+<“‘Ú¨•‘§Ú¥Ú¢¤ð‘ùÚþ¥¢Úõ÷‘öÚîùÚ—øêþëÚ÷›‘ôÚþöÚ•‘þ‘öÚ÷‘õùÚ¤Ú¢¢ÆÚ
+<ûõøÚîùÚû¤ÚùÚ¢¤þôÚ¨‘þùýÚ¥Úó¯‘éÚø¨–Æ
+<
+<
+<
+<ÆÒÒÓÐ10mmÐÑ
+<
+<ÒhfillÞŸõþ¢Ú¤®‘Úªú¤þ‘¤ýÒhskipÚÐ10mmÐ×
+<ÒendÞacknowledgementpage×
+<
+<ÒsetcounterÞÐpageÐ×ÞÐ1Ð×
+<ÒfcountpagenumÚÚÚÚÚÚÚÚÚÚÚ·Úªõ‘¤ùÚ¬êŸùû‘Ú“ùÚªîñÚþíŠÚ¢øŠÚ¨ùŠÚÆÆÆÚ—øóþ¢Úõüªø¢Æ
+<
+<ÒbeginÞabstractpage×ÚÚÚÚÚÚÚÚÚÚ·Ú¬êŸùýÚîþ¢ù
+<îþ¢ùÚîþ¢ù
+<
+<ÒkeywordsÞõ÷þ–ŠÚ¨þ’•£þ¤ýŠÚŸõóùŠÚõ¢ñÚî÷—¤ñÚ¢¨—¤¨ü×
+<ÒendÞabstractpage×
+<
+<
+<ÒtableofcontentsÚÚÚÚÚÚÚÚ·Úêú¤¨–Úõ÷¢›‘–Ú¤Ú—øóþ¢Úõüî÷¢Æ
+<ÒlistoffiguresÚÚÚÚÚÚÚÚÚÚ·Úóþ¨–Úªî‘ñÚ¤Ú—øóþ¢Úõüî÷¢Æ
+<Òlistoftables
+<
+<ÒnormalpagenumÚÚÚÚÚÚÚÚÚÚÚ·Úªõ‘¤ùð£¤ýÚ¬êŸùû‘Ú“ùÚŸ‘ó–Úä¢¢ýÚ“¤õüð¤¢¢Æ
+<
+<ÒpagenumberingÞÐfarsifooÐ×
+<ÒsetcounterÞÐpageÐ×ÞÐ0Ð×
+<
+<
+>\topmargin 0cm
+>\textheight 215mm
+>\def\defaultlineskip{\baselineskip 30pt}
+>\def\singlelineskip{\baselineskip 20pt}
+>\defaultlineskip
+>
+<
+<·Úê¬ñû‘ýÚ•‘þ‘öÚ÷‘õù
+<·ÒincludeÞÐintroÐ×ÚÚÚÚÚÚÚ·Úê¬ñÚÊÚõì¢õù
+<·ÒincludeÞÐrelatedworksÐ×
+<·ÒincludeÞÐLogicÐ×
+<·ÒincludeÞÐVTGÐ×
+<·ÒincludeÞÐVul-CatÐ×
+<·ÒincludeÞÐQVAÐ×
+<·ÒincludeÞÐConclusionÐ×
+<
+<ÒaddcontentslineÞÐtocÐ×ÞÐchapterÐ×Þõ¤›â×
+<
+<
+>\def\bibname{õ¤›â}
+>\english
+>%\def\providecommand{\renewcommand} % needed to support IEEEtran bib style
+>%\bibliographystyle{plain}
+>%\bibliographystyle{alpha}
+>\bibliographystyle{IEEEbib}
+>%\bibliographystyle{abbrv}
+>%\bibliographystyle{siam}
+>\bibliography{Thsbib}
+>\farsi
+<
+>%\english
+>%\bibliographystyle{siam}
+>%\bibliography{bib}
+>%\farsi
+<Òappendix
+<ÒaddcontentslineÞÐtocÐ×ÞÐchapterÐ×Þ•þø¨–û‘×
+<·Ú¢¨—ø¤Úªõ‘¤ùð£¤ýÚ•þø¨—ú‘Ú“ùÚê‘¤¨üÚÓ—ø¨ÁÚŸõþ¢Ú¤®‘Úªú¤þ‘¤ýÑ
+<ÒAlphaFChapNum
+<ÒincludeÞÐdicF2EÐ×ÚÚÚÚÚÚÚÚ·Úø¦ù÷‘õùÚ÷ðóþ¨üÚ“ùÚê‘¤¨ü
+>\english
+>\oddsidemargin=1.5cm
+>\englishtitle{Modeling and Analysis of Computer Network Vulnerabilities}
+>\englishauthor{Hamid Reza Shahriari}
+>\englishdegree{Doctor of Phylosophy \\ in \\ Computer Engineering (Software)}
+>\englishthesisdate{September 2006}
+>\englishsupervisor{Dr. Rasool Jalili}
+>\englishdepartment{Department of Computer Engineering}
+>\begin{englishabstract}
+>Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. 
+>Abstract text. Abstract text. Abstract text. Abstract text.
+>\englishkeywords{Security, Vulnerability, Vulnerability model, Vulnerability analysis, Attack, Access control model}
+>\end{englishabstract}
+>\makeenglishtitle
+<ÒendÞdocument×
+<
+<
+<

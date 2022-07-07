@@ -1,0 +1,212 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+case:=1;
+num_w#:=22u#;
+num_h#:=num_height#+5v#;
+
+def yek_mac(expr right_shift) =  
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_lt8(2.0u+right_shift,num_height,.97yek_start_width,73);
+  penpos9(max(yek_tail_width-num_width,0),0);
+  lft x9.l = hround(9.0u+right_shift-num_width/2);    bot y9 = 0;
+  ysd:=-56;
+  filldraw stroke z8e{dir ysd}..tension .95and1.2..z9e;
+enddef;
+
+beginchar(code[161], num_w#,num_h#,0);                          % Sefr (hollow)
+  adjust_fit(2u#, 2u#);
+  pickup rule_pen;
+  uu=vv=(u+v)/2;
+  lft x6=hround(5uu);
+  rt  x2=hround(w-lft x6);
+  y_shift:=6vv; 
+  bot y4=vround(y_shift); 
+  top y8=vround(12vv+y_shift);
+  circle_points;
+  draw_circle;
+endchar;
+
+beginchar(code[160], num_w#,num_h#,0);                         % Sefr
+  adjust_fit(2u#, 2u#);
+  save point_rotation_ang; point_rotation_ang :=10;
+  save point_to_ang;       point_top_ang      :=75;
+  save point_radius;       point_radius       :=1.05yek_start_width/2;
+  save point_v_rad;        point_v_rad        :=.8v;
+  save point_h_rad;        point_h_rad        :=.8u;
+  x1:=w/2;                 y1:=1.7yek_start_width/2;
+  one_point(1);
+endchar;
+
+beginchar(code[162],num_w#,num_h#,0#);                          % Yek
+  adjust_fit(2u#, 2u#);
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_lt1(7.5u,num_height,yek_start_width,69);
+  penpos2(max(yek_tail_width-num_width,0),0);
+  lft x2.l = hround(15.1u-num_width/2);    bot y2 = 0;
+  filldraw stroke z1e{dir -54}..tension .95and1.2..z2e;
+endchar;
+
+beginchar(code[163],num_w#,num_h#,0#);                          % Do
+  adjust_fit(2u#, 2u#);
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_tr1(17.98u,num_height+yek_start_width/2-1.0v,yek_tail_width,176);
+  defpos_vb2(11.0u,num_height-4.4v,.92yek_start_width,90);
+  yek_mac(3.1);
+  filldraw stroke z1e..tension 1.1and1..z2e...{dir (180+ysd)}z8e;
+endchar;
+
+beginchar(code[164],num_w#,num_h#,0#);                          % Se
+  adjust_fit(2u#, 2u#);
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_tr1(21.2u,num_height+yek_start_width/2-1.1v, yek_tail_width,-4);
+  defpos_vb2(16.8u,num_height-3.35v, .85yek_start_width,-90);
+  penpos3(yek_tail_width-tiny,176);
+  defpos_vb4( 7.3u,num_height-5.0v, .92yek_start_width,90);
+      x3 = 13.9u; 
+  top y3 = vround(num_height+yek_start_width/2-1.3v+yek_tail_width/2);
+  yek_mac(-0.3);
+  filldraw stroke z1e{dir -98}..z2e{left}..{dir 86} z3e;
+  filldraw stroke z3e..tension 1.15and1..z4e...{dir (180+ysd)}z8e;
+  draw z2l{left}..tension1.05..{dir 100}z3r;
+endchar;
+
+beginchar(code[165],num_w#,num_h#,0#);                          % Char
+  adjust_fit(2u#, 2u#);
+  x3:= 9.9u;            y3:=num_height+.6v;
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_br1(17.0u,num_height+yek_start_width/2-.9v,2.9u,-122);
+  defpos_vt2(12.6u,num_height+yek_start_width/2-.3v,3.7u,-83);
+  penpos3(2.7u-num_width,-45);
+  defpos_tr4(19.3u,num_height-1.65v,yek_tail_width,165);
+  defpos_vb5(10.9u,num_height-5.75v,.843yek_start_width,85);
+  yek_mac(1.5);
+  filldraw stroke z1e..tension 1.3..z2e..tension 1.2 ..z3e
+                  ..tension 1.2and.8..z5e{dir -26};
+  filldraw stroke z4e..tension 1.15and1..z5e...{dir (180+ysd)}z8e;
+endchar;
+
+beginchar(code[166],num_w#,num_h#,0#);                          % Panj
+  adjust_fit(2u#, 2u#);
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_lt1(9.2u,num_height+1.6v,.87yek_start_width,75);
+  penpos2(.83yek_start_width-num_width,75);
+  defpos_hl3(19.2u,6.7v,.57yek_start_width,-10);
+  penpos4(.91yek_start_width-num_width,-92);
+  defpos_vt5(11.0u,.94yek_start_width/2-num_width/2+2.6v,.94yek_start_width,-92);
+  penpos6(.88yek_start_width-num_width,-92);
+  x2 = 19.0u;             y2   = num_height/2+1.2v;
+  x4 = 14.7u;         bot y4.r = 0;
+  x6 = 6.8u;          bot y6.r = 0;
+  x8 = 10.7u;             y8   = num_height-.2v;
+  defpos_hl7(2.4u,6.6v,3.6u*bolding,205);
+  penpos8(2.7u*bolding-num_width,138);
+  filldraw stroke z1e..tension 1.4and1..z2e..tension.95..z3e
+                  ..tension 1.2and.95..z4e..tension1.1..z5e;
+  filldraw stroke z5e..tension1.05..z6e...z7e..tension 1and2.5..z8e;
+endchar;
+
+beginchar(code[167], num_w#,num_h#,0#);                          % shesh
+  adjust_fit(2u#, 2u#);
+  pickup num_pen;
+  penpos1(.85yek_start_width-num_width,87);
+  penpos2(.90yek_start_width-num_width,86);
+  penpos3(.93yek_start_width-num_width,76);
+  penpos4(.94yek_start_width-num_width,76);
+  penpos5(1.02yek_start_width,75);
+     x1   = 2.45u;          y1   = num_height+.6v;
+     x2   = 4.75u;          y2   = num_height-1.5v;
+     x3   = 14.55u;     top y3.r = vround(num_height-1.8v+num_width/2 cosd 76);
+     x4   = x3+.9u;         y4   = num_height/2.4;
+  rt x5.r = hround(19.05u+1.02yek_start_width/2*cosd 75);   bot y5.l = 0;
+  filldraw stroke z1e..tension.94..z2e..tension 1.4..z3e;
+  filldraw stroke z3e{down}..tension1.3..z4e..tension.95and.9..z5e;
+endchar;
+
+beginchar(code[168], num_w#,num_h#,0#);                          % haft
+  adjust_fit(2u#, 2u#);
+  diff := (haft_lstart_width-yek_start_width)/2;
+  pickup num_pen;
+  save tiny; tiny:=num_width;
+  defpos_lt1(1.6u,num_height-0.1v-diff,haft_lstart_width,79);
+  penpos2(yek_tail_width-num_width,0);
+  defpos_tr3(20.7u,num_height-0.7v-diff,haft_rstart_width,-81);
+  lft x2.l= hround(11.2u-num_width/2);          bot y2 = 0;
+  filldraw stroke z1e{dir -52}..tension .95and1.05..z2e;
+  filldraw stroke z3e{dir (180+50)}..tension .92and1.2..z2e;
+endchar;
+
+beginchar(code[169],num_w#,num_h#,0#);                          % hasht
+  adjust_fit(2u#, 2u#);
+  diff := (haft_lstart_width-yek_start_width)/2;
+  x2:=11.2u;            y2:=num_height-.3v-diff+y1;
+  pickup num_pen;
+  penpos1(.99haft_lstart_width-num_width,-79);
+  penpos2(yek_tail_width-num_width,0);
+  penpos3(.99haft_rstart_width-num_width,81);
+  lft x1.l = hround( 1.6u-.99haft_lstart_width/2*cosd 79);   bot y1.r = 0;
+  rt  x3.r = hround(20.6u+.99haft_rstart_width/2*cosd 81);   bot y3.l = 0;
+  filldraw stroke z1e{dir 52}..tension .95and1.2..z2e;
+  filldraw stroke z3e{dir (180-50)}..tension .93and1.38..z2e;
+endchar;
+
+beginchar(code[170],num_w#,num_h#,0#);                          % Noh
+  adjust_fit(2u#, 2u#);
+  x1:=12.45u;            y1:=.71num_height;
+  x2:=5.95u;             y2:=y1+0.5v;
+  x3:=5.65u;             y3:=y2+3.2v;
+  x4:=10.65u;            y4:=num_height+1.2v;
+  x5:=13.85u;            y5:=.71num_height;
+  x6:=14.35u;            y6:=num_height/3;
+  pickup num_pen;
+  penpos1(.93yek_start_width-num_width,77);
+  penpos2(.93yek_start_width-num_width,77);
+  penpos3(.46yek_start_width-num_width,-18);
+  penpos4(.93yek_start_width-num_width,-101);
+  penpos5(.94yek_start_width-num_width,180+68);
+  penpos6(.93yek_start_width-num_width,180+68);
+  penpos7(yek_start_width-num_width,180+67);
+  rt x7.l = hround(17.55u+yek_start_width/2*cosd 70);   bot y7.r = 0;
+  filldraw stroke z1e..tension1.5..z2e..tension1.12..z3e
+                  ..tension1.12and1.25..z4e{dir -6};
+  filldraw stroke z4e{dir-6}..tension 1.1and1 ..z5e{down}
+                  ..tension1.2 ..z6e..tension.98..z7e;
+endchar;
+
+beginchar(code[148],16.0u#,.6num_height#,paren_height#-2math_axis#); %Persian Decimal Point
+  adjust_fit(0,0);
+  pickup rule_pen;
+  rt x1=hround(w)+eps;
+  top y1=h+eps;
+  lft x2=hround -eps;
+  bot y2=-d-eps;
+  draw z1--z2;  % diagonal
+endchar;

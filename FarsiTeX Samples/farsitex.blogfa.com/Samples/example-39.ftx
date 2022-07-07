@@ -1,0 +1,20 @@
+>%                                                   In the name of God
+>\documentstyle[persian]{oldreport}
+>%\pdfoutput=0
+>\begin{document}
+<·Ú“ùÚ¯ø¤Ú•þ©ê¤­Úê‘¤¨ü—íÚ¢¨—ø¤ÚÒautomathdigitsÚ¤Ú¢¤Ú“—¢ýÚ¨÷¢Ú›¤Úõüî÷¢Æ
+<“ùÚ¨‘¢ðüÚõü—øöÚ™“‘–Ú÷õø¢ÚîùÚ$\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1$ÚÒÒ
+>\english
+>We can prover easily that $\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1$\\
+>\persian
+<Òpersianmathdigits
+<“ùÚ¨‘¢ðüÚõü—øöÚ™“‘–Ú÷õø¢ÚîùÚ$\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1$ÚÒÒ
+>\english
+>We can prover easily that $\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1$\\
+>\persian
+<Òeuropeanmathdigits
+<“ùÚ¨‘¢ðüÚõü—øöÚ™“‘–Ú÷õø¢ÚîùÚ$\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1$ÚÒÒ
+>\english
+>We can prover easily that $\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1$ 
+>\end{document}
+>% E-mail: SuB.2007.SuB@Gmail.com

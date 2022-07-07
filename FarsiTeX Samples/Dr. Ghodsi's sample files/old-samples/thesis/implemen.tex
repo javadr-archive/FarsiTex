@@ -1,0 +1,241 @@
+
+\chapter{•‰ƒ‰‘¢ù¨‰‘¥ý ó‰Ú‰¤þ‰µ‰Ý \label{implement}}
+¢¤ þ‰ß ê‰Ê‰Û —‰®‰ƒ‰½‰‘—‰ü ¢¤“‰‘¤ùý •‰ƒ‰‘¢ù¨‰‘¥ý ó‰Ú‰¤þ‰µ‰Þ‰ü î‰‚ ¢¤ “‰¿‰Ç \ref{alg}
+—‰È‰Âþ‰¼ ª‰À ¡‰û‰ƒ‰Ý ¢¢. õ‰µ‰ß î‰‘õ‰Û þ‰ß “‰Â÷‰‘õ‰‚ ¢¤ •‰ƒ‰¨‰´ \ref{sourceA}
+õ‰Àù ¨‰´. þ‰ß  “‰Â÷‰‘õ‰‚ ¥ ó‰Ú‰¤þ‰µ‰Ý ê‰Ê‰Û \ref{alg} ¢¤ Ÿ‰‘ó‰´ õ‰½‰À’
+¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰À. ó‰±‰µ‰‚ “‰‚ þ‰ß ¢ó‰ƒ‰Û î‰‚ ¨‰Î‰ž ÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àù ¢¤ Ÿ‰‘ó‰´
+î‰Ü‰ü õ‰½‰À’ ÷‰ƒ‰Æ‰µ‰€‰À ø “‰€‰‘“‰Âþ‰ß þ‰ß ó‰Ú‰¤þ‰µ‰Ý “‰Âý öû‰‘ î‰‘¤ ÷‰Þ‰üî‰€‰À, ì‰Æ‰Þ‰µ‰ü
+“‰‚ ó‰Ú‰¤þ‰µ‰Ý ®‰‘ê‰‚ ª‰Àù ¨‰´ î‰‚ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ö õ‰ü—‰ö “‰Âý û‰Â ¨‰Î‰¼
+÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àùþ‰ü )î‰‚ õ‰ü—‰÷‰À è‰ƒ‰Âõ‰½‰À’ û‰Ý “‰‘ª‰À( î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â ¤
+•‰ƒ‰À õ‰üî‰€‰À; û‰Â ‰€‰À î‰‚ þ‰ß ì‰Æ‰Þ‰´ ®‰‘ê‰‚ “‰Âý Ÿ‰‘ó‰´ è‰ƒ‰Âõ‰½‰À’, ¥ ¥õ‰‘ö ›‰Âý
+\InE{}$O(n^3)$\EnE{} “‰Â¡‰¤¢¤ ¨‰´  ø “‰€‰‘“‰Âþ‰ß î‰€‰À—‰Â ¥ ó‰Ú‰¤þ‰µ‰Ý ¬‰Ü‰ü ¤Ž‰‚ ª‰Àù
+¢¤ “‰¿‰Ç \ref{alg} ¨‰´, øó‰ü ¢¤ õ‰Ö‰‘“‰Û  •‰ƒ‰‘¢ù¨‰‘¥ý ö “‰‚ õ‰Â—‰° ¨‰‘¢ù—‰Â ¥
+•‰ƒ‰‘¢ù¨‰‘¥ý ó‰Ú‰¤þ‰µ‰Ý “‰¿‰Ç \ref{alg} ¢¤ Ÿ‰‘ó‰´ è‰ƒ‰Âõ‰½‰À’ ¨‰´ ø ä‰…øù “‰Â þ‰ß 
+î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â “‰ƒ‰ß û‰Â ¢ø ÷‰Ö‰Î‰‚þ‰ü ¤ ÷‰ƒ‰Ã “‰‚ ¢¨‰´ õ‰üø¤¢. )ø ÷‰‚ î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â
+¥ þ‰× õ‰±‰À\hamze  õ‰È‰¿‰É “‰‚ “‰Ö‰ƒ‰‚ý ¤Ž‰§( “‰‘ —‰›‰‚ “‰‚ þ‰ß ¢„þ‰Û, ¨‰µ‰Ô‰‘¢ù ¥ þ‰ß
+ó‰Ú‰¤þ‰µ‰Ý “‰‚ ›‰‘ý —‰ç‰ƒ‰ƒ‰Â ¤Ž‰‚ ª‰Àù ¢¤ “‰¿‰Ç \ref{nonconvexsec} “‰Âý Ÿ‰‘ó‰´
+÷‰‘õ‰½‰À’ õ‰ã‰Ö‰ñ “‰‚ ÷‰Ñ‰Â õ‰ü¤¨‰À.
+
+¢¤ þ‰ß ê‰Ê‰Û “‰µ‰À ¢¤ “‰¿‰Ç \ref{io} ê‰Âõ‰´ ø¤ø¢ý ø ¡‰Âø›‰ü “‰Â÷‰‘õ‰‚ ¤ —‰È‰Âþ‰¼ ¡‰û‰ƒ‰Ý î‰Â¢.
+•‰Å ¥ ö ¢¤ “‰¿‰Ç  \ref{structure} ¨‰‘¡‰µ‰‘¤ î‰Ü‰ü “‰Â÷‰‘õ‰‚ ø õ‰‘›‰ñû‰‘ý õ‰¿‰µ‰Ü‰Ó ö
+õ‰¤¢ “‰Â¤¨‰ü ì‰Â¤ ¡‰û‰À ð‰Âê‰´ ø —‰“‰â õ‰ú‰Ý “‰Â÷‰‘õ‰‚ õ‰ã‰Âê‰ü ¡‰û‰€‰À ª‰À.
+¨‰³‰Å ¢¤ “‰¿‰Ç \ref{datastr} ¢¤“‰‘¤ùý ¨‰‘¡‰µ‰Þ‰‘ö ¢¢ùû‰‘ý õ‰ú‰Þ‰ü î‰‚ ¢¤ “‰Â÷‰‘õ‰‚ ¨‰µ‰Ô‰‘¢ù
+ª‰Àù ¨‰´ —‰®‰ƒ‰¼ õ‰ü¢û‰ƒ‰Ý. 
+“‰¿‰Ç \ref{difficulty} “‰‚ “‰Â¤¨‰ü õ‰È‰Ø‰…– õ‰›‰¢ ¢¤ •‰ƒ‰‘¢ù¨‰‘¥ý
+þ‰ß ó‰Ú‰¤þ‰µ‰Ý ¡‰û‰À •‰Â¢¡‰´. ¢¤ “‰¿‰Ç \ref{test} ¤ø©û‰‘þ‰ü “‰Âý —‰Æ‰´ “‰Â÷‰‘õ‰‚
+•‰ƒ‰È‰€‰ú‰‘¢ ¡‰û‰ƒ‰Ý î‰Â¢. ¢¤ ÷‰µ‰ú‰‘ ¢¤ “‰¿‰Çû‰‘ý \ref{sample} ø \ref{runningtime}
+÷‰Þ‰÷‰‚û‰‘þ‰ü ¥ ¡‰Âø›‰ü “‰Â÷‰‘õ‰‚ ¤ ¡‰û‰ƒ‰Ý ¢þ‰À ø ¥õ‰‘ö ›‰Âý “‰Â÷‰‘õ‰‚ ¤ “‰‚ Ï‰¤ õ‰µ‰¨‰Í
+“‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢.
+
+\section{\label{io} ø¤ø¢ý ø ¡‰Âø›‰ü}
+ø¤ø¢ý “‰Â÷‰‘õ‰‚ ¥ ê‰‘þ‰Ü‰ü ¨‰´ î‰‚ ÷‰‘ô ö “‰‚ ä‰€‰ö øó‰ƒ‰ß •‰‘¤õ‰µ‰Â ¡‰Í ¢¨‰µ‰¤ )\InE{}Command Line\EnE{}(
+“‰‚ “‰Â÷‰‘õ‰‚ ¢¢ù õ‰üª‰¢. þ‰ß ê‰‘þ‰Û ª‰‘õ‰Û õ‰È‰¿‰Ê‰‘– þ‰× ¨‰Î‰¼ ÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àù ¨‰´.
+“‰Àþ‰ß ¬‰¤– î‰‚ ¢¤ ¡‰Í øñ —‰ã‰À¢ ÷‰Ö‰‘¯ )\InE{}$n$\EnE{}( ø ¨‰³‰Å —‰ã‰À¢ õ‰·‰Ü‰¶û‰‘ý õ‰›‰¢ ¢¤ \InE{}TIN\EnE{} )\InE{}$m$\EnE{}(
+÷‰ª‰µ‰‚ ª‰Àù ¨‰´. •‰Å ¥ ö ¢¤ \InE{}$n$\EnE{} ¡‰Í “‰ã‰À ¢¤ û‰Â ¡‰Í ¨‰‚ ä‰À¢ Ÿ‰Ö‰ƒ‰Ö‰ü î‰‚ ÷‰È‰‘ö¢û‰€‰Àùý 
+õ‰¿‰µ‰Ê‰‘– þ‰Ø‰ü ¥ ÷‰Ö‰‘¯ )õ‰¿‰µ‰Ê‰‘– ¨‰‚ “‰ã‰Àý( ¨‰´ ÷‰ª‰µ‰‚ ª‰Àù ¨‰´. •‰Å ¥ þ‰ß ¡‰Î‰¯,
+¢¤ \InE{}$m$\EnE{} ¡‰Í “‰ã‰À, ¢¤ û‰Â ¡‰Í ¨‰‚ ä‰À¢ ¬‰½‰ƒ‰¼ î‰‚ ÷‰È‰‘ö¢û‰€‰Àùý ª‰Þ‰‘¤ùý ¨‰‚ ¤\hamze § þ‰Ø‰ü ¥ õ‰·‰Ü‰¶û‰‘
+û‰Æ‰µ‰€‰À ÷‰ª‰µ‰‚ ª‰Àù ¨‰´. ä‰…øù “‰Â þ‰ß ¢¤ ¡‰Í ¡‰Â ê‰‘þ‰Û ¢ø ä‰À¢ ÷‰ª‰µ‰‚ ª‰Àù ¨‰´
+î‰‚ ª‰Þ‰‘¤ùý ¤Ž‰§ õ‰±‰À\hamze  ø õ‰Ö‰Ê‰À û‰Æ‰µ‰€‰À.
+“‰Âý õ‰·‰‘ñ ª‰Ø‰Û \ref{inputexample} þ‰× ÷‰Þ‰÷‰‚ ¥
+ê‰‘þ‰Û ø¤ø¢ý ø \InE{}TIN\EnE{} õ‰Â“‰¯ “‰‚ ö ¤ ÷‰È‰‘ö õ‰ü¢û‰À. þ‰ß \InE{}TIN\EnE{} ª‰‘õ‰Û 01 ¤\hamze § ø 11
+õ‰·‰Ü‰¶ ¨‰´. 
+
+\begin{figure}
+\english 
+\hbox{
+\hbox to 4cm{\vbox{
+\input{infile}
+}}
+\input{inexamp}
+}
+\farsi 
+\caption{\label{inputexample} þ‰× ÷‰Þ‰÷‰‚ ¥ ê‰‘þ‰Û ø¤ø¢ý}
+\end{figure}
+\english\farsi 
+
+¡‰Âø›‰ü “‰Â÷‰‘õ‰‚ û‰Ý ¢¤ ê‰‘þ‰Û ø û‰Ý “‰Â ¤øý ¬‰Ô‰½‰‚ý ÷‰Þ‰‘þ‰Ç ÷‰È‰‘ö ¢¢ù õ‰üª‰¢.
+¨‰Ý ê‰‘þ‰Û ¡‰Âø›‰ü, •‰‘¤õ‰µ‰Â ¢øô ¡‰Í ¢¨‰µ‰¤ ¨‰´. ¢¤ ¨‰Î‰Â øñ þ‰ß ê‰‘þ‰Û, —‰ã‰À¢ ÷‰Ö‰‘¯
+¤øý õ‰Æ‰ƒ‰Â )“‰‘ Ÿ‰µ‰Æ‰‘’ ÷‰Ö‰Î‰‚ý ª‰Âøá ø •‰‘þ‰‘ö( ø û‰Þ‰»‰€‰ƒ‰ß Ï‰ñ õ‰Æ‰ƒ‰Â ÷‰ª‰µ‰‚ ª‰Àù ¨‰´.
+¢¤ ¡‰Íû‰‘ý “‰ã‰À, ¢¤ ¡‰Í \InE{}$i$\EnE{}ô, õ‰¿‰µ‰Ê‰‘– )¨‰‚ “‰ã‰Àý( ÷‰Ö‰Î‰‚ý \InE{}$i$\EnE{}ô þ‰ß õ‰Æ‰ƒ‰Â ÷‰ª‰µ‰‚
+ª‰Àù ¨‰´. ¢¤ Ÿ‰Ö‰ƒ‰Ö‰´ õ‰Æ‰ƒ‰Â ¥ “‰‚ û‰Ý õ‰µ‰Ê‰Û î‰Â¢ö ÷‰Ö‰‘¯ õ‰µ‰ó‰ü “‰‘ ¡‰Î‰¯ õ‰Æ‰µ‰Ö‰ƒ‰Ý
+“‰‚ ¢¨‰´ õ‰üþ‰À.
+
+Ï‰Âþ‰Ö‰‚ý ÷‰Þ‰‘þ‰Ç ¡‰Âø›‰ü ¤øý ¬‰Ô‰½‰‚ý ÷‰Þ‰‘þ‰Ç “‰‚ þ‰ß ¬‰¤– ¨‰´:
+ð‰Â þ‰× \InE{}TIN\EnE{} ¤ ¥ “‰‘„ ÷‰Ú‰‘ù î‰€‰ƒ‰Ý, “‰‚ ¬‰¤– þ‰× õ‰·‰Ü‰¶“‰€‰Àý ¬‰Ô‰½‰‚ ¢þ‰Àù õ‰üª‰¢.
+¢¤ Ÿ‰Ö‰ƒ‰Ö‰´ —‰€‰ú‰‘ ¥øþ‰‚ý ¢þ‰Àý î‰‚ ó‰Ãøõ‰\nasb ‘ û‰Þ‰‚ý ¨‰Î‰¼ þ‰× \InE{}TIN\EnE{} ¤ “‰‚ õ‰‘ ÷‰È‰‘ö õ‰ü¢û‰À,
+¥øþ‰‚ý ì‰‘Ž‰Ý ¨‰´; ‰ö ¡‰‘¬‰ƒ‰´ õ‰ú‰Ý \InE{}TIN\EnE{} ¢¤ þ‰ß ¨‰´ î‰‚ û‰Â ¡‰Í ì‰‘Ž‰Þ‰ü ¨‰Î‰¼ ö ¤ 
+¢¤ ¢ì‰ƒ‰Ö‰\nasb ‘ þ‰× ÷‰Ö‰Î‰‚ ì‰Î‰â õ‰üî‰€‰À. “‰€‰‘“‰Âþ‰ß ÷‰Þ‰‘þ‰Ç \InE{}TIN\EnE{} ¥ þ‰ß ¥øþ‰‚ “‰Æ‰ƒ‰‘¤
+¨‰‘¢ù ¨‰´:  î‰‘ê‰ü ¨‰´ “‰Àøö ¢¤ ÷‰Ñ‰Â ð‰Âê‰µ‰ß ¤—‰Ô‰‘á ÷‰Ö‰‘¯, öû‰‘ ¤ ¢¤ ¬‰Ô‰½‰‚ý
+÷‰Þ‰‘þ‰Ç ¤¨‰Ý î‰€‰ƒ‰Ý. “‰Âý ÷‰Þ‰÷‰‚ý ¡‰Âø›‰ü “‰Â÷‰‘õ‰‚ õ‰ü—‰÷‰ƒ‰À “‰‚ ª‰Ø‰Û \ref{outputexample}
+þ‰× ÷‰Þ‰÷‰‚ ¥ ¡‰Âø›‰ü ¤øý \InE{}TIN\EnE{} ÷‰È‰‘ö ¢¢ù ª‰Àù ¢¤ ª‰Ø‰Û \ref{inputexample}
+¨‰´, —‰›‰‚  î‰€‰ƒ‰À.
+
+\begin{figure}
+\english 
+\hbox{
+\hbox to 4cm{\vbox{
+\input{outfile}
+}}
+\input{outexamp}
+}
+\farsi 
+\caption{\label{outputexample} þ‰× ÷‰Þ‰÷‰‚ ¥ ê‰‘þ‰Û ¡‰Âø›‰ü }
+\end{figure}
+\english\farsi 
+
+\section{\label{structure} ¨‰‘¡‰µ‰‘¤ ø —‰“‰â õ‰ú‰Ý “‰Â÷‰‘õ‰‚ }
+¥“‰‘ö “‰Â÷‰‘õ‰‚÷‰þ‰Æ‰ü õ‰¤¢ ¨‰µ‰Ô‰‘¢ù “‰Âý •‰ƒ‰‘¢ù¨‰‘¥ý þ‰ß ó‰Ú‰¤þ‰µ‰Ý, ¥“‰‘ö 
+\InE{}Borland Pascal 7\EnE{} ¨‰´. ¢ó‰ƒ‰Û ÷‰µ‰¿‰‘’ þ‰ß ¥“‰‘ö “‰‚ ä‰€‰ö ¥“‰‘ö “‰Â÷‰‘õ‰‚÷‰þ‰Æ‰ü,
+¨‰‘¢ù “‰¢ö ø ¡‰÷‰‘ “‰¢ö þ‰ß ¥“‰‘ö ¢¤ õ‰Ö‰‘þ‰Æ‰‚ “‰‘ ¥“‰‘öû‰‘ý ¢þ‰Ú‰Â õ‰‘÷‰€‰À \InE{}C\EnE{} ¨‰´.
+û‰Þ‰»‰€‰ƒ‰ß —‰Þ‰‘ô ì‰‘“‰Ü‰ƒ‰´û‰‘ý õ‰¤¢ ÷‰ƒ‰‘¥ ¢¤ þ‰ß ¥“‰‘ö ø›‰¢ ¢¤¢.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{\label{datastr} ¨‰‘¡‰µ‰Þ‰‘ö ¢¢ùû‰‘ý õ‰¤¢ ¨‰µ‰Ô‰‘¢ù }
+¢¤ þ‰ß “‰¿‰Ç ¨‰‘¡‰µ‰Þ‰‘ö ¢¢ùû‰‘ý õ‰ú‰Þ‰ü ¤ î‰‚ ¢¤ •‰ƒ‰‘¢ù¨‰‘¥ý þ‰ß ó‰Ú‰¤þ‰µ‰Ý õ‰¤¢
+¨‰µ‰Ô‰‘¢ù ì‰Â¤ ð‰Âê‰µ‰‚÷‰À ¤ “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢. þ‰ß ¨‰‘¡‰µ‰Þ‰‘ö ¢¢ùû‰‘ ¢¤ þ‰÷‰ƒ‰´
+\InE{}GEODESIC\EnE{} —‰ã‰Âþ‰Ó ª‰Àù÷‰À.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{\label{difficulty} õ‰È‰Ø‰…– õ‰›‰¢ ¢¤ •‰ƒ‰‘¢ù¨‰‘¥ý }
+¢¤ þ‰ß “‰¿‰Ç  “‰‚ õ‰È‰Ø‰…– õ‰¿‰µ‰Ü‰Ô‰ü î‰‚ ¢¤ •‰ƒ‰‘¢ù¨‰‘¥ý þ‰ß ó‰Ú‰¤þ‰µ‰Ý “‰‚ öû‰‘ “‰Â¡‰¤¢
+î‰Â¢þ‰Ý ¡‰û‰ƒ‰Ý •‰Â¢¡‰´ ø ¤ø© Ÿ‰Û þ‰ß õ‰È‰Ø‰…– ¤ õ‰Î‰Âž ¡‰û‰ƒ‰Ý î‰Â¢. 
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{\label{test} —‰Æ‰´ “‰Â÷‰‘õ‰‚}
+¢¤ þ‰ß “‰¿‰Ç “‰‚ ÷‰½‰ùû‰‘ý —‰Æ‰´ “‰Â÷‰‘õ‰‚ ø þ‰¹‰‘¢ ¢¢ùû‰‘ý —‰Ê‰‘¢ê‰ü ›‰ú‰´ —‰Æ‰´ “‰Â÷‰‘õ‰‚
+¡‰û‰ƒ‰Ý •‰Â¢¡‰´. ¢¤ Ÿ‰Ö‰ƒ‰Ö‰´ “‰Âý —‰Æ‰´ “‰Â÷‰‘õ‰‚, “‰‘þ‰À “‰µ‰÷‰ƒ‰Ý “‰‚ ¬‰¤– —‰Ê‰‘¢ê‰ü,
+\InE{}TIN\EnE{} —‰ó‰ƒ‰À î‰€‰ƒ‰Ý. û‰Þ‰»‰€‰ƒ‰ß  “‰Âý —‰Æ‰´ Ÿ‰‘ó‰´û‰‘þ‰ü î‰‚ “‰‚ ‰€‰Àø›‰ú‰ü õ‰½‰À’ ÷‰ƒ‰‘¥ ¢¤÷‰À,
+“‰‘þ‰À “‰µ‰÷‰ƒ‰Ý \InE{}TIN\EnE{}û‰‘ý õ‰½‰À’ —‰ó‰ƒ‰À î‰€‰ƒ‰Ý.
+
+“‰Âý —‰ó‰ƒ‰À þ‰× \InE{}TIN\EnE{} “‰‚ ¬‰¤– \InE{}Random\EnE{}, î‰‘ê‰ü ¨‰´ —‰ã‰À¢ý ÷‰Ö‰Î‰‚ ¤ “‰‚ ¬‰¤–
+—‰Ê‰‘¢ê‰ü ¤øý ¬‰Ô‰½‰‚ ÷‰µ‰¿‰‘’ î‰Â¢ù, þ‰ß ÷‰Ö‰Î‰‚û‰‘ ¤ “‰‚ ¤øª‰ü õ‰·‰Ü‰¶“‰€‰Àý î‰€‰ƒ‰Ý, ø 
+¨‰³‰Å “‰‚ û‰Â þ‰× ¥ þ‰ß ÷‰Ö‰‘¯ þ‰× ä‰À¢ —‰Ô‰‘ì‰ü “‰‚ ä‰€‰ö ¤—‰Ô‰‘á ö ÷‰Ö‰Î‰‚ ÷‰Æ‰±‰´
+¢û‰ƒ‰Ý. •‰Å —‰€‰ú‰‘ õ‰Æ‰ÿ‰Ü‰‚ý õ‰ú‰Ý ¢¤ þ‰ß ¥õ‰ƒ‰€‰‚, ¤ø©  õ‰·‰Ü‰¶“‰€‰Àý ÷‰Ö‰‘¯ ¨‰´.
+¢¤ þ‰ß õ‰¤¢, õ‰‘ ¥ ¤øª‰ü î‰‚ “‰‚ ¤ø© \InE{}Delaunay\EnE{} õ‰ã‰Âøé ¨‰´ ¨‰µ‰Ô‰‘¢ù î‰Â¢ùþ‰Ý.
+
+\begin{figure}
+\english 
+\input{vor}
+\farsi 
+\caption{\label{voronoi} þ‰× ÷‰Þ‰÷‰‚ ¥ ÷‰Þ‰¢¤ \InE{}Voronoi\EnE{}}
+\end{figure}
+\english \farsi 
+
+¢¤ þ‰ß ¤ø©, “‰‘þ‰À “‰µ‰À ÷‰Þ‰¢¤  \InE{}Voronoi\EnE{} õ‰Â“‰¯ “‰‚ ÷‰Ö‰‘¯ ¤ •‰ƒ‰À î‰€‰ƒ‰Ý ø 
+¨‰³‰Å ¢øð‰‘ö ö ¤ ¤¨‰Ý î‰€‰ƒ‰Ý. ¢øð‰‘ö ÷‰Þ‰¢¤ \InE{}Voronoi\EnE{}, û‰Þ‰‘ö õ‰·‰Ü‰¶“‰€‰Àý \InE{}Delaunay\EnE{}
+¨‰´. ÷‰Þ‰¢¤ \InE{}Voronoi\EnE{} õ‰Â“‰¯ “‰‚ \InE{}$n$\EnE{} ÷‰Ö‰Î‰‚, ÷‰Þ‰¢¤ý ¨‰´ î‰‚ ¬‰Ô‰½‰‚ ¤ “‰‚ \InE{}$n$\EnE{}
+÷‰‘Ÿ‰ƒ‰‚ —‰Ö‰Æ‰ƒ‰Ý“‰€‰Àý õ‰üî‰€‰À “‰‚ Ï‰¤ý î‰‚ ¢¤ û‰Â ÷‰‘Ÿ‰ƒ‰‚ ¢ì‰ƒ‰Ö‰\nasb ‘ þ‰Ø‰ü ¥ þ‰ß \InE{}$n$\EnE{}
+÷‰Ö‰Î‰‚ øì‰â õ‰üª‰¢ ø û‰Â ÷‰Ö‰Î‰‚ ¥ ¬‰Ô‰½‰‚, ¢¤ ÷‰‘Ÿ‰ƒ‰‚ý õ‰Â“‰¯ “‰‚ ÷‰Ö‰Î‰‚þ‰ü )¥ þ‰ß \InE{}$n$\EnE{} ÷‰Ö‰Î‰‚( 
+øì‰â õ‰üª‰¢ î‰‚ “‰‚ ö ÷‰Ã¢þ‰×—‰Â ¨‰´. “‰Âý õ‰·‰‘ñ ¢¤ ª‰Ø‰Û \ref{voronoi}
+þ‰× ÷‰Þ‰÷‰‚ ¥ ÷‰Þ‰¢¤ \InE{}Voronoi\EnE{} ¤  õ‰ü“‰ƒ‰€‰ƒ‰À. ª‰Ø‰Û \ref{delaunay} õ‰·‰Ü‰¶“‰€‰Àý
+\InE{}Delaunay\EnE{} ¢øð‰‘ö þ‰ß ÷‰Þ‰¢¤ ¤ “‰‚ û‰Þ‰Âù ¡‰¢ ÷‰Þ‰¢¤ ÷‰È‰‘ö õ‰ü¢û‰À.
+
+\clearpage          % “‰Âý Ÿ‰Û õ‰È‰Ø‰Û \InE{}TeX capacity exceeded\EnE{} ®‰‘ê‰‚ ª‰À.
+\begin{figure}
+\english 
+\input{triang}
+\farsi 
+\caption{\label{delaunay} þ‰× ÷‰Þ‰÷‰‚ ¥ õ‰·‰Ü‰¶“‰€‰Àý \InE{}Delaunay\EnE{}}
+\end{figure}
+\english\farsi 
+
+¤ø©û‰‘ý î‰…¨‰ƒ‰Ø‰ü “‰Âý “‰‚ ¢¨‰´ ø¤¢ö ÷‰Þ‰¢¤ \InE{}Voronoi\EnE{} ø›‰¢ ¢¤¢ î‰‚ “‰ú‰µ‰Âþ‰ß öû‰‘  
+¥ ¥õ‰‘ö ›‰Âý \InE{}$O(n\log n)$\EnE{} “‰Â¡‰¤¢¤ ¨‰´. ¢¤ þ‰ß›‰‘ õ‰‘ ¥
+þ‰× ó‰Ú‰¤þ‰µ‰Ý \InE{}$O(n^2)$\EnE{} “‰Âý þ‰ß î‰‘¤ ¨‰µ‰Ô‰‘¢ù î‰Â¢ùþ‰Ý. þ‰ß ó‰Ú‰¤þ‰µ‰Ý “‰Àþ‰ß
+¬‰¤– ä‰Þ‰Û õ‰üî‰€‰À î‰‚ “‰Âý û‰Â þ‰× ¥ ÷‰Ö‰‘¯ õ‰‘÷‰€‰À \InE{}$v$\EnE{}, “‰µ‰À ÷‰Ã¢þ‰×—‰Âþ‰ß ÷‰Ö‰Î‰‚ “‰‚ ö ¤
+•‰ƒ‰À î‰Â¢ù, ä‰Þ‰¢ õ‰€‰Ê‰Ó “‰ƒ‰ß þ‰ß ¢ø ÷‰Ö‰Î‰‚ ¤ ¤¨‰Ý õ‰üî‰€‰ƒ‰Ý. þ‰ß ä‰Þ‰¢ õ‰€‰Ê‰Ó Ÿ‰µ‰Þ‰\nasb ‘
+›‰Ãø ì‰Æ‰Þ‰µ‰ü ¥ ÷‰Þ‰¢¤ \InE{}Voronoi\EnE{} ¨‰´ î‰‚ \InE{}$v$\EnE{} ¤ ª‰‘õ‰Û õ‰üª‰¢. “‰‘ þ‰ß ì‰Æ‰Þ‰´, ª‰Âøá
+õ‰üî‰€‰ƒ‰Ý ø þ‰ß ä‰Þ‰¢õ‰€‰Ê‰Ó ¤ “‰‘ ä‰Þ‰¢õ‰€‰Ê‰Ó “‰ƒ‰ß ÷‰Ö‰‘¯ ¢þ‰Ú‰Â ø \InE{}$v$\EnE{} ì‰Î‰â õ‰ü¢û‰ƒ‰Ý ø øó‰ƒ‰ß
+÷‰Ö‰Î‰‚ý —‰Ö‰‘Ï‰â )“‰‚ ¬‰¤– ¢ø¤ý( ¤ •‰ƒ‰À õ‰üî‰€‰ƒ‰Ý ø “‰‚ û‰Þ‰ƒ‰ß ¬‰¤– ¢õ‰‚ õ‰ü¢û‰ƒ‰Ý —‰‘
+¢ø“‰‘¤ù  “‰‚ û‰Þ‰‘ö ®‰Ü‰â øó‰ü “‰Âð‰Â¢þ‰Ý. ›‰ÃŽ‰ƒ‰‘– õ‰Â“‰¯ “‰‚ þ‰ß ó‰Ú‰¤þ‰µ‰Ý ø û‰Þ‰»‰€‰ƒ‰ß
+ó‰Ú‰¤þ‰µ‰Ýû‰‘ý “‰ú‰µ‰Â “‰Âý þ‰ß õ‰€‰Ñ‰¤ ¤ õ‰ü—‰÷‰ƒ‰À ¢¤ “‰Æ‰ƒ‰‘¤ý ¥ î‰µ‰‘’û‰‘ý û‰€‰À¨‰‚ý
+õ‰½‰‘¨‰±‰‘—‰ü õ‰‘÷‰€‰À \cite{compgeo} “‰±‰ƒ‰€‰ƒ‰À. û‰Þ‰»‰€‰ƒ‰ß õ‰µ‰ß “‰Â÷‰‘õ‰‚þ‰ü î‰‚ õ‰·‰Ü‰¶“‰€‰Àý
+¤ ÷‰¹‰‘ô õ‰ü¢û‰À ø ¢¤ Ÿ‰Ö‰ƒ‰Ö‰´ “‰‚ ¬‰¤– —‰Ê‰‘¢ê‰ü “‰Âý “‰Â÷‰‘õ‰‚ ¢¢ù —‰ó‰ƒ‰À õ‰üî‰€‰À,
+¢¤ •‰ƒ‰¨‰´ \ref{sourceC} õ‰Àù ¨‰´.
+
+¢¤ “‰ã‰Ì‰ü ¥ õ‰¤¢ î‰‚ ÷‰ƒ‰‘¥ “‰‚ —‰ó‰ƒ‰À —‰Æ‰´û‰‘ý õ‰½‰À’ ø›‰¢ ¢ª‰´, “‰‚ þ‰ß
+¬‰¤– ä‰Þ‰Û î‰Â¢þ‰Ý î‰‚ õ‰Ö‰À¤ ¤—‰Ô‰‘á ÷‰Ö‰‘¯ ¤ “‰‚ ›‰‘ý þ‰ß î‰‚ “‰‚ ¬‰¤– —‰Ô‰‘ì‰ü
+ì‰Â¤ ¢û‰ƒ‰Ý, ¥ þ‰× ¤“‰Î‰‚, î‰‚ þ‰× ¤øþ‰‚ý õ‰½‰À’ ¤ õ‰È‰¿‰É õ‰üî‰€‰À “‰‚ ¢¨‰´ õ‰üø¤þ‰Ý.
+“‰Âý õ‰·‰‘ñ ð‰Â ¤—‰Ô‰‘á û‰Â ÷‰Ö‰Î‰‚ ¤ ¥ ¤“‰Î‰‚ý \InE{}$z=\sqrt{R^2-(x-x_O)^2-(y-y_O)^2}$\EnE{}
+“‰‚ ¢¨‰´ ø¤þ‰Ý, ¢¤ Ÿ‰Ö‰ƒ‰Ö‰´  ¨‰Î‰¼ õ‰‘ þ‰× õ‰·‰Ü‰¶“‰€‰Àý ¥ ¨‰Î‰¼ þ‰× î‰Âù “‰‚ ª‰ã‰‘á
+\InE{}$R$\EnE{} ø “‰‘ õ‰Âî‰Ã \InE{}$(x_O, y_O)$\EnE{} ¨‰´ î‰‚ õ‰Æ‰Ü‰Þ‰\nasb ‘ þ‰× ¨‰Î‰¼ õ‰½‰À’ ¨‰´. 
+
+\section{\label{sample} ÷‰Þ‰÷‰‚û‰‘þ‰ü ¥ ¡‰Âø›‰ü “‰Â÷‰‘õ‰‚}
+¢¤ þ‰ß “‰¿‰Ç ÷‰Þ‰÷‰‚û‰‘þ‰ü ¥ ¡‰Âø›‰üû‰‘þ‰ü î‰‚ —‰¨‰Í “‰Â÷‰‘õ‰‚ —‰ó‰ƒ‰À ª‰Àù÷‰À ¤ ¡‰û‰ƒ‰Ý ¢þ‰À.
+¢¢ùû‰‘ý ø¤ø¢ý þ‰ß ¡‰Âø›‰üû‰‘ —‰¨‰Í “‰Â÷‰‘õ‰‚þ‰ü î‰‚ ¢¤ “‰¿‰Ç \ref{test} —‰®‰ƒ‰¼ ¢¢ù
+ª‰À —‰ó‰ƒ‰À ª‰Àù ¨‰´ ø ¡‰Âø›‰ü öû‰‘ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ê‰‘þ‰Û ¡‰Âø›‰ü “‰Â÷‰‘õ‰‚ ø “‰‘ î‰Þ‰× þ‰×
+“‰Â÷‰‘õ‰‚ý õ‰±‰Àñ “‰‚ ê‰Âõ‰´ \InE{}\TeX\EnE{} —‰±‰Àþ‰Û ª‰Àù ¨‰´.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{\label{runningtime} “‰Â¤¨‰ü ¥õ‰‘ö ›‰Âý “‰Â÷‰‘õ‰‚}
+¢¤ þ‰ß “‰¿‰Ç “‰‚ “‰Â¤¨‰ü ¥õ‰‘ö ›‰Âý “‰Â÷‰‘õ‰‚ õ‰ü•‰Â¢¥þ‰Ý. û‰Þ‰‘öÏ‰¤ î‰‚ ¢¤ “‰¿‰Ç \ref{alg}
+ð‰Ô‰µ‰ƒ‰Ý, ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg} ¥ õ‰Â—‰±‰‚ý \InE{}$O(n^2)$\EnE{} ¨‰´. ¢¤ þ‰ß›‰‘ 
+õ‰ü¡‰û‰ƒ‰Ý “‰±‰ƒ‰€‰ƒ‰Ý î‰‚ þ‰‘ ó‰Ú‰¤þ‰µ‰Ý •‰ƒ‰‘¢ù¨‰‘¥ý ª‰Àù ¢¤ ä‰Þ‰Û ¥ þ‰ß ¥õ‰‘ö ›‰Â
+“‰Â¡‰¤¢¤ ¨‰´ þ‰‘ ¡‰ƒ‰Â. “‰Âý þ‰ß õ‰€‰Ñ‰¤, “‰Â÷‰‘õ‰‚ý õ‰Â“‰¯ “‰‚ ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg}
+¤ “‰Âý —‰ã‰À¢ý ¢¢ùý —‰Ê‰‘¢ê‰ü “‰‘ ÷‰À¥ùû‰‘ý õ‰¿‰µ‰Ü‰Ó ›‰Â õ‰üî‰€‰ƒ‰Ý ø ¥õ‰‘ö ›‰Â ¤
+÷‰À¥ù õ‰üð‰ƒ‰Âþ‰Ý. 
+
+\begin{figure}
+\english 
+\begin{center}
+\begin{tabular}{|c|c|c|} \hline
+ \kern5mm n \kern5mm & Algorithm 1 & Algorithm 2 \\ \hline
+  5 & 0.004 sec & 0.003 sec \\
+ 10 & 0.017 sec & 0.018 sec \\
+ 15 & 0.034 sec & 0.035 sec \\
+ 20 & 0.058 sec & 0.065 sec \\
+ 25 & 0.074 sec & 0.087 sec \\
+ 30 & 0.108 sec & 0.113 sec \\
+ 35 & 0.140 sec & 0.147 sec \\
+ 40 & 0.172 sec & 0.179 sec \\
+ 45 & 0.197 sec & 0.212 sec \\
+ 50 & 0.247 sec & 0.260 sec \\
+ 55 & 0.269 sec & 0.303 sec \\
+ 60 & 0.312 sec & 0.349 sec \\
+ 65 & 0.339 sec & 0.384 sec \\
+ 70 & 0.383 sec & 0.421 sec \\
+ 75 & 0.433 sec & 0.482 sec \\
+ 80 & 0.494 sec & 0.511 sec \\
+ 85 & 0.517 sec & 0.560 sec \\
+ 90 & 0.575 sec & 0.630 sec \\
+ 95 & 0.633 sec & 0.670 sec \\
+100 & 0.673 sec & 0.764 sec \\ \hline
+\end{tabular}
+\end{center}
+\farsi 
+\caption{\label{runningtimetable} ›‰Àøñ ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ýû‰‘}
+\end{figure}
+\english\farsi 
+
+÷‰Ø‰µ‰‚ý ì‰‘“‰Û —‰›‰‚ þ‰ß ¨‰´ î‰‚ ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý —‰‘ Ÿ‰À “‰Æ‰ƒ‰‘¤
+¥þ‰‘¢ý ø“‰Æ‰µ‰‚ “‰‚ ÷‰á ¨‰Î‰½‰ü ¨‰´ î‰‚ ó‰Ú‰¤þ‰µ‰Ý ¤øý ö ›‰Â õ‰üª‰¢. ¢¤ ¬‰¤—‰ü î‰‚
+¨‰Î‰¼, —‰‘ Ÿ‰Àø¢ ¥þ‰‘¢ý '¬‰‘é" “‰‘ª‰À, þ‰ã‰€‰ü •‰Æ‰µ‰ü ø “‰Ü‰€‰Àýû‰‘ý ¥þ‰‘¢ý ÷‰Àª‰µ‰‚ “‰‘ª‰À, ¥õ‰‘ö
+›‰Â ¡‰ƒ‰Ü‰ü î‰Þ‰µ‰Â ¡‰û‰À “‰¢. ¢¤  û‰Â ¬‰¤– ¢¤ þ‰ß ›‰‘ “‰Âý þ‰ß î‰‚ “‰µ‰÷‰ƒ‰Ý ¥õ‰‘ö
+›‰Âý ó‰Ú‰¤þ‰µ‰Ý ¤ “‰Âý ÷‰À¥ùû‰‘ý õ‰¿‰µ‰Ü‰Ó ø¤ø¢ý õ‰µ‰½‰‘ö î‰€‰ƒ‰Ý, ¨‰Î‰¼ ¤ “‰‚ ¬‰¤–
+þ‰× õ‰·‰Ü‰¶“‰€‰Àý î‰Âù ð‰Âê‰µ‰‚þ‰Ý ø ‰€‰ƒ‰ß õ‰·‰Ü‰¶“‰€‰Àýû‰‘þ‰ü ¤ “‰‘ —‰ã‰À¢ õ‰¿‰µ‰Ü‰Ô‰ü ¥ ÷‰Ö‰‘¯ 
+þ‰¹‰‘¢ î‰Â¢ùþ‰Ý ø ¢¤ û‰Â Ÿ‰‘ó‰´ ¥õ‰‘ö ›‰Â ¤ ÷‰À¥ù ð‰Âê‰µ‰‚þ‰Ý. ÷‰µ‰ƒ‰¹‰‚ý õ‰½‰‘¨‰±‰‚ý
+õ‰µ‰¨‰Í  ¥õ‰‘ö ›‰Â “‰Âý 001 õ‰¤¢ ¢¢ù ¥ û‰Â þ‰× ¥ ÷‰À¥ùû‰‘ý 5, 01, \ldots,
+ø 001 ¢¤ ›‰Àøñ ª‰Ø‰Û \ref{runningtimetable} ¡‰…¬‰‚ ª‰Àù ¨‰´. ¢¤ þ‰ß ›‰Àøñ þ‰× ¨‰µ‰ö õ‰Â“‰¯ “‰‚ ¥õ‰‘ö ›‰Âý
+ó‰Ú‰¤þ‰µ‰Ý \ref{alg1} ø ¨‰µ‰ö ¢þ‰Ú‰Â õ‰Â“‰¯ “‰‚ ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg}
+¨‰´. 
+
+û‰Þ‰‘ö Ï‰¤ î‰‚ ÷‰µ‰Ñ‰‘¤ ¢¤þ‰Ý, õ‰ü“‰ƒ‰€‰ƒ‰À î‰‚ ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg}
+¥  ó‰Ú‰¤þ‰µ‰Ý \ref{alg1} î‰Þ‰µ‰Â ¨‰´; øó‰ü “‰‚ ÷‰Ñ‰Â õ‰ü¤¨‰À î‰‚ õ‰Â—‰±‰‚ý ö ÷‰ƒ‰Ã
+‰€‰À›‰Þ‰Ü‰‚ý ¨‰´ )Ÿ‰Àì‰Û ¢¤ Ÿ‰‘ó‰´ õ‰½‰À’(. “‰Âý õ‰È‰‘û‰Àùý “‰ú‰µ‰Â ¤ê‰µ‰‘¤ ó‰Ú‰¤þ‰µ‰Ýû‰‘ ¥
+÷‰Ñ‰Â ¥õ‰‘ö ›‰Â, “‰‚ ÷‰Þ‰¢¤ ª‰Ø‰Û \ref{graph} î‰‚ û‰Þ‰‘ö Ï‰…ä‰‘– ›‰Àøñ ê‰ë ¤ 
+¢¤ “‰Â ¢¤¢, —‰›‰‚ î‰€‰ƒ‰À.
+“‰‘ —‰›‰‚ “‰‚ þ‰ß ª‰Ø‰Û, õ‰ã‰Ö‰ñ “‰‚ ÷‰Ñ‰Â õ‰ü¤¨‰À î‰‚ õ‰Â—‰±‰‚ý ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý ¥
+\InE{}$O(n^2)$\EnE{} “‰‘ª‰À.
+
+\begin{figure}
+\english 
+\input{graph}
+\farsi 
+\caption{\label{graph} ÷‰Þ‰¢¤ ¥õ‰‘ö  ›‰Âý ó‰Ú‰¤þ‰µ‰Ý “‰ÂŸ‰Æ‰° ÷‰À¥ùý ø¤ø¢ý }
+\end{figure}
+\english\farsi 
+

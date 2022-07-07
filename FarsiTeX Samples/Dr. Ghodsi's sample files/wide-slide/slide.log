@@ -1,0 +1,308 @@
+This is e-TeX, Version 3.141592-2.2 (MiKTeX 2.4) (preloaded format=farsitex 2006.6.24)  24 JUN 2006 18:16
+entering extended mode
+**&farsitex SLIDE
+(SLIDE.tex
+LaTeX Version 2.09 <25 March 1992>
+(C:\Program Files\MiKTeX\tex\latex209\base\article.sty
+Standard Document Style `article' <14 Jan 92>.
+(C:\Program Files\MiKTeX\tex\latex209\base\art12.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+(C:\Program Files\MiKTeX\tex\farsitex\base\farsi.sty
+Farsi style, R. Pournader and H. Abolhassani, The FarsiTeX Project Group.
+Version 0.51beta, 29 December 2000
+(C:\Program Files\MiKTeX\tex\farsitex\base\ftoday.sty
+\FT@i=\count87
+\FT@y=\count88
+\FT@m=\count89
+\FT@d=\count90
+\FT@latini=\count91
+\FT@farsii=\count92
+\FT@latinii=\count93
+\FT@farsiii=\count94
+\FT@latiniii=\count95
+\FT@farsiiii=\count96
+\FT@latiniv=\count97
+\FT@farsiiv=\count98
+\FT@latinv=\count99
+\FT@farsiv=\count100
+\FT@latinvi=\count101
+\FT@farsivi=\count102
+\FT@latinvii=\count103
+\FT@farsivii=\count104
+\FT@latinviii=\count105
+\FT@farsiviii=\count106
+\FT@latinix=\count107
+\FT@farsiix=\count108
+\FT@latinx=\count109
+\FT@farsix=\count110
+\FT@latinxi=\count111
+\FT@farsixi=\count112
+\FT@latinxii=\count113
+\FT@farsixii=\count114
+\FT@farsixiii=\count115
+\FT@temp=\count116
+\FT@temptwo=\count117
+\FT@tempthree=\count118
+\FT@yModHundred=\count119
+\FT@thirtytwo=\count120
+\FT@dn=\count121
+\FT@sn=\count122
+\FT@mminusone=\count123
+))
+(C:\Program Files\MiKTeX\tex\farsitex\base\fancybox.sty
+Style option: `fancybox' v1.0 <93/02/10> (tvz)
+\@fancybox=\box25
+\@tempdimc=\dimen100
+\shadowsize=\dimen101
+\@Sbox=\box26
+\do@VerbBox=\toks11
+\the@fancyput=\toks12
+\this@fancyput=\toks13
+\EndVerbatimTokens=\toks14
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (C:\Program Files\MiKTeX\tex\farsitex\base\ffancyhe.sty
+\headrulewidth=\dimen102
+\footrulewidth=\dimen103
+\plainheadrulewidth=\dimen104
+\plainfootrulewidth=\dimen105
+\headwidth=\dimen106
+) (wheader.tex
+(C:\Program Files\MiKTeX\tex\generic\dvips\epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read2
+\epsfframemargin=\dimen107
+\epsfframethickness=\dimen108
+\epsfrsize=\dimen109
+\epsftmp=\dimen110
+\epsftsize=\dimen111
+\epsfxsize=\dimen112
+\epsfysize=\dimen113
+\pspoints=\dimen114
+\epsfnoopenhelp=\toks15
+)
+\c@mnum=\count124
+\c@snum=\count125
+\c@pretheorem=\count126
+\c@prelemma=\count127
+\c@prealgorithm=\count128
+\c@preexample=\count129
+\c@preprob=\count130
+\c@preprobb=\count131
+\c@preconj=\count132
+) (SLIDE.aux)
+\endL or \endR problem (1 missing, 0 extra) detected at line 8
+[]  \psiahxxpt ¢® µ Çì Ä ¿˝[]
+
+\hbox(12.38597+5.07343)x92.00276
+.\beginR
+.\glue 4.27377 plus 1.42459 minus 0.7123
+.\glue 6.15453 plus 2.05151 minus 1.02574
+.\psiahxxpt ¢
+.\psiahxxpt ®
+.etc.
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(19.94783+0.0)x717.00934
+.\vbox(19.94783+0.0)x720.57092
+..\hbox(15.94783+4.0)x720.57092
+...\hbox(10.49998+4.0)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(15.94783+4.0)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+..\rule(0.0+0.0)x717.00934
+..\glue 0.0
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(10.49998+4.0)x717.00934
+.\vbox(10.49998+4.0)x720.57092
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x717.00934
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x720.57092
+...\hbox(10.14995+4.35004)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+
+[1
+
+]
+\endL or \endR problem (1 missing, 0 extra) detected at line 42
+[] \psiahxxpt ¢§° ¥˚ ë˝ ¢¯¢¯˛ ¸ õ ∆ ¥¯õ Å[]
+
+\hbox(16.19614+8.04947)x244.78624
+.\beginR
+.\glue 4.27377 plus 1.42459 minus 0.7123
+.\psiahxxpt ¢
+.\psiahxxpt §
+.\psiahxxpt °
+.etc.
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(19.94783+0.0)x717.00934
+.\vbox(19.94783+0.0)x720.57092
+..\hbox(15.94783+4.0)x720.57092
+...\hbox(10.49998+4.0)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(15.94783+4.0)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+..\rule(0.0+0.0)x717.00934
+..\glue 0.0
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(10.49998+4.0)x717.00934
+.\vbox(10.49998+4.0)x720.57092
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x717.00934
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x720.57092
+...\hbox(10.14995+4.35004)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+
+[2]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+
+\hbox(446.70816+0.0)x717.00934
+.\vbox(446.70816+0.0)x705.62825, glue set 137.88011fil
+..\glue(\topskip) 0.0
+..\hbox(13.49612+6.08224)x705.62825, glue set 423.92422fil
+...\hbox(0.0+0.0)x0.0
+...\kern 0.0
+...\beginR
+...\hbox(0.0+0.0)x0.0
+...\glue 0.0
+...etc.
+..\penalty -51
+..\glue -8.53581
+..\glue(\parskip) 8.53581
+..etc.
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(19.94783+0.0)x717.00934
+.\vbox(19.94783+0.0)x720.57092
+..\hbox(15.94783+4.0)x720.57092
+...\hbox(10.49998+4.0)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(15.94783+4.0)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+..\rule(0.0+0.0)x717.00934
+..\glue 0.0
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(10.49998+4.0)x717.00934
+.\vbox(10.49998+4.0)x720.57092
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x717.00934
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x720.57092
+...\hbox(10.14995+4.35004)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+
+[3]
+\endL or \endR problem (1 missing, 0 extra) detected at line 63
+[]  \psiahxxpt õ ∆ ¥¯õ Å[]
+
+\hbox(9.63667+6.34886)x89.95128
+.\beginR
+.\glue 4.27377 plus 1.42459 minus 0.7123
+.\glue 6.15453 plus 2.05151 minus 1.02574
+.\psiahxxpt õ
+.\penalty 10000
+.etc.
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(19.94783+0.0)x717.00934
+.\vbox(19.94783+0.0)x720.57092
+..\hbox(15.94783+4.0)x720.57092
+...\hbox(10.49998+4.0)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(15.94783+4.0)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+..\rule(0.0+0.0)x717.00934
+..\glue 0.0
+
+
+Overfull \hbox (3.56158pt too wide) has occurred while \output is active
+[]
+
+\hbox(10.49998+4.0)x717.00934
+.\vbox(10.49998+4.0)x720.57092
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x717.00934
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x720.57092
+...\hbox(10.14995+4.35004)x0.0, glue set - 720.57092fil []
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x717.00934 []
+...\glue 3.56158 plus 1.1872 minus 0.59358
+...\glue 0.0 plus 1.0fill
+...etc.
+
+[4] (SLIDE.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 66 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 638 strings out of 96940
+ 6773 string characters out of 1210423
+ 43791 words of memory out of 1060478
+ 2758 multiletter control sequences out of 35000
+ 25637 words of font info for 97 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 20i,8n,22p,214b,495s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on SLIDE.dvi (4 pages, 6044 bytes).

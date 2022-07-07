@@ -1,0 +1,18 @@
+\newbox\boloonbox
+\newdimen\boloonw
+\font\boloona=boloona at 57.816truept
+\font\boloonb=boloonb at 57.816truept
+\font\boloonc=boloonc at 57.816truept
+\setbox\boloonbox=\vbox{\hbox{%
+\boloona\char0\char1\char2}}
+\boloonw=\wd\boloonbox
+\setbox\boloonbox=\hbox{\vbox{\hsize=\boloonw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\boloona\char0\char1\char2}
+\hbox{\boloonb\char0\char1\char2}
+\hbox{\boloonc\char0\char1\char2}}}
+\ifx\parbox\undefined
+    \def\setboloon{\box\boloonbox}
+\else
+    \def\setboloon{\parbox{\wd\boloonbox}{\box\boloonbox}}
+\fi

@@ -1,0 +1,91 @@
+>\documentstyle[farsi,fancybox]{article}
+<
+<ÒinputÞÐpreampleÐ×
+>\begin{document}
+<
+<
+<ÒbeginÞmybox×
+<÷‘ôÚøÚ÷‘ôÚ¡‘÷ø¢ðüÊÚÒDOTSÚªõ‘¤ùýÚ¢÷©›øþüÚÊÒDOTS
+<ÒendÞmybox×
+<
+<ÒbeginÞmlist×
+<
+<ÒitemÚÚî¢ôþíÚ¥Ú¢¢ù¨‘¡—‘¤û‘ýÚ¥þ¤ÚÒunderlineÞÒbeginRÚ÷õü—ø÷¢×Ú
+<“¤ýÚÚõ¤—’¨‘¥ýÚõ“—÷üÚ“¤ÚÚõì‘þ¨ùýÚî‘¤Úõø¤¢Ú¨—ê‘¢ùÚì¤¤Úðþ¤¢Œ
+<Òfourj
+<Þ¢¤¡–ÚAVL×
+<Þ¢¤¡–Úì¤õ¥¨þ‘ù×
+<Þ›¢øñÚ•¤î÷¢ðüÚ×Ú·ÈÈÈ
+<Þ¬éÚøóøþ–Ú×
+<
+<ÒitemÚõ¤—’¨‘¥ýÚ…Úä÷¬¤ÚŸ¢ìñÚ÷¢—‘Úõì‘þ¨ùÚò¥ôÚ¢¤¢ŒÚ“ú—¤þöÚŸ¢Ú•‘þþöÚ
+<î¢ôÚ¨–Œ
+<Òtwoj
+<Þ†Úõì‘þ¨ùÚò¥ôÚ¨–Æ×
+<Þ‡Úõì‘þ¨ùÚò¥ôÚ¨–Æ×
+<Þ†Úõì‘þ¨ùÚò¥ôÚøÚî‘êüÚ¨–Æ×
+<Þ‡Úõì‘þ¨ùÚò¥ôÚøÚî‘êüÚ¨–Æ×Ú·ÈÈ
+<
+<Òitem
+<óðø¤þ—ôÚ¥þ¤Ú“¤ýÚõ¤—’¨‘¥ýÚ¤þùýÚÚ$n$—‘þüÚAÚÚŸ‘øýÚä¢¢Ú
+<èþ¤—î¤¤ýÚÚ—‘Ú$n$Ú¢¢ùÚª¢ùÚ¨–Ê
+>
+>\english
+>\begin{hereproc}
+>\vbox{\baselineskip=0.9\baselineskip
+>\begin{BVerbatim}
+> for i = 1 to n do
+>    while A[i] <> i do  Swap(A[i], A[A[i]])
+>\end{BVerbatim}}
+>\end{hereproc}
+>\farsi
+>
+<
+<Òonej
+<ÞþöÚóðø¤þ—ôÚûõø¤ùÚ¢¤¨–ÚÚøÚ¥Úõ¤—“ùýÚ$O(n)$Ú¨–Ú×Ú···
+<ÞþöÚóðø¤þ—ôÚûõø¤ùÚ¢¤¨–Ú¨–ÚøÚ¥Úõ¤—“ùýÚ$O(n\log n)$Ú¨–×
+<ÞþöÚóðø¤þ—ôÚûõø¤ùÚ¢¤¨–Ú¨–ÚøÚ¥Úõ¤—“ùýÚ$O(n^2)$Ú¨–×
+<ÞþöÚóðø¤þ—ôÚÚûõþªùÚ¢¤¨–Ú÷þ¨–Æ×
+<
+<
+<Ònewpage
+<ÒitemÚóðø¤þ—ôÚ¥þ¤Úùî‘¤Úõüî÷¢Œ
+<
+>\english
+>\mathenumber
+>\vbox
+>{\begin{hereproc}
+>\centering
+>\bf
+>\begin{minipage}{8cm}
+>\begin{tabbing}
+>\\[-1cm]
+>for \=$i:= 1$ to $m$  do $c[i,0] := 0;$ \\
+>for $j:= 1$ to $m$  do $c[0,j] := 0;$ \\
+>for $i:=1$ to $m$ do \\
+>    \>for \= $j:=1$ to $n$ do  \\
+>    \>    \> if \= $x_i=y_j$ then\ begin \\
+>    \>    \>    \> $c[i,j]:=c[i-1,j-1] +1;$ \\
+>    \>    \>    \> $b[i,j] := \mbox{`}\nwarrow\mbox{'}$ \\
+>    \>    \> end \\
+>    \>    \> else \= if  $c[i-1,j] \ge c[i,j-1]$ \\
+>    \>    \>      \> then\=\ begin\\
+>    \>    \>      \>     \> $c[i,j] := c[i-1,j];$ \\ 
+>    \>    \>      \>     \> $b[i,j] := \mbox{`}\uparrow\mbox{'}$ \\
+>    \>    \>      \> end  \\
+>    \>    \>      \> else\=\ begin \\
+>    \>    \>      \>     \> $c[i,j] := c[i,j-1];$ \\ 
+>    \>    \>      \>     \> $b[i,j] := \mbox{`}\leftarrow\mbox{'}$ \\
+>    \>    \>      \> end 
+>\end{tabbing}
+>\end{minipage}
+>%\end{center}
+>\end{hereproc}}
+>\mathfnumber\farsi
+<
+<Òfourj
+<Þûþü×Þ÷õü¢ø÷ô×ÞÅÅÅ×Þûþî¢ô×
+<ÒendÞmlist×
+<·ÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅ·Å
+<ÒendÞdocument×
+<

@@ -1,0 +1,150 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+case:=1;
+beginchar (code[158],2u#,11.4v#+body_height#,0);        % Small Alef
+  adjust_fit(0,0);
+  ss:=.45;
+  pickup fine_pen;
+  pp1:=ss*alef_head_width;
+  pp2:=ss*alef_width;
+  pp3:=max(ss*ending_width,fine);
+  pp4:=.93ss*body_height;
+  ww:=1.76;
+  penpos1(ww*pp1-fine, alef_head_ang-5);
+  penpos2(ww*1.2pp2-fine, 0);
+  penpos3(ww*pp2-fine, 0);
+  penpos4(pp3-fine, 0);
+  lft x1.l=0;                        top y1.r = vround(body_height+pp4);
+  rt  x2.r=hround(rt x1.r);              y2   = body_height+.67pp4;
+  rt  x3.r=hround(rt x1.r);              y3   = body_height+.20pp4;
+  rt  x4.r=hround(rt x1.r-.4ss*u);   bot y4   = vround(body_height);
+
+  % --RP following line added to prevent strange path
+  x1.l := max(x1.l, x2.l+epsilon); y1.l := max(y1.l, y2.l+epsilon);
+
+  filldraw stroke z1e..tension 1.3..z2e..tension 5 and 3..z3e..tension 1.3..z4e;
+endchar;
+
+beginchar (code[150],11u#,8v#+body_height#,0);             % Tashdid
+  adjust_fit(0,0);
+  pickup fine_pen;
+  ww:=.6erab_width;
+  penpos1(ww-fine,0);
+  penpos2(ww-fine,180);
+  penpos3(ww-fine,0);
+  penpos4(1.8erab_width-fine,90);
+  penpos5(1.8erab_width-fine,-90);
+  lft x1.l=0; lft x2.r=hround(w/2-ww/2); rt x3.r=hround(w);
+  x4=2.5u; x5=7.8u;
+  temp := max(1.5v,1); 
+  bot y4.l = vround(body_height);
+  bot y5.r = vround(body_height+temp);
+  top y1   = vround(top y4.r + temp);
+  top y2   = vround(top y1   + temp);  
+  top y3   = vround(top y2   + temp);
+  dd:=-95; invdd:=180+dd;
+  filldraw stroke z1e{dir dd}...z4e...{dir invdd}z2e;
+  filldraw stroke z2e{dir dd}..z5e..{dir invdd}z3e;
+endchar;
+
+beginchar (code[151],10.2u#,10.8v#+body_height#,0);              % Hamzeh
+  adjust_fit(0,0);
+  x1=0;      y1=body_height;
+  small_hamze(1);
+endchar;
+
+beginchar (code[152],10.4u#,4v#,0);                        % Kasreh
+  adjust_fit(0,0);
+  pickup erab_pen;
+  lft x1 = 0;         bot y1 = 0;
+  rt  x2 = hround w;  top y2 = vround h;
+  draw z1--z2;
+  h:=h+2v;
+endchar;
+
+beginchar (code[153],10.4u#,body_height#+4v#,0);           % Fathe
+  adjust_fit(0,0);
+  pickup erab_pen;
+  lft x1 = 0;            bot y1 = body_height;  
+  rt  x2 = hround w;     top y2 = vround h;
+  draw z1--z2;
+endchar;
+
+
+beginchar (code[155],10.4u#,10v#+body_height#,0);           % FTanvin
+  adjust_fit(0,0);
+  pickup erab_pen;
+  delta:=5v;
+  lft x1=0;            rt  x2=hround w;
+  bot y1=body_height;  top y2=round(h-delta);
+  draw z1--z2;   % lower
+  lft x3=0;                          rt  x4=hround w;
+  bot y3=round (delta+body_height);  top y4=round h;
+  draw z3--z4;   % upper
+endchar;
+
+beginchar (code[154],10.4u#,14.4v#+body_height#,0);        % Zameh
+  adjust_fit(0,0);
+  pickup erab_pen;
+  rt  x1=hround w;                        bot y1=vround(4.8v+body_height);
+  rt  x2=hround(min(w-3.4u,lft x1-2));    bot y2=vround(6.8v+body_height);
+  rt  x3=hround(min(w-3.4u,lft x1-2));        y3=12v+body_height;
+  rt  x4=hround(w-2.5u);                            top y4=vround h;
+  lft x5=hround(w-5.5u);                       y5=4.8v+body_height;
+  lft x6=0;                               bot y6=vround(body_height);
+  draw z1..tension 1.1..z2...z3...z4{dir 5};
+  draw z4{dir 5}..tension1.2..z5..z6{dir -160};
+endchar;
+beginchar (code[156],11.8u#,14.4v#+body_height#,0);        % ZTanvin
+  adjust_fit(0,0);
+  pickup erab_pen;
+  rt  x1=hround w;                        bot y1=vround(4.8v+body_height);
+  rt  x2=hround(min(w-3.4u,lft x1-2));    bot y2=vround(6.8v+body_height);
+  rt  x3=hround(min(w-3.4u,lft x1-2));        y3=12v+body_height;
+  rt  x4=hround(w-2.5u);                  top y4=vround(h);
+  lft x5=hround(w-5.5u);                      y5=4.8v+body_height;
+  lft x6=hround(w-10.4u);                 bot y6=body_height;
+  draw z1..tension 1.1..z2...z3...z4{dir 5};
+  draw z4{dir 5}..tension1.2..z5..z6{dir -160};
+  rt  x7 = 3u;          top y7 = 8.0v+body_height;
+  lft x8 = 0;           bot y8 = 5.0v+body_height;
+  draw z6{dir 53}..tension .9 ..z7..tension 1.1 ..z8;
+endchar;
+
+beginchar (code[157],7.5u#,11.0v#+body_height#,0);            % Saken
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(0.9erab_width-fine,175);
+  penpos2(1.5erab_width-fine,85);
+  penpos3(0.9erab_width-fine,-5);
+  penpos4(1.3erab_width-fine,-95);
+  lft x1.r=0;                       y1   = 5v+body_height;
+      x2  =4.25u;               top y2.r = vround(11v+body_height);
+  rt  x3.r=hround(7.5u);            y3   = 5v+body_height;
+      x4  =3.25u;               bot y4.r = vround(body_height);
+  filldraw stroke z1e{dir 83}..tension 1.1 .. z2e..z3e..tension 1.05 ..z4e..z1e{dir 83};
+endchar;
+

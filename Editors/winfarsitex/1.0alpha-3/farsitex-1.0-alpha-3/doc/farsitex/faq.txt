@@ -1,0 +1,358 @@
+==============================================================================
+HELP.TXT (FarsiTeX DISTRIBUTION)                                   01-Dec-1998
+==============================================================================
+
+
+! This file refers to an old version of FarsiTeX. Use it at your own risk. !
+
+
+This file contains frequently asked questions about FarsiTeX and their
+answers.  If you have a question which is not answered here and 
+you cannot find the answer in the documentation  (or it is very difficult 
+to find), please let us know.
+
+Before you look here, make sure that you have the latest version of 
+FarsiTeX distribution installed.  If the problem is not answered here,
+some good place to search is the \ftex\doc.
+
+If you don't know how to install FarsiTeX, see INSTALL.TXT.
+
+
+Contents
+========
+
+0. How can I ...?
+1. TeX
+2. DVIDRV
+3. METAFONT
+4. FONTS
+5. Miscellaneous topics
+
+
+
+0. How can I ...?
+=================
+
+0.1.   How can I include landscape tables/pictures in FarsiTeX?
+
+   There is an option named `fland' which uses PostScript for formatting
+   and is available in the 'dvips' extra.  Don't forget to use dvips
+   and possibly ghostscript for view/print.
+
+0.2.   How can I use binomial coefficients in mathematical formulas?
+     
+   Add a line containing
+      
+      >\newcommand{\binom}[2]{{#1 \choose #2}}
+
+   at the document preamble (before \begin{document}) in the left side.
+   Then, use something like \binom{n}{k}.
+
+0.3.   How can I use long tables (tables which run on multiple pages)?
+
+   There is currently a style file named `supertab' available.  For an
+   example of its use, see `\ftex\samples\supertab.ftx'.
+
+0.4.   Is there any blackboard bold letter like `IR' for the set of real numbers
+     available?  How can I use those and other AMS symbols in FarsiTeX?
+
+   There is an extra named `ams.zip' available.  For an example
+   of its use, see `\ftex\samples\ams.ftx'.
+
+0.5.   How can I use English numbers in math mode?
+
+   Try using \mathenumber command.  To restore to Persian numbers,
+   use \mathfnumber.
+
+0.6.   How can I include PCX/BMP/EPS figures in my documents?
+
+   There are some samples available for this.  Try looking at
+   the sample thesis (available in the \ftex\samples directory).
+   But remember that if you use PostScript figures, to see the
+   figure on the output, you must use DVIPS later to convert 
+   the DVI file to PS.
+
+0.7.   FarsiTeX seems bogus.  It typesets some equation numbers
+     on left side/It makes some big auxilliary files/It has a problem
+     underlining Persian text/Its margin paragraphs are reversed on
+     two side printing/the tabular* environment doesn't work.
+
+   These were previous bugs in the FarsiTeX distribution.  They are now
+   solved.  Try to use newer versions of FarsiTeX.  If you have found
+   a new bug, please report it in the way mentioned in the `bugs.txt'
+   file in FarsiTeX documentation.  We will try to resolve it if possible.
+
+
+(With thanks to Statistical Center of Iran, and specially to Dr. M. Faghihi,
+who have helped in providing almost all of above questions.)
+
+
+
+1. TeX
+======
+
+1.1:    TeX says:
+
+          I can't find the PLAIN format file!
+
+        What's wrong?
+
+    Make sure that the environment variable settings are correct 
+    specially on networks. FarsiTeX needs settting of 6 environment 
+    variables and some changes to the PATH variable.  Previous installations 
+    of FarsiTeX should also be removed.  
+
+
+1.2:   What's the difference between between TeX, emTeX, LaTeX,
+       and FarsiTeX?
+
+    TeX is a program for typesetting texts.  emTeX is an
+    implementation of TeX for OS/2 and DOS.  LaTeX is a macro package
+    for TeX (and can therefore be used with emTeX).  FarsiTeX is
+    is currently some enhancements made on emTeX and LaTeX and
+    contains both.
+
+
+1.3:   What's the difference between LaTeX, LaTeX 2.09, and LaTeX2e, 
+        and which one is supported by FarsiTeX?
+
+    LaTeX 2.09 is Leslie Lamport's original macro package which is no
+    longer supported.  LaTeX2e is the successor to LaTeX 2.09,
+    produced by the LaTeX3 project.  LaTeX formerly referred to LaTeX
+    2.09, nowadays it means LaTeX2e.
+    
+    FarsiTeX currently supports LaTeX 2.09, but will soon have
+    LaTeX2e support.
+
+1.4:   Is there a spell checker available for FarsiTeX?
+    
+    No.  But one will hopefully be available.
+
+1.5:   How do I install AMSTeX/AMSLaTeX?
+
+    You can't currently use AMSTeX/AMSLaTeX with FarsiTeX except
+    you are a TeX expert and can solve the problems that may arise.
+    An optional extra named `ams.zip' that supports AMS symbols
+    (Blackboard bold, negated symbols, etc) is provided in FarsiTeX
+    distribution.
+
+1.6:   TeX says:
+
+         TeX capacity exceeded, sorry ...
+
+       What's wrong?
+
+    Usually nothing.  You have reached TeX's full capacity which
+    is currently too low for FarsiTeX; so you will later come across the same
+    problem again.  There are two main reasons for this.  First,
+    you may have used big paragraphs (so, you should break some of them).
+    And second, you may have used a lot of floats like tables and figures
+    (that you should say \clearpage some times that causes the floats
+    get flushed on the output.)
+
+
+2. DVIDRV
+=========
+
+General
+-------
+
+2.1:    I have a PostScript printer but FarsiTeX does not have a suitable
+        driver.  Where can I find a suitable driver?
+
+    Use Tomas Rokicki's dvips.  It is included in  FarsiTeX as
+    an extra file named `dvips.zip'.
+
+
+2.2:    Automatic generating of missing fonts does not work.  METAFONT
+        complains about strange paths and black boxes appear in print
+        or there is an error message saying `mf386.exe' is not found.
+        What's wrong?
+
+    It is very probable that you have not set MFJOBOPT properly.
+    It should be set to `/I'.
+
+
+2.3:    The driver writes a DLG file (e.g., dviscr.dlg) every time,
+        how can I suppress it?
+
+    Add a line containing +transcript-file to the driver data file,
+    usually `\ftex\data\lj.cnf'.
+
+
+2.4:   Graphics inserted with \special{em:graph} appear too small (or
+        too large).
+
+    The driver copies the picture without altering its size -- if this
+    size is wrong then you must use a suitable program to adjust it.
+
+
+2.5:   The driver issues fatal error 2003 if I try to let it print
+        directly to a device such as PRN.
+
+    If you are using MS-DOS:
+
+    mode lpt1,,p                                    (DOS 2.x and 3.x)
+    mode lpt1 retry=r                               (DOS 4.0 or later)
+
+    If you are using DR-Dos:
+
+    This failure is due to a bug in DR-Dos 5.0.  DR-Dos 5.0 cannot
+    send a Ctrl-Z character to any device because the IOCTL system
+    call which is used to enable output of Ctrl-Z to devices seems to
+    be ignored by DR-Dos 5.0.  Even printing to a file and copying
+    that file to the device using `copy /b' does not work.  It is
+    reported that there is a new version of DR-Dos 5.0 with that bug
+    fixed.  Remedy: Obtain that new version, a later version, or use
+    OS/2, MS-DOS or PC-DOS.
+
+
+2.6:   How can I send a fax document created with TeX?
+
+    Under DOS, use pcxfax.bat to create a PCX file from the DVI.  
+    Feed that PCX file into your fax software.
+
+
+2.7:   Where can I get a DVI previewer for Windows?
+
+    For Windows 3.x, fetch /tex-archive/dviware/dviwin/dviwin29.zip,
+    and for Windows 9x/NT, get MikTeX from /tex-archive/systems/win32/miktex
+    path on CTAN.
+
+
+2.8:   The figures are missing!  What has happened?
+
+    There are two possiblities.  First, you may have forgotten to
+    use DVIPS for PostScript figures.  Nothing will get in the DVI file
+    if you use PS figures.  Second, there is a bug in emTeX for
+    big PCX/BMP files; but hopefully, this happens for very big pictures
+    that can't come on a single page.  Shrink your picture using a
+    graphical picture editor, or consider using bm2font.
+
+dviscr
+------
+
+2.9:   Why can't I use ESC for quitting dviscr?
+
+    ESC is used for leaving the status line when entering a search
+    string (for the S command), a page index (G command), a page
+    number (P command), scaling factors (Alt+G and Alt+S commands), or
+    the transformation (T command).  To avoid quitting dviscr by
+    mistake, the key for leaving the status line is different from the
+    keys for quitting dviscr.  Use Q or Ctrl+C to quit dviscr.
+
+
+dvihplj
+-------
+
+2.10:   Characters go missing at the edges of the page.
+
+    Set the correct page size with +page-height and +page-width in the
+    config file (usually \ftex\data\lj.cnf).  Note that laser 
+    printers cannot print within about 5mm from any edge of the paper.
+
+    Some DeskJet models have a switch for selecting the page length.
+    Set that switch correctly.  If your DeskJet does not have such a
+    switch, use the +paper and +set-paper options.
+
+
+dvidot
+------
+
+2.11:   Why is the printed output so bad?  Sometimes lines overprint
+        one another and at other times characters are cut by this
+        horizontal lines.  Sometimes lines are reduced in height.
+
+    The fault is usually the printer's.  To print correctly even the
+    smallest paper movement must be executed exactly.  You could try
+    experimenting with tractor feed and sheet feed.  This problem
+    occurs more frequently with printers from some manufacturers than
+    others but I am not going to name names.  Remedy: Use 360x180 DPI
+    instead of 360x360 DPI.
+
+
+3. METAFONT
+===========
+
+3.1:    METAFONT says
+
+          I can't find the PLAIN base file!
+
+        What's wrong?
+
+    METAFONT cannot find the base files.  It must be and environment variable
+    problem.  See answer of question 2.2.
+
+
+3.2:   How can I get rid of the mfj*.tmp subdirectory that MFjob
+        sometimes leaves behind ?
+
+    Run `deltree' on all these subdirectories named mfj*.tmp.
+
+
+4. FONTS
+========
+
+4.5:    I would like to generate the fonts myself, how do I do this?
+
+    The DVI drivers automatically call MFjob to generate missing fonts.
+    So you don't need to do anything except not unpacking fonts.  Note
+    that automatic generation of all fonts takes some time.
+
+
+5. Miscellaneous topics
+=======================
+
+5.1:    A program complains about not being able to create a temporary
+        file.  What's wrong?
+
+    Two environment variables TMP and TEMP should point to an existing, writable
+    directory.  Note that writing to the root directory of network
+    drives is usually not permitted.  If you are using FarsiTeX on a network,
+    set the environment variables correctly.
+
+
+5.2:    Will FarsiTeX use a coprocessor?
+
+    The FarsiTeX engine is independent of coprocessors, but DVI drivers
+    use it.  We have not included the support for systems not having
+    a coprocessor.  If you don't have one, try installing emTeX first
+    using the guidelines of `install.txt' file.
+
+
+5.3:    The FarsiTeX documentation is rubbish, I can write better!
+
+    Please do so and then send it to us so we can include it with
+    FarsiTeX.
+
+
+5.4:    Is there a FarsiTeX version for Linux, Macintosh, Windows 95,
+        Unix, ...?
+
+    No.  FarsiTeX is available for MS-DOS, and PC-DOS.  There will be
+    future support for platforms like Windows. Apparently FarsiTeX works 
+    under Windows.
+
+
+5.5:    What is CTAN?
+
+    CTAN means Comprehensive TeX Archive Network, a collective term
+    for certain ftp servers using the same directory structure and
+    mirroring each other.  Please use the host closest to you:
+
+      ftp.dante.de    (Germany)
+      ftp.tex.ac.uk   (UK)
+      ctan.tug.org    (USA)
+
+    There are a lot of partial and complete mirrors of CTAN, for
+    instance:
+
+      ftp.cdrom.com   /pub/tex/ctan   (USA)
+
+
+5.6:   Is there an installation program for FarsiTeX?
+
+    No.  Not yet.
+
+--- Roozbeh Pournader (rpnader@rose.ipm.ac.ir) ------------------------
+--- Copyright 1996-1998, FarsiTeX Project Team. All rights reserved ---

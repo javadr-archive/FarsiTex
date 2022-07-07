@@ -1,0 +1,1 @@
+document.write('<a target="_top" href="http://ad.doubleclick.net/click;h=v8/3573/0/0/%2a/w;104394560;0-0;0;13358421;255-0/0;21146565/21164458/1;;~sscs=%3fhttp://solutions.newsforge.com/hpos.tmpl"><img src="http://m1.2mdn.net/viewad/1251058/3-HP_SS_Mar07_leader_Primed.gif" border=0 alt="Click here!"></a>');

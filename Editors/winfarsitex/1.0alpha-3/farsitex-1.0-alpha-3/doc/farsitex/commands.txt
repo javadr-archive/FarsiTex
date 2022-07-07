@@ -1,0 +1,72 @@
+==============================================================================
+COMMANDS.TXT (FarsiTeX Distribution)				   01-Dec-1998
+==============================================================================
+
+				FarsiTeX
+                         Frequently Used Commands
+
+! This file is refering to an old version of FarsiTeX. Use at your own risk. !
+
+
+  - TEX      *[.tex]	 compiles by TeX
+  - LATEX    *[.tex]	 compiles by LaTeX2e
+                         (You can also use LaTeX209 files with this command)
+  - LATEX209 *[.tex]	 compiles by LaTeX209
+			 (FarsiTeX is compatible with this version)
+  - FTEXED   *[.ftx]	 FarsiTeX editor and compiling/viewing environment
+  - FSETUP		 Customizes keyboard mapping in Farsi, used by FTEXED
+  - GOFTEX   *		 (file without .ftx suffix) compile by FarsiTeX and
+			 then view
+  - FTX2TEX  *[.ftx]	 converts a *.ftx to *.tex
+			 this commands is not used often; it is used mainly
+			 to convert a file that is  later included in another.
+  - FPE2FTX f1.fpe f2.ftx
+                         converts a standard Persian text file to *.ftx
+
+  - V  *[.dvi]		 views a DVI file
+  - PRTHPLJ  *[.dvi]	 prints on an attached laserjet (300dpi) printer
+  - PRTHPLJH *[.dvi]	 prints on an attached laserjet (600dpi) printer
+  - PRTLQH   *[.dvi]	 prints on an attached LQ (300dpi) dot matrix printer
+  - PRTLQM   *[.dvi]	 prints on an attached LQ (180x300dpi) dot matrix printer
+  - PRTLQL   *[.dvi]	 prints on an attached LQ (180dpi) dot matrix printer
+  - PRT***** *[.dvi] output.lj
+			 creates file 'output.lj' instead of writing to PRN.
+			 writing 'prn' instead of 'output.lj' is the same
+                         as above.
+
+  - COPY /B *.lj prn	 to print a *.lj file on a laser jet printer.
+
+  (Command that come below, are not available in minimum version.)
+
+  - DVIPS  *[.dvi]       converts a dvi file into *.ps. A dvi file that
+			 includes a *.ps file must be converted before
+			 being printed out. If you have a PostScript
+			 printer, simply do PRINT *.PS (or similar command.)
+			 You have to use Ghostscript (GS) to print *.ps
+			 files on non-PostScript printers.
+
+			 NOTE: You can COPY CONFIG.LJH CONFIG.PS in
+			       directory \FTEX\DATA\DVIPS\, if you want
+			       a sharper output on LJH laser printers.
+
+  - GS	*.ps		 views a file (\FTEX\BIN\GS.BAT)
+
+  - PS2LJ  *.ps 	 prints a *.ps file on an attatched laserjet printer
+			 using GhostScript  (\FTEX\BIN\PS2LJ.BAT)
+			 (You need to set the TEMP environment to an
+			  appropriate temporary directory.)
+			 Note: If your laser printer runs out of memory,
+			 use the following two commands:
+
+  - PS2LJF *.ps  *.lj	 converts *.ps file to file *.LJ which is
+			 in LJ language and is ready to be printed out on any
+			 lj-compatible printer
+
+  - DVISELEC -i infile.dvi -o outfile.dvi p1:p2
+			 Selects pages p1 up to p2 from infile.dvi and creates
+			 an outfile.dvi (p2>p1). For more options see
+			 \ftex\bin\dviselec.txt (also see dvi2dvi, dvibook,
+			 ps2ps in \ftex\bin)
+
+--- Mohammad Ghodsi (ghodsi@sharif.ac.ir) ------------------------------
+--- Copyright 1996-1998, FarsiTeX Project Group. All rights reserved ---

@@ -1,0 +1,459 @@
+
+%þ‰ß  õ‰Ö‰‘ó‰‚ ¥ ÷‰Î‰Â Ÿ‰Âøê‰»‰ƒ‰€‰ü  ÷‰Æ‰±‰µ‰\nasb ‘ •‰ƒ‰»‰ƒ‰Àù¨‰´ ø ¢¤ ö ¥ 
+%ê‰Âõ‰‘öû‰‘ý õ‰µ‰ã‰À¢ \InE{}\TeX\EnE{}  ø \InE{}\LaTeX\EnE{} ø ÷‰ƒ‰Ã ¨‰±‰×û‰‘ý \InE{}fancybox\EnE{} )“‰Âý 
+%¤¨‰Ý ›‰ã‰±‰‚û‰‘ý •‰ƒ‰»‰ƒ‰Àù ¢ø¤ õ‰µ‰ßû‰‘(, \InE{}fmulticol\EnE{} )“‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰\kasre ü ‰€‰À ¨‰µ‰÷‰‚
+%ø ð‰÷‰\hamze ‚ ê‰‘¤¨‰\kasre ü \InE{}multicol\EnE{}( ø \InE{}epsf\EnE{} )“‰Âý ¢¤š \fathe ª‰Ø‰‘ñ  \InE{}PostScript\EnE{}(  
+%¨‰µ‰Ô‰‘¢ù ª‰Àù¨‰´. 
+
+\documentstyle[farsi,fancybox]{article}
+\setlength{\textwidth}{16cm} 
+\setlength{\textheight}{21cm}
+\addtolength{\oddsidemargin}{-22mm}
+\addtolength{\voffset}{-0.4in}
+
+\font\fa=a
+\font\fb=b
+\font\fc=c
+\font\fd=d
+\font\fe=e
+\font\fg=g
+\font\fh=h
+\font\man=manfnt
+\font\prev=rmc12
+
+\newlength{\myleng}
+\newenvironment{Framedfigure}%
+    {\begin{figure}[t]
+      \begin{Sbox}%
+      \setlength{\myleng}{\textwidth}%
+      \addtolength{\myleng}{-2\fboxsep}%
+      \addtolength{\myleng}{-2\fboxrule}%
+      \begin{minipage}{\myleng}}%
+{\end{minipage}\end{Sbox}\shadowbox{\TheSbox}\end{figure}}%
+
+\def\XeT{X\kern-.125em\lower.5ex\hbox{E}\kern-.1667emT}
+\def\TeXeT{\TeX-\hbox{\prev \XeT}}   % for TeX-XeT
+\def\TeXXeT{\TeX-\hbox{\prev -\XeT}} % for TeX--XeT
+\renewcommand{\baselinestretch}{0.9}
+
+
+\title{\sayedar\FarsiTeX\footnotemark: ÷‰Âôê‰Ã¤ý “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü  õ‰µ‰ö ä‰Ü‰Þ‰ü}
+\author{\siahkh õ‰½‰\tashdid Þ‰À ì‰À¨‰ü\thanks{¢¤ ê‰Â¬‰´ õ‰Î‰‘ó‰ã‰‘—‰ü ¢¤ ¢÷‰È‰Ú‰‘ù î‰‘¤ó‰µ‰ö, î‰‘÷‰‘¢ }
+\\ \\ ¢÷‰È‰Ø‰À\hamze ù õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â\\ ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó}
+%\date{}
+
+\begin{document}
+\def\thefootnote{\fnsymbol{footnote}}
+\footnotetext[1]{\InE{} Farsi\TeX\EnE{}}
+\def\thefootnote{\oldarabic{footnote}}
+
+\maketitle
+\begin{abstract}
+\InE{}\TeX\EnE{} ÷‰Âôê‰Ã¤ý “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ä‰Ü‰Þ‰ü “‰‚ “‰ú‰µ‰Âþ‰ß
+ª‰Ø‰Û ø î‰‘¤õ‰À—‰Âþ‰ß ¤ø© ¨‰´. þ‰Ø‰ü ¥ øþ‰Äð‰üû‰‘ý õ‰ú‰Ý þ‰ß ¨‰ƒ‰Æ‰µ‰Ý, Ÿ‰Âøê‰»‰ƒ‰€‰ü
+ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü ø ›‰Àøñû‰‘  “‰‚ ¥þ‰±‰‘—‰Âþ‰ß ª‰Ø‰Û õ‰Þ‰Ø‰ß õ‰ü“‰‘ª‰À “‰‚ ð‰÷‰‚ý î‰‚ ¥ þ‰ß ó‰½‰‘Ò‰
+“‰‚ ä‰€‰ö “‰Â›‰Æ‰µ‰‚—‰Âþ‰ß ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Âøê‰»‰ƒ‰€‰ü ª‰€‰‘¡‰µ‰‚ ª‰Àù ¨‰´.
+
+\FarsiTeX\ ¨‰ƒ‰Æ‰µ‰Þ‰ü “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ä‰Ü‰Þ‰ü ¢ø ¥“‰‘÷‰‚ ê‰‘¤¨‰ü-„—‰ƒ‰ß ø
+“‰Â ¨‰‘§ \InE{}\TeX\EnE{} õ‰ü“‰‘ª‰À.  þ‰ß ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰‘¬‰Û þ‰× Ï‰Âž —‰½‰Ö‰ƒ‰Ö‰‘—‰ü 
+‰€‰À ¨‰‘ó‰‚ ¨‰´  î‰‚ ¢¤ ¢÷‰È‰Ø‰Àù
+õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó ÷‰¹‰‘ô ª‰Àù ¨‰´.
+¢¤ þ‰ß õ‰Ö‰‘ó‰‚ ¡‰Ê‰¬‰ƒ‰‘– þ‰ß ¨‰ƒ‰Æ‰µ‰Ý ø ÷‰Þ‰÷‰‚û‰‘þ‰ü ¥ õ‰µ‰÷‰ü
+î‰‚ õ‰ü—‰ö “‰‘ ö Ÿ‰Âøê‰»‰ƒ‰€‰ü ÷‰Þ‰¢ ø¤¢ù ª‰Àù ¨‰´\footnote{—‰®‰ƒ‰¼: þ‰ß õ‰Ö‰‘ó‰‚
+—‰Þ‰‘õ‰\nasb ‘ “‰‘\FarsiTeX\ Ÿ‰Âøê‰»‰ƒ‰€‰ü ø “‰Àøö ¨‰µ‰Ô‰‘¢ù ¥ ‰Æ‰° ø ì‰ƒ‰»‰ü ¬‰Ô‰½‰‚ ¤þ‰ü ª‰Àù ¨‰´.}.      
+\end{abstract}
+
+\section{õ‰ã‰Âê‰ü}
+
+\InE{}\TeX\EnE{}  ÷‰Âôê‰Ã¤ý “‰Æ‰ƒ‰‘¤ ì‰ý “‰Âý õ‰‘¢ù¨‰‘¥ý ø Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ä‰Ü‰Þ‰ü, î‰µ‰°,
+÷‰‘õ‰‚û‰‘ ø ÷‰Ñ‰‘þ‰Â ö õ‰ƒ‰±‰‘ª‰À\cite{m1}. ¥ ¥õ‰‘ö Ï‰ÂŸ‰ü þ‰ß ¨‰ƒ‰Æ‰µ‰Ý  —‰¨‰Í •‰Âê‰Æ‰¤
+¢ø÷‰‘ó‰À î‰€‰–\footnote{\InE{}Donald E. Knuth\EnE{}} ¨‰µ‰‘¢ ¢÷‰È‰Ø‰Àù ä‰Ü‰ô î‰‘õ‰³‰ƒ‰—‰Â 
+¢÷‰È‰Ú‰‘ù ¨‰µ‰‘÷‰Ô‰¤¢ õ‰Âþ‰Ø‰‘, þ‰ã‰€‰ü “‰ƒ‰Ç ¥ 02 ¨‰‘ñ •‰ƒ‰Ç,
+\InE{}\TeX\EnE{} õ‰¤¢ —‰›‰‚ “‰Æ‰ƒ‰‘¤ ¥þ‰‘¢ õ‰¹‰‘õ‰â ä‰Ü‰Þ‰ü ì‰Â¤ ð‰Âê‰´  ø ¢¤ Ÿ‰‘ñ Ÿ‰‘®‰Â ¢¤ õ‰½‰‘ê‰Û 
+ä‰Ü‰Þ‰ü “‰‚ ä‰€‰ö ¨‰µ‰‘÷‰À¤¢ý \kasre ¨‰Þ‰ü\footnote{\InE{}\em  defacto\EnE{}}  
+“‰Âý  Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ä‰Ü‰Þ‰ü ¢¤ õ‰Àù ¨‰´. þ‰Ø‰ü ¥
+ä‰Ü‰Û õ‰ê‰Ö‰ƒ‰´ þ‰ß  ¨‰ƒ‰Æ‰µ‰Ý  ¤þ‰Ú‰‘ö  ø ä‰Þ‰õ‰ü  “‰¢ö  î‰Ü‰ƒ‰‚ ÷‰Âôê‰Ã¤û‰‘ý  ö ¨‰´.
+“‰‚ þ‰ß ¢ó‰ƒ‰Û,  ê‰Â¢ õ‰¿‰µ‰Ü‰Ô‰ü —‰÷‰Æ‰µ‰‚÷‰À øþ‰Äð‰üû‰‘ý ¥þ‰‘¢ý “‰‚ þ‰ß ¨‰ƒ‰Æ‰µ‰Ý
+®‰‘ê‰‚ î‰€‰€‰À ø —‰Æ‰ú‰ƒ‰…—‰ü õ‰‘÷‰€‰À ø¤¢ ÷‰Þ‰¢ö ª‰Ø‰Û ø —‰Ê‰þ‰Â ¢¤ õ‰µ‰ß, ÷‰Þ‰‘þ‰Ç ¡‰Âø›‰ü 
+ö “‰Â ¤øý  •‰‘þ‰‘÷‰‚û‰‘ ø ¢¨‰µ‰Ú‰‘ùû‰‘ý ‰‘•‰Ú‰Â õ‰¿‰µ‰Ü‰Ó,  ø “‰Æ‰ƒ‰‘¤ý “‰Ã¤ ¢þ‰Ú‰Â ¤
+“‰Ê‰¤– ¤þ‰Ú‰‘ö ¢¤ ¡‰µ‰ƒ‰‘¤ û‰Þ‰Ú‰‘ö  ì‰Â¤  ¢¢ù÷‰À. \InE{}\LaTeX\EnE{} õ‰ú‰Þ‰µ‰Âþ‰ß ¨‰ƒ‰Æ‰µ‰Ý 
+õ‰±‰µ‰€‰ü “‰Â \InE{}\TeX\EnE{} ¨‰´ î‰‚ “‰‘ ê‰Ãø¢ö —‰ã‰À¢ ¥þ‰‘¢ý õ‰‘î‰Âø “‰‚ ö    
+“‰‚ ø›‰¢ õ‰Àù ¨‰´ ø “‰‚ ä‰Ü‰´ ¨‰ú‰ó‰´ ¨‰µ‰Ô‰‘¢ù ¥ ö  ä‰Þ‰\nasb … õ‰¤¢
+¨‰µ‰Ô‰‘¢\hamze ù è‰Ü‰° î‰‘¤“‰Âö \InE{}\TeX\EnE{} ¨‰´\cite{m2}.
+
+¢¤ Ÿ‰‘ñ Ÿ‰‘®‰Â,  ¢¤ “‰Æ‰ƒ‰‘¤ý ¥ î‰È‰¤û‰‘ý è‰ƒ‰Â ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¥“‰‘ö ¨‰ƒ‰Æ‰µ‰Ýû‰‘þ‰ü “‰Â ¨‰‘§
+\InE{}\TeX\EnE{} ø “‰‘ ì‰‘“‰Ü‰ƒ‰´ Ÿ‰Âøê‰»‰ƒ‰€‰ü ‰€‰À¥“‰‘÷‰‚  Ï‰ÂŸ‰ü  ª‰Àù÷‰À  ø õ‰¤¢ ¨‰µ‰Ô‰‘¢ù
+ä‰Þ‰ô  ì‰Â¤ ¢¤÷‰À.  ¥“‰‘öû‰‘ý  ¦•‰€‰ü, ‰ƒ‰€‰ü, þ‰÷‰‘÷‰ü,  —‰Âî‰ü, ø û‰€‰Àý ê‰Ö‰Í
+‰€‰À ÷‰Þ‰÷‰‚ ¥ þ‰ß ¥“‰‘öû‰‘¨‰´. “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü ¥“‰‘öû‰‘þ‰ü î‰‚ ¥ ¤¨‰´
+“‰‚ ‰² ÷‰ª‰µ‰‚ õ‰üª‰÷‰À\InE{}---\EnE{}õ‰‘÷‰€‰À ê‰‘¤¨‰ü, ä‰Â“‰ü, ø  ä‰±‰Âý\InE{}---\EnE{}÷‰ƒ‰Ã
+î‰‘¤û‰‘þ‰ü ÷‰¹‰‘ô ª‰Àù ¨‰´. \InE{}Arab\TeX\EnE{} þ‰× ÷‰Þ‰÷‰‚ ¥ þ‰ß ¨‰ƒ‰Æ‰µ‰Ýû‰‘¨‰´ î‰‚ “‰‚
+¬‰¤– ¤þ‰Ú‰‘ö ä‰Â®‰‚ õ‰üª‰¢ øó‰ü “‰‚ ¢ó‰ƒ‰Û þ‰€‰Ø‰‚ —‰ç‰ƒ‰ƒ‰Â– ¢¤ ¨‰Î‰¼ õ‰‘î‰Âø ÷‰¹‰‘ô
+ð‰Â¢þ‰Àù ¨‰Âä‰´ ö î‰Ý ¨‰´.  û‰Þ‰»‰€‰ƒ‰ß, ê‰‘þ‰Û ø¤ø¢ý ö ÷‰þ‰Æ‰‚ û‰‘ý
+„—‰ƒ‰ß ¨‰´ î‰‚ “‰Âý ¨‰µ‰Ô‰‘¢ù õ‰€‰‘¨‰° ÷‰ƒ‰Æ‰´. ä‰…øù “‰Â ö, øþ‰Äð‰ƒ‰ú‰‘ý ¥“‰‘ö  ê‰‘¤¨‰ü  ¢¤
+Ï‰ÂŸ‰ü \InE{}Arab\TeX\EnE{} ‰€‰Àö õ‰¤¢ ÷‰Ñ‰Â ì‰Â¤ ÷‰Ú‰Âê‰µ‰‚ ¨‰´.
+¢¤ þ‰Âö ÷‰ƒ‰Ã ¢ø î‰‘¤ ì‰‘“‰Û —‰›‰‚ “‰Âý ê‰‘¤¨‰ü ÷‰Þ‰¢ö  þ‰ß ¨‰ƒ‰Æ‰µ‰Ý ÷‰¹‰‘ô ª‰Àù ¨‰´.
+þ‰Ø‰ü “‰‚ ÷‰‘ô \InE{}\TeX\EnE{}-•‰‘¤¨‰ü õ‰½‰Ê‰ñ ª‰Âî‰´ ¢¢ùî‰‘øý ¨‰´ ø ¢þ‰Ú‰Âý \InE{}\LaTeX\EnE{}-ê‰‘¤¨‰ü ¨‰´ î‰‚
+¡‰ƒ‰Â\nasb  ¥ ¨‰ý ª‰Âî‰µ‰ü ¢þ‰Ú‰Â —‰ó‰ƒ‰À ø ä‰Â®‰‚ ð‰Â¢þ‰Àù ¨‰´. 
+¨‰µ‰Ô‰‘¢ù ¥ þ‰ß ¨‰ƒ‰Æ‰µ‰Ýû‰‘ “‰‚ ä‰Ü‰´ ä‰Â®‰\hamze ‚ —‰¹‰‘¤ý öû‰‘ “‰Æ‰ƒ‰‘¤ õ‰½‰Àø¢ ¨‰´.
+
+\FarsiTeX ¨‰ƒ‰Æ‰µ‰Þ‰ü ¨‰´ î‰‚  ì‰‘“‰Ü‰ƒ‰´û‰‘ý \InE{}\TeX\EnE{} ¤ “‰Âý 
+Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ¢ø ¥“‰‘÷‰\hamze ‚ ê‰‘¤¨‰ü-„—‰ƒ‰ß ¢¤ ¡‰µ‰ƒ‰‘¤ õ‰üð‰Á¤¢. þ‰ß 
+¨‰ƒ‰Æ‰µ‰Ý  ÷‰µ‰ƒ‰¹‰‚ þ‰× Ï‰Âž —‰½‰Ö‰ƒ‰Ö‰‘—‰ü ¢¤ ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó ø Ÿ‰‘¬‰Û ¢ø •‰Âø¦ù
+î‰‘¤ª‰€‰‘¨‰ü ¤ª‰À ø ¢ø •‰Âø¦ù î‰‘¤ª‰€‰‘¨‰ü ¨‰´ ø “‰‘ û‰Àé ä‰Â®‰‚ è‰ƒ‰Â —‰¹‰‘¤ý “‰‚
+õ‰½‰‘ê‰Û ä‰Ü‰Þ‰ü Ï‰ÂŸ‰ü ª‰Àù ¨‰´.  
+
+¢¤ þ‰ß õ‰Ö‰‘ó‰‚ “‰µ‰À —‰÷‰‘þ‰üû‰‘ý \InE{}\TeX\EnE{} ø \InE{}\LaTeX\EnE{} ¢¤ Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö õ‰¿‰µ‰Ü‰Ó ¤ ª‰‘¤ù
+õ‰üî‰€‰ƒ‰Ý ø ¨‰³‰Å “‰‚ ¡‰µ‰Ê‰‘¤ ÷‰½‰\hamze ù ê‰Ãø¢ö õ‰Ø‰‘÷‰‘– Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ê‰‘¤¨‰ü ¤
+£î‰Â õ‰üî‰€‰ƒ‰Ý. ¢¤ ¢õ‰‚, ª‰‘¤ùý “‰‚ ¤ø© Ï‰ÂŸ‰ü ì‰Ü‰Ýû‰‘ý õ‰¿‰µ‰Ü‰Ó ì‰‘“‰Û ¨‰µ‰Ô‰‘¢ù 
+¢¤ \FarsiTeX\ õ‰ü•‰Â¢¥þ‰Ý. ¢¤ ÷‰µ‰ú‰‘ ‰€‰À ÷‰Þ‰÷‰‚ ¥ ¡‰Âø›‰ü þ‰ß ¨‰ƒ‰Æ‰µ‰Ý ¤Ž‰‚ õ‰üð‰Â¢¢.
+
+\section{õ‰ã‰Âê‰ü ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Âøê‰»‰ƒ‰€‰ü \InE{}\TeX\EnE{}}
+\InE{}\TeX\EnE{} ¤ õ‰ü—‰ö þ‰× ¥“‰‘ö “‰Â÷‰‘õ‰‚÷‰þ‰Æ‰ü “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü ÷‰‘õ‰ƒ‰À. ð‰Â‰‚ ¢¨‰µ‰¤– ¥“‰‘ö
+\InE{}\TeX\EnE{} ¢¤ ¨‰Î‰¼ •‰‘Ž‰ƒ‰ß —‰ã‰Âþ‰Ó ª‰Àù÷‰À, øó‰ü ì‰‘“‰Ü‰ƒ‰´û‰‘ý Ÿ‰Âøê‰»‰ƒ‰€‰ü ö  “‰Æ‰ƒ‰‘¤ ¥þ‰‘¢ ¨‰´.
+ø¤ø¢ý þ‰ß ¨‰ƒ‰Æ‰µ‰Ý ê‰‘þ‰Ü‰ü ¨‰´ ¥ ÷‰á \hamze ¨‰Ø‰ü  8 “‰ƒ‰µ‰ü ¨‰´
+î‰‚  ª‰‘õ‰Û õ‰µ‰ß õ‰¤¢ ÷‰Î‰Â ø ¢¨‰µ‰¤– „¥ô “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü ø ¬‰Ô‰½‰‚“‰€‰Àý   ö ¨‰´.   
+¡‰Âø›‰ü \InE{}\TeX\EnE{} ê‰‘þ‰Ü‰ü  õ‰Æ‰µ‰Ö‰Û ¥ î‰Ü‰ƒ‰‚ ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý  î‰‘õ‰³‰ƒ‰—‰Âý ø ¢¨‰µ‰Ú‰‘ùû‰‘ý ¡‰Âø›‰ü  
+¨‰´ î‰‚ —‰¨‰Í õ‰½‰Âíû‰‘ý\footnote{\InE{}device drivers\EnE{}} õ‰¿‰µ‰Ü‰Ô‰ü î‰‚ “‰Âý
+¢¨‰µ‰Ú‰‘ùû‰‘ý  ¡‰Âø›‰ü )õ‰‘÷‰€‰À •‰‘þ‰‘÷‰‚û‰‘ý õ‰¿‰µ‰Ü‰Ó î‰‘õ‰³‰ƒ‰—‰Âý, ‰‘•‰Ú‰Âû‰‘ý ¨‰¥÷‰ü ø
+ó‰ƒ‰Ã¤ý “‰‘ ¢¤›‰‚û‰‘ý —‰Ô‰Ø‰ƒ‰× õ‰¿‰µ‰Ü‰Ó(  ÷‰ª‰µ‰‚ ª‰Àù÷‰À, ì‰‘“‰Û ÷‰Þ‰‘þ‰Ç ø þ‰‘ ‰‘” õ‰ü“‰‘ª‰À.
+
+ \InE{}\TeX\EnE{} þ‰× ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Âøê‰»‰ƒ‰€‰ü “‰Â¨‰‘§ Ï‰ÂŸ‰ü õ‰€‰Î‰Ö‰ü ¨‰´, ÷‰‚   
+“‰Â¨‰‘§ Ï‰ÂŸ‰ü “‰Ê‰Âý\footnote{\InE{}WYSIWYG (What You See Is What You Get)\EnE{}}. 
+¨‰ƒ‰Æ‰µ‰Ýû‰‘þ‰ü î‰‚ ÷‰½‰ù Ï‰ÂŸ‰ü ø ¨‰µ‰Ô‰‘¢ù ¥ öû‰‘ “‰‚ ¬‰¤– “‰Ê‰Âý ¨‰´, ð‰Â‰‚ “‰Âý —‰ú‰ƒ‰‚ 
+¡‰±‰Â÷‰‘õ‰‚û‰‘ý î‰—‰‘ù ø Ÿ‰‘øý \fathe ª‰Ø‰‘ñ õ‰¿‰µ‰Ü‰Ó  õ‰€‰‘¨‰° û‰Æ‰µ‰€‰À, øó‰ü ¨‰µ‰Ô‰‘¢ù ¥ ÷‰ú‰‘ 
+“‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü î‰µ‰‘’, õ‰Ö‰‘ó‰‚, ¤¨‰‘ó‰‚, “‰‚ ¡‰Ê‰« ð‰Â Ÿ‰‘øý ê‰Âõ‰ñ, ›‰Àøñ, 
+ø ª‰Ø‰Ûû‰‘ý õ‰¿‰µ‰Ü‰Ô‰ü “‰‘ª‰À ÷‰‚ —‰€‰ú‰‘ õ‰È‰Ø‰Û ¨‰´ “‰Ü‰Ø‰‚ ¤ä‰‘þ‰´ î‰Ü‰ƒ‰‚ ¬‰ñ  
+ø ì‰ä‰À Ÿ‰Âøê‰»‰ƒ‰€‰ü ø ¬‰Ô‰½‰‚¤þ‰ü “‰ã‰Ì‰\nasb ‘ è‰ƒ‰Â õ‰Þ‰Ø‰ß õ‰ü“‰‘ª‰À.
+
+¢¤ \InE{}\TeX\EnE{}  õ‰ü—‰ö þ‰Ø‰±‰‘¤ ø “‰Âý û‰Þ‰ƒ‰È‰‚ ¨‰±‰× õ‰¤¢ ÷‰Ñ‰Â ¢¤ ¬‰Ô‰½‰‚¤þ‰ü
+)õ‰‘÷‰€‰À ÷‰‘õ‰‚, ¤¨‰‘ó‰‚, õ‰Ö‰‘ó‰‚, î‰µ‰‘’, þ‰‘¢¢ª‰´, øè‰ƒ‰Âù(  ¤ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ õ‰‘î‰Âøû‰‘ý
+õ‰¿‰µ‰Ü‰Ô‰ü “‰Ã“‰‘ö \InE{}\TeX\EnE{} ÷‰ª‰´ ø ¨‰³‰Å õ‰µ‰ß ¤ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤–
+›‰Àþ‰Àý î‰‚ þ‰ß õ‰‘î‰Âøû‰‘ ¢¤ ¡‰µ‰ƒ‰‘¤ ì‰Â¤ ¢¢ù÷‰À —‰ú‰ƒ‰‚ î‰Â¢. ¢¤ ¬‰¤—‰ü î‰‚
+õ‰‘î‰Âøû‰‘ ¢¤¨‰´ —‰ú‰ƒ‰‚ ª‰Àù “‰‘ª‰€‰À, ¨‰µ‰Ô‰‘¢ù î‰€‰€‰Àù õ‰ü—‰÷‰À Ï‰Þ‰ƒ‰€‰‘ö ¢ª‰µ‰‚ “‰‘ª‰À î‰‚
+¡‰Âø›‰ü õ‰¤¢ ÷‰Ñ‰Â© “‰Â ¤øý û‰Â ¢¨‰µ‰Ú‰‘ù ¡‰Âø›‰ü “‰‚ þ‰×  ª‰Ø‰Û Ò‰‘û‰Â ¡‰û‰À ª‰À. 
+õ‰¹‰Þ‰ä‰‚ õ‰‘î‰Âøû‰‘þ‰ü î‰‚ “‰‚ ÷‰‘ô \InE{}\LaTeX\EnE{} õ‰ã‰Âøé û‰Æ‰µ‰€‰À ¢ì‰ƒ‰Ö‰\nasb ‘ û‰Þ‰ƒ‰ß î‰‘¤ ¤ õ‰üî‰€‰À. 
+—‰ã‰À¢ õ‰‘î‰Âøû‰‘ý ¨‰±‰×û‰‘ý ¬‰Ô‰½‰‚ ¤þ‰ü\footnote{\InE{}Style Files\EnE{}} ¢¤ 
+þ‰ß ¨‰ƒ‰Æ‰µ‰Ý û‰Ý î‰€‰ö “‰‚ ‰€‰À ¬‰À õ‰ü¤¨‰À î‰‚ û‰Þ‰Ú‰ü ¢¤ ¡‰µ‰ƒ‰‘¤ ä‰Þ‰ô ì‰Â¤ ¢¤÷‰À.
+
+\begin{figure*}
+\centering
+\vspace{1.5cm}
+\hspace{2.3cm}
+{\fg\char140\hskip2.6cm\fa\char128\hskip3.2cm\fb\char128\hskip3.4cm\fc\char128}
+\vspace{1.5cm}
+\begin{center}
+\zamme õ‰€‰\zamme ê‰µ‰\InE{}\hskip1.2cm \EnE{} î‰‘õ‰³‰\kasre Æ‰´ ¨‰ƒ‰‘ù\InE{}\hskip1.2cm \EnE{} î‰‘õ‰³‰Æ‰´ ÷‰‘¥í \InE{}\hskip1.2cm\EnE{}ª‰±‰‚—‰Âê‰ƒ‰×
+\end{center}
+\caption{÷‰Þ‰÷‰‚ý ¥ ì‰Ü‰Ýû‰‘.}
+\typeout{figure 1...........}
+\end{figure*}
+
+ä‰…øù “‰Â —‰÷‰‘þ‰ü Ÿ‰Âøê‰»‰ƒ‰€‰ü ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü ø ›‰Àøñû‰‘ý  “‰Æ‰ƒ‰‘¤ •‰ƒ‰»‰ƒ‰Àù, ¨‰µ‰Ô‰‘¢ù
+¥ õ‰‘î‰Âøû‰‘ý ¨‰±‰×û‰‘ý õ‰¿‰µ‰Ü‰Ó Ÿ‰Âøê‰»‰ƒ‰€‰ü ¢¤ \InE{}\TeX\EnE{}  ø \InE{}\LaTeX\EnE{} þ‰ß õ‰Ø‰‘ö ¤ ê‰Âû‰Ý õ‰ü¨‰‘¥¢
+—‰‘ î‰‘¤“‰Â “‰µ‰÷‰À “‰ÂŸ‰µ‰ü õ‰·‰\nasb … —‰ç‰ƒ‰ƒ‰Â– õ‰¤¢ ÷‰Ñ‰Â© ¤ ¢¤ õ‰Ö‰‘ó‰\hamze ‚  ¥ ì‰±‰Û õ‰‘¢ù 
+ª‰Àùý “‰Àû‰À ø ‰€‰Àþ‰ß •‰‘¤ð‰Âé ø þ‰‘ \fathe ª‰Ø‰‘ñ ›‰Àþ‰À ¤ “‰Àøö —‰ç‰ƒ‰ƒ‰Â ¢¤ õ‰µ‰ß ì‰±‰Ü‰ü ®‰‘ê‰‚
+÷‰Þ‰‘þ‰À. ¢¤ õ‰Ö‰‘ó‰‚ ›‰Àþ‰À, ª‰Ø‰Ûû‰‘ ø ›‰Àøñû‰‘ ¢¤ õ‰Ø‰‘öû‰‘ý õ‰€‰‘¨‰° ì‰Â¤ õ‰üð‰ƒ‰Â÷‰À ø ¤›‰‘ä‰‘–
+õ‰¿‰µ‰Ü‰Ó “‰À¤¨‰µ‰ü ÷‰ª‰µ‰‚ ª‰Àù øî‰Ü‰ƒ‰\hamze ‚ ì‰ä‰À ¬‰Ô‰½‰‚¤þ‰ü  ÷‰ƒ‰Ã ¤ä‰‘þ‰´ õ‰üð‰Â¢÷‰À.
+
+“‰Â ¨‰‘§ ‰€‰ƒ‰ß ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰ü—‰ö ÷‰Âôê‰Ã¤û‰‘þ‰ü ÷‰ª‰´ î‰‚ “‰‚ ¬‰¤– ¡‰¢î‰‘¤ 
+ø —‰€‰ú‰‘ “‰‘ ê‰È‰‘¤ ¢î‰Þ‰‚ý,  õ‰·‰\nasb … î‰‘¤÷‰‘õ‰‚û‰‘ý þ‰× ¢÷‰È‰Ú‰‘ù ¤ “‰Âý û‰Â ¢÷‰È‰¹‰, 
+“‰‘ û‰Â —‰ã‰À¢ ÷‰ƒ‰Þ‰Æ‰‘ñ ø ¢¤§, ø þ‰‘ ›‰Àøñ î‰Ü‰Þ‰‘– õ‰µ‰Ö‰‘Ï‰â —‰ó‰ƒ‰Àý þ‰× “‰Â÷‰‘õ‰‚ ¤ 
+ “‰‚ û‰Þ‰Âù Ÿ‰Û ›‰Àøñ  ì‰±‰Û  “‰‚ ¤Ÿ‰µ‰ü ø “‰‘ î‰ƒ‰Ô‰ƒ‰´ ä‰‘ó‰ü —‰ú‰ƒ‰‚ î‰Â¢. 
+ Ÿ‰Âøê‰»‰ƒ‰€‰ü \zamme ÷‰´û‰‘ý õ‰¨‰ƒ‰Ö‰ü, “‰‘¥ý ª‰Î‰Â÷‰¸, ¤¨‰Ý ¡‰¢î‰‘¤ ¢¤¡‰´û‰‘ý õ‰¿‰µ‰Ü‰Ó ê‰Ö‰Í ‰€‰À 
+ ÷‰Þ‰÷‰\hamze ‚ ¢þ‰Ú‰Â ¥ —‰÷‰‘þ‰ü Ÿ‰Âøê‰»‰ƒ‰€‰ü \InE{}\TeX\EnE{} ¨‰´.
+
+¨‰µ‰Ô‰‘¢ù ¥ \InE{}\TeX\EnE{} ø \InE{}\LaTeX\EnE{} û‰Ý î‰€‰ö ö ‰€‰‘ö ø¨‰ƒ‰â ª‰Àù ¨‰´ î‰‚ î‰·‰Â î‰€‰Ô‰Â÷‰Åû‰‘
+õ‰Ö‰‘ó‰‚û‰‘ý ¢¤þ‰‘ê‰µ‰ü  ¤ “‰‚ þ‰ß ¥“‰‘ö õ‰ü•‰Áþ‰Â÷‰À ø —‰ã‰À¢ “‰Æ‰ƒ‰‘¤ ¥þ‰‘¢ý î‰µ‰‘’ 
+¢¤¨‰ü ø õ‰¹‰…– ä‰Ü‰Þ‰ü “‰‘ þ‰ß ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰üª‰÷‰À.
+
+\section{Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ê‰‘¤¨‰ü “‰‘ \InE{}\TeX\EnE{}}
+\InE{}\TeX\EnE{} ¨‰‘¨‰\nasb ‘ ì‰‘“‰Ü‰ƒ‰´ Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö “‰Âý ¥“‰‘öû‰‘þ‰ü î‰‚ ¥ ¤¨‰´ “‰‚ ‰² ÷‰ª‰µ‰‚
+õ‰üª‰÷‰À ¤ ÷‰À¤¢, øó‰ü õ‰ü—‰ö “‰‘ ®‰‘ê‰‚ ÷‰Þ‰¢ö õ‰‘î‰Âøû‰‘þ‰ü î‰‚ “‰Â¨‰‘§ ¢¨‰µ‰¤–
+øó‰ƒ‰\hamze ‚ ö ÷‰ª‰µ‰‚ õ‰üª‰÷‰À þ‰ß —‰÷‰‘þ‰ü ¤ “‰‚ ö ¢¢. \InE{}Arab\TeX\EnE{} ¨‰ƒ‰Æ‰µ‰Þ‰ü ¨‰´ î‰‚ þ‰ß
+¤ø© ¤ “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü ¥ ¤¨‰´ “‰‚ ‰² ÷‰µ‰¿‰‘’ î‰Â¢ù ¨‰´ ø “‰‚ û‰Þ‰ƒ‰ß ¢ó‰ƒ‰Û
+“‰Æ‰ƒ‰‘¤ î‰€‰À ¨‰´. û‰Þ‰»‰€‰ƒ‰ß ¨‰µ‰Ô‰‘¢ù ¥ ê‰‘þ‰Ûû‰‘ý õ‰‘¢\hamze ù ¨‰±‰×û‰‘ý ¬‰Ô‰½‰‚¤þ‰ü 
+“‰‚ ¤Ÿ‰µ‰ü õ‰Ö‰Àø¤ ÷‰ƒ‰Æ‰´. 
+
+%\clearpage
+\begin{figure*}[t]
+\vspace{3cm}
+\begin{center}
+{\fh\hskip2.6cm\char128\hskip4cm\fe\char128\hskip4cm\fd\char128}
+\end{center}
+\vspace{4mm}
+\begin{center}
+1\InE{} bolding=\EnE{} \InE{} \hskip2cm\EnE{}57\mom 0\InE{} bolding=\EnE{} \InE{} \hskip2cm\EnE{}52\mom 1\InE{} bolding=\EnE{}
+\end{center}
+\caption{õ‰Ø‰‘ö Ï‰ÂŸ‰ü Ÿ‰Âøé “‰‘ ®‰¿‰‘õ‰´û‰‘ý õ‰¿‰µ‰Ü‰Ó.}
+\typeout{figure......2}
+\end{figure*}
+
+¢¤ ¨‰‘ñ   7891,  î‰€‰– ø \fathe õ‰× î‰ü\footnote{\InE{}Mackay\EnE{}} —‰ç‰ƒ‰ƒ‰Â—‰ü ¤ ¢¤ “‰Â÷‰‘õ‰‚ ¬‰Ü‰ü
+\InE{}\TeX\EnE{} •‰ƒ‰È‰€‰ú‰‘¢ ÷‰Þ‰¢÷‰À\cite{m3}   ø  ‰ú‰‘¤ ¢¨‰µ‰¤ øó‰ƒ‰‚ “‰‚ ¢¨‰µ‰¤– ö   
+ê‰Ãø¢÷‰À. ¢ø ¢¨‰µ‰¤ “‰Âý ª‰Âøá ø¡‰‘—‰Þ‰‚ Ÿ‰Âøê‰»‰ƒ‰€‰ü ¥ ¤¨‰´ “‰‚ ‰², ø ¢ø ¢¨‰µ‰¤
+“‰Âý ª‰Âøá ø ¡‰‘—‰Þ‰‚ Ÿ‰Âøê‰»‰ƒ‰€‰ü ¥ ‰² “‰‚ ¤¨‰´ )¢¤ õ‰µ‰÷‰ü î‰‚ ¥ ¤¨‰´ “‰‚ ‰²
+Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰üª‰÷‰À(. ¨‰ƒ‰Æ‰µ‰Ý þ‰¹‰‘¢ ª‰Àù ¤ \InE{}\TeXeT\EnE{} ÷‰‘õ‰ƒ‰À÷‰À. \kasre ª‰Ø‰‘ñ ä‰Þ‰Àù þ‰ß ¨‰ƒ‰Æ‰µ‰Ý
+þ‰ß¨‰´ î‰‚ ¡‰Âø›‰ü ö õ‰Æ‰µ‰Ö‰ƒ‰Þ‰\nasb ‘ ì‰‘“‰Û ‰‘” —‰¨‰Í ¢¨‰µ‰Ú‰‘ùû‰‘ý ¡‰Âø›‰ü ÷‰ƒ‰Æ‰´ ø “‰‘þ‰À
+•‰ƒ‰Ç•‰Â¢¥© ª‰¢.
+
+¢¤ ¨‰‘ñ  2991,  •‰ƒ‰µ‰Â \kasre “‰Âþ‰\kasre µ‰€‰Ü‰÷‰Â\footnote{\InE{}Peter Breitenlohner\EnE{}}    
+ð‰Æ‰µ‰Â©û‰‘þ‰ü  ¤ ¢¤ \InE{}\TeX\EnE{} •‰ƒ‰È‰€‰ú‰‘¢ ÷‰Þ‰¢ —‰‘ “‰Àøö —‰ç‰ƒ‰ƒ‰Â ¢¤ ì‰‘ó‰° ê‰‘þ‰Û ¡‰Âø›‰ü
+\InE{}\TeX\EnE{} þ‰ß ‰ú‰‘¤ ¢¨‰µ‰¤ øó‰ƒ‰‚ ¢¤ ¡‰µ‰ƒ‰‘¤ ì‰Â¤ ð‰ƒ‰Â÷‰À. 
+¡‰Âø›‰ü þ‰ß ¨‰ƒ‰Æ‰µ‰Ý, î‰‚ \InE{}\TeXXeT\EnE{}  ÷‰‘õ‰ƒ‰Àù ª‰Àù ¨‰´, õ‰‘÷‰€‰À ¡‰Âø›‰ü \InE{}\TeX\EnE{}  ¨‰´ ø ó‰Á
+õ‰Æ‰µ‰Ö‰ƒ‰Þ‰\nasb ‘ —‰¨‰Í ¢¨‰µ‰Ú‰‘ùû‰‘ý ¡‰Âø›‰ü ì‰‘“‰Û ‰‘” ø ÷‰Þ‰‘þ‰Ç ¨‰´. 
+
+
+“‰Âý —‰Æ‰ú‰ƒ‰Û ¢¤ ¨‰µ‰Ô‰‘¢ù ¥ \InE{}\TeX\EnE{}, ¢ø õ‰¹‰Þ‰ä‰‚ õ‰‘î‰Âø õ‰ã‰Âøé “‰‚ ÷‰‘ôû‰‘ý 
+\InE{}plain\EnE{} ø \InE{}\LaTeX\EnE{} ¤Ž‰‚ ª‰Àù÷‰À î‰‚ û‰Â î‰Àô Ï‰Âê‰À¤ö ¡‰¢ ¤ ¢¤¢. 
+øó‰ü þ‰ß ¢ø õ‰¹‰Þ‰ä‰‚ õ‰‘î‰Âøû‰‘ “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ¥ ¤¨‰´ “‰‚ ‰² Ï‰ÂŸ‰ü ÷‰È‰Àù÷‰À. 
+ì‰Æ‰Þ‰´ õ‰ú‰Þ‰ü ¥ î‰‘¤ ÷‰¹‰‘ô ª‰Àù “‰Âý —‰ó‰ƒ‰À \FarsiTeX, ¨‰µ‰Ô‰‘¢ù ¥ õ‰Ø‰‘÷‰‘– 
+\InE{}\TeXXeT\EnE{} ø þ‰¹‰‘¢ —‰ç‰ƒ‰ƒ‰Â– „¥ô  ¢¤ þ‰ß ¢ø õ‰¹‰Þ‰ä‰‚ ¨‰´ —‰‘ “‰µ‰ö öû‰‘ ¤
+¢¤ õ‰½‰ƒ‰Í ê‰‘¤¨‰ü ¨‰µ‰Ô‰‘¢ù î‰Â¢. ó‰±‰µ‰‚ þ‰ß —‰ç‰ƒ‰ƒ‰Â– Ï‰¤ý ÷‰¹‰‘ô ª‰Àù ¨‰´ 
+î‰‚ —‰Þ‰‘õ‰ü ¢¨‰µ‰¤– \InE{}\TeX\EnE{} ø \InE{}\LaTeX\EnE{} ¤ “‰µ‰ö “‰‚ û‰Þ‰‘ö ¬‰¤– ¢¤ õ‰½‰ƒ‰Í ê‰‘¤¨‰ü 
+¨‰µ‰Ô‰‘¢ù î‰Â¢. ¢ø ¢¨‰µ‰¤ ¬‰Ü‰ü î‰‚ õ‰¹‰Þ‰ä‰‚  ¢¨‰µ‰¤– ®‰‘ê‰‚ ª‰Àù ¨‰´ \InE{}\verb!\farsi!\EnE{} 
+ø\InE{}\verb!\english! \EnE{}  õ‰ü“‰‘ª‰À î‰‚ —‰Þ‰‘õ‰ü õ‰½‰ƒ‰Í Ÿ‰Âøê‰»‰ƒ‰€‰ü ¤ ¥ ¤¨‰´ “‰‚
+‰² ø þ‰‘ ¥ ‰² “‰‚ ¤¨‰´ —‰ç‰ƒ‰ƒ‰Â õ‰ü¢û‰À. “‰Â ö ¨‰‘§, ¢¨‰µ‰¤– ¬‰Ü‰ü \InE{}\TeX\EnE{} ø
+\InE{}\LaTeX\EnE{} î‰‘¤û‰‘þ‰ü î‰‚ ÷‰µ‰Ñ‰‘¤ õ‰ü¤ø¢ ÷‰¹‰‘ô õ‰ü¢û‰€‰À.
+
+—‰ã‰À¢ —‰ç‰ƒ‰ƒ‰Â– ÷‰¹‰‘ô ª‰Àù “‰ƒ‰Ç ¥ ö ¨‰´ î‰‚ “‰µ‰ö ¢¤ þ‰ß õ‰Ö‰‘ó‰‚ “‰‚ öû‰‘
+ª‰‘¤ù î‰Â¢. ‰€‰À õ‰¤¢ ¥ þ‰ß —‰ç‰ƒ‰ƒ‰Â– ¥ þ‰ß ì‰Â¤÷‰À: ÷‰µ‰¿‰‘’ ì‰Ü‰Ýû‰‘ 
+ø ÷‰À¥ùû‰‘ý öû‰‘ “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ß ¬‰Ü‰ü ø þ‰‘ ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü, 
+Ÿ‰Âøê‰»‰ƒ‰€‰ü ó‰ƒ‰Æ‰´û‰‘ý —‰¢¤—‰, ¤¨‰Ý —‰Ê‰‘øþ‰Â õ‰¿‰µ‰Ü‰Ó ¢¤ õ‰½‰Àø¢þ‰´û‰‘ý õ‰›‰¢ 
+¢¤ \InE{}\TeX\EnE{}, •‰‘¬‰Ô‰½‰‚, ¨‰Â¬‰Ô‰½‰‚,  ¥þ‰Â÷‰þ‰Å, —‰ó‰ƒ‰À ›‰Àøñ, ê‰ú‰Â¨‰´ ›‰Àøñ ø 
+ê‰ú‰Â¨‰´ ó‰Ô‰±‰‘þ‰ü î‰Ü‰Þ‰‘–. “‰Âý ÷‰ª‰µ‰ß ¤¨‰‘ó‰‚û‰‘ý ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó 
+÷‰ƒ‰Ã þ‰× õ‰¹‰Þ‰ä‰‚ õ‰‘î‰Âø    “‰€‰‘ô \InE{}\tt sharif.sty\EnE{}
+Ï‰ÂŸ‰ü ª‰Àù¨‰´ —‰‘ Ÿ‰Âøê‰»‰ƒ‰€‰ü þ‰ß ¤¨‰‘ó‰‚û‰‘ “‰‘ î‰ƒ‰Ô‰ƒ‰´ ä‰‘ó‰ü ø “‰‘ ¨‰ú‰ó‰´ 
+õ‰Ø‰‘ö•‰Áþ‰Â ð‰Â¢¢ ø î‰Ü‰ƒ‰‚ õ‰Ö‰Â¤–  ÷‰Ú‰‘¤© ¤¨‰‘ó‰‚û‰‘ ¤ä‰‘þ‰´ ª‰¢.
+
+\begin{figure*}[t]
+\centering \small
+\input{plot.tex}
+\farsi \vspace{4mm}
+\caption{ þ‰× ÷‰Þ‰÷‰‚ ¥ ¤¨‰Ý õ‰€‰½‰€‰üû‰‘ “‰‘\FarsiTeX.}
+\typeout{figure.....plot....}
+\end{figure*}
+%\clearpage %“‰Âý ¤ê‰â õ‰È‰Ø‰Û î‰Þ‰±‰¢ Ÿ‰‘ê‰Ñ‰‚ 
+% —‰›‰‚: ê‰‘þ‰Û \InE{}plot.tex\EnE{}   
+
+
+
+\section{ ì‰Ü‰Þ‰ú‰‘ý \FarsiTeX }
+¤ø©û‰‘ý Ï‰ÂŸ‰ü ì‰Ü‰Ýû‰‘ý õ‰¤¢ ¨‰µ‰Ô‰‘¢ù ¢¤ ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý Ÿ‰Âøê‰»‰ƒ‰€‰ü î‰‘õ‰³‰ƒ‰—‰Âý ¤
+õ‰ü—‰ö “‰‚ ¢ø ¢¨‰µ‰‚ ¬‰Ü‰ü —‰Ö‰Æ‰ƒ‰Ý ÷‰Þ‰¢: þ‰Ø‰ü ¨‰µ‰Ô‰‘¢ù ¥ ¤ø© 
+“‰ƒ‰´÷‰Ú‰‘ª‰´\footnote{\InE{}bit map\EnE{}}  ø ¢þ‰Ú‰Âý ¨‰µ‰Ô‰‘¢ù ¥ õ‰€‰½‰€‰üû‰‘ý ¤þ‰‘®‰ü
+)\kasre “‰Ãþ‰‚\footnote{\InE{}Bezier\EnE{}}( ¨‰´. ¤ø© øñ ð‰Â‰‚ ¨‰‘¢ù ¨‰´ øó‰ü Ÿ‰Âøé —‰ó‰ƒ‰À ª‰Àù 
+—‰¨‰Í ö ì‰‘“‰Û õ‰Ö‰ƒ‰‘§ ª‰Àö ø—‰ç‰ƒ‰ƒ‰Â ª‰Ø‰Û ¢¢ö ÷‰ƒ‰Æ‰µ‰€‰À ø “‰‘þ‰À Ÿ‰Âøé ¤ ¢¤ 
+î‰Ü‰ƒ‰‚ ÷‰À¥ùû‰‘ý õ‰¤¢ ÷‰ƒ‰‘¥ ¨‰‘¡‰´. ¤ø© ¢øô þ‰× ¤ø© ä‰Ü‰Þ‰ü ¨‰´ î‰‚ î‰·‰Â 
+¨‰ƒ‰Æ‰µ‰Ýû‰‘ ¥ ö “‰Âý Ï‰ÂŸ‰ü ì‰Ü‰Ýû‰‘ý õ‰¤¢ ÷‰ƒ‰‘¥ ¡‰¢ ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰€‰À.
+
+ì‰‘ý  î‰€‰–  “‰Âý Ï‰ÂŸ‰ü ì‰Ü‰Ýû‰‘ý õ‰¤¢ ÷‰ƒ‰‘¥ ¢¤ \InE{}\TeX\EnE{},  ¨‰ƒ‰Æ‰µ‰Þ‰ü “‰‚ ÷‰‘ô
+ 'õ‰µ‰‘ê‰÷‰´\footnote{\man \InE{}METAFONT\EnE{}}" þ‰¹‰‘¢ î‰Â¢ î‰‚ õ‰±‰µ‰€‰ü “‰Â Ï‰ÂŸ‰ü ¤þ‰‘®‰ü ¨‰´.
+ “‰Âý Ï‰ÂŸ‰ü û‰Â Ÿ‰Âé ¢¤ ¨‰ƒ‰Æ‰µ‰Ý \kasre õ‰µ‰‘ê‰÷‰´ “‰‘þ‰À “‰Â÷‰‘õ‰‚û‰‘þ‰ü  “‰‚ þ‰ß ¥“‰‘ö
+÷‰ª‰´. ¥ øþ‰Äð‰üû‰‘ý ¬‰Ü‰ü õ‰µ‰‘ê‰÷‰´ þ‰ß ¨‰´ î‰‚ õ‰ü—‰ö “‰Â÷‰‘õ‰‚ —‰ó‰ƒ‰À î‰€‰€‰À\hamze ù
+û‰Â ª‰Ø‰Û ¤ “‰Ê‰¤– ÷‰Þ‰‘¢þ‰ß )“‰‘ •‰‘¤õ‰µ‰Â( Ï‰ÂŸ‰ü î‰Â¢.  “‰‘ —‰ç‰ƒ‰ƒ‰Â •‰‘¤õ‰µ‰Âû‰‘ 
+ø ›‰Âý “‰Â÷‰‘õ‰‚ õ‰ü—‰ö û‰Â“‰‘¤ ª‰Ø‰Û ›‰Àþ‰Àý “‰À¨‰´ ø¤¢. “‰‚ þ‰ß —‰Â—‰ƒ‰° õ‰ü—‰ö 
+“‰‚ ›‰‘ý Ï‰ÂŸ‰ü ¢ì‰ƒ‰Õ ª‰Ø‰Û þ‰× Ÿ‰Âé, þ‰× ì‰‘ó‰° î‰Ü‰ü “‰Âý ö —‰ã‰Âþ‰Ó ÷‰Þ‰¢ù ø ¨‰³‰Å     
+“‰‘ —‰ç‰ƒ‰ƒ‰Â ‰€‰À •‰‘¤õ‰µ‰Â þ‰ß ì‰‘ó‰°  î‰Ü‰ü ¤ “‰‚ þ‰× ª‰Ø‰Û ¡‰‘« —‰±‰Àþ‰Û ÷‰Þ‰¢. “‰‚ ä‰±‰‘¤–
+¢þ‰Ú‰Â, “‰‚ ›‰‘ý Ï‰ÂŸ‰ü ª‰Ø‰Û þ‰× Ÿ‰Âé ¡‰‘«, þ‰×  '\kasre õ‰µ‰‘Ÿ‰Âé" Ï‰ÂŸ‰ü î‰Â¢. þ‰Ø‰ü 
+¢þ‰Ú‰Â ¥ õ‰Ø‰‘÷‰‘– õ‰›‰¢ ¢¤ õ‰µ‰‘ê‰÷‰´ õ‰Ø‰‘ö ¨‰µ‰Ô‰‘¢ù ¥ õ‰‘î‰Âø û‰€‰Ú‰‘ô 
+“‰Â÷‰‘õ‰‚÷‰þ‰Æ‰ü “‰‚ þ‰ß ¥“‰‘ö ¨‰´. “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ þ‰ß õ‰Ø‰‘ö õ‰ƒ‰µ‰ö ì‰Æ‰Þ‰´û‰‘ý
+õ‰È‰µ‰Âí Ÿ‰Âøé ¤ “‰Ê‰¤– õ‰‘î‰Âø —‰ã‰Âþ‰Ó ÷‰Þ‰¢ ø ¢¤ õ‰ì‰â „¥ô ¥ ö ¨‰µ‰Ô‰‘¢ù
+÷‰Þ‰¢. õ‰Ø‰‘÷‰‘– ¢þ‰Ú‰Â õ‰µ‰‘ê‰÷‰´ “‰‚ ¡‰µ‰Ê‰‘¤ ä‰±‰‘¤—‰€‰À ¥: õ‰Ø‰‘ö “‰Ã¤ï ø î‰‰×÷‰Þ‰‘Ž‰ü
+ª‰Ø‰‘ñ —‰ã‰Âþ‰Ó ª‰Àù, õ‰Ø‰‘ö —‰ó‰ƒ‰À Ÿ‰Âøé î‰¸ )¬‰Î‰…Ÿ‰\nasb ‘  þ‰µ‰‘ó‰ƒ‰× ø þ‰‘ þ‰Â÷‰ƒ‰×(,   
+õ‰Ø‰‘ö —‰ó‰ƒ‰À Ÿ‰Âøé “‰‘ Ï‰Âžû‰‘ý õ‰¿‰µ‰Ü‰Ó ¥ ì‰±‰ƒ‰Û Ÿ‰Âøé —‰¡‰‘ó‰ü ø ¨‰‘þ‰‚¢¤.
+
+ì‰Ü‰Ýû‰‘ý ¬‰Ü‰ü ¨‰ƒ‰Æ‰µ‰Ý \InE{}\TeX\EnE{} õ‰¹‰Þ‰ä‰\hamze ‚ \InE{}Computer Modern\EnE{} õ‰ü“‰‘ª‰À      
+î‰‚ —‰¨‰Í ì‰‘ý  î‰€‰– Ï‰ÂŸ‰ü ª‰Àù÷‰À. þ‰ß õ‰¹‰Þ‰ä‰‚ ª‰‘õ‰Û “‰ƒ‰Ç ¥       
+“‰ƒ‰Æ‰´ ÷‰á ì‰Ü‰Ý õ‰¿‰µ‰Ü‰Ó ¨‰´ î‰‚ “‰‘ —‰›‰‚ “‰‚ ÷‰À¥ùû‰‘ý õ‰¿‰µ‰Ü‰Ó “‰ƒ‰Ç ¥ û‰Ô‰µ‰‘¢
+÷‰á ì‰Ü‰Ý  õ‰ü“‰‘ª‰À. þ‰ß õ‰¹‰Þ‰ä‰‚ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ õ‰µ‰‘ê‰÷‰´ ø “‰‚ ¬‰¤– ÷‰Þ‰‘¢þ‰ß 
+ø —‰€‰ú‰‘ “‰‘  26 •‰‘¤õ‰µ‰Â Ï‰ÂŸ‰ü ª‰Àù ¨‰´.  
+
+—‰ú‰ƒ‰\hamze ‚ ì‰Ü‰Ýû‰‘ý \FarsiTeX “‰Â õ‰±‰€‰‘ý þ‰Àùû‰‘ý õ‰Î‰Âž     
+ª‰Àù ¢¤ Ï‰ÂŸ‰ü õ‰¹‰Þ‰ä‰\hamze ‚ \InE{}Computer Modern\EnE{} ÷‰¹‰‘ô ª‰Àù ¨‰´. ¢¤ õ‰ÂŸ‰Ü‰\hamze ‚ øñ ª‰Ç ÷‰á
+ì‰Ü‰Ý õ‰µ‰Ô‰‘ø– ª‰‘õ‰Û:  ÷‰‘¥í, ¨‰ƒ‰‘ù, õ‰‘ª‰ƒ‰ß —‰½‰Âþ‰Â, þ‰Â÷‰ƒ‰×, —‰¡‰‘ó‰ü ø ¨‰‘þ‰‚¢¤
+î‰‚ “‰‘ —‰›‰‚ “‰‚ ÷‰À¥ùû‰‘ý õ‰¿‰µ‰Ü‰Ó “‰ƒ‰Ç ¥ ‰ú‰Û ÷‰á ì‰Ü‰Ý õ‰üª‰¢ Ï‰ÂŸ‰ü ª‰Àù ¨‰´.
+ª‰Ø‰Û Ÿ‰Âøé “‰Âý û‰Â þ‰× ¥ þ‰ß ì‰Ü‰Ýû‰‘ “‰‚ ¬‰¤– õ‰¹‰Ã Ï‰ÂŸ‰ü ÷‰È‰Àù ¨‰´, “‰Ü‰Ø‰‚ “‰Âý
+û‰Â þ‰× ê‰Ö‰Í þ‰× ê‰‘þ‰Û •‰‘¤õ‰µ‰Â ø›‰¢ ¢¤¢ î‰‚ ¢¤ ö   õ‰Ö‰‘¢þ‰Â õ‰¤¢ ÷‰Ñ‰Â “‰‚ •‰‘¤õ‰µ‰Âû‰‘ 
+õ‰€‰Æ‰’ õ‰üª‰¢. “‰‚ ä‰±‰‘¤– ¢þ‰Ú‰Â, “‰ú‰Þ‰Âù “‰ƒ‰Ç ¥ ‰ú‰Û ê‰‘þ‰Û
+•‰‘¤õ‰µ‰Â, ê‰Ö‰Í þ‰× ê‰‘þ‰Û ª‰‘õ‰Û ›‰ÃŽ‰ƒ‰‘– Ï‰ÂŸ‰ü ª‰Ø‰Û Ÿ‰Âøé ø›‰¢ ¢¤¢  î‰‚       
+“‰‘ —‰›‰‚ “‰‚ •‰‘¤õ‰µ‰Âû‰‘ý ÷‰µ‰¿‰‘’ ª‰Àù ª‰Ø‰Ûû‰‘ý õ‰µ‰Ô‰‘ø—‰ü —‰ó‰ƒ‰À õ‰üª‰÷‰À. 
+
+
+•‰‘¤õ‰µ‰Âû‰‘þ‰ü î‰‚ ¢¤ Ï‰ÂŸ‰ü ì‰Ü‰Þ‰ú‰‘ý \FarsiTeX\ “‰Ø‰‘¤¤ê‰µ‰‚÷‰À “‰‚ð‰÷‰‚þ‰ü ÷‰µ‰¿‰‘’
+ª‰Àù÷‰À î‰‚ “‰µ‰ö ì‰Ü‰Þ‰ú‰‘ý û‰Ý¡‰‘÷‰¢ùý õ‰‘÷‰€‰À ó‰—‰§, î‰‘õ‰³‰\kasre Æ‰´, ¥¤, —‰ƒ‰µ‰Â,
+ª‰±‰‚ —‰Âê‰ƒ‰×  ø è‰ƒ‰Âù ¤ “‰‘ —‰ç‰ƒ‰ƒ‰Â õ‰Ö‰À¤ ÷‰ú‰‘ —‰ó‰ƒ‰À ÷‰Þ‰¢. õ‰€‰Ñ‰¤
+¥ û‰Ý¡‰‘÷‰¢ù “‰¢ö “‰‚ Ï‰¤ ¡‰…¬‰‚ þ‰ß ¨‰´ î‰‚ ì‰‘ó‰° ¬‰Ü‰ü ª‰Ø‰Û Ÿ‰Âøé õ‰µ‰€‰‘Ò‰Â
+¥ ¢ø ì‰Ü‰Ý ø ð‰Â¢©û‰‘ý ì‰Ü‰Ý ¢¤ì‰Æ‰Þ‰´û‰‘ý õ‰¿‰µ‰Ü‰Ó öû‰‘ þ‰Ø‰Æ‰‘ö “‰‘ª‰À.
+      
+Ÿ‰Àø¢ 051 •‰‘¤õ‰µ‰Â ¢¤ Ï‰ÂŸ‰ü ì‰Ü‰Ýû‰‘ý \FarsiTeX “‰‚ î‰‘¤ ¤ê‰µ‰‚¨‰´.     
+þ‰ß —‰ã‰À¢ •‰‘¤õ‰µ‰Âû‰‘ “‰‚ ¢ó‰ƒ‰Û  —‰ã‰À¢ ¥þ‰‘¢      
+Ÿ‰Âøé ¢¤ þ‰× ì‰Ü‰Ý ê‰‘¤¨‰ü ÷‰Æ‰±‰´ “‰‚ ÷‰Ú‰Ü‰ƒ‰Æ‰ü ø û‰Þ‰»‰€‰ƒ‰ß ÷‰‘û‰Þ‰Ú‰÷‰ü ø ÷‰Ñ‰Ý  
+î‰Þ‰µ‰Â ª‰Ø‰Û Ÿ‰Âøé ê‰‘¤¨‰ü ¨‰´. ª‰Ø‰Û~1 ‰ú‰‘¤ ÷‰Þ‰÷‰‚ ¥ Ÿ‰Âé       
+'ø"  ¤ ÷‰È‰‘ö õ‰ü¢û‰À. þ‰ß ÷‰Þ‰÷‰‚û‰‘ ê‰Ö‰Í “‰‘ —‰ç‰ƒ‰ƒ‰Â ª‰Ç •‰‘¤õ‰µ‰Â Ÿ‰‘¬‰Û
+ª‰Àù÷‰À ø “‰Â÷‰‘õ‰‚ —‰ó‰ƒ‰À î‰€‰€‰À\hamze ù ª‰Ø‰Û Ÿ‰Âé ¢¤ —‰Þ‰‘ô öû‰‘ þ‰Ø‰Æ‰‘ö ¨‰´. 
+“‰‘ þ‰ß Ï‰ÂŸ‰ü, “‰‘ —‰ç‰ƒ‰ƒ‰Â ‰€‰À •‰‘¤õ‰µ‰Â õ‰ü—‰ö  ÷‰Þ‰÷‰‚û‰‘ý ¥þ‰‘¢ý ì‰Ü‰Ý Ï‰ÂŸ‰ü î‰Â¢.  
+“‰Âý õ‰·‰‘ñ, “‰‚ ¤Ÿ‰µ‰ü õ‰ü—‰ö ê‰Ö‰Í “‰‘ —‰ç‰ƒ‰ƒ‰Â þ‰× •‰‘¤õ‰µ‰Â —‰Þ‰‘ô ¡‰Î‰¯ ê‰Ö‰ü ¥õ‰ƒ‰€‰‚
+õ‰›‰¢ ¢¤ Ÿ‰Âøé ¤ õ‰·‰\nasb … ¢ø “‰Â“‰Â ®‰¿‰ƒ‰Ý ÷‰Þ‰¢ ø Ÿ‰Âøé  ¨‰±‰× ¢þ‰Ú‰Âý ¥ ì‰Ü‰Ýû‰‘ý ê‰‘¤¨‰ü  
+¤ —‰ó‰ƒ‰À ÷‰Þ‰¢. ª‰Ø‰Û~2  ™‰Â– —‰ç‰ƒ‰ƒ‰Â õ‰Ö‰À¤ þ‰× •‰‘¤õ‰µ‰Â      
+¤ ÷‰È‰‘ö õ‰ƒ‰Àû‰À. ¢¤ þ‰ß ª‰Ø‰Û,  “‰‘ —‰ç‰ƒ‰ƒ‰Â  õ‰Ö‰À¤ •‰‘¤õ‰µ‰Âý  “‰‚ ÷‰‘ô
+\InE{}bolding\EnE{} Ÿ‰Âé Ÿ‰‘¬‰Û  “‰‚ õ‰ƒ‰Ãö ¢ó‰¿‰ù ÷‰‘¥í ø þ‰‘ ®‰¿‰ƒ‰Ý õ‰üª‰¢.
+
+
+\begin{table}
+\centering
+\begin{tabular}{||l|l|| l|l|| l||l|l||l||l||l||} %“‰¿‰Ç ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¤ û‰Þ‰¤ù 
+                                                   % ¥ ‰² “‰‚ ¤¨‰´ “‰¿‰÷‰ƒ‰À. 
+\hline 
+& & \multicolumn{2}{c||}{—‰Þ‰Âþ‰ßû‰‘}  &           % õ‰ú‰Ý: “‰‚ “‰¿‰Çû‰‘ý “‰‘ ¥õ‰ƒ‰€‰‚ 
+\multicolumn{2}{c||}{î‰Ž‰ƒ‰Ãû‰‘} &                %¨‰ƒ‰‘ù —‰›‰‚ î‰€‰ƒ‰À.
+•‰Âø¦ù & õ‰µ‰½‰‘ö & õ‰µ‰½‰‘ö & ÷‰Þ‰Âù\\ \cline{3-6}
+÷‰‘ô ø &ª‰Þ‰‘¤ù   &1\InE{}\#\EnE{} &2\InE{}\#\EnE{}&1\InE{}\#\EnE{} &2\InE{}\#\EnE{}&õ‰ƒ‰‘ö—‰Âô&÷‰ú‰‘þ‰ü&÷‰ú‰‘þ‰ü &÷‰ú‰‘þ‰ü \\ \cline{3-10}
+÷‰‘ô ¡‰‘÷‰¢ð‰ü   &¢÷‰È‰¹‰Ž‰ü  & 001&001& 02 & 02&001& 001&001&02 \\ \hline \hline 
+ õ‰½‰Þ‰À ì‰À¨‰ü     &30069105   &  91&001&51 & 6 & 9 & 36 &  58&  71 \\ \hline
+ õ‰ú‰Àý þ‰Â÷‰Ü‰ü  &50006296   &  72& 67&61 & 7 &05 & 16 &  51&  01 \\ \hline
+ ¤\zamme øþ‰‘ þ‰‘ø¤ý   &21002907  &  99& 06&61 & 71&34 & 53 & 57 &  61 \\ \hline
+ ›‰Þ‰È‰ƒ‰À “‰‘¥¤ð‰‘ö &40091017  &  93&001&51 & 01&06 & 52 & 06 &  71 \\ \hline
+ ê‰Âª‰‘¢ •‰¤÷‰‘¢¤ &60024027  &  93&55 &41 & 51&13 & 74 & 04 &  21 \\ \hline
+\end{tabular}
+\caption{÷‰Þ‰Â– ¢¤§ '¨‰‘¡‰µ‰Þ‰‘öû‰‘ý ¢¢ùý  ø ó‰Ú‰¤þ‰µ‰Ýû‰‘".}
+\end{table}
+
+\section{ øþ‰Äð‰üû‰‘ý õ‰ú‰Ý \FarsiTeX }
+
+\begin{enumerate}
+\item ì‰‘“‰Ü‰ƒ‰´ ›‰Â “‰Â ¤øý ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý  ä‰‘õ‰Û õ‰¿‰µ‰Ü‰Ó ¥ ì‰±‰ƒ‰Û
+\InE{}DOS\EnE{}, \InE{}Unix\EnE{}, \InE{}VAX/VMS\EnE{}.  ó‰±‰µ‰‚ ð‰÷‰\hamze ‚ \InE{}DOS\EnE{} \FarsiTeX —‰‘ î‰€‰ö ä‰Â®‰‚ ª‰Àù ¨‰´,
+øó‰ü “‰Âý ÷‰Ê‰° ö “‰Â ¤øý ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý ¢þ‰Ú‰Â —‰€‰ú‰‘ “‰‘þ‰À øþ‰Âþ‰È‰Ú‰Â „¥ô —‰½‰´ 
+ö ¨‰ƒ‰Æ‰µ‰Ý ÷‰ª‰µ‰‚ ª‰¢. 
+\item õ‰Ø‰‘ö ¨‰µ‰Ô‰‘¢ù î‰‘õ‰Û ¥ ê‰Âõ‰‘öû‰‘ý \InE{}\TeX\EnE{} ø \InE{}\LaTeX\EnE{} ø ê‰‘þ‰Ûû‰‘ý
+¬‰Ô‰½‰‚¤þ‰ü \InE{}\LaTeX\EnE{}.   
+\item õ‰Ø‰‘ö þ‰¹‰‘¢ ø ¨‰µ‰Ô‰‘¢ù ¥ ê‰‘þ‰Ûû‰‘ý ¬‰Ô‰½‰‚¤þ‰ü ›‰Àþ‰À î‰‚ “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü
+¢¤ î‰‘¤“‰Â¢û‰‘ý õ‰¤¢ ÷‰Ñ‰Â —‰ã‰Âþ‰Ó õ‰üª‰÷‰À.   
+\item ø›‰¢ øþ‰Âþ‰È‰Ú‰Âý õ‰€‰‘¨‰° î‰‚ î‰‘¤ õ‰‘¢ù¨‰‘¥ý õ‰µ‰ß, ›‰Â, ¢þ‰Àö ¡‰Âø›‰ü ø ‰‘”
+ö ¤ —‰Æ‰ú‰ƒ‰Û õ‰üî‰€‰À.  
+\end{enumerate}
+
+\section{ ÷‰Þ‰÷‰‚û‰‘þ‰ü ¥ ¡‰Âø›‰ü \FarsiTeX}
+¢¤ þ‰ß “‰¿‰Ç ÷‰Þ‰÷‰‚û‰‘þ‰ü ¥ Ÿ‰Âøê‰»‰ƒ‰€‰ü \FarsiTeX\  ÷‰È‰‘ö ¢¢ù õ‰ƒ‰È‰¢.
+ª‰‘þ‰‘ö £î‰Â ¨‰´ î‰‚ î‰Û þ‰ß õ‰Ö‰‘ó‰‚, ª‰‘õ‰Û ê‰Âõ‰ñû‰‘, ª‰Ø‰Ûû‰‘ ø ›‰Àøñû‰‘ý  ö 
+“‰Àøö ¨‰µ‰Ô‰‘¢ù
+¥ ‰Æ‰° ø ì‰ƒ‰»‰ü  —‰¨‰Í \FarsiTeX\  Ÿ‰Âøê‰»‰ƒ‰€‰ü  ª‰Àù ¨‰´.
+
+
+$$
+{ 1 \over\displaystyle 1 +
+   {\strut e^{-2\pi\sqrt{5}} \over\displaystyle 1 +
+     {\strut e^{-4\pi\sqrt{5}} \over \displaystyle 1 +
+ {\strut e^{-6\pi\sqrt{5}} \over \displaystyle 1+
+{\rule{0mm}{2mm} \makebox[5mm]{} \atop \ddots}}}}}
+=
+\left( {\sqrt{5} \over 1 + \sqrt[5]{5^{3/4}
+\left( {\sqrt{5} - 1 \over 2 } \right)^{5/2} -1 }} -
+{\sqrt{5} + 1 \over 2 } \right) e^{2\pi / \sqrt{5}}
+$$
+
+  $$\sqrt{1+\sqrt{1+\sqrt{1+  \sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+x}}}}}}}$$
+
+
+
+\newlength{\mylength}
+\[
+ \setlength{\fboxsep}{2pt}
+ \setlength{\mylength}{\linewidth}
+\addtolength{\mylength}{-2\fboxsep}
+\addtolength{\mylength}{-2\fboxrule}
+\fbox{%
+ \parbox{\mylength}{
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+\begin{equation}
+\stackrel{
+\farmbox{\InF{}Ÿ‰‹‰‹‰‹‰À\EnF{}}
+}{_{n\rightarrow\infty}}
+   \left| {\partial_n^2}\over{\partial_{n-1}\partial_{n+1}} \right| =
+\left[
+ \left\{
+     { b^2 - \sqrt{4ac^2}}\over
+     \displaystyle{\int_0^{\pi/2}\!\!\!\! \int_a^b\!\! x_1^2 dx dy}
+ \right\} +
+ \left(
+     \root n \of {
+ x^{\log \left( {n+1} \over 2 \right) } +
+ {
+   {
+   \left[
+    {n^2 + (a-b)^3}\over {x - y(z)^{-3}  }
+   \right] ^ {y(x)}
+   }\over
+   {
+    { b^2 - \root 3 \of{ a^3\over b + e^{-x^2} }
+    } \over
+    { (x+y)^2 - (x-y)^2 }
+   }
+ }
+   }
+ \right)
+\right]
+\end{equation}}}
+\]
+
+$$
+\def\temp{\multicolumn{1}{c|}{0}}
+  \pmatrix{a_{11}&a_{12}&\ldots&a_{1n}\cr a_{21}&a_{22}&\ldots&a_{2n}\cr
+  \vdots&\vdots&\ddots&\vdots\cr
+  a_{m1}&a_{m2}&\ldots&a_{mn}\cr} =
+  \left[
+\begin{array}{cccccc}
+ 1  & 0  & \ast &  0 & \ast & \ast \\ \cline{1-1}
+\temp &  1  & \ast & 0  & \ast & \ast \\ \cline{2-3}
+ 0  & 0  & \temp &  1 & \ast & \ast \\ \cline{4-6}
+  0 & 0  & 0 &  0  & 0 & 0
+\end{array}
+\right] \eqno(1.2.3)
+$$
+
+\clearpage
+\input{parshape.tex}
+\begin{Framedfigure}
+\vspace{4mm}
+\centerline{\box247}
+\vspace{4mm}
+\caption{õ‰Ø‰‘ö Ÿ‰Âøê‰»‰ƒ‰€‰ü •‰‘¤ð‰Âéû‰‘ý õ‰¿‰µ‰Ü‰Ó “‰‘ \FarsiTeX .}
+\end{Framedfigure}
+
+\english
+\input{epsf}
+\epsfxsize=2.5in
+\epsfysize=3in
+\begin{Framedfigure}
+\centerline{\epsffile{escher.ps}}
+\farsi
+\caption{¨‰µ‰Ô‰‘¢ù ¥ ª‰Ø‰‘ñ {\sc \InE{}PostScript\EnE{}} ¢¤ \FarsiTeX .}
+\end{Framedfigure}
+%\clearpage
+
+
+\begin{thebibliography}{99}
+
+\english
+\bibitem{m1} D. E. Knuth, The \TeX book, Addison-Wesley, 1984.
+\bibitem{m2} Leslie Lamport, \LaTeX\ : A Document Preparation System,
+Digital Equipment Corporation, 1988.
+\bibitem{m3} D. E. Knuth and P. Mackay, {\em Mixing right-to-left texts
+with left-to-right texts,} TUGboat vol. 8, 1987, No.1 .
+\farsi
+\bibitem{} Ÿ‰Æ‰ß “‰ó‰½‰Æ‰€‰ü, {\khabide Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ö ê‰‘¤¨‰ü “‰‘\InE{}\TeX\EnE{},} ¤¨‰‘ó‰\hamze ‚
+î‰‘¤ª‰€‰‘¨‰ü ¤ª‰À, ¢÷‰È‰Ø‰Àù õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó, “‰ú‰Þ‰ß 2731.
+\bibitem{} õ‰ú‰Âö ª‰Âì‰ü, {\khabide Ï‰ÂŸ‰ü ä‰Ü‰Þ‰ü ì‰Ü‰Ýû‰‘ý ê‰‘¤¨‰ü,} ¤¨‰‘ó‰\hamze ‚ 
+î‰‘¤ª‰€‰‘¨‰ü ¤ª‰À, ¢÷‰È‰Ø‰Àù õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó, “‰ú‰Þ‰ß 2731.
+\bibitem{} •‰Âø÷‰‚ ¬‰ç‰Âý,{\khabide  Ï‰ÂŸ‰ü ä‰Ü‰Þ‰ü ì‰Ü‰Þ‰ú‰‘ý —‰Âê‰ƒ‰× “‰‘ õ‰µ‰‘ê‰÷‰´,} 
+¤¨‰‘ó‰\hamze ‚
+î‰‘¤ª‰€‰‘¨‰ü, ¢÷‰È‰Ø‰Àù õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó, ª‰ú‰Âþ‰¤ 2731.
+\bibitem{} „ó‰‚ —‰¹‰Â“‰‚ î‰‘¤, {\khabide Ï‰ÂŸ‰ü “‰‘ \zamme •‰Æ‰´¨‰Ø‰Âþ‰³‰´ ¢¤ õ‰½‰ƒ‰Í ê‰‘¤¨‰ü,} 
+¤¨‰‘ó‰\hamze ‚
+î‰‘¤ª‰€‰‘¨‰ü, ¢÷‰È‰Ø‰Àù õ‰ú‰€‰À¨‰ü î‰‘õ‰³‰ƒ‰—‰Â, ¢÷‰È‰Ú‰‘ù ¬‰€‰ã‰µ‰ü ª‰Âþ‰Ó, 2731.       
+\end{thebibliography}
+\end{document}
+
+
+

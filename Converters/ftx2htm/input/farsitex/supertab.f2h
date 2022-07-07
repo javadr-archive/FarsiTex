@@ -1,0 +1,17 @@
+>\def\valtablecaption{}
+>\def\tablecaption#1{\def\valtablecaption{#1}}
+>
+>\def\valtablehead{}
+>\def\tablehead#1{\def\valtablehead{#1}}
+>
+>\def\valtablefirsthead{}
+>\def\tablefirsthead#1{\def\valtablefirsthead{#1}}
+>
+>\def\valtabletail{}
+>\def\tabletail#1{\def\valtabletail{#1}}
+>
+>\def\valtablelasttail{}
+>\def\tablelasttail#1{\def\valtablelasttail{#1}}
+>
+>\def\supertabular#1{\caption{\valtablecaption}\begin{tabular}{#1}\valtablefirsthead}
+>\def\endsupertabular{\end{tabular}\lotadd}

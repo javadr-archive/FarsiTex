@@ -1,0 +1,19 @@
+\newbox\icpcplbox
+\newdimen\icpcplw
+\font\icpcpla=icpcpla at 57.816truept
+\font\icpcplb=icpcplb at 57.816truept
+\font\icpcplc=icpcplc at 57.816truept
+\setbox\icpcplbox=\vbox{\hbox{%
+\icpcpla\char0\char1\char2\char3}}
+\icpcplw=\wd\icpcplbox
+\setbox\icpcplbox=\hbox{\vbox{\hsize=\icpcplw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\icpcpla\char0\char1\char2\char3}
+\hbox{\icpcpla\char4\char5\icpcplb\char0\char1}
+\hbox{\icpcplb\char2\char3\icpcplc\char0\char1}
+\hbox{\icpcplc\char2\char3\char4\char5}}}
+\ifx\parbox\undefined
+    \def\seticpcpl{\box\icpcplbox}
+\else
+    \def\seticpcpl{\parbox{\wd\icpcplbox}{\box\icpcplbox}}
+\fi

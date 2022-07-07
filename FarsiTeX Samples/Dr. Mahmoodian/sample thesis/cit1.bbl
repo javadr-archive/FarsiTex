@@ -1,0 +1,252 @@
+\def\cprime{$'$}
+\begin{thebibliography}{10A}
+\english
+\bibitem{AdamsBeanKhodkar1}
+{\sc P.~Adams, R.~Bean, and A.~Khodkar}, {\em A census of critical sets in the
+  latin squares of order at most six}, (submitted).
+
+\bibitem{AdamsBeanKhodkar2}
+{\sc P.~Adams, R.~Bean, and A.~Khodkar}, {\em Disjoint critical sets in latin
+  squares}, (submitted).
+
+\bibitem{AdamsKhodkar4}
+{\sc P.~Adams and A.~Khodkar}, {\em Products of weak critical sets}.
+
+\bibitem{AdamsKhodkar2}
+{\sc P.~Adams and A.~Khodkar}, {\em Smallest critical sets for the latin
+  squares of order seven,}, (submitted).
+
+\bibitem{AdamsKhodkar1}
+{\sc P.~Adams and A.~Khodkar}, {\em Smallest weak and smallest totally weak
+  critical sets for the latin squares of order at most seven}, Ars
+  Combinatoria, p.~(to appear).
+
+\bibitem{AdamsKhodkar3}
+{\sc P.~Adams and A.~Khodkar}, {\em Smallest weak and totally weak critical
+  sets for the latin squares of order at most seven}.
+
+\bibitem{MR2000k:05054}
+{\sc P.~Adams and A.~Khodkar}, {\em Smallest critical sets for the groups of
+  size eight}, J. Combin. Math. Combin. Comput., 32 (2000), pp.~23--32.
+
+\bibitem{MR1834445}
+{\sc P.~Adams and A.~Khodkar}, {\em Smallest critical sets for the latin
+  squares of orders six and seven}, J. Combin. Math. Combin. Comput., 37
+  (2001), pp.~225--237.
+
+\bibitem{MR2000g:05034}
+{\sc J.~A. Bate and G.~H.~J. van Rees}, {\em The size of the smallest strong
+  critical set in a {L}atin square}, Ars Combin., 53 (1999), pp.~73--83.
+
+\bibitem{MR2001f:05030}
+{\sc R.~Bean and D.~Donovan}, {\em Closing a gap in the spectrum of critical
+  sets}, Australas. J. Combin., 22 (2000), pp.~191--200.
+
+\bibitem{BeanMahmoodian}
+{\sc R.~Bean and E.~S. Mahmoodian}, {\em A new bound on the size of the largest
+  critical set in a latin square}, Discrete Math., to appear.
+
+\bibitem{MR2001c:05028}
+{\sc D.~Bedford and M.~Johnson}, {\em Weak uniquely completable sets for finite
+  groups}, Bull. London Math. Soc., 32 (2000), pp.~155--162.
+
+\bibitem{MR2000f:05016}
+{\sc D.~R.~B. Burgess}, {\em Critical sets for the quaternion group}, Pure
+  Math. Appl., 9 (1998), pp.~259--264.
+
+\bibitem{MR2001b:05043}
+{\sc D.~R.~B. Burgess}, {\em Weakly completable sets in {L}atin squares}, J.
+  Combin. Math. Combin. Comput., 34 (2000), pp.~65--69.
+
+\bibitem{MR85k:68035}
+{\sc C.~J. Colbourn, M.~J. Colbourn, and D.~R. Stinson}, {\em The computational
+  complexity of recognizing critical sets}, in Graph theory, Singapore 1983,
+  Springer, Berlin, 1984, pp.~248--253.
+
+\bibitem{CooperDonovan}
+{\sc J.~Cooper and D.~Donovan}, {\em Latin intercahnges}, in Sixth Australasian
+  Workshop of Combinatorial Algorithms, Darwin, (1994), 1994, pp.~29--35.
+
+\bibitem{MR98a:05030}
+{\sc J.~Cooper, D.~Donovan, and R.~A.~H. Gower}, {\em Critical sets in direct
+  products of back circulant {L}atin squares}, Utilitas Math., 50 (1996),
+  pp.~127--162.
+
+\bibitem{MR92i:05049}
+{\sc J.~Cooper, D.~Donovan, and J.~Seberry}, {\em Latin squares and critical
+  sets of minimal size}, Australas. J. Combin., 4 (1991), pp.~113--120.
+\newblock Combinatorial mathematics and combinatorial computing (Palmerston
+  North, 1990).
+
+\bibitem{MR95j:05043}
+{\sc J.~Cooper, D.~Donovan, and J.~Seberry}, {\em Secret sharing schemes
+  arising from {L}atin squares}, Bull. Inst. Combin. Appl., 12 (1994),
+  pp.~33--43.
+
+\bibitem{MR95h:05032}
+{\sc J.~A. Cooper, T.~P. McDonough, and V.~C. Mavron}, {\em Critical sets in
+  nets and {L}atin squares}, J. Statist. Plann. Inference, 41 (1994),
+  pp.~241--256.
+
+\bibitem{MR80j:05022}
+{\sc D.~Curran and G.~H.~J. van Rees}, {\em Critical sets in {L}atin squares},
+  in Proceedings of the Eighth Manitoba Conference on Numerical Mathematics and
+  Computing (Univ. Manitoba, Winnipeg, Man., 1978), Congress. Numer., Winnipeg,
+  Man., 1979, Utilitas Math., pp.~165--168.
+
+\bibitem{Donovan}
+{\sc D.~Donovan}, {\em An update on latin intercahnges}, in Seventh
+  Australasian Workshop of Combinatorial Algorithms, Magnetic Island, (1996),
+  1996, pp.~30--38.
+
+\bibitem{MR99k:05038}
+{\sc D.~Donovan}, {\em Critical sets in {L}atin squares of order less than
+  $\rm{11}$}, J. Combin. Math. Combin. Comput., 29 (1999), pp.~223--240.
+
+\bibitem{MR1795340}
+{\sc D.~Donovan}, {\em The completion of partial latin squares}, Australas. J.
+  Combin, 22 (2000), pp.~247--264.
+
+\bibitem{MR97g:05032}
+{\sc D.~Donovan and J.~Cooper}, {\em Critical sets in back circulant {L}atin
+  squares}, Aequationes Math., 52 (1996), pp.~157--179.
+
+\bibitem{MR95k:05030}
+{\sc D.~Donovan, J.~Cooper, D.~J. Nott, and J.~Seberry}, {\em Latin squares:
+  critical sets and their lower bounds}, Ars Combin., 39 (1995), pp.~33--48.
+
+\bibitem{DonovanFuKhodkar}
+{\sc D.~Donovan, C.-M. Fu, and A.~Khodkar}, {\em A discussion of
+  $\rm{2}$--critical sets in abelian \rm{2}-groups}, in Twelth Australasian
+  Workshop of Combinatorial Algorithms, Bandung, (2001), 2001, p.~??
+
+\bibitem{DonovanGowerKhodkar}
+{\sc D.~Donovan, R.~Gower, and A.~Khodkar}, {\em Latin interchanges and direct
+  products}, Ars Combinatoria, p.~(to appear).
+
+\bibitem{MR99i:05039}
+{\sc D.~Donovan and A.~Howse}, {\em Critical sets for {L}atin squares of order
+  $\rm{7}$}, J. Combin. Math. Combin. Comput., 28 (1998), pp.~113--123.
+\newblock Papers in honour of Anne Penfold Street.
+
+\bibitem{MR2000m:05041}
+{\sc D.~Donovan and A.~Howse}, {\em Towards the spectrum of critical sets},
+  Australas. J. Combin., 21 (2000), pp.~107--130.
+
+\bibitem{DonovanMahmoodian}
+{\sc D.~Donovan and E.~S. Mahmoodian}, {\em An algorithm for writing latin
+  squares as the sum of intercalates}, Bull. Inst. Combin. Applications, p.~(to
+  appear).
+
+\bibitem{MR98e:05017}
+{\sc D.~Donovan, S.~Oates-Williams, and C.~E. Praeger}, {\em On the distance
+  between distinct group {L}atin squares}, J. Combin. Des., 5 (1997),
+  pp.~235--248.
+
+\bibitem{MR2000i:05034}
+{\sc L.~F. Fitina, J.~Seberry, and G.~R. Chaudhry}, {\em Back circulant {L}atin
+  squares and the influence of a set}, Australas. J. Combin., 20 (1999),
+  pp.~163--180.
+
+\bibitem{MR98m:05023}
+{\sc S.~Frisch}, {\em On the minimal distance between group tables}, Acta Sci.
+  Math. (Szeged), 63 (1997), pp.~341--351.
+
+\bibitem{MR96h:05030}
+{\sc C.-M. Fu, H.-L. Fu, and W.-B. Liao}, {\em A new construction for a
+  critical set in special {L}atin squares}, in Proceedings of the Twenty-sixth
+  Southeastern International Conference on Combinatorics, Graph Theory and
+  Computing (Boca Raton, FL, 1995), vol.~110, 1995, pp.~161--166.
+
+\bibitem{MR1468170}
+{\sc C.-M. Fu, H.-L. Fu, and C.~A. Rodger}, {\em The minimum size of critical
+  sets in latin squares}, J. Statist. Plann. Inference, 62 (1997), pp.~no. 2,
+  333--337.
+
+\bibitem{MR2001g:05026}
+{\sc R.~A.~H. Gower}, {\em Critical sets in products of {L}atin squares}, Ars
+  Combin., 55 (2000), pp.~293--317.
+
+\bibitem{MR99h:05016}
+{\sc A.~Howse}, {\em Families of critical sets for the dihedral group}, Util.
+  Math., 54 (1998), pp.~175--191.
+
+\bibitem{MR98m:05026}
+{\sc A.~Howse}, {\em Minimal critical sets for some small {L}atin squares},
+  Australas. J. Combin., 17 (1998), pp.~275--288.
+
+\bibitem{MR1815020}
+{\sc M.~Johnson and D.~Bedford}, {\em Weak critical sets in cyclic {L}atin
+  squares}, Australas. J. Combin., 23 (2001), pp.~301--316.
+
+\bibitem{MR2001i:05041}
+{\sc M.~Johnson and D.~Bedford}, {\em Weak critical sets in cyclic latin
+  squares}, Australas. J. Combin, 23 (2001), pp.~301--316.
+
+\bibitem{MR96a:05027}
+{\sc A.~D. Keedwell}, {\em Critical sets and critical partial {L}atin squares},
+  in Combinatorics, graph theory, algorithms and applications (Beijing, 1993),
+  World Sci. Publishing, River Edge, NJ, 1994, pp.~111--123.
+
+\bibitem{MR97i:05017}
+{\sc A.~D. Keedwell}, {\em Critical sets for {L}atin squares, graphs and block
+  designs: a survey}, Congr. Numer., 113 (1996), pp.~231--245.
+\newblock Festschrift for C. St.\ J. A. Nash-Williams.
+
+\bibitem{MR97f:05031}
+{\sc A.~D. Keedwell}, {\em A note on critical sets for the elementary abelian
+  $\rm{2}$-group}, Utilitas Math., 49 (1996), pp.~69--84.
+
+\bibitem{MR1605114}
+{\sc A.~D. Keedwell}, {\em Critical sets for orthogonal {L}atin squares of
+  small order}, in Proceedings of the Twenty-eighth Southeastern International
+  Conference on Combinatorics, Graph Theory and Computing (Boca Raton, FL,
+  1997), vol.~125, 1997, pp.~51--64.
+
+\bibitem{MR99j:05036}
+{\sc A.~D. Keedwell}, {\em What is the size of the smallest {L}atin square for
+  which a weakly completable critical set of cells exists?}, Ars Combin., 51
+  (1999), pp.~97--104.
+
+\bibitem{MR99f:05019}
+{\sc A.~Khodkar}, {\em On smallest critical sets for the elementary abelian
+  $\rm{2}$-group}, Util. Math., 54 (1998), pp.~45--50.
+
+\bibitem{MR99j:05073}
+{\sc M.~Mahdian and E.~S. Mahmoodian}, {\em A characterization of uniquely
+  $\rm{2}$-list colorable graphs}, Ars Combin., 51 (1999), pp.~295--305.
+
+\bibitem{MR1740669}
+{\sc M.~Mahdian and E.~S. Mahmoodian}, {\em The roots of an {I}{M}{O}97
+  problem}, Bull. Inst. Combin. Appl., 28 (2000), pp.~48--54.
+
+\bibitem{MR98b:05044}
+{\sc E.~S. Mahmoodian, R.~Naserasr, and M.~Zaker}, {\em Defining sets in vertex
+  colorings of graphs and {L}atin rectangles}, Discrete Math., 167/168 (1997),
+  pp.~451--460.
+\newblock 15th British Combinatorial Conference (Stirling, 1995).
+
+\bibitem{MR98e:05019}
+{\sc E.~S. Mahmoodian and G.~H.~J. van Rees}, {\em Critical sets in back
+  circulant {L}atin rectangles}, Australas. J. Combin., 16 (1997), pp.~45--50.
+
+\bibitem{Nelder77}
+{\sc J.~Nelder}, {\em Critical sets in latin squares}, CSIRO Division of Math.
+  and Stats, Newsletter, 38 (1977).
+
+\bibitem{MR81d:05015}
+{\sc B.~Smetaniuk}, {\em On the minimal critical set of a {L}atin square},
+  Utilitas Math., 16 (1979), pp.~97--100.
+
+\bibitem{MR84g:05036}
+{\sc D.~R. Stinson and G.~H.~J. van Rees}, {\em Some large critical sets}, in
+  Proceedings of the Eleventh Manitoba Conference on Numerical Mathematics and
+  Computing (Winnipeg, Man., 1981), vol.~34, 1982, pp.~441--456.
+
+\bibitem{MR93c:05026}
+{\sc A.~P. Street}, {\em Defining sets for $t$-designs and critical sets for
+  {L}atin squares}, New Zealand J. Math., 21 (1992), pp.~133--144.
+\newblock New Zealand Mathematics Colloquium (Dunedin, 1991).
+
+\end{thebibliography}
+\farsi

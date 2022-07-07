@@ -1,0 +1,31 @@
+>\addtolength{\baselineskip}{1.ex}
+>\english
+>\mathenumber
+>\begin{englishabstract}
+>In a combinatorial structure S, a substructure D is said to be a {\bf defining set}, if
+> S is the only structure containing D.
+>Those defining sets which 
+>have no proper defining subset, have special importance in combinatorics, because of their 
+>applications. These sets have been called {\bf critical sets}
+>in Latin squares, {\bf defining sets} in combinatorial designs, and {\bf forcing sets}
+>in the diverse concepts of graphs.\\
+>In this project, we review the bounds obtained for the volume of the critical sets
+> in Latin squares.\\
+>In Chapter 1, we collected the necessary definitions for studying critical sets.
+>In Chapter 2, we state the theorems and bounds for the volume of these sets.
+>Chapter 3 has a review on the volume of critical sets based on a group, in particular,
+>cyclic group ${\Bbb Z}_n$, abelian 2-groups, abelian 3-groups, and dihedral groups.
+>Direct product of Latin squares and their critical sets are studied in Chapter 4.
+>Applications of critical sets are discussed in the last chapter.\\
+>Also, in the Appendices (A) and (B), respectively, we have listed all of the papers
+> about
+>defining sets in combinatorial designs and the defining (forcing) sets in graphs.
+>At the end, we also have collected papers about  critical sets in Latin squares,
+> in Appendix (C) that
+> we haven't referred to them in the text of the project.
+>\englishkeywords{$1)$Latin squares,$\quad 2)$critical sets,$\quad 3)$partial Latin squares,$\quad
+>4)$defining set,\\ $5)$forcing set}
+>\end{englishabstract}
+>\farsi
+>\addtolength{\baselineskip}{-1.ex}
+<

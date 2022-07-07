@@ -1,0 +1,68 @@
+# Microsoft Developer Studio Generated Dependency File, included by Ftexed.mak
+
+.\ChildFrm.cpp : \
+	".\ChildFrm.h"\
+	".\Ftexed.h"\
+	
+
+.\FarsiRichEdit.cpp : \
+	".\FarsiRichEdit.h"\
+	".\Ftexed.h"\
+	
+
+.\Ftexed.cpp : \
+	".\ChildFrm.h"\
+	".\Ftexed.h"\
+	".\FtexedDoc.h"\
+	".\FtexedView.h"\
+	".\MainFrm.h"\
+	
+
+.\Ftexed.rc : \
+	".\Res\bitmap1.bmp"\
+	".\res\Ftexed.ico"\
+	".\res\Ftexed.rc2"\
+	".\res\FtexedDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\FtexedDoc.cpp : \
+	".\Ftexed.h"\
+	".\FtexedDoc.h"\
+	
+
+.\FtexedView.cpp : \
+	".\FarsiRichEdit.h"\
+	".\Ftexed.h"\
+	".\FtexedDoc.h"\
+	".\FtexedView.h"\
+	".\GotoDlg.h"\
+	".\PrintDLG.h"\
+	".\Search.h"\
+	
+
+.\GotoDlg.cpp : \
+	".\Ftexed.h"\
+	".\GotoDlg.h"\
+	
+
+.\MainFrm.cpp : \
+	".\Ftexed.h"\
+	".\MainFrm.h"\
+	
+
+.\PrintDLG.cpp : \
+	".\Ftexed.h"\
+	".\PrintDLG.h"\
+	
+
+.\Search.cpp : \
+	".\FarsiRichEdit.h"\
+	".\Ftexed.h"\
+	".\Search.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

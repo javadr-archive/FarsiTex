@@ -1,0 +1,128 @@
+>\special{landscape}
+>\setlength{\textheight}{12.5cm}
+>\setlength{\textwidth}{22cm}
+>
+>\input{epsf}
+>\fancypage{%
+>\setlength{\fboxsep}{20pt}%
+>\setlength{\fboxrule}{1pt}%
+>\Ovalbox to \textwidth}{}
+>\addtolength{\textwidth}{3.2cm}
+>\addtolength{\textheight}{3.2cm}
+>\addtolength{\hoffset}{-2.5cm}
+>\addtolength{\voffset}{-1.8cm}
+>\setlength{\fboxsep}{10pt}%
+>\setlength{\shadowsize}{10pt}%
+>\setlength{\fboxrule}{1pt}%
+>\addtolength{\headsep}{-7mm}
+>\addtolength{\footskip}{-7mm}
+>\setlength{\headrulewidth}{0pt}
+>\pagestyle{fancy}
+>
+<ÒcheadÞÒlargeÒsayedarÚ¢¢ù¨‘¡—‘¤û‘ÚøÚóðø¤þ—ôû‘Ú¾„‚‚Å€„½×
+<ÒlfootÞ¢÷ªî¢ùÚõú÷¢¨üÚî‘õ•þø—¤×
+<ÒrfootÞÒhspaceÈÞÐ5mmÐ×ÚõŸõ¢Úì¢¨ü×
+<ÒrheadÞ×
+<ÒcfootÞÒthepage×
+<
+>\parindent=0pt
+>\parskip=3mm
+>\font\title=cmssbx10 scaled 2000
+<
+<
+<·ÒnewtheoremÞÐprelemmaÐ×ÞÞÒbfÚóôÚ××
+<·ÒrenewcommandÞÒtheprelemma×ÞÞÒarabicÞÐprelemmaÐ×××
+<·ÒnewenvironmentÞÐlemmaÐ×ÞÒbeginÞprelemma×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<·ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞprelemma××
+<·
+<·ÒnewtheoremÞÐprealgorithmÐ×ÞÞÒLargeÚÒbfÚóðø¤þ—ôÚ××
+<·ÒrenewcommandÞÒtheprealgorithm×ÞÞÒarabicÞÐprealgorithmÐ×××
+<·ÒnewenvironmentÞÐalgorithmÐ×ÞÒbeginÞprealgorithm××
+<·ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞprealgorithm××
+<·
+<
+>\newcounter{mnum}
+>\newenvironment{mlist}{\setcounter{mnum}{0}     % 1) 2) 3)
+>\begin{list}{\arabic{mnum}(}{\usecounter{mnum}\rightmargin=6mm
+>    \labelwidth=7mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=-2mm\topsep=-3mm}}{\end{list}}
+>
+>\newenvironment{elist}{\setcounter{mnum}{0}      % 1. 2. 3.
+>\begin{list}{\arabic{mnum}.}{\usecounter{mnum}\rightmargin=6mm
+>    \labelwidth=7mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=-5mm\itemsep=-2mm\topsep=-3mm}}{\end{list}}
+>
+>\newcounter{snum}         %  a  b  c
+>\newenvironment{slist}{\setcounter{snum}{0}
+>\begin{list}{\insertenglish(\alph{snum}\endenglish}{\usecounter{snum}\rightmargin=4mm
+>    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=-3mm\topsep=-3mm}}{\end{list}}
+>
+>\newenvironment{ilist}{     %itemized list with bullete
+>\begin{list}{$\bullet$}{\rightmargin=4mm
+>    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=-3mm\topsep=-3mm}}{\end{list}}
+>
+>
+>\newenvironment{tilist}{     %itemized list with triangleleft
+>\begin{list}{$\triangleleft$}{\rightmargin=4mm
+>    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=-3mm\topsep=-3mm}}{\end{list}}
+>
+<
+<
+<ÒnewtheoremÞÐpretheoremÐ×ÞÞÒbfÚì®þùÚ××
+<ÒrenewcommandÞÒthepretheorem×ÞÞÒarabicÞÐpretheoremÐ×××
+<ÒnewenvironmentÞÐtheoremÐ×ÞÒbeginÞpretheorem×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpretheorem××
+<
+<ÒnewtheoremÞÐprelemmaÐ×ÞÞÒbfÚóôÚ××
+<ÒrenewcommandÞÒtheprelemma×ÞÞÒarabicÞÐprelemmaÐ×××
+<ÒnewenvironmentÞÐlemmaÐ×ÞÒbeginÞprelemma×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞprelemma××
+<
+<
+<ÒnewtheoremÞÐprealgorithmÐ×ÞÞÒLargeÚÒbfÚóðø¤þ—ôÚ××
+<ÒrenewcommandÞÒtheprealgorithm×ÞÞÒarabicÞÐprealgorithmÐ×××
+<ÒnewenvironmentÞÐalgorithmÐ×ÞÒbeginÞprealgorithm××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞprealgorithm××
+<
+<
+<ÒnewtheoremÞÐpreexampleÐ×ÞÞÒbfÚõ™‘ñÚ××
+<ÒrenewcommandÞÒthepreexample×ÞÞÒarabicÞÐpreexampleÐ×××
+<ÒnewenvironmentÞÐexampleÐ×ÞÒbeginÞpreexample×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreexample××
+<
+<ÒnewtheoremÞÐpreprobÐ×ÞÞÒbfÚõ¨ŽóùÚ××
+<ÒrenewcommandÞÒthepreprob×ÞÞÒarabicÞÐpreprobÐ×××
+<ÒnewenvironmentÞÐprobÐ×ÞÒvspaceÞÐ-5mmÐ×ÒbeginÞpreprob×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreprob××
+<
+<ÒnewtheoremÞÐpreprobbÐ×ÞÞÒbfÚõ¨ŽóùÚ××
+<ÒrenewcommandÞÒthepreprobb×Þ×
+<ÒnewenvironmentÞÐprobbÐ×ÞÒbeginÞpreprobb×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreprobb××
+<
+<ÒnewtheoremÞÐpreconjÐ×ÞÞÒbfÚŸ¢§Ú××
+<ÒrenewcommandÞÒthepreconj×Þ×
+<ÒnewenvironmentÞÐconjÐ×ÞÒbeginÞpreconj×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreconj××
+<
+<ÒnewenvironmentÞÐproofÐ×ÞÞÒbfÚ™“‘–Æ×ÚÒrmÚ×ÞÒhfillÞ$\Box$××
+<
+<
+<
+>\def\emline#1#2#3#4#5#6{%
+>       \put(#1,#2){\special{em:moveto}}%
+>       \put(#4,#5){\special{em:lineto}}}
+>\def\newpic#1{}
+<
+<
+>\def\slide#1{\newpage\centerline{{\Huge\bf#1}}\par\vskip3mm}
+>\def\sub#1{\vspace*{-2mm}\subsection*{\fbox{\beginR\LARGE\bf #1}}\vspace*{-3mm}}
+>\def\SP{\vspace*{5mm}}

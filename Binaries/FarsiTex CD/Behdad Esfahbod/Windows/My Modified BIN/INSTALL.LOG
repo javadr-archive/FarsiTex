@@ -1,0 +1,50 @@
+***  Installation Started 08/04/2004 8:19  ***
+Title: FarsiTeX Editor Installation
+Source: Z:\home\behdad\farsitex\old\farsitex\download\farsitex\bin\farsitex-editor-alpha9.1.exe
+Made Dir: C:\Program Files\MikTeX\miktex\bin
+File Copy: C:\Program Files\MikTeX\miktex\bin\UNWISE.EXE
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: FarsiTeX Editor
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: C:\PROG~FBU\MikTeX\miktex\bin\UNWISE.EXE C:\PROG~FBU\MikTeX\miktex\bin\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+File Copy: C:\Program Files\MikTeX\miktex\bin\ftx2unicode.bat
+File Copy: C:\Program Files\MikTeX\miktex\bin\fmakeindex.bat
+File Copy: C:\Program Files\MikTeX\miktex\bin\options.ftc
+Made Dir: C:\Program Files\MikTeX\miktex\bin\images
+File Copy: C:\Program Files\MikTeX\miktex\bin\images\splitter.png
+File Copy: C:\Program Files\MikTeX\miktex\bin\images\snapshot.png
+File Copy: C:\Program Files\MikTeX\miktex\bin\ftexed_man.html
+File Copy: C:\Program Files\MikTeX\miktex\bin\allchanges.txt
+File Copy: C:\Program Files\MikTeX\miktex\bin\colors.ftc
+File Copy: C:\Program Files\MikTeX\miktex\bin\colorsettings.ftc
+File Copy: C:\Program Files\MikTeX\miktex\bin\convert.bat
+File Copy: C:\Program Files\MikTeX\miktex\bin\Ftexed.exe
+File Copy: C:\Program Files\MikTeX\miktex\bin\Ftexkeyb.dat
+File Copy: C:\Program Files\MikTeX\miktex\bin\goftex.bat
+File Copy: C:\Program Files\MikTeX\miktex\bin\readme.txt
+File Copy: c:\windows\Fonts\FarsiTeX.fon
+Shell Link: C:\windows\Desktop\FarsiTeX Editor.lnk
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: Alpha 9.1
+RegDB Name: DisplayVersion
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: FarsiTeX Project Team
+RegDB Name: Publisher
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: http://www.farsitex.org
+RegDB Name: URLInfoAbout
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: FarsiTeX User Support
+RegDB Name: Contact
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\FarsiTeX Editor
+RegDB Val: C:\PROG~FBU\MikTeX\miktex\bin\Ftexed.exe,-0
+RegDB Name: DisplayIcon
+RegDB Root: 2

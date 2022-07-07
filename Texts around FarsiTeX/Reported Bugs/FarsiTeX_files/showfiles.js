@@ -1,0 +1,1 @@
+document.write('<a target="_top" href="http://ad.doubleclick.net/click;h=v8/3573/0/0/%2a/p;107270545;0-0;0;13358421;255-0/0;21279707/21297599/1;;~sscs=%3fhttp://showcase.linux.com/perforce.tmpl"><img src="http://m1.2mdn.net/viewad/1251067/perforce_leader_RON.gif" border=0 alt="Click here!"></a>');

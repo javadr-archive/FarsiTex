@@ -1,0 +1,18 @@
+>%                                                     In The Name of God
+>\documentstyle[farsi]{article}
+>\begin{document}
+>%Example 1
+<ê¤õøóú‘ýÚ$\frac{\frac{\alpha^2+\beta^2}{\gamma}}{4}$ÚøÚ$\frac{\frac{\displaystyle\alpha^2+\beta^2}{\gamma}}{4}$
+<øÚ$\frac{\frac{\alpha^2+\beta^2}{\displaystyle\gamma}}{4}$Úø
+<Ú$\frac{\displaystyle\frac{\alpha^2+\beta^2}{\displaystyle\gamma}}{4}$
+<øÚ$\frac{\frac{\displaystyle\alpha^2+\beta^2}{\displaystyle\gamma}}{\displaystyle 4}$ÚûõðüÚþîüÚû¨—÷¢ÆÚ—÷ú‘Ú—ê‘ø–Ú÷ú‘Ú¢¤
+<÷¢¥ùÚ¬ø¤–ÚøÚõ¡¤šÚ÷ú‘¨–ÆÚª‘þ¢Úªõ‘Ú•÷›õþöÚªîñÚ¤Ú¢ø¨–Ú¢ª—ùÚ“‘ª¢Æ
+<ÒÒ
+<Òpar
+>%Example 2
+<ê¤õøóú‘ýÚ$\displaystyle\lim_{x\to0}f^2(x)$ÚøÚ$\lim_{x\to0}f^2(x)$Ú¥Ú÷à¤Ú¤þ‘®üÚþîüÚû¨—÷¢ÆÚøóüÚ÷à¤Ú“ùÚõöÚê¤õøñÚøñÚ¢¤ýÚà‘û¤Ú
+<“ú—¤ýÚ¨–Æ
+>\end{document}
+>%-------
+>% Email: sub.2007.sub@gmail.com
+<

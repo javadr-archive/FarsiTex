@@ -1,0 +1,91 @@
+This is e-TeX, Version 3.141592-2.2 (MiKTeX 2.4) (preloaded format=farsitex 2006.6.24)  24 JUN 2006 19:30
+entering extended mode
+**&farsitex MAN
+(MAN.tex
+LaTeX Version 2.09 <25 March 1992>
+(C:\Program Files\MiKTeX\tex\latex209\base\report.sty
+Standard Document Style `report' <14 Jan 92>.
+(C:\Program Files\MiKTeX\tex\latex209\base\rep10.sty)
+\descriptionmargin=\dimen100
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+
+(C:\Program Files\MiKTeX\tex\latex209\base\titlepag.sty
+Document Style Option `titlepage' -- Released 16 June 1991.
+)) (C:\Program Files\MiKTeX\tex\farsitex\base\farsi.sty
+Farsi style, R. Pournader and H. Abolhassani, The FarsiTeX Project Group.
+Version 0.51beta, 29 December 2000
+(C:\Program Files\MiKTeX\tex\farsitex\base\ftoday.sty
+\FT@i=\count88
+\FT@y=\count89
+\FT@m=\count90
+\FT@d=\count91
+\FT@latini=\count92
+\FT@farsii=\count93
+\FT@latinii=\count94
+\FT@farsiii=\count95
+\FT@latiniii=\count96
+\FT@farsiiii=\count97
+\FT@latiniv=\count98
+\FT@farsiiv=\count99
+\FT@latinv=\count100
+\FT@farsiv=\count101
+\FT@latinvi=\count102
+\FT@farsivi=\count103
+\FT@latinvii=\count104
+\FT@farsivii=\count105
+\FT@latinviii=\count106
+\FT@farsiviii=\count107
+\FT@latinix=\count108
+\FT@farsiix=\count109
+\FT@latinx=\count110
+\FT@farsix=\count111
+\FT@latinxi=\count112
+\FT@farsixi=\count113
+\FT@latinxii=\count114
+\FT@farsixii=\count115
+\FT@farsixiii=\count116
+\FT@temp=\count117
+\FT@temptwo=\count118
+\FT@tempthree=\count119
+\FT@yModHundred=\count120
+\FT@thirtytwo=\count121
+\FT@dn=\count122
+\FT@sn=\count123
+\FT@mminusone=\count124
+))
+(C:\Program Files\MiKTeX\tex\farsitex\base\ffancyhe.sty
+\headrulewidth=\dimen101
+\footrulewidth=\dimen102
+\plainheadrulewidth=\dimen103
+\plainfootrulewidth=\dimen104
+\headwidth=\dimen105
+)
+(C:\Program Files\MiKTeX\tex\farsitex\base\fancybox.sty
+Style option: `fancybox' v1.0 <93/02/10> (tvz)
+\@fancybox=\box25
+\@tempdimc=\dimen106
+\shadowsize=\dimen107
+\@Sbox=\box26
+\do@VerbBox=\toks11
+\the@fancyput=\toks12
+\this@fancyput=\toks13
+\EndVerbatimTokens=\toks14
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (adad.sty) (preample.tex
+\myleng=\skip41
+
+! Font \ten=sflt10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   \font 
+l.30 \font
+          \tenbit=sfitl10
+? 

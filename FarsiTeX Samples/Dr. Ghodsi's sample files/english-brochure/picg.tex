@@ -1,0 +1,25 @@
+\newbox\picgbox
+\newdimen\picgw
+\font\picga=picga at 57.816truept
+\font\picgb=picgb at 57.816truept
+\font\picgc=picgc at 57.816truept
+\font\picgd=picgd at 57.816truept
+\font\picge=picge at 57.816truept
+\font\picgf=picgf at 57.816truept
+\font\picgg=picgg at 57.816truept
+\font\picgh=picgh at 57.816truept
+\font\picgi=picgi at 57.816truept
+\setbox\picgbox=\vbox{\hbox{%
+\picga\char0\char1\picgb\char0\char1\picgc\char0}}
+\picgw=\wd\picgbox
+\setbox\picgbox=\hbox{\vbox{\hsize=\picgw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picga\char0\char1\picgb\char0\char1\picgc\char0}
+\hbox{\picgc\char1\picgd\char0\char1\picge\char0\char1}
+\hbox{\picgf\char0\char1\picgg\char0\char1\picgh\char0}
+\hbox{\picgh\char1\char2\picgi\char0\char1\char2}}}
+\ifx\parbox\undefined
+    \def\setpicg{\box\picgbox}
+\else
+    \def\setpicg{\parbox{\wd\picgbox}{\box\picgbox}}
+\fi

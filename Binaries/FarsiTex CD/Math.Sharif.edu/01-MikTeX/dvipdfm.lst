@@ -1,0 +1,33 @@
+Archive:  F:/work/miktex/manufacture/dvipdfm.zip
+ Length    Date    Time    Name
+ ------    ----    ----    ----
+  62656  01-20-01  22:16   doc/dvipdfm/dvipdfm.dvi
+ 147686  01-20-01  22:16   doc/dvipdfm/dvipdfm.pdf
+  47665  09-07-00  14:00   doc/dvipdfm/dvipdfm.tex
+     40  12-15-98  22:32   doc/dvipdfm/Makefile
+    156  12-14-99  10:45   doc/dvipdfm/mwicks.bb
+   5778  09-07-00  14:00   doc/dvipdfm/mwicks.jpeg
+   2379  12-15-98  22:32   doc/dvipdfm/sample.tex
+    119  12-15-98  22:32   doc/dvipdfm/something.bb
+   7215  12-15-98  22:32   doc/dvipdfm/something.eps
+    500  12-15-98  22:32   doc/dvipdfm/something.fig
+  12709  04-06-00  08:37   doc/dvipdfm/something.pdf
+    120  12-14-99  10:45   doc/dvipdfm/transistor.bb
+  10336  09-07-00  14:00   doc/dvipdfm/transistor.eps
+   3045  09-07-00  14:00   doc/dvipdfm/transistor.fig
+   3412  09-07-00  14:00   doc/dvipdfm/transistor.pdf
+   4614  10-19-00  20:52   tex/latex/00miktex/dvipdfm.def
+   2738  09-07-00  14:00   dvipdfm/base/cmr.map
+   2175  09-07-00  14:00   dvipdfm/base/lw35urw.map
+   2175  09-07-00  14:00   dvipdfm/base/lw35urwa.map
+   1957  09-07-00  14:00   dvipdfm/base/ot1.enc
+   1962  09-07-00  14:00   dvipdfm/base/ot1alt.enc
+   2012  09-07-00  14:00   dvipdfm/base/ot1r.enc
+   1250  09-07-00  14:00   dvipdfm/base/psbase14.map
+   4951  09-07-00  14:00   dvipdfm/base/t1fonts.map
+   1750  12-03-00  21:08   dvipdfm/config/config
+ 192512  01-20-01  22:16   miktex/bin/dvipdfm.exe
+  20480  01-20-01  22:16   miktex/bin/dvipdft.exe
+  40960  01-20-01  22:16   miktex/bin/ebb.exe
+ ------                    -------
+ 583352                    28 files

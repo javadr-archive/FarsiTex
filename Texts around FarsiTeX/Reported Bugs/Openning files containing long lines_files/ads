@@ -1,0 +1,50 @@
+{ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BFPHw7BiSR9PZFZLAiALfwoj1Den1oiXJ0dfhA8CNtwGAtRgQARgBIOHmmwIoAzgAUImRicz6_____wFg7YLvg9QPoAHBkKf-A6oBEGZpbmFuY2Vfc2ZfcGFnZXOyAQ9zb3VyY2Vmb3JnZS5uZXS6AQk3Mjh4OTBfanPIAQHaAShodHRwOi8vc291cmNlZm9yZ2UubmV0L3Byb2plY3RzL2ZhcnNpdGV4gAIBqAMB6APmA-gD2wXoAwXoA-AF9QMABAAA&amp;num=1&amp;adurl=http://www.2x.com/thinclientserver/free-thin-clients.htm&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.2x.com/free-thin-clients/"; 
+google_ad.line1 = "Get Free Thin Clients"; 
+google_ad.line2 = "and start saving time \x26amp; money"; 
+google_ad.line3 = "with thin client computing and 2X"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BEp4d7BiSR9PZFZLAiALfwoj1DZvs1xT3seebAsCNtwHQuxsQAhgCIOHmmwIoAzgAUKP57Kn______wFg7YLvg9QPqgEQZmluYW5jZV9zZl9wYWdlc7IBD3NvdXJjZWZvcmdlLm5ldLoBCTcyOHg5MF9qc8gBAdoBKGh0dHA6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvZmFyc2l0ZXiAAgGoAwHoA-YD6APbBegDBegD4AX1AwAEAAA&amp;num=2&amp;adurl=http://www.semanticdesigns.com/Products/FrontEnds/CppFrontEnd.html%3FGoogle%3DCppFrontEnd&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.semanticdesigns.com"; 
+google_ad.line1 = "Parse and Transform C++"; 
+google_ad.line2 = "Full C++ front end and analyzer"; 
+google_ad.line3 = "Automate mass change or translation"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=Bxr5H7BiSR9PZFZLAiALfwoj1Dcy8ow6ci9HKAcCNtwHAsS4QAxgDIOHmmwIoAzgAUPKiqQJg7YLvg9QPoAH04fT-A6oBEGZpbmFuY2Vfc2ZfcGFnZXOyAQ9zb3VyY2Vmb3JnZS5uZXS6AQk3Mjh4OTBfanPIAQHaAShodHRwOi8vc291cmNlZm9yZ2UubmV0L3Byb2plY3RzL2ZhcnNpdGV4gAIBqAMB6APmA-gD2wXoAwXoA-AF9QMABAAA&amp;num=3&amp;adurl=http://www.all-wall.com/acatalog/A000_Portable_Sprayers_9.php&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.all-wall.com/Texture_Sprayers"; 
+google_ad.line1 = "drywall texture sprayer"; 
+google_ad.line2 = "Portable Kodiak Graco MarkV EZ-TEX"; 
+google_ad.line3 = "Buy Online - Free Shipping"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://services.google.com/feedback/abg?url=http://sourceforge.net/projects/farsitex&amp;hl=en&amp;client=ca-ostg_js&amp;adU=www.2x.com/free-thin-clients/&amp;adT=Get+Free+Thin+Clients&amp;adU=www.semanticdesigns.com&amp;adT=Parse+and+Transform+C%2B%2B&amp;adU=www.all-wall.com/Texture_Sprayers&amp;adT=drywall+texture+sprayer&amp;done=1"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}

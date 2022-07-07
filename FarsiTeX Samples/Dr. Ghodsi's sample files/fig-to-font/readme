@@ -1,0 +1,9 @@
+bm2font -h600 -v600 -m<width in mm> -wn <remove back white> file.bmp
+
+bm2font.exe is available in this directory
+You may need to run tp7p5fix.com to fix problem running bm2font.
+
+Note: You need to copy to *.tfm and *.pk files created by
+bm2font into appropriate directories (Local TeXMF)
+and run 'mo' to refresh.
+

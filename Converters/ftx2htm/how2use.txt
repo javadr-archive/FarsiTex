@@ -1,0 +1,7 @@
+For converting FarsiTeX to HTML you must run ftx2htm batch file.
+
+Usage: ftx2htm <inputfile> [<outputfile>]
+Example: ftx2htm fsample.ftx
+         ftx2htm fsample.ftx fsample.htm
+
+If you run ftx2htm without any argument, you will see ftx2htm usage.

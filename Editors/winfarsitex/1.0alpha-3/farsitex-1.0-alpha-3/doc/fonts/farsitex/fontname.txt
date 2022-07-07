@@ -1,0 +1,36 @@
+Font names are made of 8 letters, in the following format:
+
+	FFEHSSSS
+
+ * FF is the family name. Examples are "sf" for old Scientific Farsi fonts
+   (as done by Mehran Sharghi), and "az" for Azin.
+ * E is the series. Current values are "m" for medium, "b" for bold, "o"
+   for outline (tookhaali), and "s" for shaded outline (saayedaar).
+ * H is the shape. Current values are "n" for normal, "s" for slanted (or
+   as wrongly called "iraanik"), "b" for backslanted ("itaalik"), "i" for
+   real iranic (which we don't have yet), and "m" for math.
+ * SSSS is the real font design size, as used by Iranian typographers,
+   times 100.
+
+As examples, the classic normal SF font used in 10pt styles will be called
+"sfmn1400", a shaded italic Azin font in normal size will be "azsb1300".
+
+This is the "EH" list for current styles (text in brackets is the name in 
+my previous purposal): 
+
+% from sf
+bn -> bold (siah) [rb]
+bb -> bold backslanted (siah khabide) [bb]
+bs -> bold slanted (siah iranic) [bl]
+mn -> nazok [rm]
+ms -> slanted (iranic) [sl]
+mb -> backslanted (khabide) [bs]
+on -> outline (tookhali) [ol]
+sn -> shaded outline (sayedar) [so]
+mm -> math [mt]
+
+% new in azin
+ob -> outline backslanted (tookhali sayedar) [ob]
+os -> outline slanted (tookhali) [os]
+sb -> shaded outline backslanted (khabide) [xb]
+ss -> shaded outline slanted (iranic) [xs]

@@ -1,0 +1,26 @@
+\newbox\picbbox
+\newdimen\picbw
+\font\picba=picba at 57.816truept
+\font\picbb=picbb at 57.816truept
+\font\picbc=picbc at 57.816truept
+\font\picbd=picbd at 57.816truept
+\font\picbe=picbe at 57.816truept
+\font\picbf=picbf at 57.816truept
+\font\picbg=picbg at 57.816truept
+\font\picbh=picbh at 57.816truept
+\font\picbi=picbi at 57.816truept
+\font\picbj=picbj at 57.816truept
+\setbox\picbbox=\vbox{\hbox{%
+\picba\char0\char1\picbb\char0\char1\picbc\char0}}
+\picbw=\wd\picbbox
+\setbox\picbbox=\hbox{\vbox{\hsize=\picbw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picba\char0\char1\picbb\char0\char1\picbc\char0}
+\hbox{\picbc\char1\picbd\char0\char1\picbe\char0\char1}
+\hbox{\picbf\char0\char1\picbg\char0\char1\picbh\char0}
+\hbox{\picbh\char1\picbi\char0\char1\char2\picbj\char0}}}
+\ifx\parbox\undefined
+    \def\setpicb{\box\picbbox}
+\else
+    \def\setpicb{\parbox{\wd\picbbox}{\box\picbbox}}
+\fi

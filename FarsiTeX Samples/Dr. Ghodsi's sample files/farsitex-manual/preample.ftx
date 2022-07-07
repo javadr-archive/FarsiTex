@@ -1,0 +1,34 @@
+>\addtolength{\textwidth}{2cm}
+>\addtolength{\hoffset}{-1.5cm}
+>\addtolength{\voffset}{5mm}
+>%\font\tenlogo=logo10
+>%\newcommand{\MF}{{\tenlogo METAFONT}}
+>\newcommand{\BibTeX}{{\sc Bib}\TeX}
+>\def\examp{\InE\begin{quote}}
+>\def\endexamp{\end{quote}\EnE}
+>%\parindent=0pt
+>\newcommand{\BeT}{{\large$\rangle\kern-1mm\rangle\kern-1mm\rangle$\kern1mm}}
+>\newcommand{\EnT}{{\kern-1mm\large$\langle\kern-1mm\langle\kern-1mm\langle$}}
+>\font\prev=rmc10
+>\def\XeT{X\kern-.125em\lower.5ex\hbox{E}\kern-.1667emT}
+>\def\TeXeT{\TeX-\hbox{\prev \XeT}}   % for TeX-XeT
+>\def\TeXXeT{\TeX-\hbox{\prev -\XeT}} % for TeX--XeT
+<
+<
+>\newlength{\myleng}
+>\newenvironment{Framedfigure}%
+>    {\begin{figure}[t]
+>      \begin{Sbox}%
+>      \setlength{\myleng}{\textwidth}%
+>      %\addtolength{\myleng}{8mm}
+>      %\addtolength{\myleng}{-2\fboxsep}%
+>      %\addtolength{\myleng}{-2\fboxrule}%
+>      \begin{minipage}{\myleng}}%
+>{\end{minipage}\end{Sbox}\shadowbox{\kern5mm\TheSbox\kern5mm}\kern-5mm\end{figure}}%
+>
+>\font\ten=sflt10
+>\font\tenbit=sfitl10
+<
+<ÒnewfontÞÐ\armÐ×ÞÐarm30Ð×
+<ÒnewfontÞÐ\titrÐ×ÞÐtitr35Ð×
+<ÒdefÒFTeXÞê‘¤Ð\kern-0.emÐ¨üÐ\kern-0.18em\raise0.06emÐÒhboxÞÒprotectÚ—í××

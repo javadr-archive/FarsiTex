@@ -1,0 +1,45 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+tarh:=0;
+input sf_basic;
+input sf_macro;
+input sf_char;
+input sf_digit;
+
+%*************************** Font Dimensions *****************************
+font_size origsize*pt#;
+fontdimen 1:0.000*fontsize*pt#;
+fontdimen 2: 3.0cheshmi#/pt#;
+fontdimen 3: cheshmi#/pt#;
+fontdimen 4: .5cheshmi#/pt#;
+fontdimen 5: .431*fontsize*pt#;
+fontdimen 6:1.000*fontsize*pt#;
+fontdimen 7: .111*fontsize*pt#;
+fontdimen 8: .350*fontsize*pt#;
+fontdimen 9: horiz_width/pt-eps;
+
+end.
+

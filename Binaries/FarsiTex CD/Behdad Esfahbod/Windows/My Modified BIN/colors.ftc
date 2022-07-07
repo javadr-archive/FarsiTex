@@ -1,0 +1,22 @@
+#You can define your color table, here.
+#Use '#' sign to write comments or comment out some colors.
+#Your comment lines should not exceed 1024 characters.
+
+#Empty lines are skipped, too.
+
+LIGHT_RED: 255, 128, 128
+RED: 255, 0, 0
+LIGHT_YELLOW: 255, 255, 128
+YELLOW: 255, 255, 0
+LIGHT_GREEN: 128, 255, 0
+GREEN: 0, 255, 0
+DARK_GREEN: 0, 128, 0
+VERY_LIGHT_BLUE: 128, 255, 255
+LIGHT_BLUE: 0, 128, 255
+BLUE: 0, 0, 255
+DARK_BLUE: 0, 0, 128
+LIGHT_GRAY: 192, 192, 192
+GRAY: 128, 128, 128
+BLACK: 0, 0, 0
+WHITE: 255, 255, 255
+DARK_PINK: 235, 115, 230

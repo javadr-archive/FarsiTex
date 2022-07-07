@@ -1,0 +1,26 @@
+\newbox\picfbox
+\newdimen\picfw
+\font\picfa=picfa at 57.816truept
+\font\picfb=picfb at 57.816truept
+\font\picfc=picfc at 57.816truept
+\font\picfd=picfd at 57.816truept
+\font\picfe=picfe at 57.816truept
+\font\picff=picff at 57.816truept
+\font\picfg=picfg at 57.816truept
+\font\picfh=picfh at 57.816truept
+\font\picfi=picfi at 57.816truept
+\font\picfj=picfj at 57.816truept
+\setbox\picfbox=\vbox{\hbox{%
+\picfa\char0\char1\picfb\char0\char1\picfc\char0}}
+\picfw=\wd\picfbox
+\setbox\picfbox=\hbox{\vbox{\hsize=\picfw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picfa\char0\char1\picfb\char0\char1\picfc\char0}
+\hbox{\picfc\char1\picfd\char0\char1\picfe\char0\char1}
+\hbox{\picff\char0\char1\picfg\char0\char1\picfh\char0}
+\hbox{\picfh\char1\picfi\char0\char1\char2\picfj\char0}}}
+\ifx\parbox\undefined
+    \def\setpicf{\box\picfbox}
+\else
+    \def\setpicf{\parbox{\wd\picfbox}{\box\picfbox}}
+\fi

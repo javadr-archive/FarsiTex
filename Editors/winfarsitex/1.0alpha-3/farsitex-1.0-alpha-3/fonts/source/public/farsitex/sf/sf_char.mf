@@ -1,0 +1,991 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+
+def f_sad =
+  x1:=0;
+  x2:=left_tooth_length;
+  x3:=x2+3.8u;
+  x4:=x3;
+  penpos2(horiz_width-tooth_width, tooth_ang);
+  y2.r = left_tooth_height;
+  sad(4);
+  tooth_right_conection(3,2,0);
+  left_tooth(1,0);
+enddef;
+
+def b_sad =
+  x1 := 27u;
+  x2 := x1;
+  dos(1,0);
+  sad(2);
+enddef;
+
+def f_za(suffix $) =
+  save sad_extra; boolean sad_extra; sad_extra := false;
+  sad($);
+  if za_extra=2 :   %**** Then compset Za ****
+    temp:=body_height;save body_height; body_height:=round(.9temp);
+  fi;
+  pickup tiny_pen;
+  penpos$2(alef_head_width-tiny, alef_head_ang);
+  penpos$3(1.05alef_width-tiny, 9);
+  penpos$4(.95alef_width-tiny, 30);
+  lft x$2.l=hround(1.9u+x$);             top y$2=body_height;
+  lft x$3.l=hround(lft x$2.l+1.8u);          y$3=.42body_height;
+  lft x$4.l=hround(lft x$2.l+1.8u);          y$4=.21body_height;
+  filldraw stroke z$2e{dir -84}...z$3e...{down}z$4e;
+  if za_extra=1 :  %**** Then  linotron Za ****
+    penpos$5(alef_head_width-tiny, alef_head_ang+10);
+    rt x$5.r=hround(x$2+4.u);       top y$5.r=vround(.95body_height);
+    filldraw stroke z$2e {dir 250} ...{dir -27} z$5e;
+  else:
+    if za_extra=2 :   %**** Then compset Za ****
+      penpos$5(alef_head_width-tiny, -alef_head_ang+6);
+      penpos$6(alef_head_width-tiny, -alef_head_ang+6);
+      x$5l = x$2r-.16u;    y$5l = y$2r+1.4v;
+      x$6l = x$2l;         y$6l = y$2l;
+      filldraw stroke z$5e ...{dir -84} z$6e;
+    fi;
+  fi;
+enddef;
+
+def b_za (suffix $) =
+  pickup tiny_pen;
+  x$1:=5.5u+x$-tiny/2;    y$1:=horiz_width/2;
+  penpos$(ending_width-tiny, 90);
+  penpos$1(horiz_width-tiny, 90);
+  y$r = 1.09horiz_width-tiny/2;
+  f_za($1);
+  filldraw stroke z$e .. z$1e;
+enddef;
+
+def kaf_top (suffix $)(expr sarkesh) =
+  pickup tiny_pen;
+  penpos$1(kaf_s_head_width-tiny, kaf_head_angle);
+  penpos$2(kaf_e_head_width-tiny, 125);
+  penpos$3(kaf_neck_width-tiny, 180-6);
+  penpos$4(kaf_t_width-tiny, 180+58);
+  penpos$5(kaf_m_width-tiny, 180+58);
+  rt x$1.r=hround(x$+6.8u);   top y$1.r=vround(y$+.77body_height);
+     x$2=x$-6.2u;                 y$2=y$+.54body_height;
+     x$3=x$-8.9u;                 y$3=y$+.43body_height;
+     x$4=x$-7.7u;                 y$4=y$+.31body_height;
+     x$5=x$-2.7u;                 y$5=y$+.18body_height;
+  dd:= 58-90;
+  filldraw stroke z$1e...{dir 207}z$2e{dir 207}..tension 1.05 ..{dir -96}z$3e;
+  filldraw stroke z$3e{dir -96}..{dir dd}z$4e...z$5e...{dir -90}z$e;
+  if sarkesh :
+    penpos$7(gaf_s_head_width-tiny, kaf_head_angle);
+    penpos$8(gaf_e_head_width-tiny, kaf_head_angle);
+    rt x$7.r=hround(x$+7.7u);  top y$7.r=vround(y$+.95body_height);
+       x$8=x$-7.1u;                y$8=y$+.7body_height;
+    filldraw stroke z$7e...{dir 207} z$8e;
+  fi;
+enddef;
+
+def mkaf_top (suffix $)(expr sarkesh) =
+  pickup tiny_pen;
+  penpos$1(kaf_s_head_width-tiny, kaf_head_angle);
+  penpos$2(kaf_e_head_width-tiny, 125);
+  penpos$3(kaf_neck_width-tiny, 180-6);
+  penpos$4(kaf_t_width-tiny, 180+58);
+  penpos$5(kaf_m_width-tiny, 180+58);
+  dd:= 58-90;
+  rt x$1.r=hround(x$+9.0u);   top y$1.r=vround(y$+.8body_height);
+     x$2=x$-6.2u;                 y$2=y$+.54body_height;
+     x$3=x$-8.9u;                 y$3=y$+.43body_height;
+     x$4=x$-7.7u;                 y$4=y$+.31body_height;
+     x$5=x$-2.7u;                 y$5=y$+.18body_height;
+  filldraw stroke z$1e...{dir 207}z$2e{dir 207}..tension 1.05 ..{dir -96}z$3e;
+  filldraw stroke z$3e{dir -96}..{dir dd}z$4e...z$5e...{dir -90}z$e;
+  x$7:=x$+12.5v;         y$7:=horiz_width/2;
+  x$8:=x$+6.1u;          y$8:=.2body_height;
+  x$9:=x$-7.7u;          y$9:=y$+.314body_height;
+  penpos$7(horiz_width-tiny, 90);
+  penpos$8(.85horiz_width-tiny, 60);
+  penpos$9(kaf_t_width-tiny, 58);
+  dd := 58+90;
+  filldraw stroke z$7e{left}..tension.9 ..z$8e..tension 1and1.2 ..{dir dd}z$9e;
+  if sarkesh :
+    penpos$10(gaf_s_head_width-tiny, kaf_head_angle);
+    penpos$11(gaf_e_head_width-tiny, kaf_head_angle);
+    rt x$10.r=hround(x$+9.5u);   top y$10.r=vround(y$+.97body_height);
+    x$11=x$-7.1u;                    y$11=y$+.7body_height;
+    filldraw stroke z$10e...{dir 207} z$11e;
+  fi;
+enddef;
+
+%**********************************************************************
+l_alef_len :=  8.1u;
+l_be_len   := 35.1u;
+m_be_len   := 11.8u;
+l_jim_len  := 27.5u;
+m_jim_len  := 29.0u;
+l_dal_len  := 19.6u;
+l_re_len   := 20.0u;
+l_sin_len  := 43.0u;
+m_sin_len  := 26.0u;
+l_ein_len  := 19.3u;
+m_ein_len  := 16.4u;
+m_fe_len   := 16.5u;
+l_kaf_len  := 44.0u;
+m_kaf_len  := 23.0u;
+l_vav_len  := 19.1u;
+l_ye_len   := 28.2u;
+
+%**********************************************************************
+%**********************************************************************
+
+%********************************* A L E F **********************************
+def oldalef(expr r_shift) =                   % Generate shape of single ALEF
+  pickup tiny_pen;
+  penpos1(alef_head_width-tiny, alef_head_ang);
+  penpos2(1.16alef_width-tiny, 0);
+  penpos3(alef_width-tiny, 0);
+  penpos4(ending_width-tiny, -5);
+  lft x1.l=hround(r_shift);                 top y1.r=vround(body_height);
+  lft x2.l=hround(r_shift+.1u);                 y2  =.72body_height;
+  lft x3.l=hround(lft x2.l+.73alef_diff);       y3  =.25body_height;
+  lft x4.l=hround(lft x2.l+.1u+alef_diff);  bot y4  =0;
+  filldraw stroke z1e...z2e.. tension 5 ..z3e.. tension 1.3..z4e;
+enddef;
+
+def alef(expr r_shift) =                   % Generate shape of single ALEF
+  pickup tiny_pen;
+  penpos1(alef_head_width-tiny, alef_head_ang);
+  penpos2(1.2alef_width-tiny, 0);
+  penpos3(alef_width-tiny, 0);
+  penpos4(ending_width-tiny, 0);
+  lft x1l=hround(r_shift);                    top y1.r = vround(body_height);
+  rt  x2r=hround(rt x1r+.5alef_diff);             y2   = .70body_height;
+  rt  x3r=hround(rt x1r+alef_diff);               y3   = .23body_height;
+  rt  x4r=hround(rt x1r-.55*u+.7alef_diff);   bot y4   = 0;
+  filldraw stroke z1e..tension 1.5..z2e..tension 5 and 3..z3e..tension 1.5..z4e;
+enddef;
+
+def l_alef_mac =
+  extra_bar := 0.1u;
+  pickup tiny_pen;
+  penpos0(horiz_width-tiny, 90);
+  penpos1(.96alef_head_width-tiny, alef_head_ang);
+  penpos2(1.1alef_width-tiny, .5);
+  penpos3(1.1alef_width-tiny, 1);
+  penpos4(.92horiz_width-tiny, 52);
+  penpos9(horiz_width-tiny, 90);
+  rt x1.r=hround(3.8u-alef_diff);       top y1.r= vround(body_height);
+  rt x2.r=hround(3.9u-alef_diff);           y2  = .7body_height;
+  rt x3.r=hround(4.3u-alef_diff);           y3  = .27body_height;
+%  rt x4.r=hround(rt x2.r+1.9u);             y4  = .9horiz_width;
+     x4  =rt x2.r+1.1u;                     y4  = .9horiz_width;
+  x0=l_alef_len-extra_bar;                  y0  = horiz_width/2;
+  x9=l_alef_len;                            y9  = y0;
+  filldraw stroke z1e...z2e.. tension 5 ..z3e{down}..z4e..{right}z0e;
+  filldraw stroke z0e--z9e;
+enddef;
+
+%********************************** B E ************************************
+def b_be_mac =
+  x1:=28.7u;           y1:=13.3v;
+  x2:=27.5u;           y2:=5.4v;
+  x3:=6.2u;            y3:=4.0v;
+  x4:=3.1u;            y4:=14.0v;
+  toothstart_be_noon(1,2,horizmiddir_be_group, horizmidpenang_be_group);
+  horiz_mid_arc(2,3,horizmiddir_be_group,horizmidpenang_be_group);
+  endingup_arc(3,4,endingupdir_be_group);
+enddef;
+
+def l_be_mac =
+  path p;
+  pair aa,bb;
+  right_exces := 0;
+  x1:=l_be_len-right_exces;
+  x2:=30.7u;
+  x4:=6.2u;             y4:=3.0v;
+  x5:=3.1u;             y5:=13.0v;
+  penpos2(horiz_width-tooth_width, tooth_ang);
+  y2.r = 1.05left_tooth_height;
+  ang:=startdir_endingup-90;
+  penpos4(arc_width-tooth_width,ang);
+  tooth_right_conection(1,2,right_exces);
+  pickup tooth_pen;
+  temp_startdir := tooth_ang+151;
+  temp_enddir   := tooth_ang+137;
+  p := z2l{dir temp_startdir}..tension 1 and 1.3..{dir startdir_endingup} z4l;
+  aa := point .11 of p;
+  p := z2r{dir temp_startdir}..tension 1 and 1.3..{dir startdir_endingup} z4r;
+  bb := point .11 of p;
+  ww:= (xpart(aa)-xpart(bb))++(ypart(aa)-ypart(bb));
+  x3:= (xpart(aa)+xpart(bb))/2;
+  y3:= (ypart(aa)+ypart(bb))/2;
+  ang := angle(xpart(bb)-xpart(aa), ypart(bb)-ypart(aa));
+  penpos3(ww,ang);
+  filldraw stroke z2e{dir temp_startdir}...{dir temp_enddir}z3e{dir temp_enddir}
+		  ..tension 1 and 1.3.. {dir startdir_endingup} z4e;
+  endingup_arc(4,5,endingupdir_be_group);
+enddef;
+
+def m_be_mac =
+  right_exces := 0.1u;
+  left_exces  := 0.1u;
+  x1 := m_be_len - right_exces;
+  x2 := left_tooth_length + left_exces;
+  penpos2(horiz_width-tooth_width, tooth_ang);
+  y2.r = left_tooth_height;
+  tooth_right_conection(1,2,right_exces);
+  x3 := left_exces;
+  left_tooth(3,left_exces);
+enddef;
+
+def f_be_mac =
+  pickup tiny_pen;
+  ang := fbe_neck_penang+180;
+  swp := startpenwidth_tooth_fbe;
+  tempang := startpenang_tooth_be;
+  defpos_lt1(6.3u, 10v, swp, tempang);
+  penpos2(fbe_neck_width-tiny, ang);
+  rt x2r = hround(lft x1l+swp/2*cosd tempang+1.5u+fbe_neck_width/2*cosd ang);
+      y2 = 5v;
+  neck_dir := ang-90;
+  filldraw stroke z1e {dir startdir_tooth_be}...{dir neck_dir} z2e;
+  x3:=3.0u;
+  x4:=x2;           y4:=y2;
+  penpos4(fbe_neck_width-tiny, fbe_neck_penang);
+  left_conection(3,4,3u,neck_dir);
+enddef;
+
+
+%********************************** J I M ***********************************
+def b_jim_mac =
+  pickup tiny_pen;
+  sb := .98horiz_width;
+  top_ang := 77;
+  defpos_lb1(2.6u,12v*bigjim_startheight_ratio,ending_width,startdir_jimhat+75);
+  defpos_vt2(9.3u,12v-0.49horiz_width,sb,top_ang);
+  penpos3(horiz_width-tiny, endang_jimhat);
+  penpos4(sb-tiny, endang_jimhat);
+  rt  x4r=hround(22.6u+sb/2*cosd endang_jimhat);
+  top y4r=vround(12v*bigjim_endheight_ratio-0.49horiz_width+sb/2*sind endang_jimhat);
+  x3 = 15.8u;          y3 = y4+.06(y2-y4);
+  x6 = 5.7u;           y6 = -16.1v;
+  defpos_hl5(4.3u,0,bigjim_neck_width, bigjim_neck_penang);
+  sang:= 50;
+  eang:= 93;
+  penpos6(jim_tail_startwidth-tiny, sang+180);
+  defpos_vb7(19.8u,-18.65v,jim_tail_endwidth, eang+180);
+  penpos8(jim_xtail_width-tiny, eang+180);
+  x8 = x7+jim_xtail_length;       top y8.l = vround (top y7l+v);
+  filldraw stroke z1e...{dir (top_ang-90)} z2e {dir (top_ang-90)}...
+		  z3e...z4e;                                         % hat
+  filldraw stroke z4e{left}... z5e...z6e...{dir (eang-90)} z7e;      % tail
+  filldraw stroke z7e{dir (eang-90)}...{dir 23} z8e;                 % xtail
+enddef;
+
+def l_jim_mac =
+  extra_bar := .1u;
+  pickup tiny_pen;
+  top_ang := 77;
+  defpos_lb1(2.6u,v+12v*bigjim_startheight_ratio,ending_width,startdir_jimhat+75);
+  defpos_vt2(9.3u, 13v-.49horiz_width,.98horiz_width, top_ang);
+  penpos3(horiz_width-tiny, endang_jimhat);
+  sb:=.98horiz_width;
+  penpos4(sb-tiny, endang_jimhat);
+  rt  x4r=hround(22.6u+sb/2*cosd endang_jimhat);
+  top y4r=vround(v+12v*bigjim_endheight_ratio-0.49horiz_width+sb/2*sind endang_jimhat);
+  x3 = 15.8u;          y3 = y4+.060(y2-y4);
+  x6 = 5.0u;           y6 = -16.25v;
+  defpos_hl5(4.3u,v,bigjim_neck_width, bigjim_neck_penang);
+  sang:= 50;
+  eang:= 92;
+  penpos6(jim_tail_startwidth-tiny, sang+180);
+  defpos_vb7(19.7u,-19.32v,jim_tail_endwidth, eang+180);
+  penpos8(jim_xtail_width-tiny, 180+93);
+  x8 = x7+jim_xtail_length;     top y8.l = vround(top y7l+v);
+  filldraw stroke z1e...{dir (top_ang-90)} z2e {dir (top_ang-90)}...
+		  z3e...z4e;                                         % hat
+  filldraw stroke z4e{left}... z5e...z6e...{dir (eang-90)} z7e;      % tail
+  filldraw stroke z7e{dir (eang-90)}...{dir 23} z8e;                 % xtail
+  x9:=l_jim_len-extra_bar-8.4u;  y9:=y4-2v;
+  penpos9(.9jim_conection_width-tiny, 0);
+  jim_conection(9, extra_bar);
+enddef;
+
+def m_jim_mac =
+  r_extra_bar := .1u;
+  pickup tiny_pen;
+  top_ang := 77;
+  ang := endang_jimhat+5;
+  defpos_lb1(3.8u,13.6v*jim_startheight_ratio,ending_width,startdir_jimhat+90);
+  defpos_vt2(9.1u,13.9v-0.5horiz_width,.95horiz_width, top_ang);
+  penpos3(horiz_width-tiny, ang);
+  penpos4(horiz_width-tiny, endang_jimhat);
+  rt  x4r=hround(24u+horiz_width/2*cosd endang_jimhat);
+  top y4r=vround(13.6v*jim_endheight_ratio+1.4v+horiz_width/2*sind endang_jimhat);
+  penpos5(jim_neck_width-tiny, jim_neck_penang);
+  x3 = 15.5u;          y3 = y4+.270(y2-y4);
+  x5 = 11.8u;          y5 =.66y4;
+  x6 = 2.3u;
+  filldraw stroke z1e...{dir (top_ang-90)} z2e {dir (top_ang-90)}...
+		  {dir (ang-90)} z3e {dir (ang-90)}...z4e;
+  filldraw stroke z4e{left}...{dir (jim_neck_penang+90)} z5e;
+  ang := jim_neck_penang+90;
+  left_conection(6,5,x6,ang);
+  x7:= m_jim_len-r_extra_bar-8.4u;   y7:=y4-2.54v;
+  penpos7(jim_conection_width-tiny, 0);
+  jim_conection(7, r_extra_bar);
+enddef;
+
+def f_jim_mac =
+  extra_bar := u;
+  pickup tiny_pen;
+  top_ang := 77;
+  ang := endang_jimhat+5;
+  defpos_lb1(u+extra_bar,13.6v*jim_startheight_ratio,ending_width,startdir_jimhat+90);
+  defpos_vt2(6.3u+extra_bar,13.9v-0.5horiz_width,.95horiz_width, top_ang);
+  penpos3(horiz_width-tiny, ang);
+%  defpos_br4(21.9u+extra_bar,13.6v*jim_endheight_ratio,horiz_width, endang_jimhat);
+  penpos4(horiz_width-tiny, endang_jimhat);
+  rt  x4r=hround(21.9u+extra_bar+horiz_width/2*cosd endang_jimhat);
+  top y4r=vround(13.6v*jim_endheight_ratio+horiz_width/2*sind endang_jimhat);
+  penpos5(jim_neck_width-tiny, jim_neck_penang);
+  x3 = 13.7u+extra_bar;   y3 = y4+.265(y2-y4);
+  x5 = 10.7u+extra_bar;   y5 = 0.70y4;
+  x6 = extra_bar;
+  filldraw stroke z1e...{dir (top_ang-90)} z2e {dir (top_ang-90)}...
+		  {dir (ang-90)} z3e {dir (ang-90)}...z4e;
+  filldraw stroke z4e{left}...{dir (jim_neck_penang+90)} z5e;
+  ang := jim_neck_penang+90;
+  left_conection(6,5,x6,ang);
+enddef;
+
+%********************************** D A L ***********************************
+def b_dal_mac =
+  pickup tiny_pen;
+  if dal_extra :
+    temp := 2.3u;
+  else :  temp := 0;
+  fi;  
+  defpos_lt1(temp+3.5u,15.6v,startpenwidth_tooth_be,startpenang_tooth_dal);
+  defpos_hr2(temp+10.6u,6.4v,dal_neck_width, 0);
+  defpos_vb3(temp,2.45,dal_end_width, 180+87);
+  dd := 90+87;
+  filldraw stroke z1e{dir -30} ... {dir -90}z2e{dir -92}...{dir dd}z3e;
+  if dal_extra :
+    penpos4(ending_width-tiny, 180);
+    lft x4.l=hround(temp-u-tiny/2);    top y4=vround(dal_end_height);
+    filldraw stroke z3e{dir dd}..{dir 80}z4e;
+    x5:=x3l+1.7u;       y5:=y3l-.05v;
+    draw z5{dir dd}..{dir 137}z4r;
+  fi;
+enddef;
+
+def l_dal_mac =
+  pickup tiny_pen;
+  penpos1(startpenwidth_dal-tiny, startpenang_ldal);
+  penpos2(1.25startpenwidth_dal-tiny, startpenang_ldal-5);
+  penpos3(horiz_width-tiny, 90);
+  penpos4(dal_neck_width-tiny, 135);
+%  defpos_vb5(3.5u,2.45v,1.05dal_end_width, 87);
+  penpos5(1.05dal_end_width-tiny, 87);
+  penpos6(ending_width-tiny, -2);
+  x1 = 12.2u;            y1 = 19.3v;
+  x2 = 15.4u;            y2 = 5.2v;
+  x3 = l_dal_len;        y3 = horiz_width/2;
+  x4 = 14.65u;           y4 = 7.5v;
+  x5 = 3.5u;             y5 = 2.45;
+  x6 = 1.4u;             y6 = 5.7v;
+  dd := 90+87;
+  filldraw stroke z1e...{dir -77}z2e{dir -72}...{right} z3e;
+  filldraw stroke z4e{dir 240}...{dir dd}z5e;
+  filldraw stroke z5e{dir dd}..tension .82..{dir 70}z6e;
+  x7:=x5r+.4u;          y7:=y5r-.03v;
+  draw z7{dir 171} .. tension .94 .. {dir 118}z6l;
+enddef;
+
+%*********************************** R E ************************************
+def b_re_mac(expr r_shift) =
+  pickup tiny_pen;
+  ang1:=61;
+  ang2:=94;
+  swp := startpenwidth_tooth_be;
+  ang := startpenang_tooth_re;
+  defpos_lt1(r_shift+14.2u,6.2v,swp,ang);
+  penpos2(re_neck_width-tiny, 0);
+  defpos_vb3(lft x4r+re_end_length,-9.8v,re_tail_width, -ang1);
+  defpos_lt4(r_shift,-9.4v,ending_width, -ang2);
+  rt x2.r = hround(lft x1.l+swp/2*cosd ang+2.8u+re_neck_width/2); y2 = 0;
+  dd := -ang1-90-12;
+  inv_dd:=180+dd;
+  filldraw stroke z1e{dir startdir_re}...{dir -95}z2e{dir -99}...{dir dd}z3e;
+  if re_tail :
+    tempdir := re_end_dir +1;
+    filldraw z3r{dir dd}...{dir tempdir}z4r&
+	     z4r--z4l&z4l...{dir inv_dd}z3l--cycle;
+  fi;
+enddef;
+
+def l_re_mac(expr r_shift) =
+  pickup tiny_pen;
+  ang1:=61;
+  ang2:=94;
+  swp := startpenwidth_tooth_re;
+  ang := startpenang_tooth_re;
+  defpos_lt1(r_shift+14.5u,5.4v,swp,ang);
+  penpos2(re_neck_width-tiny, 0);
+  defpos_vb3(lft x4r+re_end_length,-9.8v,re_tail_width, -ang1);
+  defpos_lt4(r_shift,-9.4v,ending_width, -ang2);
+  rt x2.r = hround(lft x1.l+swp/2*cosd ang+2.5u+re_neck_width/2); y2 = 0;
+  dd := -ang1-90-12;
+  inv_dd:=180+dd;
+  filldraw stroke z1e{dir startdir_re}...{dir -95}z2e{dir -99}...{dir dd}z3e;
+  if re_tail :
+    tempdir := re_end_dir -1;
+    filldraw z3r{dir dd}...{dir tempdir}z4r&
+	     z4r--z4l&z4l...{dir inv_dd}z3l--cycle;
+  fi;
+  x5 = hround(l_re_len+r_shift);
+  right_conection(5,1,0,180+startdir_re);
+enddef;
+
+%********************************** S I N ***********************************
+def b_sin_mac =
+  temp := left_tooth_length;
+  save left_tooth_length;
+  left_tooth_length := .75*temp;
+  temp := left_tooth_height;
+  left_tooth_height := 1.125*temp;
+  x5 := 26.527u;
+  x4 := x5 + left_tooth_length;
+  fsin_first_tooth(4);
+  left_tooth(5,0);
+  dos(5,0);
+  left_tooth_height := temp;
+enddef;
+
+def l_sin_mac =
+  temp := left_tooth_length;
+  save left_tooth_length;
+  left_tooth_length := .7385*temp;
+  right_exces := 0;
+  x1 := l_sin_len - right_exces;
+  x2 := .891l_sin_len;              %Head of the first tooth
+  x4 := .728l_sin_len;              %Head of the second tooth
+  x3 := x4 + .0452l_sin_len;
+  x5 := x4 - left_tooth_length;
+  penpos2(horiz_width-tooth_width, tooth_ang);
+  penpos4(horiz_width-tooth_width, tooth_ang);
+  top y2.r = vround(left_tooth_height);
+  top y4.r = vround(left_tooth_height);
+  tooth_right_conection(1,2,right_exces);
+  smoothing:=2;
+  mid_tooth(3,2);
+  mid_tooth_conection(3,4);
+  left_tooth(5,0);
+  smoothing:=0;
+  dos(5,0);
+enddef;
+
+def m_sin_mac =
+  smoothing:=2;
+  left_exces := 0;
+  right_exces := 0;
+  x1 := m_sin_len-right_exces;
+  x2 := .82m_sin_len;                    %Head of first tooth
+  x4 := .55m_sin_len;                    %Head of second tooth
+  x6 := left_tooth_length + left_exces;  %Head of third tooth
+  x3 := x4 + .0748m_sin_len;
+  x5 := x6 + .0748m_sin_len;
+  x7 := left_exces;
+  penpos2(horiz_width-tooth_width, tooth_ang);
+  penpos4(horiz_width-tooth_width, tooth_ang);
+  penpos6(horiz_width-tooth_width, tooth_ang);
+  top y2.r = top y4.r = top y6.r = vround(left_tooth_height);
+  tooth_right_conection(1,2,right_exces);
+  mid_tooth (3,2);
+  mid_tooth_conection (3,4);
+  mid_tooth (5,4);
+  mid_tooth_conection (5,6)
+  left_tooth(7,left_exces);
+  smoothing:=0;
+enddef;
+
+def f_sin_mac =
+  smoothing:=2;
+  left_exces := 0;
+  x7 := left_exces;
+  x6 := x7 + left_tooth_length;
+  x5 := x6 + 1.9448u;
+  x4 := x6 + 7.8u;
+  penpos4(horiz_width-tooth_width,tooth_ang);
+  penpos6(horiz_width-tooth_width,tooth_ang);
+  top y4.r = vround(1.125*left_tooth_height);
+  top y6.r = vround(left_tooth_height);
+  left_tooth(7,left_exces);
+  mid_tooth_conection(5,6);
+  mid_tooth (5,4);
+  smoothing:=0;
+  fsin_first_tooth(4);
+enddef;
+
+%********************************** S A D ***********************************
+def b_sad_mac =
+  conection := false;
+  b_sad;
+enddef;
+
+def l_sad_mac =
+  r_extra_bar := .1u;
+  conection := true;
+  b_sad;
+enddef;
+
+def m_sad_mac =
+  r_extra_bar := .1u;
+  conection := true;
+  f_sad;
+enddef;
+
+def f_sad_mac =
+  conection := false;
+  f_sad;
+enddef;
+
+%*********************************** Z A ************************************
+def b_za_mac =
+  x1 := tiny/2;
+  conection := false;
+  b_za(1);
+enddef;
+
+def l_za_mac =
+  r_extra_bar := .1u;
+  x1 := tiny/2;
+  conection := true;
+  b_za(1);
+enddef;
+
+def m_za_mac =
+  x1 := 0;
+  r_extra_bar := .1u;
+  conection := true;
+  f_za(1);
+enddef;
+
+def f_za_mac =
+  x1 := 0;
+  conection := false;
+  f_za(1);
+enddef;
+
+%********************************** E I N ***********************************
+def b_ein_mac =
+  x1:=13.8u;                y1:=17.15v;
+  x2:=7.0u;                 y2:=17.65v;
+  x3:=3.2u;                 y3:=11.65v;
+  x4:=9.8u;                 y4:=5.65v;
+  x5:=19.8u;                y5:=11.2v;
+  x6:=2.4u;                 y6:=-3.4v;
+  x7:=7.6u;                 y7:=-18.1v;
+  pickup tiny_pen;
+  penpos1(ending_width-tiny, 55);
+  penpos2(.95horiz_width-tiny,144);
+  penpos3(.88horiz_width-tiny,248);
+  penpos4(1.37*horiz_width-tiny, -127);
+  penpos5(1.25ein_r_width-tiny, -107);
+  penpos6(ein_neck_width-tiny, 180+148);
+  penpos7(1.1horiz_width-tiny, 50);
+  defpos_vb8(18.9u,-19.95v,.92horiz_width, 73);
+  penpos9(ending_width-tiny, 98);
+      x9   = x8+ein_xtail_length;  
+  top y9.r = vround(top y8r+.5v);
+  filldraw stroke z1e..tension 1.3..z2e..tension 1.4
+		  ..{dir -82} z3e..tension 1.4..z4e;
+  filldraw stroke z5e..tension1.4..z4e...z6e..z7e..z8e{right};   % tail
+  filldraw z8l{right}...z9l&z9l--z9r&
+	   z9r...{left}z8r&z8r--cycle;                    % xtail
+enddef;
+
+def l_ein_mac =
+  x1:=5.5u;                 y1:=8.6v;
+  x2:=15.5u;                y2:=9.8v;
+  x3:=9.8u;                 y3:=5.45v;
+  x4:=2.5u;                 y4:=-4v;
+  x5:=6.8u;                 y5:=-18.15v;
+  x9:=13.7u;                y9:=4.5v;
+  x10:=18.4u;               y10:=horiz_width/2;
+  x11:=l_ein_len;           y11:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(ending_width-tiny, 150);
+  penpos2(arc_width-tiny,3);
+  penpos3(mein_l_neckwidth-tiny, -54);
+  penpos4(mein_neck_width-tiny, 180+148);
+  penpos5(1.04horiz_width-tiny, 50);
+  defpos_vb6(11.3u,-19.4v,.92horiz_width, 85-8);
+  penpos7(ending_width-tiny, 98);
+      x7   = x6+ein_xtail_length;  
+  top y7.r = vround(top y6r+.5v);
+  penpos8(ending_width-tiny,38);
+  penpos9(mein_r_neckwidth-tiny,42);
+  penpos10(horiz_width-tiny,90);
+  penpos11(horiz_width-tiny,90);
+  x8l=x1l;                  y8l=y1l;
+  dd:=-92;
+  filldraw stroke z1e{dir 76}..tension 1.48..{dir dd}z2e;
+  filldraw stroke z2e{dir dd}..z3e{dir 217};
+  filldraw stroke z8e{dir -10}..tension.8..z9e..tension.9..{right}z10e--z11e;
+  fill z1r{dir 70}..tension 2.. z2l{dir -90}..{dir 180}cycle;
+  filldraw stroke z3e{dir 217}...z4e..z5e..z6e{right};     % tail
+  filldraw z6l{right}...z7l&z7l--z7r&
+	   z7r...{left}z6r&z6r--cycle;              % xtail
+
+
+enddef;
+
+def m_ein_mac =
+  x1:=2.6u;                 y1:=8.6v;
+  x2:=12.6u;                y2:=9.8v;
+  x3:=7.0u;                 y3:=4.65v;
+  x4:=0;                    y4:=horiz_width/2;
+  x6:=10.6u;                y6:=4.5v;
+  x7:=15.4u;                y7:=horiz_width/2;
+  x8:=m_ein_len;            y8:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(ending_width-tiny, 150);
+  penpos2(arc_width-tiny,3);
+  penpos3(mein_l_neckwidth-tiny, -54);
+  penpos4(horiz_width-tiny,-90);
+  penpos5(ending_width-tiny,38);
+  penpos6(mein_r_neckwidth-tiny,40);
+  penpos7(horiz_width-tiny,90);
+  penpos8(horiz_width-tiny,90);
+  x5l=x1l;                  y5l=y1l;
+  dd:=-92;
+  filldraw stroke z1e{dir 76}..tension 1.48..{dir dd}z2e;
+  filldraw stroke z2e{dir dd}..z3e{dir 208};
+  filldraw stroke z3e{dir 208}..{left} z4e;
+  filldraw stroke z5e{dir -10}..tension .8 ..z6e...z7e{right}--z8e;
+  fill z1r{dir 70}..tension 2.. z2l{dir -90}..{dir 180}cycle;
+enddef;
+
+def f_ein_mac =
+  x1:=16.3u;                y1:=14.2v;
+  x2:=10.6u;                y2:=15.5v;
+  x3:=4.5u;                 y3:=9.65v;
+  x4:=9.8u;                 y4:=3.8v;
+  x5:=19.9u;                y5:=6.6v;
+  x6:=0;                    y6:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(ending_width-tiny, 50);
+  penpos2(horiz_width-tiny,146);
+  penpos3(horiz_width-tiny,235);
+  penpos4(1.4*horiz_width-tiny, -140);
+  penpos5(ein_r_width-tiny, -108);
+  penpos6(horiz_width-tiny, -90);
+  filldraw stroke z1e..tension 1.25 ..z2e..tension 1.4 ..
+		  {dir -82}z3e..tension 1.4..z4e;
+  filldraw stroke z5e..tension 1.25..z4e..tension 1.3 ..{left}z6e;
+enddef;
+
+%*********************************** F E ************************************
+def m_fe_mac =
+  alfa:=67;
+  beta:=72;
+  x1:=m_fe_len;         y1:=horiz_width/2;
+  x2:=8.8u;             y2:=horiz_width*(1+2*sind((90-alfa)/2)**2)/2+ .8v;
+  x3:=5.8u;             y3:=9.0v;
+  x5:=12.7u;            y5:=8.5v;
+  x6:=7.2u;             y6:=horiz_width*(1+2*sind((90-beta)/2)**2)/2+.8v;
+  x7:=0;                y7:=horiz_width/2;
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, -90);
+  penpos2(horiz_width-tiny, 180+alfa);
+  penpos3(ghaf_lneckwidth-tiny, 168);
+  defpos_vt4(10.2u,13.8v,ghaf_tneckwidth, 78);
+  penpos5(ghaf_rneckwidth-tiny, -8);
+  penpos6(horiz_width-tiny, 180+beta);
+  penpos7(horiz_width-tiny, -90);
+  ld:=168-90;
+  td:=78-90+5;
+  rd:=-8-90;
+  a:=86+alfa;
+  b:=270-beta;
+  filldraw stroke z1e{left} ..tension .9 .. {dir a}z2e;
+  filldraw stroke z2e{dir a} ..tension .9 .. {dir ld}z3e..tension 1.6 ..
+	    {dir td} z4e ..tension 1.35.. {dir rd} z5e {dir rd} .. {dir b} z6e;
+  filldraw stroke z6e{dir b}...{left}z7e;
+enddef;
+
+def f_fe_mac =
+  x1:=9.6u;             y1:=horiz_width+5.12v;
+%  x2:=3.8u;             y2:=horiz_width+6.4v *(vav_height/11v);
+  x4:=9.95u;            y4:=horiz_width+6.1v *(vav_height/11v);
+  pickup tiny_pen;
+  penpos1(.82horiz_width-tiny, -70);
+%  penpos2(vav_lneckwidth-tiny, 168);
+  defpos_hl2(3.8u,horiz_width+6.4v *(vav_height/11v),vav_lneckwidth, 168);
+  defpos_vt3(7.0u,horiz_width+10.2v*(vav_height/11v),vav_tneckwidth, 75);
+  penpos4(vav_rneckwidth-tiny, 15);
+  ld:=168-90;
+  td:=75-90;
+  rd:=15-90;
+  dd:=-135;
+  filldraw stroke z1e{dir dd} .. tension .82 .. {dir ld}z2e.. tension 1.3..
+		  {dir td}z3e ..tension 1.12 .. {dir rd}z4e;
+  draw z1l{dir dd} ..tension .8 .. {dir 98}z2l;
+  draw z2l ..tension 1.4..{dir 6}z3l{right}..tension 1.45 .. z4l;
+  alfa := 67;
+  x5:=8.7u;             y5:=horiz_width*(1+2*sind((90-alfa)/2)**2)/2+.2v;
+  x6:=0u;               y6:=horiz_width/2;
+  penpos5(horiz_width-tiny, alfa+180);
+  penpos6(horiz_width-tiny, -90);
+  filldraw stroke z4e{dir rd}..{dir 202}z5e...{left}z6e;
+enddef;
+
+%********************************** K A F ***********************************
+def b_kaf_mac(expr sarkesh) =
+  x2:=29.0u;                 y2:=3.6v;
+  x3:=6.2u;                  y3:=2.1v;
+  x4:=3.1u;                  y4:=12.1v;
+  pickup tiny_pen;
+  defpos_hr1(32.1u,7v,1.08kaf_neck_width, 180);
+  penpos2(arc_width-tiny, horizmidpenang_be_group);
+  kaf_top (1, sarkesh);
+  filldraw stroke z1e {dir -90}.. tension .95 ..{dir horizmiddir_be_group} z2e;
+  horiz_mid_arc(2,3,horizmiddir_be_group,horizmidpenang_be_group);
+  endingup_arc(3,4,endingupdir_be_group);
+enddef;
+
+def l_kaf_mac(expr sarkesh) =
+  x2:=29.0u;                 y2:=3.6v;
+  x3:=6.2u;                  y3:=2.1v;
+  x4:=3.1u;                  y4:=12.1v;
+  pickup tiny_pen;
+  defpos_hr1(32.1u,7v,1.08kaf_neck_width, 180);
+  penpos2(arc_width-tiny, horizmidpenang_be_group);
+  mkaf_top (1, sarkesh);
+  filldraw stroke z1e {dir -90}.. tension .95 ..{dir horizmiddir_be_group} z2e;
+  horiz_mid_arc(2,3,horizmiddir_be_group,horizmidpenang_be_group);
+  endingup_arc(3,4,endingupdir_be_group);
+enddef;
+
+def m_kaf_mac(expr sarkesh) =
+  alfa:=72;
+  x3:=2.0u;             y3:=horiz_width/2;
+  x2:=x3+4.5u;          y2:=horiz_width*(1+2*sind((90-alfa)/2)**2)/2+.1v;
+  x4:=0;                y4:=horiz_width/2;
+  pickup tiny_pen;
+  defpos_hr1(x3+9.1u,7v,1.08kaf_neck_width, 180);
+  penpos2(horiz_width-tiny, alfa);
+  penpos3(horiz_width-tiny, 90);
+  penpos4(horiz_width-tiny, 90);
+  mkaf_top (1, sarkesh);
+  a := 262-alfa;
+  filldraw stroke z1e{dir -90}..tension .9 ..{dir a} z2e;
+  filldraw stroke z2e{dir a}..{left}z3e--z4e;
+enddef;
+
+def f_kaf_mac(expr sarkesh) =
+  alfa:=72;
+  x3 = 2.0u;             y3 = horiz_width/2;
+  x2 = x3+4.5u;          y2 = horiz_width*(1+2*sind((90-alfa)/2)**2)/2+.1v;
+  x4 = 0;                y4 = horiz_width/2;
+  pickup tiny_pen;
+  defpos_hr1(x3+9.1u,7.0v,1.08kaf_neck_width, 180);
+  penpos2(horiz_width-tiny, alfa);
+  penpos3(horiz_width-tiny, 90);
+  penpos4(horiz_width-tiny, 90);
+  kaf_top (1, sarkesh);
+  a := 262-alfa;
+  filldraw stroke z1e{dir -90}..tension .9 ..{dir a} z2e;
+  filldraw stroke z2e{dir a}..{left}z3e--z4e;
+enddef;
+
+%********************************** V A V ***********************************
+def b_vav_mac =
+  x1:=15.9u-2u;            y1:=3.7v;
+  x2:=10.6u-2u;            y2:=5.0v *(vav_height/11v);
+  x3:=13.6u-2u;            y3:=8.8v *(vav_height/11v);
+  x4:=16.4u-2u;            y4:=4.75v *(vav_height/11v);
+  pickup tiny_pen;
+  penpos1(.82horiz_width-tiny, -70);
+  penpos2(vav_lneckwidth-tiny, 168);
+  penpos3(vav_tneckwidth-tiny, 75);
+  penpos4(vav_rneckwidth-tiny, 8);
+  ld:=168-90;
+  td:=75-90;
+  rd:=8-90;
+  dd:=-135;
+  filldraw stroke z1e{dir dd} .. tension .8 .. {dir ld}z2e.. tension 1.3..
+		  {dir td}z3e ..tension 1.12 .. {dir rd}z4e;
+  draw z1l{dir dd} ..tension .85 .. {dir 103}z2l;
+  draw z2l ..tension 1.4..{dir 12}z3l{right}..tension 1.45 .. z4l;
+  %******** Re part *******************
+  ang1:=60;
+  ang2:=97;
+  defpos_hr5(14.8u,0.2v,re_neck_width, 0);
+  defpos_vb6(x7+re_end_length,-9.3v,re_tail_width, -ang1);
+  defpos_lt7(-2u,-8.4v,ending_width, -ang2);
+  dd := -ang1-90-20;
+  inv_dd:=180+dd;
+  filldraw stroke z4e{dir rd}...z5e{dir -104}...{dir dd}z6e;
+  if re_tail :
+    filldraw z6r{dir dd}...{dir re_end_dir}z7r&z7r--z7l&
+	     z7l...{dir inv_dd}z6l--cycle;
+  fi;
+enddef;
+
+def l_vav_mac =
+  x1:=l_vav_len-2u;        y1:=horiz_width/2;
+  x2:=14.5u-2u;            y2:=horiz_width/2;
+  x3:=10.7u-2u;            y3:=6.1v *(lvav_height/10.4v);
+  x4:=14.0u-2u;            y4:=8.8v *(lvav_height/10.4v);
+  x5:=16.9u-2u;            y5:=5.1v *(lvav_height/10.4v);
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, -90);
+  penpos2(horiz_width-tiny, -93);
+  penpos3(lvav_lneckwidth-tiny, 155);
+  penpos4(lvav_tneckwidth-tiny, 78);
+  penpos5(lvav_rneckwidth-tiny, 6);
+  ld:=155-90;
+  td:=78-90;
+  rd:=6-90;
+  filldraw stroke z1e{left}...{left}z2e;
+  filldraw stroke z2e{left} .. tension .8 .. {dir ld}z3e...
+		  {dir td}z4e ... {dir rd}z5e;
+  %******** Re part *******************
+  ang1:=60;
+  ang2:=97;
+  defpos_hr6(15u,0v,re_neck_width, 0);
+  defpos_vb7(x8+re_end_length,-9.3v,re_tail_width, -ang1);
+  defpos_lt8(-2u,-8.4v,ending_width, -ang2);
+  dd := -ang1-90-20;
+  inv_dd:=180+dd;
+  filldraw stroke z5e...z6e{dir -99}...{dir dd}z7e;
+  if re_tail :
+    filldraw z7r{dir dd}...{dir re_end_dir}z8r&z8r--z8l&
+	     z8l...{dir inv_dd}z7l--cycle;
+  fi;
+enddef;
+
+%*********************************** H E ************************************
+def b_he_mac =  
+  pickup tiny_pen;
+  defpos_lt1(2.8u,12.05v,startpenwidth_tooth_bhe,startpenang_tooth_he-10);
+  penpos2(bhe_rneckwidth-tiny, 66);
+  penpos3(horiz_width-tiny, 180+86);
+  penpos4(.93arc_width-tiny, -98);
+  penpos5(bhe_eneckwidth-tiny, 200);
+  x2 = 8.93u;            y2 = 7.4v;
+  x3 = 7.7u;             y3 = 3.2v;
+  x4 = 3.5u;             y4 = 2.5v;
+  x5 = 3.6u;             y5 = 11.5v;
+  dd:=206;
+  filldraw stroke z1e{dir-13}..tension1.05and1.15..z2e..tension1.2..{dir dd}z3e;
+  filldraw stroke z3e{dir dd}..tension .85..z4e;
+  if linot_he :
+    filldraw stroke z4e{dir 166}.. tension .9 and 3.2..z5e;
+  else :
+    filldraw stroke z4e{dir dd}.. tension .9 and 5..z1e;
+  fi;
+  path p;
+  pair pp;
+  p := z3l{dir dd}..tension .9..z4l;
+  pp:= point .21 of p;
+  x6:=xpart(pp);        y6:=ypart(pp);
+  draw z2l..tension 1.1and 1..{dir dd}z6;
+enddef;
+
+def l_he_mac =  
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(horiz_width-tiny, 78);
+  defpos_lt3(8.9u, 17.35v, lhe_topwidth, alef_head_ang);
+  penpos4(lhe_tneckwidth-tiny, 120);
+  penpos5(1.1lhe_tneckwidth-tiny, 120);
+  penpos6(lhe_lneckwidth-tiny, 180+38);
+  penpos7(horiz_width-tiny, 180+56);
+  x1 = 15.9u;            y1 = horiz_width/2;
+  x2 = 12.3u;            y2 = 4.0v;
+  x4 = 9.8u;             y4 = 12.0v;
+  x5 = 4.0u;             y5 = 8.45v;
+  x6 = 2.8u;             y6 = 5.8v;
+  x7 = 6.9u;             y7 = 5.3v;
+  filldraw stroke z1e{left}..tension .88..z2e..tension 1.65..{dir 98}z3e;
+  filldraw stroke z4e{dir 197}..tension 1.15..z5e..tension 1.25..{dir -70}z6e;
+  filldraw stroke z6e{dir -45}..tension 2 ..{dir 8}z7e;
+  if linot_he :
+    x8:=10.1u;        y8:=7.9v;
+    penpos8(.72lhe_tneckwidth-tiny, 180+140);
+    filldraw stroke z7e{dir 8}..tension 1.75..{dir 98}z8e;
+    draw z6l{dir -45}..tension 1.95..{dir 98}z8l;
+  fi;
+enddef;
+
+%*********************************** Y E ************************************
+def b_ye_mac =
+  x1:=29.4u;                y1:=12.8v;
+  x2:=28.1u;                y2:=14.4v;
+  x3:=18.7u;                y3:=9.0v;
+  x4:=18.7u;                y4:=3.9v;
+  x5:=25.7u;                y5:=1.8v;
+  x6:=24.3u;                y6:=-2.8v;
+  x7:=7.0u;                 y7:=-5.7v;
+  x8:=4.6u;                 y8:=9.0v;
+  pickup tiny_pen;
+  penpos1(.8horiz_width-tiny, 54);
+  penpos2(horiz_width-tiny, 58);
+  penpos3(ye_tneckwidth-tiny, 145);
+  penpos4(horiz_width-tiny, 45+180);
+  penpos5(ye_bneckwidth-tiny, 40+180);
+  penpos6(arc_width-tiny, horizmidpenang_ye_group);
+  dd:=horizmiddir_ye_group;
+  filldraw stroke z1e..tension 1.15..z2e..tension 1.4 ..z3e...z4e{dir -43};
+  filldraw stroke z4e{dir-42}..tension1.05..z5e..tension1.12and.8..z6e{dir dd};
+  horiz_mid_arc(6,7,dd, horizmidpenang_ye_group);
+  endingup_arc(7,8,endingupdir_noon_group);
+enddef;
+
+def l_ye_mac =
+  x1:=l_ye_len;             y1:=horiz_width/2;
+  x2:=25.4u;                y2:=horiz_width/2;
+  x3:=18.0u;                y3:=-.5v;
+  x4:=18.0u;                y4:=-3.0v;
+  x6:=23.6u;                y6:=-9.3v;
+  x7:=6.6u;                 y7:=-11.1v;
+  x8:=4.8u;                 y8:=2.8v;
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(horiz_width-tiny, 90);
+  penpos3(lye_tneckwidth-tiny, 165);
+  penpos4(lye_mneckwidth-tiny, 32+180);
+  defpos_hr5(24.5u,-5v,ye_bneckwidth, 37+180);
+  penpos6(arc_width-tiny, horizmidpenang_ye_group);
+  dd:=horizmiddir_ye_group;
+  filldraw stroke z1e...{left}z2e..tension 1.15..z3e ... z4e{dir -45};
+  filldraw stroke z4e{dir-44}..tension 1.1..z5e..tension 1.12and.8..z6e{dir dd};
+  horiz_mid_arc(6,7,dd, horizmidpenang_ye_group);
+  endingup_arc(7,8,endingupdir_noon_group);
+enddef;
+

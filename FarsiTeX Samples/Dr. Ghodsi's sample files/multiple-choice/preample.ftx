@@ -1,0 +1,171 @@
+>\textwidth=16cm
+>\textheight=22cm
+>\topmargin=-1cm
+>\oddsidemargin=-1mm
+>
+<
+<
+>\newlength{\myleng}
+<
+>\newenvironment{hereproc}
+>    { \vskip0.5cm\noindent\begin{Sbox}%
+>      \setlength{\myleng}{\textwidth}%
+>      \addtolength{\myleng}{-2\fboxsep}%
+>      \addtolength{\myleng}{-2\fboxrule}%
+>      \begin{minipage}{\myleng}\begin{center}\vskip0.5cm}%
+>{\vskip0.5cm\end{center}\end{minipage}\end{Sbox}\fbox{\TheSbox}\vskip0.5cm}%
+>
+>\newenvironment{procedure}[1]
+>    {\begin{figure}[#1]
+>      \begin{Sbox}%
+>      \setlength{\myleng}{\textwidth}%
+>      \addtolength{\myleng}{-2\fboxsep}%
+>      \addtolength{\myleng}{-2\fboxrule}%
+>      \begin{minipage}{\myleng}\begin{center}\vskip0.5cm}%
+>{\vskip0.5cm\end{center}\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{figure}}%
+<
+>\newenvironment{mybox}
+>    { \vskip0.1cm\noindent
+>      \begin{Sbox}%
+>      \setlength{\myleng}{\textwidth}%
+>      \setlength{\fboxsep}{3mm}%
+>      %\setlength{\fboxrule}{5mm}
+>      \addtolength{\myleng}{-2\fboxsep}%
+>      \addtolength{\myleng}{-2\fboxrule}%
+>      \begin{minipage}{\myleng}\begin{center}\vskip0.1cm}%
+>{\vskip0.3cm\end{center}\end{minipage}\end{Sbox}\hspace*{2cm}\shadowbox{\TheSbox}\vskip0.3cm}%
+<
+<
+<ÒnewtheoremÞÐpretheoremÐ×ÞÞÒbfÚì®þùÚ××
+<ÒrenewcommandÞÒthepretheorem×ÞÞÒarabicÞÐpretheoremÐ×××
+<ÒnewenvironmentÞÐtheoremÐ×ÞÒbeginÞpretheorem×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpretheorem××
+<
+<ÒnewtheoremÞÐprelemmaÐ×ÞÞÒbfÚóôÚ××
+<ÒrenewcommandÞÒtheprelemma×ÞÞÒarabicÞÐprelemmaÐ×××
+<ÒnewenvironmentÞÐlemmaÐ×ÞÒbeginÞprelemma×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞprelemma××
+<
+<
+<ÒnewtheoremÞÐprealgorithmÐ×ÞÞÒLargeÚÒbfÚóðø¤þ—ôÚ××
+<ÒrenewcommandÞÒtheprealgorithm×ÞÞÒarabicÞÐprealgorithmÐ×××
+<ÒnewenvironmentÞÐalgorithmÐ×ÞÒbeginÞprealgorithm××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞprealgorithm××
+<
+<
+<ÒnewtheoremÞÐpreexampleÐ×ÞÞÒbfÚõ™‘ñÚ××
+<ÒrenewcommandÞÒthepreexample×ÞÞÒarabicÞÐpreexampleÐ×××
+<ÒnewenvironmentÞÐexampleÐ×ÞÒbeginÞpreexample×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreexample××
+<
+<ÒnewtheoremÞÐpreprobÐ×ÞÞÒbfÚõ¨ŽóùÚ××
+<ÒrenewcommandÞÒthepreprob×ÞÞÒarabicÞÐpreprobÐ×××
+<ÒnewenvironmentÞÐprobÐ×ÞÒvspaceÞÐ-5mmÐ×ÒbeginÞpreprob×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreprob××
+<
+<ÒnewtheoremÞÐpreprobbÐ×ÞÞÒbfÚõ¨ŽóùÚ××
+<ÒrenewcommandÞÒthepreprobb×Þ×
+<ÒnewenvironmentÞÐprobbÐ×ÞÒbeginÞpreprobb×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreprobb××
+<
+<ÒnewtheoremÞÐpreconjÐ×ÞÞÒbfÚŸ¢§Ú××
+<ÒrenewcommandÞÒthepreconj×Þ×
+<ÒnewenvironmentÞÐconjÐ×ÞÒbeginÞpreconj×ÞÒhspaceÞÐ-0.5emÐ×ÚÞÒbfÆ×××
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒendÞpreconj××
+<
+<ÒnewenvironmentÞÐproofÐ×ÞÞÒbfÚ™“‘–Æ×ÚÒrmÚ×ÞÒhfillÞ$\Box$××
+<
+<
+>\def\emline#1#2#3#4#5#6{%
+>       \put(#1,#2){\special{em:moveto}}%
+>       \put(#4,#5){\special{em:lineto}}}
+>\def\newpic#1{}
+<
+>
+>\newcounter{mnum}
+>\newenvironment{mlist}{\setcounter{mnum}{0}     % 1) 2) 3)
+>\begin{list}{\arabic{mnum}(}{\usecounter{mnum}\rightmargin=6mm
+>    \labelwidth=7mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    }}{\end{list}}
+>
+>\newenvironment{elist}{\setcounter{mnum}{0}      % 1. 2. 3.
+>\begin{list}{\arabic{mnum}.}{\usecounter{mnum}\rightmargin=6mm
+>    \labelwidth=7mm\labelsep=2mm
+>    }}{\end{list}}
+>
+>\newcounter{snum}         %  a  b  c
+>\newenvironment{slist}{\setcounter{snum}{0}
+>\begin{list}{\insertenglish(\alph{snum}\endenglish}{\usecounter{snum}\rightmargin=4mm
+>    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=0mm\topsep=0mm}}{\end{list}}
+>
+>\newenvironment{ilist}{     %itemized list with bullete
+>\begin{list}{$\bullet$}{\rightmargin=4mm
+>    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=0mm\topsep=0mm}}{\end{list}}
+>
+>
+>\newenvironment{tilist}{     %itemized list with triangleleft
+>\begin{list}{$\triangleleft$}{\rightmargin=4mm
+>    \labelwidth=5mm\labelsep=2mm\setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \partopsep=0cm\itemsep=0mm\topsep=0mm}}{\end{list}}
+>
+<
+<
+<
+<
+<
+<
+>\newcounter{mcounter}
+<·ÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÚóþ¨–Ú“¢øöÚê¤ø¤ê—ðü
+>\newenvironment{hlist}{
+>\begin{list}{}{\rightmargin=4mm\leftmargin=0mm
+>    \labelwidth=0mm\labelsep=2mm
+>    \setlength{\parsep}{0.5\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \setlength{\itemsep}{0mm}
+>    \partopsep=0cm}}{\end{list}}
+<
+<·ÅÅÅÅÅÅÅÅÅÅÅÅÚÆÚ‚ÆÚƒÆÚ
+>\newenvironment{menumerate}{\setcounter{mcounter}{0}
+>\begin{list}{\bf\arabic{mcounter}.}{\usecounter{mcounter}
+>   \rightmargin=0mm\leftmargin=0mm
+>    \labelwidth=0mm\labelsep=2mm
+>    \setlength{\parsep}{\parskip}
+>    \setlength{\listparindent}{\parindent}
+>    \setlength{\itemsep}{5mm}
+>    \partopsep=0cm}}{\end{list}}
+<
+<
+<
+<ÒdefÒalefÞÒhboxÚÐto 7mmÐÞÒhfillÊÒkernÐ2mmÐÚ××
+<ÒdefÒbeÞÒhboxÚÐto 7mmÐÞ’ÒhfillÊÒkernÐ2mmÐÚ××
+<ÒdefÒjimÞÒhboxÚÐto 7mmÐÞšÒhfillÊÒkernÐ2mmÐÚ××
+<ÒdefÒdalÞÒhboxÚÐto 7mmÐÞ¢ÒhfillÊÒkernÐ2mmÐÚ××
+<ÒnewcommandÞÒfourj×ÓÐ4ÐÑÞÒparÒvskipÐ5mmÐ
+<ÚÚÚÚÒnoindentÞÒquadÒalefÐ#1Ð×Òhfill
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒbeÐ#2Ð×Òhfill
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒjimÐ#3Ð×Òhfill
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÞÒdalÐ#4Ð×Òhfill
+<ÚÚÚÒparÒvskipÐ3mmÐ×
+<ÒnewcommandÞÒtwoj×ÓÐ4ÐÑÞÒparÒvskipÐ5mmÐ
+<ÚÚÚÒnoindentÒmakeboxÓÐ5cmÐÑÓÐlÐÑÞÒquadÒalefÐ#1Ð×Òhfill
+<ÚÚÚÚÚÚÚÚÚÚÚÚÒmakeboxÓÐ5cmÐÑÓÐlÐÑÞÒbeÐ#2Ð×Ònewline
+<ÚÚÚÚÚÚÚÚÚÚÚÚÒmakeboxÓÐ5cmÐÑÓÐlÐÑÞÒquadÒjimÐ#3Ð×Òhfill
+<ÚÚÚÚÚÚÚÚÚÚÚÚÒmakeboxÓÐ5cmÐÑÓÐlÐÑÞÒdalÐ#4Ð×
+<ÚÚÚÒparÒvskipÐ3mmÐ×
+<ÒnewcommandÞÒonej×ÓÐ4ÐÑÞÒparÒvskipÐ5mmÐ
+<ÚÚÚÒnoindentÒmakeboxÓÐ10cmÐÑÓÐlÐÑÞÒquadÒalefÒparboxÓÐtÐÑÞÐ14cmÐ×ÞÒbeginRÚÐ#1Ð××Ònewline
+<ÚÚÚÚÚÚÚÚÚÚÚÚÒmakeboxÓÐ10cmÐÑÓÐlÐÑÞÒquadÒbeÒparboxÓÐtÐÑÞÐ14cmÐ×ÞÒbeginRÚÐ#2Ð××Ònewline
+<ÚÚÚÚÚÚÚÚÚÚÚÚÒmakeboxÓÐ10cmÐÑÓÐlÐÑÞÒquadÒjimÒparboxÓÐtÐÑÞÐ14cmÐ×ÞÒbeginRÚÐ#3Ð××Ònewline
+<ÚÚÚÚÚÚÚÚÚÚÚÚÒmakeboxÓÐ10cmÐÑÓÐlÐÑÞÒquadÒdalÒparboxÓÐtÐÑÞÐ14cmÐ×ÞÒbeginRÚÐ#4Ð××Ònewline
+<ÚÚÒparÒvskipÐ3mmÐ×
+<
+<
+>\def\DOTS{\hbox to 4cm {\dotfill}}
+<
+<

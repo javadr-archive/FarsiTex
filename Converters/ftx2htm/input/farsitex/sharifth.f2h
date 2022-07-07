@@ -1,0 +1,140 @@
+>\font\sharifarm=arm25
+>
+>\def\department#1{\def\valdepartment{#1}}
+>\def\valdepartment{õú÷¢¨üÚî‘õ•þø—¤}
+>
+>\def\degree#1{\def\valdegree{#1}}
+>\def\valdegree{î‘¤ª÷‘¨üÚ÷¤ôê¥¤Úî‘õ•þø—¤}
+>
+>\def\thesisdate#1{\def\valthesisdate{#1}}
+>\def\valthesisdate{}
+>
+>\def\supervisor#1{\def\valsupervisor{#1}}
+>\def\valsupervisor{}
+>
+>\def\englishtitle#1{\def\valenglishtitle{#1}}
+>\def\valenglishtitle{}
+>
+>\def\englishauthor#1{\def\valenglishauthor{#1}}
+>\def\valenglishauthor{}
+>
+>\def\englishdegree#1{\def\valenglishdegree{#1}}
+>\def\valenglishdegree{}
+>
+>\def\englishdepartment#1{\def\valenglishdepartment{#1}}
+>\def\valenglishdepartment{}
+>
+>\def\englishthesisdate#1{\def\valenglishthesisdate{#1}}
+>\def\valenglishthesisdate{}
+>
+>\def\englishsupervisor#1{\def\valenglishsupervisor{#1}}
+>\def\valenglishsupervisor{}
+>
+>\def\maketitle{\begin{titlepage}
+>\vskip -3.5cm
+>{\sharifarm a} \par
+>\vskip 1.5cm
+>{\Huge\bf \valtitle} \par
+>\vskip 1cm
+>{\large\tookhali —ø¨¯} \par
+>{\Large\bf \valauthor} \par
+>\vskip 5mm
+>{\large\bf
+>¤¨‘óùÚ¤ŽùÚª¢ùÚ“ùÚä÷øöÚ“¡ªüÚ¥Úõó¥øõ‘–Ú“¤ýÚ¢¤þ‘ê–Ú¢¤›ù
+>\par
+>\valdegree}
+>\par
+>\vskip 1cm
+>{\large\tookhali ¥þ¤÷à¤ \par
+>\Large\bf \valsupervisor}
+>\par
+>\vskip 1cm
+>{\large \valthesisdate}
+>\par
+>\vskip 1cm
+>{\large\bf ¢÷ªî¢ù \valdepartment}
+>\par
+>{\large\bf ¢÷ªð‘ùÚ¬÷ã—üÚª¤þé \par —ú¤ö}
+>\vfill
+>\end{titlepage}%
+>}
+>
+>\def\abstractpage{\newpage
+>\thispagestyle{empty}
+>\vskip 15mm
+>\begin{center}{\large{\bf \valtitle} \\}
+>\end{center}
+>\par
+>\begin{abstract}}
+>\def\endabstractpage{\end{abstract}
+>\newpage
+>}
+>
+>\def\englishabstract{\newpage
+>\thispagestyle{empty}
+>\vskip 15mm
+>\begin{center}{\Large\bf \valenglishtitle \\[5mm]}
+>\par
+>\bf Abstract
+>\end{center}
+>\vspace{5mm}\par
+>\english}
+>
+>\def\endenglishabstract{\newpage}
+>
+>\def\acknowledgementpage{\newpage
+>\thispagestyle{empty}
+>\centerline{\Large \bf ì¢¤¢÷ü} 
+>\vspace{1cm}
+>\par\noindent}
+>\def\endacknowledgementpage{\newpage}
+>
+>\def\keywords#1{\par \vspace{5mm}
+>\noindent \iranic ø¦ùû‘ýÚîóþ¢ý: #1
+>}
+>\def\englishkeywords#1{\par \vspace{5mm}
+>\noindent {\bf Keywords:} {\it #1}}
+>
+>\font\titlefont=cmssbx10 scaled 1000
+>\font\supervisorfont=cmbxti10
+>
+>\def\makeenglishtitle{\begin{titlepage}
+>\vskip -3.5cm
+>{\sharifarm a}\par
+>\vskip 1.5cm
+>\addtolength{\baselineskip}{5mm}
+>{\titlefont \begin{center} \valenglishtitle \end{center}} \par
+>\addtolength{\baselineskip}{-5mm}
+>\vskip 1cm
+>{\bf by} \par
+>{\Large\bf \valenglishauthor} \par
+>\vskip 5mm
+>{Submitted in Partial Fulfillment \\
+>of the Requirements \\
+>for the Degree of 
+>\par
+>\large\valenglishdegree}
+>\par
+>\vskip 1cm
+>Under supervision of \\
+>{\supervisorfont \valenglishsupervisor}
+>\par
+>\vskip 1cm
+>{\valenglishthesisdate}
+>\par
+>\vskip 1cm
+>\large\bf
+>\valenglishdepartment
+>\par
+>Sharif University of Technology \par Tehran
+>\vfill
+>\end{titlepage}%
+>}
+>
+>\def\titlepage{\newpage\begin{center}
+>  \thispagestyle{empty}
+>  \def\baselinestretch{1}}
+>  \def\endtitlepage{\end{center}\par\newpage}
+>
+>\def\bibname{î—‘’÷‘õù}
+>

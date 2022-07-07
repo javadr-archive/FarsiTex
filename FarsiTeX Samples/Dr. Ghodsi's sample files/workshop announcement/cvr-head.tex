@@ -1,0 +1,52 @@
+\fancypage{%
+\setlength{\fboxsep}{20pt}%
+\setlength{\fboxrule}{1pt}%
+\Ovalbox to \textwidth}{}
+\addtolength{\textwidth}{3.2cm}
+\addtolength{\textheight}{3.2cm}
+\addtolength{\hoffset}{-3cm}
+\addtolength{\voffset}{-1.5cm}
+\setlength{\fboxsep}{10pt}%
+\setlength{\shadowsize}{10pt}%
+\setlength{\fboxrule}{1pt}%
+\addtolength{\headsep}{-7mm}
+\addtolength{\footskip}{-7mm}
+\setlength{\headrulewidth}{0pt}
+\setlength{\textwidth}{17.5cm}
+\pagestyle{fancy}
+
+
+>\newlength{\myleng}
+\newenvironment{hereproc}
+    { \vskip-1.5cm\noindent\begin{Sbox}%
+      \setlength{\myleng}{0.95\textwidth}%
+      \addtolength{\myleng}{-2\fboxsep}%
+      \addtolength{\myleng}{-2\fboxrule}%
+      \begin{minipage}{\myleng}\begin{center}\vskip0.5cm}%
+{\vskip0.5cm\end{center}\end{minipage}\end{Sbox}\shadowbox{\TheSbox}\vskip0.5cm}%
+
+
+
+\chead{\large\sayedar î‰‘¤¨‰ëû‰‘ı  ä‰Ü‰ô î‰‘õ‰³‰ƒ‰—‰Â}
+\cfoot{}% 2 ¨‰Ô‰€‰À 6731}
+\lfoot{}
+\rfoot{}
+%\cfoot{\thepage}
+
+\setlength{\textwidth}{16.5cm} 
+\setlength{\textheight}{25cm}
+\addtolength{\voffset}{-1cm}
+\addtolength{\oddsidemargin}{5mm}
+\font\sharifarm=arm25
+\font\titr=titr20
+\parindent=0pt
+\parskip=3mm
+\font\title=cmssbx10 scaled 2000
+
+
+\newcounter{mnum}
+\newenvironment{elist}{\setcounter{mnum}{0}      % 1. 2. 3.
+\begin{list}{\arabic{mnum}.}{\usecounter{mnum}\rightmargin=6mm
+    \labelwidth=7mm\labelsep=2mm
+    \itemsep=0pt
+    }}{\end{list}}

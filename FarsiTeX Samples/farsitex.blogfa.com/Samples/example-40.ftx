@@ -1,0 +1,17 @@
+>%                                                   In the name of God
+>\documentstyle[persian,12pt]{oldreport}
+>\pdfoutput=0
+>\def\LeftRight#1#2{#1\hfill#2}
+>\begin{document}
+<“¤¡üÚ¨¤ê¬óüÚ“ùÚ¬ø¤–Ú¥ş¤Ú¤Ú“¤ıÚî—‘’Ú¡ø¢Ú“¤õüğ¥ş÷÷¢ÊÒÒÒÒ
+<ÒLeftRightŞä÷øöÚê¬ñ×Şªõ‘¤ùÚ¬êŸù×ÒÒÒÒ
+<“¤¡üÚ¢şğ¤Úäî§ÚşöÚ¨¤ê¬ñÚ¤Ú¢ø¨–Ú¢¤÷¢ÚøóüÚ÷ùÚ¢¤Úî—‘“ú‘ıÚêãóüÚõãõøñÚ¨–Ú¨—ê‘¢ùÚ¥Úû¤Ú¢øÚ¨¤ê¬ñÚ“ùÚ¯ø¤Úõ—÷‘ø’Ú¨–Æ
+>\\\\\english
+>This is an example of headings in english document:\\
+>\LeftRight{Chapter Name}{Page Number}
+>\\\\\persian
+>\centering
+>\framebox[10cm]{$\displaystyle\lim_{x\to0}{\frac{\sin x}{x}}=\lim_{x\to0}{\cos x}=1\hfill\mbox{¨—ê‘¢ùÚ¥Úûø•ş—‘ñ}$}
+<
+>\end{document}
+>% E-mail: SuB.2007.SuB@Gmail.com

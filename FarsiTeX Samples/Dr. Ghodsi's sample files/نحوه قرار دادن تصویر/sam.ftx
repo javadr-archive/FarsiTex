@@ -1,0 +1,43 @@
+>\documentstyle[11pt,farsi,epsf]{article}
+>\begin{document}
+>
+>
+>\begin{figure}[ht]
+>\special{psfile=bes01.jpg hscale=100 vscale=100 hoffset=20 voffset=-500}
+>\end{figure}
+>
+>
+>\newpage
+>{\setlength{\unitlength}{1mm}
+>\begin{picture}(0,15)\label{45}
+>\special{psfile=2.eps hscale= 30 vscale=30 hoffset=-240 voffset=-60}
+>\end{picture}}
+>
+>\english
+>\begin{picture}(1,1)
+>\put(80,-150){\special{psfile=1.eps hscale=7 vscale=7}}
+>\end{picture}\farsi
+>
+>\english
+>\begin{picture}(1,4)
+>\put(0,-200){\epsfbox{pic1.eps}}
+>\end{picture}
+>\farsi
+<
+>\english
+>\begin{picture}(1,4)
+>\put(200,-200){\epsfbox{pic.eps}}
+>\end{picture}
+>\farsi
+<
+<
+>\newpage
+<¢¨—ø¤Ú¥ş¤Ú¤ÚûôÚõş—ø÷ş¢ÚêìÁÚ¢¤Úò—íÚ“î‘¤Ú“¤ş¢Ú÷ùÚê‘¤¨üÚ—í
+>%\begin{figure}[htbp]
+>%\includegraphics[bb = 400 20 176 160, scale=0.40]{cd_1.eps}\hspace*{2cm}\includegraphics[bb = 900 20 176 160, scale=0.35]{cd_2.eps}
+>%\end{figure}
+<
+<
+>
+>
+>\end{document}

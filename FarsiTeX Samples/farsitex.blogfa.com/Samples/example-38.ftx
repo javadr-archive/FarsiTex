@@ -1,0 +1,16 @@
+>%                                                   In the name of God
+>\documentstyle[persian]{oldreport}
+>%\pdfoutput=0
+>\begin{document}
+<Ònoindent
+<õ¤ø¥ÚÒtodayÒÚþã÷üÚ\todayÚõü“‘ª¢ÆÒÒ
+<õü—øöÚðê–ÊÒÒ
+>\iraniancalendar
+<õ¤ø¥ÚÒtodayÒÚþã÷üÚ\todayÚõü“‘ª¢ÆÒÒ
+<ûõ÷þöÚõü—øöÚðê–ÊÒÒ
+>\gregoriancalendar
+<õ¤ø¥ÚÒtodayÒÚþã÷üÚ\todayÚ¨–ÆÒÒÒÒ
+<ø®žÚ¨–ÚîùÚªþøùÚ÷¡¨–ŠÚ“ú—¤ÚøÚ•¨÷¢þ¢ù—¤Ú¨–Æ
+<
+>\end{document}
+>% E-mail: SuB.2007.SuB@Gmail.com

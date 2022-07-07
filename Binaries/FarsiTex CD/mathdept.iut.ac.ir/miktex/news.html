@@ -1,0 +1,1590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<!-- Created on January, 21  2001 by texi2html 1.65 -->
+<!-- 
+Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Olaf Bachmann <obachman@mathematik.uni-kl.de>
+Send bugs and suggestions to <texi2html@mathematik.uni-kl.de>
+ 
+-->
+<HEAD>
+<TITLE>MiKTeX News: </TITLE>
+
+<META NAME="description" CONTENT="MiKTeX News: ">
+<META NAME="keywords" CONTENT="MiKTeX News: ">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META NAME="Generator" CONTENT="texi2html 1.65">
+
+</HEAD>
+
+<BODY LANG="en" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<A NAME="SEC_Top"></A>
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Top">Top</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Contents">Contents</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[Index]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_About"> ? </A>]</TD>
+</TR></TABLE>
+<H1>MiKTeX News</H1></P><P>
+
+This is the MiKTeX 2.0 News file.
+</P><P>
+
+<HR SIZE=1>
+<A NAME="SEC1"></A>
+<A NAME="2.0"></A>
+<H1> 1. MiKTeX 2.0 (January 2001) </H1>
+<!--docid::SEC1::-->
+<P>
+
+<A NAME="SEC2"></A>
+<H3> New Applications </H3>
+<!--docid::SEC2::-->
+<P>
+
+<UL>
+<LI>
+MiKTeX Options: A graphical front-end to the MiKTeX configuration utility
+(<CODE>initexmf</CODE>).
+<LI>
+Remove MiKTeX! Wizard: Assists in removing MiKTeX from the computer.
+<LI>
+pdfeTeX 0.14f/2.1: A pdfTeX/e-TeX merger.
+</UL>
+<P>
+
+<A NAME="SEC3"></A>
+<H3> Updated Applications </H3>
+<!--docid::SEC3::-->
+<P>
+
+<UL>
+<LI>Dvipdfm 0.13.2
+<LI>LaTeX 2000/06/01
+<LI>Omega 1.11
+<LI>pdfTeX 0.14f
+</UL>
+<P>
+
+<A NAME="SEC4"></A>
+<H3> Setup Wizard Changes </H3>
+<!--docid::SEC4::-->
+<P>
+
+<UL>
+<LI>
+You can specify the order by which the TEXMF root directories are
+searched.
+<LI>
+The MiKTeX bin directory is added to the <CODE>PATH</CODE> environment
+variable.
+</UL>
+<P>
+
+<A NAME="SEC5"></A>
+<H3> File Searching Changes </H3>
+<!--docid::SEC5::-->
+<P>
+
+<UL>
+<LI>
+It is now possible to place the local root directory (usually
+`<TT>C:\Local TeXMF</TT>') in the front of the search path.
+<LI>
+On-the-fly generated files (e.g. PK fonts) are automatically added to
+the file name database.
+</UL>
+<P>
+
+<A NAME="SEC6"></A>
+<H3> TeX Compiler Changes </H3>
+<!--docid::SEC6::-->
+<P>
+
+<A NAME="SEC7"></A>
+<H4> New Options </H4>
+<!--docid::SEC7::-->
+<P>
+
+<UL>
+<LI>
+<A NAME="IDX1"></A>
+`<SAMP>--include-directory=<VAR>dir</VAR></SAMP>' prepends <VAR>dir</VAR> to
+the search path.
+<A NAME="IDX2"></A>
+<LI>
+`<SAMP>--output-directory=<VAR>dir</VAR></SAMP>' sets the destination directory
+for all output files.
+<LI>
+<A NAME="IDX3"></A>
+`<SAMP>--enable-write18</SAMP>' enables the <CODE>\write18</CODE> primitive (see below).
+<A NAME="IDX4"></A>
+<LI>
+<CODE>\write18</CODE> primitive: starts a command interpreter to carry out
+the specified command
+</UL>
+<P>
+
+<A NAME="SEC8"></A>
+<H4> New Features </H4>
+<!--docid::SEC8::-->
+<P>
+
+<UL>
+<LI>
+TeX automatically renews the format file, if it is unacceptable.
+This should eliminate the `<SAMP>(Fatal format file error; I'm stymied)</SAMP>'
+problem.
+</UL>
+<P>
+
+<A NAME="SEC9"></A>
+<H3> Texify Changes </H3>
+<!--docid::SEC9::-->
+<P>
+
+<UL>
+<A NAME="IDX5"></A>
+<LI>
+New option `<SAMP>--max-iterations=<VAR>n</VAR></SAMP>' limits the number of
+iterations.  This prevents endless processing.  The default for <VAR>n</VAR>
+is 5.
+</UL>
+<P>
+
+<A NAME="SEC10"></A>
+<H3> Yap Changes </H3>
+<!--docid::SEC10::-->
+<P>
+
+<UL>
+<A NAME="IDX6"></A>
+<A NAME="IDX7"></A>
+<A NAME="IDX8"></A>
+<LI>
+New button `<SAMP>Double-Page</SAMP>' to turn on double-page view (view two
+pages side-by-side).
+<LI>
+Yap supports EEPIC drawing primitives (also known as <EM>tpic</EM> specials).
+<LI>
+Presentation (full-screen) mode.
+</UL>
+<P>
+
+<A NAME="1.20e"></A>
+<HR SIZE="6">
+<A NAME="SEC11"></A>
+<H1> 2. MiKTeX 1.20e (December 1999) </H1>
+<!--docid::SEC11::-->
+<P>
+
+<A NAME="SEC12"></A>
+<H3> Updated Packages </H3>
+<!--docid::SEC12::-->
+<P>
+
+<UL>
+<A NAME="IDX9"></A>
+<A NAME="IDX10"></A>
+<A NAME="IDX11"></A>
+<LI>
+Dvipdfm 0.12.6e; now includes the utility <CODE>dvipdft</CODE> (imbed
+thumbnail images).
+<A NAME="IDX12"></A>
+<LI>
+Texinfo 4.0
+<A NAME="IDX13"></A>
+<A NAME="IDX14"></A>
+<A NAME="IDX15"></A>
+<LI>
+LaTeX &#60;1999/06/01&#62;, Babel v3.6z, Hyperref v6.67e
+<LI>
+AMS-LaTeX v2
+<LI>
+pdfTeX 0.14d
+<A NAME="IDX16"></A>
+<A NAME="IDX17"></A>
+<A NAME="IDX18"></A>
+<A NAME="IDX19"></A>
+<A NAME="IDX20"></A>
+<LI>
+FreeType 1.3 utilities: <CODE>getafm</CODE>, <CODE>ttf2pfb</CODE>, <CODE>ttf2pk</CODE>, <CODE>ttf2tfm</CODE>
+</UL>
+<P>
+
+<A NAME="SEC13"></A>
+<H3> New Features  </H3>
+<!--docid::SEC13::-->
+<P>
+
+<UL>
+<A NAME="IDX21"></A>
+<A NAME="IDX22"></A>
+<LI>
+TeX: the TeX compiler accepts fully qualified file names with spaces,
+i.e. it's now possible to say something like: `<SAMP>latex "C:\My Thesis\Thesis.tex"</SAMP>'.
+<A NAME="IDX23"></A>
+<LI>
+TeX: new option `<SAMP>--interaction=<VAR>mode</VAR></SAMP>': sets TeX's
+interaction mode (one of: <CODE>batchmode</CODE>, <CODE>nonstopmode</CODE>,
+<CODE>scrollmode</CODE>, <CODE>errorstopmode</CODE>).
+<A NAME="IDX24"></A>
+<LI>
+TeX: new option `<SAMP>--quiet</SAMP>': suppresses output unless there are
+errors (implies `<SAMP>--c-style-errors</SAMP>').
+<A NAME="IDX25"></A>
+<A NAME="IDX26"></A>
+<LI>
+Yap: two new toolbar buttons to control color interpolation of text.
+<A NAME="IDX27"></A>
+<LI>
+Yap: emTeX line specials are now supported.
+<A NAME="IDX28"></A>
+<A NAME="IDX29"></A>
+<LI>
+TeXify: new option `<SAMP>--run-viewer</SAMP>': invokes a viewer on the
+resulting `<TT>.pdf</TT>'/`<TT>.dvi</TT>' file. This option (and some Registry
+wizardry) makes it possible to associate `<TT>.tex</TT>' files with a
+viewer, i.e. double-clicking a `<TT>.tex</TT>' file opens the resulting
+`<TT>.pdf</TT>'/`<TT>.dvi</TT>' file.
+<A NAME="IDX30"></A>
+<A NAME="IDX31"></A>
+<LI>
+TeXify: new option `<SAMP>--viewer-option=<VAR>option</VAR></SAMP>': can be used
+to pass <VAR>option</VAR> to the viewer.
+<A NAME="IDX32"></A>
+<LI>
+TeXify: new option `<SAMP>--mkidx-option=<VAR>option</VAR></SAMP>': can be used to
+pass <VAR>option</VAR> to the index generator. Useful if one wants to specify
+MakeIndex style files.
+<A NAME="IDX33"></A>
+<LI>
+TeXify: new option `<SAMP>--tex-option=<VAR>option</VAR></SAMP>': can be used to
+pass <VAR>option</VAR> to the (La)TeX compiler.
+<A NAME="IDX34"></A>
+<A NAME="IDX35"></A>
+<A NAME="IDX36"></A>
+<LI>
+METAFONT: new option `<SAMP>--screen</SAMP>': enables METAFONT's online display
+(thanks to Wolfgang Kleinschmit who supplied the patches).
+</UL>
+<P>
+
+<A NAME="SEC14"></A>
+<H3> Anti Features </H3>
+<!--docid::SEC14::-->
+<P>
+
+<UL>
+<A NAME="IDX37"></A>
+<LI>
+TtH has been removed from the MiKTeX distribution due to license
+problems (TtH is not free software).
+</UL>
+<P>
+
+<A NAME="1.20d"></A>
+<HR SIZE="6">
+<A NAME="SEC15"></A>
+<H1> 3. MiKTeX 1.20d (August 1999) </H1>
+<!--docid::SEC15::-->
+<P>
+
+<A NAME="IDX38"></A>
+<A NAME="IDX39"></A>
+<A NAME="IDX40"></A>
+<A NAME="IDX41"></A>
+<A NAME="IDX42"></A>
+<A NAME="IDX43"></A>
+<A NAME="IDX44"></A>
+<A NAME="IDX45"></A>
+</P><P>
+
+<A NAME="SEC16"></A>
+<H3> Updated Packages  </H3>
+<!--docid::SEC16::-->
+<P>
+
+<UL>
+<LI>Dvips 5.86 (now includes a Windows help file)
+<LI>Texinfo 3.12p (now includes the <CODE>texi2dvi</CODE> utility)
+</UL>
+<P>
+
+<A NAME="SEC17"></A>
+<H4> New: <CODE>texify</CODE> </H4>
+<!--docid::SEC17::-->
+<P>
+
+<CODE>texify</CODE> is a new command-line utility that simplifies the
+production of DVI (PDF) documents.  <CODE>texify</CODE> automatically runs
+LaTeX (pdfLaTeX), Makeindex and BibTeX as many times as
+necessary to produce a DVI (PDF) file with sorted indices and all
+cross-references resolved.
+</P><P>
+
+<CODE>texify</CODE> imitates the shell script <CODE>texi2dvi</CODE> (written by Noah
+Friedman), which is a part of the GNU Texinfo distribution.
+</P><P>
+
+<A NAME="SEC18"></A>
+<H3> New: <CODE>hbf2gf</CODE> </H3>
+<!--docid::SEC18::-->
+<P>
+
+<CODE>hbf2gf</CODE> (by Werner Lemberg) is intended to convert Hanzi Bitmap
+Fonts (HBF) into TeX generic font files (<CODE>GF</CODE> files).  MakePK
+has been updated to make use of <CODE>hbf2gf</CODE>.
+</P><P>
+
+<A NAME="SEC19"></A>
+<H3> Resolved Problems </H3>
+<!--docid::SEC19::-->
+<P>
+
+<A NAME="SEC20"></A>
+<H4> General </H4>
+<!--docid::SEC20::-->
+<P>
+
+<UL>
+<LI>
+MiKTeX doesn't search the local TEXMF tree, when it is a sub-folder
+of the installation TEXMF tree.
+</UL>
+<P>
+
+<A NAME="SEC21"></A>
+<H4> Setup Wizard </H4>
+<!--docid::SEC21::-->
+<P>
+
+<UL>
+<LI>
+The path to the installation folder must not contain spaces.
+</UL>
+<P>
+
+<A NAME="1.20c"></A>
+<HR SIZE="6">
+<A NAME="SEC22"></A>
+<H1> 4. MiKTeX 1.20c (July 1999) </H1>
+<!--docid::SEC22::-->
+<P>
+
+<A NAME="IDX46"></A>
+<A NAME="IDX47"></A>
+<A NAME="IDX48"></A>
+</P><P>
+
+<A NAME="SEC23"></A>
+<H3> Updated Packages   </H3>
+<!--docid::SEC23::-->
+<P>
+
+<UL>
+<LI>The TEXMF tree is a subset of the teTeX 1.0 TEXMF tree
+<LI>TtH 2.25
+<LI>Yap 0.96
+</UL>
+<P>
+
+<A NAME="SEC24"></A>
+<H3> New Features   </H3>
+<!--docid::SEC24::-->
+<P>
+
+<UL>
+<LI>Yap now supports color (a la Dvips) with the exception of background colors
+for whole pages. Say `<SAMP>yap colordemo</SAMP>' to view a demo.
+</UL>
+<P>
+
+<A NAME="SEC25"></A>
+<H3> Resolved Problems  </H3>
+<!--docid::SEC25::-->
+<P>
+
+<A NAME="SEC26"></A>
+<H4> IniTeXMF </H4>
+<!--docid::SEC26::-->
+<P>
+
+<UL>
+<LI>Using options <CODE>--mkpsres</CODE> and <CODE>--update-fndb</CODE> simultaneously
+doesn't work (`<SAMP>texmf0.fndb: Permission denied</SAMP>').
+</UL>
+<P>
+
+<A NAME="SEC27"></A>
+<H4> Yap </H4>
+<!--docid::SEC27::-->
+<P>
+
+<UL>
+<LI>Yap shows blank pages if the the document is recompiled in the background.
+<LI>Displaying a GIF (PCX/PNG/TIFF) image causes Yap to hang on Windows 9x.
+[ Inclusion of these image types should work now. Say <CODE>yap tifdemo</CODE> to
+view a demo. ]
+</UL>
+<P>
+
+<A NAME="1.20b"></A>
+<HR SIZE="6">
+<A NAME="SEC28"></A>
+<H1> 5. MiKTeX 1.20b (May 1999) </H1>
+<!--docid::SEC28::-->
+<P>
+
+<A NAME="IDX49"></A>
+<A NAME="IDX50"></A>
+<A NAME="IDX51"></A>
+<A NAME="IDX52"></A>
+<A NAME="IDX53"></A>
+</P><P>
+
+<A NAME="SEC29"></A>
+<H3> Updated Packages    </H3>
+<!--docid::SEC29::-->
+<P>
+
+<UL>
+<LI>The MiKTeX TEXMF tree is a subset of the teTeX TEXMF tree as per 05/10/99.
+</UL>
+<P>
+
+<A NAME="SEC30"></A>
+<H3> New Features    </H3>
+<!--docid::SEC30::-->
+<P>
+
+<UL>
+<LI>It is now possible to run the Setup Wizard in unattended mode (command-line option
+--unattended). Setup options can be specified on the command-line or in
+a text file. See the Local Guide for more information.
+<LI>Yap checks to see whether it is the default DVI viewer.
+</UL>
+<P>
+
+<A NAME="SEC31"></A>
+<H3> Resolved Problems   </H3>
+<!--docid::SEC31::-->
+<P>
+
+<UL>
+<LI>Some apps didn't run under Windows 2000.
+<LI><CODE>initexmf --dump=elatex</CODE> didn't run in extended mode.
+</UL>
+<P>
+
+<A NAME="1.20a"></A>
+<HR SIZE="6">
+<A NAME="SEC32"></A>
+<H1> 6. MiKTeX 1.20a (April 1999) </H1>
+<!--docid::SEC32::-->
+<P>
+
+<A NAME="IDX54"></A>
+<A NAME="IDX55"></A>
+<A NAME="IDX56"></A>
+</P><P>
+
+The source archives (<CODE>source*.zip</CODE>) were removed from the normal
+distribution.  They are now in the CTAN directory
+<CODE>systems/win32/miktex/source</CODE>.
+</P><P>
+
+<A NAME="SEC33"></A>
+<H3> Updated Apps </H3>
+<!--docid::SEC33::-->
+<P>
+
+<UL>
+<LI>pdfTeX 0.13d
+<LI>Dvipdfm 0.10.5
+<LI>Babel 3.6m
+</UL>
+<P>
+
+<A NAME="SEC34"></A>
+<H3> New Apps </H3>
+<!--docid::SEC34::-->
+<P>
+
+<UL>
+<LI>URW PostScript fonts; these are free replacements for the standard Adobe
+fonts.
+</UL>
+<P>
+
+<A NAME="SEC35"></A>
+<H3> Resolved Problems    </H3>
+<!--docid::SEC35::-->
+<P>
+
+<UL>
+<LI>Hyphenation bug
+</UL>
+<P>
+
+<A NAME="1.20"></A>
+<HR SIZE="6">
+<A NAME="SEC36"></A>
+<H1> 7. MiKTeX 1.20 (April 1999) </H1>
+<!--docid::SEC36::-->
+<P>
+
+<A NAME="IDX57"></A>
+<A NAME="IDX58"></A>
+<A NAME="IDX59"></A>
+<A NAME="IDX60"></A>
+<A NAME="IDX61"></A>
+<A NAME="IDX62"></A>
+<A NAME="IDX63"></A>
+<A NAME="IDX64"></A>
+<A NAME="IDX65"></A>
+<A NAME="IDX66"></A>
+<A NAME="IDX67"></A>
+<A NAME="IDX68"></A>
+<A NAME="IDX69"></A>
+</P><P>
+
+<A NAME="SEC37"></A>
+<H3> New Installation Method </H3>
+<!--docid::SEC37::-->
+<P>
+
+MiKTeX is now (again) distributed as set of Zip files.  The new Setup
+Wizard replaces the InstallSHIELD(R) setup program.
+</P><P>
+
+<A NAME="SEC38"></A>
+<H3> Updated Apps  </H3>
+<!--docid::SEC38::-->
+<P>
+
+<UL>
+<LI>MetaPost 0.641
+<LI>Dvipdfm 0.10.4
+<LI>pdfTeX 0.13c
+<LI>Omega 1.8
+<LI>LaTeX2e 1998/12/01
+</UL>
+<P>
+
+<A NAME="SEC39"></A>
+<H3> New Apps  </H3>
+<!--docid::SEC39::-->
+<P>
+
+<UL>
+<LI>e-TeX 2.1
+<LI>LH fonts 3.20
+</UL>
+<P>
+
+<A NAME="SEC40"></A>
+<H3> New Features     </H3>
+<!--docid::SEC40::-->
+<P>
+
+<UL>
+<LI>Yap
+<UL>
+<LI>now supports basic HyperTeX specials; see `<TT>doc\miktex\hyperdemo.dvi</TT>' for an
+example.
+<LI>Yap now uses a search path to locate DVI input files.
+<LI>new option <CODE>--goto-hyper-label=<VAR>name</VAR></CODE> causes Yap to go to a hyper
+label.
+</UL>
+<LI>TeX &#38; friends:
+<UL>
+<LI>memory settings are now format dependend, i.e. it's possible to
+reserve extra memory for (say) context
+<LI>filenames are now logged in their absolute form
+<LI>new option <CODE>--job-name</CODE> can be used to redefine the name of the job; in
+the end, this option will set the name of the output file to the name specified
+<LI>new option <CODE>--job-time</CODE> can be used to redefine the time of the job; in
+the end, this option will set the timestamp of all output files to the specified time
+<LI>new option <CODE>--tcx</CODE> causes TeX to read the
+input encoding from a <CODE>.tcx</CODE> file
+<LI>the first input line is now checked for a dump/tcx specification;
+i.e. TeX loads the dump file <CODE>foo.fmt</CODE> and processes the TCX <CODE>bar.tcx</CODE>,
+if the first input line is <CODE>%&#38;foo -translate-file=bar</CODE>
+<LI>new option <CODE>--undump</CODE> causes TeX to load a specific dump file
+<LI>the exe name now determines the default dump file that is to be loaded
+by TeX; for example, you can copy <CODE>tex.exe</CODE> to
+<CODE>texinfo.exe</CODE>; TeX will then load <CODE>texinfo.fmt</CODE>, if no other
+dump was specified
+</UL>
+<LI>trace output can be redirected to a file
+</UL>
+<P>
+
+<A NAME="1.11"></A>
+<HR SIZE="6">
+<A NAME="SEC41"></A>
+<H1> 8. MiKTeX 1.11 (August 1998, February 1999) </H1>
+<!--docid::SEC41::-->
+<P>
+
+<A NAME="SEC42"></A>
+<H3> Highlights </H3>
+<!--docid::SEC42::-->
+<P>
+
+<UL>
+<LI>New setup utility (InstallShield)
+<LI>Several distribution types
+<LI>Uninstall support
+<LI>Support for a local TEXMF tree
+<LI>Previewer improvements:
+<P>
+
+<UL>
+<LI>Support for BMP/EPS graphics inclusions
+<LI>Magnifying glass (variable magnification)
+<LI>Support for Dvips (PostScript) specials
+<LI>Support for virtual fonts
+<LI>Support for Type 1 outline fonts (via <CODE>ps2pk</CODE>)
+<LI>Omega-generated DVI can be processed
+<LI>Dvips/GhostScript interface for printing purposes
+<LI>Some command keys accept a numerical prefix argument (for example,
+<CODE>9g</CODE> opens TeX page 9)
+</UL>
+<P>
+
+<LI>Omega 1.5
+<LI>pdfTeX 0.12r
+</UL>
+<P>
+
+<A NAME="SEC43"></A>
+<H3> Distributions </H3>
+<!--docid::SEC43::-->
+<P>
+
+MiKTeX is now distributed in the form of four independent self-extracting
+setup utilities:
+</P><P>
+
+<DL COMPACT>
+<DT>`<TT>bare.exe</TT>'
+<DD>The bare distribution includes executables only.  It is suited for sites
+that already have a comprehensive TEXMF tree (e.g. a TeXLive3 CDROM).
+<P>
+
+<DT>`<TT>basic.exe</TT>'
+<DD>The basic distribution includes fundamental applications and macro packages.
+<P>
+
+<DT>`<TT>advanced.exe</TT>'
+<DD>The advanced distribution includes the basic distribution plus the following
+components:
+<P>
+
+<UL>
+<LI>pdfTeX 0.12l
+<LI>Computer Modern PostScript Fonts
+<LI>AMS-Fonts PostScript Fonts
+</UL>
+<P>
+
+<DT>`<TT>complete.exe</TT>'
+<DD>The complete distribution includes the advanced distribution plus the following
+components:
+<P>
+
+<UL>
+<LI>Omega 1.5
+<LI>MetaPost 0.632
+<LI>Texinfo macros and Makeinfo
+<LI>Web System (Tangle, Weave, Tie)
+</UL>
+</DL>
+<P>
+
+<A NAME="SEC44"></A>
+<H3> Resolved Problems     </H3>
+<!--docid::SEC44::-->
+<P>
+
+<UL>
+<LI><CODE>initexmf --dump</CODE>: specifying an unknown program causes a GPF.
+<LI>Yap displays smeared characters under certain conditions.
+<LI>Yap doesn't print rules under certain conditions.
+<LI>TeX: Danish hyphenation patterns don't work together with LaTeX2e.
+<LI>TeX: `<SAMP>--c-style-errors</SAMP>' sometimes produces funny error messages.
+<LI>TeX: The error menu option `<SAMP>E</SAMP>' (start editor) does not work if the
+erroneous source file is not located in the current directory.
+<LI>TeX says `<SAMP>TeX capacity exceeded, sorry [buffer size=20000]</SAMP>'
+while processing a document that comes from a MacOS system.
+</UL>
+<P>
+
+<A NAME="SEC45"></A>
+<H3> YAP 0.94v </H3>
+<!--docid::SEC45::-->
+<P>
+
+<UL>
+<LI>Support for graphics inclusions has been added.  GhostScript
+is required for the display/printing of EPS figures.
+<P>
+
+<LI>YAP now understands basic dvips (PostScript) specials.
+<P>
+
+<LI>YAP can process virtual fonts: it's now possible to use PostScript
+Type 1 fonts (via <CODE>ps2pk</CODE>, see below).
+<P>
+
+<LI>Dvips/GhostScript interface (for printing purposes).
+<P>
+
+<LI>Customizable magnifying glasses.
+<P>
+
+<LI>Some command keys accept a numerical prefix argument.
+<P>
+
+<LI>Yap records events in a logbook (`<SAMP>View|Logbook...</SAMP>').
+<P>
+
+<LI>A double-click now initiates inverse DVI search:
+<P>
+
+<OL>
+<LI>The TeX source file will be opened with an editor (e.g. Emacs, WinEdt).
+<LI>Inside the editor window, the caret is positioned at the corresponding text
+location.
+</OL>
+<P>
+
+The DVI file must contain source file information, which can be inserted
+with the new TeX option `<SAMP>--src-specials</SAMP>'.
+</UL>
+<P>
+
+<A NAME="SEC46"></A>
+<H3> Hyphenation Patterns </H3>
+<!--docid::SEC46::-->
+<P>
+
+Plain TeX only loads the the standard hyphenation patterns (<CODE>hyphen.tex</CODE>),
+i.e. it does not consult <CODE>language.dat</CODE>.
+</P><P>
+
+<A NAME="SEC47"></A>
+<H3> initexmf (fka configure) </H3>
+<!--docid::SEC47::-->
+<P>
+
+<UL>
+<LI>The MiKTeX configuration utility moved to the bin directory.
+Besides that, the executable was renamed in <CODE>initexmf.exe</CODE>
+(formerly <CODE>configure.exe</CODE>).
+<LI>New options:
+<P>
+
+<DL COMPACT>
+<DT><CODE>--find-lambda-input</CODE>
+<DD><DT><CODE>--find-latex-input</CODE>
+<DD><DT><CODE>--find-metafont-input</CODE>
+<DD><DT><CODE>--find-metapost-input</CODE>
+<DD><DT><CODE>--find-omega-input</CODE>
+<DD><DT><CODE>--find-pdflatex-input</CODE>
+<DD><DT><CODE>--find-pdftex-input</CODE>
+<DD><DT><CODE>--find-tex-input</CODE>
+<DD>Find various input files. These options were introduced to test the find-file
+machinery.
+<P>
+
+<DT><CODE>--mkpsres</CODE>
+<DD>Update the PS Resource Database (<CODE>psres.dpr</CODE>).
+<P>
+
+<DT><CODE>--local-root</CODE>
+<DD>Define the location of the local TEXMF tree.
+<P>
+
+<DT><CODE>--report</CODE>
+<DD>Show a configuration report.
+</DL>
+</UL>
+<P>
+
+<A NAME="SEC48"></A>
+<H3> makepk (aka MakeTeXPK) </H3>
+<!--docid::SEC48::-->
+<P>
+
+<UL>
+<LI><CODE>makepk</CODE> now invokes <CODE>ps2pk</CODE> when a Type 1 outline font is available.
+<LI><CODE>makepk</CODE> now invokes <CODE>ttf2pk</CODE> when a TrueType font is available.
+</UL>
+<P>
+
+<A NAME="SEC49"></A>
+<H4> TeX (and also pdfTeX) </H4>
+<!--docid::SEC49::-->
+<P>
+
+<UL>
+<LI>New option `<SAMP>--src-specials</SAMP>' causes TeX to insert source
+file information (a.k.a. source specials) into the DVI file. Source file
+information improves Editor/Previewer interaction.
+<LI>TeX can read compressed input files, i.e. it's now possible to
+say `<SAMP>\input foo.tex.gz</SAMP>'.
+<LI>New option `<SAMP>--try-gz</SAMP>' causes TeX to try `<TT>file.tex.gz</TT>' if
+`<TT>file.tex</TT>' cannot be found.
+<LI>New option `<SAMP>--term=oem</SAMP>' causes TeX to use the DOS code page
+for console output.
+</UL>
+<P>
+
+<A NAME="SEC50"></A>
+<H3> Dvips </H3>
+<!--docid::SEC50::-->
+<P>
+
+<UL>
+<LI>Compressed EPS figures are searched by means of the find-file-machinery.
+</UL>
+<P>
+
+<A NAME="SEC51"></A>
+<H3> New Applications  </H3>
+<!--docid::SEC51::-->
+<P>
+
+<UL>
+<LI>dvipdfm 0.9.5, a DVI-to-PDF converter developed by Mark A. Wicks.
+<LI><CODE>ps2pk</CODE> converts Type 1 outline fonts into PK files.
+This utility is used by <CODE>makepk</CODE>.
+<LI><CODE>gif2png</CODE> converts GIF files into PNG files.
+<LI>ttf2pk, ttf2tfm: these programs make TrueType fonts  usable  with TeX.
+Developed by Frederic Loyer and Werner Lemberg.
+</UL>
+<P>
+
+<A NAME="SEC52"></A>
+<H3> Updated </H3>
+<!--docid::SEC52::-->
+<P>
+
+<UL>
+<LI>dvips 5.83
+<LI>Omega 1.5; now with some documentation in `<TT>c:\texmf\doc\omega</TT>'.
+<LI>pdfTeX 0.12r; now with some documentation in `<TT>c:\texmf\doc\pdftex</TT>'.
+</UL>
+<P>
+
+<A NAME="1.10b"></A>
+<HR SIZE="6">
+<A NAME="SEC53"></A>
+<H1> 9. MiKTeX 1.10b (March 1998) </H1>
+<!--docid::SEC53::-->
+<P>
+
+<A NAME="SEC54"></A>
+<H3> Resolved Problems      </H3>
+<!--docid::SEC54::-->
+<P>
+
+<UL>
+<LI>`<SAMP>YAP --single-instance</SAMP>' causes a GPF.
+</UL>
+<P>
+
+<A NAME="1.10a"></A>
+<HR SIZE="6">
+<A NAME="SEC55"></A>
+<H1> 10. MiKTeX 1.10a (February 1998) </H1>
+<!--docid::SEC55::-->
+<P>
+
+<A NAME="SEC56"></A>
+<H3> Resolved Problems       </H3>
+<!--docid::SEC56::-->
+<P>
+
+<UL>
+<LI>On some Win95 boxes: YAP displays text lines upside down.
+<LI>YAP reports `<SAMP>MF mode / printer resolution mismatch</SAMP>' if printer
+resoultion is different from 600 dpi.
+<LI>YAP forgets the paper size info (i.e. always starts with A4).
+<LI>YAP consumes too much GDI resources during the run.
+</UL>
+<P>
+
+<A NAME="1.10"></A>
+<HR SIZE="6">
+<A NAME="SEC57"></A>
+<H1> 11. MiKTeX 1.10 (February 1998) </H1>
+<!--docid::SEC57::-->
+<P>
+
+<A NAME="SEC58"></A>
+<H3> Hightlights </H3>
+<!--docid::SEC58::-->
+<P>
+
+<UL>
+<LI>YAP improvements (see below)
+<LI>TeX memory parameters can be changed at run-time
+<LI>Omega 1.47
+</UL>
+<P>
+
+<A NAME="SEC59"></A>
+<H3> Resolved Problems        </H3>
+<!--docid::SEC59::-->
+<P>
+
+<UL>
+<LI>If you use virtual fonts (which is necessary for languages like
+Czech), pdfTeX says `<SAMP>"checksum missmatch in font xxx.vf was ignored"</SAMP>'
+on every font and `<SAMP>"character width missmatch in font xxx.vf was ignored"</SAMP>'
+on every character in the font.
+<LI><CODE>makempx</CODE> fails to create an mpx file, if the corresponding source file
+resides in the TEXMF tree (and not in the current directory).
+<LI><CODE>makempx</CODE> ignores environment variable `<SAMP>TEX</SAMP>'.
+</UL>
+<P>
+
+<A NAME="SEC60"></A>
+<H3> New Applications   </H3>
+<!--docid::SEC60::-->
+<P>
+
+<UL>
+<LI><CODE>makebase</CODE>, <CODE>makemem</CODE>: Make METAFONT (MetaPost) base (mem) files.
+<LI>Omega 1.47 (experimental version).
+See <A HREF="http://www.ens.fr/omega">http://www.ens.fr/omega</A> for more information.
+</UL>
+<P>
+
+<A NAME="SEC61"></A>
+<H3> YAP </H3>
+<!--docid::SEC61::-->
+<P>
+
+<UL>
+<LI>The METAFONT mode selection has been simplified.
+<LI>Gray-scaled character bitmaps make it easier to read shrinked text.
+<LI>YAP now supports so called source specials, which is a prerequisite
+for forward/inverse DVI search.
+<LI>New command lines switch `<SAMP>-1</SAMP>' forces YAP to use a single application
+window.
+<LI><EM>Sticky Cursor</EM> (a.k.a. "the hand tool") allows you to scroll pages
+by moving the mouse cursor.
+<LI>Context-sensitive help.
+<LI>New toolbar icons for easier navigation.
+</UL>
+<P>
+
+<A NAME="SEC62"></A>
+<H3> dvips </H3>
+<!--docid::SEC62::-->
+<P>
+
+<UL>
+<LI>Updated (5.76)
+</UL>
+<P>
+
+<A NAME="SEC63"></A>
+<H3> configure </H3>
+<!--docid::SEC63::-->
+<P>
+
+<UL>
+<LI>The master configuration file has a new name: `<TT>miktex.ini</TT>' (was
+`<TT>miktex.environment</TT>').
+<LI>Configuration parameters are no longer stored in the Windows Registry.
+<LI>New option `<SAMP>--dump</SAMP>' causes configure to create new format files, base
+files, etc.
+</UL>
+<P>
+
+<A NAME="SEC64"></A>
+<H3> INITEX, INIPDFTEX ... </H3>
+<!--docid::SEC64::-->
+<P>
+
+<UL>
+<LI>INITEX and VIRTEX have been merged into one program (`<TT>tex.exe</TT>').
+You invoke INITEX by specifying `<SAMP>--ini</SAMP>' as the first option on the command line.
+The same applies to INIPDFTEX, INIMF and INIMP.
+</UL>
+<P>
+
+<A NAME="SEC65"></A>
+<H3> TeX, pdfTeX, Omega </H3>
+<!--docid::SEC65::-->
+<P>
+
+<UL>
+<LI>TeX now pays attention to the environment variable `<SAMP>TEXINPUTS</SAMP>'.
+<LI>Many memory-related parameters (such as <CODE>mem_max</CODE>, <CODE>buf_size</CODE>, ...) can be
+changed at run-time.  See `<TT>miktex.ini</TT>' for details.
+<P>
+
+<LI>Improved error handling:
+<UL>
+<LI><CODE>--c-style</CODE>: This option causes TeX to show C-style error messages (e.g.
+`<SAMP>"foo.tex:9: undefined control sequence"</SAMP>'); implies <CODE>\scrollmode</CODE>.
+<LI>You can cause TeX to start a text editor by typing <KBD>e</KBD> in the
+error menu.  See `<TT>miktex.ini</TT>' for details.
+</UL>
+</UL>
+<P>
+
+<A NAME="SEC66"></A>
+<H3> Makeinfo </H3>
+<!--docid::SEC66::-->
+<P>
+
+<UL>
+<LI>A special version of GNU Makeinfo converts Texinfo documents into
+HTML and RTF (Windows Help).
+For more information, see <A HREF="http://www.snafu.de/~cschenk/makeinfo">http://www.snafu.de/~cschenk/makeinfo</A>.
+</UL>
+<P>
+
+<A NAME="SEC67"></A>
+<H3> makepk (a.k.a. MakTeXPK) </H3>
+<!--docid::SEC67::-->
+<P>
+
+<UL>
+<LI>Improved argument checking.
+</UL>
+<P>
+
+<A NAME="1.09"></A>
+<HR SIZE="6">
+<A NAME="SEC68"></A>
+<H1> 12. MiKTeX 1.09 (October 1997) </H1>
+<!--docid::SEC68::-->
+<P>
+
+<A NAME="SEC69"></A>
+<H3> Resolved Problems         </H3>
+<!--docid::SEC69::-->
+<P>
+
+<UL>
+<LI>Bibtex8 announces a duplicate bibstyle line when the first and only
+one is encountered.
+<P>
+
+<LI>YAP miscalculates the left and top margins of the printable area.
+<P>
+
+<LI>When you use a `<SAMP>btex ...some tex stuff... etex</SAMP>' construction to
+create a label, MiKTeX complains that it can't create an <CODE>.mpx</CODE> file.
+</UL>
+<P>
+
+<A NAME="SEC70"></A>
+<H3> New Applications    </H3>
+<!--docid::SEC70::-->
+<P>
+
+<UL>
+<LI>PostScript versions of Computer Moden Fonts / AMSFonts
+<LI>pdfTeX
+</UL>
+<P>
+
+<A NAME="1.08"></A>
+<HR SIZE="6">
+<A NAME="SEC71"></A>
+<H1> 13. MiKTeX 1.08 (August 1997) </H1>
+<!--docid::SEC71::-->
+<P>
+
+<A NAME="SEC72"></A>
+<H3> New Features      </H3>
+<!--docid::SEC72::-->
+<P>
+
+<UL>
+<LI>MiKTeX supports multiple TEXMF directory trees.
+This feature allows you to make use of an existing comprehensive TEXMF tree
+(such as a shared teTeX installation).
+<LI>Support of UNC file names.  It should now be possible to do without
+a drive letter when you setup a shared MiKTeX installation.
+<LI>Certain internal TeX parameters have been increased.
+<LI>MakeTeX{PK,TFM} now determines the standard destination directory.  (In the
+past, all generated fonts ended up in a temporary directory tree.) Please
+note that the new method is not compatible with DviWin, which cannot search
+recursively for PK files.  You can restore the old method by changing back
+the value `<SAMP>PK Temp Dir</SAMP>'.
+<LI>MakeIndex searches recursively for style files.
+<LI>It is possible to define per-user configuration settings (via
+`<SAMP>configure --personal CFGFILE</SAMP>').
+See the Local Guide, for more information.
+</UL>
+<P>
+
+<A NAME="SEC73"></A>
+<H3> New Applications     </H3>
+<!--docid::SEC73::-->
+<P>
+
+<UL>
+<LI>Modified version of GNU Makeinfo which converts Texinfo docs
+into RTF.  You can use this utility to make WinHelp files from Texinfo
+docs.
+<LI>8-bit enhanced version of BibTeX with extra large processing capacity.
+Executable is named `<TT>bibtex8.exe</TT>'.  Documentation is in `<TT>doc\bibtex8</TT>'.
+<LI>MakeTeXFMT makes a new format file and moves it into the format folder.
+</UL>
+<P>
+
+<A NAME="SEC74"></A>
+<H3> Upated </H3>
+<!--docid::SEC74::-->
+<P>
+
+<UL>
+<LI>dvips 5.74
+<LI>MetaPost 0.632
+<LI>LaTeX June'97
+</UL>
+<P>
+
+<A NAME="SEC75"></A>
+<H3> Resolved Problems          </H3>
+<!--docid::SEC75::-->
+<P>
+
+<UL>
+<LI>TeX capacity exceeded.
+<LI>On-the-fly generation of fonts fails, if the font sources are
+placed in the current directory.
+</UL>
+<P>
+
+<A NAME="1.07"></A>
+<HR SIZE="6">
+<A NAME="SEC76"></A>
+<H1> 14. MiKTeX 1.07 (February 1997) </H1>
+<!--docid::SEC76::-->
+<P>
+
+<A NAME="SEC77"></A>
+<H3> Resolved Problems           </H3>
+<!--docid::SEC77::-->
+<P>
+
+<UL>
+<LI>dvips: cannot download <CODE>.pfb</CODE> files.
+<LI>dvips: complains that `<SAMP>The filename, directory name, or volume
+label syntax is incorrect.</SAMP>' before doing its job.
+<LI>dvicopy: sometimes causes a general protection fault.
+<LI>MakeTeXPK/METAFONT/ec-fonts: <CODE>.600gf</CODE> files are created even
+if a non-600dpi mode was specified
+</UL>
+<P>
+
+<A NAME="SEC78"></A>
+<H3> Anti-Features </H3>
+<!--docid::SEC78::-->
+<P>
+
+<UL>
+<LI>Removed DC-fonts from the distribution.
+</UL>
+<P>
+
+<A NAME="1.06"></A>
+<HR SIZE="6">
+<A NAME="SEC79"></A>
+<H1> 15. MiKTeX 1.06 (January 1997) </H1>
+<!--docid::SEC79::-->
+<P>
+
+<A NAME="SEC80"></A>
+<H3> New Features       </H3>
+<!--docid::SEC80::-->
+<P>
+
+<UL>
+<LI>MetaPost
+<LI>Standard LaTeX packages: AMS-LaTeX, psnfss, ...
+<LI>psutils: psbook, psselect, pstops, epsffit, psnup, psresize
+<LI>AMS-Fonts
+<LI>DVIcopy
+<LI>EC-Fonts 1.0
+<LI>DVIPS: supports emTeX specias
+</UL>
+<P>
+
+<A NAME="SEC81"></A>
+<H3> Anti-Features  </H3>
+<!--docid::SEC81::-->
+<P>
+
+<UL>
+<LI>The distribution comes without printer PK files.
+</UL>
+<P>
+
+<A NAME="SEC82"></A>
+<H3> Improvements </H3>
+<!--docid::SEC82::-->
+<P>
+
+<UL>
+<LI>TeX runs much faster now.
+<LI>MiKTeX uses a filename database for fast file access.
+</UL>
+<P>
+
+<A NAME="SEC83"></A>
+<H3> Updated  </H3>
+<!--docid::SEC83::-->
+<P>
+
+<UL>
+<LI>LaTeX Dec'96
+<LI>dvips 5.66
+<LI>DC-Fonts 1.3
+</UL>
+<P>
+
+<A NAME="SEC84"></A>
+<H3> Resolved Problems            </H3>
+<!--docid::SEC84::-->
+<P>
+
+<UL>
+<LI>BibTeX: causes a GPF if the main LaTeX file <CODE>\include</CODE>'s someting.
+<LI>BibTeX: says `<SAMP>Sorry--you've exceeded BibTeX's buffer size 1000</SAMP>' if
+the last input line is not terminated by a newline character
+<LI>dvips: DVIPS fails to find the EPS file if the full path is given in the
+LaTeX <CODE>\epsfile</CODE> command argument.
+<LI>LaTeX: `<SAMP>\</SAMP>' is not accepted as a directory delimiter (on the
+command line).
+</UL>
+<P>
+
+<A NAME="1.05"></A>
+<HR SIZE="6">
+<A NAME="SEC85"></A>
+<H1> 16. MiKTeX 1.05 (May 1996) </H1>
+<!--docid::SEC85::-->
+<P>
+
+<A NAME="SEC86"></A>
+<H3> New Features        </H3>
+<!--docid::SEC86::-->
+<P>
+
+<UL>
+<LI>Installation Utility
+<LI>BibTeX
+<LI>YAP (Yet Another Previewer)
+<LI>Local guide
+</UL>
+<P>
+
+<A NAME="SEC87"></A>
+<H3> Updated   </H3>
+<!--docid::SEC87::-->
+<P>
+
+<UL>
+<LI>LaTeX Nov'95
+<LI>DC Fonts 1.2
+</UL>
+<P>
+
+<A NAME="SEC88"></A>
+<H3> Resolved Problems             </H3>
+<!--docid::SEC88::-->
+<P>
+
+<UL>
+<LI>TeX: `<SAMP>\</SAMP>' is not accepted as a directory delimiter (on the
+command line).
+<LI>(La)TeX: `<SAMP>foo.bar.tex</SAMP>' is converted into `<TT>foo.dvi</TT>' (instead of
+`<TT>foo.bar.dvi</TT>').
+<LI>dvips: hangs when the font source file for a missing PK font does
+not exist.
+<LI>dvips: dynamic creation of PostScript graphic files is not possible.
+</UL>
+<HR SIZE="6">
+<A NAME="SEC_Contents"></A>
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Top">Top</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Contents">Contents</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[Index]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_About"> ? </A>]</TD>
+</TR></TABLE>
+<H1>Table of Contents</H1>
+<BLOCKQUOTE>
+<A NAME="TOC1" HREF="news.html#SEC1">1. MiKTeX 2.0 (January 2001)</A>
+<BR>
+<A NAME="TOC11" HREF="news.html#SEC11">2. MiKTeX 1.20e (December 1999)</A>
+<BR>
+<A NAME="TOC15" HREF="news.html#SEC15">3. MiKTeX 1.20d (August 1999)</A>
+<BR>
+<A NAME="TOC22" HREF="news.html#SEC22">4. MiKTeX 1.20c (July 1999)</A>
+<BR>
+<A NAME="TOC28" HREF="news.html#SEC28">5. MiKTeX 1.20b (May 1999)</A>
+<BR>
+<A NAME="TOC32" HREF="news.html#SEC32">6. MiKTeX 1.20a (April 1999)</A>
+<BR>
+<A NAME="TOC36" HREF="news.html#SEC36">7. MiKTeX 1.20 (April 1999)</A>
+<BR>
+<A NAME="TOC41" HREF="news.html#SEC41">8. MiKTeX 1.11 (August 1998, February 1999)</A>
+<BR>
+<A NAME="TOC53" HREF="news.html#SEC53">9. MiKTeX 1.10b (March 1998)</A>
+<BR>
+<A NAME="TOC55" HREF="news.html#SEC55">10. MiKTeX 1.10a (February 1998)</A>
+<BR>
+<A NAME="TOC57" HREF="news.html#SEC57">11. MiKTeX 1.10 (February 1998)</A>
+<BR>
+<A NAME="TOC68" HREF="news.html#SEC68">12. MiKTeX 1.09 (October 1997)</A>
+<BR>
+<A NAME="TOC71" HREF="news.html#SEC71">13. MiKTeX 1.08 (August 1997)</A>
+<BR>
+<A NAME="TOC76" HREF="news.html#SEC76">14. MiKTeX 1.07 (February 1997)</A>
+<BR>
+<A NAME="TOC79" HREF="news.html#SEC79">15. MiKTeX 1.06 (January 1997)</A>
+<BR>
+<A NAME="TOC85" HREF="news.html#SEC85">16. MiKTeX 1.05 (May 1996)</A>
+<BR>
+</BLOCKQUOTE>
+<HR SIZE=1>
+<A NAME="SEC_OVERVIEW"></A>
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Top">Top</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Contents">Contents</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[Index]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_About"> ? </A>]</TD>
+</TR></TABLE>
+<H1>Short Table of Contents</H1>
+<BLOCKQUOTE>
+<A NAME="TOC1" HREF="news.html#SEC1">1. MiKTeX 2.0 (January 2001)</A>
+<BR>
+<A NAME="TOC11" HREF="news.html#SEC11">2. MiKTeX 1.20e (December 1999)</A>
+<BR>
+<A NAME="TOC15" HREF="news.html#SEC15">3. MiKTeX 1.20d (August 1999)</A>
+<BR>
+<A NAME="TOC22" HREF="news.html#SEC22">4. MiKTeX 1.20c (July 1999)</A>
+<BR>
+<A NAME="TOC28" HREF="news.html#SEC28">5. MiKTeX 1.20b (May 1999)</A>
+<BR>
+<A NAME="TOC32" HREF="news.html#SEC32">6. MiKTeX 1.20a (April 1999)</A>
+<BR>
+<A NAME="TOC36" HREF="news.html#SEC36">7. MiKTeX 1.20 (April 1999)</A>
+<BR>
+<A NAME="TOC41" HREF="news.html#SEC41">8. MiKTeX 1.11 (August 1998, February 1999)</A>
+<BR>
+<A NAME="TOC53" HREF="news.html#SEC53">9. MiKTeX 1.10b (March 1998)</A>
+<BR>
+<A NAME="TOC55" HREF="news.html#SEC55">10. MiKTeX 1.10a (February 1998)</A>
+<BR>
+<A NAME="TOC57" HREF="news.html#SEC57">11. MiKTeX 1.10 (February 1998)</A>
+<BR>
+<A NAME="TOC68" HREF="news.html#SEC68">12. MiKTeX 1.09 (October 1997)</A>
+<BR>
+<A NAME="TOC71" HREF="news.html#SEC71">13. MiKTeX 1.08 (August 1997)</A>
+<BR>
+<A NAME="TOC76" HREF="news.html#SEC76">14. MiKTeX 1.07 (February 1997)</A>
+<BR>
+<A NAME="TOC79" HREF="news.html#SEC79">15. MiKTeX 1.06 (January 1997)</A>
+<BR>
+<A NAME="TOC85" HREF="news.html#SEC85">16. MiKTeX 1.05 (May 1996)</A>
+<BR>
+
+</BLOCKQUOTE>
+<HR SIZE=1>
+<A NAME="SEC_About"></A>
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Top">Top</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_Contents">Contents</A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[Index]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="news.html#SEC_About"> ? </A>]</TD>
+</TR></TABLE>
+<H1>About this document</H1>
+This document was generated 
+using <A HREF="http://www.mathematik.uni-kl.de/~obachman/Texi2html
+"><I>texi2html</I></A>
+<P></P>  
+The buttons in the navigation panels have the following meaning:
+<P></P>
+<table border = "1">
+<TR>
+<TH> Button </TH>
+<TH> Name </TH>
+<TH> Go to </TH>
+<TH> From 1.2.3 go to</TH>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [ &lt; ] </TD>
+<TD ALIGN="CENTER">
+Back
+</TD>
+<TD>
+previous section in reading order
+</TD>
+<TD>
+1.2.2
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [ &gt; ] </TD>
+<TD ALIGN="CENTER">
+Forward
+</TD>
+<TD>
+next section in reading order
+</TD>
+<TD>
+1.2.4
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [ &lt;&lt; ] </TD>
+<TD ALIGN="CENTER">
+FastBack
+</TD>
+<TD>
+previous or up-and-previous section 
+</TD>
+<TD>
+1.1
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [ Up ] </TD>
+<TD ALIGN="CENTER">
+Up
+</TD>
+<TD>
+up section
+</TD>
+<TD>
+1.2
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [ &gt;&gt; ] </TD>
+<TD ALIGN="CENTER">
+FastForward
+</TD>
+<TD>
+next or up-and-next section
+</TD>
+<TD>
+1.3
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [Top] </TD>
+<TD ALIGN="CENTER">
+Top
+</TD>
+<TD>
+cover (top) of document
+</TD>
+<TD>
+ &nbsp; 
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [Contents] </TD>
+<TD ALIGN="CENTER">
+Contents
+</TD>
+<TD>
+table of contents
+</TD>
+<TD>
+ &nbsp; 
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [Index] </TD>
+<TD ALIGN="CENTER">
+Index
+</TD>
+<TD>
+concept index
+</TD>
+<TD>
+ &nbsp; 
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+ [ ? ] </TD>
+<TD ALIGN="CENTER">
+About
+</TD>
+<TD>
+this page
+</TD>
+<TD>
+ &nbsp; 
+</TD>
+</TR>
+</TABLE>
+<P></P>
+where the <STRONG> Example </STRONG> assumes that the current position 
+is at <STRONG> Subsubsection One-Two-Three </STRONG> of a document of 
+the following structure:
+<UL>
+<LI> 1. Section One  </LI>
+<UL>
+<LI>1.1 Subsection One-One</LI>
+<UL>
+<LI> ... </LI>
+</UL>
+<LI>1.2 Subsection One-Two</LI>
+<UL>
+<LI>1.2.1 Subsubsection One-Two-One
+</LI><LI>1.2.2 Subsubsection One-Two-Two
+</LI><LI>1.2.3 Subsubsection One-Two-Three &nbsp; &nbsp; <STRONG>
+&lt;== Current Position </STRONG>
+</LI><LI>1.2.4 Subsubsection One-Two-Four
+</LI></UL>
+<LI>1.3 Subsection One-Three</LI>
+<UL>
+<LI> ... </LI>
+</UL>
+<LI>1.4 Subsection One-Four</LI>
+</UL>
+</UL>
+
+<HR SIZE=1>
+<BR>  
+<FONT SIZE="-1">
+This document was generated
+on <I>January, 21  2001</I>
+using <A HREF="http://www.mathematik.uni-kl.de/~obachman/Texi2html
+"><I>texi2html</I></A>
+</FONT>
+
+</BODY>
+</HTML>

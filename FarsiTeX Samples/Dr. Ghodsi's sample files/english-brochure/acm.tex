@@ -1,0 +1,15 @@
+\newbox\acmbox
+\newdimen\acmw
+\font\acma=acma at 57.816truept
+\setbox\acmbox=\vbox{\hbox{%
+\acma\char0\char1}}
+\acmw=\wd\acmbox
+\setbox\acmbox=\hbox{\vbox{\hsize=\acmw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\acma\char0\char1}
+\hbox{\acma\char2\char3}}}
+\ifx\parbox\undefined
+    \def\setacm{\box\acmbox}
+\else
+    \def\setacm{\parbox{\wd\acmbox}{\box\acmbox}}
+\fi

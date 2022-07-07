@@ -1,0 +1,29 @@
+\contentsline {chapter}{\numberline {\beginL {1}\endL }õ\tireh ‘¢ù¨\tireh ‘¥ı}{{\beginL \protect \pnazokxpt 5\endL }}
+\contentsline {section}{\numberline {\beginL {1}\endL .\beginL {1}\endL }÷\tireh Ê\tireh ° ê\tireh ‘¤\kern -0.1em¨\tireh ü\penalty \@M \ \kern -0.63em\raise 0.15em\hbox {\kasre —\tireh ×}}{{\beginL \protect \pnazokxpt 6\endL }}
+\contentsline {section}{\numberline {\beginL {1}\endL .\beginL {2}\endL }›\tireh Âı ê\tireh ‘¤\kern -0.1em¨\tireh ü\penalty \@M \ \kern -0.63em\raise 0.15em\hbox {\kasre —\tireh ×}}{{\beginL \protect \pnazokxpt 6\endL }}
+\contentsline {chapter}{\numberline {\beginL {2}\endL }ª\tireh Âøá î\tireh ‘¤}{{\beginL \protect \pnazokxpt 8\endL }}
+\contentsline {section}{\numberline {\beginL {2}\endL .\beginL {1}\endL }—\tireh ú\tireh ƒ\tireh ‚î\tireh Â¢ö •\tireh Âø÷\tireh Àùı ø¤ø¢ı}{{\beginL \protect \pnazokxpt 8\endL }}
+\contentsline {section}{\numberline {\beginL {2}\endL .\beginL {2}\endL }ø¤ø¢ı}{{\beginL \protect \pnazokxpt 9\endL }}
+\contentsline {subsection}{\numberline {\beginL {2}\endL .\beginL {2}\endL .\beginL {1}\endL }›\tireh Ş\tireh Ü\tireh ‚û\tireh ‘ ø •\tireh ‘¤ğ\tireh Âéû\tireh ‘}{{\beginL \protect \pnazokxpt 10\endL }}
+\contentsline {subsubsection}{õ\tireh µ\tireh ß ÷\tireh Ú\tireh Ü\tireh ƒ\tireh Æ\tireh ü}{{\beginL \protect \pnazokxpt 10\endL }}
+\contentsline {subsubsection}{ä\tireh …õ\tireh ´û\tireh ‘ı ÷\tireh Ö\tireh Û ì\tireh ñ}{{\beginL \protect \pnazokxpt 10\endL }}
+\contentsline {subsubsection}{¡\tireh Í —\tireh ƒ\tireh Âù}{{\beginL \protect \pnazokxpt 10\endL }}
+\contentsline {subsubsection}{ê\tireh ‘¬\tireh Ü\tireh ‚ı “\tireh ã\tireh À ¥ ÷\tireh Ö\tireh Î\tireh ‚}{{\beginL \protect \pnazokxpt 11\endL }}
+\contentsline {subsubsection}{÷\tireh Ş\tireh ‘¢û\tireh ‘ı øş\tireh Äù}{{\beginL \protect \pnazokxpt 11\endL }}
+\contentsline {subsubsection}{¢¨\tireh µ\tireh ¤û\tireh ‘ı ¨\tireh ‘¢ùı —\tireh ó\tireh ƒ\tireh À õ\tireh µ\tireh ß}{{\beginL \protect \pnazokxpt 11\endL }}
+\contentsline {subsubsection}{—\tireh {\accent '142 ‘}î\tireh ƒ\tireh À ¤øı õ\tireh µ\tireh ß}{{\beginL \protect \pnazokxpt 12\endL }}
+\contentsline {subsubsection}{›\tireh Ü\tireh ğ\tireh ƒ\tireh Âı ¥ ª\tireh Ø\tireh Æ\tireh µ\tireh ‚ ª\tireh Àö ¡\tireh Í}{{\beginL \protect \pnazokxpt 12\endL }}
+\contentsline {subsubsection}{•\tireh ‘÷\tireh ş\tireh Åû\tireh ‘}{{\beginL \protect \pnazokxpt 12\endL }}
+\contentsline {subsubsection}{ê\tireh Âõ\tireh ñû\tireh ‘}{{\beginL \protect \pnazokxpt 13\endL }}
+\contentsline {subsubsection}{õ\tireh µ\tireh ß ì\tireh ‘“\tireh Û \tireh È\tireh İ•\tireh ª\tireh ü}{{\beginL \protect \pnazokxpt 13\endL }}
+\contentsline {subsection}{\numberline {\beginL {2}\endL .\beginL {2}\endL .\beginL {2}\endL }õ\tireh µ\tireh ß}{{\beginL \protect \pnazokxpt 13\endL }}
+\contentsline {subsubsection}{{\accent '144 ¨}\tireh {\accent '150 ±}\tireh × õ\tireh µ\tireh ß}{{\beginL \protect \pnazokxpt 14\endL }}
+\contentsline {subsubsection}{'¬\tireh Ô\tireh ½\tireh ‚"ı ä\tireh €\tireh ö}{{\beginL \protect \pnazokxpt 15\endL }}
+\contentsline {subsection}{\numberline {\beginL {2}\endL .\beginL {2}\endL .\beginL {3}\endL }“\tireh ¿\tireh Ç“\tireh €\tireh Àı}{{\beginL \protect \pnazokxpt 15\endL }}
+\contentsline {subsection}{\numberline {\beginL {2}\endL .\beginL {2}\endL .\beginL {4}\endL }õ\tireh µ\tireh ßû\tireh ‘ı ›\tireh Ü\tireh ùş\tireh ‘ê\tireh µ\tireh ‚ )\insertenglish {}displayed\endenglish {}(}{{\beginL \protect \pnazokxpt 16\endL }}
+\contentsline {subsubsection}{÷\tireh Ö\tireh Û ì\tireh ñ}{{\beginL \protect \pnazokxpt 17\endL }}
+\contentsline {subsubsection}{ó\tireh ƒ\tireh Æ\tireh ´û\tireh ‘}{{\beginL \protect \pnazokxpt 17\endL }}
+\contentsline {subsubsection}{ª\tireh ã\tireh Â}{{\beginL \protect \pnazokxpt 18\endL }}
+\contentsline {subsubsection}{ê\tireh Âõ\tireh ñû\tireh ‘ı ›\tireh Ü\tireh ùş\tireh ‘ê\tireh µ\tireh ‚}{{\beginL \protect \pnazokxpt 19\endL }}
+\contentsline {subsection}{\numberline {\beginL {2}\endL .\beginL {2}\endL .\beginL {5}\endL }›\tireh Âî\tireh Â¢ö ê\tireh ‘¤\kern -0.1em¨\tireh ü\penalty \@M \ \kern -0.63em\raise 0.15em\hbox {\kasre —\tireh ×}}{{\beginL \protect \pnazokxpt 20\endL }}
+\contentsline {section}{\numberline {\beginL {2}\endL .\beginL {3}\endL }—\tireh ®\tireh ƒ\tireh ½\tireh ‘– õ\tireh ú\tireh İ}{{\beginL \protect \pnazokxpt 20\endL }}

@@ -1,0 +1,25 @@
+{ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "image"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BBnaBjRqSR_bCB5HG0wTc0omiDrn8pjXB6tbEBMCNtwGwzAsQARgBIOHmmwI4AFCRr7QpYO2C74PUD6AB7M6s_wOqARBmaXRuZXNzX3NmX3BhZ2VzsgEPc291cmNlZm9yZ2UubmV0ugEJNzI4eDkwX2pzyAEC2gEoaHR0cDovL3NvdXJjZWZvcmdlLm5ldC9wcm9qZWN0cy9mYXJzaXRleIACAcgCxeuyAagDAegD5gPoAyDoA6YD6APbBfUDAAQAAA&amp;num=1&amp;adurl=http://www.acronis.com/homecomputing/products/diskdirector/%3Fsource%3Dgoogle%26ad%3Dresize%2Bpartition%2Bcontent&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.Acronis.com"; 
+google_ad.image_url = "http://pagead2.googlesyndication.com/pagead/imgad?id=CLWn2Jf04__juwEQ2AUYTzIIJbrV4T7fXbY"; 
+google_ad.image_width = "728"; 
+google_ad.image_height = "79"; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "http://services.google.com/feedback/abg?url=http://sourceforge.net/projects/farsitex&amp;hl=en&amp;client=ca-ostg_js&amp;adU=www.Acronis.com&amp;adT=ImageAd&amp;done=1"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}

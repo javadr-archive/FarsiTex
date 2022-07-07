@@ -1,0 +1,20 @@
+\newbox\piconebox
+\newdimen\piconew
+\font\piconea=piconea at 57.816truept
+\font\piconeb=piconeb at 57.816truept
+\font\piconec=piconec at 57.816truept
+\font\piconed=piconed at 57.816truept
+\font\piconee=piconee at 57.816truept
+\setbox\piconebox=\vbox{\hbox{%
+\piconea\char0\char1\piconeb\char0\char1}}
+\piconew=\wd\piconebox
+\setbox\piconebox=\hbox{\vbox{\hsize=\piconew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\piconea\char0\char1\piconeb\char0\char1}
+\hbox{\piconec\char0\char1\piconed\char0\char1}
+\hbox{\piconed\char2\piconee\char0\char1\char2}}}
+\ifx\parbox\undefined
+    \def\setpicone{\box\piconebox}
+\else
+    \def\setpicone{\parbox{\wd\piconebox}{\box\piconebox}}
+\fi

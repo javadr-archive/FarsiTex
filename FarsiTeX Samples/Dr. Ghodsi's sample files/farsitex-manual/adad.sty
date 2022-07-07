@@ -1,0 +1,29 @@
+% harfi is: A, b, p, t, c, j, ...
+% abjad is: alef, b, j, d, h, ...
+% adadi is: yek, dow, se, chahar, ...
+%
+\def\harfi#1{\expandafter\@harfi\csname c@#1\endcsname}
+\def\abjad#1{\expandafter\@abjad\csname c@#1\endcsname}
+\def\adadi#1{\expandafter\@adadi\csname c@#1\endcsname}
+
+\def\@harfi#1{\beginR\@@harfi#1\endR}
+\def\@@harfi#1{%
+\ifcase#1\or 峔or 抃or 擻or 朶or 榎or 歕or 淺or 瀄or 燶or or
+   or or or or or ‐or 玕or 璡or 痋or 郳or 醆or 錦or 閈or 隲or
+   韁or 颸or 馶or 鬨or 鯸or 鳿or 鸤or 齖else\@ctrerr\fi}
+
+\def\@abjad#1{\beginR\@@abjad#1\endR}
+\def\@@abjad#1{%
+\ifcase#1\or 愺売\or 抃or 歕or or 鸤or 鳿or or 瀄or 痋or 齖or 韁or
+   馶or 鬨or 鯸or or 醆or 閈or 玕or 隲or or ‐or 朶or 榎or 燶or or
+   璡or 郳or 隲else\@ctrerr\fi}
+
+\def\@adadi#1{\beginR\@@adadi#1\endR}
+\def\@@adadi#1{%
+   \ifcase#1 瑝詨耚or 䦃譢or Ⅷ\or ▔俓or 潐鷫懁\or 晧�壐\or
+      獕荺or 麎詨碶or 麎葔碶or 鲏俓or Ⅸ\or 䦃懃Ⅸ\or Ⅷ惀Ⅸ\or
+      ▔儔芒鵟or 潐鷫懁Ⅸ\or 晧戺壝Ⅸ\or 獕戺壝Ⅸ\or 麎詨砾\or 麎箟砾\or
+      鲏仴Ⅸ\or 搲儔茐带䦃譢or 搲儔茐带Ⅷ\or 搲儔茐带▔俓or
+      搲儔茐带潐鷫懁\or 搲儔茐带晧�壐\or 搲儔茐带獕荺or 搲儔茐带麎詨碶or
+      搲儔茐带麎葔碶or 搲儔茐带鲏俓or ▔黒or ▔䦃譢or
+      ▔Ⅷ\else\@ctrerr\fi}

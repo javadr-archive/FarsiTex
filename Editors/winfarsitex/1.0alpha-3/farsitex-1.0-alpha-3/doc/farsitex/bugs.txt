@@ -1,0 +1,35 @@
+==============================================================================
+bugs.txt (FarsiTeX Distribution)
+==============================================================================
+
+			 FarsiTeX Error Reports
+
+ERROR REPORTS
+
+Before you report an error please check that:
+
+ * Your FarsiTeX system is not more than one year old.
+   Your problem may have already been fixed in the latest version.
+
+ * The error is not already mentioned in the documentation of the
+   distribution. (In this case it is a feature :-)
+
+ * The error is not caused by software other than the core FarsiTeX
+   software that is produced and maintained by FarsiTeX Project Team
+   (please report problems with other software to the authors
+   or suppliers of that software).
+
+ * You are using the original version of all files, not one that has
+   been modified elsewhere.
+
+If you think you have found a genuine bug in a recent version of the
+core FarsiTeX software, please report it to either:
+
+  roozbeh@sharif.edu
+  
+or through the web-based bug reporting mechanism at:
+
+  http://farsitex.sourceforge.net/bugs.php
+
+--- Roozbeh Pournader (roozbeh@sharif.edu) -----------------------------
+--- Copyright 1996--2001, FarsiTeX Project Team. All rights reserved ---

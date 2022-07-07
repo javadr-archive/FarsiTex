@@ -1,0 +1,81 @@
+>\documentstyle[farsi,12pt,fancybox,ffancyhe]{article}
+>\input{header}
+<
+>\begin{document}
+>%\thispagestyle{empty}
+>\Large\siah
+<ÒslideŞ¢¢ù¨‘¡—‘¤û‘×
+<ÒsubŞ¢¨—ù“÷¢ı×
+<ÒbeginŞmlist×
+<ÒitemÚ¢¢ù¨‘¡—‘¤û‘ıÚ¨‘¢ù
+<ÒbeginŞtilist×
+<ÒitemÚóş¨–û‘Ú¾óş¨–û‘ıÚ¨‘¢ùıÚşí¯¤êùŠÚ¢ø¯¤êùŠÚ¢ø¤½
+<ÒitemÚ•ª—ùû‘
+<ÒitemÚ¬éû‘
+<ÒitemÚ¢¤¡–û‘
+<ÒendŞtilist×
+<ÒitemÚ¢¢ùğø÷ùıÚ÷—¥äüÚÚõ›õøäùû‘
+<ÒbeginŞtilist×
+<ÒitemÚê¤û÷ïÚ¢¢ùıÚ¾¢¤šŠÚŸ£éÚøÚ›¨–ø›ø½
+<ÒbeginŞilist×
+<ÒitemÚ›¢øñÚ•¤î÷¢ğüÚ¾hash table½ÚÊÚ“‘¥ŠÚ“¨—ùŠÚõ—ø¨ÁÚ$O(\log n)$
+<ÒitemÚ¢¤¡–Ú¢ø¢øşüÚ›¨–ø›øÚ¾BST½ÊÚŸ¢î™¤Ú$On)$ÚøÚõ—ø¨ÁÚ$O(\log n)$
+<ÒitemÚ¢¤¡–Ú¢ø¢øşüÚ›¨–ø›øıÚ“‘Ú¤—ê‘áÚÚÚÚ$O(\log n)$
+<ÒbeginŞslist×
+<ÒitemÚ¢¤¡–Ú¢ø¢øşüÚ›¨–ø›øıÚõ—ø¥ö
+<ÒitemÚÚ¢¤¡–ÚAVLÚ¾¢¤¡—üÚîùÚ¡—òéÚÚ¤—ê‘áÚÚ¢øÚ¥ş¤¢¤¡–Úû¤Úğ¤ùıÚöÚŸ¢î™¤ÚÚ“‘ª¢½
+<ÒitemÚ¢¤¡–ÚÃì¤õ¥Å¨ş‘ùÀÚRed-Black treeÚ
+<ÒendŞslist×
+<ÒitemÚ¢¤¡–û‘ıÚî‘õò³Úõ—ø¥öÚ¾¤—ê‘áÚÚ$O(\log n)$½
+<ÒbeginŞslist×
+<ÒitemÚ¢¤¡–ÚƒÅ‚
+<ÒitemÚ¢¤¡–ÚÃ“üÀ
+<ÒendŞslist×
+<ÒendŞilist×
+<ÒitemÚ¬éÚøóøş–Ú¾¢¤šÚøÚŸ£éÚîøí—¤şöÚä÷¬¤½ÊÚ$O(\log n$
+<
+<ÒitemÚDisjoint Find-MergeÚ¾•ş¢î¤¢öŠÚ¢è‘ô½
+<
+<ÚÒendŞtilist×
+<ÒendŞmlist×
+<
+<ÒsubŞ¢¤¡–û‘ıÚ¢ø¢øşüÚ›¨–ø›ø×
+<ÒbeginŞtilist×
+<ÒitemÚ—ã¤şéÊ
+<¢¤¡—üÚÚ¢ø¢øşüÚîùÚÚîóşùıÚÚä÷‘¬¤Ú¥ş¤Ú¢¤¡–Ú”Úğ¤ùıÚ$x$Úîõ—¤Ú¥Ú$x$ÚøÚ
+<ÚÚîóşùıÚÚä÷‘¬¤Ú¥ş¤Ú¢¤¡–Ú¤¨–ÚöÚÚ“ş©—¤Ú¥Ú$x$Ú“‘ª¢ÆÚ
+<ÒitemÚ
+<•şõ‘ş©ÚÚ“şö—¤—ş’Ú$\longleftarrow$Úõ¤—’ª¢ùıÚÚä÷‘¬¤
+<ÒitemÚ—¤—ş’Ú¢¤šÚ¢¤Úş›‘¢Ú¢¤¡–
+<ÒitemÚ—ã¢¢Ú¢¤¡–û‘ıÚ¢ø¢øşüÚ›¨–ø›øÚîùÚ“‘Ú$a_1<a_2<\cdots<\a_n$
+<õü—øöÚ¨‘¡–ÊÚ
+<
+>\begin{eqnarray*} T(n)&=&\sum_{i=1}^n T(i-1)T(n-i), T(0)=1 \\
+>                      &=& \frac{1}{n+1} {{2n}\choose{n}}
+>\end{eqnarray*}
+<ŞÒsmallÚä¢¢Úî‘—‘òö×
+<
+<ÒitemÚŸ¢î™¤Ú¤—ê‘áÊÚ$n-1$
+<ÒitemÚõ—ø¨ÁÚ¤—ê‘áÊÚ$O(\log n)$
+<ÒendŞtilist×
+<
+<Ònewpage
+<ÒsubŞÚ›¨–ø›ø×
+<
+>\english
+>{\baselineskip=0.8\baselineskip
+>\begin{verbatim}
+>FUNCTION MEMBER ( x:labeltype; A:BST ):BOOLEAN;
+>begin
+>   if A = nil then return (false);
+>   if A^.label = x then return (true);
+>   if x < A^.label then
+>        return ( member(x,A^.left))
+>   else return ( member(x,A^.right))
+>\end{verbatim}
+>\farsi
+<
+<
+<ÒendŞdocument×
+<
+<

@@ -1,0 +1,185 @@
+>\addtolength{\baselineskip}{.4ex}
+>
+>\begin{thebibliography}{10}
+>
+<ÒbibitemŞĞmahmoodĞ×
+<ŞôÆÚ¬òŸü×ŠÚŞÒiranicÚª¤ÁÚû‘ñÚøÚ¤÷ïõş¥ıÚóş¨—üÚğ¤êú‘×Š
+<•‘ş‘ö÷‘õùıÚ¢î—¤ıŠÚ¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚ‡‡ƒÆ
+<
+<ÒbibitemŞĞfbondyĞ×
+<Ş›üÆÒŠÆÚ“‘÷¢ıÚøÚşøÆÒŠ§ÆÒŠ¤ÆÚõø¤—ü×ŠÚŞÒiranicÚ÷à¤şùÚğ¤êú‘ÚøÚî‘¤“¤¢û‘ıÚö×Š
+<õø»¨¨ùÚê¤û÷ğüÚ¢ş“‘ğ¤öŠÚ—ú¤öŠÚˆ‡ƒÆ
+<
+<ÒbibitemŞĞmostaghniĞ×
+<Ş’ÆÚõ¨—ç÷üş¥¢ı×ŠÚŞÒiranicÚ¤÷ïõş¥ıÚóş¨—üÚ¢¤Úğ¤êú‘×Š
+<•‘ş‘ö÷‘õùıÚî‘¤ª÷‘¨üÚ¤ª¢ŠÚ¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚ„‡ƒÆ
+>
+>\english
+>
+>\bibitem{alon}
+>{\sc N.~Alon}, {\em Restricted colorings of graphs}, in Surveys in
+>  combinatorics, K.~Walker, ed., no.~{187} in London Math. Soc. LNS, 1993,
+>  pp.~1--33.
+>
+>\bibitem{alontarsi}
+>{\sc N.~Alon and M.~Tarsi}, {\em Colorings and orientations of graphs},
+>  Combinatorica, {12} (1992), pp.~125--134.
+>
+>\bibitem{behzad}
+>{\sc M.~Behzad}, {\em Graphs and their chromatic numbers}, PhD thesis, Michigan
+>  State University, 1965.
+>
+>\bibitem{LCCref}
+>{\sc B.~Bollob\'as and A.~J. Harris}, {\em List colourings of graphs}, Graphs
+>  Combin., {1} (1985), pp.~115--127.
+>
+>\bibitem{largegirth}
+>{\sc B.~Bollob\'as and N.~Sauer}, {\em Uniquely colorable graphs with large
+>  girth}, Canad. J. Math., {28} (1976), pp.~1340--1344.
+>
+>\bibitem{boroding14}
+>{\sc O.~V. Borodin}, {\em Generaliztion of {K}otzig's theorem and assigned
+>  edge-colorings of planar graphs}, Math. Z., {48} (1990), pp.~22--28.
+>\newblock (In Russian). Translation in {\em Math. Notes} 48:1186--1190, 1990.
+>
+>\bibitem{chethagg}
+>{\sc A.~Chetwynd and R.~H\"aggkvist}, {\em A note on list-colorings}, J. Graph
+>  Theory, {13} (1989), pp.~87--95.
+>
+>\bibitem{dannas}
+>{\sc A.~Daneshgar and R.~Naserasr}, {\em On some parameters related to uniquely
+>  vertex--colourable graphs and defining sets}.
+>\newblock Submitted.
+>
+>\bibitem{DenKeed74}
+>{\sc J.~D\'enes and A.~D. Keedwell}, {\em Latin squares and their
+>  applications}, The {E}nglish Universities Press Ltd, London, 1974.
+>
+>\bibitem{DenKeed91}
+>{\sc J.~D\'enes and A.~D. Keedwell}, {\em Latin squares: new developments in
+>  the theory and applications}, vol.~46 of Annals of Discrete Mathematics,
+>  Elsevier Science Publications, Netherlands, 1991.
+>
+>\bibitem{dinmar}
+>{\sc J.~H. Dinitz and W.~J. Martin}, {\em The stipulation polynomial of a
+>  uniquely list--colorable graph}, Austral. J. Combin., {11} (1995),
+>  pp.~105--115.
+>
+>\bibitem{erdos}
+>{\sc P.~Erd\"os, A.~L. Rubin, and H.~Taylor}, {\em Choosability in graphs}, in
+>  Proceedings, West Coast Conference on Combinatorics, Graph Theory, and
+>  Computing, no.~{26} in Congr. Numer., Arcata, CA, 1979, pp.~125--157.
+>
+>\bibitem{egh}
+>{\sc C.~Eslahchi, M.~Ghebleh, and H.~Hajiabolhassan}, {\em Some concepts in
+>  list coloring}.
+>\newblock (Submitted).
+>
+>\bibitem{galvin}
+>{\sc F.~Galvin}, {\em The list chromatic index of a bipartite multigraph}, J.
+>  Combin. Theory, Ser. B, {63} (1995), pp.~153--158.
+>
+>\bibitem{ghbmah}
+>{\sc M.~Ghebleh and E.~S. Mahmoodian}, {\em On uniquely list colorable graphs},
+>  Ars Combin.
+>\newblock (To appear).
+>
+>\bibitem{gravier}
+>{\sc S.~Gravier}, {\em A {H}aj\'os-like theorem for list coloring}, Discrete
+>  Math., {152} (1996), pp.~299--302.
+>
+>\bibitem{haggjans}
+>{\sc R.~H\"aggkvist and J.~Janssen}, {\em New bounds on the list-chromatic
+>  index of the complete graph and other simple graphs}, Combinatorics,
+>  Probability, and Computing, {6} (1997), pp.~295--313.
+>
+>\bibitem{hmtz_defset}
+>{\sc H.~Hajiabolhassan, M.~L. Mehrabadi, R.~Tusserkani, and M.~Zaker}, {\em A
+>  characterization of uniquely vertex colorable graphs using minimal defining
+>  sets}, Discrete Mathematics, 199 (1999), pp.~233--236.
+>
+>\bibitem{hajos}
+>{\sc G.~Haj\'os}, {\em \"{U}ber eine konstruktion nicht $n$-f\"arbbarer
+>  graphen}, Wiss. Z. Martin Luther Univ. Math.-Natur. Reihe., {10} (1961),
+>  pp.~116--117.
+>
+>\bibitem{hall}
+>{\sc M.~Hall}, {\em Distinct representatives of subsets}, Bull. Amer. Math.
+>  Soc., {54} (1948), pp.~922--926.
+>
+>\bibitem{graphcoloring}
+>{\sc T.~R. Jensen and B.~Toft}, {\em Graph coloring problems}, John Wiley \&
+>  Sons, New York, NY, 1995.
+>
+>\bibitem{keedDS}
+>{\sc A.~D. Keedwell}, {\em Critical sets and critical partial latin squares},
+>  in Graph Theory, Combinatorics, Algorithms, and Applications, Proc. Third
+>  {C}hina-{USA} International Conference, Beijing, 1993, World Scientific Publ.
+>  Co., Singapore, 1994, pp.~111--124.
+>
+>\bibitem{keedwell}
+>{\sc A.~D. Keedwell}, {\em Critical sets for latin squares, graphs, and block
+>  designs: A survey}, Congr. Numer., {113} (1996), pp.~231--245.
+>
+>\bibitem{mahmah}
+>{\sc M.~Mahdian and E.~S. Mahmoodian}, {\em A characterization of uniquely {\rm
+>  2}--list colorable graphs}, Ars Combin., {51} (1999), pp.~295--305.
+>
+>\bibitem{kerman}
+>{\sc E.~S. Mahmoodian}, {\em Some problems in graph colorings}, Proc. 26th
+>  Annual Iranian Mathematics Conference, Kerman, 1995, Iranian Math. Soc.,
+>  University of Kerman, pp.~215--218.
+>
+>\bibitem{tabriz}
+>{\sc E.~S. Mahmoodian and M.~Mahdian}, {\em On the uniquely list colorable
+>  graphs}, in Proceedings of the 28th Annual Iranian Mathematics Conference,
+>  Part 1, no.~{377} in Tabriz Univ. Ser., Tabriz, 1997, pp.~319--326.
+>
+>\bibitem{mnz}
+>{\sc E.~S. Mahmoodian, R.~Naserasr, and M.~Zaker}, {\em Defining sets of vertex
+>  coloring of graphs and latin rectangles}, Discrete Math., {167}/{168} (1997),
+>  pp.~451--460.
+>
+>\bibitem{mirzakhani}
+>{\sc M.~Mirzakhani}, {\em A small non--{\rm 4}--choosable planar graph}, Bull.
+>  Inst. Combin. Appl., {17} (1996), pp.~15--18.
+>
+>\bibitem{10pow26}
+>{\sc M.~Molloy and B.~Reed}, {\em A bound on the total chromatic number},
+>  Combinatorica, {18} (1998), pp.~241--280.
+>
+>\bibitem{thomassen}
+>{\sc C.~Thomassen}, {\em Every planar graph is {\rm 5}--choosable}, J. Combin.
+>  Theory, Ser. B, {62} (1994), pp.~180--181.
+>
+>\bibitem{thomassen_g5}
+>{\sc C.~Thomassen}, {\em {\rm 3}--list--coloring planar graphs of girth {\rm
+>  5}}, J. Combin. Theory, Ser. B, {64} (1995), pp.~101--107.
+>
+>\bibitem{trusz}
+>{\sc M.~Truszczy\'nski}, {\em Some results on uniquely colourable graphs},
+>  Colloquia Math. Soc. J\'anos Bolyai, {37} (1981), pp.~733--746.
+>
+>\bibitem{vizing}
+>{\sc V.~G. Vizing}, {\em Coloring the vertices of a graph in prescribed
+>  colors}, in Diskret. Analiz, no.~{29} in Metody Diskret. Anal. v Teorii Kodov
+>  i Shem, 1976, pp.~3--10.
+>\newblock (In Russian).
+>
+>\bibitem{voigt}
+>{\sc M.~Voigt}, {\em List colorings of planar graphs}, Discrete Math., {120}
+>  (1993), pp.~215--219.
+>
+>\bibitem{west}
+>{\sc D.~B. West}, {\em Introduction to graph theory}, Prentice Hall, Upper
+>  Saddle River. NJ, 1996.
+>
+>\bibitem{whitney}
+>{\sc H.~Whitney}, {\em Congruent graphs and the connectivity of graphs}, Amer.
+>  J. Math., {54} (1932), pp.~150--168.
+>
+>\farsi
+>
+>\end{thebibliography}
+>
+>\addtolength{\baselineskip}{-.4ex}

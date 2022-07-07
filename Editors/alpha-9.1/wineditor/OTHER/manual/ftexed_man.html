@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-1">
+  <title>FarsiTeX Editor Manual</title>
+
+  <meta name="GENERATOR" content="StarOffice/5.2 (Win32)">
+
+  <meta name="AUTHOR" content="Mehrdad Sabetzadeh">
+
+  <meta name="CREATED" content="May 22, 2001">
+
+  <meta name="CHANGEDBY" content="Mehrdad Sabetzadeh on June 22, 2001">
+</head>
+ <body>
+
+<h1 align="Center">FarsiTeX Editor Manual</h1>
+
+<p align="Left">This document serves as a very concise manual for using FarsiTeX
+ Editor (version alpha 8.7 and higher) in Micros*ft Wind*ws. We have done
+our best to keep the editor compatible to the D*S FarsiTeX Editor as long
+as the features did not specifically belong to B*rland's Turb* Vision. So
+if you have used FarsiTeX before you will only need to skim the document
+to learn the new hot keys </p>
+
+<h2 align="Left">1. Installing FarsiTeX</h2>
+
+<p align="Left" style="margin-bottom: 0in; ">Please consult the <code>readme.txt</code>
+(included in the distributions you have downloaded) to learn more about installing and
+troubleshooting FarsiTeX. Since FarsiTeX Editor is distributed as
+part of FarsiTeX distribution, you only need to follow <code>readme.txt</code>
+instructions in the setup program to get the editor running.
+However, it is possible that newer versions of the editor
+become publicly available at <a href="http://www.farsitex.org">www.farsitex.org</a>
+in separate installable download bundles. In such cases, you will certainly find a
+change log that lets you know about the recent bug fixes.</p>
+
+<p align="Center" style="margin-bottom: 0in; "><br>
+ <img src="images/snapshot.png" name="Graphic1" alt="Snapshot from FarsiTeX Editor"><br>
+ <br>
+ <b>Figure 1: FarsiTeX Editor in Action!</b></p>
+
+<p align="Left"><br>
+ <br>
+ <br>
+ </p>
+
+<h2 align="Left">2. Bidirectional Editing Features</h2>
+
+<p align="Left">Handling bidirectional text is the most complicated issue
+ you have to learn about the editor. Before explaining bidirectional editing
+ features, we should make a distinction between two important concepts: <b>
+  line mode</b> and <b>caret mode</b>.</p>
+
+<ul>
+
+  <li>
+    <p align="Left" style="margin-bottom: 0in; ">A line is said to be in
+    <b>Farsi</b> mode iff it extends from the right to the left edge of the window.
+    Conversely, a line is said to be in <b>English</b> mode iff it extends from
+    the left to the right edge of the window. Lines in the latter mode always
+    start with a <b>'&gt;'</b> symbol. You 	should note that this symbol is internally
+    used by FarsiTeX and is not treated as a character in your document.</p>
+   </li>
+
+  <li>
+    <p align="Left">The caret (not the line) is said to be in <b>Farsi</b>
+   	mode iff a text producing key press results in Farsi text. Conversely,
+	the caret is said to be in <b>English</b> mode iff a text producing key press
+	results in English text.</p>
+   </li>
+
+</ul>
+
+<p align="Left"><b>Example:</b> When you start a new document, the line and
+ the caret are both in Farsi mode.</p>
+
+<p align="Left">All you have to know for manipulating your bidirectional
+document is learning the following 8 rules:</p>
+
+<ol>
+
+  <li>
+    <p align="Left">Use <b>CTRL+E</b> to switch caret mode to English.</p>
+   </li>
+
+  <li>
+    <p align="Left">Use <b>CTRL+F</b> to switch caret mode to Farsi.</p>
+   </li>
+
+  <li>
+    <p align="Left">Use <b>CTRL+G</b> to toggle caret mode.</p>
+   </li>
+
+  <li>
+    <p align="Left">Type '&gt;' (regardless of the caret mode) to 	switch
+ an <b>empty</b> line to English mode.</p>
+   </li>
+
+  <li>
+    <p align="Left">Type an English '&gt;', i.e. type '&gt;' when the caret
+    is in English mode, at the end of a line which is in Farsi mode to switch
+    the line mode to English.</p>
+   </li>
+
+  <li>
+    <p align="Left">Use <b>CTRL+J</b> to switch an English line to Farsi.</p>
+   </li>
+
+  <li>
+    <p align="Left">Use delete and backspace keys (regardless of the caret
+    mode and the line mode) to erase your text. You should note that these
+    keys  show different behaviors in different combinations of caret/line modes.</p>
+   </li>
+
+  <li>
+    <p align="Left">Use <b>CTRL+Y</b> (regardless of the caret mode and the
+ 	line mode) to omit a line from your document.</p>
+   </li>
+
+</ol>
+
+<h2 align="Left">3. Farsi Text Manipulation</h2>
+<p align="Left"> Use <b>SHIFT+B</b> and <b>SHIFT+SPACE</b> to change a Farsi letter to its upper-case form.</p>
+<h2 align="Left">4. Menu Commands</h2>
+
+<p align="Left">In this section, we only discuss the menu options which are
+ specific to the editor (after all, who's gonna read this document to learn
+ about what Open and Save commands do, ha?)</p>
+
+<ul>
+
+  <li>
+    <p align="Left">Menus:</p>
+
+    <ul>
+
+      <li>
+        <p align="Left">View:</p>
+
+        <ul>
+
+          <li>
+            <p align="Left">Options:</p>
+
+            <ol>
+
+              <li>
+                <p align="Left"><b>Always start next line in Farsi mode:</b>
+                A new line is always started in Farsi mode after pressing Enter even if your
+                current line is in English mode. Turn this option off if you want the
+                newly created line to start in English mode if your current line is
+                in  English mode.</p>
+               </li>
+
+              <li>
+                <p align="Left"><b>Preserve caret state after Enter is pressed:</b>
+                The caret for a new Farsi line is always in Farsi mode after pressing
+                Enter at the end of a Farsi or English line even if you were typing
+                English  text before pressing Enter. Turn this option off if you don't
+                want Enter key presses to affect your caret mode.</p>
+               </li>
+
+              <li>
+                <p align="Left"><b>Caret mode switching affects Farsi text:</b>
+                Pressing <b>CTRL+G</b>, <b>CTRL+F</b>, <b>CTRL+E</b> changes the case
+                of Farsi letters by default. Turn this option off if you are in the habit of pressing
+                <b>CTRL+G</b>, <b>CTRL+F</b>, or <b>CTRL+E</b> with no special  reason!!</p>
+               </li>
+
+              <li>
+                <p align="Left"><b>Syntax highlighting on:</b>
+                Turn the option off if you do not want FarsiTeX syntax highlighting.</p>
+               </li>
+            </ol>
+           </li>
+
+        </ul>
+       </li>
+
+      <li>
+        <p align="Left">Run:</p>
+
+        <ol>
+
+          <li>
+            <p align="Left">Run FarsiTeX (<b>CTRL+F9</b>): Invokes FarsiTeX typesetting engine
+            and produces a DVI file.</p>
+           </li>
+
+          <li>
+            <p align="Left">Run View (<b>CTRL+F8</b>): Invokes MikTeX's DVI Viewer (YAP).</p>
+           </li>
+
+          <li>
+            <p align="Left">Convert FTX to TEX (<b>CTRL+F7</b>): Invokes FarsiTeX-to-TeX file
+            converter. You usually invoke this converter explicitly only to convert
+            FTX files which are to be included in other FTX files.</p>
+           </li>
+
+          <li>
+            <p align="Left">DVIPS (<b>CTRL+F11</b>): Invokes DVIPS utility which converts your
+            DVI file to a PS file.</p>
+           </li>
+
+          <li>
+            <p align="Left">Run GSView (<b>CTRL+F12</b>): Invokes GSView utility. You will
+            get an error message if GSView is not installed on your computer. Please
+            consult FarsiTeX <code>readme.txt</code> for more information about how
+            to download and install GSView</p>
+           </li>
+
+        </ol>
+       </li>
+
+    </ul>
+   </li>
+
+</ul>
+
+<p align="Left"><font color="#ff0000"><b>Note: FarsiTeX Editor does not directly
+ support printing anymore, so there is no Print option in the File menu.
+You  should invoke YAP ( MikTeX's DVI Viewer) through View command in the
+Run menu and print your document in YAP.</b></font></p>
+
+<h2 align="Left">5. Splitters and Multiple Document Interface (MDI) Features</h2>
+  Splitter windows let authors view different areas of a document at the
+same  time. FarsiTeX editor creates <b>two</b> separate views (at maximum)
+for each document and eventually allows two different areas to be viewed
+simultaneously  (at maximum). By default, only one view is created and shown
+to the user when a new document is created, the second view is created on
+demand and will be disposed when not needed.<br>
+ <br>
+
+<center><img src="images/splitter.png" alt="Splitters" ><br>
+<b><br>
+Figure 2: Creating a splitter window</b><br>
+ </center>
+
+<p align="Left">Use <b>F6</b> to toggle between different view panes.&nbsp;
+Note that this is a standard feature in MDI applications running on Wind*ws&nbsp;
+platform.<br>
+<font color="#ff0000"><b>Note:</b></font> The options set through the View
+menu only affect the view that has with the input focus. So different views
+of the same document can have different settings.<br>
+</p>
+<p align="Left">As you may have seen by now, multiple FarsiTeX documents
+can be opened and manipulated by the editor at the same time. You can used
+Wind*ws menu or <b>CTRL+F6</b> to toggle between different documents.</p>
+<h2></h2>
+
+<h2>6. FarsiTeX Editor Clipboard</h2>
+FarsiTeX Editor has an internal clipboard for its own use and does not use Wind*ws clipboard.
+It is possible to import text into FarsiTeX Editor internal clipboard from Wind*ws clipboard,
+but FarsiTeX Editor is not capable of writing to Wind*ws clipboard.
+<h2>7. Color Customization</h2>
+
+<p align="Left">The editor comes with two configuration files for customizing
+ colors. <code>colors.ftc</code> defines a set of RGB colors, and <code>colorsetting.ftc</code>
+   associates each coloring feature to a color defined in <code>colors.ftc</code>
+  . Please consult the comments in these two files for detailed information.
+ </p>
+
+<h2>8. Options</h2>
+
+<p align="Left">At the time of this writing, the editor supports five options that can be permanently
+configured for documents and views:
+Syntax highlighting, file backups, clipboard import wrap size, bracket/brace pairing, and dash behavior in
+Farsi numbers.
+See <code>options.ftc</code> comments for more details.
+ </p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+\def\labelenumi{\if@farsi\beginL.\arabic{enumi}\endL\else%
+\arabic{enumi}.\fi}
+\def\theenumi{\beginL{\arabic{enumi}}\endL}
+\def\labelenumii{%
+\if@farsi)\alph{enumii}(%
+\else
+(\alph{enumii})\fi%
+}%
+\def\theenumii{\alph{enumii}}
+\def\p@enumii{\theenumi}
+\def\labelenumiii{%
+\beginL\roman{enumiii}.\endL
+}
+\def\theenumiii{\beginL\roman{enumiii}\endL}
+\def\p@enumiii{\beginL\theenumi(\theenumii)\endL}
+\def\labelenumiv{\beginL\Alph{enumiv}.\endL}
+\def\theenumiv{\beginL\Alph{enumiv}\endL}
+\def\p@enumiv{\beginL\p@enumiii\theenumiii\endL}
+
+\def\contentsname{ê‰ú‰Â¨‰´ õ‰Î‰‘ó‰°}   %   –¨¤úê
+%\def\contentsname{êúÂ¨´}   %   –¨¤úê
+\def\listfigurename{êúÂ¨´ ªØÜú‘} %   ‘úóîª –¨¤úê
+\def\listtablename{êúÂ¨´ ›Àøóú‘} %  ‘úóø¢› –¨¤úê
+\def\refname{õÂ›â}              %         â›¤õ
+
+\def\@makechapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedleft
+ \ifnum \c@secnumdepth >\m@ne \Huge \thechapter \par
+ \vskip 20pt \fi \huge \bf #1\par
+ \nobreak \vskip 40pt } }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

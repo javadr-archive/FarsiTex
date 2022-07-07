@@ -1,0 +1,11 @@
+>%                                                     In The Name of God
+>\documentstyle[farsi]{article}
+>\begin{document}
+>$$x>y\stackrel{y>0}{=\hspace{-2pt}\Longrightarrow}x>0$$
+>$$\lim_{x\to0^+}\frac{\sin x}{\sqrt{x}}\stackrel{Hop}{=\hspace{-2pt}=}
+>\lim_{x\to0^+}\frac{\cos x}{\frac{1}{2\sqrt{x}}}
+>=\lim_{x\to0^+}{2\sqrt{x}\cos x}=0$$
+>\end{document}
+>%-------
+>% Email: sub.2007.sub@gmail.com
+<

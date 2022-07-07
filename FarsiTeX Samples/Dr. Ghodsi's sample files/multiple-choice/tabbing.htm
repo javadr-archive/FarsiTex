@@ -1,0 +1,57 @@
+<html><head><title>Help On LaTeX tabbing</title></head><body alink="#cc0000" bgcolor="#ffffff" link="#000099" text="#000000" vlink="#cc0000">
+<h1><font size="-2">Hypertext Help with LaTeX</font><br><font color="#cc0000">tabbing</font></h1>
+<p></p><pre> \begin{tabbing}
+ text \= more text \= still more text \= last text \\
+ second row \&gt;  \&gt; more \\
+ ....
+ ....
+ \end{tabbing}
+</pre>
+ The tabbing environment  provides a way to align text in columns.   It
+ works  by setting  tab stops  and tabbing  to them much the way you do
+ with an ordinary typewriter.
+<p>
+ The <a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-68.html">tabular</a> environment also aligns text in
+ columns, but there are several important differences.
+ </p><ul>  
+ <li> The tabular environment can be used in any <a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-130.html">mode</a>
+ whereas the tabbing environment can be used only in paragraph 
+ <a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-130.html">mode</a> and it starts a new paragraph.
+<p>
+ </p></li><li>The tabular 
+ environment generates a box, which LaTeX treats as one (albeit very large) 
+ letter; it cannot be split across pages.  A long tabbing environment can
+ be split across pages.
+<p>
+ </p></li><li>The width of columns in a tabular environment is determined automatically
+ by LaTeX; in the tabbing environment this is done by setting tab stops.
+</li></ul>
+<h2>Tabbing commands</h2>
+<ul>
+<li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-187.html"><tt>\=</tt></a> (set tab)
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-188.html"><tt>\&gt;</tt></a> (advance to next tab stop)
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-189.html"><tt>\&lt;</tt></a>
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-190.html"><tt>\+</tt></a> (indent; move margin right)
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-182.html"><tt>\-</tt></a> (unindent; move margin left)
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-191.html"><tt>\'</tt></a>
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-192.html"><tt>\`</tt></a>
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-181.html"><tt>\\</tt></a> (end of line; newline)
+</li><li><a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-251.html"><tt>\kill</tt></a> (ignore preceding text; use only 
+    for spacing)
+</li></ul>
+The <a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-241.html"><tt>\hspace</tt></a> command is useful for
+controlling horizontal space in the tabbing environment.
+<p>
+Note that the commands <tt>\=</tt>, <tt>\'</tt>, and <tt>\`</tt> 
+normally produce <a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-401.html">accents</a> over the subsequent
+letter.  These commands are redefined in the tabbing environment;
+in this environment it is possible to get the accents by using
+<tt>\a=</tt>, <tt>\a'</tt>, and <tt>\a`</tt>, respectively.
+</p><hr>
+Return to <a href="http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-2.html">LaTeX Table of Contents</a>
+<hr>
+<address>
+Revised: Sheldon Green, 28 Nov 1995.
+</address>
+
+</body></html>

@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow"><title>FarsiTeX - Iranian Ubuntu Team Wiki</title>
+
+
+<script type="text/javascript" src="FarsiTeX_files/common.html"></script>
+
+<script type="text/javascript">
+<!--// common functions
+
+// We keep here the state of the search box
+searchIsDisabled = false;
+
+function searchChange(e) {
+    // Update search buttons status according to search box content.
+    // Ignore empty or whitespace search term.
+    var value = e.value.replace(/\s+/, '');
+    if (value == '' || searchIsDisabled) { 
+        searchSetDisabled(true);
+    } else {
+        searchSetDisabled(false);
+    }
+}
+
+function searchSetDisabled(flag) {
+    // Enable or disable search
+    document.getElementById('fullsearch').disabled = flag;
+    document.getElementById('titlesearch').disabled = flag;
+}
+
+function searchFocus(e) {
+    // Update search input content on focus
+    if (e.value == 'جستجو در') {
+        e.value = '';
+        e.className = '';
+        searchIsDisabled = false;
+    }
+}
+
+function searchBlur(e) {
+    // Update search input content on blur
+    if (e.value == '') {
+        e.value = 'جستجو در';
+        e.className = 'disabled';
+        searchIsDisabled = true;
+    }
+}
+
+function actionsMenuInit(title) {
+    // Initialize action menu
+    for (i = 0; i < document.forms.length; i++) {
+        var form = document.forms[i];
+        if (form.className == 'actionsmenu') {
+            // Check if this form needs update
+            var div = form.getElementsByTagName('div')[0];
+            var label = div.getElementsByTagName('label')[0];
+            if (label) {
+                // This is the first time: remove label and do buton.
+                div.removeChild(label);
+                var dobutton = div.getElementsByTagName('input')[0];
+                div.removeChild(dobutton);
+                // and add menu title
+                var select = div.getElementsByTagName('select')[0];
+                var item = document.createElement('option');
+                item.appendChild(document.createTextNode(title));
+                item.value = 'show';
+                select.insertBefore(item, select.options[0]);
+                select.selectedIndex = 0;
+            }
+        }
+    }
+}
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="FarsiTeX_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="FarsiTeX_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="FarsiTeX_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="FarsiTeX_files/projection.css"><!-- css only for MSIE browsers --><!--[if IE]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/htdocs/ubuntuirwiki/css/msie.css">
+<![endif]-->
+
+
+
+
+
+
+<link rel="Start" href="http://wiki.ubuntu-ir.org/FrontPage">
+<link rel="Alternate" title="زبان نوشتاری ویکی" href="http://wiki.ubuntu-ir.org/FarsiTeX?action=raw">
+<link rel="Alternate" media="print" title="مشاهده صفحه قابل چاپ" href="http://wiki.ubuntu-ir.org/FarsiTeX?action=print">
+<link rel="Appendix" title="sample_farsitex_file.ftx" href="http://wiki.ubuntu-ir.org/FarsiTeX?action=AttachFile&amp;do=view&amp;target=sample_farsitex_file.ftx">
+<link rel="Search" href="http://wiki.ubuntu-ir.org/FindPage">
+<link rel="Index" href="http://wiki.ubuntu-ir.org/TitleIndex">
+<link rel="Glossary" href="http://wiki.ubuntu-ir.org/WordIndex">
+<link rel="Help" href="http://wiki.ubuntu-ir.org/HelpOnFormatting"></head><body dir="rtl" lang="fa">
+
+<div id="header">
+<div id="mastwrap"><div id="masthead">
+
+<form id="searchform" method="get" action="">
+<div>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label style="display: none;" for="searchinput">جستجو:</label>
+<input class="disabled" id="searchinput" name="value" value="" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" type="text">
+<input disabled="disabled" id="titlesearch" name="titlesearch" value="عنوان" alt="Search Titles" type="submit">
+<input disabled="disabled" id="fullsearch" name="fullsearch" value="متن" alt="Search Full Text" type="submit">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<ul id="username"><li><a href="http://wiki.ubuntu-ir.org/FarsiTeX?action=login" id="login">ورود</a></li></ul>
+
+<div id="sisternav"> <br>
+<ul> <li id="plain"><a href="http://wiki.ubuntu-ir.org/Other">سایر فعالیت‌ها</a></li>
+<li id="plain"><a href="http://www.ubuntu-ir.org/irc">گپ
+و گفتگو</a></li> <li id="plain"><a href="http://forum.ubuntu-ir.org/" accesskey="t">انجمن‌ها<br>
+</a> </li> <li id="current"> <a href="http://wiki.ubuntu-ir.org/" accesskey="t">ویکی</a>
+</li> <li id="plain"> <a href="http://www.ubuntu-ir.org/" accesskey="t">اوبونتو</a>
+</li>
+</ul></div>
+</div></div>
+
+
+<ul id="navibar">
+
+</ul>
+
+
+<ul class="extranav">
+<li><a href="http://wiki.ubuntu-ir.org/RecentChanges">RecentChanges</a></li>
+<li><a href="http://wiki.ubuntu-ir.org/FindPage">FindPage</a></li>
+</ul>
+<ul class="editbar"><li><span class="disabled">صفحه غیرقابل تغییر</span></li><li><a href="http://wiki.ubuntu-ir.org/FarsiTeX?action=info">گزارشات</a></li><li><a href="http://wiki.ubuntu-ir.org/FarsiTeX?action=AttachFile">ضمیمه ها</a></li><li>
+<form class="actionsmenu" method="get" action="">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">امکانات بیشتر:</option><option value="raw">متن خام</option>
+<option value="print">مشاهده صفحه قابل چاپ</option>
+<option value="RenderAsDocbook">نمایش با ساختار XML</option>
+<option value="refresh">حذف حافظه جانبی</option>
+<option value="show" disabled="disabled" class="disabled">------------</option>
+<option value="SpellCheck">تصحیح املایی</option>
+<option value="LikePages">شبیه صفحات</option>
+<option value="LocalSiteMap">نقشه سایت محلی</option>
+<option value="show" disabled="disabled" class="disabled">------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">تغیر نام صفحه</option>
+<option value="DeletePage" disabled="disabled" class="disabled">حذف صفحه</option>
+<option value="show" disabled="disabled" class="disabled">------------</option>
+<option value="MyPages">صفحات من</option>
+<option value="SubscribeUser">عضویت کاربران در این صفحه</option>
+<option value="show" disabled="disabled" class="disabled">------------</option>
+<option value="Despam">حذف هرزصفحه</option>
+<option value="PackagePages">تهیه بسته صفحات</option>
+    </select>
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('امکانات بیشتر:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+<div id="page" dir="rtl" lang="fa">
+
+
+<ul id="pagelocation">
+<li><a class="backlink" title="جهت جستجوی کامل این موضوع در سایت کلیک نمایید" href="http://wiki.ubuntu-ir.org/FarsiTeX?action=fullsearch&amp;value=linkto%3A%22FarsiTeX%22&amp;context=180">FarsiTeX</a></li>
+</ul>
+<div dir="rtl" id="content" lang="fa"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h1 id="head-4a72e7f16213899eed6350f6cbfedb3cb2ddc754">راهنمای نصب فارسی تک در اوبونتو</h1>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line867">
+</p><h2 id="head-4ffa17331c7777a1ac0852c44e033d1d9e90032c">تاریخچه</h2>
+<span class="anchor" id="line-4"></span><p class="line874">فارسی‌تک
+اولین نرم‌افزار متن‌باز (Open Source)‌ ایرانی است. این ویرایشگر متن،
+نسخه‌ی فارسی شده‌ی TeX است (نرم افزاری که توسط Donald Knuth خالق
+کتاب‌های The Art of Computer Programming نوشته شده است) و در حال حاضر
+حدود ۱۵ سال است که روی آن کار می‌شود. از ویژگی‌های اصلی فارسی‌تک زیبایی
+متن خروجی، و به ارث بردن ویژگی‌های بی‌نظیر تولید فرمول‌های ریاضی از
+LaTeX در آن است. این نرم‌افزار ضمن این که بهترین گزینه برای ریاضی‌دانان
+،‌ فیزیک‌دانان و کامپیوتری‌ها (‌ما !!)‌ است، گزینه‌ی خوبی برای جایگزینی
+نرم‌افزارهای پردازش متن غیر قابل اطمینان فعلی می‌باشد. جهت کسب اطلاعات
+بیشتر به منابع مراجعه کنید. <span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span></p><p class="line874">اگر انگیزه ای برای نصب این نرم افزار ندارید می توانید به  <span class="anchor" id="line-7"></span><a class="http" href="http://wiki.ubuntu-ir.org/FarsiTeXSamples">این</a>  <span class="anchor" id="line-8"></span>صفحه مراجعه کنید مطماناً‌ با دیدن آن انگیزه ی لازم را پیدا خواهید کرد!!! <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span></p><p class="line867">
+</p><h2 id="head-25f3a5bf3350f9611803ae4a3e7329e7a1495451">نصب</h2>
+<span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><p class="line874">توجه : <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span></p><ul><li>قبل از شروع نصب این متن و ترجیحاً متن انگلیسی را یک بار به طور کامل بخوانید. <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></li><li class="gap">این تنظیمات روی سیستم عامل های اوبونتو ۷.۰۴ و ۷.۱۰  آزمایش شده است. <span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span></li><li class="gap">قبل از نصب مطمئن شوید که Wine و tetex را روی سیستمتان نصب کرده‌اید. <span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span></li></ul><p class="line874">برای نصب tetex می توانید بنویسید :  <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></p><p class="line867"><span class="anchor" id="line-23"></span></p><pre>sudo apt-get install texlive-latex-base
+<span class="anchor" id="line-24"></span></pre><span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><p class="line874">برای نصب wine هم بنویسید  <span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span></p><p class="line867"><span class="anchor" id="line-29"></span></p><pre>sudo apt-get install wine
+<span class="anchor" id="line-30"></span></pre><span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span><p class="line874">۱-ابتدا فایل tar. را دریافت کنید و آن را درون پوشه‌ی home خود کپی نمایید. <span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span></p><p class="line867"><span class="anchor" id="line-35"></span></p><pre>cd ~
+<span class="anchor" id="line-36"></span>wget
+<span class="anchor" id="line-37"></span>http://internap.dl.sourceforge.net/sourceforge/farsitex/farsitex-1.0pre1.tar.bz2
+<span class="anchor" id="line-38"></span>tar jxf farsitex-1.0pre1.tar.bz2
+<span class="anchor" id="line-39"></span></pre><span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span><p class="line874">۲- فایل را به درون PATH کپی کنید یا پیوند بسازید. <span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span></p><p class="line867"><span class="anchor" id="line-44"></span></p><pre>mkdir -p ~/bin
+<span class="anchor" id="line-45"></span>ln -f -s ~/texmf/source/farsitex/ftx2tex/ftx2tex ~/bin
+<span class="anchor" id="line-46"></span>ln -f -s ~/texmf/source/farsitex/fmakeidx/fmakeidx ~/bin
+<span class="anchor" id="line-47"></span>ln -f -s ~/texmf/scripts/farsitex/bin/* ~/bin
+<span class="anchor" id="line-48"></span></pre><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><p class="line874">۳-
+فایل farsitex.map را در مکان جدیدش که در زیر می بینید کپی کنید. بعد از
+این،‌ باید با همه ی نسخه‌های tetex کار کند. (چند پیغام هشدار مشاهده
+خواهید کرد و می‌توانید به سادگی آن‌ها را در نظر نگیرید) <span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span></p><p class="line867"><span class="anchor" id="line-53"></span></p><pre>mkdir -p ~/texmf/fonts/map/dvips
+<span class="anchor" id="line-54"></span>cp -r ~/texmf/dvips/farsitex ~/texmf/fonts/map/dvips
+<span class="anchor" id="line-55"></span></pre><span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><p class="line874">۴-نسخه‌های
+جدید tetex از موتور pdfeTeX به طور پیش فرض استفاده می‌کنند و فارسی‌تک
+آن را می‌یابد و خروجی PDF را فعال خواهد کرد از آن جا که این سرویس برای
+فارسی‌تک هنوز کامل نیست، باید آن را عوض کنید تا خروجی DVI تولید
+کند.برای این کار کافی است این دستورها را اجرا نمایید. <span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span></p><p class="line867"><span class="anchor" id="line-60"></span></p><pre>tail -n +2 ~/texmf/tex/farsitex/config/farsitex.ini &gt; ~/texmf/tex/farsitex/config/fadvitex.ini
+<span class="anchor" id="line-61"></span>echo "farsitex etex - *fadvitex.ini" &gt; ~/texmf/tetex/fmtutil.cnf
+<span class="anchor" id="line-62"></span>echo "fapdftex pdfetex - *farsitex.ini" &gt;&gt; ~/texmf/tetex/fmtutil.cnf
+<span class="anchor" id="line-63"></span></pre><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><p class="line874">۵- حالا پایگاه داده‌های فایل‌های tetex را با اجرای دستور texhash به روز نمایید. <span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span></p><p class="line874">۶- حالا کافی است فرمت‌ها را بسازید و تناظر بین نویسه‌ها را برقرار سازید. <span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span></p><p class="line867"><span class="anchor" id="line-70"></span></p><pre>fmtutil --cnffile ~/texmf/tetex/fmtutil.cnf --byfmt farsitex
+<span class="anchor" id="line-71"></span>fmtutil --cnffile ~/texmf/tetex/fmtutil.cnf --byfmt fapdftex
+<span class="anchor" id="line-72"></span>updmap --enable MixedMap=farsitex.map
+<span class="anchor" id="line-73"></span></pre><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span><p class="line874">۷-نصب کامل است!‌ می‌توانید نسخه‌ی جدید فارسی‌تک خود را آزمایش نمایید. <span class="anchor" id="line-77"></span><span class="anchor" id="line-78"></span></p><p class="line867"><span class="anchor" id="line-79"></span></p><pre>#
+<span class="anchor" id="line-80"></span>convert FTX to TeX
+<span class="anchor" id="line-81"></span>ftx2tex ~/texmf/doc/persian/farsitex/base/ftexthes/test.ftx
+<span class="anchor" id="line-82"></span># create DVI
+<span class="anchor" id="line-83"></span>farsitex ~/texmf/doc/persian/farsitex/base/ftexthes/test.tex
+<span class="anchor" id="line-84"></span># create PDF
+<span class="anchor" id="line-85"></span>fapdftex ~/texmf/doc/persian/farsitex/base/ftexthes/test.tex
+<span class="anchor" id="line-86"></span></pre><span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><p class="line874">اگر همه چیز به خوبی پیش رفته باشد این کار باید فایل test.dvi و خروجی PDF را با نویسه‌های زیبای برداری ایجاد نماید. <span class="anchor" id="line-89"></span>برای اطلاعات بیشتر می‌توانید فایل texmf/doc/persian/farsitex/base/ftexthes/ftexthes.pdf‍/~  را بخوانید. <span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span></p><p class="line867">
+</p><h2 id="head-f226ece94720b7f3b93387df24e51d07b09c0380">نصب ویرایشگر</h2>
+<span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><p class="line874">ویرایشگر
+فارسی تک با برنامه ی wine اجرا می شود( اگر از نسخه های قدیمی wine
+مثلاً‌ قدیمی تر از ۰.۹.۲۷ استفاده می کنید (‌که البته خیلی بعید است چون
+شما اوبونتوی ۷.۰۴ یا ۷.۱۰ دارید )‌قبل از شروع کار حتما آن را به روز
+نمایید.) <span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span></p><p class="line874">خب
+قبل از همه چیز ویرایشگر تحت ویندوز را دریافت کنید بعدش با wine آن را
+اجرا کنید(‌در همه ی مراحل فقط دگمه ی next را فشار دهید و در آخر هم دگمه
+ی finish را فشار دهید!) <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span></p><p class="line867"><span class="anchor" id="line-99"></span></p><pre>wget http://umn.dl.sourceforge.net/sourceforge/farsitex/farsitex-editor-alpha9.1.exe
+<span class="anchor" id="line-100"></span>wine farsitex-editor-alpha9.1.exe
+<span class="anchor" id="line-101"></span></pre><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><p class="line874">حالا باید نویسه های خاص ویرایشگر فارسی تک را دریافت کنید و در جای مناسب قرار دهید به این شکل: <span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span></p><p class="line867"><span class="anchor" id="line-106"></span></p><pre>wget http://farsitex.org/files/farsitex.fon
+<span class="anchor" id="line-107"></span>mv farsitex.fon ~/.wine/*/[Ww]indows/[Ff]onts/
+<span class="anchor" id="line-108"></span>rm -f ~/.wine/*/[Ww]indows/[Ff]onts/FarsiTeX.fon
+<span class="anchor" id="line-109"></span></pre><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><p class="line874">نصب
+کامل است می توانید یک shell script برای اجرا کردن ویرایشگر فارسی تک به
+این شکل بنویسید و آن را در PATH قرار دهید. به این شکل: <span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span></p><p class="line867"><span class="anchor" id="line-114"></span></p><pre>echo "wine ~/.wine/*/Program\ Files/MikTeX/miktex/bin/Ftexed.exe" &gt; ~/bin/ftexed
+<span class="anchor" id="line-115"></span>chmod a+x ~/bin/ftexed
+<span class="anchor" id="line-116"></span></pre><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><p class="line874">حالا
+حتی Wine نمایه ی فارسی تک را روی میز کارتان به وجود آورده است. می
+توانید با اجرای دستور ftexed نیز این ویرایشگر را اجرا کنید. <span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span></p><p class="line874">برای این که دستورات داخل محیط ویرایشگر( مانند ctrl + F9  برای کامپایل متن )‌ نیز کار کنند باید این script را اجرا نمایید. <span class="anchor" id="line-121"></span>برای دیدن  خروجی dvi.  از  برنامه ی xdvi استفاده شده است .  <span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span></p><p class="line867"><span class="anchor" id="line-124"></span></p><pre>wget http://farsitex.org/files/install-ftexed-cmd-launchers.sh
+<span class="anchor" id="line-125"></span>bash install-ftexed-cmd-launchers.sh
+<span class="anchor" id="line-126"></span></pre><span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><p class="line867">
+</p><h2 id="head-38dc2835be342d621deb8dbd4856e11d6cde8229">همه در یک جا</h2>
+<span class="anchor" id="line-129"></span><span class="anchor" id="line-130"></span><p class="line874">همه
+ی کارهای گفته شده درون یک shell script نوشته شده (توسط بهداد اسفهبد-یکی
+از برنامه نویسان فارسی تک-) و شما می توانید آن را دریافت و اجرا کنید.
+فقط توجه داشته باشید که برای این کار باید به اینترنت متصل باشید! <span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span></p><p class="line867"><span class="anchor" id="line-134"></span></p><pre>wget http://farsitex.org/files/install-farsitex-1.0pre1.sh
+<span class="anchor" id="line-135"></span>sh install-farsitex-1.0pre1.sh
+<span class="anchor" id="line-136"></span></pre><span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span><p class="line874">اگر
+قبلاً‌ فایل tar. را دریافت کرده اید یا اینترنت سریع ندارید و با روش های
+دیگری فایل ها را دریافت می کنید ( همان طور که احتما لا می دانید wget
+ویژگی هایی دارد که آن را خیلی کند می کند) لازم است فایل هایی که در
+script به صورت "wget "address دریافت می شوند را جداگانه دریافت کنید همه
+را درون یک پوشه قرار داده و سپس این script را هم درون همان پوشه کپی
+کرده خط هایی که wget دارند را پاک کنید و سپس آن را اجرا کنید. <span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span></p><p class="line867">
+</p><h2 id="head-b53955ed467d3ce0d2d464a23939f882b231de2a">رفع اشکالات احتمالی</h2>
+<span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span><p class="line862">اگر در نصب فارسی تک در اوبونتو مشکلی داشتید در اینجا بپرسید:  <a class="http" href="http://forum.ubuntu.ir/index.php?topic=2825.0">http://forum.ubuntu.ir/index.php?topic=2825.0</a>  <span class="anchor" id="line-146"></span><span class="anchor" id="line-147"></span></p><p class="line862">و برای رفع اشکالات احتمالی با فارسی تک می توانید به این گروه پستی مراجعه کنید:    <a class="https" href="https://lists.sourceforge.net/lists/listinfo/farsitex-user">https://lists.sourceforge.net/lists/listinfo/farsitex-user</a> و سوالات خود را مطرح سازید. <span class="anchor" id="line-148"></span><span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span></p><p class="line867">
+</p><h2 id="head-8694cd5469d37054c7942b7019b07a5757cae2f6">مراجع</h2>
+<span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span><p class="line862">تارگاه رسمی فارسی‌تک --&gt;  <a class="http" href="http://farsitex.org/">http://farsitex.org</a> <span class="anchor" id="line-153"></span><span class="anchor" id="line-154"></span></p><p class="line862">متن اصلی این مقاله نوشته‌ی مهندس بهداد اسفهبد (به زبان انگلیسی) --&gt; <a class="http" href="http://farsitex.org/index.php?page=linux.inc">http://farsitex.org/index.php?page=linux.inc</a> <span class="anchor" id="line-155"></span><span class="anchor" id="line-156"></span></p><p class="line862">تارنوشتی برای کسانی که می‌خواهند با فارسی‌تک همکاری کنند:‌ <a class="http" href="http://texfusion.blogfa.com/">http://texfusion.blogfa.com</a> <span class="anchor" id="line-157"></span><span class="anchor" id="line-158"></span></p><p class="line862">تارگاهی برای آموزش فارسی‌تک <a class="http" href="http://farsitex.blogfa.com/">http://farsitex.blogfa.com</a> <span class="anchor" id="line-159"></span><span class="anchor" id="bottom"></span></p></div><p id="pageinfo" class="info" dir="rtl" lang="fa">ubuntu-ir wiki: FarsiTeX  (آخرین بروزآوری 07-01-2008 14:29:16 توسط <span title="محمدرضا بوذری @ 87.107.196.251[87.107.196.251]"><a href="http://wiki.ubuntu-ir.org/MohammadBoozary" title="محمدرضا بوذری @ 87.107.196.251[87.107.196.251]">MohammadBoozary</a></span>)</p>
+
+</div> <!-- of contentColumn & inside -->
+<div class="clear mozclear"></div>
+ <!-- of outerColumnContainer & innerColumnContainer -->
+<div id="footer" class="inside">
+
+
+  <div id="ubuntulinks">
+     <a href="http://www.ubuntu.com/">Ubuntu</a> and Canonical are registered trademarks of <a href="http://www.canonical.com/">Canonical Ltd</a>.<br>
+
+
+     Copyright 2006-2007 Iranian Ubuntu Team <br>
+     www.ubuntu.ir ©
+  </div>
+
+</div></body></html>

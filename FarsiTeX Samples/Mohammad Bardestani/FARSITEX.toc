@@ -1,0 +1,9 @@
+\contentsline {chapter}{\numberline {\beginL {1}\endL }õ\tireh Ö\tireh Àõ\tireh ‚ ÷\tireh ş\tireh Æ\tireh €\tireh Àù}{{\beginL \protect \pnazokxpt 3\endL }}
+\contentsline {chapter}{\numberline {\beginL {2}\endL }—\tireh ‘¤ş\tireh ¿\tireh »\tireh {\accent '142 ‚} \insertenglish {}$T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX$\endenglish {}}{{\beginL \protect \pnazokxpt 5\endL }}
+\contentsline {chapter}{\numberline {\beginL {3}\endL }ª\tireh Ø\tireh Û î\tireh Ü\tireh ü õ\tireh µ\tireh ß}{{\beginL \protect \pnazokxpt 7\endL }}
+\contentsline {chapter}{\numberline {\beginL {4}\endL }õ\tireh ·\tireh ‘ñû\tireh ‘}{{\beginL \protect \pnazokxpt 17\endL }}
+\contentsline {chapter}{\numberline {\beginL {5}\endL }ª\tireh Âøá î\tireh ‘¤}{{\beginL \protect \pnazokxpt 23\endL }}
+\contentsline {chapter}{\numberline {\beginL {6}\endL }ì\tireh Ü\tireh Ş\tireh ú\tireh ‘ ø ÷\tireh À¥ùû\tireh ‘ı ÷\tireh ú\tireh ‘ ¢¤ ê\tireh ‘¤\kern -0.1em¨\tireh ü\penalty \@M \ \kern -0.63em\raise 0.15em\hbox {\kasre —\tireh ×}}{{\beginL \protect \pnazokxpt 29\endL }}
+\contentsline {chapter}{\numberline {\beginL {7}\endL }ê\tireh Âõ\tireh ñ ÷\tireh ş\tireh Æ\tireh ü ¢¤ ê\tireh ‘¤\kern -0.1em¨\tireh ü\penalty \@M \ \kern -0.63em\raise 0.15em\hbox {\kasre —\tireh ×}}{{\beginL \protect \pnazokxpt 33\endL }}
+\contentsline {chapter}{\numberline {\beginL {8}\endL }ä\tireh Ş\tireh Ü\tireh Ú\tireh Âû\tireh ‘ı ¤ş\tireh ‘®\tireh ü}{{\beginL \protect \pnazokxpt 39\endL }}
+\contentsline {chapter}{\numberline {\beginL {9}\endL }—\tireh ‘ş\tireh ² •\tireh ƒ\tireh È\tireh Âê\tireh µ\tireh ‚ ¤ş\tireh ‘®\tireh ü}{{\beginL \protect \pnazokxpt 43\endL }}

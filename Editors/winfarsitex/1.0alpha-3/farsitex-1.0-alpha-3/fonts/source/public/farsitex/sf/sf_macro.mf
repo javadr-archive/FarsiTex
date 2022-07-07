@@ -1,0 +1,741 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+%******************************************************************************
+%*                       B A S I C   O P E R A T I O N S                      *
+%******************************************************************************
+define_pixels(paren_height, math_axis, gume_height);
+define_whole_pixels(horiz_width);
+define_whole_blacker_pixels(dot_size);
+define_whole_vertical_pixels(body_height, body_depth);
+
+define_pixels(yek_start_width, yek_tail_width, num_height, haft_lstart_width,
+	      haft_rstart_width);
+
+define_pixels(startpenwidth_tooth_be  ,
+	      startpenwidth_tooth_fbe ,
+	      startpenwidth_tooth_bhe ,
+	      startpenwidth_tooth_sin ,
+	      startpenwidth_tooth_he  ,
+	      startpenwidth_tooth_re  ,
+	      startpenwidth_dal);
+
+define_pixels(mein_r_neckwidth, mein_l_neckwidth, ein_r_width,
+	      ein_neck_width, mein_neck_width, ein_xtail_length);
+
+define_pixels(mim_rneckwidth, mim_tneckwidth, mim_lneckwidth, mim_dneckwidth,
+	      mmim_rneckwidth,mmim_tneckwidth,mmim_lneckwidth,mmim_dneckwidth,
+	      lmim_rneckwidth,lmim_lneckwidth,bmim_mheadwidth,bmim_eheadwidth,
+	      mim_ttailwidth);
+
+define_pixels(vav_rneckwidth, vav_lneckwidth, vav_tneckwidth,
+	      lvav_rneckwidth, lvav_lneckwidth, lvav_tneckwidth,
+	      vav_height, lvav_height, re_end_length);
+
+define_pixels(he_tneckwidth,  he_lneckwidth,  he_bneckwidth, he_trneckwidth,
+	      he_brneckwidth, bhe_rneckwidth, bhe_eneckwidth,
+	      lhe_topwidth,   lhe_tneckwidth, lhe_lneckwidth);
+
+define_pixels(ye_tneckwidth, ye_bneckwidth, lye_tneckwidth, lye_mneckwidth);
+
+define_pixels(kaf_neck_width, kaf_s_head_width, kaf_e_head_width,
+	      kaf_t_width, kaf_m_width, gaf_s_head_width, gaf_e_head_width);
+
+define_pixels(ghaf_rneckwidth, ghaf_lneckwidth, ghaf_tneckwidth);
+
+%*******
+define_whole_pixels(lam_neck_width, lam_diff);
+
+define_pixels(fbe_neck_width, sin_neck_width, sad_neck_width, jim_neck_width,
+	      bigjim_neck_width, re_neck_width, dal_neck_width, he_neck_width);
+
+define_pixels(dal_end_height, dal_end_width);
+
+define_pixels(re_end_length, re_tail_width);
+
+define_pixels(jim_tail_startwidth, jim_tail_endwidth, jim_xtail_length,
+	      jim_xtail_width, jim_conection_width);
+%**********
+  define_whole_pixels(alef_head_width, alef_width, alef_diff);
+
+define_pixels(left_tooth_length, left_tooth_height, tooth_width);
+
+define_pixels(point_radius, point_corn_rad);
+
+define_pixels(ending_width, arc_width);
+define_pixels(tiny, num_width, erab_width, fine, rule);
+define_pixels(u, v);
+
+tiny                    := tiny                    *(fontsize/153)*bolding;
+tooth_width             := tooth_width             *(fontsize/153)*bolding;
+num_width               := num_width               *(fontsize/153)*bolding;
+erab_width              := erab_width              *(fontsize/153)*bolding;
+fine                    := fine                    *(fontsize/153)*bolding;
+rule                    := rule                    *(fontsize/153)*bolding;
+
+yek_start_width         := yek_start_width         *(fontsize/153)*bolding;
+yek_tail_width          := yek_tail_width          *(fontsize/153)*bolding;
+do_tooth_width          := do_tooth_width          *(fontsize/153)*bolding;
+se_tooth_width          := se_tooth_width          *(fontsize/153)*bolding;
+haft_lstart_width       := haft_lstart_width       *(fontsize/153)*bolding;
+haft_rstart_width       := haft_rstart_width       *(fontsize/153)*bolding;
+ein_neck_width          := ein_neck_width          *(fontsize/153)*bolding;
+mein_neck_width         := mein_neck_width         *(fontsize/153)*bolding;
+ein_xtail_length        := ein_xtail_length        *(fontsize/153);
+mein_r_neckwidth        := mein_r_neckwidth        *(fontsize/153)*bolding;
+mein_l_neckwidth        := mein_l_neckwidth        *(fontsize/153)*bolding;
+ein_r_width             := ein_r_width             *(fontsize/153)*bolding;
+startpenwidth_tooth_be  := startpenwidth_tooth_be  *(fontsize/153)*bolding;
+startpenwidth_tooth_fbe := startpenwidth_tooth_fbe *(fontsize/153)*bolding;
+startpenwidth_tooth_bhe := startpenwidth_tooth_bhe *(fontsize/153)*bolding;
+startpenwidth_tooth_sin := startpenwidth_tooth_sin *(fontsize/153)*bolding;
+startpenwidth_tooth_re  := startpenwidth_tooth_re  *(fontsize/153)*bolding;
+startpenwidth_tooth_noon:= startpenwidth_tooth_noon*(fontsize/153)*bolding;
+startpenwidth_tooth_he  := startpenwidth_tooth_he  *(fontsize/153)*bolding;
+startpenwidth_dal       := startpenwidth_dal       *(fontsize/153)*bolding;
+ending_width            := ending_width            *(fontsize/153)*bolding;
+arc_width               := arc_width               *(fontsize/153)*bolding;
+
+left_tooth_length       := left_tooth_length       *(fontsize/153);
+left_tooth_height       := left_tooth_height       *(fontsize/153);
+fbe_neck_width          := fbe_neck_width          *(fontsize/153)*bolding;
+sin_neck_width          := sin_neck_width          *(fontsize/153)*bolding;
+sad_neck_width          := sad_neck_width          *(fontsize/153)*bolding;
+he_neck_width           := he_neck_width           *(fontsize/153)*bolding;
+jim_neck_width          := jim_neck_width          *(fontsize/153)*bolding;
+bigjim_neck_width       := bigjim_neck_width       *(fontsize/153)*bolding;
+jim_tail_startwidth     := jim_tail_startwidth     *(fontsize/153)*bolding;
+jim_tail_endwidth       := jim_tail_endwidth       *(fontsize/153)*bolding;
+jim_xtail_length        := jim_xtail_length        *(fontsize/153);
+jim_xtail_width         := jim_xtail_width         *(fontsize/153)*bolding;
+jim_conection_width     := jim_conection_width     *(fontsize/153)*bolding;
+alef_head_width         := alef_head_width         *(fontsize/153)*bolding;
+alef_width              := alef_width              *(fontsize/153)*bolding;
+alef_low_width          := alef_low_width          *(fontsize/153)*bolding;
+alef_diff               := alef_diff               *(fontsize/153);
+re_end_length           := re_end_length           *(fontsize/153);
+re_tail_width           := re_tail_width           *(fontsize/153)*bolding;
+re_neck_width           := re_neck_width           *(fontsize/153)*bolding;
+dal_neck_width          := dal_neck_width          *(fontsize/153)*bolding;
+dal_end_width           := dal_end_width           *(fontsize/153)*bolding;
+vav_rneckwidth          := vav_rneckwidth          *(fontsize/153)*bolding;
+vav_lneckwidth          := vav_lneckwidth          *(fontsize/153)*bolding;
+vav_tneckwidth          := vav_tneckwidth          *(fontsize/153)*bolding;
+lvav_rneckwidth         := lvav_rneckwidth         *(fontsize/153)*bolding;
+lvav_lneckwidth         := lvav_lneckwidth         *(fontsize/153)*bolding;
+lvav_tneckwidth         := lvav_tneckwidth         *(fontsize/153)*bolding;
+lam_neck_width          := lam_neck_width          *(fontsize/153)*bolding;
+ghaf_rneckwidth         := ghaf_rneckwidth         *(fontsize/153)*bolding;
+ghaf_lneckwidth         := ghaf_lneckwidth         *(fontsize/153)*bolding;
+ghaf_tneckwidth         := ghaf_tneckwidth         *(fontsize/153)*bolding;
+kaf_neck_width          := kaf_neck_width          *(fontsize/153)*bolding;
+kaf_s_head_width        := kaf_s_head_width        *(fontsize/153)*bolding;
+kaf_e_head_width        := kaf_e_head_width        *(fontsize/153)*bolding;
+kaf_t_width             := kaf_t_width             *(fontsize/153)*bolding;
+kaf_m_width             := kaf_m_width             *(fontsize/153)*bolding;
+gaf_s_head_width        := gaf_s_head_width        *(fontsize/153)*bolding;
+gaf_e_head_width        := gaf_e_head_width        *(fontsize/153)*bolding;
+mim_rneckwidth          := mim_rneckwidth          *(fontsize/153)*bolding;
+mim_tneckwidth          := mim_tneckwidth          *(fontsize/153)*bolding;
+mim_lneckwidth          := mim_lneckwidth          *(fontsize/153)*bolding;
+mim_dneckwidth          := mim_dneckwidth          *(fontsize/153)*bolding;
+mmim_rneckwidth         := mmim_rneckwidth         *(fontsize/153)*bolding;
+mmim_tneckwidth         := mmim_tneckwidth         *(fontsize/153)*bolding;
+mmim_lneckwidth         := mmim_lneckwidth         *(fontsize/153)*bolding;
+mmim_dneckwidth         := mmim_dneckwidth         *(fontsize/153)*bolding;
+lmim_rneckwidth         := lmim_rneckwidth         *(fontsize/153)*bolding;
+lmim_lneckwidth         := lmim_lneckwidth         *(fontsize/153)*bolding;
+mim_ttailwidth          := mim_ttailwidth          *(fontsize/153)*bolding;
+bmim_mheadwidth         := bmim_mheadwidth         *(fontsize/153)*bolding;
+bmim_eheadwidth         := bmim_eheadwidth         *(fontsize/153)*bolding;
+he_tneckwidth           := he_tneckwidth           *(fontsize/153)*bolding;
+he_lneckwidth           := he_lneckwidth           *(fontsize/153)*bolding;
+he_bneckwidth           := he_bneckwidth           *(fontsize/153)*bolding;
+he_trneckwidth          := he_trneckwidth          *(fontsize/153)*bolding;
+he_brneckwidth          := he_brneckwidth          *(fontsize/153)*bolding;
+bhe_rneckwidth          := bhe_rneckwidth          *(fontsize/153)*bolding;
+bhe_eneckwidth          := bhe_eneckwidth          *(fontsize/153)*bolding;
+lhe_topwidth            := lhe_topwidth            *(fontsize/153)*bolding;
+lhe_tneckwidth          := lhe_tneckwidth          *(fontsize/153)*bolding;
+lhe_lneckwidth          := lhe_lneckwidth          *(fontsize/153)*bolding;
+ye_tneckwidth           := ye_tneckwidth           *(fontsize/153)*bolding;
+ye_bneckwidth           := ye_bneckwidth           *(fontsize/153)*bolding;
+lye_tneckwidth          := lye_tneckwidth          *(fontsize/153)*bolding;
+lye_mneckwidth          := lye_mneckwidth          *(fontsize/153)*bolding;
+point_radius            := point_radius            *(fontsize/153)*bolding;
+point_corn_rad          := point_corn_rad          *(fontsize/153)*bolding;
+dal_end_height          := dal_end_height          *(fontsize/153);
+vav_height              := vav_height              *(fontsize/153);
+lvav_height             := lvav_height             *(fontsize/153);
+lam_diff                := lam_diff                *(fontsize/153);
+
+
+vardef stroke text t =
+ forsuffixes e = l,r: path_.e:=t; endfor
+ if cycle path_.l:
+  errmessage "Beware: `stroke' isn't intended for cycles"; fi
+ path_.l -- reverse path_.r -- cycle enddef;
+
+let {{=begingroup; let }}=endgroup;
+def .... = .. tension atleast .9 .. enddef;
+def less_tense = save ...; let ...=.... enddef;
+def ?? = hide(showvariable x,y) enddef;
+
+def adjust_fit(expr left_adjustment,right_adjustment) =
+  l:=-hround(left_adjustment*hppp);
+  interim xoffset:=-l;
+  charwd:=charwd+left_adjustment+right_adjustment;
+  r:=l+hround(charwd*hppp);
+  w:=r-hround(right_adjustment*hppp);
+enddef;
+
+
+def draw_baseline =
+% pickup pencircle; draw (0,0)--(w,0);
+pickup pencircle;
+draw (l,0)--(l,h)--(r,h)--(r,0)--(l,0)--(l,-d)--(r,-d)--(r,0);
+
+%pickup pencircle;draw (0,0)--(0,h)--(w,h)--(w,0)--(0,0)--(0,-d)--(w,-d)--(w,0);
+enddef;
+
+extra_endchar:=extra_endchar&"w:=r-l;";
+currenttransform := currenttransform slanted slant;
+
+pickup pencircle scaled tiny       ;  tiny_pen  := savepen;
+pickup pencircle scaled tooth_width;  tooth_pen := savepen;
+pickup pencircle scaled num_width  ;  num_pen   := savepen;
+pickup pencircle scaled erab_width ;  erab_pen  := savepen;
+pickup pencircle scaled fine       ;  fine_pen  := savepen;
+pickup pencircle scaled rule       ;  rule_pen  := savepen;
+
+
+superness:=1/sqrt2;
+superpull:=1/6;
+more_super:=max(superness,sqrt .77superness);
+newinternal superness,superpull;
+vardef super_arc.r(suffix $,$$) = % outside of super-ellipse
+ pair center,corner;
+ if y$=y$r: center=(x$$r,y$r); corner=(x$r,y$$r);
+ else: center=(x$r,y$$r); corner=(x$$r,y$r); fi
+ z$.r{corner-z$.r}...superness[center,corner]{z$$.r-z$.r}
+  ...{z$$.r-corner}z$$.r enddef;
+
+vardef super_arc.l(suffix $,$$) = % inside of super-ellipse
+ pair center,corner;
+ if y$=y$r: center=(x$$l,y$l); corner=(x$l,y$$l);
+ else: center=(x$l,y$$l); corner=(x$$l,y$l); fi
+ z$l{corner-z$l}...superness[center,corner]{z$$l-z$l}
+  ...{z$$l-corner}z$$l enddef;
+
+vardef pulled_super_arc.r(suffix $,$$)(expr superpull) =
+ pair center,corner;
+ if y$=y$r: center=(x$$r,y$r); corner=(x$r,y$$r);
+ else: center=(x$r,y$$r); corner=(x$$r,y$r); fi
+ z$r{corner-z$r}...superness[center,corner]{z$$r-z$r}
+  ...{z$$r-corner}z$$r enddef;
+
+vardef pulled_super_arc.l(suffix $,$$)(expr superpull) =
+ pair center,corner,outer_point;
+ if y$=y$r: center=(x$$l,y$l); corner=(x$l,y$$l);
+  outer_point=superness[(x$$r,y$r),(x$r,y$$r)];
+ else: center=(x$l,y$$l); corner=(x$$l,y$l);
+  outer_point=superness[(x$r,y$$r),(x$$r,y$r)]; fi
+ z$l{corner-z$l}
+  ...superpull[superness[center,corner],outer_point]{z$$l-z$l}
+  ...{z$$l-corner}z$$l enddef;
+
+def bulb(suffix $,$$,$$$) =
+ z$$$r=z$$r;
+ path_.l:=z$l{x$$r-x$r,0}...{0,y$$r-y$r}z$$l;
+ filldraw path_.l--z$$r{0,y$r-y$$r}...{x$r-x$$r,0}z$r--cycle; % link
+ path_.r:=z$$$l{0,y$r-y$$r}..z$$$r{0,y$$r-y$r}; % near-circle
+ filldraw subpath(0,xpart(path_.r intersectiontimes path_.l)) of path_.r
+  --z$$r{0,y$$r-y$r}..cycle; % bulb
+ enddef;
+
+
+def circle_points =
+  mm:=1/sqrt2;
+  x4=x8=.5[x2,x6]; x1=x3=mm[x4,x2]; x5=x7=mm[x4,x6];
+  y2=y6=.5[y4,y8]; y1=y7=mm[y2,y8]; y3=y5=mm[y2,y4];
+enddef;
+
+def draw_circle =
+  draw z8{right}...z1{z2-z8}...z2{down}...z3{z4-z2}...z4{left}
+       ...z5{z6-z4}...z6{up}...z7{z8-z6}...cycle;
+enddef;
+
+%****************************** DefPos LT LB TR BR **********************
+vardef defpos_lt@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := cosd ang;
+  if ttemp > 0 :
+    lft x@#.l = hround(a-sb/2*ttemp); 
+    top y@#.r = vround(b+sb/2*sind ang);
+  else:
+    lft x@#.r = hround(a+sb/2*ttemp); 
+    top y@#.l = vround(b-sb/2*sind ang);
+  fi;
+enddef;
+
+vardef defpos_lb@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := cosd ang;
+  if ttemp > 0 :
+    lft x@#.l = hround(a-sb/2*ttemp); 
+    bot y@#.r = vround(b+sb/2*sind ang);
+  else:
+    lft x@#.r = hround(a+sb/2*ttemp); 
+    bot y@#.l = vround(b-sb/2*sind ang);
+  fi; 
+enddef;
+
+vardef defpos_tr@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := cosd ang;
+  if ttemp > 0 :
+    rt  x@#.r = hround(a+sb/2*ttemp); 
+    top y@#.l = vround(b-sb/2*sind ang);
+  else:
+    rt  x@#.l = hround(a-sb/2*ttemp); 
+    top y@#.r = vround(b+sb/2*sind ang);
+  fi; 
+enddef;
+
+vardef defpos_br@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := cosd ang;
+  if ttemp > 0 :
+    rt  x@#.r = hround(a+sb/2*ttemp); 
+    bot y@#.l = vround(b-sb/2*sind ang);
+  else:
+    rt  x@#.l = hround(a-sb/2*ttemp);
+    bot y@#.r = vround(b+sb/2*sind ang);
+  fi; 
+enddef;
+
+%***************************** DefPos Horiz & Vert *************************
+vardef defpos_hr@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := cosd ang;
+  if ttemp > 0 :
+    rt x@#.r = hround(a+sb/2*ttemp);
+  else:
+    rt x@#.l = hround(a-sb/2*ttemp);
+  fi;
+  y@# = b;
+enddef;
+
+vardef defpos_hl@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := cosd ang;
+  if ttemp > 0 :
+    lft x@#.l = hround(a-sb/2*ttemp);
+  else:
+    lft x@#.r = hround(a+sb/2*ttemp);
+  fi;
+  y@# = b;
+enddef;
+
+vardef defpos_vt@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := sind ang;
+  if ttemp > 0 :
+    top y@#.r = vround(b+sb/2*ttemp);
+  else:
+    top y@#.l = vround(b-sb/2*ttemp);
+  fi;
+  x@# = a;
+enddef;
+
+vardef defpos_vb@#(expr a,b,sb,ang) =
+  penpos@#(max(sb-tiny,0), ang);
+  ttemp := sind ang;
+  if ttemp > 0 :
+    bot y@#.l = vround(b-sb/2*ttemp);
+  else:
+    bot y@#.r = vround(b+sb/2*ttemp);
+  fi;
+  x@# = a;
+enddef;
+
+%******************************************************************************
+%*                    Macros Usful In Design Of Typefaces                     *
+%******************************************************************************
+def endingup_arc(suffix $,$$)(expr endingup_dir) =
+  pickup tiny_pen;
+  ang1:=startdir_endingup-90;
+  ang2:=270+endingup_dir;
+  x$$:=max(x$$,x$$*bolding);
+  defpos_vb2$(x$,y$,arc_width,ang1);
+%  penpos2$(arc_width-tiny,ang1);
+%  x2$=x$; y2$=y$;
+  defpos_tr2$$(x$$,y$$,ending_width,ang2);
+%  penpos2$$(max(ending_width-tiny,0),ang2);
+%  lft x2$$.l = hround(x$$-ending_width/2*cosd ang2);
+%  top y2$$.l = vround(y$$-ending_width/2*sind ang2);
+  filldraw stroke z2$e{dir startdir_endingup}..tension .8 and 1..
+					     {dir endingup_dir} z2$$e;
+enddef;
+
+def horiz_mid_arc (suffix $,$$)(expr start_dir,start_penang) =
+ begingroup
+  interim autorounding:=1;
+  pickup tiny_pen;
+%  penpos3$(arc_width-tiny, start_penang);
+  defpos_vb3$(x$,y$,arc_width, start_penang);
+  ang := startdir_endingup-90;
+  defpos_vb3$$(x$$,y$$,arc_width,ang);
+%  penpos3$$(arc_width-tiny,ang);
+%  x3$$=x$$; y3$$=y$$;
+%  x3$  = x$;            y3$    = y$;
+  filldraw stroke z3$e {dir start_dir}..tension 1 and 1.25..
+		  {dir startdir_endingup} z3$$e;
+ endgroup;
+enddef;
+
+def toothstart_be_noon (suffix $,$$)(expr end_dir,end_penang) =
+  pickup tiny_pen;
+  ang := end_penang+180;
+  defpos_lt4$(x$,y$,startpenwidth_tooth_be,startpenang_tooth_noon);
+%  penpos4$$(arc_width-tiny, ang);
+  defpos_vb4$$(x$$,y$$,arc_width, ang);
+%      x4$$  = x$$;                           y4$$  = y$$;
+  filldraw stroke z4$e {dir startdir_tooth_be}...{dir end_dir} z4$$e;
+enddef;
+
+def dos (suffix $)(expr extra_bar) =       % (width = 26.5u)
+  x200:=20.4u;
+  y200:=5.6v;
+  x201:=20.4u;
+  y201:=-6.4v;
+  toothstart_be_noon(200,201,horizmiddir_noon_group,horizmidpenang_noon_group);
+  x202:=7.2u;
+  y202:=-9.4v;
+  horiz_mid_arc(201,202,horizmiddir_noon_group, horizmidpenang_noon_group);
+  x203:=3.399u;
+  y203:=3.2v;
+  endingup_arc(202,203,endingupdir_noon_group);
+  defpos_lt204(x200,y200,startpenwidth_tooth_be,startpenang_tooth_noon);
+  right_conection($, 204, extra_bar, startdir_tooth_be-180);
+enddef;
+
+def sad (suffix $) =        % First part of sad, zad, ta and za. (width = 23u)
+smoothing:=2;
+  pickup tiny_pen;
+  x2$:=x$;
+  y2$:=horiz_width/2;
+  defpos_hl2$1(x2$+3.2u,4.2v,ending_width, startang_sad);
+  defpos_vt2$2(x2$+19u,13.5v,arc_width, sad_ang);
+  defpos_hr2$3(x2$+20.4u,7.5v,sad_neck_width, sad_neck_penang+180);
+  penpos2$(horiz_width-tiny, 270);
+  filldraw stroke z2$1e {dir (startang_sad-90)}..z2$2e{dir (sad_ang-90)}
+                  .. z2$3e {dir (sad_neck_penang+90)}...{left} z2$e;
+  if sad_extra :
+    defpos_lb2$0(x2$,-1.6v,1.06ending_width, 172);
+    filldraw stroke z2$0e ...{dir (startang_sad-90)} z2$1e;
+  fi;
+  if conection :
+    if sad_ortho_conection :
+      x2$4:=x2$+25.7u;
+      x2$5:=x2$+12.1u;        y2$5:=1.35v;
+      x2$6:=x2$5-2.5u;        y2$6:=y2$5;
+      penpos2$5(.6horiz_width-tiny, 14);
+      penpos2$6(.6horiz_width-tiny, 14);
+      right_conection(2$4, 2$5, r_extra_bar, 180);
+      filldraw stroke z2$5e--z2$6e;
+    else :
+      show "U N D E F I N E D .. S H A P E ....."
+    fi;
+  fi;
+smoothing:=0;
+enddef;
+
+def right_conection(suffix $, $$)(expr extra_bar, conect_dir) =
+  pickup tiny_pen;
+  x1$ := x$;
+  y1$ := horiz_width/2;
+  penpos1$(horiz_width-tiny, 90);
+  x1$0 := x1$ + extra_bar;
+  y1$0 := y1$;
+  penpos1$0(horiz_width-tiny, 90);
+  filldraw stroke z1$0e--z1$e {left}...{dir conect_dir} z$$e;
+enddef;
+
+def left_conection(suffix $, $$)(expr extra_bar, conect_dir) =
+  x1$ := x$;
+  pickup tiny_pen;
+  y1$ := horiz_width/2;
+  penpos1$(horiz_width-tiny, 90);
+  x1$0 := x1$ - extra_bar;
+  y1$0 := y1$;
+  penpos1$0(horiz_width-tiny, 90);
+  filldraw stroke z1$0e--z1$e {right}...{dir (conect_dir-180)} z$$e;
+enddef;
+
+%******************************* Tooth Group ********************************
+def left_tooth(suffix $)(expr extra_bar) =
+  x3$ := x$;
+  pickup tooth_pen;
+  y3$ := horiz_width/2;
+  penpos3$(horiz_width-tooth_width, 90);
+  x3$0 := x3$ - extra_bar;
+  y3$0 := y3$;
+  penpos3$0(horiz_width-tooth_width, 90);
+  x3$1 := x3$+left_tooth_length;
+  penpos3$1(horiz_width-tooth_width, tooth_ang);
+  top y3$1.r = vround(left_tooth_height);
+  direction_tooth := tooth_ang-5;
+  filldraw stroke z3$0e--z3$e {right}...{dir direction_tooth} z3$1e;
+enddef;
+
+def tooth_right_conection(suffix $, $$)(expr extra_bar) =
+  x2$ := x$;
+  pickup tooth_pen;
+  y2$ := horiz_width/2;
+  penpos2$(horiz_width-tooth_width, 90);
+  x2$0 := x2$ + extra_bar;
+  y2$0 := y2$;
+  penpos2$0(horiz_width-tooth_width, 90);
+  filldraw stroke z2$0e--z2$e {left}...{dir (tooth_ang+20)} z$$e;
+enddef;
+
+def mid_tooth(suffix $, $$) =
+  x4$ := x$;
+  pickup tooth_pen;
+  dd := arc_width*(1-sind(midang_tooth))/2;
+  y4$ := arc_width/2+dd;
+  penpos4$(arc_width-tooth_width, midang_tooth);
+  direction_tooth := tooth_ang-5;
+  temp_startdir := midang_tooth - 90;
+  filldraw stroke z4$e {dir temp_startdir}...{dir direction_tooth} z$$e;
+enddef;
+
+def mid_tooth_conection(suffix $, $$) =
+  x1$ := x$;
+  pickup tooth_pen;
+  dd := arc_width*(1-sind(midang_tooth))/2;
+  y1$ := arc_width/2+dd;
+  penpos1$(arc_width-tooth_width, midang_tooth);
+  temp_startdir := midang_tooth + 90;
+  filldraw stroke z1$e {dir temp_startdir}...{dir (tooth_ang+20)} z$$e;
+enddef;
+
+def fsin_first_tooth(suffix $) =
+  x6$ := x$;
+  pickup tiny_pen;
+  x6$3 := x6$+2.542u;
+  dd := arc_width*(1-sind(midang_tooth))/2;
+  y6$3 := arc_width/2+dd+.5v;
+  ang := sin_neck_penang+180;
+  defpos_lt6$1(x6$3+2.5u,11.2v,startpenwidth_tooth_sin,startpenang_tooth_sin);
+  penpos6$2(sin_neck_width-tiny, ang);
+  lft x6$2.l = hround(lft x6$1l+startpenwidth_tooth_sin/2*cosd ang+0.6u-sin_neck_width/2);
+      y6$2   = 6.4v;
+  neck_dir := sin_neck_penang+90;
+  filldraw stroke z6$1e {dir startdir_tooth_sin}...{dir neck_dir} z6$2e;
+  penpos6$3(arc_width-tiny, midang_tooth+180);
+  temp_startdir := midang_tooth + 90;
+  filldraw stroke z6$2e {dir neck_dir}...{dir temp_startdir} z6$3e;
+  pickup tooth_pen;
+  
+  x6$6:=x6$3;
+  y6$6:=y6$3;
+  ang := tooth_ang;
+  penpos6$6(arc_width-tooth_width, ang);
+  penpos6$(horiz_width-tooth_width, tooth_ang);
+  top y6$.r = vround(left_tooth_height);
+  filldraw stroke z6$6e {dir temp_startdir}...{dir (tooth_ang+20)} z6$e;
+enddef;
+
+def jim_conection(suffix $)(expr extra_bar) =        % Width = 8.5mm+extra_bar
+  if jim_ortho_conection:
+    x20:=x$+8.4u;        y20:=horiz_width/2;
+    x21:=x20+extra_bar;  y21:=horiz_width/2;
+    x22:=x$+1.6v;        y22:=horiz_width/2+.435v;
+    penpos20(horiz_width-tiny, 90);
+    penpos21(horiz_width-tiny, 90);
+    penpos22(.9horiz_width-tiny, 58);
+    filldraw stroke z21e{left}...z20e{left}...z22e...{up}z$e;
+  else:
+    show "U N D E F I N E D .. S H A P E ....."
+  fi;
+enddef;
+
+def one_point(suffix $) =
+  rot:= point_rotation_ang;
+  a  := 2point_radius*sind(point_top_ang/2);
+  b  := 2point_radius*cosd(point_top_ang/2);
+  tpw1 := floor(2*(a-point_corn_rad));
+  tpw2 := floor(2*(b-point_corn_rad));
+  tpw11 := (if tpw1 mod 2=0 : tpw1 else: tpw1+1 fi);  
+  tpw22 := (if tpw2 mod 2=0 : tpw2 else: tpw2+1 fi);  
+  pickup pencircle scaled 2point_corn_rad;
+  penpos4$1(tpw11-2eps, rot);
+  penpos4$2(tpw22-2eps, rot+90);
+  a' := (tpw11/2)*cosd(rot);
+  b' := (tpw22/2)*cosd(rot);
+  lft x4$1.l = hround(x$-a')+eps;
+  bot y4$2.l = vround(y$-b')+eps;
+  z4$1 = z4$2;
+  filldraw z4$2.r--z4$1.l--z4$2.l--z4$1.r--cycle;
+enddef;
+
+def two_point(suffix $)(expr condenced) =
+  temp:=point_radius; save point_radius;
+  point_radius:=.92temp;
+  diff := .8u;
+  if not condenced :
+    diff := diff+.5u;
+  fi;
+  a := 2point_radius*sind(point_top_ang/2);
+  x17 := x$-(a+diff/2);     y17 := y$;
+  x18 := x$+(a+diff/2);     y18 := y$;
+  one_point(17);
+  one_point(18);
+enddef;
+
+def thr_point(suffix $)(expr condenced, up) =
+  temp:=point_radius; save point_radius;
+  point_radius:=.92temp;
+  diff := .8u;
+  if not condenced :
+    diff := diff+.5u;
+  fi;
+  a := 2point_radius*sind(point_top_ang/2);
+  x17 := x$-(a+diff/2);     y17 := y$;
+  x18 := x$+(a+diff/2);     y18 := y$;
+  x19 := x$;
+  b := 2point_radius*cosd(point_top_ang/2);
+  if up :
+    x19 := x$-.2u;     y19 := y$+b+3v;
+  else :
+    x19 := x$+.2u;     y19 := y$-b-3v;
+  fi;
+  one_point(17);
+  one_point(18);
+  one_point(19);
+enddef;
+
+def small_hamze(suffix $) =
+  x$:=hround(x$); y$:=vround(y$);
+%  pw := .8tiny;
+  pw := round(.8tiny); % --RP: to solve `strange path' problem
+  pickup pencircle scaled pw;
+  penpos$1(.6horiz_width-pw, 46);
+  penpos$2(1.25horiz_width-pw, 42);
+  penpos$3(.84horiz_width-pw, 200);
+  penpos$4(1.06horiz_width-pw, -140);
+  penpos$5(.57horiz_width-pw, -116);
+  penpos$6(max(.28horiz_width-pw,0), -45);
+  rt  x$1.r = hround(x$+9u);        bot y$1.l = vround(y$+7v);
+      x$2   = x$+5.5u;              top y$2.r = vround(y$+10.7v);
+  lft x$3.r = hround(x$);               y$3   = y$+5.4v;
+      x$4   = x$+4.6u;                  y$4   = y$+2.9v;
+  rt  x$5.l = hround(x$+10.4u);     top y$5.l = vround(y$+5.25v);
+  lft x$6.l = hround(x$+.55u);      bot y$6.r = vround(y$);
+  filldraw stroke z$1e..z$2e..tension1.5..z$3e..tension .9and4..z$4e;
+  filldraw stroke z$5e..tension 1.2..z$4e..tension 1.2..z$6e;
+enddef;
+
+def shift(expr dx,dy) =
+  currentpicture := currentpicture shifted (dx,dy);
+enddef;
+
+
+%************************************************
+begingroup
+  picture chasban_fit_pic;
+  pickup pencircle;
+  penpos1(10u,0);
+  penpos2(10u,0);
+  x1=x2=-5.2u; y1=-.5v; y2=horiz_width+.5v;
+  filldraw stroke z1e--z2e;
+  chasban_fit_pic := currentpicture;
+endgroup;
+
+def chasban_fit =
+  if case=2 :
+    currentpicture := currentpicture - (chasban_fit_pic shifted(r+10.4u,0));
+  else :
+    if case=4 :
+      currentpicture := currentpicture - chasban_fit_pic
+    else :
+      if case=3 :
+	currentpicture:=currentpicture - (chasban_fit_pic shifted(r+10.4u,0));
+	currentpicture:=currentpicture - chasban_fit_pic;
+      fi;
+    fi;
+  fi;
+enddef;
+
+def hollow =
+  picture p;
+  cull currentpicture keeping(1,infinity);
+  p:=currentpicture;
+  cull currentpicture keeping(1,1) withweight 3;
+  addto currentpicture also p-p shifted right -p shifted left -p shifted up -p shifted down;
+  cull currentpicture keeping(1,4);
+  chasban_fit;
+enddef;
+
+def shadow =
+  picture p,q;
+  cullit;
+  p:=currentpicture;
+  hollow;
+  q:=currentpicture;
+  clearit;
+  currentpicture:=p shifted (5v#,-5v#);
+  currentpicture:=currentpicture-p;
+  cullit;
+  currentpicture:=currentpicture + q;
+enddef;
+
+if tarh=3 :
+  clearit;
+  ox:= 2u;  oy:=23v;
+  xx:=55u;  yy:=36v;
+  pickup pencircle;
+  for x=-yy-ox-oy step 3.5u until xx :
+    draw (max(x,-ox),max(-x-oy-ox,-oy))--(min(yy+x+oy,xx), min(xx-x-oy,yy));
+  endfor;
+  picture hashpic; hashpic:=currentpicture;
+fi;
+
+def hash_efect =
+  picture p,q;
+  cullit;
+  p:=currentpicture;
+  hollow;
+  q:=currentpicture; clearit;
+  currentpicture:=p;
+  currentpicture:=currentpicture + hashpic;
+  p:=currentpicture; clearit;
+  cull p keeping(2,2) withweight 1;
+  currentpicture:=p+q;
+enddef;
+
+

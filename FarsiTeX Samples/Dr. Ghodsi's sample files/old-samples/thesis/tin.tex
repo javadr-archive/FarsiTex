@@ -1,0 +1,48 @@
+
+\chapter{¨‰Î‰ž ÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àù \label{tin}}
+¢¤ õ‰±‰‘Ÿ‰¶ õ‰Â“‰¯ “‰‚ \InE{}GIS\EnE{} ø û‰€‰À¨‰‚ý õ‰½‰‘¨‰±‰‘—‰ü, þ‰Ø‰ü ¥ õ‰±‰‘Ÿ‰¶ õ‰ú‰Ý, '¥õ‰ƒ‰ß"\footnote{\InE{}Terrain\EnE{}}
+ø õ‰Àñû‰‘ý î‰‘õ‰³‰ƒ‰—‰Âý ö ¨‰´. ¢¤ “‰Æ‰ƒ‰‘¤ý ¥ õ‰¤¢ ¢¤ ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý \InE{}GIS\EnE{} ÷‰ƒ‰‘¥ “‰‚ þ‰ß
+¢¤þ‰Ý î‰‚ ÷‰Ö‰È‰‚ý ì‰Æ‰Þ‰µ‰ü ¥ ¥õ‰ƒ‰ß ¤ “‰‚ î‰‘õ‰³‰ƒ‰—‰Â ø¤¢ î‰€‰ƒ‰Ý ø •‰Â¢¥©û‰‘ý ¡‰‘¬‰ü
+¤ ¤øý ö ÷‰¹‰‘ô ¢û‰ƒ‰Ý. ó‰Ú‰¤þ‰µ‰Ýû‰‘ý “‰Æ‰ƒ‰‘¤ý “‰Â ¤øý ÷‰Ö‰È‰‚û‰‘ý ¥õ‰ƒ‰ß ä‰Þ‰Û õ‰üî‰€‰€‰À.
+ó‰±‰µ‰‚ û‰Â þ‰× ¥ þ‰ß ó‰Ú‰¤þ‰µ‰Ýû‰‘ “‰Â ¤øý þ‰× õ‰Àñ ¥ ¥õ‰ƒ‰ß î‰‘¤ õ‰üî‰€‰€‰À. õ‰Àñû‰‘ý
+õ‰µ‰Ô‰‘ø—‰ü “‰Âý ¥õ‰ƒ‰ß ø›‰¢ ¢¤¢ î‰‚ ¥ “‰ƒ‰ß öû‰‘, ¨‰‚ õ‰Àñ ¥ û‰Þ‰‚ õ‰ã‰Þ‰ñ—‰Â û‰Æ‰µ‰€‰À:
+ª‰±‰Ø‰‚ý õ‰€‰Ñ‰Ý õ‰Â“‰ã‰ü\footnote{\InE{}Regular Square Grid\EnE{}}, 
+õ‰Àñ ¡‰Î‰¯ î‰Â÷‰‚\footnote{\InE{}Contour Lines Model\EnE{}}, ø 
+¨‰Î‰ž ÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àù. ¢¤ þ‰ß ê‰Ê‰Û ¢¤ “‰¿‰Ç \ref{models} þ‰ß õ‰Àñû‰‘ 
+¤ “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢. ¢¤ “‰¿‰Ç \ref{storing}, ¤ø©û‰‘ý ÷‰Ú‰‚¢¤ý \InE{}TIN\EnE{} ¢¤ Ÿ‰‘ê‰Ñ‰‚ õ‰¤¢
+“‰Â¤¨‰ü ì‰Â¤ ¡‰û‰À ð‰Âê‰´. ¢¤ “‰¿‰Ç \ref{conversion} ÷‰ƒ‰Ã “‰‚ õ‰Æ‰ÿ‰Ü‰‚ý —‰±‰Àþ‰Û “‰ƒ‰ß þ‰ß
+õ‰Àñû‰‘ ¡‰û‰ƒ‰Ý •‰Â¢¡‰´.
+
+\section{\label{models} õ‰Àñû‰‘ý ¥õ‰ƒ‰ß}
+û‰Þ‰‘öÏ‰¤ î‰‚ ð‰Ô‰µ‰ƒ‰Ý, õ‰Àñû‰‘ý õ‰¿‰µ‰Ü‰Ô‰ü “‰Âý £¡‰ƒ‰Âù¨‰‘¥ý Ï‰…ä‰‘– õ‰Â“‰¯ “‰‚ ¥õ‰ƒ‰ß
+ø›‰¢ ¢¤¢ î‰‚ ¨‰‚ —‰‘ ¥ öû‰‘ õ‰Àñû‰‘ý õ‰ã‰Âøé—‰Âý û‰Æ‰µ‰€‰À. ¢¤ þ‰ß “‰¿‰Ç “‰‚ “‰Â¤¨‰ü
+þ‰ß ¨‰‚ õ‰Àñ ¡‰û‰ƒ‰Ý •‰Â¢¡‰´ ø ¢¤ ÷‰µ‰ú‰‘ ÷‰ƒ‰Ã õ‰Àñû‰‘ý ¨‰Ü‰Æ‰Ü‰‚õ‰Â—‰±‰ü ¤ õ‰ã‰Âê‰ü
+¡‰û‰ƒ‰Ý î‰Â¢.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{\label{storing} ÷‰Ú‰‚¢¤ý \InE{}TIN\EnE{} ¢¤ Ÿ‰‘ê‰Ñ‰‚}
+¢¤ þ‰ß “‰¿‰Ç ¢¤“‰‘¤ùý ¤ø©û‰‘ý ÷‰Ú‰‚¢¤ý \InE{}TIN\EnE{} ¢¤ Ÿ‰‘ê‰Ñ‰‚ “‰½‰¶ ¡‰û‰ƒ‰Ý î‰Â¢.
+þ‰× ¤ø© ¨‰‘¢ù “‰Âý ÷‰Ú‰‚¢¤ý þ‰× \InE{}TIN\EnE{} ¢¤ Ÿ‰‘ê‰Ñ‰‚, þ‰ß ¨‰´ î‰‚ õ‰¿‰µ‰Ê‰‘– ¤Ž‰§
+\InE{}TIN\EnE{} ¤ ÷‰Ú‰‚¢¤ý î‰€‰ƒ‰Ý ø õ‰·‰Ü‰¶“‰€‰Àý ¤ ÷‰ƒ‰Ã “‰‘ £¡‰ƒ‰Âùý ª‰Þ‰‘¤ùý ¨‰‚ ¤\hamze § û‰Â þ‰× ¥
+õ‰·‰Ü‰¶û‰‘ ÷‰Ú‰‚¢¤ý î‰€‰ƒ‰Ý. “‰‘ þ‰ß ¤ø©, û‰Þ‰‚ý Ï‰…ä‰‘– \InE{}TIN\EnE{} ¤ ¢¤ ê‰Ì‰‘ý î‰Þ‰ü )¥ \InE{}$O(n)$\EnE{}(
+÷‰Ú‰‚ õ‰ü¢¤þ‰Ý. û‰Þ‰ƒ‰ß ¤ø© “‰Âý “‰Æ‰ƒ‰‘¤ý ¥ î‰‘¤“‰Â¢û‰‘ î‰‘ê‰ü ¨‰´. “‰Âý õ‰·‰‘ñ ¢¤ ó‰Ú‰¤þ‰µ‰Ý
+õ‰®‰á þ‰ß •‰‘þ‰‘ö÷‰‘õ‰‚ ÷‰ƒ‰Ã ¥ û‰Þ‰ƒ‰ß ¤ø© ¨‰µ‰Ô‰‘¢ù î‰Â¢ùþ‰Ý. øó‰ü ¢¤ “‰ã‰Ì‰ü õ‰¤¢
+î‰‚ ÷‰ƒ‰‘¥ “‰‚ þ‰ß ¢¤þ‰Ý î‰‚ Ï‰…ä‰‘– “‰ƒ‰È‰µ‰Âý ¤ ¢¤“‰‘¤ùý \InE{}TIN\EnE{} 
+“‰‘ ¨‰Âä‰´ “‰‘„ “‰‚ ¢¨‰´ “‰ƒ‰‘ø¤þ‰Ý, õ‰ü—‰÷‰ƒ‰Ý ¥ ¨‰‘¡‰µ‰Þ‰‘ö ¢¢ùû‰‘ý ¢þ‰Ú‰Âý î‰‚ “‰Âý
+þ‰ß õ‰€‰Ñ‰¤ ø›‰¢ ¢¤¢ ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý. 
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{\label{conversion} —‰±‰Àþ‰Û “‰ƒ‰ß õ‰Àñû‰‘ý õ‰¿‰µ‰Ü‰Ó}
+þ‰Ø‰ü ¥ õ‰Æ‰ÿ‰Ü‰‚û‰‘ý õ‰ú‰Þ‰ü î‰‚ ¢¤ “‰½‰¶ õ‰Àñ¨‰‘¥ý ¨‰Î‰¼ ¥õ‰ƒ‰ß õ‰Î‰Âž õ‰üª‰¢, õ‰Æ‰ÿ‰Ü‰‚ý —‰±‰Àþ‰Û
+õ‰Àñû‰‘ “‰‚ þ‰Ø‰Àþ‰Ú‰Â ¨‰´. õ‰Àñû‰‘ý õ‰µ‰Ô‰‘ø– ¢¤ ó‰Ú‰¤þ‰µ‰Ýû‰‘ý õ‰¿‰µ‰Ü‰Ó î‰‘¤“‰Â¢ ¢¤÷‰À ø
+û‰Þ‰»‰€‰ƒ‰ß õ‰€‰‘“‰â Ï‰…ä‰‘—‰ü õ‰¿‰µ‰Ü‰Ô‰ü î‰‚ Ï‰…ä‰‘– õ‰Â“‰¯ “‰‚ ¨‰Î‰¼ ¥õ‰ƒ‰ß ¤ “‰‚ õ‰‘ õ‰ü¢û‰€‰À,
+Ï‰…ä‰‘– ¤ “‰‚ ª‰ƒ‰ùû‰‘ý ð‰÷‰‘ð‰ö ¢¤ ¡‰µ‰ƒ‰‘¤ õ‰‘ ì‰Â¤ õ‰ü¢û‰€‰À. “‰Âý õ‰·‰‘ñ ð‰Â Ï‰…ä‰‘–
+õ‰Â“‰¯ “‰‚ ¨‰Î‰¼ ¥õ‰ƒ‰ß ¤ ¥ þ‰× ÷‰Ö‰È‰‚ý ›‰ç‰Âê‰ƒ‰‘þ‰ü ¨‰µ‰¿‰Âš î‰Â¢ù “‰‘ª‰ƒ‰Ý, Ï‰…ä‰‘– “‰‚ ¬‰¤–
+¡‰Î‰¯ î‰Â÷‰‚ ¨‰´ ø þ‰‘ ð‰Â “‰‘ ¨‰€‰¹‰Ç ¥ ¢ø¤\footnote{\InE{}Remote Sensing\EnE{}} þ‰ß
+Ï‰…ä‰‘– ¤ “‰‚ ¢¨‰´ ø¤¢ù “‰‘ª‰ƒ‰Ý, Ï‰…ä‰‘– ä‰Þ‰õ‰\nasb ‘ “‰‚ ¬‰¤– ª‰±‰Ø‰‚ý õ‰€‰Ñ‰Ý õ‰Â“‰ã‰ü ¨‰´.
+û‰Þ‰»‰€‰ƒ‰ß è‰Ü‰° ó‰Ú‰¤þ‰µ‰Ýû‰‘ý û‰€‰À¨‰ü “‰‘ õ‰Àñ \InE{}TIN\EnE{} î‰‘¤ õ‰üî‰€‰€‰À. “‰€‰‘“‰Âþ‰ß ÷‰ƒ‰‘¥ “‰‚
+—‰±‰Àþ‰Û þ‰ß õ‰Àñû‰‘ “‰‚ û‰Þ‰Àþ‰Ú‰Â Ÿ‰Æ‰‘§ õ‰üª‰¢.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.

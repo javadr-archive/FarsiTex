@@ -1,0 +1,673 @@
+\chapter{ª‰Âøá î‰‘¤\label{gettingstarted}}
+
+\section{—‰ú‰ƒ‰‚î‰Â¢ö •‰Âø÷‰Àùý ø¤ø¢ý}
+
+ø¤ø¢ý \FarsiTeX\ þ‰× •‰Âø÷‰Àùý õ‰µ‰€‰ü ¨‰´.  ê‰ã‰\nasb … ê‰Â­ î‰€‰ƒ‰Ý î‰‚ õ‰ü—‰÷‰ƒ‰À
+¥ þ‰× øþ‰Âþ‰È‰Ú‰Â ä‰‘¢ý õ‰·‰Û~\InE{}\verb|ftexed|\EnE{} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À ø ¥ þ‰ß •‰Å ê‰Ö‰Í
+õ‰üð‰þ‰ƒ‰Ý î‰‚ ‰‚ ‰ƒ‰Ã ¤ “‰‘þ‰À ¢¤ •‰Âø÷‰Àùý ø¤ø¢ý “‰ƒ‰‘ø¤þ‰À, ÷‰‚ þ‰ß î‰‚
+‰‚ Ï‰¤ þ‰ß î‰‘¤ ¤ “‰Ø‰€‰ƒ‰À\footnote{¢¤  ÷‰µ‰ú‰‘ý þ‰ß ¤ù÷‰Þ‰‘, ÷‰½‰ùý î‰‘¤ “‰‘  
+“‰‘ øþ‰Âþ‰È‰Ú‰Â \InE{}\tt ftexed\EnE{} —‰®‰ƒ‰¼ ¢¢ù ª‰Àù ¨‰´.}.
+¢¤ õ‰¤¢ ÷‰‘ô •‰Âø÷‰Àùý ø¤ø¢ý, î‰‘õ‰\nasb … õ‰¿‰µ‰‘¤ û‰Æ‰µ‰ƒ‰À î‰‚ û‰Â ÷‰‘õ‰ü ¤ ÷‰µ‰¿‰‘’ î‰€‰ƒ‰À; 
+øó‰ü •‰Æ‰÷‰À •‰Âø÷‰Àù Ÿ‰µ‰Þ‰\nasb ‘ “‰‘þ‰À \InE{}\verb|ftx|\EnE{} “‰‘ª‰À. ¢¤ þ‰ß ¤ù÷‰Þ‰‘ û‰Â›‰‘ “‰¿‰û‰ƒ‰Ý 
+õ‰µ‰€‰ü ¤ î‰‚ ¢¤ øþ‰Âþ‰È‰Ú‰Â —‰‘þ‰² õ‰üî‰€‰ƒ‰À “‰ƒ‰‘ø¤þ‰Ý,   “‰Âý ê‰Âõ‰‘öû‰‘ý  ö ¥ 
+¡‰‘¬‰ü ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰ƒ‰Ý )õ‰·‰Û \InE{}\verb|FarsiTeX\|\EnE{}(. ¢¤ õ‰ì‰ã‰ü î‰‚ õ‰µ‰ß —‰‘þ‰²ª‰Àù
+Ÿ‰‘øý î‰Ü‰Þ‰‚û‰‘ý  ê‰‘¤¨‰ü “‰‘ª‰À   ö ¤ “‰ƒ‰ß ¢ø ä‰…õ‰´\BeT  \ldots \EnT\ ì‰Â¤ õ‰ü¢û‰ƒ‰Ý 
+—‰‘ õ‰µ‰Þ‰‘þ‰Ã ª‰¢, õ‰Ú‰Â ö î‰‚ õ‰€‰Ñ‰¤ õ‰‘ ø®‰¼ “‰‘ª‰À.
+
+÷‰þ‰Æ‰‚û‰‘ý\footnote{\InE{}Character\EnE{}} õ‰›‰¢ ¢¤ \InE{}\TeX\EnE{} ø \FarsiTeX\ õ‰Þ‰Ø‰ß ¨‰´ ä‰‘¢ý 
+“‰‚ ÷‰Ñ‰Â ÷‰Â¨‰€‰À. è‰ƒ‰Â ¥ Ÿ‰Âøé ä‰‘¢\kasre ý ê‰‘¤¨‰ü ø ÷‰Ú‰Ü‰ƒ‰Æ‰ü, ø ¤ì‰‘ô, “‰Æ‰ƒ‰‘¤ý ¥ 
+÷‰þ‰Æ‰‚û‰‘ õ‰Ô‰ú‰ô ¡‰‘« ¡‰¢ ¤ ¢¤÷‰À. ¥ ›‰Þ‰Ü‰‚ —‰›‰‚ î‰€‰ƒ‰À î‰‚:
+\begin{itemize}
+\item ¥ î‰·‰Â ÷‰þ‰Æ‰‚û‰‘ þ‰× ÷‰Æ‰¿‰‚ý ê‰‘¤¨‰ü ø þ‰× ÷‰Æ‰¿‰‚ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü ø›‰¢ ¢¤¢.
+      “‰‚ —‰Ô‰‘ø– öû‰‘ ¢ì‰´ î‰€‰ƒ‰À.  ¢¤ øþ‰Âþ‰È‰Ú‰Â, ÷‰þ‰Æ‰‚û‰‘ý ê‰‘¤¨‰ü ø ÷‰Ú‰Ü‰ƒ‰Æ‰ü
+      ¢¤ý ¤÷‰Ùû‰‘ý •‰Å¥õ‰ƒ‰€‰‚ý õ‰µ‰Ô‰‘ø– û‰Æ‰µ‰€‰À. )¤÷‰Ù •‰Å¥õ‰ƒ‰€‰‚ý ÷‰þ‰Æ‰‚û‰‘ý ê‰‘¤¨‰ü
+      “‰ü ø ¤÷‰Ù •‰Å¥õ‰ƒ‰€‰‚ý ÷‰þ‰Æ‰‚û‰‘ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¨‰ƒ‰‘ù ¨‰´.( þ‰ß —‰Ô‰‘ø– õ‰ú‰Ý ¨‰´
+      ø ð‰Â “‰‚ ö —‰›‰‚ ÷‰Ø‰€‰ƒ‰À ¢¤ ¥õ‰‘ö ›‰Âý \FarsiTeX\ “‰‘ •‰ƒ‰‘ôû‰‘ý ¡‰Î‰‘ý ¥þ‰‘¢ý
+      õ‰›‰‚ ¡‰û‰ƒ‰À ª‰À.
+\item ¢ì‰´ î‰€‰ƒ‰À î‰‚ Ÿ‰Âé “‰Ã¤ï~\InE{}\verb|O|\EnE{}~)\zamme ( ¤ “‰‘ ¤ì‰Ý~\InE{}\verb|0|\EnE{}~)¬‰Ô‰Â(,
+      ø û‰Þ‰ƒ‰ß Ï‰¤ Ÿ‰Âé~\InE{}\verb|l|\EnE{} ){\iranic \kasre ñ}~î‰‰×( ¤ “‰‘ ¤ì‰Ý~\InE{}\verb|1|\EnE{} )þ‰×(
+      ª‰µ‰±‰‘ù ÷‰Ú‰ƒ‰Âþ‰À.
+\item “‰‚ —‰Ô‰‘ø– '¯" ø 'Ï‰" ¢ì‰´ î‰€‰ƒ‰À.  ª‰Ø‰Û ¢ø '¯" ø û‰Þ‰ƒ‰ß Ï‰¤ ¢ø 'à"
+      ¢¤ øþ‰Âþ‰È‰Ú‰Â õ‰¿‰µ‰Ü‰Ó ¨‰´.
+\item ä‰…õ‰´û‰‘ý ÷‰Ö‰Î‰‚ð‰Á¤ý ä‰±‰‘¤—‰€‰À ¥:
+\begin{quote}
+\InE{}\verb|.  :  ;  ,  ?  !  `  '  (  )  [  ]  -  /  *  @|\EnE{}
+\end{quote}
+      î‰‚ ó‰±‰µ‰‚ ÷‰þ‰Æ‰‚ý \InE{}\verb|@|\EnE{} ¢¤ Ÿ‰‘ó‰´ ê‰‘¤¨‰ü õ‰ã‰€‰ü øþ‰Äùý ¢¤¢ ø ÷‰±‰‘þ‰À
+      “‰‚ Ï‰¤ ä‰‘¢ý “‰‚ î‰‘¤ ¤ø¢.  ¢¤ ê‰‘¤¨‰ü ä‰…õ‰´û‰‘ý
+      \begin{quote}
+      \tashdid ‹‰ \ \ \fathe ‹‰ \ \ \kasre ‹‰ \ \ \zamme ‹‰ \ \ \nasb ‹‰ \ \ \hamze ‹‰ \ \ \alef ‹‰ \ \ \saken ‹‰ \ \ ' \ " \  \mom  
+      \end{quote}
+      î‰‚ øþ‰Äùý ê‰‘¤¨‰ü û‰Æ‰µ‰€‰À ÷‰ƒ‰Ã ®‰‘ê‰‚ ª‰Àù¨‰´.
+\item ¡‰Í \zamme ¤þ‰° / )\InE{}slash\EnE{}( ¤ î‰‚ õ‰ã‰Þ‰\nasb „ “‰‚ ä‰€‰ö ä‰…õ‰´ —‰Ö‰Æ‰ƒ‰Ý ¢¤
+      ¤þ‰‘®‰ü “‰‚î‰‘¤ õ‰ü¤ø¢, “‰‘ õ‰Þ‰ƒ‰Ã ê‰‘¤¨‰ü~)\mom ( ª‰µ‰±‰‘ù ÷‰Ú‰ƒ‰Âþ‰À.
+\item ¢ù ÷‰Þ‰‘¢ øþ‰Äùý
+\begin{quote}
+\InE{}\verb|# $ %  &  ~  _  ^  \  {  }|\EnE{}
+\label{tenspecial}
+\end{quote}
+      ø û‰Þ‰ƒ‰ß Ï‰¤ \InE{}\verb|@|\EnE{} ê‰‘¤¨‰ü, ¢¨‰µ‰¤û‰‘þ‰ü “‰Âý \FarsiTeX\ û‰Æ‰µ‰€‰À.
+      î‰·‰Â ¢¨‰µ‰¤û‰‘ý \FarsiTeX\ “‰‘ ÷‰þ‰Æ‰‚ý~\InE{}\verb|\|\EnE{} ª‰Âøá õ‰üª‰÷‰À ø 
+      þ‰ß ÷‰þ‰Æ‰‚,
+      õ‰ú‰Ý—‰Âþ‰ß ÷‰þ‰Æ‰‚ ¢¤ î‰‘¤ “‰‘ þ‰ß ¨‰ƒ‰Æ‰µ‰Ý ¨‰´.
+\item •‰€‰¸ ÷‰þ‰Æ‰‚ý 
+\begin{quote}
+\InE{}\verb!+ = | < >!\EnE{}
+\end{quote}
+      ä‰Þ‰õ‰\nasb ‘ ¢¤ ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü “‰‚ î‰‘¤ õ‰ü¤ø÷‰À, ð‰Â ‰‚ ¥ \InE{}\verb|+|\EnE{} ø \InE{}\verb|=|\EnE{}
+      ¢¤ õ‰µ‰ß ä‰‘¢ý ÷‰ƒ‰Ã õ‰ü—‰ö ¨‰µ‰Ô‰‘¢ù î‰Â¢. ÷‰þ‰Æ‰‚ý \InE{}\verb|"|\EnE{} ÷‰ƒ‰Ã ¡‰ƒ‰Ü‰ü “‰‚÷‰À¤–
+      î‰‘¤“‰Â¢ ¢¤¢.
+\item ÷‰þ‰Æ‰‚ý ¢þ‰Ú‰Âý “‰‚ ÷‰‘ô ê‰‘¬‰Ü‰‚ ø›‰¢ ¢¤¢ î‰‚ ð‰Â ‰‚ ÷‰‘•‰ƒ‰À¨‰´,
+      øó‰ü ð‰‘û‰ü “‰Âý õ‰‘ û‰Þ‰ƒ‰´ ¢¤¢.  ¢¤ þ‰ß õ‰¤¢ ö ¤ “‰‘ \InE{}\verb*| |\EnE{}
+      ÷‰È‰‘ö õ‰ü¢û‰ƒ‰Ý.  “‰‘ û‰Â ¢÷‰±‰‘ó‰‚ý ¥ ÷‰þ‰Æ‰‚û‰‘ý ê‰‘¬‰Ü‰‚ õ‰‘÷‰€‰À
+      þ‰× ê‰‘¬‰Ü‰‚ ¤ê‰µ‰‘¤ õ‰üª‰¢.  û‰Þ‰»‰€‰ƒ‰ß ð‰Â ¢¤ •‰Âø÷‰Àùý ø¤ø¢ý þ‰× ¨‰Î‰Â ¡‰‘ó‰ü “‰ƒ‰‘þ‰À
+      î‰‚ ›‰Ã ê‰‘¬‰Ü‰‚, û‰ƒ‰º ÷‰þ‰Æ‰‚ý ¢þ‰Ú‰Âý ÷‰À¤¢, \InE{}\TeX\EnE{} ö ¤ ÷‰È‰‘÷‰‚ý •‰‘þ‰‘ö •‰‘¤ð‰Âé
+      ê‰Â­ õ‰üî‰€‰À.
+\end{itemize}
+
+\section{ø¤ø¢ý}\label{theinput}
+
+î‰·‰Â ¢¨‰µ‰¤û‰‘ý \FarsiTeX\ ¨‰‘¡‰µ‰Þ‰‘ö õ‰€‰Î‰Ö‰ü õ‰µ‰ß ¤ õ‰È‰¿‰É õ‰üî‰€‰€‰À.  •‰Å “‰‘þ‰À “‰‘
+¨‰‘¡‰µ‰‘¤û‰‘ý û‰Â õ‰µ‰ß ª‰€‰‘ ª‰þ‰À. ¢¨‰µ‰¤û‰‘ý \FarsiTeX\ “‰‘ þ‰×~\InE{}\verb|\|\EnE{} ª‰Âøá õ‰üª‰÷‰À.
+‰ö î‰·‰Â øì‰‘– ¢¤ Ÿ‰‘ó‰´ ê‰‘¤¨‰ü î‰‘¤ õ‰üî‰€‰ƒ‰Ý, \InE{}\verb|\|\EnE{} ÷‰þ‰Æ‰‚ý ê‰‘¤¨‰ü ¨‰´. ¢¤ þ‰ß
+Ÿ‰‘ó‰´, ê‰Âõ‰‘ö “‰‚ ¬‰¤– ¤ª‰µ‰‚ý ¥ ÷‰þ‰Æ‰‚û‰‘ý  ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰…ê‰‘¬‰Ü‰‚
+¢¤ ¨‰Þ‰´ ‰\kasre ²~\InE{}\verb|\|\EnE{}    õ‰üþ‰€‰À. ð‰Â ¢¤ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰‘ª‰ƒ‰Ý,  \InE{}\verb|\|\EnE{}
+÷‰þ‰Æ‰‚ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¨‰´ ø ê‰Âõ‰‘ö “‰…ê‰‘¬‰Ü‰‚ ¢¤ ¨‰Þ‰´ ¤¨‰´  ö Ò‰‘û‰Â õ‰üª‰¢.
+\subsection{›‰Þ‰Ü‰‚û‰‘ ø •‰‘¤ð‰Âéû‰‘}
+—‰®‰ƒ‰¼ ¢¢ö ›‰Þ‰Ü‰‚û‰‘ ø •‰‘¤ð‰Âéû‰‘ “‰Âý \FarsiTeX\  “‰Æ‰ƒ‰‘¤ ¨‰‘¢ù ¨‰´.
+—‰Ö‰Âþ‰±‰\nasb ‘ û‰Þ‰‘ö ¤ —‰‘þ‰² õ‰üî‰€‰ƒ‰À î‰‚ ì‰Â¤ ¨‰´ ¢¤ ¡‰Âø›‰ü Ò‰‘û‰Â ª‰¢.
+
+÷‰µ‰ú‰‘ý î‰Ü‰Þ‰‚û‰‘ ø ›‰Þ‰Ü‰‚û‰‘ “‰‘  ê‰‘¬‰Ü‰‚
+õ‰È‰¿‰É õ‰üª‰¢. õ‰ú‰Ý    ÷‰ƒ‰Æ‰´ î‰‚  ‰€‰À ê‰‘¬‰Ü‰‚
+—‰‘þ‰²  î‰€‰ƒ‰À; þ‰Ø‰ü “‰‘ 001 —‰‘ ê‰Âì‰ü ÷‰À¤¢.
+þ‰×   þ‰‘ ‰€‰À  ¡‰Í ¡‰‘ó‰ü ÷‰ƒ‰Ã ÷‰µ‰ú‰‘ý
+•‰‘¤ð‰Âé ¤  õ‰È‰¿‰É õ‰üî‰€‰€‰À.
+
+\InE{}\TeX\EnE{} î‰‘¤ý “‰‚ þ‰ß î‰‚ ø¤ø¢ý ‰Ú‰÷‰‚ ¨‰´ ÷‰À¤¢ ø
+ê‰Ö‰Í “‰‚ õ‰Ô‰ú‰ôû‰‘ý   •‰‘þ‰‘ö î‰Ü‰Þ‰‚, •‰‘þ‰‘ö ›‰Þ‰Ü‰‚ ø •‰‘þ‰‘ö •‰‘¤ð‰Âé
+—‰›‰‚ ¢¤¢.
+
+%%%%
+
+\subsubsection{õ‰µ‰ß ÷‰Ú‰Ü‰ƒ‰Æ‰ü}
+õ‰µ‰ß ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰‚ û‰Þ‰‘ö ¨‰‘¢ð‰\kasre ü õ‰µ‰ß ê‰‘¤¨‰ü —‰‘þ‰² õ‰üª‰¢.
+î‰‘ê‰ü ¨‰´ þ‰× î‰Ü‰Þ‰‚ þ‰‘ ›‰Þ‰Ü‰‚ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¤ ¢¡‰Û õ‰µ‰\kasre ß ê‰‘¤¨‰ü “‰ƒ‰‘ø¤þ‰À.
+—‰›‰‚ î‰€‰ƒ‰À î‰‚ ¢¤ þ‰ß õ‰ì‰â “‰ƒ‰ß î‰Ü‰Þ‰‘– ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¥ ê‰‘¬‰Ü‰‚ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü ø
+“‰ƒ‰ß î‰Ü‰Þ‰‘– ê‰‘¤¨‰ü ¥ ê‰‘¬‰Ü‰‚ý ê‰‘¤¨‰ü ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+ð‰Â ¨‰Î‰Âý ¤ ¢¤ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü  —‰‘þ‰² õ‰üî‰€‰ƒ‰À ø ¢¤ ö 
+ “‰¿‰û‰ƒ‰À õ‰µ‰ß   ê‰‘¤¨‰ü ®‰‘ê‰‚ î‰€‰ƒ‰À,
+÷‰Ú‰‘¤ î‰‚ ›‰‘ý ê‰‘¤¨‰ü ø ÷‰Ú‰Ü‰ƒ‰Æ‰ü ä‰­ ª‰Àù¨‰´;
+þ‰ß“‰‘¤ “‰ƒ‰ß õ‰µ‰ß ÷‰Ú‰Ü‰ƒ‰Æ‰ü î‰Ü‰Þ‰‚û‰‘ý ê‰‘¤¨‰ü õ‰ü÷‰þ‰Æ‰ƒ‰À.
+
+\subsubsection{ä‰…õ‰´û‰‘ý ÷‰Ö‰Û ì‰ñ}
+¢¤ Ÿ‰‘ó‰´ ê‰‘¤¨‰ü ¢ø ÷‰Þ‰‘¢ ð‰ƒ‰õ‰‚ “‰Âý ª‰Âøá ø —‰Þ‰‘ô ÷‰Ö‰Û ì‰ñ ø›‰¢ ¢¤¢.
+þ‰ß ¢ø ÷‰Þ‰‘¢ ¤ î‰‚ ' ø " û‰Æ‰µ‰€‰À õ‰ü—‰÷‰ƒ‰À “‰‚ ¨‰‘÷‰ü ¤øý ¬‰Ô‰½‰‚î‰Ü‰ƒ‰À “‰ƒ‰‘“‰ƒ‰À.
+õ‰‘ ¢¤ õ‰¤¢ õ‰µ‰ß ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¢ì‰´ î‰€‰ƒ‰À î‰‚ ¥ ä‰…õ‰´û‰‘ý øþ‰Äùý ÷‰Ú‰Ü‰ƒ‰Æ‰ü
+{\iranic ¬‰½‰ƒ‰¼} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.  ¢¤ ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰Âý ÷‰Ö‰Û ì‰ñ ¢ø ¤ø© ø›‰¢
+¢¤¢.  þ‰Ø‰ü þ‰ß î‰‚ õ‰µ‰ß ¤ “‰ƒ‰ß ¢ø ÷‰þ‰Æ‰‚ý \InE{}\verb|`|\EnE{} ø \InE{}\verb|'|\EnE{} õ‰½‰Ê‰¤ î‰€‰ƒ‰À
+ø þ‰Ø‰ü þ‰ß î‰‚ ¥ \InE{}\verb|``|\EnE{} ø \InE{}\verb|''|\EnE{} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+þ‰ã‰€‰ü “‰Âý “‰‚ ¢¨‰´ ø¤¢ö ‰ƒ‰Ãý õ‰È‰‘“‰‚ \InE{}``quoted text''\EnE{} “‰‘þ‰À “‰€‰þ‰Æ‰ƒ‰À
+\InE{}\verb|``quoted text''|\EnE{}. “‰‚ û‰ƒ‰º ø›‰‚ ¥ ÷‰þ‰Æ‰‚ý \InE{}\verb|"|\EnE{} “‰Âý þ‰ß î‰‘¤
+¨‰µ‰Ô‰‘¢ù ÷‰Ø‰€‰ƒ‰À.
+
+÷‰þ‰Æ‰‚ý \InE{}\verb|'|\EnE{} î‰‘¤“‰Â¢ ¢þ‰Ú‰Âý ÷‰ƒ‰Ã ¢¤¢ ø “‰Âý —‰ó‰ƒ‰À î‰Â¢ö •‰¨‰µ‰Âøé
+“‰‚î‰‘¤ õ‰ü¤ø¢.
+
+\subsubsection{¡‰Í —‰ƒ‰Âù}
+¢¤ \FarsiTeX\  õ‰ü—‰÷‰ƒ‰À ¤—‰±‰‘¯ “‰ƒ‰ß ¢ø Ÿ‰Âé ¤ “‰‘ ÷‰þ‰Æ‰‚ý '‹‰" “‰ƒ‰È‰µ‰Â “‰Ø‰\kasre ‹‰È‰ƒ‰À,
+õ‰·‰Û þ‰‹‰‹‰‹‰‹‰‹‰ß.  î‰‘ê‰ü ¨‰´ û‰Â‰‚ “‰ƒ‰È‰µ‰Â õ‰ü¡‰û‰ƒ‰À ¤—‰±‰‘¯ ¤ “‰Ø‰\kasre ‹‰È‰ƒ‰À, —‰ã‰À¢ “‰ƒ‰È‰µ‰Âý
+¥ þ‰ß ÷‰þ‰Æ‰‚ “‰Ú‰Á¤þ‰À.  ¢ì‰´ î‰€‰ƒ‰À î‰‚ ä‰…õ‰´ —‰Ô‰Âþ‰Õ “‰‘ ¡‰Í —‰ƒ‰Âù —‰Ô‰‘ø– ¢¤¢.
+
+\subsubsection{ê‰‘¬‰Ü‰‚ý “‰ã‰À ¥ ÷‰Ö‰Î‰‚}
+Ÿ‰Âøê‰»‰ƒ‰ßû‰‘ õ‰ã‰Þ‰\nasb „ “‰ã‰À ¥ ÷‰Ö‰Î‰‚ý •‰‘þ‰‘\kasre ö ›‰Þ‰Ü‰‚, ê‰‘¬‰Ü‰‚ý “‰ƒ‰È‰µ‰Âý õ‰üð‰Á¤÷‰À.
+\InE{}\TeX\EnE{} ö ÷‰À¥ù “‰‘û‰© ÷‰ƒ‰Æ‰´ î‰‚ —‰È‰¿‰ƒ‰É ¢û‰À î‰‚ þ‰‘ ÷‰Ö‰Î‰‚ý øì‰ã‰\nasb ‘ ›‰Þ‰Ü‰‚ ¤
+•‰‘þ‰‘ö õ‰ü¢û‰À þ‰‘ ÷‰‚.  “‰‚ þ‰ß ¢ó‰ƒ‰Û, ð‰Â ¥ î‰Ü‰Þ‰‘– ¡‰µ‰Ê‰‘¤ý ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰ƒ‰À,
+“‰‘þ‰À ¢ì‰´ î‰€‰ƒ‰À.  ª‰Þ‰‘, “‰‘ “‰‚î‰‘¤ “‰Â¢ö ¢¨‰µ‰¤ \InE{}\verb*| \|\EnE{} )þ‰× õ‰Þ‰ƒ‰Ã ø¤ø “‰‚ ®‰‘ê‰‚ý
+þ‰× ê‰‘¬‰Ü‰‚( •‰Å ¥ ÷‰Ö‰Î‰‚, “‰‚ \InE{}\TeX\EnE{} õ‰üê‰ú‰Þ‰‘÷‰ƒ‰À î‰‚ ö ÷‰Ö‰Î‰‚ ›‰Þ‰Ü‰‚ ¤ —‰Þ‰‘ô ÷‰Þ‰üî‰€‰À.
+õ‰·‰\nasb … “‰Âý —‰ó‰ƒ‰À î‰Â¢ö '¢.\ .\ î‰€‰˜" “‰‘þ‰À —‰‘þ‰² î‰€‰ƒ‰À
+\BeT ¢.\InE{}\verb*| \|\EnE{} .\InE{}\verb*| \|\EnE{}î‰€‰˜\EnT.  
+õ‰ú‰Ý ÷‰ƒ‰Æ‰´ ‰€‰À ê‰‘¬‰Ü‰‚ “‰ã‰À ¥ \InE{}\verb|\|\EnE{} “‰Ã÷‰ƒ‰À
+øó‰ü ì‰±‰Û ¥ ö ÷‰±‰‘þ‰À ê‰‘¬‰Ü‰‚ý —‰‘þ‰² î‰€‰ƒ‰À.  ¢ì‰´ î‰€‰ƒ‰À î‰‚ ¢¤ õ‰¤¢
+ä‰…õ‰´û‰‘ý '?", '!" ø ':" õ‰Æ‰ÿ‰Ü‰‚ õ‰È‰‘“‰‚ ¨‰´.
+
+%%%%
+
+\subsubsection{÷‰Þ‰‘¢û‰‘ý øþ‰Äù}
+þ‰‘ ö ¢ù ÷‰þ‰Æ‰‚ý øþ‰Äùý ¬‰Ô‰½‰‚ý~\pageref{tenspecial}
+¤ î‰‚ ê‰Ö‰Í “‰‚ ¬‰¤– ì‰Æ‰Þ‰´û‰‘þ‰ü ¥ ¢¨‰µ‰¤û‰‘ý \FarsiTeX\  “‰‚ î‰‘¤ õ‰ü¤ê‰µ‰€‰À,
+“‰‚ ¡‰‘Ï‰Â õ‰üø¤þ‰À? õ‰Þ‰Ø‰ß ¨‰´ ª‰Þ‰‘ “‰ã‰Ì‰ü ¥ öû‰‘ ¤ ¥ ›‰Þ‰Ü‰‚~\%, ¢¤ õ‰µ‰ß „¥ô ¢ª‰µ‰‚
+“‰‘ª‰ƒ‰À.
+û‰Ô‰´—‰‘ ¥ þ‰ß ä‰…õ‰´û‰‘ ¤ õ‰ü—‰ö “‰‘ —‰‘þ‰² î‰Â¢ö þ‰× \InE{}\verb|\|\EnE{} ì‰±‰Û ¥ öû‰‘ —‰ó‰ƒ‰À î‰Â¢.
+¢¤ øì‰â —‰ó‰ƒ‰À î‰Â¢ö \%, \{ ø \{ î‰‘¤ý ÷‰À¤¢. )î‰‘ê‰ü ¨‰´ —‰‘þ‰² î‰€‰ƒ‰À
+\InE{}\verb|%\|\EnE{},
+\InE{}\verb|}\|\EnE{}, ø \InE{}\verb|{\|\EnE{}( “‰Âý —‰ó‰ƒ‰À î‰Â¢ö \InE{}\$\EnE{},
+\InE{}\&\EnE{}, \InE{}\#\EnE{} ø \InE{}\_\EnE{} “‰‘þ‰À —‰ç‰ƒ‰ƒ‰Â Ÿ‰‘ó‰´ ¢û‰ƒ‰À ø “‰‚ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰Âøþ‰À, þ‰ã‰€‰ü
+õ‰·‰\nasb … “‰€‰þ‰Æ‰ƒ‰À \InE{}\verb|\$|\EnE{}; —‰›‰‚ î‰€‰ƒ‰À î‰‚ \InE{}\verb|\|\EnE{} ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¨‰´ )“‰Âý þ‰¹‰‘¢ \InE{}@\EnE{}
+ê‰Ö‰Í “‰‘þ‰À “‰‚ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰Âøþ‰À(.  ¢¤ õ‰¤¢ ¨‰‚ ÷‰þ‰Æ‰‚ý øþ‰Äùý ¢þ‰Ú‰Â )\InE{}\verb|~|\EnE{},
+\InE{}\verb|^|\EnE{} ø \InE{}\verb|\|\EnE{}( “‰‚ “‰¿‰Ç \ref{simultext} ¤›‰á î‰€‰ƒ‰À.
+
+ª‰Þ‰‘ õ‰ü—‰÷‰ƒ‰À \FarsiTeX\  ¤ õ‰¹‰±‰¤ î‰€‰ƒ‰À —‰Ö‰Âþ‰±‰\nasb ‘ û‰Â ÷‰Þ‰‘¢ý ¤ î‰‚ õ‰ü¡‰û‰ƒ‰À
+—‰ó‰ƒ‰À î‰€‰À, Ÿ‰µ‰ü ‰ƒ‰Ãû‰‘þ‰ü õ‰·‰Û: \InE{}\S\EnE{} \InE{}\pounds\EnE{} \InE{}$\psi$\EnE{} \InE{}$\star$\EnE{} \InE{}$\otimes$\EnE{}
+\InE{}$\approx$\EnE{} \InE{}$\Leftarrow$\EnE{} \InE{}$\flat$\EnE{} \InE{}$\heartsuit$\EnE{}.
+“‰¿‰Çû‰‘ý~\ref{otherlang} ø \ref{mathsymb} þ‰ß ¤ —‰®‰ƒ‰¼ õ‰ü¢û‰€‰À.
+
+\subsubsection{¢¨‰µ‰¤û‰‘ý ¨‰‘¢ùý —‰ó‰ƒ‰À õ‰µ‰ß}
+
+õ‰ü—‰ö ì‰Æ‰Þ‰µ‰ü ¥ ›‰Þ‰Ü‰‚ ¤ “‰‘ ¢¨‰µ‰¤û‰‘ý  ¨‰‘¢ùý —‰ó‰ƒ‰À õ‰µ‰ß
+—‰ó‰ƒ‰À î‰Â¢.  õ‰·‰\nasb … ÷‰Þ‰‘¢û‰‘ý \InE{}\TeX\EnE{} ø \FarsiTeX\  “‰‚ —‰Â—‰ƒ‰° “‰‘ ¢¨‰µ‰¤û‰‘ý
+\InE{}\verb|\TeX|\EnE{} ø \InE{}\verb|FarsiTeX\|\EnE{} þ‰¹‰‘¢ õ‰üª‰÷‰À\footnote{‰€‰‘÷‰»‰‚ ì‰±‰\nasb … û‰Ý
+ð‰Ô‰µ‰‚ ª‰À, ð‰Â \InE{}$\backslash$\EnE{} ¢¤ ¨‰Þ‰´ ¤¨‰´ “‰‘ª‰À, ê‰‘¤¨‰ü ø ð‰Â ¢¤ ¨‰Þ‰´ ‰² “‰‘ª‰À,
+÷‰Ú‰Ü‰ƒ‰Æ‰ü ¨‰´.  “‰‚Ï‰¤ î‰Ü‰ü, õ‰Þ‰ƒ‰Ã ø¤ø ¢¤ û‰Þ‰‘ö Ÿ‰‘ó‰µ‰ü —‰‘þ‰² õ‰üª‰¢ î‰‚
+¢¨‰µ‰¤ ì‰Â¤ ¨‰´ ¢¤ ö Ÿ‰‘ó‰´ ¡‰Âø›‰ü “‰Àû‰À.}.
+
+ø þ‰Ø‰ü ¢þ‰Ú‰Â ¥ ¢¨‰µ‰¤û‰‘ý •‰Âî‰‘¤“‰Â¢, ¢¨‰µ‰¤ \InE{}\verb|today\|\EnE{} ¨‰´ î‰‚ õ‰ü—‰÷‰ƒ‰À
+¥ ö “‰Âý —‰ó‰ƒ‰Àî‰Â¢ö —‰‘¤þ‰¾ ê‰ã‰Ü‰ü ¨‰ƒ‰Æ‰µ‰Ý ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+%þ‰ß ¬‰Ô‰½‰‚ ¥ ¤ù÷‰Þ‰‘ ¢¤ —‰‘¤þ‰¾ \today Ÿ‰Âøê‰»‰ƒ‰€‰ü ª‰Àù¨‰´.
+
+þ‰Ø‰ü ¢þ‰Ú‰Â ¥ ¢¨‰µ‰¤û‰‘ý •‰Âî‰‘¤“‰Â¢ \InE{}\verb|ldots\|\EnE{} ¨‰´ î‰‚ ¨‰‚ ÷‰Ö‰Î‰‚ “‰‘ ê‰‘¬‰Ü‰‚ý õ‰ã‰Ö‰ñ õ‰·‰Û
+\ldots\ —‰ó‰ƒ‰À õ‰üî‰€‰À. ¨‰ã‰ü î‰€‰ƒ‰À ¥ ¨‰‚ ÷‰Ö‰Î‰‚ý õ‰µ‰ó‰ü õ‰·‰Û ...\ ¨‰µ‰Ô‰‘¢ù ÷‰Ø‰€‰ƒ‰À.
+
+÷‰‘ô ¢¨‰µ‰¤û‰‘þ‰ü î‰‚ —‰‘î‰€‰ö ¢þ‰Àùþ‰À î‰·‰Â\nasb  ª‰‘õ‰Û þ‰× \InE{}\verb|\|\EnE{} “‰‚®‰‘ê‰‚ý ê‰Ö‰Í þ‰×
+÷‰þ‰Æ‰‚ý è‰ƒ‰ÂŸ‰Âê‰ü “‰¢ù ¨‰´.  ¥ þ‰ß “‰‚ “‰ã‰À, î‰·‰Â ¢¨‰µ‰¤û‰‘ þ‰× \InE{}\verb|\|\EnE{} ¢¤÷‰À
+ø þ‰× ¢÷‰±‰‘ó‰‚ý þ‰× þ‰‘ ‰€‰À Ÿ‰Âê‰ü ¥ Ÿ‰Âøé ÷‰Ú‰Ü‰ƒ‰Æ‰ü. û‰€‰Ú‰‘ô ¡‰÷‰Àö •‰Âø÷‰Àùý ø¤ø¢ý,
+øì‰µ‰ü \InE{}\TeX\EnE{} “‰‚ þ‰× 'è‰ƒ‰Â Ÿ‰Âé" õ‰ü¤¨‰À )õ‰·‰\nasb … ¤ì‰Ý '7", ÷‰Þ‰‘¢ ÷‰Ö‰Î‰‚ð‰Á¤ý ';",
+÷‰Þ‰‘¢ øþ‰Äùý '\InE{}\verb|\|\EnE{}", ø þ‰‘ ê‰‘¬‰Ü‰‚ ø ÷‰µ‰ú‰‘ý ¡‰Í(, õ‰üê‰ú‰Þ‰À î‰‚ “‰‚ ÷‰µ‰ú‰‘ý
+¢¨‰µ‰¤ ¤¨‰ƒ‰Àù ¨‰´.  û‰Þ‰»‰€‰ƒ‰ß —‰›‰‚ î‰€‰ƒ‰À î‰‚ \FarsiTeX\  ê‰‘¬‰Ü‰‚ý “‰ã‰À ¥ ¢¨‰µ‰¤–
+¤ ÷‰Àþ‰Àù õ‰üð‰ƒ‰Â¢.
+•‰Å ð‰Â ¢¤ ‰€‰ƒ‰ß õ‰ì‰ã‰ü ê‰‘¬‰Ü‰‚ „¥ô ¢¤þ‰À, “‰‘þ‰À ¥
+¢¨‰µ‰¤ \InE{}\verb*| \|\EnE{} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À. “‰Âý õ‰·‰‘ñ\BeT \InE{}\verb*| \FarsiTeX\|\EnE{}¥þ‰±‰‘¨‰´\EnT\ %
+“‰Âý þ‰¹‰‘¢ '\FarsiTeX\~¥þ‰±‰‘¨‰´" “‰‚ î‰‘¤ õ‰ü¤ø¢. 
+ð‰Â “‰€‰þ‰Æ‰ƒ‰À\BeT \InE{}\verb*|   FarsiTeX\|\EnE{}¥þ‰±‰‘¨‰´\EnT, ¡‰Âø›‰ü “‰‚ 
+þ‰ß ¬‰¤– ¡‰û‰À ª‰À: '\FarsiTeX ¥þ‰±‰‘¨‰´".
+
+“‰Ã¤ð‰ü ø î‰‰Ø‰\kasre ü Ÿ‰Âøé ¢¤ ÷‰‘ô ¢¨‰µ‰¤, {\em û‰Þ‰ƒ‰´ ¢¤¢}; •‰Å
+¨‰µ‰Ô‰‘¢ù ¥ \InE{}\verb|Today\|\EnE{} “‰‚›‰‘ý \InE{}\verb|today\|\EnE{}, •‰ƒ‰ç‰‘\kasre ô ¡‰Î‰‘ þ‰¹‰‘¢ õ‰üî‰€‰À.
+
+%%%%%
+
+\subsubsection{—‰\hamze ‘î‰ƒ‰À ¤øý õ‰µ‰ß}
+
+¢¤ õ‰‘ª‰ƒ‰ß —‰½‰Âþ‰Âû‰‘ “‰Âý —‰\hamze ‘î‰ƒ‰À ¤øý õ‰µ‰ß õ‰ã‰Þ‰\nasb „
+\underline{\beginR ¥þ‰Â© ¡‰Í õ‰üî‰È‰€‰À\endR}.
+¢¤ õ‰µ‰ßû‰‘ý ‰‘” ª‰Àù, “‰‚ ›‰‘ý þ‰ß î‰‘¤, ö ¤ {\em þ‰Â÷‰ƒ‰×} õ‰üî‰€‰€‰À.
+“‰Âý —‰\hamze ‘î‰ƒ‰À ¤øý õ‰µ‰ß ¥ ¢¨‰µ‰¤~\InE{}\verb|em\|\EnE{} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+“‰Âý þ‰¹‰‘¢ 'õ‰µ‰ß {\em õ‰\hamze î‰À}" —‰‘þ‰² î‰€‰ƒ‰À \BeT \InE{}\verb|em\}|\EnE{} õ‰\hamze ‹‰ î‰À\InE{}\verb|{|\EnE{}\EnT.
+“‰µ‰À \InE{}\verb|em\}|\EnE{} ¤ õ‰üø¤þ‰Ý, ¢÷‰±‰‘ó‰Ç þ‰× ê‰‘¬‰Ü‰‚ õ‰üþ‰À, ¨‰³‰Å õ‰µ‰€‰ü î‰‚
+õ‰ü¡‰û‰ƒ‰Ý ¤øþ‰Ç —‰\hamze ‘î‰ƒ‰À î‰€‰ƒ‰Ý ø “‰ã‰À \InE{}\verb|{|\EnE{} ¤ õ‰üø¤þ‰Ý
+)ì‰±‰Û ¥ \InE{}\verb|{|\EnE{} ê‰‘¬‰Ü‰‚ ÷‰Àû‰ƒ‰À(.
+
+\subsubsection{›‰Ü‰ð‰ƒ‰Âý ¥ ª‰Ø‰Æ‰µ‰‚ ª‰Àö ¡‰Í}
+
+û‰€‰Ú‰‘ô Ÿ‰Âøê‰»‰ƒ‰€‰ü õ‰µ‰ß, û‰Â •‰‘¤ð‰Âé “‰‚ ‰€‰À ¡‰Í ª‰Ø‰Æ‰µ‰‚ õ‰üª‰¢.
+Ÿ‰Âøê‰»‰ƒ‰ßû‰‘ “‰Âý ¤Ÿ‰´ ¡‰÷‰Àùª‰Àö õ‰µ‰ß, ¡‰Íû‰‘ ¤
+¥ ê‰‘¬‰Ü‰‚ý “‰ƒ‰ß î‰Ü‰Þ‰‘– õ‰üª‰Ø‰€‰€‰À.  ð‰‘û‰ü ÷‰±‰‘þ‰À ¡‰Í ¤ “‰ƒ‰ß “‰ã‰Ì‰ü î‰Ü‰Þ‰‘– ¡‰‘« ª‰Ø‰Æ‰´;
+þ‰ß õ‰¤¢ ¤ “‰‘þ‰À “‰‚ \InE{}\TeX\EnE{} Ï‰…á ¢¢.
+
+“‰‘þ‰À ¥ ª‰Ø‰Æ‰µ‰‚ª‰Àö ¡‰Í ¤øý “‰ã‰Ì‰ü ê‰‘¬‰Ü‰‚û‰‘ý “‰ƒ‰ß î‰Ü‰Þ‰‘–, ›‰Ü‰ð‰ƒ‰Âý ª‰¢.
+õ‰·‰\nasb … ¢¤ ä‰±‰‘¤– 'ê‰Ê‰Û~3" ð‰Â 'ê‰Ê‰Û" ÷‰µ‰ú‰‘ý þ‰× ¡‰Í ø
+'3" “‰µ‰Àý ¡‰Í “‰ã‰Àý “‰‘ª‰À, ä‰¹‰ƒ‰° “‰‚ ÷‰Ñ‰Â ¡‰û‰À ¤¨‰ƒ‰À. —‰‘þ‰² î‰Â¢ö
+÷‰þ‰Æ‰‚ý~\InE{}\verb|~|\EnE{} ê‰‘¬‰Ü‰‚ý þ‰¹‰‘¢ õ‰üî‰€‰À î‰‚ \InE{}\TeX\EnE{} û‰ƒ‰ºð‰‘ù ¢¤ ÷‰¹‰‘ ¡‰Í ¤ ÷‰Þ‰üª‰Ø‰€‰À.
+õ‰·‰\nasb … õ‰ü—‰÷‰ƒ‰À —‰‘þ‰² î‰€‰ƒ‰À \BeT ê‰Ê‰Û\InE{}\verb|~|\EnE{}3\EnT.
+
+\subsubsection{•‰‘÷‰þ‰Åû‰‘}
+
+“‰Âý —‰ó‰ƒ‰Àî‰Â¢ö •‰‘÷‰þ‰Å\footnote{õ‰·‰Û þ‰ß} “‰‘þ‰À
+¥ ¢¨‰µ‰¤ \InE{}\verb|footnote\|\EnE{} ¨‰µ‰Ô‰‘¢ù
+î‰Â¢ ø õ‰µ‰ß •‰‘÷‰þ‰Å ¤ ¢¡‰Û þ‰× ›‰Ô‰´ î‰„¢ ì‰Â¤ ¢¢ )—‰›‰‚ î‰€‰ƒ‰À î‰‚
+¢¤ õ‰µ‰ß ê‰‘¤¨‰ü î‰„¢û‰‘ {\em “‰‘þ‰À} ê‰‘¤¨‰ü ø ¢¤ õ‰µ‰ß ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰‘þ‰À ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰‘ª‰€‰À(.
+“‰Âý —‰ó‰ƒ‰À ä‰…õ‰´ ¤øý î‰Ü‰Þ‰‚ý '•‰‘÷‰þ‰Å" ¢¤ “‰‘„ ø þ‰¹‰‘¢ •‰‘÷‰þ‰\kasre Å þ‰ß ¬‰Ô‰½‰‚
+“‰‚ þ‰ß ª‰Ø‰Û ä‰Þ‰Û ª‰Àù: \BeT •‰‘÷‰þ‰Å\InE{}\verb|}footnote\|\EnE{}õ‰·‰Û þ‰ß\InE{}\verb|{|\EnE{}\EnT.
+¢ì‰´ î‰€‰ƒ‰À î‰‚ “‰ƒ‰ß î‰Ü‰Þ‰‚ý '•‰‘÷‰þ‰Å" ø '\InE{}\verb|footnote\|\EnE{}" û‰ƒ‰º ê‰‘¬‰Ü‰‚ý
+ø›‰¢ ÷‰À¤¢.
+
+õ‰Ô‰ú‰õ‰ü î‰‚ “‰‘þ‰À þ‰€‰¹‰‘ —‰®‰ƒ‰¼ ¢û‰ƒ‰Ý õ‰Ô‰ú‰ô {\em ¤ð‰õ‰‘ö} þ‰× ¢¨‰µ‰¤ ¨‰´.
+î‰·‰Â ¢¨‰µ‰¤û‰‘ þ‰‘ õ‰·‰Û~\InE{}\verb|today\|\EnE{} ¤ð‰õ‰‘÷‰ü ÷‰À¤÷‰À
+ø þ‰‘ õ‰·‰Û~\InE{}\verb|footnote\|\EnE{} þ‰× ¤ð‰õ‰‘ö ¢¤÷‰À )'õ‰·‰Û þ‰ß" ¢¤ “‰‘„ ¤ð‰õ‰‘ö
+¢¨‰µ‰¤~\InE{}\verb|footnote\|\EnE{} ¨‰´(.  —‰ã‰À¢ î‰Þ‰ü ÷‰ƒ‰Ã û‰Æ‰µ‰€‰À î‰‚ ‰€‰À ¤ð‰õ‰‘ö
+¢¤÷‰À î‰‚ û‰Â þ‰× “‰ƒ‰ß þ‰× ›‰Ô‰´ î‰„¢ õ‰½‰Ê‰¤ õ‰üª‰¢.
+
+\subsubsection{ê‰Âõ‰ñû‰‘}
+
+ð‰Â þ‰× õ‰µ‰ß ä‰Ü‰Þ‰ü ¢ª‰µ‰‚ “‰‘ª‰ƒ‰À, õ‰ã‰Þ‰\nasb „ õ‰µ‰€‰µ‰‘ö ª‰‘õ‰Û ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü ¨‰´.
+ê‰Âõ‰ó‰ü î‰‚ ø¨‰Í õ‰µ‰ß Ò‰‘û‰Â ª‰¢ “‰‘ ¢ø ¢¨‰µ‰¤ \InE{}\verb|\(|\EnE{} ø \InE{}\verb|\)|\EnE{} õ‰½‰Ê‰¤ õ‰üª‰¢.
+)—‰›‰‚ ¢¤þ‰À î‰‚ “‰Âý —‰‘þ‰²î‰Â¢ö ê‰Âõ‰ñû‰‘ “‰‚ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü õ‰ü¤øþ‰Ý.(
+•‰Å “‰Âý —‰ó‰ƒ‰À ê‰Âõ‰ñ \InE{}\( x-3y = 7 \)\EnE{} —‰‘þ‰² õ‰üî‰€‰ƒ‰Ý \InE{}\verb|\( x-3y = 7 \)|\EnE{}.
+ê‰‘¬‰Ü‰‚û‰‘þ‰ü î‰‚ ¢¤ ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü —‰‘þ‰² î‰€‰ƒ‰À ÷‰Àþ‰Àù ð‰Âê‰µ‰‚ õ‰üª‰÷‰À, þ‰ã‰€‰ü
+\InE{}\verb|\(  x  +  y  \)|\EnE{} ø \InE{}\verb|\(x+y\)|\EnE{} û‰Â ¢ø \InE{}\(x + y\)\EnE{} ¤ —‰ó‰ƒ‰À õ‰üî‰€‰€‰À.
+\InE{}\TeX\EnE{} “‰‘ ê‰Âõ‰ñû‰‘ õ‰·‰Û î‰Ü‰Þ‰‘– ¤ê‰µ‰‘¤ õ‰üî‰€‰À ø õ‰ü—‰÷‰À ¨‰Î‰Â ¤ ì‰±‰Û þ‰‘ “‰ã‰À ¥ öû‰‘
+“‰È‰Ø‰€‰À.
+
+¥þ‰Â÷‰þ‰Å “‰‘ ¢¨‰µ‰¤ \InE{}\verb|_|\EnE{} ø —‰ö “‰‘ ¢¨‰µ‰¤ \InE{}\verb|^|\EnE{} —‰ó‰ƒ‰À õ‰üª‰¢.
+“‰Âý þ‰¹‰‘¢ \InE{}\( a_1 > x^{2n} / y^{2n} \)\EnE{} “‰‘þ‰À
+—‰‘þ‰² î‰€‰ƒ‰À \InE{}\verb|\( a_1 > x^{2n} / y^{2n} \)|\EnE{}.
+þ‰ß ¢ø ¢¨‰µ‰¤ ¤ ê‰Ö‰Í õ‰ü—‰ö ¢¡‰Û ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü “‰‚ î‰‘¤ “‰Â¢.
+
+¢¤ ê‰Âõ‰ñû‰‘ý ¤þ‰‘®‰ü, ÷‰þ‰Æ‰‚ý \InE{}\verb|'|\EnE{} þ‰× ä‰…õ‰´ •‰Âþ‰Ý )\InE{}$'$\EnE{}( þ‰¹‰‘¢ õ‰üî‰€‰À,
+¢ø—‰‘ ¥ ö, ä‰…õ‰´ \InE{}$''$\EnE{} ¤ þ‰¹‰‘¢ õ‰üî‰€‰À ø ó‰ü ¡‰Â.
+“‰Âý þ‰¹‰‘¢ \InE{}\( x' < x'' - y'_{3} < 10 x''' z \)\EnE{} —‰‘þ‰²
+î‰Â¢ùþ‰Ý
+\begin{quote}
+\InE{}\verb|\( x' < x'' - y'_3 < 10 x''' z \)|\EnE{}
+\end{quote}
+õ‰µ‰ç‰ƒ‰Âý õ‰·‰Û \InE{}$x$\EnE{} ÷‰ƒ‰Ã þ‰× ê‰Âõ‰ñ ¨‰´. “‰Âý ¬‰Âê‰‚›‰þ‰ü ¢¤ —‰‘þ‰², \FarsiTeX\ 
+“‰‘ \InE{}\verb|$...$|\EnE{} õ‰·‰Û \InE{}\verb|\(...\)|\EnE{} ¤ê‰µ‰‘¤ õ‰üî‰€‰À.  •‰Å õ‰ü—‰÷‰ƒ‰À “‰€‰þ‰Æ‰ƒ‰À
+\BeT \InE{}\verb|$x$|\EnE{} ø \InE{}\verb|$y>2x$|\EnE{}\ \InE{}\EnT\EnE{}  —‰‘ ¢¤ ¡‰Âø›‰ü \InE{}$x$\EnE{} ø \InE{}$y>2x$\EnE{} “‰±‰ƒ‰€‰ƒ‰À.
+
+¥ ó‰Ú‰ý \InE{}\verb|$...$|\EnE{} ê‰Ö‰Í “‰Âý ê‰Âõ‰ñû‰‘ý î‰—‰‘ù, õ‰·‰\nasb … þ‰× õ‰µ‰ç‰ƒ‰Â, ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+‰ö “‰‚ ¨‰‘¢ð‰ü õ‰Þ‰Ø‰ß ¨‰´ ä‰…õ‰´~\InE{}\verb|$|\EnE{} ¢øô ¤ ê‰Âõ‰© î‰€‰ƒ‰À. û‰Þ‰ƒ‰ßÏ‰¤ “‰Âý
+ê‰Âõ‰ñû‰‘ý ¡‰ƒ‰Ü‰ü “‰Ü‰€‰À õ‰ü—‰÷‰ƒ‰À ¥ ó‰Ú‰ý
+\begin{quote}
+\InE{}\verb|\begin{math}  ...  \end{math}|\EnE{}
+\end{quote}
+¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+
+\subsubsection{õ‰µ‰ß ì‰‘“‰Û ‰È‰Ý•‰ª‰ü}
+
+û‰Â øì‰´ \InE{}\TeX\EnE{} “‰‚ ÷‰þ‰Æ‰‚ý~\InE{}\verb|%|\EnE{}
+\fathe “‰Â “‰¿‰¤¢, ö ÷‰þ‰Æ‰‚ ø —‰Þ‰‘õ‰ü
+÷‰þ‰Æ‰‚û‰‘ý “‰ã‰À ¥ ö ¤ î‰‚ ¤øý û‰Þ‰‘ö ¡‰Í û‰Æ‰µ‰€‰À ÷‰Àþ‰Àù õ‰üð‰ƒ‰Â¢.
+¢ì‰´ î‰€‰ƒ‰À î‰‚ ¢¤ ¡‰Íû‰‘ý ¥ ¤¨‰´ “‰‚ ‰² ¥ ÷‰þ‰Æ‰‚ý ê‰‘¤¨‰ü ø ¢¤ ¡‰Íû‰‘ý
+¥ ‰² “‰‚ ¤¨‰´ ¥ ÷‰þ‰Æ‰‚ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+øþ‰Âþ‰È‰Ú‰Â \FarsiTeX\ ™‰Â \% ¤ ¢¤ õ‰µ‰ß “‰‘ —‰ç‰ƒ‰ƒ‰Â ¤÷‰Ù ÷‰È‰‘ö õ‰ü¢û‰À.
+
+
+\subsection{õ‰µ‰ß}
+Ÿ‰‘„ øŸ‰À î‰‘¤õ‰‘ö ¤ “‰Ã¤ï—‰Â õ‰üî‰€‰ƒ‰Ý ø “‰‚ ¡‰¢ õ‰µ‰ß ¬‰Ü‰ü õ‰ü•‰Â¢¥þ‰Ý.
+û‰Â õ‰µ‰€‰ü “‰‘ ¢¨‰µ‰¤~\InE{}\verb|{document}begin\|\EnE{} ª‰Âøá ª‰Àù ø “‰‘
+¢¨‰µ‰¤~\InE{}\verb|{document}end\|\EnE{} —‰Þ‰‘ô õ‰üª‰¢. \FarsiTeX\  û‰Â‰‚ ¤
+î‰‚ “‰ã‰À ¥ \InE{}\verb|{document}end\|\EnE{} “‰‘ª‰À ÷‰Àþ‰Àù õ‰üð‰ƒ‰Â¢.
+ì‰Æ‰Þ‰µ‰ü ¥ •‰Âø÷‰Àù î‰‚ ì‰±‰Û ¥ ¢¨‰µ‰¤~\InE{}\verb|{document}begin\|\EnE{}
+õ‰üþ‰À {\em ¢þ‰±‰‘‰‚} ÷‰‘ô ¢¤¢.
+
+\subsubsection{\fathe ¨‰\saken ±‰× õ‰µ‰ß}
+¢þ‰±‰‘‰‚ “‰‘ þ‰× ¢¨‰µ‰¤ \InE{}\verb|documentstyle\|\EnE{} è‰‘¥ õ‰üª‰¢ î‰‚
+¤ð‰õ‰‘ö ö þ‰Ø‰ü ¥ ¨‰±‰×û‰‘ý ¥ •‰ƒ‰Ç —‰ã‰Âþ‰Óª‰Àùý ¨‰´ î‰‚ \FarsiTeX\  õ‰üª‰€‰‘¨‰À.
+%•‰Âø÷‰Àùý \InE{}\verb|fsample.ftx|\EnE{} “‰‘ ¢¨‰µ‰¤
+%\begin{quote}
+%\InE{}\verb|{article}[farsi]documentstyle\|\EnE{}
+%\end{quote}
+%è‰‘¥ õ‰üª‰¢ î‰‚ ¨‰±‰× \InE{}\verb|article|\EnE{} )õ‰Ö‰‘ó‰‚( ¤ ÷‰µ‰¿‰‘’ õ‰üî‰€‰À.
+“‰Âý õ‰·‰‘ñ ð‰Â •‰Âø÷‰Àùý “‰‘ ¢¨‰µ‰¤   % —‰¨‰Í õ‰½‰Þ‰À —‰ç‰ƒ‰ƒ‰Â ¢¢ù ª‰À.
+\begin{quote}
+\InE{}\verb|{article}documentstyle\|\EnE{}
+\end{quote}
+è‰‘¥ ª‰¢, ¨‰±‰× \InE{}\verb|article|\EnE{} )õ‰Ö‰‘ó‰‚( “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü þ‰ß •‰Âø÷‰Àù ÷‰µ‰¿‰‘’ õ‰üª‰¢.
+þ‰Ø‰ü ¢þ‰Ú‰Â ¥ ¨‰±‰×û‰‘ý \FarsiTeX\  î‰‚ “‰Âý õ‰µ‰ßû‰‘ý ä‰‘¢ý ¨‰µ‰Ô‰‘¢ù õ‰üª‰¢
+¨‰±‰× \InE{}\verb|report|\EnE{} )ð‰Ã¤©( ¨‰´.  ¨‰±‰× õ‰Ö‰‘ó‰‚ õ‰ã‰Þ‰\nasb „ “‰Âý õ‰µ‰ßû‰‘ý î‰—‰‘ù—‰Â
+ø ¨‰±‰× ð‰Ã¤© “‰Âý õ‰µ‰ßû‰‘ý “‰Ã¤ï—‰Â     % —‰ç‰ƒ‰ƒ‰Â —‰¨‰Í õ‰½‰Þ‰À
+¨‰µ‰Ô‰‘¢ù õ‰üª‰¢. 
+û‰Þ‰ƒ‰ßÏ‰¤ ¨‰±‰Ø‰ü “‰‚ ÷‰‘ô \InE{}\verb|book|\EnE{} “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü î‰µ‰‘’û‰‘ 
+ø ¨‰±‰Ø‰ü “‰‚ ÷‰‘ô \InE{}\verb|letter|\EnE{} “‰Âý Ÿ‰Âøê‰»‰ƒ‰€‰ü ÷‰‘õ‰‚û‰‘ ø›‰¢ ¢¤¢.
+þ‰ß ¨‰±‰×û‰‘ý ¨‰µ‰‘÷‰À¤¢ ¢¤ ê‰Ê‰Û~\ref{otherstyles} “‰Â¤¨‰ü õ‰üª‰÷‰À.
+
+ä‰…øù “‰Â ÷‰µ‰¿‰‘’ ¨‰±‰×, ‰ƒ‰Ãû‰‘ý ¢þ‰Ú‰Âý ÷‰ƒ‰Ã “‰Âý ÷‰µ‰¿‰‘’î‰Â¢ö ø›‰¢ ¢¤¢.
+÷‰µ‰¿‰‘’û‰‘þ‰ü î‰‚ “‰Âý \InE{}\verb|article|\EnE{} ø \InE{}\verb|report|\EnE{} ¢¤þ‰À ä‰±‰‘¤—‰€‰À ¥
+\begin{description}
+\item[\InE{}\verb|farsi|\EnE{}] õ‰È‰¿‰É õ‰üî‰€‰À î‰‚ õ‰µ‰ß ª‰Þ‰‘ ª‰‘õ‰Û ê‰‘¤¨‰ü ¨‰´.
+\item[\InE{}\verb|11pt|\EnE{}] ÷‰À¥ùý ¤ õ‰È‰¿‰É õ‰üî‰€‰À î‰‚ “‰‚
+                   {\em þ‰‘¥¢ù•‰÷‰´} õ‰ã‰Âøé ¨‰´.  þ‰ß ÷‰À¥ù ¥ õ‰µ‰ß,
+                   ¥ ÷‰À¥ùý ¢ù•‰÷‰´ ä‰‘¢ý, ¢ù ¢¤¬‰À “‰Ã¤ï—‰Â ¨‰´.
+\item[\InE{}\verb|12pt|\EnE{}] ÷‰À¥ùý ¢ø¥¢ù•‰÷‰´ ¤ õ‰È‰¿‰É õ‰üî‰€‰À î‰‚ “‰ƒ‰Æ‰´ ¢¤¬‰À
+                   ¥ ¢ù•‰÷‰´ “‰Ã¤ï—‰Â ¨‰´.
+\item[\InE{}\verb|twoside|\EnE{}] ¡‰Âø›‰ü ¤ “‰Âý ‰‘” ª‰Àö ¢¤ ¢ø Ï‰Âé “‰Âï, ì‰‘ó‰°“‰€‰Àý õ‰üî‰€‰À.
+\item[\InE{}\verb|fmultico|\EnE{}] ¡‰Âø›‰\kasre ü ¢ø¨‰µ‰÷‰ü )þ‰‘ ‰€‰À¨‰µ‰÷‰ü( —‰ó‰ƒ‰À õ‰üî‰€‰À.
+\item[\InE{}\tt fancybox\EnE{}] —‰Æ‰ú‰ƒ‰…– õ‰¿‰µ‰Ü‰Ô‰ü “‰Âý ¤¨‰Ý ›‰Àøñ ¢ø¤ þ‰× õ‰µ‰ß ¢¤ ¡‰µ‰ƒ‰‘¤ õ‰üð‰Á¤¢.
+\end{description}
+¢þ‰Ú‰Â ÷‰µ‰¿‰‘’û‰‘ “‰ã‰À\nasb  —‰®‰ƒ‰¼ ¢¢ù ¡‰û‰€‰À ª‰À.
+
+ª‰Þ‰‘ “‰‘þ‰À ÷‰µ‰¿‰‘’û‰‘ý ®‰‘ê‰‚ “‰Â ¨‰±‰× õ‰µ‰ß ¤ “‰ã‰À ¥ \InE{}\verb|documentstyle\|\EnE{}
+¢¤ þ‰× ›‰Ô‰´ ì‰…’ “‰ƒ‰‘ø¤þ‰À, “‰Âý õ‰·‰‘ñ:
+\begin{quote}
+\InE{}\verb|{report}[farsi]documentstyle\|\EnE{}
+\end{quote}
+÷‰µ‰¿‰‘’û‰‘ý ‰€‰À—‰‘þ‰ü “‰‘ øþ‰Âð‰ñ ›‰À õ‰üª‰÷‰À. “‰Âý õ‰·‰‘ñ:
+\begin{quote}
+\InE{}\verb|{article}[twoside,12pt,farsi]documentstyle\|\EnE{}
+\end{quote}
+õ‰¹‰À¢\nasb  —‰›‰‚ 
+î‰€‰ƒ‰À î‰‚ ¢¤ þ‰ß  õ‰µ‰ß ø õ‰·‰‘ñ ö ÷‰þ‰Æ‰‚û‰‘ý 
+\InE{}\verb|\|\EnE{}, \InE{}\verb|]|\EnE{}, \InE{}\verb|[|\EnE{},
+\InE{}\verb|}|\EnE{} ø \InE{}\verb|{|\EnE{} 
+ “‰‘þ‰À ê‰‘¤¨‰ü ø “‰‘ ¥õ‰ƒ‰€‰‚ý “‰ü “‰‘ª‰€‰À.
+¢¡‰Û ì‰…’û‰‘ û‰ƒ‰º ê‰‘¬‰Ü‰‚ý ì‰Â¤ ÷‰Àû‰ƒ‰À.
+
+¢¨‰µ‰¤ \InE{}\verb|documentstyle\|\EnE{} õ‰ü—‰÷‰À “‰‘ ø þ‰‘ “‰Àøö ÷‰µ‰¿‰‘’û‰‘ý
+¢¡‰Û ì‰…’ “‰ƒ‰‘þ‰À.  ‰ƒ‰Ãû‰‘þ‰ü î‰‚ ¢¡‰Û ì‰…’ ì‰Â¤ õ‰üð‰ƒ‰Â÷‰À {\em ¤ð‰õ‰‘öû‰‘ý
+÷‰µ‰¿‰‘“‰ü} ¢¨‰µ‰¤ û‰Æ‰µ‰€‰À.  ¥ ì‰Â¤¢¢û‰‘ý \FarsiTeX\  þ‰ß ¨‰´ î‰‚ ¤ð‰õ‰‘öû‰‘ý
+÷‰µ‰¿‰‘“‰ü ¢¡‰Û ì‰…’ “‰ƒ‰‘þ‰€‰À, ¢¤ Ÿ‰‘ó‰ü î‰‚ ¤ð‰õ‰‘öû‰‘ý ›‰±‰‘¤ý ¢¡‰Û î‰„¢ õ‰üþ‰€‰À.
+\FarsiTeX\ ¥ ê‰‘¬‰Ü‰‚ý “‰ã‰À ¥ ÷‰‘ô ¢¨‰µ‰¤ ø ê‰‘¬‰Ü‰‚û‰‘ý “‰ƒ‰ß ¤ð‰õ‰‘öû‰‘
+¬‰Âé ÷‰Ñ‰Â õ‰üî‰€‰À.
+
+\subsubsection{'¬‰Ô‰½‰‚"ý  ä‰€‰ö}
+
+û‰Â õ‰µ‰€‰ü õ‰ã‰Þ‰\nasb „ þ‰× '¬‰Ô‰½‰‚"ý  ä‰€‰ö ¢¤¢ î‰‚ ª‰‘õ‰Û ä‰€‰ö,
+÷‰‘ô þ‰× þ‰‘ ‰€‰À õ‰\hamze ó‰Ó, ø —‰‘¤þ‰¾ ¨‰´.  “‰‚ þ‰ß ä‰Ü‰´ '¬‰Ô‰½‰‚"
+¢¤ ð‰ƒ‰õ‰‚ õ‰Àù, î‰‚ ¢¤ þ‰× õ‰µ‰ß î‰—‰‘ù þ‰ß Ï‰…ä‰‘– õ‰Þ‰Ø‰ß ¨‰´
+“‰‚ ›‰‘ý þ‰× ¬‰Ô‰½‰‚ý õ‰¹‰Ã, “‰µ‰Àý øó‰ƒ‰ß ¬‰Ô‰½‰‚ý õ‰µ‰ß ¤ ª‰ç‰‘ñ î‰€‰À.
+¨‰‚ ì‰Æ‰Þ‰´ —‰È‰Ø‰ƒ‰Û¢û‰€‰Àùý ä‰€‰ö î‰‚ ä‰±‰‘¤—‰€‰À ¥ ¡‰¢ ä‰€‰ö, ÷‰‘ô õ‰\hamze ó‰Ó þ‰‘ õ‰\hamze ó‰Óû‰‘
+ø —‰‘¤þ‰¾, “‰‘ ¨‰‚ ¢¨‰µ‰¤ \InE{}\verb|title\|\EnE{}, \InE{}\verb|author\|\EnE{} ø \InE{}\verb|date\|\EnE{}
+õ‰È‰¿‰É õ‰üª‰÷‰À.  “‰Âý õ‰·‰‘ñ ä‰€‰ö þ‰ß ¤ù÷‰Þ‰‘ “‰‘ ¢¨‰µ‰¤û‰‘ý
+\begin{quote}
+\InE{}\verb|}title\|\EnE{}  ¤ù÷‰Þ‰‘ý \InE{}\verb|FarsiTeX\|\EnE{}  \InE{}\verb|{|\EnE{} \\
+\InE{}\verb|}author\|\EnE{}  õ‰½‰Þ‰À ì‰À¨‰ü \InE{}\verb|{@1cm@}hspace\|\EnE{} ¤ø¥“‰‚ •‰¤÷‰‘¢¤\InE{}\verb|{|\EnE{} \\
+\InE{}\verb|}date\|\EnE{}¢ýõ‰‘ù 6731\InE{}\verb|{|\EnE{}
+\end{quote}
+õ‰È‰¿‰É ª‰Àù¨‰´.
+%ð‰Â ‰€‰À õ‰\hamze ó‰Ó ¢ª‰µ‰‚ “‰‘ª‰ƒ‰Ý, ÷‰‘ô õ‰\hamze ó‰Óû‰‘ ¤ “‰‘
+%¢¨‰µ‰¤ \InE{}\verb|and\|\EnE{} ›‰À õ‰üî‰€‰ƒ‰Ý.
+¡‰¢ '¬‰Ô‰½‰‚"ý  ä‰€‰ö “‰‘ ¢¨‰µ‰¤ \InE{}\verb|maketitle\|\EnE{} —‰ó‰ƒ‰À õ‰üª‰¢.
+
+¢¨‰µ‰¤ \InE{}\verb|maketitle\|\EnE{} “‰ã‰À ¥ \InE{}\verb|{document}begin\|\EnE{} ø
+õ‰ã‰Þ‰\nasb „ ì‰±‰Û ¥ û‰Â õ‰µ‰ß ¢þ‰Ú‰Âý õ‰üþ‰À.  ¢¨‰µ‰¤û‰‘ý \InE{}\verb|title\|\EnE{},
+\InE{}\verb|author\|\EnE{} ø \InE{}\verb|date\|\EnE{} õ‰ü—‰÷‰€‰À û‰Â›‰‘þ‰ü ì‰±‰Û ¥ \InE{}\verb|maketitle\|\EnE{}
+“‰ƒ‰‘þ‰€‰À.  ¢¨‰µ‰¤ \InE{}\verb|date\|\EnE{} ¡‰µ‰ƒ‰‘¤ý ¨‰´; ð‰Â Ÿ‰Áé ª‰¢ \FarsiTeX\  —‰‘¤þ‰¾ ê‰ã‰Ü‰ü
+¤ ›‰‘þ‰Ú‰Ãþ‰ß ö õ‰üî‰€‰À.  ¢¨‰µ‰¤û‰‘ý õ‰Â“‰¯ “‰‚ Ï‰…ä‰‘– ¢þ‰Ú‰Â õ‰‘÷‰€‰À ÷‰È‰‘÷‰ü õ‰\hamze ó‰Ó
+“‰ã‰À\nasb  “‰Â¤¨‰ü õ‰üª‰÷‰À.
+
+\subsection{“‰¿‰Ç“‰€‰Àý}\label{sectioning}
+
+›‰Þ‰Ü‰‚û‰‘ “‰‚¬‰¤– •‰‘¤ð‰Âéû‰‘ ¢¨‰µ‰‚“‰€‰Àý õ‰üª‰÷‰À ø
+—‰Âî‰ƒ‰° •‰‘¤ð‰Âéû‰‘, ¨‰‘¡‰µ‰‘¤û‰‘þ‰ü õ‰·‰Û ê‰Ê‰Û, “‰¿‰Ç, ø ì‰Æ‰Þ‰´ ¤ “‰‚ø›‰¢ õ‰üø¤÷‰À.
+“‰Âý õ‰·‰‘ñ ª‰Þ‰‘ î‰€‰ö ¢¤ Ÿ‰‘ñ õ‰Î‰‘ó‰ã‰‚ý ¥þ‰Âì‰Æ‰Þ‰´~\ref{sectioning} û‰Æ‰µ‰ƒ‰À î‰‚
+ä‰€‰ö ö {\em “‰¿‰Ç“‰€‰Àý} ¨‰´, þ‰ß ¥þ‰Âì‰Æ‰Þ‰´ ›‰ÃŽ‰ü ¥ ì‰Æ‰Þ‰´~\ref{theinput}
+¨‰´ î‰‚ {\em ø¤ø¢ý} ÷‰‘ô ¢¤¢ ø “‰‚ û‰Þ‰ƒ‰ß —‰Â—‰ƒ‰°, ›‰ÃŽ‰ü ¥
+ê‰Ê‰Û~\ref{gettingstarted} “‰‚÷‰‘ô {\em ª‰Âøá î‰‘¤} ¨‰´.
+“‰Âý ‰ƒ‰Ãû‰‘þ‰ü õ‰·‰Û ê‰Ê‰Û, ì‰Æ‰Þ‰´, ø ¥þ‰Âì‰Æ‰Þ‰´ ¥ ¬‰Î‰…ž {\em øŸ‰Àû‰‘ý “‰¿‰Ç“‰€‰Àý}
+¨‰µ‰Ô‰‘¢ù ¡‰û‰ƒ‰Ý î‰Â¢.
+
+û‰Â øŸ‰\kasre À “‰¿‰Ç“‰€‰Àý “‰‘ þ‰× ¢¨‰µ‰¤ “‰¿‰Ç“‰€‰Àý ª‰Âøá õ‰üª‰¢ î‰‚ ä‰€‰ö
+ö øŸ‰À ¤ “‰‚ ä‰€‰ö ¤ð‰õ‰‘ö õ‰üð‰ƒ‰Â¢.  “‰Âý õ‰·‰‘ñ ä‰€‰ö þ‰ß ¥þ‰Âì‰Æ‰Þ‰´
+“‰‘ ¢¨‰µ‰¤
+\begin{quote}
+\InE{}\verb|}subsection\|\EnE{}“‰¿‰Ç“‰€‰Àý\InE{}\verb|{|\EnE{}
+\end{quote}
+¨‰‘¡‰µ‰‚ ª‰Àù¨‰´.  ¨‰±‰\kasre × õ‰µ‰ß, —‰ã‰ƒ‰ƒ‰ß õ‰üî‰€‰À î‰‚ ‰‚ ¢¨‰µ‰¤û‰‘þ‰ü “‰Âý “‰¿‰Ç“‰€‰Àý
+õ‰›‰¢÷‰À. ¨‰±‰×û‰‘ý ¨‰µ‰‘÷‰À¤¢ ª‰‘õ‰Û þ‰ß ¢¨‰µ‰¤û‰‘ û‰Æ‰µ‰€‰À:
+\begin{quote}
+\begin{tabular}{lll}
+\InE{}\verb|part\|\EnE{} & \InE{}\verb|chapter\|\EnE{} & \InE{}\verb|section\|\EnE{} \\
+\InE{}\verb|subsection\|\EnE{} & \InE{}\verb|subsubsection\|\EnE{} & \InE{}\verb|paragraph\|\EnE{} \\
+\InE{}\verb|subparagraph\|\EnE{}
+\end{tabular}
+\end{quote}
+¨‰±‰× \InE{}\verb|article|\EnE{} ª‰‘õ‰Û ¢¨‰µ‰¤ \InE{}\verb|chapter\|\EnE{} ÷‰ƒ‰Æ‰´ ø û‰Þ‰ƒ‰ß
+“‰‘ä‰¶ õ‰üª‰¢ î‰‚ “‰‚¤Ÿ‰µ‰ü “‰µ‰ö þ‰× 'õ‰Ö‰‘ó‰‚" ¤ “‰‚ ä‰€‰ö “‰¿‰È‰ü ¥ þ‰×
+'ð‰Ã¤©" ¢¤š î‰Â¢.
+
+û‰Â øŸ‰\kasre À “‰¿‰Ç“‰€‰Àý î‰‚ “‰‘ þ‰ß ¢¨‰µ‰¤û‰‘ õ‰È‰¿‰É ª‰¢, “‰‘þ‰À “‰‚ª‰Ø‰Û
+¥þ‰ÂøŸ‰\kasre À þ‰Ø‰ü ¥ øŸ‰Àû‰‘ý “‰‘„—‰Â ¨‰µ‰Ô‰‘¢ù ª‰¢; õ‰Ú‰Â ¢¨‰µ‰¤ \InE{}\verb|part\|\EnE{}
+î‰‚ ¨‰µ‰Ô‰‘¢ù ¥ ö ¡‰µ‰ƒ‰‘¤ý ¨‰´.  û‰Â ¥þ‰Âì‰Æ‰Þ‰´ )\InE{}subsection\EnE{}( “‰‘þ‰À
+›‰ÃŽ‰ü ¥ þ‰× ì‰Æ‰Þ‰´ )\InE{}section\EnE{}( “‰‘ª‰À, î‰‚ ö ÷‰ƒ‰Ã ¢¤ ¨‰±‰× \InE{}\verb|report|\EnE{}
+“‰‘þ‰À ›‰ÃŽ‰ü ¥ þ‰× ê‰Ê‰Û )\InE{}chapter\EnE{}( “‰‘ª‰À.
+
+¥ ¢¨‰µ‰¤ \InE{}\verb|part\|\EnE{} )“‰¿‰Ç( “‰Âý —‰Ö‰Æ‰ƒ‰Ý“‰€‰Àýû‰‘ý “‰Ã¤ï õ‰µ‰ßû‰‘ý Ï‰„÷‰ü
+¨‰µ‰Ô‰‘¢ù õ‰üª‰¢; þ‰ß ¢¨‰µ‰¤ ¢¤ ª‰Þ‰‘¤ù“‰€‰Àý øŸ‰Àû‰‘ý î‰‰×—‰Â
+—‰\hamze ‘™‰ƒ‰Âý ÷‰À¤¢ ‹‰‹‰\ þ‰ã‰€‰ü ¢¤ ¨‰±‰× \InE{}\verb|article|\EnE{},
+ð‰Â ¡‰Âþ‰ß 'ì‰Æ‰Þ‰\kasre ´" “‰¿‰Ç~1, ì‰Æ‰Þ‰´~5
+“‰‘ª‰À, øó‰ƒ‰ß 'ì‰Æ‰Þ‰´" “‰¿‰Ç~2, ì‰Æ‰Þ‰´~6 ¡‰û‰À “‰¢.
+
+¨‰±‰× õ‰µ‰ß, ª‰Ø‰Û Ò‰‘û‰Âý ä‰€‰ö “‰¿‰Çû‰‘ ø þ‰ß î‰‚ þ‰‘ þ‰ß øŸ‰À “‰¿‰Ç“‰€‰Àý
+ª‰Þ‰‘¤ù „¥ô ¢¤¢ þ‰‘ ÷‰‚ ¤ —‰ã‰ƒ‰ƒ‰ß õ‰üî‰€‰À.
+
+\subsection{õ‰µ‰ßû‰‘ý ›‰Ü‰ùþ‰‘ê‰µ‰‚ )\InE{}displayed\EnE{}(}
+
+“‰Âý ÷‰Ö‰Û ì‰ñ, “‰‘þ‰À ó‰½‰ß ¬‰À ¤ —‰ç‰ƒ‰ƒ‰Â ¢¢.  õ‰ã‰‘¢ñ þ‰ß ä‰Þ‰Û ¢¤ î‰‘¤ ‰‘”,
+›‰Ü‰ “‰Â¢ö õ‰µ‰ß þ‰‘ {\em ›‰Ü‰ù¢¢ö} ¨‰´.  ÷‰Þ‰÷‰‚ý ¥ þ‰ß î‰‘¤ ¤
+¢¤ ¥þ‰Â õ‰ü“‰ƒ‰€‰ƒ‰À:
+\begin{quote}
+  þ‰ß õ‰µ‰ß ÷‰Þ‰÷‰‚ý ¥ þ‰× ÷‰Ö‰Û ì‰ñ î‰—‰‘ù ø ›‰Ü‰ùþ‰‘ê‰µ‰‚ ¨‰´.  —‰›‰‚ ¢ª‰µ‰‚ “‰‘ª‰ƒ‰À
+  î‰‚ ¥ û‰Â ¢øÏ‰Âé “‰‘ Ÿ‰‘ª‰ƒ‰‚ý õ‰µ‰ß ¬‰Ü‰ü ê‰‘¬‰Ü‰‚ ¢¤¢.
+\end{quote}
+õ‰µ‰ß ê‰ë “‰‚ þ‰ß ª‰Ø‰Û —‰‘þ‰² ª‰Àù¨‰´:
+\begin{quote}
+\InE{}\verb|{quote}begin\|\EnE{} \\
+\ \ þ‰ß õ‰µ‰ß ÷‰Þ‰÷‰‚ý ¥ \ldots \\
+\InE{}\verb|{quote}end\|\EnE{} \\
+\end{quote}
+
+þ‰ß õ‰·‰‘ñ þ‰Ø‰ü ¥ ¨‰‘¡‰µ‰‘¤û‰‘ý \FarsiTeX\  “‰‚÷‰‘ô {\em õ‰½‰ƒ‰Í} ¤ ÷‰Þ‰‘þ‰Ç õ‰ü¢û‰À,
+î‰‚ “‰‚ ª‰Ø‰Û î‰Ü‰\kasre ü
+\begin{quote}
+\InE{}\verb|}begin\|\EnE{}{\em ÷‰‘ô}\InE{}\verb|}end\ ... {|\EnE{}{\em ÷‰‘ô}\InE{}\verb|{|\EnE{}
+\end{quote}
+õ‰üþ‰À ø ¢¤ ö {\em ÷‰‘ô}, ÷‰‘ô õ‰½‰ƒ‰Í ¨‰´.  õ‰½‰ƒ‰Í \InE{}\verb|quote|\EnE{} ª‰Âþ‰Í „¥ô ¤
+“‰Âý þ‰× ÷‰Ö‰Û ì‰ñ î‰—‰‘ù, ê‰Âû‰Ý õ‰üî‰€‰À.  ì‰±‰\nasb … “‰‘ ¢ø õ‰½‰ƒ‰Í ¢þ‰Ú‰Â “‰‚ ÷‰‘ôû‰‘ý
+\InE{}\verb|math|\EnE{} ø \InE{}\verb|document|\EnE{} ª‰€‰‘ ª‰Àùþ‰À.
+
+\subsubsection{÷‰Ö‰Û ì‰ñ}
+
+\FarsiTeX\  ¢ø õ‰½‰ƒ‰Í õ‰¿‰µ‰Ü‰Ó “‰Âý ÷‰Þ‰‘þ‰Ç¢¢ö ÷‰Ö‰Û ì‰ñû‰‘ ê‰Âû‰Ý î‰Â¢ù¨‰´.
+õ‰½‰ƒ‰Í \InE{}\verb|quote|\EnE{} “‰Âý ÷‰Ö‰Û ì‰ñû‰‘ý î‰—‰‘ù þ‰‘ þ‰× ¨‰Âý ÷‰Ö‰Û ì‰ñ î‰—‰‘ù î‰‚ “‰‘
+¡‰Íû‰‘ý ¡‰‘ó‰ü ›‰À õ‰üª‰÷‰À —‰À¤í ¢þ‰Àù ª‰Àù¨‰´.
+
+õ‰½‰ƒ‰Í \InE{}\verb|quotation|\EnE{} ÷‰ƒ‰Ã “‰Âý ÷‰Ö‰Û ì‰ñû‰‘ý “‰ƒ‰Ç ¥ þ‰× •‰‘¤ð‰Âé ¨‰´.
+Ï‰±‰Õ õ‰ã‰Þ‰ñ •‰‘¤ð‰Âéû‰‘ý õ‰µ‰ß ÷‰Ö‰Ûª‰Àù “‰‘ þ‰× ¡‰Í ¡‰‘ó‰ü ›‰À õ‰üª‰÷‰À.
+
+\subsubsection{ó‰ƒ‰Æ‰´û‰‘}
+
+\FarsiTeX\  ¨‰‚ õ‰½‰ƒ‰Í “‰Âý ¨‰‘¡‰µ‰ß ó‰ƒ‰Æ‰´ ¢¤¢:
+\InE{}\verb|itemize|\EnE{}, \InE{}\verb|enumerate|\EnE{} ø \InE{}\verb|description|\EnE{}.
+¢¤ û‰Â ¨‰‚, û‰Â õ‰¤\kasre ¢ ›‰Àþ‰\kasre À ó‰ƒ‰Æ‰´ “‰‘ þ‰× ¢¨‰µ‰¤ \InE{}\verb|item\|\EnE{} ª‰Âøá õ‰üª‰¢.
+ó‰ƒ‰Æ‰´û‰‘ý õ‰¤¢“‰€‰Àý ª‰Àù “‰‘ õ‰½‰ƒ‰Í \InE{}\verb|itemize|\EnE{} ø ó‰ƒ‰Æ‰´û‰‘ý ª‰Þ‰‘¤ù¢¤ “‰‘
+õ‰½‰ƒ‰Í \InE{}\verb|enumerate|\EnE{} ¢¤¨‰´ õ‰üª‰÷‰À.
+“‰Âý õ‰·‰‘ñ ¨‰‘¡‰µ‰‘¤
+\begin{itemize}
+  \item û‰Â ä‰Ì‰ ó‰ƒ‰Æ‰´ “‰‘ þ‰× {\em “‰Â‰Æ‰°} ä‰…õ‰´ð‰Á¤ý õ‰üª‰¢.  “‰Â‰Æ‰°û‰‘ý
+        þ‰ß ó‰ƒ‰Æ‰´, ¢þ‰Âùý —‰•‰Â û‰Æ‰µ‰€‰À.
+  \item ó‰ƒ‰Æ‰´û‰‘ õ‰ü—‰÷‰€‰À ¢¡‰Û þ‰Ø‰Àþ‰Ú‰Â ì‰Â¤ “‰Ú‰ƒ‰Â÷‰À.
+        \begin{enumerate}
+          \item “‰Â‰Æ‰°û‰‘ý ä‰Ì‰‘ý þ‰× ó‰ƒ‰Æ‰´ ª‰Þ‰‘¤ùð‰Á¤ýª‰Àù, ä‰À¢ þ‰‘
+                Ÿ‰Âøé û‰Æ‰µ‰€‰À.
+          \item û‰Â ó‰ƒ‰Æ‰´ Ÿ‰Àì‰Û “‰‘þ‰À ¢ø ä‰Ì‰ ¢ª‰µ‰‚ “‰‘ª‰À.
+        \end{enumerate}
+        \FarsiTeX\ Ÿ‰Àî‰·‰Â —‰‘ ‰ú‰‘¤ õ‰ÂŸ‰Ü‰‚ ó‰ƒ‰Æ‰´ ¢¡‰Û û‰Ý ì‰±‰ñ õ‰üî‰€‰À î‰‚ ¥ Ÿ‰À „¥ô
+        “‰ƒ‰È‰µ‰Â ¨‰´.
+
+  \item ¡‰Í ¡‰‘ó‰ü ì‰±‰Û ¥ þ‰× ä‰Ì‰ —‰\hamze ‘™‰ƒ‰Âý ÷‰À¤¢.
+\end{itemize}
+“‰‘ ø¤ø¢ý ¥þ‰Â —‰ó‰ƒ‰À ª‰Àù¨‰´.
+\begin{quote}
+\InE{}\verb|{itemize}begin\|\EnE{} \\
+\InE{}\verb|item\  |\EnE{} û‰Â ä‰Ì‰ ó‰ƒ‰Æ‰´ \ldots\ û‰Æ‰µ‰€‰À. \\
+\InE{}\verb|item\  |\EnE{} ó‰ƒ‰Æ‰´û‰‘ õ‰ü—‰÷‰€‰À \ldots\ “‰Ú‰ƒ‰Â÷‰À. \\
+\InE{}\verb|{enumerate}begin\    |\EnE{} \\
+\InE{}\verb|item\      |\EnE{} “‰Â‰Æ‰°û‰‘ý ä‰Ì‰‘ý þ‰× \ldots\ û‰Æ‰µ‰€‰À. \\
+\InE{}\verb|item\      |\EnE{} û‰Â ó‰ƒ‰Æ‰´ Ÿ‰Àì‰Û \ldots\ ¢ª‰µ‰‚ “‰‘ª‰À. \\
+\InE{}\verb|{enumerate}end\    |\EnE{} \\
+\InE{}\verb| \FarsiTeX\    |\EnE{}Ÿ‰Àî‰·‰Â \ldots\ “‰ƒ‰È‰µ‰Â ¨‰´. \\
+\\
+\InE{}\verb|item\  |\EnE{} ¡‰Í ¡‰‘ó‰ü \ldots\ ÷‰À¤¢. \\
+\InE{}\verb|{itemize}end\|\EnE{}
+\end{quote}
+
+¢¤ õ‰½‰ƒ‰Í \InE{}\verb|description|\EnE{} “‰Â‰Æ‰\kasre ° õ‰¤¢û‰‘, ¢¤ ¤ð‰õ‰‘ö ¡‰µ‰ƒ‰‘¤\kasre ý ¢¨‰µ‰\kasre ¤
+\InE{}\verb|item\|\EnE{} õ‰üþ‰À. )ø “‰ƒ‰ß ¢ø ì‰…’ ì‰Â¤ õ‰üð‰ƒ‰Â¢(. õ‰·‰\nasb … õ‰µ‰ß 
+
+\begin{minipage}{7cm}
+\begin{description}
+\item[¤þ‰‘÷‰‚] ø¨‰ƒ‰Ü‰‚ý ¨‰´ ì‰‘“‰Û “‰Â÷‰‘õ‰‚¤þ‰Ãý, ›‰ú‰´ õ‰½‰‘¨‰±‰‚. ¤þ‰‘÷‰‚ õ‰ü—‰÷‰À 
+        õ‰ƒ‰Ü‰ƒ‰÷‰ú‰‘  ¢¨‰µ‰¤ ¤ ¢¤ ¥õ‰‘ö “‰Æ‰ƒ‰‘¤ î‰—‰‘û‰ü ›‰Â î‰€‰À.  õ‰Âø¥ù ¤þ‰‘÷‰‚û‰‘
+        ÷‰»‰€‰‘ö ê‰Âð‰ƒ‰Â ª‰Àù÷‰À î‰‚ —‰Ö‰Âþ‰±‰\nasb ‘ ¥÷‰Àð‰ü “‰Àøö ÷‰ú‰‘ ê‰Ü‰¸ õ‰üª‰¢. 
+\item[¬‰Ô‰½‰‚î‰Ü‰ƒ‰À] ø¨‰ƒ‰Ü‰‚ý “‰Âý ÷‰µ‰Ö‰‘\kasre ñ Ï‰…ä‰‘– “‰‚ ¤þ‰‘÷‰‚. 
+\item[‰‘•‰Ú‰Â] ø¨‰ƒ‰Ü‰‚ý “‰Âý ‰‘”î‰Â¢ö Ï‰…ä‰‘\kasre – ¡‰Âø›‰ü ¤þ‰‘÷‰‚. õ‰Âø¥ù ‰‘•‰Ú‰Âû‰‘ý 
+          õ‰¿‰µ‰Ü‰Ô‰ü “‰‚ “‰‘¥¤ õ‰Àù÷‰À. ‰‘•‰Ú‰Âû‰‘ý ¤÷‰Ú‰ü ó‰ƒ‰Ã¤ý ¥ î‰ƒ‰Ô‰ƒ‰´ “‰‘„þ‰ü 
+          “‰Â¡‰¤¢¤ û‰Æ‰µ‰€‰À.
+\end{description}
+\end{minipage}
+
+\vspace{5mm}
+“‰‘ ¢¨‰µ‰¤û‰‘ý 
+\begin{quote}
+\InE{}\verb|{description}begin\|\EnE{} \\
+\InE{}\verb|]item\|\EnE{}¤þ‰‘÷‰‚\InE{}\verb|[|\EnE{} ø¨‰ƒ‰Ü‰‚ý ¨‰´ \ldots\ ê‰Ü‰¸ õ‰üª‰÷‰À . \\
+\InE{}\verb|]item\|\EnE{}¬‰Ô‰½‰‚î‰Ü‰ƒ‰À\InE{}\verb|[|\EnE{} ø¨‰ƒ‰Ü‰‚ý “‰Âý \ldots\  ¤þ‰‘÷‰‚. \\
+\InE{}\verb|]item\|\EnE{}‰‘•‰Ú‰Â\InE{}\verb|[|\EnE{} ø¨‰ƒ‰Ü‰‚ý “‰Âý \ldots\  û‰Æ‰µ‰€‰À.   \\
+\InE{}\verb|{description}end\|\EnE{}
+\end{quote}
+—‰ó‰ƒ‰À ª‰Àù ¨‰´. 
+
+ð‰Â õ‰µ‰\kasre ß þ‰× õ‰¤¢ “‰‘ [ ª‰Âøá ª‰¢, þ‰‘ ¤ð‰õ‰‘\kasre ö ¡‰µ‰ƒ‰‘¤\kasre ý
+¢¨‰µ‰\kasre ¤ \InE{}\verb|item\|\EnE{} ª‰‘õ‰Û þ‰× ì‰…’ “‰‘ª‰À, õ‰È‰Ø‰…—‰ü •‰ƒ‰Ç õ‰üþ‰À.
+¢¤ þ‰ß õ‰¤¢ ø õ‰¤¢ õ‰È‰‘“‰‚ î‰‚ —‰®‰ƒ‰¼ “‰ƒ‰È‰µ‰Âý „¥ô ¨‰´ “‰‚~\cite{lamport:latex}
+¤›‰á î‰€‰ƒ‰À.
+
+\subsubsection{ª‰ã‰Â}
+
+¢¤ \FarsiTeX\  ê‰ã‰\nasb … “‰Âý ª‰ã‰Âû‰‘ý ä‰‘¢ý õ‰Ø‰‘÷‰‘—‰ü ¢¤÷‰Ñ‰Â ð‰Âê‰µ‰‚ ÷‰È‰Àù ¨‰´.
+õ‰‘ “‰Âý ª‰ã‰Â ÷‰ õ‰ü—‰÷‰ƒ‰À ¥ õ‰½‰ƒ‰Í \InE{}\verb|verse|\EnE{} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À.
+õ‰·‰\nasb … “‰Âý —‰ó‰ƒ‰Àî‰Â¢ö ì‰Î‰ã‰‚ ª‰ã‰Â
+\begin{verse}
+¢¤ ª‰° ¨‰Â¢ ¥õ‰Æ‰µ‰‘÷‰ü, \\
+î‰¤ùý ¡‰¤ª‰ƒ‰À û‰Ý, ‰ö î‰¤ùý ð‰Âô ‰Âå õ‰ß ÷‰Þ‰ü¨‰¥¢. \\
+ø “‰‚ õ‰‘÷‰€‰À ‰Âå õ‰ß \\
+÷‰‚ õ‰üê‰Âø¥¢ ‰Âè‰ü û‰ƒ‰º, \\
+÷‰‚ ê‰Âø“‰Æ‰µ‰‚ “‰‚ þ‰¾ õ‰‘û‰ü î‰‚ ¥ “‰‘„ õ‰üê‰Âø¥¢. \\
+õ‰ß ‰Âè‰Ý ¤ ¢¤ õ‰À ¤ê‰µ‰ß û‰Þ‰Æ‰‘þ‰‚ô ê‰Âø¡‰µ‰Ý ¢¤ þ‰× ª‰° —‰‘¤þ‰×.
+\end{verse}
+ø¤ø¢ý ‰ƒ‰Ãý “‰‚ þ‰ß ª‰Ø‰Û “‰¢ù ¨‰´:
+\begin{quote}
+\InE{}\verb|{verse}begin\|\EnE{} \\
+¢¤ ª‰° ¨‰Â¢ ¥õ‰Æ‰µ‰‘÷‰ü, \InE{}\verb|\\|\EnE{} \\
+î‰¤ùý \ldots\ ÷‰Þ‰ü¨‰¥¢. \InE{}\verb|\\|\EnE{} \\
+\ldots \\
+÷‰‚ ê‰Âø“‰Æ‰µ‰‚ \ldots\ õ‰üê‰Âø¥¢.\InE{}\verb|\\|\EnE{}  \\
+õ‰ß ‰Âè‰Ý ¤ \ldots\ —‰‘¤þ‰×. 
+\InE{}\verb|{verse}end\|\EnE{}
+\end{quote}
+ð‰Â ø¨‰Í ª‰ã‰Â „¥ô “‰‘ª‰À î‰‚ “‰‚ “‰€‰À ›‰Àþ‰À “‰Âøþ‰À,
+þ‰× ¨‰Î‰Â ¡‰‘ó‰ü ¤¢ î‰€‰ƒ‰À.
+
+¢¨‰µ‰¤ \InE{}\verb|*\\|\EnE{} )û‰Þ‰‚ý ÷‰þ‰Æ‰‚û‰‘ ê‰‘¤¨‰ü û‰Æ‰µ‰€‰À( õ‰·‰Û ¢¨‰µ‰¤
+\InE{}\verb|\\|\EnE{} “‰‘ä‰¶ •‰‘þ‰‘ö þ‰‘ê‰µ‰ß ¨‰Î‰Â ê‰ã‰Ü‰ü ø ¤ê‰µ‰ß “‰‚ ¨‰Â ¨‰Î‰Â “‰ã‰À õ‰üª‰¢;
+—‰€‰ú‰‘ —‰Ô‰‘ø– ö “‰‘ \InE{}\verb|\\|\EnE{} þ‰ß ¨‰´ î‰‚ õ‰‘÷‰â ¥ ö õ‰üª‰¢ î‰‚
+\FarsiTeX\ ¢¤ ö õ‰½‰Û þ‰× ¬‰Ô‰½‰‚ý ›‰Àþ‰À ¤ ª‰Âøá î‰€‰À.
+¥ þ‰ß ¢¨‰µ‰¤ õ‰ü—‰ö “‰‚ õ‰€‰Ñ‰¤ þ‰ßî‰‚ þ‰× ª‰ã‰Â “‰‚Ï‰¤ è‰ƒ‰Âä‰‘¢ý
+¢¤ ¬‰Ô‰½‰‘– õ‰¿‰µ‰Ü‰Ó ÷‰ƒ‰‘þ‰À, ¨‰µ‰Ô‰‘¢ù î‰Â¢.  
+%¢¨‰µ‰¤û‰‘ý \InE{}\verb|\\|\EnE{} ø
+%\InE{}\verb|*\\|\EnE{} ¢¤ —‰Þ‰‘ô õ‰½‰ƒ‰Íû‰‘þ‰ü î‰‚ ¢¤ öû‰‘ ª‰Þ‰‘ “‰‚ \FarsiTeX\  õ‰üð‰þ‰ƒ‰À
+%¨‰Î‰Â ¤ “‰È‰Ø‰€‰À, ¨‰µ‰Ô‰‘¢ù õ‰üª‰¢.  
+“‰‚ ¢¨‰µ‰¤ \InE{}\verb|*\\|\EnE{}, ª‰Ø‰\kasre Û ¨‰µ‰‘¤ù¢\kasre ¤
+¢¨‰µ‰¤ \InE{}\verb|\\|\EnE{} õ‰üð‰þ‰€‰À.  ¡‰ƒ‰Ü‰ü ¥ ¢þ‰Ú‰Â ¢¨‰µ‰¤û‰‘ ÷‰ƒ‰Ã ª‰Ø‰\kasre Û ¨‰µ‰‘¤ù¢¤
+¢¤÷‰À î‰‚ õ‰ã‰Þ‰\nasb „ “‰‘ Ÿ‰‘ó‰´ ä‰‘¢ý öû‰‘ —‰Ô‰‘ø– ›‰ÃŽ‰ü ¢¤¢.  þ‰ß ¢¨‰µ‰¤û‰‘ “‰‘
+þ‰× ¨‰µ‰‘¤ù “‰ã‰À ¥ ÷‰‘ô ¢¨‰µ‰¤ —‰‘þ‰² õ‰üª‰÷‰À.
+
+\subsubsection{ê‰Âõ‰ñû‰‘ý ›‰Ü‰ùþ‰‘ê‰µ‰‚}
+
+û‰€‰Ú‰‘õ‰ü î‰‚ þ‰× ê‰Âõ‰ñ ¤þ‰‘®‰ü “‰Âý ›‰‘ð‰Âê‰µ‰ß ¢¤ õ‰µ‰ß Ï‰„÷‰ü ¨‰´ ø þ‰‘
+õ‰ú‰Ý ¨‰´ )Ï‰¤ý î‰‚ õ‰ü¡‰û‰ƒ‰À þ‰× ¨‰Î‰Â õ‰¹‰Ã ¤ “‰‚ ¡‰¢ ¡‰µ‰Ê‰‘« ¢û‰À(
+þ‰‘ õ‰ü¡‰û‰ƒ‰À “‰Âý ¤›‰‘áû‰‘ý “‰ã‰Àý “‰‚ ö ª‰Þ‰‘¤ù “‰Àû‰ƒ‰À,
+{\em ›‰Ü‰ù ¢¢ù} õ‰üª‰¢.
+\FarsiTeX\ ¢ø õ‰½‰ƒ‰Í \InE{}\verb|displaymath|\EnE{} ø \InE{}\verb|equation|\EnE{} ¤ “‰Âý
+þ‰ß î‰‘¤ ê‰Âû‰Ý î‰Â¢ù¨‰´; —‰€‰ú‰‘ —‰Ô‰‘ø– þ‰ß ¢ø õ‰½‰ƒ‰Í þ‰ß ¨‰´ î‰‚ \InE{}\verb|equation|\EnE{}
+ê‰Âõ‰ñ ¤ ª‰Þ‰‘¤ùð‰Á¤ý õ‰üî‰€‰À ø \InE{}\verb|displaymath|\EnE{} ÷‰Þ‰üî‰€‰À. ¥ ÷‰¹‰‘ î‰‚
+ê‰Âõ‰ñû‰‘ý ›‰Ü‰ùþ‰‘ê‰µ‰‚ ¢¤ ¤þ‰‘®‰ƒ‰‘– “‰Æ‰ƒ‰‘¤ ¨‰µ‰Ô‰‘¢ù õ‰üª‰÷‰À, \FarsiTeX\ ›‰‘¥ù õ‰ü¢û‰À
+“‰‚›‰‘ý
+\begin{quote}
+\InE{}\verb|\begin{displaymath} ... \end{displaymath}|\EnE{}
+\end{quote}
+—‰‘þ‰² î‰€‰ƒ‰À \InE{}\verb|\[...\]|\EnE{}. •‰Å “‰Âý —‰ó‰ƒ‰À î‰Â¢ö ê‰Âõ‰ñ
+ \[ x' + y^2 = z_i^2 \]
+¥ ¢¨‰µ‰¤
+\begin{quote}
+\InE{}\verb|  \[ x' + y^2 = z_i^2 \]|\EnE{}
+\end{quote}
+¨‰µ‰Ô‰‘¢ù ª‰Àù¨‰´. û‰Þ‰»‰€‰ƒ‰ß ð‰Â —‰‘þ‰² î‰€‰ƒ‰À
+\english
+\begin{quote}
+\verb|  \begin{equation}| \\
+\verb|    x' + y^2 = z_i^2| \\
+\verb|  \end{equation}| \\
+\end{quote}
+\farsi
+ê‰Âõ‰\kasre ñ ª‰Þ‰‘¤ù¢¤
+  \begin{equation}
+    x' + y^2 = z_i^2
+  \end{equation}
+“‰‚¢¨‰´ õ‰üþ‰À.
+¨‰±‰× õ‰µ‰ß, —‰ã‰ƒ‰ƒ‰ß õ‰üî‰€‰À î‰‚ ‰Ú‰÷‰‚ ê‰Âõ‰ñû‰‘ ª‰Þ‰‘¤ùð‰Á¤ý ª‰÷‰À.
+
+\subsection{›‰Âî‰Â¢ö \FarsiTeX}
+ð‰Â î‰‘¤û‰‘ý ì‰Æ‰Þ‰´~\ref{howtorun} ¤ ¢÷‰±‰‘ñ î‰Â¢ù “‰‘ª‰ƒ‰À, õ‰ü¢÷‰ƒ‰À î‰‚ ‰Î‰¤
+\FarsiTeX\ ¤ ›‰Â î‰€‰ƒ‰À. ð‰Â þ‰ß î‰‘¤ ¤ ÷‰Ø‰Â¢ùþ‰À, û‰Þ‰ƒ‰ß „ö
+þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô ¢û‰ƒ‰À. øì‰µ‰ü øó‰ƒ‰ß “‰‘¤ ¥ •‰Âø÷‰Àùû‰‘ý ø¤ø¢\kasre ý
+¡‰¢—‰‘ö ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À, î‰‘¤û‰‘ “‰‚ û‰Þ‰‘ö ¨‰‘¢ð‰\kasre ü \InE{}\verb|fsample.ftx|\EnE{} ÷‰¿‰û‰À “‰¢.
+Ÿ‰µ‰Þ‰‘ñ ¢¤¢ î‰‚ •‰Âø÷‰Àùý ª‰Þ‰‘ —‰ã‰À¢ý ¡‰Î‰‘ ¢ª‰µ‰‚ “‰‘ª‰À î‰‚ î‰·‰Â\nasb 
+¡‰Î‰‘û‰‘ý —‰‘þ‰³‰\kasre ü ¨‰‘¢ù û‰Æ‰µ‰€‰À. “‰Âý Ÿ‰\kasre Û ‰€‰ƒ‰ß õ‰È‰Ø‰…—‰ü “‰ú‰µ‰Â ¨‰´ “‰‚ ¤ù÷‰Þ‰‘ý \InE{}\LaTeX\EnE{}
+õ‰Â›‰ã‰‚ î‰€‰ƒ‰À.
+
+\section{—‰®‰ƒ‰½‰‘– õ‰ú‰Ý}
+¢¤ þ‰ß “‰¿‰Ç ÷‰Ø‰‘– õ‰ú‰Þ‰ü î‰‚ ¤ä‰‘þ‰´ ÷‰ú‰‘ ¢¤ õ‰‘¢ù¨‰‘¥ý õ‰µ‰€‰ü î‰‚ õ‰ü¡‰û‰ƒ‰À
+Ÿ‰Âøê‰»‰ƒ‰€‰ü “‰Ø‰€‰ƒ‰À ®‰Âø¤ý ¨‰´ ø¤¢ù õ‰üª‰¢, û‰Â‰€‰À î‰‚ þ‰ß ÷‰Ø‰‘– ¢¤ ›‰‘û‰‘ý ¢þ‰Ú‰Â
+þ‰ß ¤ù÷‰Þ‰‘ õ‰Þ‰Ø‰ß ¨‰´ õ‰Àù “‰‘ª‰À. þ‰ß —‰®‰ƒ‰½‰‘– ¤ øì‰µ‰ü ¡‰’ õ‰µ‰›‰‚ õ‰üª‰þ‰À
+î‰‚ “‰‘ \FarsiTeX\ ø øþ‰Âþ‰È‰Ú‰Â ö “‰‚ ÷‰À¥ùý î‰‘ê‰ü î‰‘¤ î‰Â¢ù “‰‘ª‰ƒ‰À.  
+\begin{enumerate}
+\item è‰Ü‰° ¢¨‰µ‰¤û‰‘ý \FarsiTeX\ ¢¤ Ÿ‰‘ó‰´ ê‰‘¤¨‰ü )¥ ¤¨‰´ “‰‚ ‰²( “‰Ø‰‘¤ “‰Â¢ù õ‰üª‰÷‰À.
+û‰Â‰€‰À î‰‚ þ‰ß ¢¨‰µ‰¤û‰‘ ¤ õ‰ü—‰ö ¢¤ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü )¥ ‰² “‰‚ ¤¨‰´( û‰Ý —‰‘þ‰² 
+î‰Â¢ øó‰ü þ‰ß î‰‘¤ —‰¬‰ƒ‰‚ ÷‰Þ‰üª‰¢, ‰ö ¨‰‘¡‰µ‰‘¤ õ‰€‰Î‰Ö‰ü î‰‘¤ ¤ “‰‚ û‰Ý õ‰ü¥÷‰À. þ‰ß 
+¢¨‰µ‰¤û‰‘ ¢¤ ª‰Ø‰Ûû‰‘ý ¥þ‰Â Ò‰‘û‰Â õ‰üª‰÷‰À:
+\begin{itemize} 
+\item \InE{}\verb|command\|\EnE{} \ “‰Àøö ¤ð‰õ‰‘ö õ‰·‰Û \InE{}\verb|em\|\EnE{} þ‰‘ \InE{}\verb|FarsiTeX\|\EnE{}
+\item \InE{}\verb|}command\|\EnE{}¤ð‰õ‰‘ö ê‰‘¤¨‰ü\InE{}\verb|{|\EnE{} õ‰‘÷‰€‰À \InE{}\verb|}section\|\EnE{}õ‰Ö‰Àõ‰‚\InE{}\verb|{|\EnE{}
+\item \InE{}\verb|]command\|\EnE{}¤ð‰õ‰‘ö ê‰‘¤¨‰ü\InE{}\verb|[|\EnE{} õ‰‘÷‰€‰À \InE{}\verb|]item\|\EnE{}þ‰Âö\InE{}\verb|[|\EnE{}
+\item \InE{}\verb|{English Argument}command\|\EnE{} õ‰‘÷‰€‰À \InE{}\verb|{enumerate}begin\|\EnE{}
+\item \InE{}\verb|{@English Argument@}command\|\EnE{} õ‰‘÷‰€‰À \InE{}\verb|{@15mm@}hspace\|\EnE{}
+ø þ‰‘ õ‰È‰‘“‰‚ ö “‰‘ \InE{}\tt []\EnE{} “‰‚ ›‰‘ý \InE{}\verb|{}|\EnE{}.
+\item \InE{}\verb|}command\|\EnE{}¤ð‰õ‰‘ö 1\InE{}\verb|}{|\EnE{} ¤ð‰õ‰‘ö 2\InE{}\verb|{|\EnE{} î‰‚ ¢¤ ö 
+¤ð‰õ‰‘öû‰‘ “‰Â Ÿ‰Æ‰° õ‰¤¢ õ‰ü—‰÷‰€‰À ê‰‘¤¨‰ü þ‰‘ ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰‘ª‰€‰À. ø þ‰‘ ¥  
+\InE{}\tt []\EnE{} “‰‚ ›‰‘ý \InE{}\verb|{}|\EnE{} ¨‰µ‰Ô‰‘¢ù ª‰Àù “‰‘ª‰À.
+õ‰‘÷‰€‰À \InE{}\verb|[@t@]{figure}begin\|\EnE{} ø þ‰‘
+\InE{}\verb|{@sflt20@}{bozorg\}newfont\|\EnE{} )“‰Âý —‰ã‰Âþ‰Ó ì‰Ü‰Ý \InE{}\verb|bozorg\|\EnE{}.(
+\end{itemize}
+ —‰›‰‚ î‰€‰ƒ‰À î‰‚ ¢¤ ¨‰‘¡‰µ‰‘¤û‰‘ý ê‰ë ÷‰þ‰Æ‰‚ û‰‘ý \InE{}\verb|\|\EnE{}, \InE{}\verb|}|\EnE{}, \InE{}\verb|{|\EnE{}, 
+ \InE{}\verb|]|\EnE{} \InE{}\verb|[|\EnE{} ø \InE{}\verb|@|\EnE{} “‰‘þ‰À ê‰‘¤¨‰ü “‰‘ª‰€‰À )“‰‘ •‰Å¥õ‰ƒ‰€‰‚ý “‰ü(. û‰Þ‰»‰€‰ƒ‰ß 
+ õ‰µ‰ß “‰ƒ‰ß ¢ø \InE{}\verb|@|\EnE{} —‰Þ‰‘õ‰\nasb ‘ ÷‰Ú‰Ü‰ƒ‰Æ‰ü ø “‰‘ •‰Å¥õ‰ƒ‰€‰‚ý õ‰È‰Ø‰ü
+ )“‰€‰‘“‰Âþ‰ß “‰Âý ¨‰µ‰Ô‰‘¢ù, \InE{}\verb|\bozorg|\EnE{} “‰‘þ‰À
+ ¢¤ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü —‰‘þ‰² ª‰¢ ø ó‰Á ÷‰þ‰Æ‰‚ý \InE{}\verb|\|\EnE{} ö û‰Ý ÷‰Ú‰Ü‰ƒ‰Æ‰ü “‰‘ª‰À.  
+\item ¢¨‰µ‰¤û‰‘þ‰ü î‰‚ õ‰µ‰ß ê‰‘¤¨‰ü —‰ó‰ƒ‰À õ‰üî‰€‰€‰À, õ‰‘÷‰€‰À \InE{}\verb|FarsiTeX\|\EnE{} þ‰‘
+\InE{}\verb|today\|\EnE{},
+Ÿ‰µ‰Þ‰\nasb ‘ “‰‘þ‰À “‰‚ ¬‰¤– ê‰‘¤¨‰ü ø ¢¨‰µ‰¤û‰‘þ‰ü õ‰‘÷‰€‰À \InE{}\verb*|\LaTeX\ |\EnE{} î‰‚ õ‰µ‰ß 
+÷‰Ú‰Ü‰ƒ‰Æ‰ü —‰ó‰ƒ‰À õ‰üî‰€‰€‰À “‰‘þ‰À ¢¤ Ÿ‰‘ó‰´ ÷‰Ú‰Ü‰ƒ‰Æ‰ü —‰‘þ‰² ª‰÷‰À.
+\item þ‰× ¤ð‰õ‰‘ö õ‰Þ‰Ø‰ß ¨‰´ þ‰× õ‰µ‰ß “‰‘ª‰À î‰‚ “‰‚ ÷‰½‰ý ¢¤ ¡‰Âø›‰ü Ÿ‰Âøê‰»‰ƒ‰€‰ü 
+õ‰üª‰¢. ¢¤ þ‰ß ¬‰¤–, î‰Ü‰ƒ‰‚ý ì‰ä‰À õ‰‘¢ù¨‰‘¥ý þ‰× õ‰µ‰ß ¢¤ ö ¬‰‘¢ë ¨‰´;
+þ‰ß õ‰µ‰ß õ‰ü—‰÷‰À ª‰‘õ‰Û “‰¿‰Çû‰‘ý ê‰‘¤¨‰ü ø ÷‰Ú‰Ü‰ƒ‰Æ‰ü ø ÷‰ƒ‰Ã ¢¨‰µ‰¤û‰‘ý 
+¢þ‰Ú‰Â “‰‘ª‰À. ð‰Â ¤ð‰õ‰‘ö õ‰µ‰ß ÷‰ƒ‰Æ‰´ ø “‰¿‰È‰ü ¥ ¢¨‰µ‰¤ ¨‰´, õ‰‘÷‰€‰À \InE{}\tt 15mm\EnE{}
+¢¤ ¢¨‰µ‰¤ \InE{}\verb|{@15mm@}hspace\|\EnE{} î‰‚ 51 õ‰ƒ‰Ü‰üõ‰µ‰Â ê‰‘¬‰Ü‰‚ý ê‰Ö‰ü õ‰üð‰Á¤¢,
+¤ð‰õ‰‘ö Ÿ‰µ‰Þ‰\nasb ‘ ÷‰Ú‰Ü‰ƒ‰Æ‰ü ¨‰´. ¢¤ þ‰ß ¬‰¤– “‰‘þ‰À ¢¤ ¢ø Ï‰Âé 
+ö ÷‰þ‰Æ‰‚ý \InE{}\verb|@|\EnE{} ì‰Â¤ ¢¢ —‰‘ ¥ Ÿ‰‘ó‰´ ì‰±‰Û õ‰µ‰Þ‰‘þ‰Ã ª‰¢. ó‰±‰µ‰‚
+\FarsiTeX\ ¢¤ õ‰¤¢ ¤ð‰õ‰‘öû‰‘ý ø\kasre ñ  \InE{}\verb|{...}begin\|\EnE{} ø \InE{}\verb|{...}end\|\EnE{} 
+“‰‚ ª‰Þ‰‘ î‰Þ‰× õ‰üî‰€‰À ø ¡‰¢ ä‰Þ‰Û \InE{}\verb|@|\EnE{} ¤ ä‰Þ‰‘ñ õ‰üî‰€‰À. ª‰Þ‰‘•‰Å ¥ î‰Þ‰ü î‰‘¤ “‰‘
+\FarsiTeX\ “‰‚ þ‰ß õ‰€‰Î‰Õ î‰‘õ‰\nasb … ª‰€‰‘ õ‰üª‰þ‰À. ¢¤ õ‰¤¢ ÷‰‘¢¤ ó‰±‰µ‰‚ õ‰ü—‰÷‰ƒ‰À
+“‰Âý ¤ê‰â “‰ú‰‘ô •‰Âø÷‰Àùý —‰±‰Àþ‰Ûª‰Àùý \InE{}\tt ftx\EnE{} ¤ î‰‚ “‰‘ •‰Æ‰÷‰À \InE{}\tt tex\EnE{} £¡‰ƒ‰Âù õ‰üª‰¢ 
+÷‰Ú‰‘ù î‰€‰ƒ‰À. 
+\item õ‰‘÷‰€‰À û‰Â õ‰µ‰ß ÷‰Ú‰Ü‰ƒ‰Æ‰ü, õ‰µ‰ß “‰ƒ‰ß \InE{}\verb|@...@|\EnE{} û‰Ý ¥ ‰² “‰‚ ¤¨‰´ 
+¡‰÷‰Àù õ‰üª‰¢, õ‰·‰Û \InE{}\verb+{@l|r||c||@}{tabular}begin\+\EnE{} î‰‚ ¢¨‰µ‰¤ý “‰Âý 
+—‰ó‰ƒ‰À ›‰Àøñ ¨‰´. þ‰ß ¢¨‰µ‰¤ •‰Å ¥ —‰±‰Àþ‰Û ¢¤ •‰Âø÷‰Àùý \InE{}\tt TEX\EnE{} “‰‚ 
+¬‰¤– 
+
+\hfill \InE{}\verb+\begin{tabular}{l|r||c||}+\EnE{} 
+
+÷‰ª‰µ‰‚ õ‰üª‰¢ î‰‚ þ‰× ¢¨‰µ‰¤ \InE{}\LaTeX\EnE{}
+¨‰´ ø ì‰‘“‰Û ›‰Â. ó‰±‰µ‰‚ ð‰Â “‰‚ ¨‰‘¡‰µ‰‘¤ ¢¨‰µ‰¤û‰‘ý \InE{}\LaTeX\EnE{} ä‰‘¢– î‰Â¢ùþ‰À,
+õ‰ü—‰÷‰ƒ‰À þ‰ß ¨‰Î‰Â ¤ “‰‘ —‰‘þ‰² ÷‰þ‰Æ‰‚ý \InE{}\verb|>|\EnE{} ¢¤ “‰µ‰Àý ö “‰‚ ¨‰Î‰Âý  î‰‘õ‰\nasb …
+‰² “‰‚ ¤¨‰´ —‰±‰Àþ‰Û î‰€‰ƒ‰À ø  ¢¨‰µ‰¤ ¤ “‰‚ ¬‰¤–
+¥þ‰Â —‰‘þ‰² î‰€‰ƒ‰À. ¢¤ þ‰ß ¬‰¤– ¡‰û‰ƒ‰À ¢þ‰À:
+
+\hfill \InE{}\verb+>\begin{tabular}{l|r||c||}+\EnE{}
+
+ó‰±‰µ‰‚ þ‰ß î‰‘¤ —‰¬‰ƒ‰‚ ÷‰Þ‰üª‰¢.
+
+õ‰·‰‘ó‰ü ¢þ‰Ú‰Â \InE{}\verb+{@|l||@{\hspace{1cm}}l@}{tabular}begin\+\EnE{} î‰‚ ¢¤ ö 
+÷‰þ‰Æ‰‚ý \InE{}\verb|@|\EnE{} î‰‚ “‰ƒ‰ß ¢ø ÷‰þ‰Æ‰‚ý ê‰‘¤¨‰ü \InE{}\verb|@|\EnE{} ì‰Â¤ ¢¤¢ ÷‰Ú‰Ü‰ƒ‰Æ‰ü 
+ø ›‰ÃŽ‰ü ¥ ê‰Âõ‰‘ö \InE{}\verb|tabular|\EnE{} ¨‰´. þ‰ß ¢¨‰µ‰¤ “‰‚ ¬‰¤– 
+
+\hfill \InE{}\verb+\begin{tabular}{|l||@{\hspace{1cm}}l}+\EnE{} 
+
+—‰±‰Àþ‰Û õ‰üª‰¢.
+\item ª‰Þ‰‘ ¢¤ \FarsiTeX\ õ‰ü—‰÷‰ƒ‰À ¥ ¢¨‰µ‰¤û‰‘ý \InE{}\TeX\EnE{} î‰‚ ¥ ¨‰‘¡‰µ‰‘¤û‰‘ý 
+ê‰ë —‰±‰ã‰ƒ‰´ ÷‰Þ‰üî‰€‰€‰À ÷‰ƒ‰Ã ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À, øó‰ü û‰Þ‰‚ý ¢¨‰µ‰¤ “‰‘þ‰À ¢¤ Ÿ‰‘ó‰´ 
+÷‰Ú‰Ü‰ƒ‰Æ‰ü —‰‘þ‰² ª‰¢; õ‰·‰\nasb … \InE{}\verb|\hskip 2cm|\EnE{} ø þ‰‘ \InE{}\verb|\hbox to \hsize{a text}|\EnE{}.
+\item  ¢¤ Ÿ‰‘ó‰´ •‰ƒ‰È‰Âê‰µ‰‚, õ‰·‰\nasb … —‰ã‰Âþ‰Ó õ‰‘î‰Âø, ð‰Â “‰¿‰û‰ƒ‰À ¥ ¢¨‰µ‰¤û‰‘ý 
+\InE{}\TeX\EnE{} ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰À î‰‚ Ÿ‰‘øý õ‰µ‰ß ê‰‘¤¨‰ü û‰Ý “‰‘ª‰À, “‰‘þ‰À “‰‚ Ÿ‰‘ó‰´ ¬‰Ü‰ü 
+÷‰Ú‰Ü‰ƒ‰Æ‰ü  “‰Âøþ‰À î‰‚ ¢¤ ö õ‰µ‰ß ê‰‘¤¨‰ü ¢¤š õ‰üª‰¢. “‰Âý õ‰·‰‘ñ “‰‚ 
+•‰Âø÷‰Àùû‰‘ý ÷‰Þ‰÷‰‚ý î‰‚ ¢¤ ¡‰µ‰ƒ‰‘¤—‰‘ö ì‰Â¤ ð‰Âê‰µ‰‚ ¨‰´ õ‰Â›‰ã‰‚ î‰€‰ƒ‰À.
+\end{enumerate}

@@ -1,0 +1,160 @@
+
+\chapter{—‰È‰Âþ‰¼ “‰Â¡‰ü ¥ ó‰Ú‰¤þ‰µ‰Ýû‰‘ \label{algorithms}}
+¢¤ þ‰ß ê‰Ê‰Û “‰Â¡‰ü ¥ ó‰Ú‰¤þ‰µ‰Ýû‰‘þ‰ü î‰‚ “‰Âý Ÿ‰Û õ‰Æ‰ÿ‰Ü‰‚ý •‰ƒ‰À î‰Â¢ö î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â
+•‰ƒ‰È‰€‰ú‰‘¢ ª‰Àù ¨‰´  ¤ “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢. þ‰Ø‰ü ¥ þ‰ß ó‰Ú‰¤þ‰µ‰Ýû‰‘, •‰‘¨‰¾ ¢ì‰ƒ‰Õ 
+¤ “‰‚ õ‰‘ õ‰ü¢û‰À ø ¢þ‰Ú‰Âý •‰‘¨‰¿‰ü  —‰Ö‰Âþ‰±‰ü ¤ ¢¤ ¥õ‰‘ö î‰Þ‰µ‰Âý •‰ƒ‰À õ‰üî‰€‰À.
+¢¤ þ‰ß ›‰‘ û‰Â þ‰× ¥ þ‰ß ¢ø õ‰¤¢ ¤ “‰‚ Ï‰¤ ›‰Àð‰‘÷‰‚  ¢¤ þ‰× “‰¿‰Ç “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢.
+ó‰Ú‰¤þ‰µ‰Ýû‰‘ý õ‰Î‰Âž ª‰Àù ¢¤ þ‰ß ê‰Ê‰Û, û‰Þ‰Ú‰ü “‰Âý •‰ƒ‰À î‰Â¢ö î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â
+“‰Â ¤øý ¨‰Î‰¼ þ‰× ‰€‰Àø›‰ú‰ü ¢¢ù ª‰Àù û‰Æ‰µ‰€‰À. õ‰Æ‰ÿ‰Ü‰‚ý ¬‰Ü‰ü þ‰ß ¢¤ þ‰ß •‰Âø¦ù,
+•‰ƒ‰À î‰Â¢ö î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â ¤øý þ‰× ¨‰Î‰¼ ÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àù ¨‰´ î‰‚ þ‰× Ÿ‰‘ó‰´
+¡‰‘« ¥ ‰€‰Àø›‰ú‰ü ¨‰´. ¢¤ þ‰ß ê‰Ê‰Û, ó‰Ú‰¤þ‰µ‰Ýû‰‘ ¤ ¢¤ û‰Þ‰ƒ‰ß Ÿ‰‘ó‰´ î‰Ü‰ü õ‰Î‰Âž
+¡‰û‰ƒ‰Ý î‰Â¢; øó‰ü ¢¤ ê‰Ê‰Û “‰ã‰À, “‰Âý •‰ƒ‰‘¢ù¨‰‘¥ý ó‰Ú‰¤þ‰µ‰Ý ¢ì‰ƒ‰Õ õ‰Î‰Âž ª‰Àù
+¢¤ þ‰ß ê‰Ê‰Û, “‰‚ û‰Þ‰‘ö õ‰Æ‰ÿ‰Ü‰‚ý ¬‰Ü‰ü, þ‰ã‰€‰ü •‰ƒ‰À î‰Â¢ö î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â “‰Â ¤øý þ‰× 
+¨‰Î‰¼ ÷‰‘õ‰€‰Ñ‰Ý õ‰·‰Ü‰¶“‰€‰Àý ª‰Àù “‰‘¥ð‰È‰´ ¡‰û‰ƒ‰Ý î‰Â¢.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{ó‰Ú‰¤þ‰µ‰Ý ¢ì‰ƒ‰Õ \label{alg}}
+¢¤ þ‰ß “‰¿‰Ç “‰‚ —‰®‰ƒ‰¼ ó‰Ú‰¤þ‰µ‰Ý ¤Ž‰‚ ª‰Àù ¢¤ \cite{paper} î‰‚ “‰ú‰µ‰Âþ‰ß ó‰Ú‰¤þ‰µ‰Ý
+ª‰€‰‘¡‰µ‰‚ ª‰Àù “‰Âý Ÿ‰Û õ‰Æ‰ÿ‰Ü‰‚ ¨‰´ ¡‰û‰ƒ‰Ý •‰Â¢¡‰´. “‰Âý þ‰ß õ‰€‰Ñ‰¤, þ‰ß ó‰Ú‰¤þ‰µ‰Ý ¤
+¢¤ ‰€‰À õ‰ÂŸ‰Ü‰‚ “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢. ÷‰¿‰Æ‰´ “‰Âý ¨‰‘¢ù—‰Â ª‰Àö “‰½‰¶, ó‰Ú‰¤þ‰µ‰Ý ¤ ¢¤ Ÿ‰‘ó‰µ‰ü
+î‰‚ ‰€‰Àø›‰ú‰ü õ‰¤¢ ÷‰Ñ‰Â õ‰½‰À’ “‰‘ª‰À, ¢¤ ‰€‰À õ‰ÂŸ‰Ü‰‚ —‰È‰Âþ‰¼ ¡‰û‰ƒ‰Ý î‰Â¢ ø •‰Å ¥ ö 
+ó‰Ú‰¤þ‰µ‰Ý ¤ “‰‚ Ÿ‰‘ó‰´ î‰Ü‰ü )è‰ƒ‰Â õ‰½‰À’( —‰ã‰Þ‰ƒ‰Ý õ‰ü¢û‰ƒ‰Ý.
+
+\subsection{ó‰Ú‰¤þ‰µ‰Ý øó‰ƒ‰‚ ¢¤ Ÿ‰‘ó‰´ õ‰½‰À’ }
+¤øª‰ü î‰‚ ¢¤ è‰Ü‰° ó‰Ú‰¤þ‰µ‰Ýû‰‘ý î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â “‰‚ î‰‘¤  ¤ê‰µ‰‚ ¨‰´, ¤ø© 
+{\em'“‰‘¥î‰Â¢ö"}\footnote{\InE{}Unfolding\EnE{}} ¨‰´. 
+þ‰ß ¤ø© “‰‚ þ‰ß ¬‰¤– ¨‰´: ê‰Â­ î‰€‰ƒ‰À î‰‚ ¢÷‰±‰‘ó‰‚ý 
+\InE{}$f_1, e_1, f_2, e_2, \ldots, f_i, e_i, f_{i+1}, \ldots, e_{m-1}, f_m$\EnE{}
+¢÷‰±‰‘ó‰‚ý ¥ ø›‰ù ø þ‰‘ñû‰‘ý ‰€‰Àø›‰ú‰ü “‰‘ª‰À, “‰‚ Ï‰¤ýî‰‚ \InE{}$f_1$\EnE{} ø›‰ú‰ü “‰‘ª‰À î‰‚ ª‰‘õ‰Û
+÷‰Ö‰Î‰‚ý õ‰±‰À\hamze  ¨‰´ ø þ‰‘ñ \InE{}$e_i$\EnE{}  ê‰Ê‰Û õ‰È‰µ‰Âí ø›‰ù \InE{}$f_i$\EnE{} ø \InE{}$f_{i+1}$\EnE{} “‰‘ª‰À. 
+¤øþ‰‚ý {\em “‰‘¥î‰Â¢ö } þ‰ß ¢÷‰±‰‘ó‰‚, “‰‚ ¬‰¤– ¥þ‰Â ¨‰´:
+
+\begin{enumerate}
+\item \InE{}$F$\EnE{} ¤ õ‰Æ‰‘øý “‰‘ \InE{}$\{f_1\}$\EnE{} ì‰Â¤ “‰Àù.
+\item “‰Âý û‰Â \InE{}$i$\EnE{} ¥ 1 —‰‘ \InE{}$m-1$\EnE{} þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô “‰Àù:
+\begin{description}
+\item[2-1(] \InE{}$F$\EnE{} ¤ Ÿ‰ñ \InE{}$e_i$\EnE{} “‰‚ ÷‰À¥ùý ¢ø¤ö “‰Àù î‰‚ \InE{}$F$\EnE{} ø \InE{}$f_{i+1}$\EnE{} ¢¤ þ‰× 
+            ¬‰Ô‰½‰‚ ì‰Â¤  ð‰ƒ‰Â÷‰À ø ¢¤ ¢ø Ï‰Âé õ‰¿‰µ‰Ü‰Ó \InE{}$e_i$\EnE{}  ÷‰ƒ‰Ã “‰‘ª‰€‰À.
+\item[2-2(] \InE{}$F$\EnE{} ¤ õ‰Æ‰‘øý “‰‘ \InE{}$F \cup \{e_i, f_{i+1}\}$\EnE{} ì‰Â¤ “‰Àù.
+\end{description}
+\end{enumerate}
+
+•‰Å ¥ •‰‘þ‰‘ö þ‰‘ê‰µ‰ß ó‰Ú‰¤þ‰µ‰Ý ê‰ë, û‰Þ‰‚ý ø›‰ù ¢÷‰±‰‘ó‰‚ý õ‰¤¢÷‰Ñ‰Â ¤øý þ‰× ¬‰Ô‰½‰‚ý õ‰È‰µ‰Âí
+ì‰Â¤ ð‰Âê‰µ‰‚÷‰À. ì‰Ì‰ƒ‰‚ý ¥þ‰Â î‰‚ ¢¤ \cite{ref23} “‰‚ ™‰±‰‘– ¤¨‰ƒ‰Àù ¨‰´, û‰Þ‰ƒ‰´ ¤øþ‰‚ý
+“‰‘¥î‰Â¢ö ¤ õ‰È‰¿‰É õ‰üî‰€‰À:
+
+\begin{theorem}
+\label{convex}
+û‰Â î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Âý î‰‚ ¥ ¢÷‰±‰‘ó‰‚ý ø›‰ù \InE{}$f_1, f_2, \ldots, f_m$\EnE{} 
+ä‰±‰¤ î‰€‰À, •‰Å ¥ ÷‰¹‰‘ô ¤øþ‰‚ý {\em “‰‘¥î‰Â¢ö} “‰‚ ¬‰¤– þ‰× •‰‘¤ù¡‰Í õ‰Æ‰µ‰Ö‰ƒ‰Ý ¢¤ õ‰üþ‰À.
+\end{theorem}
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+“‰‘ —‰›‰‚ “‰‚ ÷‰Þ‰‘¢ð‰Á¤ýû‰‘ý ê‰ë ó‰Ú‰¤þ‰µ‰Ý ¤ õ‰ü—‰ö “‰‚ ¬‰¤– ¥þ‰Â ÷‰ª‰´: )\InE{}$S$\EnE{} ¤\hamze § 
+õ‰±‰À\hamze  î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â ¨‰´.(
+
+\begin{algorithm}
+\label{alg1}
+\begin{enumerate}
+\item ¤þ‰È‰‚ý ¢¤¡‰´ )\InE{}root\EnE{}( ¤ õ‰Æ‰‘øý “‰‘ \InE{}$S$\EnE{} ì‰Â¤ “‰Àù.
+\item “‰Âý û‰Â þ‰‘ñ \InE{}$e$\EnE{} î‰‚ õ‰Ö‰‘“‰Û \InE{}$S$\EnE{} ì‰Â¤ ð‰Âê‰µ‰‚ ¨‰´ 
+      )\InE{}$e$\EnE{} þ‰‘ó‰ü ¥ ø›‰ú‰ü ¨‰´ î‰‚ \InE{}$S$\EnE{} ¤øý ö ì‰Â¤ ð‰Âê‰µ‰‚ ¨‰´( 
+      þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô “‰Àù:
+\begin{description}
+\item[2-1( ] \InE{}$(e,S,e)$\EnE{} ¤ “‰‚ ä‰€‰ö ê‰Â¥÷‰À ¤þ‰È‰‚ ø¤¢ ¢¤¡‰´ î‰ß.
+\end{description}
+\item “‰Âý \InE{}$i$\EnE{} ¥ 1 —‰‘ \InE{}$n$\EnE{} )—‰ã‰À¢ ø›‰‚û‰‘( þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô “‰Àù:
+\begin{description}
+\item[3-1( ] “‰Âý û‰Â “‰Âï \InE{}$(e, I, Proj_e^I)$\EnE{} ¢¤ ¨‰Î‰¼ \InE{}$i$\EnE{} ô ¢¤¡‰´ ¢÷‰±‰‘ó‰‚ 
+           þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô “‰Àù:
+\begin{description}
+\item[3-1-1( ] \InE{}$I$\EnE{} ¤ Ÿ‰ñ \InE{}$e$\EnE{} ¢ø¤ö “‰Àù —‰‘ ÷‰Ö‰Î‰‚ý \InE{}$\overline{I}$\EnE{} “‰‚ ¢¨‰´ þ‰À. 
+      )—‰‘ \InE{}$\overline{I}$\EnE{} “‰‘ õ‰·‰Ü‰¶ \InE{}$ABC$\EnE{}, ø›‰‚ ¨‰‘þ‰‚ý \InE{}$e$\EnE{}, û‰Ý¬‰Ô‰½‰‚ ª‰¢.(
+\item[3-1-2( ] “‰Âý û‰Â þ‰× ¥ ¢ø þ‰‘ñ \InE{}$e':= AB, CA$\EnE{} þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô “‰Àù:
+\begin{description}
+\item[3-1-2-1( ] \InE{}$Proj_{e'}^{\overline{I}}$\EnE{} ¤ õ‰½‰‘¨‰±‰‚ î‰ß.
+\item[3-1-2-2( ] ð‰Â \InE{}$Proj_{e'}^{\overline{I}}$\EnE{} ÷‰‘—‰ú‰ü “‰‘ª‰À, ð‰Âùý 
+               \InE{}$(e', \overline{I}, Proj_{e'}^{\overline{I}})$\EnE{} ¤ “‰‚ ä‰€‰ö
+               ê‰Â¥÷‰À ð‰Âùý \InE{}$(e, I, Proj_e^I)$\EnE{} ¢¤ ¢¤¡‰´ ø¤¢ î‰ß.
+\end{description}
+\end{description}
+\end{description}
+\end{enumerate}
+\end{algorithm}
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\subsection{ó‰Ú‰¤þ‰µ‰Þ‰ü “‰‘ ¥õ‰‘ö ›‰Âý ‰€‰À›‰Þ‰Ü‰‚ý \label{poly}}
+¢¤ þ‰ß “‰¿‰Ç, ¨‰ã‰ü ¡‰û‰ƒ‰Ý î‰Â¢ “‰‘ —‰ç‰ƒ‰ƒ‰Â ó‰Ú‰¤þ‰µ‰Ý \ref{alg1}, ó‰Ú‰¤þ‰µ‰Þ‰ü “‰‘ ¥õ‰‘ö ›‰Âý ‰€‰À›‰Þ‰Ü‰‚ý
+“‰Âý õ‰Æ‰ÿ‰Ü‰‚ý •‰ƒ‰À î‰Â¢ö î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â Ï‰ÂŸ‰ü î‰€‰ƒ‰Ý. “‰Âý þ‰ß õ‰€‰Ñ‰¤, ì‰Ì‰ƒ‰‚ý ¤
+™‰±‰‘– ¡‰û‰ƒ‰Ý î‰Â¢ î‰‚ —‰ã‰À¢ ð‰Âùû‰‘ý ¢¤¡‰´ ¢÷‰±‰‘ó‰‚ ¤ õ‰½‰Àø¢ õ‰üî‰€‰À. þ‰ß ì‰Ì‰ƒ‰‚ ™‰‘“‰´ õ‰üî‰€‰À
+î‰‚ ¥ “‰ƒ‰ß ð‰Âùû‰‘þ‰ü î‰‚ ¨‰‘þ‰‚ý öû‰‘ þ‰× ¥øþ‰‚ ¤ õ‰ü•‰ª‰‘÷‰À, Ÿ‰Àî‰·‰Â þ‰Ø‰ü ¥ öû‰‘ õ‰ü—‰÷‰À
+¢ø ê‰Â¥÷‰À ¢ª‰µ‰‚ “‰‘ª‰À, ø “‰Âý ¢þ‰Ú‰Â ð‰Âùû‰‘þ‰ü î‰‚ þ‰ß ¥øþ‰‚ ¤ õ‰ü•‰ª‰‘÷‰€‰À, î‰‘ê‰ü ¨‰´
+þ‰× ê‰Â¥÷‰À ì‰Â¤ ¢û‰ƒ‰Ý. 
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+“‰€‰‘“‰Âþ‰ß ó‰Ú‰¤þ‰µ‰Ý ¤ õ‰ü—‰ö “‰‚ ¬‰¤– ¥þ‰Â ÷‰ª‰´:
+
+\begin{algorithm}
+\label{n2alg}
+\begin{enumerate}
+\item ¤þ‰È‰‚ý ¢¤¡‰´ )\InE{}root\EnE{}( ¤ õ‰Æ‰‘øý “‰‘ \InE{}$S$\EnE{} ì‰Â¤ “‰Àù.
+\item “‰Âý û‰Â þ‰‘ñ \InE{}$e$\EnE{} î‰‚ õ‰Ö‰‘“‰Û \InE{}$S$\EnE{} ì‰Â¤ ð‰Âê‰µ‰‚ ¨‰´ 
+      )\InE{}$e$\EnE{} þ‰‘ó‰ü ¥ ø›‰ú‰ü ¨‰´ î‰‚ \InE{}$S$\EnE{} ¤øý ö ì‰Â¤ ð‰Âê‰µ‰‚ ¨‰´( 
+      þ‰ß î‰‘¤ ¤ ÷‰¹‰‘ô “‰Àù:
+      \begin{description}
+      \item[2-1( ] \InE{}$(e,S,e)$\EnE{} ¤ “‰‚ ä‰€‰ö ê‰Â¥÷‰À ¤þ‰È‰‚ ø¤¢ ¢¤¡‰´ î‰ß.
+      \end{description}
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\end{enumerate}
+\end{algorithm}
+
+\subsubsection{—‰½‰Ü‰ƒ‰Û ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý}
+û‰Þ‰‘ö Ï‰¤ î‰‚ ì‰±‰\nasb … ð‰Ô‰µ‰ƒ‰Ý, ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg} ¢¤ý ¥õ‰‘ö ›‰Âþ‰ü ¥ \InE{}$O(n^2)$\EnE{}
+¨‰´. ¢¤ þ‰ß›‰‘ ¨‰ã‰ü ¢¤þ‰Ý þ‰ß õ‰®‰á ¤ ™‰±‰‘– î‰€‰ƒ‰Ý.
+\begin{theorem}
+\label{n2proof}
+¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg} ¥ \InE{}$O(n^2)$\EnE{} ¨‰´.
+\end{theorem}
+\begin{proof}
+¡‰‘¬‰ƒ‰µ‰ü î‰‚ ¢¤ ì‰Ì‰ƒ‰‚ý ì‰±‰Û “‰‚ ™‰±‰‘– ¤¨‰ƒ‰À ø “‰Â ¨‰‘§ ö, ¢¤ ó‰Ú‰¤þ‰µ‰Ý
+\ref{n2alg}, “‰Âý û‰Â ¥øþ‰‚, Ÿ‰Àî‰·‰Â þ‰Ø‰ü ¥ ð‰Âùû‰‘ý ¢¤¡‰´ ¢¤ý ¢ø ê‰Â¥÷‰À 
+õ‰üª‰À, —‰Ì‰Þ‰ƒ‰ß õ‰üî‰€‰À î‰‚ •‰Å ¥ û‰Â “‰‘¤ ›‰Âý Ÿ‰Ü‰Ö‰‚ý ¬‰Ü‰ü ó‰Ú‰¤þ‰µ‰Ý \ref{n2alg}
+)Ÿ‰Ü‰Ö‰‚ý ¡‰Í 3( —‰ã‰À¢ “‰Âïû‰‘ý ¢¤¡‰´ ¥ \InE{}$O(n)$\EnE{} ¨‰´. )—‰›‰‚ î‰€‰ƒ‰À î‰‚ —‰ã‰À¢ î‰Û
+¥øþ‰‚û‰‘ ¥ \InE{}$O(n)$\EnE{} ¨‰´.( “‰Âý õ‰½‰‘¨‰±‰‚ý ¥õ‰‘ö ›‰Âý ó‰Ú‰¤þ‰µ‰Ý, “‰µ‰À ¥õ‰‘ö ¬‰Âé
+ª‰Àù “‰Âý ¨‰‘¡‰µ‰ß ¢¤¡‰´ )ø ÷‰‚ Ÿ‰Áé ¥þ‰Â¢¤¡‰´û‰‘( ¤ ¢¤ ÷‰Ñ‰Â “‰Ú‰ƒ‰Âþ‰À. “‰‘ —‰›‰‚ “‰‚ þ‰ß
+î‰‚ —‰ã‰À¢ “‰Âïû‰‘ ¥ \InE{}$O(n)$\EnE{} ¨‰´, û‰Â “‰‘¤ ›‰Âý Ÿ‰Ü‰Ö‰‚ý ¡‰Í 3 “‰‚ ÷‰À¥ùý \InE{}$O(n)$\EnE{}
+øì‰´ “‰Âý —‰ó‰ƒ‰À ¢¤¡‰´ õ‰üð‰ƒ‰Â¢. “‰€‰‘“‰Âþ‰ß ¥õ‰‘÷‰ü î‰‚ ¬‰Âé þ‰¹‰‘¢ ¢¤¡‰´ õ‰üª‰¢ ¢¤
+î‰Û ó‰Ú‰¤þ‰µ‰Ý “‰Â“‰Â “‰‘  \InE{}$O(n^2)$\EnE{} ¨‰´.
+
+Ÿ‰‘„ ¥õ‰‘ö õ‰Ê‰Âé ª‰Àù “‰Âý Ÿ‰Áé ¥þ‰Â¢¤¡‰´û‰‘ ¤ õ‰½‰‘¨‰±‰‚ õ‰üî‰€‰ƒ‰Ý. “‰Âý õ‰½‰‘¨‰±‰‚ý þ‰ß
+õ‰Ö‰À¤ ¥ þ‰× —‰Ø‰€‰ƒ‰× ›‰‘ó‰° ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰ƒ‰Ý: ê‰Â­ î‰€‰ƒ‰À î‰‚ “‰Âý û‰Â þ‰× ¥ ð‰Âùû‰‘ý
+¢¤¡‰´, ¢¤ û‰Þ‰‘ö ¥õ‰‘ö þ‰¹‰‘¢ î‰Â¢öª‰‘ö, “‰‚ ÷‰À¥ùý þ‰× øŸ‰À ¥õ‰‘÷‰ü øì‰´ “‰Âý
+Ÿ‰Áé öû‰‘ ¥ •‰ƒ‰Ç ÷‰Ú‰‚ õ‰ü¢¤þ‰Ý. ð‰Â þ‰ß ð‰Âù “‰ã‰À\nasb  Ÿ‰Áé ª‰À, ¥ þ‰ß øŸ‰À
+¥õ‰‘÷‰ü “‰Âý Ÿ‰Áé ö ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰ƒ‰Ý ø ð‰Â Ÿ‰Áé ÷‰È‰À, þ‰ß øŸ‰À ¥õ‰‘÷‰ü õ‰Ê‰Âé 
+÷‰È‰Àù õ‰üõ‰‘÷‰À.  þ‰ß ¨‰µ‰À„ñ ÷‰È‰‘ö õ‰ü¢û‰À î‰‚ ¥õ‰‘ö ¬‰Âé ª‰Àù “‰Âý Ÿ‰Áé ¥þ‰Â¢¤¡‰´û‰‘
+¢¤ ¢¤¡‰´ ¢÷‰±‰‘ó‰‚ ÷‰ƒ‰Ã ¥ \InE{}$O(n^2)$\EnE{} ¨‰´. “‰€‰‘“‰Âþ‰ß •‰ƒ‰»‰ƒ‰Àð‰ü ¥õ‰‘÷‰ü ó‰Ú‰¤þ‰µ‰Ý
+\ref{n2alg} ¥ \InE{}$O(n^2)$\EnE{} ¨‰´.
+\end{proof}
+
+\subsection{—‰ã‰Þ‰ƒ‰Ý “‰‚ Ÿ‰‘ó‰´ è‰ƒ‰Â õ‰½‰À’ \label{nonconvexsec}}
+ó‰Ú‰¤þ‰µ‰Þ‰ü î‰‚ ¢¤ “‰¿‰Ç ì‰±‰Û “‰Âý •‰ƒ‰À î‰Â¢ö î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â ¢¤ Ÿ‰‘ó‰´
+õ‰½‰À’ ¢þ‰Àþ‰Ý, î‰‘õ‰\nasb … ø“‰Æ‰µ‰‚ “‰‚ ì‰Ì‰ƒ‰‚ý \ref{convex} “‰¢. ¢¤ Ÿ‰‘ó‰µ‰ü î‰‚ 
+‰€‰Àø›‰ú‰ü õ‰¤¢ ÷‰Ñ‰Â õ‰‘, þ‰× ‰€‰Àø›‰ú‰ü è‰ƒ‰Âõ‰½‰À’ “‰‘ª‰À, þ‰ß ì‰Ì‰ƒ‰‚ ¢þ‰Ú‰Â ¢¤¨‰´ ÷‰ƒ‰Æ‰´.
+¢¤ þ‰ß Ÿ‰‘ó‰´, î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â “‰ƒ‰ß ¢ø ¤\hamze § ¥ ‰€‰Àø›‰ú‰ü õ‰Þ‰Ø‰ß ¨‰´ ¥ “‰ã‰Ì‰ü ¥
+¤Ž‰§ ä‰±‰¤ î‰€‰À, øó‰ü ¢¤ ê‰‘¬‰Ü‰‚ý “‰ƒ‰ß þ‰ß ¤Ž‰§, ¢¤ý ¡‰‘¬‰ƒ‰´ £î‰Â ª‰Àù ¢¤ ì‰Ì‰ƒ‰‚ý
+\ref{convex} ¨‰´. “‰‚ ä‰±‰‘¤– ¢þ‰Ú‰Â ¢¤ Ÿ‰‘ó‰´ è‰ƒ‰Âõ‰½‰À’ ì‰Ì‰ƒ‰‚ý ¥þ‰Â “‰Âì‰Â¤ ¨‰´.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.
+
+\section{ó‰Ú‰¤þ‰µ‰Ý —‰Ö‰Âþ‰±‰ü \label{approxalgsec}}
+¢¤ þ‰ß “‰¿‰Ç, “‰‚ —‰È‰Âþ‰¼ þ‰× ó‰Ú‰¤þ‰µ‰Ý —‰Ö‰Âþ‰±‰ü “‰Âý Ÿ‰Û õ‰Æ‰ÿ‰Ü‰‚ý î‰—‰‘ù—‰Âþ‰ß õ‰Æ‰ƒ‰Â “‰Â 
+¤øý ¨‰Î‰¼ þ‰× ‰€‰Àø›‰ú‰ü õ‰½‰À’ î‰‚ —‰¨‰Í \InE{}J.~Hershberger\EnE{} ø \InE{}S.~Suri\EnE{} ¢¤ \cite{approx} 
+¤Ž‰‚ ª‰Àù ¨‰´ ¡‰û‰ƒ‰Ý •‰Â¢¡‰´.
+
+% ¢¤ þ‰ß›‰‘ ì‰Æ‰Þ‰´û‰‘þ‰ü Ÿ‰Áé ª‰Àù ¨‰´.

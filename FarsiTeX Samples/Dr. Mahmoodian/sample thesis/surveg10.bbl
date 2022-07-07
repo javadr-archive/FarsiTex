@@ -1,0 +1,214 @@
+\def\cprime{$'$}
+\begin{thebibliography}{10}
+\english
+\bibitem{AdamsMahdianMahmoodian}
+{\sc P.~Adams, M.~Mahdian, and E.~S. Mahmoodian}, {\em On the forced matching
+  number of graphs}, preprint.
+
+\bibitem{MR1814594}
+{\sc S.~Akbari, H.~R. Maimani, and C.~Maysoori}, {\em Minimal defining sets for
+  full $\rm{2}$-$(v,\rm{3},v-\rm{2})$ designs}, Australas. J. Combin., 23
+  (2001), pp.~5--8.
+
+\bibitem{MR99b:05053}
+{\sc M.~Behzad, E.~S. Mahmoodian, and N.~Soltankhah}, {\em Defining sets in
+  total coloring of graphs}, in Proceedings of the 28th Annual Iranian
+  Mathematics Conference, Part 1 (Tabriz, 1997), Tabriz Univ., Tabriz, 1997,
+  pp.~521--526.
+
+\bibitem{MR98f:05083}
+{\sc G.~Chartrand, H.~Gavlas, R.~C. Vandell, and F.~Harary}, {\em The forcing
+  domination number of a graph}, J. Combin. Math. Combin. Comput., 25 (1997),
+  pp.~161--174.
+
+\bibitem{MR96m:05094}
+{\sc G.~Chartrand, F.~Harary, M.~Schultz, and C.~E. Wall}, {\em Forced
+  orientation numbers of a graph}, in Proceedings of the Twenty-fifth
+  Southeastern International Conference on Combinatorics, Graph Theory and
+  Computing (Boca Raton, FL, 1994), vol.~100, 1994, pp.~183--191.
+
+\bibitem{MR2001h:05054}
+{\sc G.~Chartrand, F.~Harary, and P.~Zhang}, {\em On the hull number of a
+  graph}, Ars Combin., 57 (2000), pp.~129--138.
+
+\bibitem{MR2000d:05037}
+{\sc G.~Chartrand and P.~Zhang}, {\em The forcing geodetic number of a graph},
+  Discuss. Math. Graph Theory, 19 (1999), pp.~45--58.
+
+\bibitem{MR1821627}
+{\sc G.~Chartrand and P.~Zhang}, {\em The forcing hull number of a graph}, J.
+  Combin. Math. Combin. Comput., 36 (2001), pp.~81--94.
+
+\bibitem{MR2000c:05062}
+{\sc A.~Daneshgar}, {\em Forcing structures and uniquely colorable graphs}, in
+  Proceedings of the 28th Annual Iranian Mathematics Conference, Part 1
+  (Tabriz, 1997), Tabriz Univ., Tabriz, 1997, pp.~121--128.
+
+\bibitem{MR2000d:05040}
+{\sc A.~Daneshgar}, {\em On $r$-type-constructions and $\delta$-colour-critical
+  graphs}, J. Combin. Math. Combin. Comput., 29 (1999), pp.~183--206.
+
+\bibitem{MR2001e:05043}
+{\sc A.~Daneshgar and R.~Naserasr}, {\em On small uniquely vertex-colourable
+  graphs and {X}u's conjecture}, Discrete Math., 223 (2000), pp.~93--108.
+
+\bibitem{MR87h:05178}
+{\sc M.~G. Everett and S.~B. Seidman}, {\em The hull number of a graph},
+  Discrete Math., 57 (1985), pp.~217--223.
+
+\bibitem{FarzadMahdianMahmoodianetal}
+{\sc B.~Farzad, M.~Mahdian, E.~S. Mahmoodian, A.~Saberi, and B.~Sadri}, {\em
+  Forced oreintation of graphs}, submitted.
+
+\bibitem{SajjadEtc.}
+{\sc Y.~G. Ganjali, M.~Ghebleh, and H.~H. M. M. B.~S. Sadjad}, {\em Uniquely
+  2-list colorable graphs}, Discrete Appl. Math.,  (2000).
+
+\bibitem{MR1832463}
+{\sc M.~Ghebleh and E.~S. Mahmoodian}, {\em On uniquely list colorable graphs},
+  Ars Combin., 59 (2001), pp.~307--318.
+
+\bibitem{MR99k:05137}
+{\sc H.~Hajiabolhassan, M.~L. Mehrabadi, R.~Tusserkani, and M.~Zaker}, {\em A
+  characterization of uniquely vertex colorable graphs using minimal defining
+  sets}, Discrete Math., 199 (1999), pp.~233--236.
+
+\bibitem{MR2001a:05059}
+{\sc M.~T. Hajiaghaee, E.~S. Mahmoodian, V.~S. Mirrokni, A.~Saberi, and
+  R.~Tusserkani}, {\em On the simultaneous edge-coloring conjecture}, Discrete
+  Math., 216 (2000), pp.~267--272.
+
+\bibitem{MR94b:05193}
+{\sc F.~Harary}, {\em Three new directions in graph theory}, in Proceedings of
+  the First Estonian Conference on Graphs and Applications (Tartu-K\"a\"ariku,
+  1991), Tartu, 1993, Tartu Univ., pp.~15--19.
+
+\bibitem{Klein-PM-[8]}
+{\sc F.~Harary, D.~J. Klein, and T.~P. Zivkovic}, {\em Graphical properties of
+  polyhexes:perfect matching vector and forcing ), journal = {J. Math. Chem.},
+  fjournal = {Journal of Mathematical Chemistry}, volume = {}, year = {1991},
+  pages = {6:295-306}, issn = {}, mrclass = {}, mrnumber = {},}.
+
+\bibitem{MR1105504}
+{\sc F.~Harary, D.~J. Klein, and T.~P. {\v{Z}}ivkovi{\'c}}, {\em Graphical
+  properties of polyhexes: perfect matching vector and forcing}, J. Math.
+  Chem., 6 (1991), pp.~295--306.
+
+\bibitem{MR1815020}
+{\sc M.~Johnson and D.~Bedford}, {\em Weak critical sets in cyclic {L}atin
+  squares}, Australas. J. Combin., 23 (2001), pp.~301--316.
+
+\bibitem{MR96a:05027}
+{\sc A.~D. Keedwell}, {\em Critical sets and critical partial {L}atin squares},
+  in Combinatorics, graph theory, algorithms and applications (Beijing, 1993),
+  World Sci. Publishing, River Edge, NJ, 1994, pp.~111--123.
+
+\bibitem{Klein-PM-[10]}
+{\sc D.~J. Klein and M.~Randic}, {\em Innate degrees of freedom of $\pi$-electron
+  couplings in mathematical and computational concepts in chemistry},  (1986).
+
+\bibitem{MR88d:05159}
+{\sc D.~J. Klein and M.~Randi{\'c}}, {\em Innate degree of freedom of a graph},
+  J. Comput. Chem., 8 (1987), pp.~516--521.
+
+\bibitem{StopSign}
+{\sc F.~Lam and L.~Pachter}, {\em Forcing numbers for stop signs}, preprint.
+
+\bibitem{MR99j:05073}
+{\sc M.~Mahdian and E.~S. Mahmoodian}, {\em A characterization of uniquely
+  $\rm{2}$-list colorable graphs}, Ars Combin., 51 (1999), pp.~295--305.
+
+\bibitem{MR1740669}
+{\sc M.~Mahdian and E.~S. Mahmoodian}, {\em The roots of an {I}{M}{O}97
+  problem}, Bull. Inst. Combin. Appl., 28 (2000), pp.~48--54.
+
+\bibitem{MR2000k:05056}
+{\sc M.~Mahdian, E.~S. Mahmoodian, A.~Saberi, M.~R. Salavatipour, and
+  R.~Tusserkani}, {\em On a conjecture of {K}eedwell and the cycle double cover
+  conjecture}, Discrete Math., 216 (2000), pp.~287--292.
+
+\bibitem{MR1492638}
+{\sc E.~S. Mahmoodian}, {\em Some problems in graph colorings}, in Proceedings
+  of the 26th Annual Iranian Mathematics Conference, Vol. 2 (Kerman, 1995),
+  Shahid Bahonar Univ. Kerman, Kerman, 1995, pp.~215--218.
+
+\bibitem{MR99i:05084}
+{\sc E.~S. Mahmoodian}, {\em Defining sets and uniqueness in graph colorings: a
+  survey}, J. Statist. Plann. Inference, 73 (1998), pp.~85--89.
+\newblock R. C. Bose Memorial Conference (Fort Collins, CO, 1995).
+
+\bibitem{MR99i:05085}
+{\sc E.~S. Mahmoodian and E.~Mendelsohn}, {\em On defining numbers of vertex
+  colouring of regular graphs}, Discrete Math., 197/198 (1999), pp.~543--554.
+\newblock 16th British Combinatorial Conference (London, 1997).
+
+\bibitem{MR98b:05044}
+{\sc E.~S. Mahmoodian, R.~Naserasr, and M.~Zaker}, {\em Defining sets in vertex
+  colorings of graphs and {L}atin rectangles}, Discrete Math., 167/168 (1997),
+  pp.~451--460.
+\newblock 15th British Combinatorial Conference (Stirling, 1995).
+
+\bibitem{MahmoodianOmoomiPeng}
+{\sc E.~S. Mahmoodian, B.~Omoomi, and Y.~h.~Peng}, {\em The defining numbers of
+  cartesian product of cycles}.
+
+\bibitem{MR98e:05019}
+{\sc E.~S. Mahmoodian and G.~H.~J. van Rees}, {\em Critical sets in back
+  circulant {L}atin rectangles}, Australas. J. Combin., 16 (1997), pp.~45--50.
+
+\bibitem{MahmoodianSoltankhah}
+{\sc MahmoodianSoltankhah}, {\em on defining numbers of k-regular k-chromatic
+  graphs}, submitted.
+
+\bibitem{ZakerFF}
+{\sc manouchehr zaker}, {\em Greedy defining sets of graphs}, Australas. J.
+  Combin), FJOURNAL = {The australasian journal of combinatorics}, VOLUME =
+  {23}, YEAR = {2001}, PAGES = {231-235}, ISSN = {1034-4942}, MRCLASS = {},
+  MRNUMBER = {},.
+
+\bibitem{PritikinMorrel}
+{\sc T.~Morrill and D.~Pritikin}, {\em Defining sets and list-defining sets in
+  graphs}, Preprint,  (1997).
+
+\bibitem{NaserarMahmoodianMahdianHarary}
+{\sc R.~Naserasr, E.~S. Mahmoodian, M.~Mahdian, and F.~Harary}, {\em On
+  defining sets of vertex coloring of the cartesian product of a cycle with a
+  complete graph}, in Combinatorics, Graph Theory and Algorithms, Conference on
+  Combinatorics, Graph Theory and Algorithms, (Western Michigan University,
+  1996), Y.~Alavi, D.~R. Lick, and A.~Schwenk, eds., New Issues Press,
+  Kalamazoo, Mi. USA, 1999, pp.~???--???
+
+\bibitem{SoltankhahOmoomi2}
+{\sc B.~Omoomi}, {\em New bound for defining numbers of regular graphs},
+  Submitted.
+
+\bibitem{PachtersThesis}
+{\sc L.~Pachter}, {\em Domino tiling, gene recognition, and mice}, Ph. D.
+  thesis,  (1999), pp.~104--112.
+
+\bibitem{MR99c:05156}
+{\sc L.~Pachter and P.~Kim}, {\em Forcing matchings on square grids}, Discrete
+  Math., 190 (1998), pp.~287--294.
+
+\bibitem{MR99c:05083}
+{\sc D.~Pascovici}, {\em On the forced unilateral orientation number of a
+  graph}, Discrete Math., 187 (1998), pp.~171--183.
+
+\bibitem{Riddle}
+{\sc M.~E. Riddle}, {\em The minimum forcing number for the torus and
+  hypercube}, preprint.
+
+\bibitem{SoltankhahOmoomi}
+{\sc N.~Soltankhah and B.~Omoomi}, {\em Defining numbers of some regular
+  graphs}, Submitted.
+
+\bibitem{SoltankhahOmoomiMahmoodian}
+{\sc N.~Soltankhah, B.~Omoomi, and E.~S. Mahmoodian}, {\em On the defining
+  number of r-regular k-chromatic graphs}, Submitted.
+
+\bibitem{MR1815016}
+{\sc M.~Zaker}, {\em Greedy defining sets of graphs}, Australas. J. Combin., 23
+  (2001), pp.~231--235.
+
+\end{thebibliography}
+\farsi

@@ -1,0 +1,27 @@
+This is e-TeX, Version 3.14159-2.1 (MiKTeX 2) (preloaded format=farsitex 2007.6.16)  16 JUN 2007 20:08
+entering extended mode
+**&farsitex SAF
+(SAF.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+! Undefined control sequence.
+l.3 \chapter
+            *{}
+? 
+LaTeX error.  See LaTeX manual for explanation.
+              Type  H <return>  for immediate help.
+! Missing \begin{document}.
+\@latexerr ...diate help.}\errmessage {#1}
+                                          
+<to be read again> 
+                   *
+l.3 \chapter*
+             {}
+? 
+Missing character: There is no * in font nullfont!
+! Undefined control sequence.
+l.5 \section
+            *{\hspace*{-0.28cm}\Large\bf •‰ƒ‰È‰Ú‰Ô‰µ‰‘¤\newline}
+? 

@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML LANG="fa" DIR="rtl">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+<TITLE></TITLE>
+<LINK REL=STYLESHEET HREF="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/ftx2htm.css"></HEAD>
+<BODY>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--%%%%%%%%%%%%%%-->
+
+
+
+<P>
+
+<P>
+
+<P>
+<P>
+
+<P>
+
+
+
+
+
+
+
+<!--\def\appendixname{ضمايم‌}-->
+
+
+
+
+<P>
+
+
+<PRE>
+
+
+
+</PRE><CENTER>
+
+
+<BIG CLASS=xHuge><B></B>‌استفاده‌ ‌از يک‌ ‌الگوريتم‌ يادگير‌ى‌ ژنتيک‌ بر‌ا‌ى‌ حل‌ مساله‌‌ى‌
+ASP
+<A NAME="footref1"><SUP><A HREF="lrnfinal.htm#footnote1">۱</A></SUP></A>
+</BIG> 
+<P>
+<BIG CLASS=xLarge><B></B>‌اختا‌ى‌ ‌ايلغمى‌ ۷۵۱۰۸۳۰۳</BIG> 
+<P>
+<BIG CLASS=large></BIG> 
+<P>
+</CENTER>
+<P><PRE>
+
+
+
+</PRE>
+<P>
+<P CLASS=abstract>چکيده‌</P>
+
+با وجود رشد ‌استفاده‌ ‌از ‌الگوريتم‌‌ها‌ى‌ يادگير‌ى‌ ژنتيک‌ در چند سال‌ ‌اخير، ‌اطلا‌عات‌
+زياد‌ى‌ در مورد شر‌ايط‌ و ‌علل‌ برتر‌ى‌ ‌اين‌ نو‌ع‌ ‌الگوريتم‌‌ها بر ديگر ‌الگوريتم‌‌ها وجود
+ند‌ارد.  در ‌اين‌ مقاله‌ سعى‌ شده‌ مبانى‌ تئوريک‌ ‌اين‌ نو‌ع‌ ‌الگوريتم‌‌ها با ‌ار‌ائه‌‌ى‌ يک‌ مثال‌
+مورد بررسى‌ و تحليل‌ قر‌ار گيرند.  در ‌اد‌امه‌ نيز ‌از ر‌اه‌حل‌ ‌ار‌ائه‌ شده‌ بر‌ا‌ى‌ مساله‌‌ى‌
+ASP، بر‌ا‌ى‌ حل‌ تقريبى‌ يکى‌ ‌از مسائل‌ يادگير‌ى‌ که‌ حل‌ دقيق‌ ‌آن‌ NP-hard ‌است‌ (مساله‌‌ى‌
+Ising perceptron) ‌استفاده‌ شده‌ ‌است‌. 
+
+<P><P CLASS=section>مقدمه‌</P>
+
+فرض‌ کنيد X، زبان‌ رشته‌‌ها‌ى‌ به‌ طول‌ N ‌از ‌الفبا‌ى‌ Lتايى‌ <I>{۱, ۲, ..., L}</I>
+باشد&nbsp;(<I>N>>L</I>).  ‌هدف‌ ‌از حل‌ مساله‌‌ى‌ ASP، يافتن‌ رشته‌‌ى‌ مورد نظر ‌آموزگار، <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/001image.gif" ALIGN="ABSMIDDLE">،
+با کم‌ترين‌ تعد‌اد سو‌ال‌ مى‌باشد.  ‌هر پرسش‌ ‌از ‌آموزگار، شامل‌ يک‌ رشته‌‌ى‌ دل‌خو‌اه‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/002image.gif" ALIGN="ABSMIDDLE">
+مى‌باشد و پاسخ‌ ‌آموزگار، که‌ يک‌ ‌عدد صحيح‌ بين‌ صفر و N ‌است‌، بيان‌گر تعد‌اد ‌عناصر
+مشترک‌ t و x مى‌باشد. 
+<P>و‌اضح‌ ‌است‌ که‌ بر‌ا‌ى‌ نمايش‌ رشته‌‌ى‌ t، ‌احتياج‌ به‌ <I>NlogL</I> بيت‌ ‌اطلا‌عات‌ د‌اريم‌ و پاسخ‌
+معلم‌ در ‌هر پرسش‌ ر‌ا مى‌تو‌ان‌ با <I>logN</I> بيت‌ کد کرد.  بنابر‌اين‌ به‌ترين‌ ‌الگوريتم‌
+در تئور‌ى‌، ‌احتياج‌ به‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/003image.gif" ALIGN="ABSMIDDLE"> پرسش‌ در بدترين‌ حالت‌ د‌ارد.  به‌ترين‌
+‌الگوريتمى‌ که‌ تا به‌ حال‌ بر‌ا‌ى‌ حل‌ ‌اين‌ مساله‌ پيد‌ا شده‌ ‌است‌، با <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/004image.gif" ALIGN="ABSMIDDLE"> پرسش‌
+پاسخ‌ ر‌ا مى‌يابد.  در ‌هر مرحله‌ ‌از ‌اين‌ ‌الگوريتم‌، پرسشى‌ مطرح‌ مى‌گردد که‌ با پرسش‌
+مرحله‌‌ى‌ قبل‌، دقيقاً در L ‌عنصر که‌ ‌هنوز مقد‌ار ‌آن‌‌ها معلوم‌ نيست‌ تفاوت‌ د‌ارد.  بسته‌
+به‌ ميز‌ان‌ ‌افز‌ايش‌ يا کا‌هش‌ پاسخ‌ معلم‌، مشخص‌ مى‌شود که‌ تعد‌اد‌ى‌ ‌از ‌عناصر درست‌،
+‌اشتباه‌ شده‌‌اند يا تعد‌اد‌ى‌ ‌از ‌عناصر ‌اشتباه‌، درست‌.  در ‌اد‌امه‌، مى‌تو‌ان‌ با يک‌ جست‌وجو‌ى‌
+دودويى‌
+<A NAME="footref2"><SUP><A HREF="lrnfinal.htm#footnote2">۲</A></SUP></A>
+ با تعد‌اد <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/005image.gif" ALIGN="ABSMIDDLE"> پرسش‌، يکى‌ ‌از ‌عناصر ر‌ا پيد‌ا
+کرد. 
+<P>‌الگوريتم‌ بالا و ‌هم‌چنين‌ ديگر ‌الگوريتم‌‌ها‌ى‌ مشابه‌، يک‌ نقطه‌‌ى‌ ضعف‌ ‌عمده‌ د‌ارند : ‌اين‌
+‌الگوريتم‌‌ها، ‌همه‌گى‌ با فرض‌ بدون‌ خطا بودن‌ پاسخ‌‌ها‌ى‌ معلم‌ طر‌احى‌ شده‌‌اند و در صورت‌
+وجود خطا در پاسخ‌‌ها‌ى‌ معلم‌، به‌ خوبى‌ ‌عمل‌ نمى‌کنند و با‌عث‌ گم‌ر‌ا‌هى‌ مى‌شوند.  ‌اين‌
+ضعف‌، به‌ويژه‌ در مورد مسائل‌ يادگير‌ى‌ جد‌ى‌ مى‌نمايد.  زير‌ا در ‌اين‌ گونه‌ مسائل‌،
+‌عموماً يک‌ معلم‌ قابل‌ ‌ا‌عتماد که‌ بتو‌اند با دقت‌ %۱۰۰ پاسخ‌ د‌هد وجود ند‌ارد و
+‌الگوريتم‌ يادگيرنده‌ تنها با شناخت‌ محدود‌ى‌ که‌ ‌از مفهوم‌ مقصد يادگير‌ى‌<!---->
+
+
+<A NAME="footref3"><SUP><A HREF="lrnfinal.htm#footnote3">۳</A></SUP></A>
+ د‌ارد، مجبور ‌است‌ به‌ يک‌ پاسخ‌ تقريبى‌ بسنده‌ کند. 
+نمونه‌‌ا‌ى‌ ‌از ‌اين‌ مسائل‌ در ‌انتها‌ى‌ ‌اين‌ مقاله‌ مورد بررسى‌ قر‌ار گرفته‌ و ر‌اه‌حلى‌ بر
+‌اساس‌ يک‌ ‌الگوريتم‌ ژنتيک‌ ‌ار‌ائه‌ شده‌ ‌است‌. 
+<P>مى‌تو‌ان‌> گفت‌ که‌ به‌ طور کلى‌، ‌الگوريتم‌‌ها‌ى‌ ژنتيک‌ بر ‌اساس‌ ‌استفاده‌ ‌از حافظه‌‌ى‌ بيش‌تر
+بر‌ا‌ى‌ نگه‌د‌ار‌ى‌ تمام‌ حالاتى‌ که‌ د‌ار‌ا‌ى‌ Fitness بالايى‌ ‌هستند و با توجه‌ به‌ ‌احتمال‌
+وجود خطا، مى‌تو‌انند کانديد مناسبى‌ بر‌ا‌ى‌ جو‌اب‌ بودن‌ باشند، پايه‌ريز‌ى‌ شده‌‌اند.  در
+مقابل‌، ‌الگوريتم‌‌ها‌ى‌ محلى‌تر تنها به‌ نگه‌د‌ار‌ى‌ مناسب‌ترين‌ جو‌اب‌ موجود بسنده‌ مى‌کنند
+و بنابر‌اين‌، ‌اگر چه‌ معمولاً سريع‌تر و کار‌اتر ‌از ‌الگوريتم‌‌ها‌ى‌ ژنتيک‌ ‌هستند، ولى‌
+پايايى‌ ‌اين‌ دسته‌ ‌از ‌الگوريتم‌‌ها ر‌ا ند‌ارند. 
+<P CLASS=section>‌الگوريتم‌‌ها‌ى‌ ژنتيک‌ و تئور‌ى‌ شِما‌ها</P>
+
+يک‌ ‌الگوريتم‌ ‌استاند‌ارد ژنتيک‌ بر‌ا‌ى‌ حل‌ مسائلى‌ مشابه‌ مساله‌‌ى‌ ASP که‌ در ‌آن‌ معلم‌
+بر‌ا‌ى‌ ‌هر پرسش‌، يک‌ پاسخ‌ (يا Fitness) نسبت‌ مى‌د‌هد، به‌ ‌اين‌ شکل‌ ‌است‌:
+<P><UL>
+
+
+<LI>P ر‌ا با M رشته‌‌ى‌ دل‌خو‌اه‌ با طول‌ N مقد‌ارد‌هى‌ ‌اوليه‌ کن‌. 
+
+<LI>بر‌ا‌ى‌ ‌هر رشته‌‌ى‌ ‌عضو P، مقد‌ار تابع‌ Fitness ر‌ا حساب‌ کن‌.  ‌اگر ‌اين‌ مقد‌ار بهينه‌
+باشد، خارج‌ شو. 
+
+<LI>‌از مجمو‌عه‌‌ى‌ P، با ‌احتمال‌ متناسب‌ با Fitness ‌هر رشته‌ و با جا‌ى‌گذ‌ار‌ى‌،
+<I></I>&alpha;<I>M</I> رشته‌ ر‌ا به‌ صورت‌ تصادفى‌ ‌انتخاب‌ کن‌ و ‌آن‌‌ها ر‌ا در مجمو‌عه‌‌ى‌ Q بريز. 
+
+<LI>با ترکيب‌ ‌هر <I></I>&alpha;<I></I> رشته‌ ‌از مجمو‌عه‌‌ى‌ Q، يک‌ رشته‌ درست‌ کن‌ و ‌آن‌ ر‌ا در
+مجمو‌عه‌‌ى‌ <I>P'</I> قر‌ار بده‌. 
+
+<LI>قر‌ار بده‌ P = P<I>'</I> و به‌ مرحله‌‌ى‌ دوم‌ برگرد. 
+</UL>
+
+<P>بر‌ا‌ى‌ ترکيب‌ <I></I>&alpha;<I></I> رشته‌، روش‌‌ها‌ى‌ مختلفى‌ وجود د‌ارد.  به‌ ‌از‌ا‌ى‌ <I></I>&alpha;<I>= ۲</I>،
+ساده‌ترين‌ روشى‌ که‌ وجود د‌ارد، ‌انتخاب‌ i ‌عنصر ‌اول‌ رشته‌‌ى‌ ‌اول‌ و N - i ‌عنصر ‌آخر
+رشته‌‌ى‌ دوم‌ و چسباندن‌ ‌آن‌‌ها به‌ ‌هم‌ مى‌باشد (i يک‌ ‌عدد تصادفى‌ بين‌ ۱ و N با توزيع‌
+يک‌نو‌اخت‌ ‌است‌). 
+<P>به‌ ‌هر ‌الگو‌ى‌ موجود در بين‌ ‌ا‌عضا‌ى‌ يک‌ مجمو‌عه‌ رشته‌، يک‌ شِما مى‌گوييم‌.  مثلاً يک‌ شِما
+مى‌تو‌اند شامل‌ تمام‌ رشته‌‌هايى‌ باشد که‌ در ‌آن‌‌ها ‌عنصر ‌اول‌ ۵ و ‌عنصر چهارم‌ ۲ ‌است‌. 
+‌اگر Fitness ‌هر شِما ر‌ا ميانگين‌ Fitness ‌ها‌ى‌ ‌هر کد‌ام‌ ‌از رشته‌‌ها‌ى‌ ‌عضو ‌آن‌ تعريف‌
+کنيم‌، در ‌هر بار ترکيب‌ در مرحله‌‌ى‌ ۴ ‌الگوريتم‌ بالا، شِما‌ها‌ى‌ قو‌ى‌تر (يعنى‌ شِما‌ها‌ى‌
+با Fitness بالاتر) به‌ ‌احتمال‌ بيش‌تر‌ى‌ ‌انتخاب‌ مى‌شوند.  حال‌ ‌اگر فرض‌ کنيم‌ که‌ طول‌
+شِما‌ى‌ H (يعنى‌ فاصله‌‌ى‌ بين‌ ‌اولين‌ و ‌آخرين‌ ‌عنصر با مقد‌ار مشخص‌ در رشته‌‌ها‌ى‌ ‌عضو ‌آن‌
+شِما) <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/006image.gif" ALIGN="ABSMIDDLE"> و <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/007image.gif" ALIGN="ABSMIDDLE">، مرتبه‌‌ى‌ ‌آن‌ شِما (يعنى‌ تعد‌اد جا‌هايى‌ که‌ يک‌ شِما در ‌آن‌
+نقاط‌، ‌عناصر‌ى‌ با مقد‌ار مشخص‌ د‌ارد) باشند و نيز <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/008image.gif" ALIGN="ABSMIDDLE">، ‌احتمال‌ کوچکى‌ باشد که‌ بر
+‌اساس‌ ‌آن‌، در يک‌ ‌عنصر يک‌ رشته‌ بر‌ا‌ى‌ توليد يک‌ رشته‌‌ى‌ جديد، يک‌ mutation (تغيير مقد‌ار
+تصادفى‌) صورت‌ بگيرد و ‌هم‌چنين‌ فرض‌ کنيم‌ که‌ Fitness شِما‌ى‌ H، f(H) باشد و ميانگين‌
+Fitness‌ها‌ى‌ ‌همه‌‌ى‌ ‌ا‌عضا‌ى‌ P، <I></I>&mu;<I></I>، بين‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/009image.gif" ALIGN="ABSMIDDLE"> (تعد‌اد ‌ا‌عضا‌ى‌ H در P) و <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/010image.gif" ALIGN="ABSMIDDLE">
+(تعد‌اد ‌ا‌عضا‌ى‌ H در P<I>'</I>) ر‌ابطه‌‌ى‌ زير برقر‌ار ‌است‌:
+<P ALIGN="CENTER"><IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/011image.gif" ALIGN="ABSMIDDLE"></P>
+<P>‌اين‌ ر‌ابطه‌ با ‌اين‌ فرض‌ به‌ دست‌ ‌آمده‌ که‌ ‌از ترکيب‌ دو شِما، شِما‌ى‌ جديد‌ى‌ ‌ايجاد نشود
+و فقط‌ شِما‌ها‌ى‌ قديمى‌ حفظ‌ و يا نابود شوند که‌ ‌علامت‌ <I></I>&ge;<I></I> در ر‌ابطه‌، بيان‌گر ‌اين‌
+تقريب‌ مى‌باشد.  ‌همان‌طور که‌ ‌از ر‌ابطه‌ مشا‌هده‌ مى‌شود، تعد‌اد ‌ا‌عضا‌ى‌ يک‌ شِما در ‌هر
+مرحله‌ نسبت‌ به‌ مرحله‌‌ى‌ قبل‌، در کسر‌ى‌ ‌از مرتبه‌‌ى‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/012image.gif" ALIGN="ABSMIDDLE"> ضرب‌ مى‌گردد و
+بنابر‌اين‌ ‌اگر f(H) بيش‌تر ‌از <I></I>&mu;<I></I> باشد (يعنى‌ شِما قو‌ى‌تر ‌از متوسط‌ باشد)، تعد‌اد
+‌ا‌عضا‌ى‌ يک‌ شِما به‌ طور نمايى‌ ‌افز‌ايش‌ مى‌يابد و در ‌غير ‌اين‌ صورت‌ (يعنى‌ ‌اگر شِما
+ضعيف‌تر ‌از متوسط‌ باشد)، تعد‌اد ‌ا‌عضا‌ى‌ شِما به‌ طور نمايى‌ کا‌هش‌ مى‌يابد. 
+<P>‌اين‌ تئور‌ى‌، که‌ ‌اولين‌ بار توسط‌ Holland ‌ار‌ائه‌ گرديد[۱]، دليل‌ قوت‌ ‌الگوريتم‌‌ها‌ى‌
+ژنتيک‌ ر‌ا در برخى‌ مسائل‌ بيان‌ مى‌د‌ارد : شِما‌ها‌ى‌ ضعيف‌ و نامربوط‌ به‌ سر‌عت‌ و با
+تعد‌اد کمى‌ پرس‌وجو حذف‌ مى‌گردند و شِما‌ها‌ى‌ قو‌ى‌ و مناسب‌، به‌ سر‌عت‌ تمام‌ مجمو‌عه‌ ر‌ا
+فر‌ا مى‌گيرند. 
+<P><P CLASS=section>تطبيق‌ روش‌ ‌استاند‌ارد ‌الگوريتم‌‌ها‌ى‌ ژنتيک‌ با مساله‌‌ى‌ ASP</P>
+
+در مورد مساله‌‌ى‌ ما، به‌ نظر مى‌رسد که‌ روش‌ ‌استاند‌ارد ‌الگوريتم‌‌ها‌ى‌ ژنتيک‌ زياد کار‌ا
+نيست‌.  فرض‌ کنيم‌ که‌ f(i)، Fitness رشته‌‌ى‌ i ‌ام‌ ‌از مجمو‌عه‌‌ى‌ P ر‌ا نمايش‌ د‌هد و
+<IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/013image.gif" ALIGN="ABSMIDDLE">، Fitness ميانگين‌ و <I></I>&mu;<I>'</I>، Fitness
+ميانگين‌ بعد ‌از ‌عمل‌ ترکيب‌ باشد.  ‌اگر  Fitness در مجمو‌عه‌‌ى‌ P ر‌ا يک‌ توزيع‌ نرمال‌
+با ‌انحر‌اف‌ معيار <I></I>&sigma;<I></I> بگيريم‌، خو‌ا‌هيم‌ د‌اشت‌:
+<P ALIGN="CENTER"><IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/014image.gif" ALIGN="ABSMIDDLE"></P>
+با توجه‌ به‌ ‌اين‌ که‌ با N به‌ ‌اند‌ازه‌‌ى‌ کافى‌ بزرگ‌، خو‌ا‌هيم‌ د‌اشت‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/015image.gif" ALIGN="ABSMIDDLE"> و
+<IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/016image.gif" ALIGN="ABSMIDDLE">، در ‌هر نسل‌ جديد، تغيير ميانگين‌ Fitness، بر‌ابر با
+<IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/017image.gif" ALIGN="ABSMIDDLE"> خو‌ا‌هد بود و بنابر‌اين‌ ما به‌ O(N) نسل‌ ‌احتياج‌ خو‌ا‌هيم‌ د‌اشت‌. 
+مى‌تو‌ان‌ ثابت‌ کرد که‌ در ‌اين‌ صورت‌، تعد‌اد پرس‌وجو‌ها‌ى‌ لازم‌ ‌هم‌ ‌از مرتبه‌‌ى‌
+<IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/018image.gif" ALIGN="ABSMIDDLE"> خو‌ا‌هد بود. 
+<P>بر‌ا‌ى‌ کاستن‌ ‌از تعد‌اد پرس‌وجو‌ها و نسل‌‌ها‌ى‌ لازم‌، روش‌ ديگر‌ى‌ ر‌ا که‌ به‌ culling موسوم‌
+‌است‌ جا‌ى‌گزين‌ روش‌ ‌استاند‌ارد ژنتيک‌ مى‌کنيم‌.  در ‌اين‌ روش‌، در مرحله‌‌ى‌ ترکيب‌ به‌ تمام‌
+رشته‌‌ها‌ى‌ P به‌ طور يکسان‌ و بدون‌ در نظر گرفتن‌ Fitness شان‌ ‌اجازه‌‌ى‌ شرکت‌ در توليد
+رشته‌‌ى‌ جديد د‌اده‌ مى‌شود.  ولى‌ رشته‌‌ى‌ توليد شده‌ تنها در صورتى‌ پذيرفته‌ مى‌شود که‌
+Fitness ‌آن‌ ‌از <I></I>&mu;<I>+ </I>&sigma;<I></I> (<I></I>&mu;<I></I> ميانگين‌ Fitness رشته‌‌ها‌ى‌ P و <I></I>&sigma;<I></I>
+‌انحر‌اف‌ معيار ‌آن‌‌ها ر‌ا نشان‌ مى‌د‌هد) بيش‌تر باشد.  به‌ ‌اين‌ ترتيب‌، در ‌هر مرحله‌ به‌
+Fitness ميانگين‌، <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/019image.gif" ALIGN="ABSMIDDLE"> ‌اضافه‌ مى‌گردد و بنابر‌اين‌ تعد‌اد
+نسل‌‌ها‌ى‌ موردنياز به‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/020image.gif" ALIGN="ABSMIDDLE"> کا‌هش‌ مى‌يابد.  ثابت‌ مى‌شود که‌ در ‌اين‌ صورت‌،
+تعد‌اد پرس‌وجو‌ها ‌هم‌ به‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/021image.gif" ALIGN="ABSMIDDLE"> مى‌رسد. 
+<P>صورت‌ دقيق‌ ‌اين‌ ‌الگوريتم‌ به‌ ‌اين‌ شکل‌ ‌است‌[۲] :
+<UL>
+
+
+<LI>قر‌ار بده‌ t = ۰، p = ۱ / L و M = L<I>logN</I>. 
+
+<LI>M رشته‌‌ى‌ تصادفى‌ با Fitness لا‌اقل‌ pN ‌انتخاب‌ کن‌ و ‌آن‌‌ها ر‌ا در مجمو‌عه‌‌ى‌ P بريز. 
+
+<LI>قر‌ار بده‌ <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/022image.gif" ALIGN="ABSMIDDLE">. 
+
+<LI>‌از روش‌ ترکيب‌ M تايى‌
+<A NAME="footref4"><SUP><A HREF="lrnfinal.htm#footnote4">۴</A></SUP></A>
+ بر‌ا‌ى‌ ساختن‌ يک‌ رشته‌‌ى‌ جديد x
+‌استفاده‌ کن‌.  ‌اگر Fitness(x) < (p +<I></I>&sigma;<I></I>)N بود، x ر‌ا رد کن‌.  ‌اين‌ مرحله‌ ر‌ا تا
+ساختن‌ M رشته‌ ‌اد‌امه‌ بده‌ و ‌اين‌ رشته‌‌ها ر‌ا در مجمو‌عه‌‌ى‌ P بريز.  ‌اگر در حين‌ ساختن‌
+‌اين‌ رشته‌‌ها، به‌ رشته‌‌ا‌ى‌ با Fitness‌ى‌ به‌ ‌اند‌ازه‌‌ى‌ کافى‌ بزرگ‌ برخورد‌ى‌، کار ر‌ا متوقف‌
+کن‌ و ‌همين‌ رشته‌ ر‌ا به‌ ‌عنو‌ان‌ خروجى‌ برگرد‌ان‌. 
+
+<LI>قر‌ار بده‌ t = t + ۱، p = p + <I></I>&sigma;<I></I> و M = <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/023image.gif" ALIGN="ABSMIDDLE"> و به‌
+مرحله‌‌ى‌ ۳ برو. 
+</UL>
+
+<P>توضيح‌ ‌اين‌ که‌ در روش‌ ترکيب‌ Mتايى‌، ‌هر ‌عنصر رشته‌‌ى‌ توليد‌ى‌، به‌ طور تصادفى‌ و
+يک‌نو‌اخت‌ ‌از ميان‌ ‌عناصر ‌هم‌موقعيت‌ در تمامى‌ رشته‌‌ها‌ى‌ موجود ‌انتخاب‌ مى‌گردد و
+بنابر‌اين‌ با ‌اين‌ روش‌، تمامى‌ رشته‌‌ها‌ى‌ موجود شانس‌ شرکت‌ در توليد رشته‌‌ها‌ى‌ جديد ر‌ا
+به‌طور يکسان‌ د‌ار‌ا ‌هستند. 
+<P>نکته‌‌ى‌ جالبى‌ که‌ در مورد ‌اين‌ روش‌ وجود د‌ارد، پايا بودن‌ ‌آن‌ در بر‌ابر خطا‌ى‌ معلم‌ در
+تعيين‌ ميز‌ان‌ Fitness ‌است‌.  ثابت‌ مى‌شود که‌ در صورتى‌ که‌ پاسخ‌‌ها‌ى‌ معلم‌ د‌ار‌ا‌ى‌ خطايى‌
+با توزيع‌ نرمال‌، ميانگين‌ صفر و ‌انحر‌اف‌ معيار حد‌اکثر <IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/024image.gif" ALIGN="ABSMIDDLE"> باشد،
+‌الگوريتم‌ فوق‌ باز ‌هم‌ به‌ به‌ترين‌ جو‌اب‌ ممکن‌ خو‌ا‌هد رسيد. 
+<P><P CLASS=section>يک‌ مثال‌ : يادگير‌ى‌ نيم‌فضا با ‌اوز‌ان‌ صحيح‌</P>
+
+‌هدف‌ ‌از حل‌ ‌اين‌ مساله‌ که‌ به‌ مساله‌‌ى‌ Ising perceptron ‌هم‌ موسوم‌ ‌است‌، پيد‌ا کردن‌
+برد‌ار‌ى‌ در فضا‌ى‌ N بعد‌ى‌ مانند t با ضر‌ايب‌ ۱- و ۱ ‌است‌ که‌ يک‌ ‌ابرصفحه‌‌ى‌ گذرنده‌ ‌از
+مبد‌ا ر‌ا مشخص‌ مى‌کند.  ‌اين‌ ‌ابرصفحه‌، فضا‌ى‌ Nبعد‌ى‌ ر‌ا به‌ دو زيرفضا تقسيم‌ مى‌کند و
+تنها ‌اطلا‌عاتى‌ که‌ ما ر‌اجع‌ به‌ ‌اين‌ ‌ابرصفحه‌ د‌اريم‌، تعد‌اد‌ى‌ نقطه‌‌ى‌ تصادفى‌ با توزيع‌
+يک‌نو‌اخت‌ ‌هستند د‌اخل‌ کره‌‌ى‌ و‌احد ‌هستند که‌ مى‌د‌انيم‌ در کد‌ام‌ طرف‌ ‌اين‌ صفحه‌ و‌اقعند
+(به‌ ‌عبارت‌ ديگر، به‌ ‌از‌ا‌ى‌ ‌هر مثال‌ x، ‌علامت‌ <I><t,x></I> مشخص‌ ‌است‌).  زيرفضايى‌ ر‌ا که‌ در
+‌آن‌، ‌علامت‌ <I><t,x></I> مثبت‌ ‌است‌، با نماد H<IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/025image.gif" ALIGN="ABSMIDDLE"> نمايش‌ مى‌د‌هيم‌. 
+<P>ثابت‌ شده‌ که‌ N۴۴۱ نقطه‌ بر‌ا‌ى‌ تعيين‌ t کافيست‌، ولى‌ ‌اين‌ مساله‌ در ‌اين‌ صورت‌ NP-hard
+خو‌ا‌هد بود.  ر‌اه‌حل‌‌ها‌ى‌ کار‌اتر بر‌ا‌ى‌ تعد‌اد بيش‌تر‌ى‌ نقطه‌ (مثلاً <I>NlogN</I>) ‌ار‌ائه‌ شده‌
+‌است‌.  در ‌اد‌امه‌‌ى‌ ‌اين‌ مقاله‌، ‌اين‌ مساله‌ تبديل‌ به‌ مساله‌‌ى‌ ASP با خطا‌ى‌ معلم‌ شده‌ ‌است‌
+و بنابر‌اين‌ با O(N) نقطه‌ به‌ طور تقريبى‌ و در زمان‌ مناسب‌ مى‌تو‌ان‌ ‌اين‌ مساله‌ ر‌ا حل‌
+کرد. 
+<P>‌اگر کره‌‌ى‌ و‌احد ر‌ا با D<IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/026image.gif" ALIGN="ABSMIDDLE"> نمايش‌ د‌هيم‌، مى‌تو‌انيم‌ بر‌ا‌ى‌ ‌هر برد‌ار دل‌خو‌اه‌ u با
+مولفه‌‌ها‌ى‌ ۱ و ۱- تعريف‌ کنيم‌ :
+<P ALIGN="CENTER"><IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/027image.gif" ALIGN="ABSMIDDLE"></P>
+<P>‌اگر تعد‌اد ‌عناصر يکسان‌ t و u ر‌ا با f(u) نشان‌ د‌هيم‌، خو‌ا‌هيم‌ د‌اشت‌:
+<P ALIGN="CENTER"><IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/028image.gif" ALIGN="ABSMIDDLE"></P>
+بنابر‌اين‌ د‌اريم‌:
+<P ALIGN="CENTER"><IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/029image.gif" ALIGN="ABSMIDDLE"></P>
+‌از ‌آن‌جا که‌ f(u) دقيقاً ‌همان‌ تعريف‌ Fitness بر‌ا‌ى‌ مساله‌‌ى‌ ASP ‌است‌، مى‌تو‌ان‌ با
+د‌اشتن‌ مقد‌ار h(u)، مساله‌ ر‌ا به‌ مساله‌‌ى‌ ASP تبديل‌ کرد.  ‌اگر چه‌ ما به‌ ‌اين‌ مقد‌ار
+دست‌رسى‌ ند‌اريم‌، ولى‌ مى‌تو‌انيم‌ تقريبى‌ ‌از ‌آن‌ ر‌ا با ‌استفاده‌ ‌از نقاط‌ مثال‌ به‌ دست‌
+‌آوريم‌:
+<P ALIGN="CENTER"><IMG SRC="http://ce.sharif.ac.ir/~ghodsi/archive/My%20Usefull%20Documents/TeX%20%20Good%20Utitities/FTX2HTM/SAMPLES/Lrnfinal.MBK/030image.gif" ALIGN="ABSMIDDLE"></P>
+در نتيجه‌ مساله‌ به‌ مساله‌‌ى‌ ASP با خطا‌ى‌ معلم‌ تبديل‌ مى‌شود. 
+<P><P CLASS=section>نتايج‌ ‌عملى‌ ‌اجر‌ا‌ى‌ ‌الگوريتم‌</P>
+
+در ‌اين‌ فصل‌، نتايج‌ ‌اجر‌ا‌ى‌ ‌عملى‌ ‌اين‌ دو ‌الگوريتم‌ رو‌ى‌ يک‌ دستگاه‌ Pentium ۳۳۲MHz با
+۳۲ مگابايت‌ RAM ‌آورده‌ شده‌ ‌است‌:
+<P>نتايج‌ حل‌ مساله‌‌ى‌ ASP:
+<P><CENTER>
+<TABLE BORDER="1">
+	<TR>
+	<TD ALIGN="CENTER">
+
+N
+	<TD ALIGN="CENTER">L
+	<TD ALIGN="CENTER">تعد‌اد پرس‌ و جو‌ها
+	<TD ALIGN="CENTER">تعد‌اد نسل‌‌ها
+	<TD ALIGN="CENTER">زمان‌ ‌اجر‌ا
+	<TR>
+	<TD ALIGN="CENTER">
+
+۳۲
+	<TD ALIGN="CENTER">۵
+	<TD ALIGN="CENTER">۳۷۹۷
+	<TD ALIGN="CENTER">۶
+	<TD ALIGN="CENTER">s۱>
+	<TR>
+	<TD ALIGN="CENTER">
+
+۶۴
+	<TD ALIGN="CENTER">۵
+	<TD ALIGN="CENTER">۱۲۴۱۱
+	<TD ALIGN="CENTER">۱۱
+	<TD ALIGN="CENTER">s۱>
+	<TR>
+	<TD ALIGN="CENTER">
+
+۱۲۸
+	<TD ALIGN="CENTER">۵
+	<TD ALIGN="CENTER">۳۶۰۱۳
+	<TD ALIGN="CENTER">۱۷
+	<TD ALIGN="CENTER">s۲
+	<TR>
+	<TD ALIGN="CENTER">
+
+۲۵۶
+	<TD ALIGN="CENTER">۵
+	<TD ALIGN="CENTER">۱۰۳۰۹۷
+	<TD ALIGN="CENTER">۲۶
+	<TD ALIGN="CENTER">s۸
+	<TR>
+	<TD ALIGN="CENTER">
+
+۵۱۲
+	<TD ALIGN="CENTER">۵
+	<TD ALIGN="CENTER">۳۵۲۰۱۰
+	<TD ALIGN="CENTER">۴۰
+	<TD ALIGN="CENTER">s۹۳
+	<TR>
+	<TD ALIGN="CENTER">
+
+۱۰۲۴
+	<TD ALIGN="CENTER">۵
+	<TD ALIGN="CENTER">۱۰۹۳۰۸۹
+	<TD ALIGN="CENTER">۶۰
+	<TD ALIGN="CENTER">s۳۷۴
+	<TR>
+	<TD ALIGN="CENTER">
+
+۳۲
+	<TD ALIGN="CENTER">۱۰
+	<TD ALIGN="CENTER">۶۸۷۸
+	<TD ALIGN="CENTER">۹
+	<TD ALIGN="CENTER">s۱>
+	<TR>
+	<TD ALIGN="CENTER">
+
+۶۴
+	<TD ALIGN="CENTER">۱۰
+	<TD ALIGN="CENTER">۲۰۰۱۶
+	<TD ALIGN="CENTER">۱۳
+	<TD ALIGN="CENTER">s۲
+	<TR>
+	<TD ALIGN="CENTER">
+
+۱۲۸
+	<TD ALIGN="CENTER">۱۰
+	<TD ALIGN="CENTER">۵۵۴۹۵
+	<TD ALIGN="CENTER">۲۰
+	<TD ALIGN="CENTER">s۴
+	<TR>
+	<TD ALIGN="CENTER">
+
+۲۵۶
+	<TD ALIGN="CENTER">۱۰
+	<TD ALIGN="CENTER">۱۶۶۰۶۱
+	<TD ALIGN="CENTER">۳۰
+	<TD ALIGN="CENTER">s۲۳
+	<TR>
+	<TD ALIGN="CENTER">
+
+</TABLE>
+</CENTER>
+<P><PRE>
+
+
+
+</PRE>
+<P>نتايج‌ حل‌ مساله‌‌ى‌ Ising perceptron:
+<P><CENTER>
+<TABLE BORDER="1">
+	<TR>
+	<TD ALIGN="CENTER">
+
+N
+	<TD ALIGN="CENTER">تعد‌اد مثال‌‌ها‌ى‌ مثبت‌
+	<TD ALIGN="CENTER">تعد‌اد مثال‌‌ها‌ى‌ منفى‌
+	<TD ALIGN="CENTER">تعد‌اد پرس‌وجو‌ها
+	<TD ALIGN="CENTER">زمان‌ ‌اجر‌ا
+	<TD ALIGN="CENTER">تعد‌اد نسل‌‌ها
+	<TD ALIGN="CENTER">خطا
+	<TR>
+	<TD ALIGN="CENTER">
+
+۱۶
+	<TD ALIGN="CENTER">۳۲
+	<TD ALIGN="CENTER">۳۲
+	<TD ALIGN="CENTER">۴۰۷
+	<TD ALIGN="CENTER">s۱>
+	<TD ALIGN="CENTER">۴
+	<TD ALIGN="CENTER">۰
+	<TR>
+	<TD ALIGN="CENTER">
+
+۳۲
+	<TD ALIGN="CENTER">۶۴
+	<TD ALIGN="CENTER">۶۴
+	<TD ALIGN="CENTER">۲۳۴۴
+	<TD ALIGN="CENTER">s۴
+	<TD ALIGN="CENTER">۶
+	<TD ALIGN="CENTER">۰
+	<TR>
+	<TD ALIGN="CENTER">
+
+۶۴
+	<TD ALIGN="CENTER">۱۲۸
+	<TD ALIGN="CENTER">۱۲۸
+	<TD ALIGN="CENTER">۸۰۱۹
+	<TD ALIGN="CENTER">s۱۸
+	<TD ALIGN="CENTER">۹
+	<TD ALIGN="CENTER">۲
+	<TR>
+	<TD ALIGN="CENTER">
+
+۱۲۸
+	<TD ALIGN="CENTER">۲۵۶
+	<TD ALIGN="CENTER">۲۵۶
+	<TD ALIGN="CENTER">۱۴۳۱۰
+	<TD ALIGN="CENTER">s۹۶
+	<TD ALIGN="CENTER">۱۲
+	<TD ALIGN="CENTER">۲۲
+	<TR>
+	<TD ALIGN="CENTER">
+
+</TABLE>
+</CENTER>
+<P CLASS=section>ماخذ</P>
+
+
+<DIV CLASS=english>
+<P>
+1)J. H. Holland, <I>Adaptation in natural and artificial systems</I>, MIT press,
+Cambridge MA, 1975
+<P>2)Dan Boneh, <I>On genetic algorithms</I>, 1999
+<P>3)Tom M.  Mitchell, <I>Machine learning</I>, McGraw-Hill Companies, 1997
+
+<DIV CLASS=farsi>
+<P>
+
+
+<HR>
+<BR>
+
+<A NAME="footnote1"><SUP><A HREF="lrnfinal.htm#footref1">۱</A></SUP></A>
+Additive Search Problem<BR>
+
+<A NAME="footnote2"><SUP><A HREF="lrnfinal.htm#footref2">۲</A></SUP></A>
+Binary Search<BR>
+
+<A NAME="footnote3"><SUP><A HREF="lrnfinal.htm#footref3">۳</A></SUP></A>
+Target concept<BR>
+
+<A NAME="footnote4"><SUP><A HREF="lrnfinal.htm#footref4">۴</A></SUP></A>
+M-way breeding</BODY>
+</HTML>
+<br><center><font size="1">This file was downloaded with an evaluation copy of <a href="http://www.sparkleware.com/superbot/watermark/">SuperBot</a>. This message is not added by licensed copies of <a href="http://www.sparkleware.com/superbot/watermark/">SuperBot</a>.</font></center>

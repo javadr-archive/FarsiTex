@@ -1,0 +1,63 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.3) (preloaded format=farsitex 2007.12.20)  22 DEC 2007 23:31
+entering extended mode
+**&farsitex TEST.tex
+(TEST.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+(C:\localtexmf\tex\latex209\base\article.sty
+Standard Document Style `article' <14 Jan 92>.
+(C:\localtexmf\tex\latex209\base\art10.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+(C:\localtexmf\tex\farsitex\base\deprecat\farsi.sty
+LaTeX Warning: Package `farsi' is deprecated. Use `persian' instead..
+(C:\localtexmf\tex\farsitex\base\persian.sty
+persian.sty, version 0.6, 27 September 2004
+(C:\localtexmf\tex\farsitex\base\persian\fcaption.tex))) (psfig.tex
+\@unused=\write3
+
+psfig: version 1.1
+\ps@stream=\read1
+) (TEST.aux) (i-tg.tex
+psfig: searching i-TG.ps for bounding box
+psfig: including i-TG.ps 
+)
+Overfull \hbox (10.98097pt too wide) in paragraph at lines 68--7
+[][]
+
+\hbox(506.1926+0.0)x345.0
+.\hbox(0.0+0.0)x0.0
+.\hbox(506.1926+0.0)x355.98097
+..\hbox(506.1926+0.0)x355.98097, glue set 394.48741fil
+...\glue -41.83977
+...\hbox(533.79874+0.0)x3.33333, shifted 34.98079 []
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--7
+
+
+\hbox(0.0+0.0)x345.0
+.\glue(\rightskip) 0.0
+
+[1] (TEST.aux) ) 
+Here is how much of TeX's memory you used:
+ 405 strings out of 95534
+ 4049 string characters out of 1143629
+ 64255 words of memory out of 1053893
+ 3894 multiletter control sequences out of 35000
+ 9803 words of font info for 35 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 16i,9n,17p,182b,249s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on TEST.dvi (1 page, 2052 bytes).

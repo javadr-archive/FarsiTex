@@ -1,0 +1,109 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.3) (preloaded format=farsitex 2007.11.6)  8 NOV 2007 01:11
+entering extended mode
+**&farsitex TESTS.tex
+(TESTS.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+(C:\localtexmf\tex\latex209\base\article.sty
+Standard Document Style `article' <14 Jan 92>.
+(C:\localtexmf\tex\latex209\base\art10.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+(C:\localtexmf\tex\farsitex\base\deprecat\farsi.sty
+LaTeX Warning: Package `farsi' is deprecated. Use `persian' instead..
+(C:\localtexmf\tex\farsitex\base\persian.sty
+persian.sty, version 0.6, 27 September 2004
+(C:\localtexmf\tex\farsitex\base\persian\fcaption.tex)))
+(C:\localtexmf\tex\latex209\misc\fancybox.sty
+\c@tocdepth=\count87
+
+Style option: `fancybox' v1.2 <1998/02/27> (tvz)
+\@fancybox=\box26
+\@tempdimc=\dimen101
+\shadowsize=\dimen102
+\@Sbox=\box27
+\do@VerbBox=\toks14
+\the@fancyput=\toks15
+\this@fancyput=\toks16
+\EndVerbatimTokens=\toks17
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (preample.tex
+\myleng=\skip41
+\c@pretheorem=\count88
+\c@prelemma=\count89
+\c@prealgorithm=\count90
+\c@preexample=\count91
+\c@preprob=\count92
+\c@preprobb=\count93
+\c@preconj=\count94
+\c@mnum=\count95
+\c@snum=\count96
+\c@mcounter=\count97
+) (TESTS.aux)
+Overfull \hbox (49.83388pt too wide) in paragraph at lines 7--9
+[]| [] []
+
+\hbox(35.01982+0.0)x455.24408
+.\beginR
+.\rule(*+*)x0.0
+.\penalty 10000
+.\glue 56.9055
+.\glue 0.0
+.etc.
+
+
+\endL or \endR problem (1 missing, 0 extra) detected at line 13
+[][]\elmi/m/n/10 ˜   ﬁ   ¸ó   Åê˜   ¿[][]
+
+\hbox(7.73538+3.7253)x33.74269
+.\beginR
+.\beginR
+.\elmi/m/n/10 ˜
+.\penalty 10000
+.\glue -0.26036
+.etc.
+
+
+Overfull \hbox (17.07164pt too wide) in paragraph at lines 34--40
+[] 
+
+\hbox(32.693+27.693)x438.17244
+.\hbox(32.693+27.693)x455.24408
+..\hbox(60.38599+0.0)x455.24408, shifted 27.693
+...\vbox(60.38599+0.0)x455.24408 []
+.\penalty 10000
+.\glue(\parfillskip) 0.0 plus 1.0fil
+.\glue(\rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[][]
+
+\hbox(0.0+0.0)x438.17244
+.\beginR
+.\endR
+.\glue(\rightskip) 0.0
+
+[1
+
+] [2] (TESTS.aux) ) 
+Here is how much of TeX's memory you used:
+ 549 strings out of 95534
+ 5782 string characters out of 1143630
+ 72175 words of memory out of 1057717
+ 4053 multiletter control sequences out of 35000
+ 5831 words of font info for 22 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 16i,10n,15p,192b,384s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on TESTS.dvi (2 pages, 3992 bytes).

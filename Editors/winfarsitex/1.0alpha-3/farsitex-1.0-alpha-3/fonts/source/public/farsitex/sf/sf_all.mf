@@ -1,0 +1,111 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+tarh:=0;
+input sf_basic;
+input sf_macro;
+input sf_char;
+input sf_punc;
+input sf_vowel;
+input sf_digit;
+input sf_lett;
+
+%************ ligature *************************************
+def sfchr(expr i) =
+  char code[i]
+enddef;
+
+ligtable sfchr(97) : sfchr(2) =: sfchr(116),
+         sfchr(96) : sfchr(2) =: sfchr(117);
+
+%************ Kerning *************************************
+ligtable sfchr(1) : sfchr(86) kern 5.0u#, sfchr(89) kern 5.0u#,
+                    sfchr(90) kern 5.0u#, sfchr(93) kern 5.0u#,
+                    sfchr( 1) kern 3.5u#, sfchr( 2) kern 3.5u#;
+
+ligtable sfchr(2) : sfchr(3) : sfchr(86) kern 1.6u#, sfchr(89) kern 1.6u#,
+                               sfchr(90) kern 1.6u#, sfchr(93) kern 1.6u#;
+
+ligtable sfchr(40) : sfchr(41) : sfchr( 40) kern 4.5u#, sfchr( 42) kern 4.5u#,
+                                 sfchr( 44) kern 4.5u#, sfchr(106) kern 4.5u#,
+                                 sfchr( 24) kern 4.5u#, sfchr( 82) kern 4.5u#,
+                                 sfchr( 94) kern 3.0u#, sfchr(102) kern 3.0u#,
+                                 sfchr(112) kern 3.0u#, sfchr( 20) kern 1.5u#,
+                                 sfchr(  7) kern 3.7u#, sfchr( 11) kern 3.9u#,
+                                 sfchr(115) kern 3.9u#;
+
+ligtable sfchr(42) : sfchr(43) : sfchr( 40) kern 4.0u#, sfchr( 42) kern 4.0u#,
+                                 sfchr( 44) kern 4.0u#, sfchr(106) kern 4.0u#,
+                                 sfchr( 24) kern 4.0u#, sfchr( 82) kern 4.0u#,
+                                 sfchr( 94) kern 2.5u#, sfchr(102) kern 2.5u#,
+                                 sfchr(112) kern 2.5u#, sfchr( 20) kern 1.0u#,
+                                 sfchr( 28) kern-7.5u#, sfchr( 32) kern-7.5u#,
+                                 sfchr( 70) kern-7.5u#, sfchr( 74) kern-7.5u#,
+                                 sfchr(  7) kern 3.1u#, sfchr( 11) kern 3.3u#,
+                                 sfchr(115) kern 3.3u#;
+
+ligtable sfchr(44) : sfchr(45) : sfchr( 40) kern 2.5u#, sfchr( 42) kern 2.5u#,
+                                 sfchr( 44) kern 2.5u#, sfchr(106) kern 2.5u#,
+                                 sfchr( 24) kern 2.5u#, sfchr( 82) kern 2.5u#,
+                                 sfchr( 94) kern 1.0u#, sfchr(102) kern 1.0u#,
+                                 sfchr(112) kern 1.0u#, sfchr( 20) kern-0.5u#,
+                                 sfchr( 28) kern-4.0u#, sfchr( 32) kern-4.0u#,
+                                 sfchr( 70) kern-4.0u#, sfchr( 74) kern-4.0u#,
+                                 sfchr(  7) kern 1.6u#, sfchr( 11) kern 1.8u#,
+                                 sfchr(115) kern 1.8u#;
+
+ligtable sfchr(106): sfchr(107): sfchr( 40) kern 3.2u#, sfchr( 42) kern 3.2u#,
+                                 sfchr( 44) kern 3.2u#, sfchr(106) kern 3.2u#,
+                                 sfchr( 24) kern 3.0u#, sfchr( 82) kern 3.0u#,
+                                 sfchr( 94) kern 1.5u#, sfchr(102) kern 1.5u#,
+                                 sfchr(112) kern 1.5u#,
+                                 sfchr( 28) kern-3.5u#, sfchr( 32) kern-3.5u#,
+                                 sfchr( 70) kern-3.5u#, sfchr( 74) kern-3.5u#,
+                                 sfchr(  7) kern 2.1u#, sfchr( 11) kern 2.3u#,
+                                 sfchr(115) kern 2.3u#;
+
+ligtable sfchr(20) : sfchr(21) : sfchr(24) : sfchr(25) : sfchr(28) :
+         sfchr(29) : sfchr(32) : sfchr(33) : sfchr(70) : sfchr(74) :
+                                 sfchr(20) kern 4u#, sfchr(24) kern 4u#,
+                                 sfchr(28) kern 4u#, sfchr(32) kern 4u#,
+                                 sfchr(70) kern 4u#, sfchr(74) kern 4u#;
+
+ligtable sfchr(98) : sfchr(99) : sfchr(20) kern 7.5u#, sfchr(24) kern 7.5u#,
+                                 sfchr(28) kern 7.5u#, sfchr(32) kern 7.5u#,
+                                 sfchr(70) kern 7.5u#, sfchr(74) kern 7.5u#;
+
+%*************************** Font Dimensions *****************************
+font_size origsize*pt#;
+fontdimen 1:0.000*fontsize*pt#;
+fontdimen 2: 3.0cheshmi#/pt#;
+fontdimen 3: cheshmi#/pt#;
+fontdimen 4: .5cheshmi#/pt#;
+fontdimen 5: .431*fontsize*pt#;
+fontdimen 6:1.000*fontsize*pt#;
+fontdimen 7: .111*fontsize*pt#;
+fontdimen 8: .350*fontsize*pt#;
+fontdimen 9: horiz_width/pt-eps;
+
+end.

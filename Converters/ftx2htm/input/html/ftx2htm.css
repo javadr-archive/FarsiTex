@@ -1,0 +1,197 @@
+/*Simplified Arabic Fixed;Tahoma;Traditional Arabic;Times New Roman;*/
+/*Simplified Arabic;Courier New;Arial;Arabic Transparent;Andalus;*/
+body
+{
+	background-image: none;
+	background-color: #F0FFFF;
+	color: #000000;
+	font-size: 110%;/*85%;*/
+	font-family: Times New Roman;
+	margin: 10pt;
+	text-align: justify;
+}
+
+.part, .chapter
+{
+	font-family: Times New Roman;
+	font-size: 130%;
+	color: #339933;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.abstract, .section
+{
+	font-family: Times New Roman;
+	font-size: 110%;
+	color: #FF0F0F;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.subsection
+{
+	font-family: Times New Roman;
+	font-size: 105%;
+	color: #0F0F0F;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.subsubsection
+{
+}
+
+.paragraph
+{
+}
+
+.subparagraph
+{
+}
+
+.thebibliography
+{
+	font-family: Times New Roman;
+	font-size: 110%;
+	color: #000000;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.table
+{
+	text-align: center;
+}
+
+table
+{
+	/*border: 1px solid black;*/
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;*/
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 0px solid black;
+	border-bottom: 0px solid black;
+}
+
+.figure
+{
+	text-align: center;
+}
+
+.picture
+{
+	text-align: center;
+}
+
+td
+{
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-top: 2px solid;
+	border-bottom: none;
+	text-align: center;
+}
+
+.rm
+{
+	font-family: Times New Roman;
+}
+
+.iranic
+{
+	font-family: Times New Roman;/*Traditional Arabic Backslanted;*/
+}
+
+.cal
+{
+	font-family: Comic Sans MS;/* FONT FACE = Comic Sans MS */
+}
+
+pre
+{
+	font-family: Times New Roman;
+	font-size: 85%;
+	font-style: italic;
+}
+
+code
+{
+	font-family: Times New Roman;
+	font-size: 85%;
+	font-style: italic;
+}
+
+.farsi
+{
+	direction: rtl;
+	text-align: Justify;
+}
+
+.english
+{
+	direction: ltr;
+	text-align: left;
+}
+
+small.tiny
+{
+	font-size: xx-small;
+}
+
+small.scriptsize
+{
+	font-size: xx-small;
+}
+
+small.footnotesize
+{
+	font-size: x-small;
+}
+
+small.small
+{
+	font-size: small;
+}
+
+big.large
+{
+	font-size: large;
+}
+
+big.xlarge, .bigxlarge
+{
+	font-size: x-large;
+}
+
+big.xxlarge, .bigxxlarge
+{
+	font-size: xx-large;
+}
+
+big.huge
+{
+	font-size: xx-large;
+}
+
+big.xhuge
+{
+	font-size: xx-large;
+}
+
+.normalsize
+{
+	font-size: 100%;
+}
+
+.suptex
+{
+	font-size: 100%;
+}
+
+.thebibliography
+{
+	text-align: center;
+}

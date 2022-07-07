@@ -1,0 +1,121 @@
+==============================================================================
+CHANGES.TXT (FarsiTeX Distribution)
+==============================================================================
+
+This document describes the most important changes to the FarsiTeX
+distribution.
+
+07-Mar-2001 (1.0-alpha-2)
+=========================
+   Many major changes including:
+    - First Windows release based on MiKTeX.
+    - A new Windows editor.
+    - Availablity of all sources.
+    - Migration to SourceForge.
+    - TDS compliant directory structure.
+    - Recursive conversion of ftx2tex.
+
+   Currently removed, but to be fixed and added in a later release:
+    - Azin fonts
+    - Manual
+    - Samples
+    - Titr fonts
+    - Sharif Arm
+
+01-Nov-1998
+===========
+   - FTEXED (FarsiTeX editor) has been upgraded to 0.98beta (from 0.961beta)
+     The improvements are: 
+         o a feature to compile a selected portion of the input file,
+         o custom menus (including predefined dvips and ghostscript).
+   - Farsi.sty has been upgraded to version 0.51beta (from 0.31beta.)
+     The improvements are:
+         o several bug fixes, including kasreh bug in moving environments, 
+           equation numbers bug, reversed margin paragraphs, 
+           \underline problem, tabular* bug, extra space between
+           section and subsection marks, and some small bugs,
+         o footnote symbols are changed in Persian: *, **, ***, \ddagger,
+           \ddagger\ddagger, .. [based on Statistical Center of Iran's
+           recommendations,]
+         o `supertab' style file for multipage tables is now supported,
+         o .aux file size has been greatly reduced which helps processing
+            large files (less TeX capacity exceeded problems ;)
+   - AMS fonts and symbols are now supported in FarsiTeX.  ams.zip
+     in "extra" contains all necessary files, samples, and a style file.
+   - Newer version of emTeX (dated 09 Jul 1998) has been included.
+   - Newer version of LaTeX (dated 01 Jun 1998) has been included.
+   - A Frequently Asked Questions file, `faq.txt', added.
+   - Extra package `morebin' is added. This includes dvi and ps utilities 
+     like dviselect, psselect, etc.
+
+13-Aug-1998
+===========
+   - Extra packages `dvips' and `psutils' are added.
+   - Date and reference bugs fixed.
+   - Some of the font bugs fixed.
+   - Farsi.sty upgraded to version 0.31beta.
+
+14-May-1998
+===========
+   - A completely new engine, many files have been changed.
+   - A newer version of emTeX (dated 25 Jan 1998) has been included.
+   - Farsi.sty has been upgraded to version 0.3beta.
+   - Two versions are now available, a minimum version for typical
+     users, and a complete version. Complete version is available
+     in `extra*.zip' files.
+   - TeX--XeT has been replaced by e-TeX (NTS) as the main engine.
+     The executables for e-TeX has been taken from PubliC TeX (Dos-TP.)
+   - Updates in documentation and installation guide.
+   - Persian fonts are included in font library (.fli) files
+     as suggested by emTeX documentation.
+   - Bug in big Sayedar and Tookhali fonts fixed; there were some 
+     problems for sizes 17 or more, in the previous version.
+
+01-Feb-1998
+===========
+  - FarsiTeX editor, FTEXED, was upgraded to version 0.96(beta). Some
+    bugs were fixed.
+
+23-Dec-1997
+===========
+  - Manual has been upgraded to version 0.2. The *.dvi and *.ps files
+    are available in the release (in \ftex\doc\farsitex\manual).
+    Chapter one has been re-written and a section in chapter four has
+    been added for preparation of theses by FarsiTeX.
+  - Environment FTXDRV is added in SET_FTEX and appropriate changes
+    has been made to make installation very easy.
+  - A CD version of FarsiTeX has been developed. It is now possible
+    to run FarsiTeX from a CD, or install it on hard disk using an
+    install.exe program written by Mohammad Mahdian.
+
+26-Oct-1997
+===========
+  - farsi.sty has been upgraded to 0.2beta. The following changes has
+    been made in this version:
+    o Appendix title
+    o bibitem bug fixed.
+  - FTEXED upgraded to version 0.95 (beta). It allows customizing
+    keyboard map.
+  - fletter.sty bug has been fixed. No more  beginR\ is needed!
+  - sharifth.sty, a style file for typesetting SUT thesis, has been added
+    and a sample thesis has been included in \FTEX\SAMPLES\THESIS
+  - Documentation files have been updated.
+  - New sample files have been added in \FTEX\SAMPLES.
+  - Ghostscript utility has been added. (GS.BAT, PS2LJ.BAT, PS2LJF.BAT)
+  - Name of the main directory was changed to FTEX.
+
+01-Jul-1997
+===========
+  - Manual has been added (\FTEX\DOC\FARSITEX\MANUAL).
+  - First release on the Internet.
+  - Simplified installation procedure.
+
+16-Oct-1996
+===========
+  - First public release in Iran. Farsi.sty version 0.1beta, and
+    FTEXED version 0.92beta.
+
+
+--- Mohammad Ghodsi (ghodsi@sharif.ac.ir) ------------------------------
+--- Roozbeh Pournader (roozbeh@sharif.edu) -----------------------------
+--- Copyright 1996--2001 FarsiTeX Project Team.  All rights reserved ---

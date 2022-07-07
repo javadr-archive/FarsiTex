@@ -1,0 +1,107 @@
+<ÒdocumentstyleÓfarsi,ffancyhe,fancybox,adadÑŞreport×
+<·ÒinputÚĞamssymĞ
+<ÒinputŞĞpreampleĞ×
+<ÒpagestyleŞĞfancyplainĞ×
+<·Òmakeindex
+<
+<ÒtitleŞ
+<ÒÚÒÒÚÒvspaceÈŞĞ-8cmĞ×Ú
+<ÒtinyÚÚ“ùÚ÷‘ôÚøÚîùÚ¢÷‘ÚøÚ—ø÷‘¨–ÚÚÒÒÓĞ40mmĞÑ
+<ŞÒarmÚÚĞaĞ×ÚÚÒÒÚÚ\vskip1cm
+<·ÒtitrÚÚ
+<ÒHugeÚÒbfÚ¤ù÷õ‘ıÚÒFTeX
+<×
+<ÒauthorŞÚŞÒsiahÚ¨ş¢Úõ›¢Úû‘ªõüÚÚÒhspaceŞĞ1cmĞ×Úõ¨ãø¢Úşãìø“ü×
+<ÒÒÚÒÒÚ
+<ÚÚ¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéÚÒvspaceÈŞĞ4cmĞ×Ú×
+<ÒdateŞ—‘“¨—‘öÚƒˆƒ×
+<·ÒpagestyleŞĞemptyĞ×
+<
+<·ÒincludeonlyŞĞcha3,cha4Ğ×
+<
+<ÒbeginŞdocument×
+<ÒmaketitleÚ
+<ÒthispagestyleŞĞemptyĞ×
+<ÒinputŞĞcopyrighĞ×
+<ÒpagenumberingŞĞadadiĞ×
+>%to make bold page numbering
+>\makeatletter
+>\def\ps@plain{\let\@mkboth\@gobbletwo
+>  \let\@oddhead\empty
+>  \def\@oddfoot{\reset@font\siah\hfil\thepage\hfil}%
+>  \let\@evenhead\@empty
+>  \let\@evenfoot\@oddfoot}
+>\makeatother
+>\pagestyle{plain}
+>\count1=1
+<ÒaddtocounterŞĞpageĞ×ŞĞ-1Ğ×
+<Òtableofcontents
+<ÒpagenumberingŞĞfarsifooĞ×
+>\count1=2
+>\pagestyle{fancyplain}
+<
+<
+<ÒincludeŞpreface×
+<
+<ÒpagestyleŞĞfancyĞ×
+<ÒincludeŞcha1_ma×
+<ÒincludeŞkeyinf×
+<·ÒincludeŞcha2×
+<
+<ÒincludeŞcha3_ma×
+<
+<·ÒincludeŞĞcha4Ğ×
+<
+<·ÒincludeŞcha5×
+<·ÒincludeŞedman×
+<ÒbeginŞthebibliography×Ş‰‰×
+>\english
+>\bibitem{knuth:texbook}
+>   Donald Knuth. {\em The \TeX{}book}. Addison-Wesley,
+>   Readings, Massachusetts, 1994.
+>\bibitem{lamport:latex}
+>   Leslie Lamport. {\em \LaTeX: A Document
+>   Preparation System}. Addison-Wesley,
+>   Readings, Massachusetts, 1985.
+>\bibitem{gms:companion}
+>   Michel Goossens, Frank Mittelbach and Alexander Samarin. 
+>   {\em The \LaTeX{} Companion}. 
+>   Addison-Wesley, Readings, Massachusetts, 1994.
+>\bibitem{knuth-mackay} D. E. Knuth and P. Mackay, {\em Mixing right-to-left 
+>texts with left-to-right texts,} TUGboat vol.~8, 1987, No.~1.
+>\farsi
+<ÒbibitemŞĞfarsitex:paperĞ×ÚõŸõ¢Úì¢¨üŠ
+<ŞÒiranicÚ¤û÷õ‘ıÚÒFarsiTeXŠÚ×Ú¢÷ªî¢ùÚî‘õ•şø—¤Ú¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚ¨ê÷¢Ú†‡ÆÚ
+<·ÒbibitemŞĞfarsitex:paperĞ×ÚõŸõ¢Úì¢¨üŠÚŸ¨öÚ“øóŸ¨÷üÚøÚõú¤öÚª¤ìüŠ
+<·ŞÒiranicÚÒFarsiTeXÊÚ÷¤ôê¥¤ıÚ“¤ıÚŸ¤øêş÷üÚõ—øöÚäóõüŠ×Úõ›õøäùÚõì‘ò–Ú¢øõşö
+<·î÷ê¤÷§Úî‘õ•şø—¤Úş¤öÊÚõø¥©ŠÚ•¦øû©ÚøÚî‘¤“¤¢ŠÚ€‚Å‰Ú“úõöÉ‚‡ƒŠÚ¢÷ªğ‘ù
+<·äóôÚøÚ¬÷ã–Úş¤öŠÚ¬êŸùıÉ„€‚Å…‰Æ
+<·ÒbibitemŞĞahasani:thesisĞ×ÚŸ¨öÚ“øóŸ¨÷üŠÚŞÒiranicÚŸ¤øêş÷üÚõ—øöÚê‘¤¨ü
+<·“‘Ú\TeXŠ×Ú¤¨‘óùıÚî‘¤ª÷‘¨üÚ¤ª¢ŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤ŠÚ¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠ
+<·“úõöÚ‚‡ƒÆ
+<·ÒbibitemŞĞsharghi:thesisĞ×Úõú¤öÚª¤ìüŠÚŞÒiranicÚ¯¤ŸüÚäóõüÚìóôû‘ıÚê‘¤¨üŠ×
+<·¤¨‘óùıÚî‘¤ª÷‘¨üÚ¤ª¢ŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤ŠÚ¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚ“úõöÚ‚‡ƒÆ
+<·ÒbibitemŞĞhagh:projĞ×Ú›ãê¤ÚŸëóúüŠÚŞÒiranicÚ¯¤ŸüÚìóõú‘ıÚê‘¤¨üÚ“‘Úõ—‘êø÷–Š×
+<·¤¨‘óùıÚî‘¤ª÷‘¨üŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤Š
+<·¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚªú¤şø¤Ú‡ƒÆ
+<·ÒbibitemŞĞasghari:projĞ×Ú•¤ø÷ùÚ¬ç¤ıŠÚŞÒiranicÚ¯¤ŸüÚäóõüÚìóõú‘ı
+<·—¤êşíÚ“‘Úõ—‘êø÷–Š×Ú¤¨‘óùıÚî‘¤ª÷‘¨üŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤Š
+<·¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚªú¤şø¤Ú‚‡ƒÆ
+<·ÒbibitemŞĞtaj:projĞ×ÚòóùÚ—›¤“ùî‘¤ŠÚŞÒiranicÚ¯¤ŸüÚ“‘Ú•²¨–¨î¤ş•–Ú¢¤
+<·õŸşÁÚê‘¤¨üŠ×Ú¤¨‘óùıÚî‘¤ª÷‘¨üŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤Š
+<·¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚ‚‡ƒÆ
+<·ÒbibitemŞĞkiarash:paperĞ×ÚõŸõ¢Úì¢¨üÚÚøÚîş‘¤©Ú“‘¥¤ğ‘öŠ
+<·ŞÒiranicÚ—øóş¢Ú¡ø¢î‘¤ÚŸ¤øéÚ¡ÁÚÚ÷¨—ãóşëŠ×
+<·øóşöÚî÷ê¤÷§Ú¨‘ò÷ùıÚ÷›õöÚî‘õ•şø—¤Úş¤öŠ
+<·¢ıÚ„‡ƒŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤ŠÚ¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéÆ
+<·ÒbibitemŞĞyousefi:thesisĞ×Ú›õªş¢Úşø¨êüŠÚŞÒiranicÚ¯¤ŸüÚ¡ø¢î‘¤Ú•‘¤õ—¤û‘ı
+<·Úìóôû‘ıÚê‘¤¨üŠ×Ú¤¨‘óùıÚî‘¤ª÷‘¨üÚ¤ª¢ŠÚ¢÷ªî¢ùıÚõú÷¢¨üÚî‘õ•şø—¤Š
+<·¢÷ªğ‘ùÚ¬÷ã—üÚª¤şéŠÚõ¤¢¢Ú…‡ƒÆ
+<ÒendŞthebibliography×
+<
+<Òbreak
+<
+<·Òprintindex
+<
+<ÒendŞdocument×
+<

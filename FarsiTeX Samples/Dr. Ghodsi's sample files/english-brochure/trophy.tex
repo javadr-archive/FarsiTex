@@ -1,0 +1,17 @@
+\newbox\trophybox
+\newdimen\trophyw
+\font\trophya=trophya at 57.816truept
+\font\trophyb=trophyb at 57.816truept
+\setbox\trophybox=\vbox{\hbox{%
+\trophya\char0\char1}}
+\trophyw=\wd\trophybox
+\setbox\trophybox=\hbox{\vbox{\hsize=\trophyw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\trophya\char0\char1}
+\hbox{\trophya\char2\trophyb\char0}
+\hbox{\trophyb\char1\char2}}}
+\ifx\parbox\undefined
+    \def\settrophy{\box\trophybox}
+\else
+    \def\settrophy{\parbox{\wd\trophybox}{\box\trophybox}}
+\fi

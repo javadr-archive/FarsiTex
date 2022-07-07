@@ -1,0 +1,690 @@
+\documentstyle[farsi]{article}
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{22cm}
+\setlength{\oddsidemargin}{1mm}
+%\setlength{\topmargin}{-5mm}
+\title{¤ø©û‰‘ý ¤—‰±‰‘¯ “‰ƒ‰ß •‰Â¢¥©û‰‘ ¢¤ \InE{}UNIX\EnE{}}
+\author{õ‰½‰Þ‰À õ‰ú‰Àþ‰‘ö}
+%\date{}
+\begin{document}
+\maketitle 
+
+\section{õ‰Ö‰Àõ‰‚}
+þ‰Ø‰ü ¥ õ‰ú‰Þ‰µ‰Âþ‰ß õ‰Ö‰ó‰‚û‰‘ý õ‰Î‰Âž ¢¤ õ‰¤¢ ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý
+ä‰‘õ‰Ü‰ü î‰‚ ¢¤ ÷‰ú‰‘ õ‰Ô‰ú‰ô •‰Â¢¥©\footnote{\InE{}Process\EnE{}} ø›‰¢ ¢¤¢, “‰Âì‰Â¤ý
+¤—‰±‰‘¯ “‰ƒ‰ß •‰Â¢¥ª‰ú‰‘\footnote{\InE{}Interprocess Communication\EnE{}} þ‰‘ \InE{}IPC\EnE{} ¨‰´.
+õ‰ã‰Þ‰„ ¢¤ ¨‰ƒ‰Æ‰µ‰Ýû‰‘ý ä‰‘õ‰Û õ‰¿‰µ‰Ü‰Ó, ¤øª‰ú‰‘ý õ‰¿‰µ‰Ü‰Ô‰ü “‰Âý
+þ‰ß õ‰€‰Ñ‰¤ ø›‰¢ ¢¤¢.
+¢¤ þ‰ß ÷‰ª‰µ‰‘¤ ¨‰ã‰ü ¢¤þ‰Ý ¢ø ¤ø© ¥ ¤øª‰ú‰‘ý
+“‰Âì‰Â¤ý ¤—‰±‰‘¯ “‰ƒ‰ß •‰Â¢¥ª‰ú‰‘ý õ‰¿‰µ‰Ü‰Ó ¢¤ ¨‰ƒ‰Æ‰µ‰Ý ä‰‘õ‰Û \InE{}UNIX\EnE{} ¤
+—‰È‰Âþ‰¼ î‰€‰ƒ‰Ý. ÷‰¿‰Æ‰´ ÷‰Ú‰‘û‰ü ¢¤þ‰Ý “‰Â ¤øª‰ú‰‘ý õ‰¿‰µ‰Ü‰Ó
+\InE{}IPC\EnE{} ¢¤ \InE{}UNIX\EnE{}.
+•‰Å ¥ ö û‰Â þ‰× ¥ ¢ø ¤ø©
+¨‰Þ‰‘ê‰¤ ø Ÿ‰‘ê‰Ñ‰‚ý õ‰È‰µ‰Âí ¤ “‰‚ Ï‰¤ ›‰Àð‰‘÷‰‚ “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢.
+
+\section{\label{Methods} ¤øª‰ú‰‘ý ¤—‰±‰‘¯ “‰ƒ‰ß •‰Â¢¥ª‰ú‰‘ ¢¤ \InE{}UNIX\EnE{} }
+¤øª‰ú‰‘ý õ‰¿‰µ‰Ü‰Ô‰ü “‰Âý ¤—‰±‰‘¯ “‰ƒ‰ß •‰Â¢¥ª‰ú‰‘ ¢¤ \InE{}UNIX\EnE{} ø›‰¢
+¢¤¢. þ‰ß ¤øª‰ú‰‘ ä‰±‰‘¤—‰€‰À ¥:
+\begin{enumerate}
+\item ê‰Â¨‰µ‰‘¢ö ¨‰ƒ‰Ú‰€‰‘ñ:
+¢¤ \InE{}UNIX\EnE{}, û‰Â •‰Â¢¥ª‰ü õ‰ü—‰÷‰À “‰‚ •‰Â¢¥ª‰ú‰‘ý ¢þ‰Ú‰Âý î‰‚
+õ‰Â“‰¯ “‰‚ û‰Þ‰‘ö î‰‘¤“‰Â “‰‘ª‰€‰À, ¨‰ƒ‰Ú‰€‰‘ñ “‰Ô‰Â¨‰µ‰À. ó‰±‰µ‰‚ “‰Âý þ‰ß
+õ‰€‰Ñ‰¤ “‰‘þ‰À ª‰Þ‰‘¤ù )\InE{}PID\EnE{}( ö •‰Â¢¥© ¤ ¢ª‰µ‰‚ “‰‘ª‰À.
+þ‰ß î‰‘¤ “‰‘ ¢¨‰µ‰¤ \InE{}kill\EnE{} ¬‰¤– õ‰üð‰ƒ‰Â¢. ó‰±‰µ‰‚ ¨‰µ‰Ô‰‘¢ù ¥ þ‰ß
+¤ø© “‰Âý ê‰Â¨‰µ‰‘¢ö Ï‰…ä‰‘– “‰ƒ‰ß •‰Â¢¥ª‰ú‰‘ ‰€‰Àö õ‰€‰‘¨‰° ÷‰ƒ‰Æ‰´
+ø ¥ ö —‰€‰ú‰‘ “‰Âý Ï‰…á ¢¢ö þ‰× øì‰ã‰‚ “‰‚ þ‰× •‰Â¢¥©
+ø þ‰‘ ê‰Â¨‰µ‰‘¢ö •‰ƒ‰ç‰‘õ‰ü “‰Âý õ‰µ‰ì‰Ó î‰Â¢ö þ‰× •‰Â¢¥© ¨‰µ‰Ô‰‘¢ù
+õ‰üª‰¢.
+
+\item \InE{}Pipe\EnE{}:
+î‰‚ õ‰‘÷‰€‰À þ‰× ó‰ó‰‚ ¨‰´ î‰‚ þ‰× •‰Â¢¥© õ‰ü—‰÷‰À ¥ þ‰× ¨‰Â
+ö Ï‰…ä‰‘—‰ü ¤ “‰Ô‰Â¨‰µ‰À ø •‰Â¢¥© ¢þ‰Ú‰Â Ï‰…ä‰‘– ¤ ¥ ¨‰Â ¢þ‰Ú‰Â
+ó‰ó‰‚ ¢¤þ‰‘ê‰´ õ‰üî‰€‰À.
+ó‰±‰µ‰‚ \InE{}Pipe\EnE{} —‰€‰ú‰‘ õ‰ü—‰÷‰À ¢¤ õ‰¤¢ •‰Â¢¥ª‰ú‰‘þ‰ü î‰‚ ¢¤ þ‰×
+ð‰Âøù ¥ •‰Â¢¥ª‰ú‰‘ “‰‘ª‰€‰À, þ‰ã‰€‰ü þ‰‘ •‰À¤ ø ê‰Â¥÷‰À “‰‘ª‰€‰À,
+ø þ‰‘ •‰À¤ õ‰È‰µ‰Âî‰ü ¢ª‰µ‰‚ “‰‘ª‰€‰À, “‰‚ î‰‘¤ ¤ø¢.
+
+\item \InE{}FIFO\EnE{}:
+õ‰‘÷‰€‰À \InE{}Pipe\EnE{} ¨‰´ ø ð‰‘û‰ü øì‰‘– ó‰ó‰‚ý ¨‰Ý¢¤\footnote{\InE{}Named Pipe\EnE{}}
+÷‰ƒ‰Ã ¡‰÷‰Àù õ‰üª‰¢. —‰€‰ú‰‘ —‰Ô‰‘ø– ö “‰‘ \InE{}Pipe\EnE{} ¢¤ þ‰ß ¨‰´ î‰‚
+\InE{}FIFO\EnE{} û‰‘ õ‰ü—‰÷‰€‰À “‰Âý “‰Âì‰Â¤ý ¤—‰±‰‘¯ “‰ƒ‰ß ¢ø •‰Â¢¥© î‰‚
+õ‰µ‰ã‰Ü‰Õ “‰‚ þ‰× ð‰Âøù ¥ •‰Â¢¥ª‰ú‰‘ ÷‰±‰‘ª‰€‰À ÷‰ƒ‰Ã “‰‚ î‰‘¤ ¤ø¢.
+
+\item \InE{}Message Queue\EnE{}:
+õ‰‘÷‰€‰À \InE{}FIFO\EnE{} ¨‰´, “‰‘ þ‰ß —‰Ô‰‘ø– î‰‚ ¢¤ õ‰¤¢ \InE{}FIFO\EnE{},
+•‰Â¢¥ª‰ü î‰‚ Ï‰…ä‰‘– ¤ õ‰üê‰Â¨‰µ‰À ø •‰Â¢¥ª‰ü î‰‚ Ï‰…ä‰‘– ¤
+¢¤þ‰‘ê‰´ õ‰üî‰€‰À, û‰Â ¢ø “‰‘þ‰À “‰‚ Ï‰¤ û‰Þ‰Ãõ‰‘ö ¢¤ ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Ì‰¤ ¢ª‰µ‰‚
+“‰‘ª‰€‰À; øó‰ü ¢¤ ¤ø© \InE{}Message Queue\EnE{}, õ‰Þ‰Ø‰ß ¨‰´ î‰‚ þ‰× •‰Â¢¥© •‰ƒ‰‘õ‰ú‰‘þ‰ü ¤
+¢¤ þ‰× \InE{}Message Queue\EnE{} “‰Ú‰Á¤¢ ø “‰ã‰À ¡‰¢© õ‰µ‰ì‰Ó ª‰¢, ø •‰Å ¥ ö þ‰× •‰Â¢¥©
+¢þ‰Ú‰Â þ‰ß •‰ƒ‰‘õ‰ú‰‘ ¤ ¥ ö “‰¿‰÷‰À.
+
+\item ¨‰Þ‰‘ê‰¤:
+þ‰ß ¤ø© ¢¤ ¨‰‘ñ 8691 —‰¨‰Í \InE{}Dijkstra\EnE{} “‰Âý û‰Þ‰‘û‰€‰Ù¨‰‘¥ý •‰Â¢¥ª‰ú‰‘ •‰ƒ‰È‰€‰ú‰‘¢
+ª‰À. ¢¤ õ‰¤¢ þ‰ß ¤ø© ¢¤ “‰¿‰Ç \ref{Sem} “‰ƒ‰È‰µ‰Â ¬‰½‰±‰´ ¡‰û‰ƒ‰Ý î‰Â¢.
+
+\item Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí:
+¨‰µ‰Ô‰‘¢ù ¥ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí þ‰Ø‰ü ¥ “‰ú‰µ‰Âþ‰ß ø î‰‘¤—‰Âþ‰ß ¤øª‰ú‰‘ý
+÷‰µ‰Ö‰‘ñ ¢¢ù “‰ƒ‰ß ¢ø •‰Â¢¥© ¨‰´.
+¢¤ õ‰¤¢ þ‰ß ¤ø© ÷‰ƒ‰Ã ¢¤ “‰¿‰Ç \ref{Shm} ¬‰½‰±‰´ ¡‰û‰ƒ‰Ý î‰Â¢.
+
+\item ¨‰µ‰Ô‰‘¢ù ¥ \InE{}Socket\EnE{} û‰‘ ø \InE{}TLI\EnE{}:
+“‰‘ ¨‰µ‰Ô‰‘¢ù ¥ þ‰ß ¤ø© ¢ø •‰Â¢¥© î‰‚ “‰Â ¤øý ¢ø î‰‘õ‰³‰ƒ‰—‰Â
+õ‰¿‰µ‰Ü‰Ó ¢¤ þ‰× ª‰±‰Ø‰‚ ›‰Â õ‰üª‰÷‰À ÷‰ƒ‰Ã õ‰ü—‰÷‰€‰À “‰‘ û‰Ý ¤—‰±‰‘¯ “‰Âì‰Â¤
+î‰€‰€‰À.
+\end{enumerate}
+
+¢¤ “‰ƒ‰ß ¤øª‰ú‰‘ý ê‰ë, ¤øª‰ú‰‘ý ª‰Þ‰‘¤ù 4, 5, ø 6 “‰‚ ¤øª‰ú‰‘ý \InE{}IPC\EnE{}
+¢¤ \InE{}System V\EnE{} õ‰¨‰õ‰€‰À. ¤øª‰ú‰‘ý 1 ø 2 —‰€‰ú‰‘ “‰Âý ¤—‰±‰‘¯ “‰ƒ‰ß ¢ø
+•‰Â¢¥© î‰‚ õ‰µ‰ã‰Ü‰Õ “‰‚ þ‰× î‰‘¤“‰Â û‰Æ‰µ‰€‰À “‰‚ î‰‘¤ õ‰ü¤ø÷‰À ø “‰Ö‰ƒ‰‚ ¤øª‰ú‰‘
+õ‰ü—‰÷‰€‰À “‰Âý ¤—‰±‰‘¯ “‰ƒ‰ß ¢ø •‰Â¢¥© î‰‚ õ‰µ‰ã‰Ü‰Õ “‰‚ þ‰× î‰‘¤“‰Â ÷‰ƒ‰Æ‰µ‰€‰À
+÷‰ƒ‰Ã “‰‚ î‰‘¤ ¤ø÷‰À. ¢¤ “‰ƒ‰ß þ‰ß ¤øª‰ú‰‘, ¨‰µ‰Ô‰‘¢ù ¥ ¨‰Þ‰‘ê‰¤ “‰Âý
+û‰Þ‰‘û‰€‰Ù î‰Â¢ö ¢ø •‰Â¢¥© “‰Àøö \InE{}Busy Waiting\EnE{} ø ¨‰µ‰Ô‰‘¢ù ¥ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí
+“‰Âý ÷‰µ‰Ö‰‘ñ õ‰Ö‰À¤ ¥þ‰‘¢ ¢¢ù “‰Æ‰ƒ‰‘¤ õ‰ã‰Þ‰ñ û‰Æ‰µ‰€‰À. û‰Þ‰ƒ‰ß Ï‰¤
+¤ø© 7 ÷‰ƒ‰Ã ¢¤ Ï‰ÂŸ‰ü ÷‰Âôê‰Ã¤û‰‘ý ª‰±‰Ø‰‚ “‰Æ‰ƒ‰‘¤ ¨‰µ‰Ô‰‘¢ù õ‰üª‰¢.
+
+\section{\label{} ¨‰‘¡‰µ‰‘¤û‰‘ý õ‰È‰µ‰Âí }
+¤øª‰ú‰‘ý \InE{}IPC\EnE{} ¢¤ \InE{}Message Queue) System V\EnE{}, ¨‰Þ‰‘ê‰¤, ø Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí(
+ª‰±‰‘û‰µ‰ú‰‘ý ¥þ‰‘¢ý ¢¤ ¥õ‰ƒ‰€‰‚ Ï‰…ä‰‘—‰ü î‰‚ û‰Æ‰µ‰‚\footnote{\InE{}Kernel\EnE{}} ¨‰ƒ‰Æ‰µ‰Ý ä‰‘õ‰Û
+¢¤ õ‰¤¢ ÷‰ú‰‘ ÷‰Ú‰ú‰À¤ý õ‰üî‰€‰À ø ê‰Â¡‰÷‰üû‰‘ý ¨‰ƒ‰Æ‰µ‰Ý „¥ô “‰Âý ¢¨‰µ‰ƒ‰‘“‰ü “‰‚
+÷‰ú‰‘ ¢¤÷‰À.
+¢¤ þ‰ß “‰¿‰Ç “‰Â¡‰ü ¥ ¨‰‘¡‰µ‰‘¤û‰‘ý õ‰È‰µ‰Âí “‰ƒ‰ß þ‰ß ¤øª‰ú‰‘
+¤ “‰Â¤¨‰ü ¡‰û‰ƒ‰Ý î‰Â¢.
+
+û‰Æ‰µ‰‚ \InE{}UNIX\EnE{} û‰Þ‰‘öÏ‰¤ î‰‚ ¢¤ õ‰¤¢ û‰Â ê‰‘þ‰Û Ï‰…ä‰‘—‰ü ¤ ÷‰Ú‰ú‰À¤ý
+õ‰üî‰€‰À, ¢¤ õ‰¤¢ û‰Â î‰‘÷‰‘ñ \InE{}IPC\EnE{} )î‰‚ õ‰ü—‰÷‰À \InE{}Message Queue\EnE{}, ¨‰Þ‰‘ê‰¤,
+ø þ‰‘ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí “‰‘ª‰À(
+÷‰ƒ‰Ã Ï‰…ä‰‘– ¥þ‰Â ¤ ÷‰Ú‰‚ õ‰ü¢¤¢.
+\english
+\begin{verbatim}
+struct ipc_perm {
+        ushort uid;     /* owner's user id */
+        ushort gid;     /* owner's group id */
+        ushort cuid;    /* creator's user id */
+        ushort cgid;    /* creator's group id */
+        ushort mode;    /* access modes */
+        ushort seq;     /* slot usage sequence number */
+        key_t  key;     /* key */
+};
+\end{verbatim}
+\farsi
+
+þ‰ß ¨‰‘¡‰µ‰‘¤ ¢¤ \InE{}\verb|<sys/ipc.h>|\EnE{} —‰ã‰Âþ‰Ó ª‰Àù ¨‰´.
+“‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤û‰‘ý \InE{}\verb|msgctl|\EnE{} )¢¤ õ‰¤¢ \InE{}Message Queue\EnE{}(,
+\InE{}\verb|semctl|\EnE{} )¢¤ õ‰¤¢ ¨‰Þ‰‘ê‰¤(, ø \InE{}\verb|shmctl|\EnE{} )¢¤ õ‰¤¢ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí(
+õ‰ü—‰ö “‰‚ þ‰ß ¨‰‘¡‰µ‰‘¤ ¢¨‰µ‰Â¨‰ü •‰ƒ‰À î‰Â¢ ø þ‰‘ ö ¤
+—‰ç‰ƒ‰ƒ‰Â ¢¢.
+
+¢¤ “‰ƒ‰ß ê‰ƒ‰Ü‰Àû‰‘ý þ‰ß ¨‰‘¡‰µ‰‘¤, ê‰ƒ‰Ü‰Àý “‰‚ ÷‰‘ô \InE{}\verb|key|\EnE{}
+¢þ‰Àù õ‰üª‰¢. û‰Þ‰ƒ‰´ þ‰ß ê‰ƒ‰Ü‰À “‰Âý î‰‘÷‰‘ñû‰‘ý \InE{}IPC\EnE{}, õ‰‘÷‰€‰À
+û‰Þ‰ƒ‰´ ¨‰Ý “‰Âý ê‰‘þ‰Û ¨‰´;\
+û‰Þ‰‘öÏ‰¤ î‰‚ û‰Â ê‰‘þ‰Ü‰ü “‰‘ þ‰× ¨‰Ý ª‰€‰‘¡‰µ‰‚ õ‰üª‰¢,
+û‰Â î‰‘÷‰‘ñ \InE{}IPC\EnE{} ÷‰ƒ‰Ã “‰‘ þ‰× î‰Ü‰ƒ‰À )\InE{}\verb|key|\EnE{}(
+ª‰€‰‘¡‰µ‰‚ õ‰üª‰¢. î‰Ü‰ƒ‰À þ‰× ä‰À¢ ¬‰½‰ƒ‰¼ 23 “‰ƒ‰µ‰ü ¨‰´ î‰‚ ¢ø •‰Â¢¥©
+î‰‚ õ‰ü¡‰û‰€‰À ¥ Ï‰Âþ‰Õ þ‰× î‰‘÷‰‘ñ \InE{}IPC\EnE{} õ‰È‰µ‰Âí ¤—‰±‰‘¯ ¢ª‰µ‰‚
+“‰‘ª‰€‰À, “‰‘þ‰À ¥ ì‰±‰Û ¤øý þ‰× î‰Ü‰ƒ‰À —‰ê‰Õ î‰Â¢ù “‰‘ª‰€‰À ø û‰Â
+¢øý ÷‰ú‰‘ î‰‘÷‰‘ó‰ü “‰‘ ö î‰Ü‰ƒ‰À õ‰È‰¿‰É ¤ “‰‘¥ î‰€‰€‰À.
+ó‰±‰µ‰‚ þ‰ß õ‰È‰Ø‰Û ø›‰¢ ¢¤¢ î‰‚ ¢¤ ¬‰¤—‰ü î‰‚ •‰Â¢¥© ¢þ‰Ú‰Âý
+÷‰ƒ‰Ã “‰¿‰û‰À þ‰× î‰‘÷‰‘ñ \InE{}IPC\EnE{} “‰‘ û‰Þ‰‘ö î‰Ü‰ƒ‰À “‰Ú‰ƒ‰Â¢,
+î‰‘¤ þ‰ß •‰Â¢¥ª‰ú‰‘ “‰‘ û‰Ý —‰À¡‰Û •‰ƒ‰À ¡‰û‰À î‰Â¢.
+
+
+û‰Â •‰Â¢¥© õ‰ü—‰÷‰À ¢¤ û‰€‰Ú‰‘ô ð‰Âê‰µ‰ß î‰‘÷‰‘ñ \InE{}IPC\EnE{},
+õ‰Ö‰À¤ î‰Ü‰ƒ‰À ¤ “‰Â“‰Â “‰‘ \InE{}\verb|IPC_PRIVATE|\EnE{} õ‰È‰¿‰É î‰€‰À.
+¢¤ þ‰ß ¬‰¤– þ‰× î‰‘÷‰‘ñ õ‰€‰½‰Ê‰Â “‰‚ ê‰Â¢ “‰Âý þ‰ß •‰Â¢¥©
+þ‰¹‰‘¢ ¡‰û‰À ª‰À. ó‰±‰µ‰‚ ð‰Â “‰¿‰û‰ƒ‰Ý ¥ þ‰ß î‰‘÷‰‘ñ “‰Âý
+¤—‰±‰‘¯ “‰ƒ‰ß ¢ø •‰Â¢¥© ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý, “‰‘þ‰À õ‰È‰¿‰Ê‰‘–
+î‰‘÷‰‘ñ ð‰Âê‰µ‰‚ ª‰Àù ¤ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¤ø© ¢þ‰Ú‰Âý
+“‰‚ •‰Â¢¥© Ï‰Âé ¤—‰±‰‘¯ Ï‰…á ¢û‰ƒ‰Ý.
+¨‰µ‰Ô‰‘¢ù ¥ õ‰Ø‰‘ö õ‰È‰¿‰É î‰Â¢ö î‰Ü‰ƒ‰À “‰‚ ¬‰¤– \InE{}\verb|IPC_PRIVATE|\EnE{},
+“‰‚ ¡‰Ê‰« ¢¤ õ‰¤¢ý î‰‘¤“‰Â¢ ¢¤¢ î‰‚ ¢ø •‰Â¢¥ª‰ü î‰‚
+õ‰ü¡‰û‰€‰À “‰‘ û‰Ý ¤—‰±‰‘¯ “‰Âì‰Â¤ î‰€‰€‰À, •‰Â¢¥ª‰ú‰‘þ‰ü “‰‘ª‰€‰À
+î‰‚ ¢¤ ™‰Â \InE{}\verb|fork|\EnE{} î‰Â¢ö, ¥ þ‰× •‰Â¢¥© þ‰¹‰‘¢ ª‰Àù “‰‘ª‰€‰À.
+¢¤ þ‰ß ¬‰¤– î‰‘ê‰ü ¨‰´ ì‰±‰Û ¥ ÷‰¹‰‘ô ä‰Þ‰Û \InE{}\verb|fork|\EnE{}, î‰‘÷‰‘ñ
+¤—‰±‰‘Ï‰ü “‰‘ î‰Ü‰ƒ‰À \InE{}\verb|IPC_PRIVATE|\EnE{} ð‰Âê‰µ‰‚ ª‰¢ ø •‰Å ¥ \InE{}\verb|fork|\EnE{} î‰Â¢ö,
+¢ø •‰Â¢¥© ¥ ö ¨‰µ‰Ô‰‘¢ù î‰€‰€‰À.
+
+
+\section{\label{Sem} ¨‰Þ‰‘ê‰¤}
+þ‰× ¨‰Þ‰‘ê‰¤ õ‰‘÷‰€‰À þ‰× õ‰µ‰ç‰ƒ‰Â “‰‘ õ‰Ö‰À¤ ¬‰½‰ƒ‰¼ ¨‰´ î‰‚
+õ‰ü—‰÷‰ƒ‰Ý ä‰Þ‰Ü‰ƒ‰‘– ¥þ‰Â ¤ ¤øý ö ÷‰¹‰‘ô ¢û‰ƒ‰Ý:
+\begin{itemize}
+\item õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ ¤ “‰‚ õ‰ƒ‰Ãö õ‰È‰¿‰Ê‰ü ê‰Ãþ‰Ç ¢û‰ƒ‰Ý.
+\item ¬‰±‰Â î‰€‰ƒ‰Ý —‰‘ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ “‰Â“‰Â “‰‘ ¬‰Ô‰Â ª‰¢.
+\item ¬‰±‰Â î‰€‰ƒ‰Ý —‰‘ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ ¥ õ‰ƒ‰Ãö õ‰È‰¿‰Ê‰ü “‰ƒ‰È‰µ‰Â þ‰‘ õ‰Æ‰‘øý ª‰¢ ø
+¨‰³‰Å þ‰ß õ‰Ö‰À¤ ¤ ¥ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ î‰Ý î‰€‰ƒ‰Ý.
+\end{itemize}
+÷‰Ø‰µ‰‚ õ‰ú‰Þ‰ü î‰‚ ¢¤ õ‰¤¢ ÷‰¹‰‘ô þ‰ß ä‰Þ‰Ü‰ú‰‘ ø›‰¢ ¢¤¢ þ‰ß ¨‰´
+î‰‚ ø„ þ‰ß ä‰Þ‰Ü‰ú‰‘ —‰¨‰Í ¨‰ƒ‰Æ‰µ‰Ý ä‰‘õ‰Û “‰‚ ¬‰¤– —‰Ö‰Æ‰ƒ‰Ý ÷‰‘•‰Áþ‰Â )\InE{}Atomic\EnE{}( ›‰Â
+õ‰üª‰÷‰À ø “‰€‰‘“‰Âþ‰ß õ‰ü—‰÷‰€‰À “‰Âý û‰Þ‰‘û‰€‰Ù¨‰‘¥ý ¢ø •‰Â¢¥© “‰‚ î‰‘¤
+¤ø÷‰À. ™‰‘÷‰ƒ‰‘ þ‰ß î‰‚ ä‰Þ‰Û ¬‰±‰Â î‰Â¢ö “‰Âý þ‰× ¨‰Þ‰‘ê‰¤ ¥ ÷‰á
+\InE{}Busy Waiting\EnE{} ÷‰ƒ‰Æ‰´ ø “‰€‰‘“‰Âþ‰ß î‰‘¤þ‰ü ¨‰ƒ‰Æ‰µ‰Ý ¤ •‰‘þ‰ƒ‰ß ÷‰Þ‰üø¤¢;\
+þ‰ã‰€‰ü ¨‰ƒ‰Æ‰µ‰Ý ¢¤ û‰€‰Ú‰‘õ‰ü î‰‚ •‰Â¢¥ª‰ü “‰Âý þ‰× ¨‰Þ‰‘ê‰¤ ¬‰±‰Â î‰Â¢ù ¨‰´,
+î‰‘¤ •‰Â¢¥ª‰ú‰‘ý ¢þ‰Ú‰Â ¤ ÷‰¹‰‘ô õ‰ü¢û‰À ø øì‰µ‰ü ¬‰Âé ö •‰Â¢¥© ÷‰Þ‰üî‰€‰À.
+“‰Âý ¢¤í “‰ú‰µ‰Â õ‰Ô‰ú‰ô ¨‰Þ‰‘ê‰¤û‰‘, õ‰ü—‰÷‰ƒ‰À “‰‚ î‰µ‰‘“‰ú‰‘ý õ‰¿‰µ‰Ü‰Ó
+¨‰ƒ‰Æ‰µ‰Ý ä‰‘õ‰Û õ‰Â›‰ã‰‚ î‰€‰ƒ‰À.
+
+¢¤ þ‰÷‰ƒ‰Ø‰Å, õ‰ü—‰÷‰ƒ‰Ý þ‰× õ‰¹‰Þ‰ä‰‚ ¥ ¨‰Þ‰‘ê‰¤û‰‘ ¤ “‰‚ ä‰€‰ö þ‰× î‰‘÷‰‘ñ
+\InE{}IPC\EnE{} )“‰‘ þ‰× î‰Ü‰ƒ‰À( “‰Ú‰ƒ‰Âþ‰Ý ø “‰Â ¤øý û‰Þ‰‚ ÷‰ú‰‘ ä‰Þ‰Ü‰ƒ‰‘—‰ü ¤ ÷‰¹‰‘ô ¢û‰ƒ‰Ý.
+“‰€‰‘“‰Âþ‰ß þ‰× ¨‰Þ‰‘ê‰¤ ¢¤ þ‰÷‰ƒ‰Ø‰Å, ¢¤  øì‰â, õ‰¹‰Þ‰ä‰‚ý ¥ ¨‰Þ‰‘ê‰¤û‰‘¨‰´.
+
+\subsection{\label{SemGet} ð‰Âê‰µ‰ß ¨‰Þ‰‘ê‰¤}
+ð‰Âê‰µ‰ß þ‰× õ‰¹‰Þ‰ä‰‚ ¨‰Þ‰‘ê‰¤ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤ \InE{}\verb|semget|\EnE{} ÷‰¹‰‘ô õ‰üª‰¢.
+ª‰Ø‰Û þ‰ß ¢¨‰µ‰¤ “‰‚ ¬‰¤– ¥þ‰Â ¨‰´:
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
+
+int semget(key_t key, int nsems, int flag);
+\end{verbatim}
+\farsi
+
+¢¤ ¬‰¤—‰ü î‰‚ ª‰Ø‰‘ó‰ü ¢¤ ð‰Âê‰µ‰ß ¨‰Þ‰‘ê‰¤ ø›‰¢ ¢ª‰µ‰‚ “‰‘ª‰À,
+\InE{}\verb|semget|\EnE{} õ‰Ö‰À¤ \InE{}$-1$\EnE{} ø ¢¤ ¬‰¤—‰ü î‰‚ ª‰Ø‰‘ó‰ü ø›‰¢ ÷‰Àª‰µ‰‚ “‰‘ª‰À,
+þ‰× ä‰À¢ ¬‰½‰ƒ‰¼ õ‰·‰±‰´ ¤ “‰‚ ä‰€‰ö ª‰‘¡‰É ¨‰Þ‰‘ê‰¤\footnote{\InE{}Semaphore Identifier\EnE{}}
+“‰Âõ‰üð‰Â¢÷‰À.
+
+•‰‘¤õ‰µ‰Âû‰‘ý þ‰ß ¢¨‰µ‰¤ “‰‚ þ‰ß ¬‰¤– û‰Æ‰µ‰€‰À:
+\begin{itemize}
+\item \InE{}\verb|key|\EnE{} î‰Ü‰ƒ‰Àý ¨‰´ î‰‚ ¨‰Þ‰‘ê‰¤ ¤ õ‰È‰¿‰É õ‰üî‰€‰À. ¢¤ õ‰¤¢ î‰Ü‰ƒ‰Àû‰‘
+¢¤ “‰¿‰Ç 2 “‰‚ ÷‰À¥ùý î‰‘ê‰ü ¬‰½‰±‰´ î‰Â¢þ‰Ý.
+
+\item \InE{}\verb|nsems|\EnE{} —‰ã‰À¢ ¨‰Þ‰‘ê‰¤û‰‘ý õ‰¹‰Þ‰ä‰‚ ¤ õ‰È‰¿‰É õ‰üî‰€‰À.
+
+\item \InE{}\verb|flag|\EnE{} ›‰‘¥ùû‰‘ý ¢¨‰µ‰ƒ‰‘“‰ü “‰‚ ¨‰Þ‰‘ê‰¤ ¤ õ‰È‰¿‰É õ‰üî‰€‰À ø û‰Þ‰ƒ‰ß
+Ï‰¤ þ‰ß î‰‚ þ‰‘ ¨‰Þ‰‘ê‰¤ “‰Âý øó‰ƒ‰ß “‰‘¤ þ‰¹‰‘¢ õ‰üª‰¢ ø þ‰‘
+õ‰ü¡‰û‰ƒ‰Ý “‰‚ þ‰× ¨‰Þ‰‘ê‰¤ î‰‚ ì‰±‰… þ‰¹‰‘¢ ª‰Àù ¨‰´, ¢¨‰µ‰Â¨‰ü
+•‰ƒ‰À î‰€‰ƒ‰Ý. 9 “‰ƒ‰´ •‰‘þ‰ƒ‰ß \InE{}\verb|flag|\EnE{}, ›‰‘¥ùû‰‘ý ¢¨‰µ‰ƒ‰‘“‰ü ¤ õ‰È‰¿‰É
+õ‰üî‰€‰À )“‰‚ û‰Þ‰‘ö —‰Â—‰ƒ‰±‰ü î‰‚ ¢¤ õ‰¤¢ ›‰‘¥ù ¢¨‰µ‰ƒ‰‘“‰ü “‰‚ ê‰‘þ‰Ü‰ú‰‘
+¢ª‰µ‰ƒ‰Ý.( õ‰Ö‰À¤ \InE{}\verb|flag|\EnE{} ¤ õ‰ü—‰ö “‰‘ —‰Âî‰ƒ‰° ™‰‘“‰µ‰ú‰‘þ‰ü î‰‚
+¢¤ ›‰Àøñ ¥þ‰Â õ‰Àù÷‰À, þ‰¹‰‘¢ î‰Â¢:
+\english
+$$\begin{tabular}{|l|l|l|}
+\hline
+Numeric & Symbolic & Description \\ \hline \hline
+0400 & \verb|SEM_R|    & Read by owner  \\
+0200 & \verb|SEM_A|    & Alter by owner  \\
+0040 & \verb|SEM_R>>3| & Read by group  \\
+0020 & \verb|SEM_A>>3| & Alter by group  \\
+0004 & \verb|SEM_R>>6| & Read by world  \\
+0002 & \verb|SEM_A>>6| & Alter by world  \\  \hline
+\end{tabular}$$
+\farsi
+
+\InE{}\verb|IPC_CREAT|\EnE{} “‰‚ õ‰ã‰€‰ü þ‰ß ¨‰´ î‰‚ õ‰ü¡‰û‰ƒ‰Ý ¢¤ ¬‰¤—‰ü î‰‚ ¨‰Þ‰‘ê‰¤ ø›‰¢
+÷‰Àª‰´, þ‰¹‰‘¢ ª‰¢. ¢¤ ¬‰¤—‰ü î‰‚ ä‰…øù “‰Â \InE{}\verb|IPC_CREAT|\EnE{}, \InE{}\verb|IPC_EXCL|\EnE{} ¤ ÷‰ƒ‰Ã
+÷‰µ‰¿‰‘’ î‰Â¢ù “‰‘ª‰ƒ‰Ý, þ‰ã‰€‰ü þ‰ß î‰‚ õ‰ü¡‰û‰ƒ‰Ý ¢¤ ¬‰¤—‰ü î‰‚ ¨‰Þ‰‘ê‰¤
+ø›‰¢ ÷‰Àª‰´ þ‰¹‰‘¢ ª‰¢, øó‰ü ¢¤ ¬‰¤—‰ü î‰‚ ø›‰¢ ¢ª‰´,
+\InE{}\verb|semget|\EnE{} “‰‘ ð‰Âê‰µ‰ß ¡‰Î‰‘ ¡‰‘¤š ª‰¢.
+“‰Âý õ‰½‰‘¨‰±‰‚ õ‰Ö‰À¤ \InE{}\verb|flag|\EnE{}, “‰‘þ‰À õ‰Ö‰‘¢þ‰Â õ‰¤¢ ÷‰Ñ‰Â ¤ ¥ ›‰Àøñ “‰‘„
+÷‰µ‰¿‰‘’ î‰Â¢ù ø ¨‰³‰Å ÷‰ú‰‘ ¤ “‰‘ û‰Ý \InE{}OR\EnE{} î‰€‰ƒ‰Ý.
+“‰Âý õ‰·‰‘ñ ð‰Â \InE{}\verb|flag|\EnE{} ¤ “‰Â“‰Â “‰‘
+\InE{}\verb^SEM_R|SEM_A|(SEM_R>>6)|IPC_CREAT^\EnE{}
+¢¤ ÷‰Ñ‰Â “‰Ú‰ƒ‰Âþ‰Ý, “‰Àþ‰ß õ‰ã‰€‰ü ¨‰´ î‰‚ õ‰ü¡‰û‰ƒ‰Ý ¨‰Þ‰‘ê‰¤ý “‰Ú‰ƒ‰Âþ‰Ý
+î‰‚ ¡‰¢õ‰‘ö “‰µ‰÷‰ƒ‰Ý ö ¤ “‰¿‰÷‰ƒ‰Ý ø þ‰‘ —‰ç‰ƒ‰ƒ‰Â ¢û‰ƒ‰Ý ø “‰Ö‰ƒ‰‚
+—‰€‰ú‰‘ “‰µ‰÷‰€‰À ö ¤ “‰¿‰÷‰€‰À. û‰Þ‰»‰€‰ƒ‰ß ¢¤ ¬‰¤—‰ü î‰‚ ¨‰Þ‰‘ê‰¤
+ø›‰¢ ÷‰Àª‰´, õ‰ü¡‰û‰ƒ‰Ý þ‰¹‰‘¢ ª‰¢.
+\end{itemize}
+\subsection{ä‰Þ‰Ü‰ƒ‰‘– ¤øý ¨‰Þ‰‘ê‰¤}
+ä‰Þ‰Ü‰ƒ‰‘– ¤øý ¨‰Þ‰‘ê‰¤û‰‘ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤ \InE{}\verb|semop|\EnE{} ÷‰¹‰‘ô
+õ‰üª‰¢. ª‰Ø‰Û þ‰ß ¢¨‰µ‰¤ “‰‚ þ‰ß ¬‰¤– ¨‰´:
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
+
+int semop(int semid, struct sembuf *opsptr, unsigned int nops);
+\end{verbatim}
+\farsi
+
+þ‰ß —‰‘“‰â ¢¤ ¬‰¤– õ‰ê‰Ö‰ƒ‰´ ¬‰Ô‰Â ø ¢¤ ¬‰¤– ä‰Àô õ‰ê‰Ö‰ƒ‰´
+\InE{}$-1$\EnE{} “‰Âõ‰üð‰Â¢÷‰À. •‰‘¤õ‰µ‰Âû‰‘ý þ‰ß ¢¨‰µ‰¤ “‰‚ þ‰ß ¬‰¤– û‰Æ‰µ‰€‰À:
+\begin{itemize}
+\item \InE{}\verb|semid|\EnE{} ª‰‘¡‰É ¨‰Þ‰‘ê‰¤ý ¨‰´ î‰‚ õ‰ü¡‰û‰ƒ‰Ý ä‰Þ‰Ü‰ƒ‰‘– ¤øý ö ÷‰¹‰‘ô
+ª‰¢.
+\item \InE{}\verb|opsptr|\EnE{} ª‰‘¤ùð‰Âý “‰‚ þ‰× ¤þ‰‚ ¥ õ‰µ‰ç‰ƒ‰Âû‰‘þ‰ü ¥ ÷‰á \InE{}\verb|sembuf|\EnE{}
+¨‰´.
+—‰ã‰À¢ ä‰€‰‘¬‰Â þ‰ß ¤þ‰‚ ¢¤ •‰‘¤õ‰µ‰Â ¨‰ô )\InE{}\verb|nops|\EnE{}(
+õ‰È‰¿‰É õ‰üª‰¢.
+\end{itemize}
+û‰Â õ‰µ‰ç‰ƒ‰Â ¥ ÷‰á \InE{}\verb|sembuf|\EnE{}, þ‰× ä‰Þ‰Û ¤øý þ‰× ¨‰Þ‰‘ê‰¤ ¤ õ‰È‰¿‰É
+õ‰üî‰€‰À ø “‰‚ þ‰ß ¬‰¤– —‰ã‰Âþ‰Ó õ‰üª‰¢.
+
+\english
+\begin{verbatim}
+struct sembuf {
+        ushort  sem_num;        /* semaphore number */
+        short   sem_op;         /* semaphore operation */
+        short   sem_flg;        /* operation flag */
+};
+\end{verbatim}
+\farsi
+
+\begin{itemize}
+\item \InE{}\verb|sem_num|\EnE{} ª‰Þ‰‘¤ù þ‰× ¨‰Þ‰‘ê‰¤ ¥ õ‰¹‰Þ‰ä‰‚ ¤ õ‰È‰¿‰É õ‰üî‰€‰À
+î‰‚ õ‰ü¡‰û‰ƒ‰Ý ä‰Þ‰Û ¤øý ö ÷‰¹‰‘ô ª‰¢. )“‰‚ þ‰‘¢ ¢ª‰µ‰‚ “‰‘ª‰ƒ‰À
+î‰‚ ¢¤ “‰¿‰Ç •‰ƒ‰Ç ð‰Ô‰µ‰ƒ‰Ý î‰‚ û‰Â ¨‰Þ‰‘ê‰¤ý î‰‚ “‰‘ þ‰× ª‰‘¡‰É õ‰È‰¿‰É
+õ‰üª‰¢, ¢¤ øì‰â þ‰× õ‰¹‰Þ‰ä‰‚ ¥ ¨‰Þ‰‘ê‰¤û‰‘¨‰´.(
+
+\item \InE{}\verb|sem_op|\EnE{} þ‰× ä‰Þ‰Û ¤ õ‰È‰¿‰É õ‰üî‰€‰À. “‰‚ þ‰ß ¬‰¤– î‰‚ ð‰Â õ‰Ö‰À¤
+ö õ‰·‰±‰´ “‰‘ª‰À, þ‰ã‰€‰ü ä‰Þ‰Û õ‰¤¢ ÷‰Ñ‰Â ®‰‘ê‰‚ î‰Â¢ö þ‰ß
+õ‰Ö‰À¤ “‰‚ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ õ‰È‰¿‰É ª‰Àù ¨‰´. ð‰Â õ‰Ö‰À¤ \InE{}\verb|sem_op|\EnE{}
+¬‰Ô‰Â “‰‘ª‰À, ä‰Þ‰Û õ‰¤¢ ÷‰Ñ‰Â ¬‰±‰Â î‰Â¢ö “‰Âý ¬‰Ô‰Â ª‰Àö õ‰Ö‰À¤
+¨‰Þ‰‘ê‰¤ õ‰¤¢ ÷‰Ñ‰Â ¨‰´ ø ð‰Â õ‰Ö‰À¤ ö õ‰€‰Ô‰ü “‰‘ª‰À, þ‰ã‰€‰ü
+õ‰ü¡‰û‰ƒ‰Ý ö õ‰Ö‰À¤ ¤ ¥ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ î‰Ý î‰€‰ƒ‰Ý.
+)ø ¢¤ ¬‰¤—‰ü î‰‚ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ ¥ ì‰À¤ õ‰Î‰Ü‰Õ þ‰ß õ‰Ö‰À¤
+î‰Þ‰µ‰Â “‰¢ ¬‰±‰Â î‰€‰ƒ‰Ý.(
+
+\item \InE{}\verb|sem_flg|\EnE{} ¢¤ ª‰Âþ‰Í ä‰‘¢ý ¬‰Ô‰Â ¨‰´. ð‰Â õ‰Ö‰À¤ ö ¤ “‰Â“‰Â “‰‘
+\InE{}\verb|IPC_NOWAIT|\EnE{} —‰ã‰Âþ‰Ó î‰€‰ƒ‰Ý, “‰‚ þ‰ß õ‰ã‰€‰ü ¨‰´ î‰‚ õ‰ü¡‰û‰ƒ‰Ý “‰Âý ›‰Âý
+ä‰Þ‰Û ¬‰±‰Â ÷‰Ø‰€‰ƒ‰Ý ø ð‰Â ¬‰±‰Â î‰Â¢ö „¥ô “‰‘ª‰À )õ‰·‰… “‰¿‰û‰ƒ‰Ý ¥
+¨‰Þ‰‘ê‰¤ý î‰‚ õ‰Ö‰À¤ ö ¬‰Ô‰Â ¨‰´, þ‰Ø‰ü î‰Ý î‰€‰ƒ‰Ý(
+“‰‘ “‰Âð‰Â¢÷‰Àö ¡‰Î‰‘ ¥ \InE{}\verb|semop|\EnE{} ¡‰‘¤š ª‰þ‰Ý. û‰Þ‰ƒ‰ß Ï‰¤ “‰‘ õ‰È‰¿‰É
+î‰Â¢ö \InE{}\verb|SEM_UNDO|\EnE{} ¢¤ \InE{}\verb|sem_flg|\EnE{}, õ‰ü—‰÷‰ƒ‰Ý ¥ õ‰Ø‰‘ö \InE{}Undo\EnE{} î‰‚ ¢¤ “‰¿‰È‰ú‰‘ý “‰ã‰À
+¢¤ õ‰¤¢ ö “‰½‰¶ ¡‰û‰ƒ‰Ý î‰Â¢ ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý.
+\end{itemize}
+\subsection{—‰ç‰ƒ‰ƒ‰Â õ‰Ö‰À¤ ø Ÿ‰Áé ¨‰Þ‰‘ê‰¤}
+“‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤ \InE{}\verb|semctl|\EnE{}, õ‰ü—‰ö î‰‘¤û‰‘ý õ‰¿‰µ‰Ü‰Ô‰ü ¤ “‰Â ¤øý
+¨‰Þ‰‘ê‰¤ ÷‰¹‰‘ô ¢¢. þ‰ß ¢¨‰µ‰¤ “‰‚ ª‰Ø‰Û ¥þ‰Â ¨‰´:
+
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
+
+int semctl(int semid, int semnum, int cmd, union semun arg);
+
+union semun {
+     int             val;       /* used for SETVAL only */
+     struct semid_ds *buff;     /* used for IPC_STAT and IPC_SET */
+     ushort          *array;    /* used for GETALL & SETALL */
+} arg;
+\end{verbatim}
+\farsi
+
+¢¤ ¬‰¤—‰ü î‰‚ õ‰Ö‰À¤ •‰‘¤õ‰µ‰Â \InE{}\verb|cmd|\EnE{}, “‰Â“‰Â “‰‘ \InE{}\verb|IPC_RMID|\EnE{} “‰‘ª‰À,
+“‰Àþ‰ß õ‰ã‰€‰ü ¨‰´ î‰‚ õ‰ü¡‰û‰ƒ‰Ý ¨‰Þ‰‘ê‰¤ ¤ ¥ î‰Û ¨‰ƒ‰Æ‰µ‰Ý Ÿ‰Áé î‰€‰ƒ‰Ý.
+¢¤ ¬‰¤—‰ü î‰‚ þ‰ß õ‰Ö‰À¤ “‰Â“‰Â “‰‘ \InE{}\verb|GETVAL|\EnE{} þ‰‘ \InE{}\verb|SETVAL|\EnE{} “‰‘ª‰À,
+þ‰ã‰€‰ü õ‰ü¡‰û‰ƒ‰Ý õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ ¤ “‰¿‰÷‰ƒ‰Ý ø þ‰‘ ö ¤ —‰ç‰ƒ‰ƒ‰Â
+¢û‰ƒ‰Ý.
+¢¤ û‰Â ¬‰¤– \InE{}\verb|semid|\EnE{} ª‰‘¡‰É ¨‰Þ‰‘ê‰¤ý ¨‰´ î‰‚ õ‰ü¡‰û‰ƒ‰Ý î‰‘¤ “‰Â ¤øý
+ö ÷‰¹‰‘ô ª‰¢ ø \InE{}\verb|semnum|\EnE{} ª‰Þ‰‘¤ù ¨‰Þ‰‘ê‰¤ý ¥ õ‰¹‰Þ‰ä‰‚ ¤ õ‰È‰¿‰É õ‰üî‰€‰À
+î‰‚ õ‰Ö‰À¤ ö ¤ õ‰ü¡‰û‰ƒ‰Ý “‰¿‰÷‰ƒ‰Ý þ‰‘ —‰ç‰ƒ‰ƒ‰Â ¢û‰ƒ‰Ý.
+ð‰Â “‰¿‰û‰ƒ‰Ý õ‰Ö‰À¤ý ¤ “‰¿‰÷‰ƒ‰Ý, õ‰Ö‰À¤ ¡‰÷‰Àù ª‰Àù
+—‰¨‰Í —‰‘“‰â “‰Âð‰Â¢÷‰Àù õ‰üª‰¢ ø ¢¤ ¬‰¤—‰ü î‰‚ “‰¿‰û‰ƒ‰Ý õ‰Ö‰À¤ý
+¤ —‰ç‰ƒ‰ƒ‰Â ¢û‰ƒ‰Ý “‰‘þ‰À õ‰Ö‰À¤ õ‰¤¢ ÷‰Ñ‰Â ¤ ¢¤ \InE{}\verb|arg.val|\EnE{}
+ì‰Â¤ ¢û‰ƒ‰Ý.
+
+“‰‘ ¨‰µ‰Ô‰‘¢ù ¥ þ‰ß ¢¨‰µ‰¤ î‰‘¤û‰‘ý ¢þ‰Ú‰Âý ÷‰ƒ‰Ã õ‰ü—‰ö ÷‰¹‰‘ô
+¢¢ î‰‚ ¢¤ þ‰€‰¹‰‘ ÷‰ú‰‘ ¤ £î‰Â ÷‰Þ‰üî‰€‰ƒ‰Ý.
+
+\subsection{õ‰Ø‰‘ö \InE{}UNDO\EnE{}}
+û‰Þ‰‘öÏ‰¤ î‰‚ õ‰ü¢÷‰ƒ‰Ý, ¨‰Þ‰‘ê‰¤û‰‘ “‰ƒ‰È‰µ‰Â “‰Âý û‰Þ‰‘û‰€‰Ù î‰Â¢ö •‰Â¢¥ª‰ú‰‘
+¢¤ ¢¨‰µ‰Â¨‰ü “‰‚ þ‰× õ‰€‰±‰â ª‰µ‰Âî‰ü ¨‰µ‰Ô‰‘¢ù õ‰üª‰÷‰À.
+“‰Âý õ‰·‰‘ñ û‰Þ‰‘öð‰÷‰‚ î‰‚ ¢¤ “‰¿‰Ç “‰ã‰À ¡‰û‰ƒ‰À ¢þ‰À, õ‰ü—‰ö ¥ ¨‰Þ‰‘ê‰¤
+“‰Âý ì‰Ô‰Û î‰Â¢ö þ‰× ê‰‘þ‰Û ¨‰µ‰Ô‰‘¢ù î‰Â¢.
+Ÿ‰‘„ ð‰Â “‰‚ û‰Â ¢ó‰ƒ‰Ü‰ü )õ‰·‰… ê‰È‰Â¢ö î‰Ü‰ƒ‰Àû‰‘ý \InE{}Ctrl-C\EnE{}
+ø þ‰‘ \InE{}\verb|kill|\EnE{} ª‰Àö —‰¨‰Í •‰Â¢¥© ¢þ‰Ú‰Â(
+þ‰× •‰Â¢¥© î‰‚ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¨‰Þ‰‘ê‰¤ þ‰× õ‰€‰±‰â ¤ ì‰Ô‰Û
+î‰Â¢ù ¨‰´ õ‰µ‰ì‰Ó ª‰¢, “‰Ö‰ƒ‰‚ •‰Â¢¥ª‰ú‰‘ î‰‚ õ‰€‰µ‰Ñ‰Â þ‰ß û‰Æ‰µ‰€‰À
+î‰‚ ö •‰Â¢¥© ì‰Ô‰Û ¤ ¥¢ î‰€‰À, û‰Þ‰Ú‰ü “‰Âý û‰Þ‰ƒ‰È‰‚ õ‰€‰µ‰Ñ‰Â
+¡‰û‰€‰À õ‰‘÷‰À!
+
+“‰Âý ¤ê‰â þ‰ß õ‰È‰Ø‰Û, õ‰Ø‰‘÷‰ü “‰‚ ÷‰‘ô õ‰Ø‰‘ö \InE{}Undo\EnE{} ¢¤ ¨‰Þ‰‘ê‰¤û‰‘
+ì‰Â¤ ¢¢ù ª‰Àù ¨‰´. “‰Àþ‰ß ¬‰¤– î‰‚ õ‰ü—‰÷‰ƒ‰Ý ¢¤ ¢¨‰µ‰¤ \InE{}\verb|semop|\EnE{},
+“‰Â¡‰ü ¥ ä‰Þ‰Ûû‰‘ ¤ “‰‘ õ‰Ø‰‘ö \InE{}\verb|SEM_UNDO|\EnE{} õ‰ã‰Âê‰ü î‰€‰ƒ‰Ý.
+¢¤ ¬‰¤—‰ü î‰‚ •‰Â¢¥ª‰ü î‰‚ þ‰ß ä‰Þ‰Ü‰ú‰‘ ¤ ÷‰¹‰‘ô õ‰ü¢û‰À
+õ‰µ‰ì‰Ó ª‰¢, ¨‰ƒ‰Æ‰µ‰Ý —‰Þ‰‘ô þ‰ß ä‰Þ‰Ü‰ú‰‘ ¤ \InE{}Undo\EnE{} õ‰üî‰€‰À;
+þ‰ã‰€‰ü ¢¤ ¬‰¤—‰ü î‰‚ ä‰Þ‰Û, ®‰‘ê‰‚ î‰Â¢ö þ‰× õ‰Ö‰À¤ “‰‚ ¨‰Þ‰‘ê‰¤ ¨‰´,
+ö õ‰Ö‰À¤ ¥ ¨‰Þ‰‘ê‰¤ î‰Ý õ‰üª‰¢ ø ¢¤ ¬‰¤—‰ü î‰‚ ä‰Þ‰Û, î‰Ý î‰Â¢ö þ‰× õ‰Ö‰À¤
+¨‰´, ö õ‰Ö‰À¤ ®‰‘ê‰‚ õ‰üª‰¢.
+
+õ‰Ø‰‘ö \InE{}Undo\EnE{} ä‰…øù “‰Â õ‰¤¢ý î‰‚ £î‰Â ª‰À, ¢¤ —‰È‰¿‰ƒ‰É õ‰µ‰ì‰Ó ª‰Àö •‰Â¢¥ª‰ú‰‘
+÷‰ƒ‰Ã î‰‘¤“‰Â¢ ¢¤¢.
+“‰Âý õ‰·‰‘ñ ê‰Â­ î‰€‰ƒ‰À î‰‚ õ‰ü¡‰û‰ƒ‰Ý þ‰× “‰‘¥ý ¢ø ÷‰Ô‰Âù “‰€‰þ‰Æ‰ƒ‰Ý, “‰‚ Ï‰¤ý
+î‰‚ “‰‘ ¡‰‘¤š ª‰Àö û‰Â þ‰× ¥ Ï‰Âê‰ƒ‰ß ¥ “‰‘¥ý, Ï‰Âé ¢þ‰Ú‰Â ÷‰ƒ‰Ã ¡‰‘¤š ª‰¢.
+“‰Âý þ‰ß õ‰€‰Ñ‰¤ û‰Â þ‰× ¥ Ï‰Âê‰ƒ‰ß õ‰ü—‰÷‰À “‰‘ \InE{}\verb|fork|\EnE{} î‰Â¢ö, þ‰× •‰Â¢¥©
+þ‰¹‰‘¢ î‰€‰À î‰‚ —‰€‰ú‰‘ î‰‘¤ ö, ‰× î‰Â¢ö þ‰ß ¨‰´ î‰‚ þ‰‘
+Ï‰Âé õ‰Ö‰‘“‰Û ¡‰‘¤š ª‰Àù ¨‰´ þ‰‘ ÷‰‚.
+“‰Âý •‰ƒ‰‘¢ù¨‰‘¥ý þ‰ß •‰Â¢¥©, î‰‘ê‰ü ¨‰´ û‰Â þ‰× ¥ Ï‰Âê‰ƒ‰ß þ‰× ¨‰Þ‰‘ê‰¤
+¢ª‰µ‰‚ “‰‘ª‰À î‰‚ ¢¤ “‰µ‰À õ‰Ö‰À¤ ö ¤ “‰‘ õ‰Ø‰‘ö \InE{}Undo\EnE{} þ‰Ø‰ü ®‰‘ê‰‚
+î‰€‰À ø ¥ ö “‰‚ “‰ã‰À “‰‘ ö î‰‘¤ý ÷‰Àª‰µ‰‚ “‰‘ª‰À.
+•‰Â¢¥ª‰ü î‰‚ õ‰ü¡‰û‰À ¡‰‘¤š ª‰Àö Ï‰Âé õ‰Ö‰‘“‰Û ¤ —‰È‰¿‰ƒ‰É ¢û‰À, î‰‘ê‰ü ¨‰´
+î‰‚ “‰Â ¤øý þ‰ß ¨‰Þ‰‘ê‰¤ ¬‰±‰Â î‰€‰À —‰‘ õ‰Ö‰À¤ ö ¬‰Ô‰Â ª‰¢.
+¢¤ þ‰ß û‰€‰Ú‰‘ô õ‰ü—‰ö ÷‰µ‰ƒ‰¹‰‚ ð‰Âê‰´ î‰‚ Ï‰Âé õ‰Ö‰‘“‰Û ¡‰‘¤š ª‰Àù ¨‰´.
+
+\subsection{õ‰·‰‘ñ}
+ê‰Â­ î‰€‰ƒ‰À ‰€‰À •‰Â¢¥© õ‰ü¡‰û‰€‰À ¥ þ‰× ê‰‘þ‰Û ¨‰µ‰Ô‰‘¢ù
+î‰€‰€‰À î‰‚ ¢¤ û‰Â ó‰½‰Ñ‰‚ ÷‰±‰‘þ‰À “‰ƒ‰È‰µ‰Â ¥ þ‰Ø‰ü ¥ ÷‰ú‰‘ “‰‚ ö
+¢¨‰µ‰Â¨‰ü ¢ª‰µ‰‚ “‰‘ª‰À. “‰€‰‘“‰Âþ‰ß „¥ô ¨‰´ î‰‚ þ‰ß •‰Â¢¥ª‰ú‰‘ ¤
+“‰‘ û‰Ý û‰Þ‰‘û‰€‰Ù î‰€‰ƒ‰Ý. “‰Âý þ‰ß õ‰€‰Ñ‰¤, õ‰ü¡‰û‰ƒ‰Ý ¥ ¨‰Þ‰‘ê‰¤
+¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý. “‰‘ —‰›‰‚ “‰‚ õ‰Î‰‘ó‰° “‰¿‰È‰ú‰‘ý ð‰Áª‰µ‰‚, õ‰ü—‰÷‰ƒ‰Ý þ‰ß
+î‰‘¤ ¤ “‰‚ ¬‰¤– ¥þ‰Â ÷‰¹‰‘ô ¢û‰ƒ‰Ý.
+
+¢¤ “‰µ‰Àý û‰Â þ‰× ¥ •‰Â¢¥ª‰ú‰‘, —‰ã‰Âþ‰Ô‰ú‰‘ý ¥þ‰Â ¤ ì‰Â¤ õ‰ü¢û‰ƒ‰Ý.
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
+
+#define SEMKEY 1234567L         /* key value for semaphore */
+#define PERMS  SEM_R|SEM_A|(SEM_R>>3)|(SEM_A>>3)|(SEM_R>>6)|(SEM_A>>6)  /* = 0666 */
+
+static struct sembuf op_lock[2] = {
+        0, 0, 0,        /* wait for sem #0 to become 0 */
+        0, 1, SEM_UNDO  /* then increment it by 1 */
+};
+
+static struct sembuf op_unlock[1] = {
+        0, -1, (IPC_NOWAIT | SEM_UNDO)
+};
+
+int semid = -1;         /* semaphore id */
+\end{verbatim}
+\farsi
+
+•‰Å ¥ þ‰ß ¢¤ ì‰Æ‰Þ‰µ‰ü î‰‚ õ‰ü¡‰û‰ƒ‰Ý ¥ ê‰‘þ‰Û ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý, î‰‘ê‰ü
+¨‰´ —‰‘“‰â \InE{}\verb|my_lock|\EnE{} î‰‚ “‰‚ ¬‰¤– ¥þ‰Â ÷‰ª‰µ‰‚ ª‰Àù ¨‰´ ¤ ê‰Â¡‰÷‰ü î‰€‰ƒ‰Ý.
+\english
+\begin{verbatim}
+my_lock()
+{
+     if (semid < 0)
+          semid = semget(SEMKEY, 1, IPC_CREAT | PERMS);
+     semop(semid, &op_lock[0], 2);
+}
+\end{verbatim}
+\farsi
+
+ø •‰Å ¥ •‰‘þ‰‘ö ¨‰µ‰Ô‰‘¢ù ¥ ê‰‘þ‰Û, —‰‘“‰â \InE{}\verb|my_unlock|\EnE{} î‰‚ “‰‚ ¬‰¤–
+¥þ‰Â •‰ƒ‰‘¢ù ¨‰‘¥ý ª‰Àù ¨‰´, ¬‰À ¥¢ù õ‰üª‰¢.
+
+\english
+\begin{verbatim}
+my_unlock()
+{
+     semop(semid, &op_unlock[0], 1);
+}
+\end{verbatim}
+\farsi
+
+
+\section{\label{Shm} Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí}
+øì‰µ‰ü î‰‚ “‰¿‰û‰ƒ‰Ý õ‰Ö‰À¤ ¥þ‰‘¢ý ¢¢ù ¤ “‰ƒ‰ß ¢ø •‰Â¢¥©
+÷‰µ‰Ö‰‘ñ ¢û‰ƒ‰Ý, þ‰Ø‰ü ¥ “‰ú‰µ‰Âþ‰ß ¤øª‰ú‰‘ ¨‰µ‰Ô‰‘¢ù ¥ Ÿ‰‘ê‰Ñ‰‚
+õ‰È‰µ‰Âí ¨‰´. ¨‰µ‰Ô‰‘¢ù ¥ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí “‰‘ä‰¶ “‰‘„ ¤ê‰µ‰ß î‰‘¤þ‰ü
+¤—‰±‰‘¯ “‰ƒ‰ß •‰Â¢¥ª‰ú‰‘ õ‰üª‰¢, ‰ö ¢þ‰Ú‰Â “‰Âý ÷‰µ‰Ö‰‘ñ ¢¢ùû‰‘
+Ÿ‰µ‰ƒ‰‘š “‰‚ û‰ƒ‰º ê‰Â¡‰÷‰ü ¨‰ƒ‰Æ‰µ‰Ý\footnote{\InE{}System Call\EnE{}} ÷‰À¤¢.
+
+û‰Þ‰»‰€‰ƒ‰ß ¢¤ õ‰ì‰ã‰ü î‰‚ “‰¿‰û‰ƒ‰Ý þ‰× ¢¢ù ¤ “‰‚ ‰€‰À •‰Â¢¥©
+“‰Àû‰ƒ‰Ý, ¨‰µ‰Ô‰‘¢ù ¥ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí “‰ú‰µ‰Âþ‰ß ¤ù “‰Âì‰Â¤ý ¤—‰±‰‘¯
+¨‰´; ‰ö ¢¤ —‰Þ‰‘ô ¤øª‰ú‰‘ý ¢þ‰Ú‰Â, ¢¢ù “‰ƒ‰ß ¢ø •‰Â¢¥©
+î‰‚ þ‰Ø‰ü —‰ó‰ƒ‰À î‰€‰€‰Àù ¢¢ù ø ¢þ‰Ú‰Âý õ‰Ê‰Âé î‰€‰€‰Àù ¨‰´, ÷‰µ‰Ö‰‘ñ
+õ‰üþ‰‘“‰À.
+
+û‰Þ‰»‰€‰ƒ‰ß ¥ ÷‰Ñ‰Â •‰ƒ‰‘¢ù¨‰‘¥ý “‰Â÷‰‘õ‰‚û‰‘  Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí þ‰Ø‰ü ¥
+¨‰‘¢ù—‰Âþ‰ß ¤øª‰ú‰‘¨‰´, ‰ö “‰Âý ÷‰µ‰Ö‰‘ñ ¢¢ùû‰‘, î‰‘ê‰ü ¨‰´ î‰‚
+÷‰ú‰‘ ¤ õ‰‘÷‰€‰À õ‰µ‰ç‰ƒ‰Âû‰‘ý ä‰‘¢ý, ¢¤ Ÿ‰‘ê‰Ñ‰‚ “‰€‰þ‰Æ‰ƒ‰Ý;
+ó‰±‰µ‰‚ ¢¤ “‰¿‰Ç õ‰È‰¿‰Ê‰ü ¥ Ÿ‰‘ê‰Ñ‰‚ î‰‚ ì‰±‰… “‰‚ ä‰€‰ö Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí
+ð‰Âê‰µ‰‚ ª‰Àù ¨‰´.
+
+\subsection{ð‰Âê‰µ‰ß Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí}
+“‰Âý ð‰Âê‰µ‰ß Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí, “‰µ‰À “‰‘þ‰À ¥ ¢¨‰µ‰¤ \InE{}\verb|shmget|\EnE{}
+¨‰µ‰Ô‰‘¢ù î‰Â¢. ª‰Ø‰Û þ‰ß ¢¨‰µ‰¤ “‰‚ ¬‰¤– ¥þ‰Â ¨‰´:
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+
+int shmget(key_t key, int size, int shmflag);
+\end{verbatim}
+\farsi
+
+þ‰ß —‰‘“‰â, ¢¤ ¬‰¤– õ‰ê‰Ö‰ƒ‰´, ª‰‘¡‰É Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí ð‰Âê‰µ‰‚ ª‰Àù
+ø ¢¤ ¬‰¤– ä‰Àô õ‰ê‰Ö‰ƒ‰´, ä‰À¢ \InE{}$-1$\EnE{} “‰Âõ‰üð‰Â¢÷‰À.
+•‰‘¤õ‰µ‰Âû‰‘ý \InE{}\verb|key|\EnE{} ø \InE{}\verb|shmflag|\EnE{} õ‰‘÷‰€‰À ¢¨‰µ‰¤ \InE{}\verb|semget|\EnE{}
+)“‰¿‰Ç \ref{SemGet}( û‰Æ‰µ‰€‰À ø •‰‘¤õ‰µ‰Â \InE{}\verb|size|\EnE{}, —‰ã‰À¢ “‰‘þ‰´û‰‘ý
+ì‰Î‰ã‰‚ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí õ‰¤¢ ÷‰ƒ‰‘¥ ¤ õ‰È‰¿‰É õ‰üî‰€‰À.
+¢ì‰´ î‰€‰ƒ‰À î‰‚ õ‰Ö‰À¤ \InE{}\verb|size|\EnE{} ÷‰Þ‰ü—‰÷‰À ¥ Ÿ‰À õ‰È‰¿‰Ê‰ü “‰ƒ‰È‰µ‰Â
+“‰‘ª‰À î‰‚ þ‰ß Ÿ‰À ¢¤ û‰Â ¨‰ƒ‰Æ‰µ‰Ý õ‰Ö‰À¤ ™‰‘“‰´ ø õ‰È‰¿‰Ê‰ü ¨‰´.
+
+•‰Å ¥ þ‰ß î‰‚ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ \InE{}\verb|shmget|\EnE{}, þ‰× ì‰Î‰ã‰‚ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí ð‰Âê‰µ‰ƒ‰Ý,
+“‰‘þ‰À þ‰× ¢¤§ ¤ “‰‚ ö õ‰€‰Æ‰’ î‰€‰ƒ‰Ý —‰‘ ¥ þ‰ß “‰‚ “‰ã‰À “‰µ‰÷‰ƒ‰Ý
+¢¢ùû‰‘ý õ‰È‰µ‰Âí  ¤ ¢¤ ö ¢¤§ “‰€‰þ‰Æ‰ƒ‰Ý. “‰Âý þ‰ß õ‰€‰Ñ‰¤ ¥ ¢¨‰µ‰¤
+\InE{}\verb|shmat|\EnE{} ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰ƒ‰Ý. ª‰Ø‰Û þ‰ß ¢¨‰µ‰¤ “‰‚ ¬‰¤– ¥þ‰Â ¨‰´:
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+
+int shmat(int shmid, char *shmaddr, int shmflag);
+\end{verbatim}
+\farsi
+
+õ‰Ö‰À¤ “‰Âð‰È‰µ‰ü —‰¨‰Í þ‰ß —‰‘“‰â, ¢¤§ ì‰Î‰ã‰‚ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí î‰‚
+ª‰‘¡‰É ö “‰Â“‰Â “‰‘ \InE{}\verb|shmid|\EnE{} ¨‰´ ¤ õ‰È‰¿‰É õ‰üî‰€‰À.
+•‰‘¤õ‰µ‰Âû‰‘ý \InE{}\verb|shmaddr|\EnE{} ø \InE{}\verb|shmflag|\EnE{} “‰Âý øì‰µ‰ü “‰‚ î‰‘¤ õ‰ü¤ø÷‰À î‰‚ “‰¿‰û‰ƒ‰Ý
+Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí ¤ ¢¤ þ‰× ¢¤§ õ‰È‰¿‰É “‰»‰Æ‰±‰‘÷‰ƒ‰Ý. ó‰±‰µ‰‚ þ‰ß î‰‘¤
+¢¤ û‰Þ‰‚ ÷‰Æ‰¿‰‚û‰‘ý þ‰÷‰ƒ‰Ø‰Å õ‰Þ‰Ø‰ß ÷‰ƒ‰Æ‰´ ø “‰€‰‘“‰Âþ‰ß õ‰‘ ¢¤ þ‰€‰¹‰‘
+¢¤ õ‰¤¢ þ‰ß õ‰Ø‰‘ö ¬‰½‰±‰´ ÷‰Þ‰üî‰€‰ƒ‰Ý. ¢¤ Ÿ‰‘ó‰´ ä‰‘¢ý, î‰‘ê‰ü ¨‰´
+õ‰Ö‰À¤ •‰‘¤õ‰µ‰Âû‰‘ý \InE{}\verb|shmaddr|\EnE{} ø \InE{}\verb|shmflag|\EnE{} ¤ õ‰Æ‰‘øý “‰‘ ¬‰Ô‰Â ì‰Â¤ ¢û‰ƒ‰Ý.
+
+•‰Å ¥ ð‰Âê‰µ‰ß ¢¤§ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí, õ‰ü—‰ö õ‰‘÷‰€‰À ¢¤¨‰ú‰‘ý
+¢þ‰Ú‰Âý î‰‚ “‰Â÷‰‘õ‰‚ “‰‘ ¢¨‰µ‰¤ \InE{}\verb|malloc|\EnE{} õ‰üð‰ƒ‰Â¢ ø ¥ ÷‰ú‰‘ ¨‰µ‰Ô‰‘¢ù
+õ‰üî‰€‰À, ¥ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí ¨‰µ‰Ô‰‘¢ù î‰Â¢.
+
+\subsection{Ÿ‰Áé Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí}
+“‰Âý Ÿ‰Áé þ‰× ì‰Î‰ã‰‚ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí, “‰‘þ‰À “‰µ‰À ¢¤§ ÷‰Æ‰±‰´ ¢¢ù ª‰Àù
+“‰‚ ö ¤ “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤ \InE{}\verb|shmdt|\EnE{} ¥ “‰ƒ‰ß “‰±‰Âþ‰Ý. ª‰Ø‰Û þ‰ß ¢¨‰µ‰¤
+“‰‚ þ‰ß ¬‰¤– ¨‰´:
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+
+int shmdt(char *shmaddr);
+\end{verbatim}
+\farsi
+
+•‰Å ¥ þ‰ß, “‰‘þ‰À “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¢¨‰µ‰¤ \InE{}\verb|shmctl|\EnE{}, ì‰Î‰ã‰‚ Ÿ‰‘ê‰Ñ‰‚
+õ‰È‰µ‰Âí ¤ Ÿ‰Áé î‰€‰ƒ‰Ý. ª‰Ø‰Û î‰Ü‰ü þ‰ß ¢¨‰µ‰¤ “‰‚ þ‰ß ¬‰¤– ¨‰´:
+\english
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+
+int shmctl(int shmid, int cmd, struct shmid_ds *buf);
+\end{verbatim}
+\farsi
+
+“‰Âý Ÿ‰Áé Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí, “‰‘þ‰À õ‰Ö‰À¤ •‰‘¤õ‰µ‰Â \InE{}\verb|cmd|\EnE{} ¤ “‰Â“‰Â “‰‘ \InE{}\verb|IPC_RMID|\EnE{}
+—‰ã‰ƒ‰ƒ‰ß î‰€‰ƒ‰Ý. •‰‘¤õ‰µ‰Â \InE{}\verb|buf|\EnE{}  “‰Âý Ÿ‰Áé Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí “‰‚ î‰‘¤
+÷‰Þ‰ü¤ø¢. “‰€‰‘“‰Âþ‰ß õ‰ü—‰÷‰ƒ‰Ý õ‰Ö‰À¤ ö ¤ “‰Â“‰Â “‰‘ ¬‰Ô‰Â
+ì‰Â¤ ¢û‰ƒ‰Ý.
+
+ó‰±‰µ‰‚ ¢¨‰µ‰¤ \InE{}\verb|shmctl|\EnE{} î‰‘¤û‰‘ý ¢þ‰Ú‰Âý ÷‰ƒ‰Ã ÷‰¹‰‘ô
+õ‰ü¢û‰À î‰‚ õ‰ã‰Þ‰„ “‰‚ ÷‰ú‰‘ Ÿ‰µ‰ƒ‰‘›‰ü ÷‰À¤þ‰Ý ø “‰€‰‘“‰Âþ‰ß
+¢¤ þ‰€‰¹‰‘ ¥ £î‰Â ÷‰ú‰‘ ¬‰Âé÷‰Ñ‰Â õ‰üî‰€‰ƒ‰Ý.
+
+\subsection{õ‰·‰‘ñ}
+ê‰Â­ î‰€‰ƒ‰À î‰‚ ¢ø •‰Â¢¥© ¢¤þ‰Ý î‰‚ þ‰Ø‰ü ¥ ÷‰ú‰‘ Ï‰…ä‰‘—‰ü ¤
+“‰Âý ¢þ‰Ú‰Âý —‰ó‰ƒ‰À õ‰üî‰€‰À ø ¢þ‰Ú‰Âý ¥ þ‰ß Ï‰…ä‰‘– ¨‰µ‰Ô‰‘¢ù
+õ‰üî‰€‰À. •‰Â¢¥© øó‰ü ¤ \InE{}Server\EnE{} ø ¢øõ‰ü ¤ \InE{}Client\EnE{} õ‰ü÷‰‘õ‰ƒ‰Ý.
+“‰Âý •‰ƒ‰‘¢ù¨‰‘¥ý þ‰ß •‰Â¢¥ª‰ú‰‘, õ‰ü—‰÷‰ƒ‰Ý ¥ Ÿ‰‘ê‰Ñ‰‚
+õ‰È‰µ‰Âí ø ¨‰Þ‰‘ê‰¤ ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý.
+“‰Àþ‰ß ¬‰¤– î‰‚ þ‰× ì‰Î‰ã‰‚ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí “‰Âý ÷‰µ‰Ö‰‘ñ Ï‰…ä‰‘–
+“‰ƒ‰ß •‰Â¢¥ª‰ú‰‘ õ‰üð‰ƒ‰Âþ‰Ý ø ¥ þ‰× ¨‰Þ‰‘ê‰¤ ÷‰ƒ‰Ã “‰Âý û‰Þ‰‘û‰€‰Ù î‰Â¢ö
+÷‰ú‰‘ ¨‰µ‰Ô‰‘¢ù õ‰üî‰€‰ƒ‰Ý.
+“‰Âý þ‰ß õ‰€‰Ñ‰¤ ê‰Â­ õ‰üî‰€‰ƒ‰Ý î‰‚ õ‰·‰±‰´ “‰¢ö õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ “‰‚ õ‰ã‰€‰ü
+õ‰‘¢ù “‰¢ö Ï‰…ä‰‘– õ‰¤¢ ÷‰ƒ‰‘¥ “‰Âý \InE{}Client\EnE{} ø ¬‰Ô‰Â “‰¢ö ö “‰‚ þ‰ß
+õ‰ã‰€‰ü ¨‰´ î‰‚ \InE{}Client\EnE{} õ‰€‰µ‰Ñ‰Â Ï‰…ä‰‘– ›‰Àþ‰Àý ¥ Ï‰Âé \InE{}Server\EnE{} ¨‰´.
+
+“‰Â÷‰‘õ‰‚ \InE{}Server\EnE{} ¤ õ‰ü—‰÷‰ƒ‰Ý “‰‚ ¬‰¤– ¥þ‰Â •‰ƒ‰‘¢ù¨‰‘¥ý î‰€‰ƒ‰Ý.
+\english
+\addtolength{\baselineskip}{-1mm}
+\begin{verbatim}
+/*
+ *      Server
+ */
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/sem.h>
+
+#define SEMKEY 1234567L         /* key value for semaphore */
+#define SHMKEY 1234567L         /* key value for shared memory */
+#define PERMS  0666
+
+static struct sembuf inc2[1] = {0, 2, 0};
+static struct sembuf wait0[1] = {0, 0, 0};
+
+int shmid, semid;
+char *a;
+
+main()
+{
+  if (semid = semget(SEMKEY, 1, IPC_CREAT | PERMS)) < 0) {
+    printf(" Error in semget.\n");
+    exit(-1);
+  }
+
+  if (shmid = shmget(SHMKEY, 100, IPC_CREAT | PERMS) < 0) {
+    printf(" Error in shmget.\n");
+    exit(-1);
+  }
+  a = shmat(shmid, 0, 0);
+
+  while (1) {
+    gen_data(a);
+    semop(semid, inc2, 1);      /* increment the semaphore value by 2 */
+    semop(semid, wait0, 1);     /* wait for the semaphore to become 0 */
+  }
+
+  if (shmdt(a) < 0) {
+    printf(" Error in shmdt.\n");
+    exit(-1);
+  }
+  if (shmctl(shmid, IPC_RMID, 0) < 0) {
+    printf(" Error in shmctl.\n");
+    exit(-1);
+  }
+  if (semctl(semid, IPC_RMID, 0) < 0) {
+    printf(" Error in semctl.\n");
+    exit(-1);
+  }
+}
+\end{verbatim}
+\addtolength{\baselineskip}{1mm}
+\farsi
+
+“‰Â÷‰‘õ‰‚ \InE{}Client\EnE{} ¤ õ‰ü—‰÷‰ƒ‰Ý “‰‚ ¬‰¤– ¥þ‰Â •‰ƒ‰‘¢ù¨‰‘¥ý î‰€‰ƒ‰Ý.
+\english
+\addtolength{\baselineskip}{-1mm}
+\begin{verbatim}
+/*
+ *      Client
+ */
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/sem.h>
+
+#define SEMKEY 1234567L         /* key value for semaphore */
+#define SHMKEY 1234567L         /* key value for shared memory */
+#define PERMS  0666
+
+static struct sembuf dec1[1] = {0, 1, 0};
+
+int shmid, semid;
+char *a;
+
+main()
+{
+  if (semid = semget(SEMKEY, 1, IPC_CREAT | PERMS)) < 0) {
+    printf(" Error in semget.\n");
+    exit(-1);
+  }
+
+  if (shmid = shmget(SHMKEY, 100, IPC_CREAT | PERMS) < 0) {
+    printf(" Error in shmget.\n");
+    exit(-1);
+  }
+  a = shmat(shmid, 0, 0);
+
+  while (1) {
+    semop(semid, dec1, 1);      /* wait until the semaphore value become
+                                   positive, then decrement it by 1 */
+    consume_data(a);
+    semop(semid, dec1, 1);      /* decrement the semaphore value by 1 */
+  }
+
+  if (shmdt(a) < 0) {
+    printf(" Error in shmdt.\n");
+    exit(-1);
+  }
+  if (shmctl(shmid, IPC_RMID, 0) < 0) {
+    printf(" Error in shmctl.\n");
+    exit(-1);
+  }
+  if (semctl(semid, IPC_RMID, 0) < 0) {
+    printf(" Error in semctl.\n");
+    exit(-1);
+  }
+}
+\end{verbatim}
+\addtolength{\baselineskip}{1mm}
+\farsi
+
+¢¤ “‰Â÷‰‘õ‰‚ \InE{}Server\EnE{}, \InE{}\verb|gen_data(a)|\EnE{} —‰‘“‰ã‰ü ¨‰´ î‰‚ Ï‰…ä‰‘– õ‰¤¢ ÷‰ƒ‰‘¥
+¤ —‰ó‰ƒ‰À õ‰üî‰€‰À
+ø ÷‰ú‰‘ ¤ ¢¤ ¢¤§ \InE{}\verb|a|\EnE{} õ‰ü÷‰þ‰Æ‰À.
+û‰Þ‰»‰€‰ƒ‰ß ¢¤ “‰Â÷‰‘õ‰‚ \InE{}Client\EnE{}, \InE{}\verb|consume_data(a)|\EnE{} —‰‘“‰ã‰ü ¨‰´ î‰‚
+Ï‰…ä‰‘– õ‰›‰¢ ¢¤ ¢¤§ \InE{}\verb|a|\EnE{} ¤ õ‰¤¢ ¨‰µ‰Ô‰‘¢ù ì‰Â¤ õ‰ü¢û‰À.
+
+ì‰±‰Û ¥ ¬‰À î‰Â¢ö \InE{}\verb|consume_data(a)|\EnE{}, þ‰Ø‰ü ¥ õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ î‰Ý õ‰üî‰€‰ƒ‰Ý.
+÷‰µ‰ƒ‰¹‰‚ þ‰ß ä‰Þ‰Û þ‰ß ¨‰´ î‰‚ —‰‘ û‰€‰Ú‰‘õ‰ü î‰‚ Ï‰…ä‰‘– õ‰¤¢ ÷‰ƒ‰‘¥
+—‰¨‰Í \InE{}Server\EnE{} ê‰Âû‰Ý ÷‰È‰Àù ¨‰´ ø õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ ¬‰Ô‰Â ¨‰´, ¬‰±‰Â ¡‰û‰ƒ‰Ý
+î‰Â¢ ø •‰Å ¥ ö î‰‚ þ‰ß Ï‰…ä‰‘– —‰¨‰Í \InE{}Server\EnE{} ê‰Âû‰Ý ª‰À ø
+\InE{}Server\EnE{} ¥ —‰‘“‰â \InE{}\verb|gen_data(a)|\EnE{} ¡‰‘¤š ª‰À, õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ ¤ “‰‚ 2
+ê‰Ãþ‰Ç õ‰ü¢û‰À ø ¢¤ ÷‰µ‰ƒ‰¹‰‚ \InE{}Client\EnE{} õ‰ü—‰÷‰À ø¤¢ \InE{}\verb|consume_data(a)|\EnE{}
+ª‰¢. •‰Å ¥ þ‰ß î‰‚ \InE{}Client\EnE{} ¥ þ‰ß —‰‘“‰â ¡‰‘¤š ª‰À,
+“‰‘þ‰À “‰‚ \InE{}Server\EnE{} Ï‰…á ¢û‰À î‰‚ Ï‰…ä‰‘– —‰ó‰ƒ‰À ª‰Àù, õ‰Ê‰Âé
+ª‰Àù ¨‰´ ø ÷‰ƒ‰‘¥ “‰‚ Ï‰…ä‰‘– ›‰Àþ‰À ¢¤¢. þ‰ß î‰‘¤ ¤ “‰‘
+þ‰Ø‰ü î‰Ý î‰Â¢ö õ‰Ö‰À¤ ¨‰Þ‰‘ê‰¤ î‰‚ ¢¤ ÷‰µ‰ƒ‰¹‰‚ õ‰Ö‰À¤ ö ¤ “‰‚
+¬‰Ô‰Â õ‰ü¤¨‰‘÷‰À, ÷‰¹‰‘ô õ‰ü¢û‰ƒ‰Ý. •‰Å ¥ þ‰ß \InE{}Server\EnE{} õ‰µ‰›‰‚ õ‰üª‰¢
+î‰‚ Ï‰…ä‰‘– ›‰Àþ‰À õ‰¤¢ ÷‰ƒ‰‘¥ ¨‰´. “‰€‰‘“‰Âþ‰ß ¢ø“‰‘¤ù ø¤¢
+—‰‘“‰â \InE{}\verb|gen_data(a)|\EnE{} õ‰üª‰¢ ø þ‰ß Ï‰…ä‰‘– ¤ —‰ó‰ƒ‰À õ‰üî‰€‰À.
+
+¢¤ ¬‰¤—‰ü î‰‚ “‰‚ ›‰‘ý þ‰× \InE{}Client\EnE{}, ‰€‰À \InE{}Client\EnE{} ¢ª‰µ‰‚ “‰‘ª‰ƒ‰Ý ÷‰ƒ‰Ã õ‰ü—‰÷‰ƒ‰Ý
+¥ “‰Â÷‰‘õ‰‚ý õ‰È‰‘“‰‚ “‰‘ “‰Â÷‰‘õ‰‚ ê‰ë ¨‰µ‰Ô‰‘¢ù î‰€‰ƒ‰Ý. —‰€‰ú‰‘ î‰‘ê‰ü ¨‰´
+“‰Âý û‰Â þ‰× ¥ \InE{}Client\EnE{} û‰‘, þ‰× ¨‰Þ‰‘ê‰¤ ›‰Àð‰‘÷‰‚ —‰¿‰Ê‰ƒ‰É ¢û‰ƒ‰Ý.
+
+\section{¡‰…¬‰‚}
+¢¤ þ‰ß õ‰Ö‰‘ó‰‚ ¢þ‰Àþ‰Ý î‰‚ ¢¤ þ‰÷‰ƒ‰Ø‰Å ‰Ú‰÷‰‚ õ‰ü—‰ö “‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ¨‰Þ‰‘ê‰¤û‰‘ ø
+Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí, “‰ƒ‰ß ¢ø •‰Â¢¥© ¤—‰±‰‘¯ “‰Âì‰Â¤ î‰Â¢. þ‰ã‰€‰ü
+÷‰ú‰‘ ¤ “‰‘ û‰Ý û‰Þ‰‘û‰€‰Ù î‰Â¢ ø Ï‰…ä‰‘—‰ü ¤ “‰ƒ‰ß ÷‰ú‰‘ ÷‰µ‰Ö‰‘ñ ¢¢.
+¨‰µ‰Ô‰‘¢ù ¥ þ‰ß ¤øª‰ú‰‘, î‰‘¤—‰Âþ‰ß ¤ù “‰Âý ¤—‰±‰‘¯ “‰ƒ‰ß ‰€‰À
+•‰Â¢¥© ¢¤ þ‰÷‰ƒ‰Ø‰Å ¨‰´.
+“‰Âý ¨‰µ‰Ô‰‘¢ù ¥ ¨‰Þ‰‘ê‰¤, ¨‰‚ ¢¨‰µ‰¤ \InE{}\verb|semget|\EnE{},
+\InE{}\verb|semop|\EnE{}, ø \InE{}\verb|shmctl|\EnE{},
+ø “‰Âý ¨‰µ‰Ô‰‘¢ù ¥ Ÿ‰‘ê‰Ñ‰‚ õ‰È‰µ‰Âí ‰ú‰‘¤ ¢¨‰µ‰¤ \InE{}\verb|shmget|\EnE{},
+\InE{}\verb|shmat|\EnE{}, \InE{}\verb|shmdt|\EnE{}, ø \InE{}\verb|shmctl|\EnE{} ¤ õ‰ã‰Âê‰ü î‰Â¢þ‰Ý.
+þ‰ß ¢¨‰µ‰¤û‰‘ —‰Þ‰‘ô î‰‘¤û‰‘ý øó‰ƒ‰‚ ¤ ÷‰¹‰‘ô õ‰ü¢û‰€‰À ø
+“‰‘ ¨‰µ‰Ô‰‘¢ù ¥ ÷‰ú‰‘ õ‰ü—‰ö “‰Â÷‰‘õ‰‚û‰‘ý “‰Æ‰ƒ‰‘¤ý “‰Â ¤øý ¨‰ƒ‰Æ‰µ‰Ý
+ä‰‘õ‰Û þ‰÷‰ƒ‰Ø‰Å ÷‰ª‰´.
+
+\begin{thebibliography}{99}
+\vspace{-1cm}
+\english 
+\bibitem{unix} W.~Richard~Stevens, {\em UNIX Network Programming},
+Prentice Hall, 1990.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,11 @@
+>\input{farsi.f2h}
+>%\english
+>\mbkcommand{\documentclass}[om]{\documentstyle[#1]{#2}}
+>\def\list{\begin{description}}
+>\def\endlist{\end{description}}
+>\mbkcommand{\texttt}[m]{{\tt #1}}
+>\mbkcommand{\textbf}[m]{{\bf #1}}
+>\mbkcommand{\textit}[m]{{\it #1}}
+>\mbkcommand{\textsl}[m]{{\sl #1}}
+>\mbkcommand{\emph}[m]{{\em #1}}
+>\mbkcommand{\textnormal}[m]{{#1}}

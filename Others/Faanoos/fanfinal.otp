@@ -1,0 +1,27 @@
+
+%
+% by Behdad Esfahbod, 2002
+% Part of faanoos Transcription Schema for Persian Text
+%
+% This file is not copyrighted -- public domain
+%
+% Finalize faanoos transcription tranlation process
+%
+
+
+input: 2;
+output: 2;
+
+expressions:
+
+@"F650	=> @"0650;
+@"F6CC	=> @"200C @"06CC;
+@"F651	=> @"0651;
+@"200C @"200C	=>		<= @"200C;
+@"200D @"200D		=>		<= @"200D;
+@"F025	=> @"066A;
+
+.	=> \1;
+
+%
+% End of file

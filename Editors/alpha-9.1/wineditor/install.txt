@@ -1,0 +1,2 @@
+In order to upgrade your editor to Alpha 6.1, copy the contents of this folder to
+<MIKTEX-DIR>\miktex\bin.

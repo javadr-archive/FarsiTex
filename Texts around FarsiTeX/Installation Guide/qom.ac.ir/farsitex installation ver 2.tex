@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+%\usepackage[top=2cm,left=2cm]{geometry}
+\usepackage{verbatim,url}
+\usepackage{pstricks,xecolour}
+\usepackage{draftwatermark}
+\usepackage{xepersian}
+\settextfont[Scale=1]{XB Zar}
+\setlatintextfont[Scale=1]{Linux Libertine}
+\defpersianfont\Navar[Scale=2]{XB Kayhan Navaar}
+
+\SetWatermarkText{\Navar \yellow{کارگاه آموزشی فارسی‌تِک}}
+\SetWatermarkScale{.2}
+\SetWatermarkLightness{.35}
+%\SetWatermarkAngle{-35}
+
+\title{ راهنمای نصب فارسی‌تِک بر روی \lr{MiK\TeX{}2.4}}
+\author{سیّد محمّد جواد رضویان\\
+دانشگاه قم\\
+گروه علوم‌کامپیوتر}
+%\university{دانشگاه قم}
+\date{آذرماه ۱۳۸۹}
+\begin{document}
+\maketitle
+%\baselineskip=.91cm
+با توجه به اینکه فارسی‌تک مبتنی بر \lr{\LaTeX{}2.09} است لذا باید روی \lr{Mik\TeX{}2.4} یا نسخه‌های قبل از آن نصب گردد\footnote{البته با کمی جستجو در اینترنت می‌توانید به نحوه نصب روی نسخه‌های بالاتر میک‌تک پی ببرید.}. توضیحاتی که در ذیل می‌آید مبتنی بر فایل‌هایی است که در سی‌دی حاوی این راهنما قرار دارد و هیچ تضمینی برای اجرا و عملکرد صحیح آن بر روی دیگر  توزیع‌های فارسی‌تک نمی‌باشد و تمام مطالب زیر صرفاً یک تجربه شخصی در نصب فارسی‌تک می‌باشد. \textbf{پیش از شروع به نصب هر نسخه‌ای که قبلاً از میک‌تک یا فارسی‌تک روی سیستمتان نصب شده را \lr{uninstall} نمایید.} گام‌هایی که ذیلاً  شرح داده می‌شود را به ترتیب اجرا نمایید.
+%\set{inum}{0}
+\begin{enumerate}
+	\item 
+	\textbf{ نصب \lr{Mik\TeX{}2.4}.}	 (توجه: در غالب گام‌های زیر شما تنها کافی است که گزینه \lr{Next} را انتخاب نمایید، ارائه این مراحل تنها برای اطمینان شما از روند صحیح نصب آورده شده است.)
+		\begin{enumerate}
+			\item 
+		از پرونده  \lr{Mik\TeX{}2.4} ‬فایل ‪ \lr{setup-2.4.1661.exe}‬را اجرا کنید.‬
+			\item	
+		در پنجره \lr{Welcone to the MiKTeX Setup Wizard} گزینه \lr{Next} را انتخاب کنید.
+			\item
+		از پنجره \lr{Setup Task} گزینه \lr{Install} را انتخاب کنید.
+			\item
+		از پنجره \lr{Package Set} گزینه \lr{Total} را انتخاب کنید.
+			\item
+		از پنجره \lr{Shared vs. Private Installation} گزینه \lr{Install MiKTeX for everyone} را انتخاب کنید.
+			\item
+		در پنجره \lr{Local Package Repository} در کادر  \lr{Path to local package repository} آدرس پرونده \lr{Mik\TeX{}2.4} را از روی سی‌دی انتخاب کنید.
+\linebreak \underline{توجه داشته باشید که مسیر پیش‌فرض همان مسیر مطلوب است.}
+			\item
+		در پنجره \lr{Installation Folder} در کادر  \lr{Path to installation folder} آدرس \lr{C:$\backslash{}$texmf} را انتخاب کنید.
+			\item 
+		در پنجره \lr{Program Folder} نام شاخه‌ برنامه که در منوی \lr{start} نصب خواهد شد را بنویسید.
+			\item 
+		از پنجره \lr{Local TEXMF Tree} گزینه \lr{Create local TEXMF tree} را انتخاب کنید و مسیر مشخص شده در کادر \lr{Path to root folder} را بدون تغییر همان مسیر \lr{C:$\backslash{}$localtexmf} قرار دهید.
+			\item 
+		از پنجره \lr{Additional TEXMF Folder Trees} گزینه \lr{Don't incorporate existing TEXMF folder trees now} را انتخاب کنید.
+			\item 
+		در پنجره \lr{Setup Information} گزینه \lr{Next} را انتخاب کنید.
+			\item
+		هم‌اکنون نصب میک‌تک آغاز می‌شود کمی صبور باشید $\cdots$ 
+		\end{enumerate}
+	\item 
+	\textbf{نصب \lr{GhostScript}.} از پرونده \lr{GhostScript} فایل \lr{gs700w32.exe} را اجرا کنید.
+	\item 
+	\textbf{نصب \lr{GSview}.}
+		\begin{enumerate}
+			\item 
+		از پرونده \lr{GSview} فایل \lr{gsv40w32.exe} را اجرا کنید.
+			\item 
+		پس از نصب برنامه را اجرا کنید. اگر قبلاً برنامه را نصب و \lr{register} کرده باشید به انجام گام‌های زیر نیازی نیست.
+			\item 
+		به منوی \lr{Help} بروید و \lr{Register$\cdots$} را انتخاب کنید تا پنجره \lr{GSview Registration} باز شود. به طور پیش فرض به هنگام اجرای برنامه در صورتی که برنامه  \lr{register} نشده باشد این پنجره را در پیش رو خواهید داشت.
+			\item 
+		از	\lr{GSview Registration}دکمه \lr{Register Now} را انتخاب کنید.
+			\item 
+		اطلاعات خواسته شده در کادرهای \lr{Registered to:} و \lr{Number} را از فایل \lr{Register gsv40w32.txt} کپی پیست نمایید و سپس دکمه \lr{OK} را بزنید.
+		\end{enumerate}
+	\item 
+	\textbf{نصب فارسی‌تک نسخه \lr{1.0pre1}.}
+\textit{یکی از قابلیت‌هایی که به این نسخه افزوده شده است تولید مستقیم خروجی \lr{pdf} از فایل منبع متن است. در ادیتور فارسی‌تک پس از نصب می‌توانید با فشردن دکمه‌های \lr{Ctrl+F5} مستقیما بدون تولید فایل \lr{dvi} و \lr{ps} فایل پی‌دی‌اف متن خود را بدست آورید.
+برای آشنایی با قابلیت‌های دیگر این نسخه می‌توانید به فایل راهنما که در سی‌دی قرار دارد مراجعه نمایید.}
+		\begin{enumerate}
+			\item 
+			از پرونده \lr{FarsiTeX 1.0pre1} فایل  \lr{FarsiTeX-1.0pre1-setup.exe} را اجرا کنید.
+			\item 
+			در پنجره \lr{Welcome to the InstallShield Wizard for FarsiTeX} گزینه \lr{Next} را انتخاب کنید.
+			\item 
+			از پنجره \lr{License Agreement} گزینه \lr{I accpet the terms in the license agreement} را انتخاب کنید.
+			\item 
+			از پنجره \lr{Destination Folder} مسیر نصب باید \lr{C:$\backslash$localtexmf} باشد.
+			\item 
+			از پنجره \lr{Setup Type} گزینه \lr{Custom} را انتخاب کنید.
+			\item 
+			از پنجره \lr{Custom Setup} گزینه \lr{Next} را انتخاب کنید.
+			\item 
+			از پنجره \lr{Ready to Install the Program} گزینه \lr{Install} را انتخاب کنید.
+			\item 
+			از پنجره \lr{InstallSheild Wizard Completed} تیک گزینه  \lr{Lunch the program} را بردارید و سپس \lr{Finish} را بزنید.
+			\item 
+			حال پرونده \lr{bin} را از داخل پرونده  \lr{FarsiTeX 1.0pre1} کپی کرده و آن را در مسیر  \lr{C:$\backslash$localtexmf$\backslash$miktex} پیست نمایید. ویندوز پنجره \lr{Confirm Folder Replace} را نشان می‌دهد که باید گزینه \lr{Yes to All}  را انتخاب کنید.
+		\end{enumerate}
+\end{enumerate}
+\begin{center}
+\fcolorbox{black}{gray}{
+{\begin{minipage}{.8\textwidth}
+با به پایان رسیدن نصب فارسی‌تک می‌توانید از تایپ متون خود لذت ببرید. باز هم تاکید می‌گردد که هیچ تضمینی برای اجرا و نصب دیگر نسخه‌های فارسی‌تک نیست علاوه بر این در نصب همین نسخه نیز تضمینی نیست.
+\end{minipage}}}
+\end{center}
+\def\myText{ این نوشتار تحت سیستم حروف‌چینی {\LaTeX{}} با استفاده از بسته {\XePersian{}} آماده شده است.}
+\footnotesize
+\vfill\centerline{\green{\myText}}
+\centerline{برای اطلاعات بیشتر درباره این بسته به سایت
+\url{http://www.parsilatex.com}  
+مراجعه نمایید.}
+\end{document}

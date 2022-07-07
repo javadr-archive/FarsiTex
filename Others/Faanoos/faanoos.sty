@@ -1,0 +1,189 @@
+%%
+%% This is file `faanoos.sty',
+%% Copyright(C) 2002  Behdad Esfahbod <latex@behdad.org>
+%% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.2
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{faanoos}%
+         [2002/10/20 faanoos Transliteration for Persian Unicode Text]
+
+\RequirePackage{omega}
+\RequirePackage{ifthen}
+
+\newcommand{\faanoos}{%
+	\leavevmode
+	\lower.5ex\hbox{faa}%
+	\kern-.05em\hbox{noo}%
+	\kern-.1em\raise.5ex\hbox{s}%
+}
+
+\let\old@author\author
+\newcommand{\faanoos@author}[1]{\old@author{\textfarsi{#1}}}
+
+\let\old@footnote\footnote
+\newcommand{\faanoos@footnote}[1]{\old@footnote{\textfarsi{#1}}}
+
+\DeclareOption{farsi}{%
+	\bodydir TRT\relax
+	\let\author\faanoos@author%
+	\AtBeginDocument{%
+		\baselineskip=1.3\baselineskip\relax
+		\def\rmdefault{omarb}%
+		\def\sfdefault{omarb}%
+		\begin{farsi}%
+		\pagedir TRT\relax
+	}%
+	\AtEndDocument{%
+		\newpage
+		\end{farsi}%
+	}%
+}
+
+\DeclareOption{kasre=off}{\setboolean{@kasre}{false}}
+\DeclareOption{kasre=on}{\setboolean{@kasre}{true}}
+\DeclareOption{yeh=off}{\setboolean{@yeh}{false}\setboolean{@smallyeh}{false}}
+\DeclareOption{yeh=on}{\setboolean{@yeh}{true}\setboolean{@smallyeh}{false}}
+\DeclareOption{yeh=small}{\setboolean{@yeh}{true}\setboolean{@smallyeh}{true}}
+\DeclareOption{tashdid=off}{\setboolean{@tashdid}{false}}
+\DeclareOption{tashdid=on}{\setboolean{@tashdid}{true}}
+\DeclareOption{farsi456=off}{\setboolean{@farsiivvvi}{false}}
+\DeclareOption{farsi456=on}{\setboolean{@farsiivvvi}{true}}
+\newboolean{@kasre}
+\newboolean{@yeh}
+\newboolean{@smallyeh}
+\newboolean{@tashdid}
+\newboolean{@farsiivvvi}
+\ExecuteOptions{kasre=on,yeh=on,tashdid=on,farsi456=on}
+\ProcessOptions*
+
+% Build up FarsiOCP list, based on passed options:
+
+\ocplist\FarsiFontOCP=%
+   \nullocplist
+
+\ocp\CUniOFa=cuni2ofa
+\ocp\FarsiHack=farsihack
+\let\FarsiOCP@\FarsiFontOCP
+\ocplist\FarsiFontOCP=%
+   \addbeforeocplist 1\FarsiHack
+   \addbeforeocplist 1\CUniOFa
+   \FarsiOCP@
+
+\ocp\faanoosfarsiivvvi=farsi456
+\let\FarsiOCP@\FarsiFontOCP
+\ifthenelse{\boolean{@farsiivvvi}}{%
+	\ocplist\FarsiFontOCP=\addbeforeocplist 1\faanoosfarsiivvvi\FarsiOCP@
+	\gdef\farivvvi{\clearocplists\fontencoding{OT1}\fontfamily{f456}\selectfont}%
+	{\farivvvi}%
+}{}
+\gdef\fanomlgc{\clearocplists\fontencoding{OT1}\fontfamily{omlgc}\selectfont}%
+
+\ocp\FarsiNorm=farsinorm
+\ocplist\FarsiOutOCP=%
+   \addbeforeocplist 1\FarsiNorm
+   \addbeforeocplist 1\UniCUni
+   \FarsiFontOCP
+
+\ocp\faanoosocp=faanoos
+\ocp\faanoosnokasreocp=nokasre
+\ocp\faanoosnoyehocp=noyeh
+\ocp\faanoossmallyehocp=smallyeh
+\ocp\faanoosnotashdidocp=notashdid
+\ocp\faanoosfinalizeocp=fanfinal
+\ocplist\FarsiOCP=%
+   \addbeforeocplist 1\faanoosfinalizeocp
+   \FarsiOutOCP
+
+\let\FarsiOCP@\FarsiOCP
+\ifthenelse{\not\boolean{@kasre}}{%
+	\ocplist\FarsiOCP=\addbeforeocplist 1\faanoosnokasreocp\FarsiOCP@
+}{}
+
+\let\FarsiOCP@\FarsiOCP
+\ifthenelse{\boolean{@yeh}}{%
+	\ifthenelse{\boolean{@smallyeh}}{%
+		\ocplist\FarsiOCP=\addbeforeocplist 1\faanoossmallyehocp\FarsiOCP@
+	}{%
+		\ocplist\FarsiOCP=\FarsiOCP@
+	}%
+}{%
+	\ocplist\FarsiOCP=\addbeforeocplist 1\faanoosnoyehocp\FarsiOCP@
+}
+
+\let\FarsiOCP@\FarsiOCP
+\ifthenelse{\boolean{@tashdid}}{%
+	\ocplist\FarsiOCP=\FarsiOCP@
+}{%
+	\ocplist\FarsiOCP=\addbeforeocplist 1\faanoosnotashdidocp\FarsiOCP@
+}
+
+\let\FarsiOCP@\FarsiOCP
+\ocplist\FarsiOCP=%
+   \addbeforeocplist 1\faanoosocp
+   \FarsiOCP@\relax
+
+
+
+\newenvironment{farsi}{%
+	\let\footnote\faanoos@footnote
+	\pushocplist\FarsiOCP
+	\fontfamily{omarb}\selectfont
+	\mathdir TLT\relax
+	\pardir TRT\relax
+	\textdir TRT\relax
+}{%
+	\popocplist
+}
+
+\newcommand{\textfarsi}[1]{%
+	\begingroup
+	\pushocplist\FarsiOCP
+	\fontfamily{omarb}\selectfont
+	\mathdir TLT\relax
+	\textdir TRT\relax
+	#1%
+	\popocplist
+	\endgroup
+}
+
+\newcommand{\farsibox}[1]{%
+	\mbox{\textfarsi{#1}}%
+}
+
+\newenvironment{latin}{%
+	\pushocplist\BasicLatinOCP
+	\fontfamily{omlgc}\selectfont
+	\mathdir TLT\relax
+	\pardir TLT\relax
+	\textdir TLT\relax
+}{%
+	\popocplist
+}
+
+\newcommand{\textlatin}[1]{%
+	\begingroup
+	\pushocplist\BasicLatinOCP
+	\fontfamily{omlgc}\selectfont
+	\mathdir TLT\relax
+	\textdir TLT\relax
+	#1%
+	\popocplist
+	\endgroup
+}
+
+\newcommand{\latinbox}[1]{%
+	\mbox{\textlatin{#1}}%
+}
+
+\newcommand{\faanoosthinspace}{}
+
+\endinput
+%%
+%% End of file `faanoos.sty'.

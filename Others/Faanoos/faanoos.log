@@ -1,0 +1,29 @@
+This is Omegak, Version 3.14159--1.23.1 (Web2C 7.3.8)
+ %&-line parsing enabled. (format=omega 2002.10.19)
+20 OCT 2002 00:53
+Copyright (c) 1994--2000 John Plaice and Yannis Haralambous
+**faanoos.tex
+(faanoos.tex 2002/10/20 faanoos Transliteration for Persian Unicode Text
+! I can't find file `{omega}'.
+l.11 \input{omega}
+                  
+Please type another input file name: 
+(/opt/texlive/texmf/tex/latex/tools/.tex File ignored)
+! Undefined control sequence.
+l.20    \addbeforeocplist 1\UniCUni
+                                   
+? 
+! Missing ocp identifier.
+<to be read again> 
+                   \addbeforeocplist 
+l.21    \addbeforeocplist
+                          1\FarsiHack
+? 
+)
+*
+(Please type a command or say `\end')
+*x
+
+*\end
+[1]
+Output written on faanoos.dvi (1 page, 268 bytes).

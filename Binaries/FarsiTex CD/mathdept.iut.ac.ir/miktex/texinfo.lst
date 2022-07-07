@@ -1,0 +1,22 @@
+Archive:  F:/work/miktex/manufacture/texinfo.zip
+ Length    Date    Time    Name
+ ------    ----    ----    ----
+ 971044  01-20-01  22:13   doc/texinfo/texinfo.dvi
+ 455194  01-20-01  22:13   doc/texinfo/TEXINFO.HLP
+    216  12-17-00  13:50   tex/texinfo/pdftexinfo.ini
+    216  02-22-99  13:28   tex/texinfo/texinfo.ini
+ 206187  09-07-00  14:01   tex/texinfo/texinfo.tex
+   2388  09-07-00  14:02   tex/texinfo/txi-cs.tex
+   2734  09-07-00  14:02   tex/texinfo/txi-de.tex
+   2531  09-07-00  14:02   tex/texinfo/txi-en.tex
+   1912  09-07-00  14:02   tex/texinfo/txi-es.tex
+   2420  09-07-00  14:02   tex/texinfo/txi-nl.tex
+   2448  09-07-00  14:02   tex/texinfo/txi-no.tex
+   2363  09-07-00  14:02   tex/texinfo/txi-pt.tex
+  22751  10-19-99  16:35   tex/generic/dvips/epsf.tex
+ 102400  01-20-01  22:13   miktex/bin/makeinfo.exe
+  90112  01-20-01  22:08   miktex/bin/makertf.exe
+  16384  01-20-01  22:13   miktex/bin/texi2dvi.exe
+  24576  01-20-01  22:13   miktex/bin/texindex.exe
+ ------                    -------
+1905876                    17 files

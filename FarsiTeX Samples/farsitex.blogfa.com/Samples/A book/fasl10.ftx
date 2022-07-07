@@ -1,0 +1,138 @@
+>\newpage
+>\addcontentsline{toc}{chapter}{\beginR
+<ŸñÚ¨ø»ò–Úî÷îø¤Ú¨¤¨¤ıÚ„ˆƒ
+>\endR}
+<ÒceŞŞÒlargeÒbfÚŸñÚ¨ø»ò–Úî÷îø¤Ú¨¤¨¤ıÚ„ˆƒ××
+<ÒmarkbothŞŸñÚ¨ø»ò–Úî÷îø¤Ú¨¤¨¤ıÚ„ˆƒ×ŞŸñÚ¨ø»ò–Úî÷îø¤Ú¨¤¨¤ıÚ„ˆƒ×
+>\thispagestyle{empty}
+>\setcounter{shomareh}{0}
+<ÒsectionÈŞÒlargeÚõ›õøäùÚõú÷¢¨üÚõî‘÷şíÉ‹‹Éî¢É‡†‚×
+<ÒnewtestŞõì¢¤Ú$\ldn\f1n\sum_{i=1}^n\tan^{-1}\Big(\f{2i-1}{2n}\Big)$Ú“¤“¤Ú¨–Ú“‘Ê×
+<Ş$\fd\pi3-\ln2$×Ş$\fd\pi4-\f12\ln2$×Ş$\fd\pi8-\f12\ln2$×Ş$\fd\pi4-\f14\ln2$×
+>\vskip-3mm
+<Òhal‚Úõ›õøáÚ¢¢ùÚÒldots
+<ÒnewtestŞÒldots×
+<Ş$1$×Ş$8e$×Ş$e^3$×Ş$\infty$×
+<ÒhalƒÚŸ¢Ú“ùÒldots
+>\begin{mhmmath}
+>\h*{-2mm}\fb{\small\beginR
+<ä“‘¤–
+>\endR}\sim e^{\fdt1x(x+e^{2x}-1)}\sim e^{\fdt1x(x+2x)}=e^3
+>\end{mhmmath}\vskip-8mm
+>
+>\begin{mhmmath}
+>|(x-1)+i(y+1)|=|(x-1)+i(y-3)|\\
+>\sls\s{(x-1)^2+(y+1)^2}=\s{(x-1)^2+(y-3)^2}\\
+>\sls(x-1)^2+(y+1)^2=(x-1)^2+(y-3)^2\sls y=1\sls z=x+i
+>\end{mhmmath}\vskip-5mm
+<ÒbeginŞitemize×
+<ÒitemÚğ¤Ú$a>0$Úş‘Ú$b<4$Ú÷ğ‘ùÚ$\i ab(4x-x^2)dx<\i 04(4x-x^2)dx=I$Ú¥ş¤Úì¨õ—üÚ¥Úõ¨‘Ÿ–Ú¥ş¤Ú
+<÷õø¢¤Ú$f$Ú“¤ıÚ$0\le x\le a$ÚøÚ$b\le x\le 4$Ú¤ÚÚõŸ‘¨“ùÚ÷î¤¢ùşôÆ
+<ÒitemÚğ¤$b>4$ÚÚş‘Ú$a<0$ÚøöÚ$f$Ú¢¤Úì¨õ—üÚ¥Ú“‘¥ùÚ$[a,b]$ÚÚõ÷êüÚõüªø¢Ú•§Úõ¨‘Ÿ–Ú›“¤ıÚöÚì¨õ–Ú¥Ú$I$ÚîôÚõüªø¢
+<øÚó£Úõì¢¤Ú÷—ğ¤ñÚ¥Ú$I$Úîõ—¤Ú¡øû¢Ú“ø¢Æ
+<ÒendŞitemize×
+<ÒnewtestŞ¢¤Ú“¨ÁÚõíÚóø¤öÚÒldots×
+<Ş$0$×Ş$5\s2$×Ş$\fd{15\s2}4$×Ş$\fd{15\s2}8$×
+<Òhal„ÚÒldots
+>\begin{mhmmath}
+>\h*{-2mm}\fb{\beginR
+<®¤ş’Ú$x^4$Ú¢¤Ú$f(x)$
+>\endR}=2^{\fdt52}\f{\f52\ti\f32}2\Big(\f{x^2}2\Big)^2=4\s2\f{15}8\ti\f{x^2}4=\f{15\s2}8
+>\end{mhmmath}\vskip-8mm
+>\setcounter{shomareh}{0}
+<ÒsectionÈŞÒlargeÚõ¢ş¤ş–Ú›¤şüÚMBAÉ‹‹Éî¢Úˆ„×
+<ÒhalÚÒldots
+>\begin{mhmmath}
+>\ds (a+b+c)^n=\sum_{i+j+k=n}a^ib^jc^k \qoq i,j,k\ge 0\quad ,\quad i,j,k\in\Z\h*{1.5cm}(*)
+>\end{mhmmath}
+<
+>\begin{mhmmath}
+>\tan(k\pi-\fd{\pi}4)=-1<\tan\pi x<1=\tan(k\pi+\fd{\pi}4)\\
+>\sk{\h*{-2mm}\fb{\scriptsizeÚ¬ãø¢ıÚ¨–}\tan}\Lggggggggra \ k\pi-\fd{\pi}4<\pi x<\pi x+\fd{\pi}4
+>\ \Lgra\  k-\fd14<x<k+\fd14
+>\end{mhmmath}\vskip-5mm
+<
+>\[\begin{array}{l}
+> y'' =\ds -6\ubr{\cos2x(\cos2x)^{\fdt12}}_{y}+3\sin^22x(\cos2x)^{-\f12}
+>=-6y+3\sin^22x(\cos2x)^{-\f12}\\[5pt]
+>(y''+9y)\cos^22x=3y\cos^22x+3\sin^22x\ubr{(\cos2x)^{\fdt32}}_{y}
+>=3y\ubr{(\cos^22x+\sin^22x)}_{1}=3y
+>\end{array}\]\vskip-5mm
+<
+<•§Ú“‘Ú—çşş¤Úõ—çş¤Ú$u=x+\fd1x$ÚøÚ$du=(1-\fd1{x^2})dx$Ú÷—ğ¤ñŠÚä“‘¤—¨–Ú¥Ê
+>\begin{mhmmath}
+>\int_{\,0}^{\,+\infty}\fd{1-\fd1{x^2}}{(x+\fd1{x})^2-2}\,dx
+>=\int_{\,x=0}^{\,x=+\infty}\fd{du}{u^{2}-2}=
+>-\fd{1}{2\sqrt{2}}\ln\Big|\fd{u+\sqrt{2}}{u-\sqrt{2}}\Big|\bigg|_{\,x=0}^{\,x=\infty}\\
+>=\fd{-1}{2\sqrt{2}}\ln\Big|\fd{x+\fd{1}{x}+\sqrt{2}}{x+\fd{1}{x}-\sqrt{2}}\Big|\bigg|_{\,0}^{\,\infty}
+>\end{mhmmath}
+<
+>\[\begin{array}{l}
+>\fb{÷—ğ¤ñÚøñ}=\i0{\infty}\fd{x^2}{1+x^4}\ dx=\i{\infty}0\fd{u^{-2}}{1+u^{-4}}(-u^{-2})du=
+>\i0{\infty}\fd{u^{-4}}{1+u^{-4}}\ du\\[8pt]
+>\h*{1.6cm}=\i0{\infty}\fd{1}{u^4+1}\ du=\fb{÷—ğ¤ñÚ¢øôÚ}
+>\end{array}\]
+<
+>\parbox[c]{\textwidth}{\vskip-3mm\parbox[c]{.65\textwidth}{
+>\baselineskip=7.5mm\vskip0mm\leftskip3mm\rightskip30pt\parskip=2mm
+<Ú÷õüªø¢ŠÚõÒdotsÚì¨õ—üÚ¥Úªîñ
+<îùÚ$y\ge0$ÚõŸ‘¨“ùÚøÚ¢¤Ú‚Ú®¤’Úõüî÷şôÆÚ÷ì¯ùÚ“¤¡ø¤¢Ú¢øÚ÷õø¢¤Ú¤Ú“¢¨–Úõüø¤şôÊ
+>\vskip0mm}\parbox[c]{.35\textwidth}{\vskip3mm\leftskip0mm\rightskip3mm
+>\[\epsffile{8.3}\]
+>\vskip0mm}\vskip-3mm}
+>\[1+\cos\th=3\cos\th\qlq\cos\th=\f12\sk{0\le\th\le\pi\ }\Lggggra\th=\f\pi3\]
+<
+>\begin{mhmmath}
+>D\fb{Úõ¨‘Ÿ–}=2\ti\fd12\i0{\ff\pi3}\big((3\cos\th)^2-(1+\cos\th)^2\big)d\th=
+>\i0{\ff\pi3}(8\cos^2\th-2\cos\th-1)d\th
+>\end{mhmmath}
+<
+>\parbox[c]{\textwidth}{\vskip-3mm\leftskip0mm\rightskip0mm\parskip=0mm\beginR
+>\parbox[t]{.69\textwidth}{\baselineskip=7.5mm\vskip0mm\leftskip0mm\rightskip0mm\parskip=2mm
+>\[\arraycolsep 1pt\begin{array}{>{\ds}rc>{\ds}l}
+>I&=&e^{-3x}\big(-\f{\cos4x}4-\f{3\sin4x}{16}\big)\bigg|_0^{+\infty}\\[8pt]
+>&&-\f9{16}\int_0^{+\infty}e^{-3x}\sin4xdx\\[8pt]
+>\end{array}\]
+>\vskip0mm}\hfill
+>\parbox[t]{.30\textwidth}{\vskip0mm\leftskip0mm\rightskip0mm
+>\[\arraycolsep .5pt\rcas{1}\begin{array}{crcr}
+>&\muc{1}{l}{\fb{\ftsÚõª—ëÚ}}&&\fb{\ftsÚ÷—ğ¤ñÚ}\\\cline{2-4}
+>\opl&e^{-3x}&&\sin4x\\[-2.5mm]&&\sea\\[-2mm]
+>\omi&-3e^{-3x}&&-\f14\cos4x\\[-2mm]&&\sea\\[-2mm]
+>\opl&9e^{-3x}&&-\f1{16}\sin4x\\[-2mm]&&
+>\end{array}\]
+>\vskip0mm}\vskip0mm\endR}\vskip-5mm
+<
+<›¢øñÚ—çşş¤–Ú—‘“âÚ¤Ú¤¨ôÚõüî÷şôÆ
+>\[\begin{array}{c|cccccccc}
+>x&&-\f1e&&0&&\f1e&\\ \hline
+>y'&+&0&-&|&-&0&+\\ \hline
+>y&\nea&\Max&\sea&&\sea&\Min&\nea&
+>\end{array}\]\vskip-0.7cm
+<ÒnewtestŞğ¤Úõì¢¤Ú$\sin^{-1} x+\sin^{-1} y$Ú¢¤Ú“‘¥ùÚ$\big[-\fd{\pi}2,\fd{\pi}2\big]$Ú“‘ª¢ŠÚî¢ôşíÚ¥Úğ¥ş÷ùû‘ıÚ
+<¥ş¤Ú¬ŸşÚ¨–Œ×
+<Ş$\sin^{-1} x+\sin^{-1} y=\sin^{-1}(x+y)$×
+<Ş$\sin^{-1} x+\sin^{-1} y=\sin^{-1} \big(\sqrt{1-x^2}+\sqrt{1-y^2}\,\big)$×
+<Ş$\sin^{-1} x+\sin^{-1} y=\sin^{-1} \big(y\sqrt{1-x^2}+x\sqrt{1-x^2}\,\big)$×
+<Ş$\sin^{-1} x+\sin^{-1} y=\sin^{-1} \big(x\sqrt{1-y^2}+y\sqrt{1-x^2}\,\big)$×
+<Òhal„ÚÒÒ
+<“‘Úê¤­Ú$\alpha=\sin^{-1} x$ÚøÚ$\beta=\sin^{-1} y$ÚøÚ¨—ê‘¢ùÚ¥Úê¤õøñÚ¾½Ú¢¤Ú¬êŸùÚ†‚Ú¢¤şôÊ
+>\begin{mhmmath}
+>\sin(\alpha+\beta)=\sin\alpha\cos\beta+\sin\beta\cos\alpha=x\cos\beta+y\cos\alpha
+>\end{mhmmath}
+<õ‘ÚÚ$\sin\alpha=x$Ú•§Ú$\cos\alpha=\sqrt{1-\sin^2\alpha}=\sqrt{1-x^2}$ÚøÚ“‘Ú
+<õŸ‘¨“ùıÚõª‘“ùÚ¢¤şôÚÚ$\cos\beta=\sqrt{1-y^2}$ÆÚ•§ÚÊ
+>\begin{mhmmath}
+>\sin (\alpha+\beta)=x\sqrt{1-y^2}+y\sqrt{1-x^2}\\
+>\sk{-\fdt{\pi}2 \leq \alpha+\beta \leq \fdt{\pi}2}\Lggggggggra
+>\ \alpha+\beta=\sin^{-1}\big(x\sqrt{1-y^2}+y\sqrt{1-x^2}\,\big)
+>\end{mhmmath}\vskip-5mm
+<
+>\[\begin{tabular}{|c|c|c|}
+>  \hline
+>  $x$ & $f(x)$ & $f'(x)$ \\\hline
+>  $1$ & $10$ & $1$ \\\hline
+>  $2$ & $8$ & $4$ \\\hline
+>  \hline
+>\end{tabular}\]\vspace*{-8mm}
+<

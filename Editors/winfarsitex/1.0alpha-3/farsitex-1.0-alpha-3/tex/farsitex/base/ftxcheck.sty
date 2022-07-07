@@ -1,0 +1,143 @@
+%%
+%%  This file is a part of FarsiTeX, a Persian/English typesetting system.
+%%
+%%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%%
+%%  FarsiTeX is free software; you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation; either version 2 of the License, or
+%%  (at your option) any later version.
+%%
+%%  FarsiTeX is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%
+%%  You should have received a copy of the GNU General Public License
+%%  along with FarsiTeX; if not, write to the Free Software
+%%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%%  USA.
+%%
+%%  Any licensing or usage questions should be directed to Roozbeh
+%%  Pournader <roozbeh@sharif.edu>.
+%%
+
+\makeatletter
+\typeout{^^J%
+FarsiTeX installation check file^^J%
+================================}
+
+\typeout{^^J%
+ Before running this file through FarsiTeX you should have installed^^J%
+ the Standard FarsiTeX files in their final `system' directories.^^J%
+ This file should *not* be run in a directory that contains article.sty}
+\def\pause{%
+  \typeout{}%
+  \message{** Hit return to continue: }%
+  \read -1  to \xxx
+  \typeout{}}
+\typeout{^^J%
+  After certain tests, FarsiTeX will pause so that you can read the^^J%
+  output without it scrolling off the screen.^^J%
+  When you are ready just hit <return> and FarsiTeX will continue.^^J%
+  When FarsiTeX pauses, you will see a prompt like the one below.^^J^^J%
+  If a test fails, a message will be displayed followed by^^J%
+  an error message starting `! BAD'.^^J%
+  FarsiTeX will quit if you try to scroll past some error messages.}
+\pause
+
+\typeout{^^J%
+  Checking the TeX version^^J%
+  ========================}
+\dimen@\ifx\@TeXversion\@undefined4\else\@TeXversion\fi\p@%
+\ifx\noboundary\relax
+  \typeout{^^J%
+    This is TeX 2. You will not be able to use all the new features^^J%
+    of FarsiTeX with such an old TeX.^^J%
+    The current version (1996/10/3) is TeX 3.14159.^^J%
+    Consider upgrading your TeX.}
+  \ifdim\dimen@<3\p@\else
+     \errhelp{Check that texsys.cfg has not defined \@TeXversion}
+     \def\OldTeX{%
+       BAD: \noexpand\@TeXversion is incorrect: \meaning\@TeXversion}
+     \errmessage{\OldTeX}
+  \fi
+\else
+    \ifdim\dimen@>3.14\p@
+      \typeout{This appears to be a recent version of TeX!^^J%
+       If the following `lines' all appear on the same line,^^J%
+       separated by \string^\string^J %
+       then there has been an incorrect installation.}
+    \else
+      \typeout{^^J%
+       This appears to be a TeX between 3.0 and 3.14^^J%
+       but the current version (1996/10/3) is TeX 3.14159^^J%
+       consider upgrading your TeX.^^J%
+       The following `lines' will appear on the same line,^^J%
+       separated by \string^\string^J;^^J%
+       the same problem may affect other messages from FarsiTeX.}
+     \fi
+\message{line1^^Jline2^^Jline3}
+\pause
+\fi
+\typeout{^^J%
+  Checking fonts^^J%
+  =====================================}
+\def\checkfont#1{%
+  \batchmode
+  \font\test=#1\relax
+  \errorstopmode
+  \ifx\test\nullfont
+    \typeout{\@spaces! BAD: #1.tfm not found!}
+    \@tempswatrue
+  \else
+    \typeout{\@spaces OK: #1.tfm found}
+  \fi}
+\typeout{^^JChecking Standard TeX fonts...}
+\@tempswafalse
+\checkfont{cmr10}
+\checkfont{cmr12}
+\checkfont{cmmi10}
+\if@tempswa
+  \errhelp{Obtain a complete standard TeX font distribution.}
+  \errmessage{BAD: Missing Standard Fonts}
+\else
+  \pause
+\fi
+\typeout{^^JChecking LaTeX Picture Mode fonts...}
+\@tempswafalse
+\checkfont{lcircle1}
+\checkfont{lcirclew}
+\if@tempswa
+  \@tempswafalse
+  \checkfont{circle10}
+  \checkfont{circlew1}
+  \if@tempswa
+    \typeout{^^J! BAD: You do not have the picture mode fonts:^^J%
+           lcircle1 and lcirclew}
+  \else
+    \typeout{^^J! BAD:%
+           You have the picture mode fonts with their old names:^^J%
+           circle10 and circlew1 have been renamed to^^J%
+           lcircle1 and lcirclew}
+  \fi
+  \errhelp{Obtain a complete standard FarsiTeX font distribution.}
+  \errmessage{BAD: Missing LaTeX Fonts}
+\else
+  \pause
+\fi
+\typeout{^^JChecking Scientific Farsi fonts...}
+\@tempswafalse
+\checkfont{sflt10}
+\checkfont{sflt12}
+\checkfont{sfmat10}
+\if@tempswa
+  \errhelp{Obtain a complete standard Scientific Farsi font distribution.}
+  \errmessage{BAD: Missing Scientific Farsi Fonts}
+\else
+  \pause
+\fi
+\@@end
+\endinput
+%%
+%% End of file `ftxcheck.tex'.

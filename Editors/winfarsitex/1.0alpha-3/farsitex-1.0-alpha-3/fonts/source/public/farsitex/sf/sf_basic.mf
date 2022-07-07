@@ -1,0 +1,74 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+mode_setup;
+%******************************************************************************
+%*                          P A R A M E T E R S                               *
+%******************************************************************************
+boolean sad_extra;           sad_extra := true;
+boolean jim_ortho_conection; jim_ortho_conection := true;
+boolean sad_ortho_conection; sad_ortho_conection := true;
+boolean linot_mad;           linot_mad := true;
+boolean linot_lam;           linot_lam := true;
+boolean linot_he;            linot_he  := true;
+boolean dal_extra;           dal_extra := true;
+boolean re_tail;             re_tail := true;
+za_extra := 1;         % 0: No extar,   1: linotron extar,   2: compset extra
+lam_extra := 1;        % 0: No extar,   1: linotron extar,   2: compset extra
+
+%***************************** Internal Parameter ****************************
+horizmiddir_noon_group   :=223;  %For Big & Last cases of :
+                                 %  Noon, Ghaf, Ye, Sin, Shin, Sad, Zad, Lam.
+horizmiddir_be_group     :=202;  %For Big & Last case of :
+                                 %  Be, Pe, Te, Se, Fe, Kaf, Gaf.
+horizmiddir_ye_group     :=215;  %For Big & Last case of : Ye.
+
+startdir_tooth_be        :=302;  % For Last case of :
+                                 %   Noon, Sin, Shin, Sad, Zad
+                                 % And Big case of : Be, Pe, Te, Se
+                                 % And First case of : Be,Pe,Te,Se,Noon,Ye.
+
+startdir_tooth_sin       :=313;  % For Big and First cases of :
+                                 %   Sin, Shin.
+
+startdir_re              :=306;  % For  Re & Ze
+
+fbe_neck_penang          :=165;    %   Be, Pe, Te, Se, Noon, Ye.
+sin_neck_penang          :=171;    %   Sin, Shin.
+sad_neck_penang          :=145;    %   Sad, Zad, Ta, Za.
+jim_neck_penang          :=111;    %   Jim, Che, He, Khe
+bigjim_neck_penang       :=135;    %   Jim, Che, He, Khe
+startdir_jimhat          :=48;
+kaf_head_angle           :=75;
+
+midang_tooth :=  68;
+startang_sad := 141;
+sad_ang      :=  68;
+startdir_jimhat := 47;
+boolean conection;
+
+autorounding:=0; smoothing:=0;   % We do our own rounding
+
+input sf_code;

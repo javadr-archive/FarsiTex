@@ -1,0 +1,81 @@
+\documentstyle[farsi,12pt,fancybox,ffancyhe]{article}
+\input{wheader}
+
+\begin{document}
+%\thispagestyle{empty}
+\Large\siah
+\slide{¢¢ù¨‰‘¡‰µ‰‘¤û‰‘}
+\sub{¢¨‰µ‰‚“‰€‰Àı}
+\begin{mlist}
+\item ¢¢ù¨‰‘¡‰µ‰‘¤û‰‘ı ¨‰‘¢ù
+\begin{tilist}
+\item ó‰ƒ‰Æ‰´û‰‘ )ó‰ƒ‰Æ‰´û‰‘ı ¨‰‘¢ùı ş‰×Ï‰Âê‰‚, ¢øÏ‰Âê‰‚, ¢ø¤(
+\item •‰È‰µ‰‚û‰‘
+\item ¬‰Óû‰‘
+\item ¢¤¡‰´û‰‘
+\end{tilist}
+\item ¢¢ùğ‰÷‰‚ı ÷‰µ‰Ãä‰ü  õ‰¹‰Ş‰ä‰‚û‰‘
+\begin{tilist}
+\item ê‰Âû‰€‰Ù ¢¢ùı )¢¤š, Ÿ‰Áé ø ›‰Æ‰´ø›‰(
+\begin{ilist}
+\item ›‰Àøñ •‰Âî‰€‰Àğ‰ü )\InE{}hash table\EnE{}( : “‰‘¥, “‰Æ‰µ‰‚, õ‰µ‰¨‰Í \InE{}$O(\log n)$\EnE{}
+\item ¢¤¡‰´ ¢ø¢øş‰ü ›‰Æ‰´ø›‰ )\InE{}BST\EnE{}(: Ÿ‰Àî‰·‰Â \InE{}$On)$\EnE{} ø õ‰µ‰¨‰Í \InE{}$O(\log n)$\EnE{}
+\item ¢¤¡‰´ ¢ø¢øş‰ü ›‰Æ‰´ø›‰ı “‰‘ ¤—‰Ô‰‘á    \InE{}$O(\log n)$\EnE{}
+\begin{slist}
+\item ¢¤¡‰´ ¢ø¢øş‰ü ›‰Æ‰´ø›‰ı õ‰µ‰¥ö
+\item  ¢¤¡‰´ \InE{}AVL\EnE{} )¢¤¡‰µ‰ü î‰‚ ¡‰µ‰…é  ¤—‰Ô‰‘á  ¢ø ¥ş‰Â¢¤¡‰´ û‰Â ğ‰Âùı ö Ÿ‰Àî‰·‰Â 1 “‰‘ª‰À(
+\item ¢¤¡‰´ 'ì‰Âõ‰Ã-¨‰ƒ‰‘ù" \InE{}Red-Black tree\EnE{} 
+\end{slist}
+\item ¢¤¡‰´û‰‘ı î‰‘õ‰\nasb … õ‰µ‰¥ö )¤—‰Ô‰‘á  \InE{}$O(\log n)$\EnE{}(
+\begin{slist}
+\item ¢¤¡‰´ 3-2
+\item ¢¤¡‰´ '“‰ü"
+\end{slist}
+\end{ilist}
+\item ¬‰Ó øó‰ş‰´ )¢¤š ø Ÿ‰Áé î‰‰×—‰Âş‰ß ä‰€‰Ê‰Â(: \InE{}$O(\log n$\EnE{}
+
+\item \InE{}Disjoint Find-Merge\EnE{} )•‰ƒ‰Àî‰Â¢ö, ¢è‰‘ô(
+
+ \end{tilist}
+\end{mlist}
+
+\sub{¢¤¡‰´û‰‘ı ¢ø¢øş‰ü ›‰Æ‰´ø›‰}
+\begin{tilist}
+\item —‰ã‰Âş‰Ó:
+¢¤¡‰µ‰ü  ¢ø¢øş‰ü î‰‚  î‰Ü‰ƒ‰‚ı  ä‰€‰‘¬‰Â ¥ş‰Â ¢¤¡‰´ ‰² ğ‰Âùı \InE{}$x$\EnE{} î‰Ş‰µ‰Â ¥ \InE{}$x$\EnE{} ø 
+  î‰Ü‰ƒ‰‚ı  ä‰€‰‘¬‰Â ¥ş‰Â ¢¤¡‰´ ¤¨‰´ ö  “‰ƒ‰Ç—‰Â ¥ \InE{}$x$\EnE{} “‰‘ª‰À. 
+\item 
+•‰ƒ‰Ş‰‘ş‰Ç  “‰ƒ‰ß—‰Â—‰ƒ‰° \InE{}$\longleftarrow$\EnE{} õ‰Â—‰°ª‰Àùı  ä‰€‰‘¬‰Â
+\item —‰Â—‰ƒ‰° ¢¤š ¢¤ ş‰¹‰‘¢ ¢¤¡‰´
+\item —‰ã‰À¢ ¢¤¡‰´û‰‘ı ¢ø¢øş‰ü ›‰Æ‰´ø›‰ î‰‚ “‰‘ \InE{}$a_1<a_2<\cdots<\a_n$\EnE{}
+õ‰ü—‰ö ¨‰‘¡‰´: 
+
+\begin{eqnarray*} T(n)&=&\sum_{i=1}^n T(i-1)T(n-i), T(0)=1 \\
+                      &=& \frac{1}{n+1} {{2n}\choose{n}}
+\end{eqnarray*}
+{\small ä‰À¢ î‰‘—‰‘„ö}
+
+\item Ÿ‰Àî‰·‰Â ¤—‰Ô‰‘á: \InE{}$n-1$\EnE{}
+\item õ‰µ‰¨‰Í ¤—‰Ô‰‘á: \InE{}$O(\log n)$\EnE{}
+\end{tilist}
+
+\newpage
+\sub{ ›‰Æ‰´ø›‰}
+
+\english
+{\baselineskip=0.8\baselineskip
+\begin{verbatim}
+FUNCTION MEMBER ( x:labeltype; A:BST ):BOOLEAN;
+begin
+   if A = nil then return (false);
+   if A^.label = x then return (true);
+   if x < A^.label then
+        return ( member(x,A^.left))
+   else return ( member(x,A^.right))
+\end{verbatim}
+\farsi
+
+
+\end{document}
+
+

@@ -1,0 +1,26 @@
+\newbox\picdbox
+\newdimen\picdw
+\font\picda=picda at 57.816truept
+\font\picdb=picdb at 57.816truept
+\font\picdc=picdc at 57.816truept
+\font\picdd=picdd at 57.816truept
+\font\picde=picde at 57.816truept
+\font\picdf=picdf at 57.816truept
+\font\picdg=picdg at 57.816truept
+\font\picdh=picdh at 57.816truept
+\font\picdi=picdi at 57.816truept
+\font\picdj=picdj at 57.816truept
+\setbox\picdbox=\vbox{\hbox{%
+\picda\char0\char1\picdb\char0\char1\picdc\char0}}
+\picdw=\wd\picdbox
+\setbox\picdbox=\hbox{\vbox{\hsize=\picdw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picda\char0\char1\picdb\char0\char1\picdc\char0}
+\hbox{\picdc\char1\picdd\char0\char1\picde\char0\char1}
+\hbox{\picdf\char0\char1\picdg\char0\char1\picdh\char0}
+\hbox{\picdh\char1\picdi\char0\char1\char2\picdj\char0}}}
+\ifx\parbox\undefined
+    \def\setpicd{\box\picdbox}
+\else
+    \def\setpicd{\parbox{\wd\picdbox}{\box\picdbox}}
+\fi

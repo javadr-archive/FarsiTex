@@ -1,0 +1,128 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.3) (preloaded format=farsitex 2007.12.20)  24 DEC 2007 00:55
+entering extended mode
+**&farsitex TESTFIG.tex
+(TESTFIG.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+(C:\localtexmf\tex\latex209\base\article.sty
+Standard Document Style `article' <14 Jan 92>.
+(C:\localtexmf\tex\latex209\base\art10.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+(C:\localtexmf\tex\farsitex\base\deprecat\farsi.sty
+LaTeX Warning: Package `farsi' is deprecated. Use `persian' instead..
+(C:\localtexmf\tex\farsitex\base\persian.sty
+persian.sty, version 0.6, 27 September 2004
+(C:\localtexmf\tex\farsitex\base\persian\fcaption.tex))) (latexcad.sty
+ latexcad.sty (V 1.9 Mar 98) - Support for LaTeXCAD drawing package. 
+ John Leis, leis@usq.edu.au Adapted from various CTAN sources. 
+\@drawingscale=\skip41
+\@dfltdrawingscale=\skip42
+\@pswidth=\skip43
+\@dfltpswidth=\skip44
+(C:\localtexmf\tex\latex209\misc\rotate.sty
+\@rotdimen=\dimen101
+\@rotbox=\box26
+)
+(C:\localtexmf\tex\latex209\misc\fancybox.sty
+\c@tocdepth=\count87
+
+Style option: `fancybox' v1.2 <1998/02/27> (tvz)
+\@fancybox=\box27
+\@tempdimc=\dimen102
+\shadowsize=\dimen103
+\@Sbox=\box28
+\do@VerbBox=\toks14
+\the@fancyput=\toks15
+\this@fancyput=\toks16
+\EndVerbatimTokens=\toks17
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count88
+\d@lta=\count89
+\@delta=\dimen104
+\@@delta=\dimen105
+\@gridcnt=\count90
+\@joinkind=\count91
+\@dotgap=\dimen106
+\@ddotgap=\dimen107
+\@x@diff=\count92
+\@y@diff=\count93
+\x@diff=\dimen108
+\y@diff=\dimen109
+\@dotbox=\box29
+\num@segments=\count94
+\num@segmentsi=\count95
+\@datafile=\read2
+) (eepic.sty
+Extension to Epic and LaTeX. Version 1.1b - Released Febrary 7, 1988
+\@gphlinewidth=\count96
+\@eepictcnt=\count97
+\@tempdimc=\dimen110
+\maxovaldiam=\dimen111
+\@filltype=\box30
+) (C:\texmf\tex\generic\dvips\epsf.sty
+This is `epsf.tex' v2.7 <25 October 1996>
+\epsffilein=\read3
+\epsfframemargin=\dimen112
+\epsfframethickness=\dimen113
+\epsfrsize=\dimen114
+\epsftmp=\dimen115
+\epsftsize=\dimen116
+\epsfxsize=\dimen117
+\epsfysize=\dimen118
+\pspoints=\dimen119
+)) (TESTFIG.aux) (../samples/gnuplot.tex) [1
+
+] (../samples/cs-ce1.tex
+Overfull \hbox (233.15851pt too wide) in paragraph at lines 99--100
+ [] 
+
+\hbox(323.22247+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(323.22247+0.0)x578.15851
+..\hbox(323.22247+0.0)x578.15851, glue set 691.96924fil
+...\glue -113.81073
+...\hbox(309.56519+0.0)x0.0 []
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0 plus 1.0fil
+
+) [2] (../samples/cs-ce2.tex
+Overfull \hbox (233.15851pt too wide) in paragraph at lines 152--153
+ [] 
+
+\hbox(323.22247+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(323.22247+0.0)x578.15851
+..\hbox(323.22247+0.0)x578.15851, glue set 691.96924fil
+...\glue -113.81073
+...\hbox(309.56519+0.0)x0.0 []
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0 plus 1.0fil
+
+) [3] (TESTFIG.aux) ) 
+Here is how much of TeX's memory you used:
+ 759 strings out of 95534
+ 8183 string characters out of 1143629
+ 85046 words of memory out of 1070076
+ 4224 multiletter control sequences out of 35000
+ 9092 words of font info for 32 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 16i,9n,20p,205b,202s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on TESTFIG.dvi (3 pages, 24848 bytes).

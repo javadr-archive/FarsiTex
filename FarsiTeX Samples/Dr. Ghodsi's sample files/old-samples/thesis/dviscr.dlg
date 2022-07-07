@@ -1,0 +1,144 @@
+% dviscr 1.6h  24-Jan-2000  16:58
+%
+% Invocation: dviscr @ljH /o=6 /fl=-1 /ocr=1 PROJECT.DVI
+ -pj:C:\WINDOWS\TEMP\dv5.mfj
+% Input file: PROJECT.DVI
+%
++first-page:*
++last-page:*
++double-sided:-
++skip-sides:0
++number-of-sides:65535
++backward:off
++left-margin:0in
++top-margin:0in
++height:297mm
++width:210mm
++transformation:0
++page-width:8.5in
++page-height:11in
++page-left-margin:1in
++page-top-margin:1in
++backside-offset-x:0in
++backside-offset-y:0in
++columns:1
++rows:1
++section-count:0
++section-size:0
++full-last-section:off
++fold-other:off
++page-shift:0in
++blank-pages:0
++batch-mode
++call-mfjob:on
++ask-mfjob:on
++font-load-limit:-1
++metafont-mode:laserjetIV
++omit-graphics:off
++font-scaling:1
++max-drift:2
++font-size-tolerance:0.2
++use-tfm-files:off
++font-sizes::0,:h,:1,:2,:3,:4,:5,:6,:7,:8,:9
++magnification:
++resolution:600
++font-resolution:600
++graphics-resolution:0
++dvi-file:{,$DVIDRVINPUT:}@i
++font-files:$DVIDRVFONTS:pixel.ljh\@Rrdpi\@f{.pk,.pxl}
++graphics-files:{,$DVIDRVGRAPH:}{@Rrdpi\,}@PBf{@Ef,.msp,.pcx,.bmp}
++mfjob-file:C:\WINDOWS\TEMP\dv5.mfj
++font-libraries:$DVIDRVFONTS:ljh_{base,more}
++page-list-file:
++response-files:{,$EMTEX:data\}@f
++font-subst-files:
++transcript-file:@d.dlg
++virtual-fonts:
++fontlib-file:
++verbosity:2
++unit:in
++use-ems:on
++use-xms:on
++home-x:1in
++home-y:1in
++zoom:6
++adapter:0
++color:p2 +color:r1 +color:s2
++inverse:off
++ruler:off
++status-line:on
++ruler-unit:pt
++scaling:1
+@
+
+' TeX output 1995.11.08:1641'
+Loading font sfblt10 scaled 1000  (d:\texfonts\ljh_more.fli [sfblt10])
+Loading font sfshlt14 scaled 1000  (d:\texfonts\ljh_more.fli [sfshlt14])
+Loading font sfitl10 scaled 1000  (d:\texfonts\ljh_more.fli [sfitl10])
+Loading font sfirn10 scaled 1000  (d:\texfonts\ljh_more.fli [sfirn10])
+Loading font sfblt12 scaled 1000  (d:\texfonts\ljh_more.fli [sfblt12])
+Loading font sfblt14 scaled 1000  (d:\texfonts\ljh_more.fli [sfblt14])
+Loading font sfhlt12 scaled 1000  (d:\texfonts\ljh_more.fli [sfhlt12])
+Loading font sflt12 scaled 1000  (d:\texfonts\ljh_more.fli [sflt12])
+Loading font sfblt25 scaled 1000  (d:\texfonts\ljh_more.fli [sfblt25])
+Loading font cmbxti10 scaled 1000  (d:\texfonts\pixel.ljh\600dpi\cmbxti10.pk)
+Loading font cmssbx10 scaled 2074
+Warning 1206: 
++batch-mode: font cmssbx10<1244.16> replaced by cmssbx10<1244.16> /r
+  (d:\ftex\tfm\CM\cmssbx10.tfm)
+Loading font arm25 scaled 1000  (d:\texfonts\pixel.ljh\600dpi\arm25.pk)
+Loading font sflt10 scaled 1000  (d:\texfonts\ljh_more.fli [sflt10])
+Loading font sfmat10 scaled 1000  (d:\texfonts\ljh_more.fli [sfmat10])
+Loading font sfmat7 scaled 1000  (d:\texfonts\ljh_more.fli [sfmat7])
+Loading font sfmat6 scaled 1000  (d:\texfonts\ljh_more.fli [sfmat6])
+Loading font sfmat5 scaled 1000  (d:\texfonts\ljh_more.fli [sfmat5])
+Loading font lcircle10 scaled 1000  (d:\texfonts\ljh_base.fli [lcircle10])
+Loading font line10 scaled 1000  (d:\texfonts\ljh_base.fli [line10])
+Loading font cmex10 scaled 1000  (d:\texfonts\ljh_base.fli [cmex10])
+Loading font cmbx10 scaled 1440  (d:\texfonts\ljh_base.fli [cmbx10])
+Loading font cmr10 scaled 1440  (d:\texfonts\ljh_base.fli [cmr10])
+Loading font cmbx12 scaled 1000  (d:\texfonts\ljh_base.fli [cmbx12])
+Loading font cmr12 scaled 1000  (d:\texfonts\ljh_base.fli [cmr12])
+Loading font lasy10 scaled 1000  (d:\texfonts\ljh_base.fli [lasy10])
+Loading font cmtt10 scaled 1000  (d:\texfonts\ljh_base.fli [cmtt10])
+Loading font cmbx10 scaled 1000  (d:\texfonts\ljh_base.fli [cmbx10])
+Loading font cmti10 scaled 1000  (d:\texfonts\ljh_base.fli [cmti10])
+Loading font cmsy10 scaled 1000  (d:\texfonts\ljh_base.fli [cmsy10])
+Loading font cmmi10 scaled 1000  (d:\texfonts\ljh_base.fli [cmmi10])
+Loading font cmr10 scaled 1000  (d:\texfonts\ljh_base.fli [cmr10])
+Loading font cmr8 scaled 1000  (d:\texfonts\ljh_base.fli [cmr8])
+Loading font cmsy7 scaled 1000  (d:\texfonts\ljh_base.fli [cmsy7])
+Loading font cmmi7 scaled 1000  (d:\texfonts\ljh_base.fli [cmmi7])
+Loading font cmr7 scaled 1000  (d:\texfonts\ljh_base.fli [cmr7])
+Loading font cmsy5 scaled 1000  (d:\texfonts\ljh_base.fli [cmsy5])
+Warning 1209: do you want to call MFjob to generate 1 missing font now?
+Type Y, N, or ?: n
+You might want to delete the MFjob job file `C:\WINDOWS\TEMP\dv5.mfj'.
+Loading page pointers... 49 input pages, 49 output sheets.
+ [1] [2] [3] [1]
+
+Memory usage:
+Strings                          73       2048
+Page buffers                      1      10240
+Sorted page buffers               1      10240
+Sorted page index              7056      56448
+Position stack                   14        392
+Font table                       36       2592
+Font indices                     36        216
+Page table                       49          0
+Characters                     1536      49152
+Raster data                      68      35319
+VF characters                     0          0
+VF macros                         0          0
+Graphics                          0          0
+Lines                             0          0
+Font library directories          0          0
+Band buffer                       0          0
+TOTAL                                   166647
+
+Number of deallocations:    396
+Temporary file size:          0
+EMS bytes used:               0
+XMS bytes used:          123904
+External memory reads:       29
+External memory writes:      14

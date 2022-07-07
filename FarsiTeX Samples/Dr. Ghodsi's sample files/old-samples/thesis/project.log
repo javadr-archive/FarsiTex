@@ -1,0 +1,216 @@
+This is e-TeX, Version 3.14159-2.1 (MiKTeX 2) (preloaded format=farsitex 2001.10.7)  21 OCT 2001 14:53
+entering extended mode
+**&farsitex PROJECT
+(PROJECT.tex
+LaTeX Version 2.09 <25 March 1992>
+(d:\Program Files\MiKTeX\tex\farsitex\base\freport.sty
+Document Style `freport' <1 Dec 98>.
+(d:\Program Files\MiKTeX\tex\latex209\base\rep10.sty)
+\descriptionmargin=\dimen100
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+
+(d:\Program Files\MiKTeX\tex\latex209\base\titlepag.sty
+Document Style Option `titlepage' -- Released 16 June 1991.
+)) (d:\Program Files\MiKTeX\tex\farsitex\base\farsi.sty
+Farsi style, R. Pournader and H. Abolhassani, The FarsiTeX Project Group.
+Version 0.51beta, 29 December 2000
+(d:\Program Files\MiKTeX\tex\farsitex\base\ftoday.sty
+\FT@i=\count88
+\FT@y=\count89
+\FT@m=\count90
+\FT@d=\count91
+\FT@latini=\count92
+\FT@farsii=\count93
+\FT@latinii=\count94
+\FT@farsiii=\count95
+\FT@latiniii=\count96
+\FT@farsiiii=\count97
+\FT@latiniv=\count98
+\FT@farsiiv=\count99
+\FT@latinv=\count100
+\FT@farsiv=\count101
+\FT@latinvi=\count102
+\FT@farsivi=\count103
+\FT@latinvii=\count104
+\FT@farsivii=\count105
+\FT@latinviii=\count106
+\FT@farsiviii=\count107
+\FT@latinix=\count108
+\FT@farsiix=\count109
+\FT@latinx=\count110
+\FT@farsix=\count111
+\FT@latinxi=\count112
+\FT@farsixi=\count113
+\FT@latinxii=\count114
+\FT@farsixii=\count115
+\FT@farsixiii=\count116
+\FT@temp=\count117
+\FT@temptwo=\count118
+\FT@tempthree=\count119
+\FT@yModHundred=\count120
+\FT@thirtytwo=\count121
+\FT@dn=\count122
+\FT@sn=\count123
+\FT@mminusone=\count124
+))
+(d:\Program Files\MiKTeX\tex\farsitex\sharif\sharifth.sty) (header.tex
+\c@pretheorem=\count125
+\c@prelemma=\count126
+\c@prealgorithm=\count127
+\c@preexample=\count128
+\c@preprob=\count129
+\c@preprobb=\count130
+\c@preconj=\count131
+)
+(PROJECT.aux (intro.aux) (tin.aux) (history.aux) (algor.aux) (implemen.aux)
+(proposed.aux) (conclude.aux) (source.aux) (approx.aux) (datagen.aux) (dic1.aux
+) (dic2.aux) (bib.aux)) [1
+
+] [2] [3] (PROJECT.toc [1
+
+] [2])
+\tf@toc=\write3
+ [3] (intro.tex
+Í € \beginL \beginL {1}\endL \endL .
+[4
+
+
+]) [5] (tin.tex
+Í € \beginL \beginL {2}\endL \endL .
+[6
+
+
+
+]) [7] (history.tex
+Í € \beginL \beginL {3}\endL \endL .
+[8
+
+
+
+] [9] [10] [11] [12]) [13] [14] (algor.tex
+Í € \beginL \beginL {4}\endL \endL .
+[15
+
+
+
+] [16] [17] [18]) [19] (implemen.tex
+Í € \beginL \beginL {5}\endL \endL .
+[20
+
+
+
+] (infile.tex)
+Overfull \hbox (276.18898pt too wide) detected at line 48
+[]
+
+\hbox(226.559+0.0)x113.81102
+.\vbox(226.559+0.0)x390.0
+..\hbox(0.0+0.0)x390.0, glue set 390.0fil
+...\hbox(0.0+0.0)x0.0
+...\penalty 10000
+...\glue(\parfillskip) 0.0 plus 1.0fil
+...\glue(\rightskip) 0.0
+..\penalty -51
+..\glue 8.0 plus 2.0 minus 4.0
+..\glue 0.0
+..\penalty 0
+..etc.
+
+(inexamp.tex) (outfile.tex)
+Overfull \hbox (276.18898pt too wide) detected at line 78
+[]
+
+\hbox(124.0+0.0)x113.81102
+.\vbox(124.0+0.0)x390.0
+..\hbox(0.0+0.0)x390.0, glue set 390.0fil
+...\hbox(0.0+0.0)x0.0
+...\penalty 10000
+...\glue(\parfillskip) 0.0 plus 1.0fil
+...\glue(\rightskip) 0.0
+..\penalty -51
+..\glue 8.0 plus 2.0 minus 4.0
+..\glue 0.0
+..\penalty 0
+..etc.
+
+(outexamp.tex) [21] [22] (vor.tex) [23] [24] [25] (triang.tex) [26] [27]
+[28] (graph.tex)) [29] (proposed.tex
+Í € \beginL \beginL {6}\endL \endL .
+) [30
+
+
+
+] (conclude.tex
+Í € \beginL \beginL {7}\endL \endL .
+) [31
+
+
+
+] (source.tex
+ïÉÅ®¥ {\fam 0 {\prmA}}.
+(body.tex [32
+
+
+
+] [33])) [34] (approx.tex
+ïÉÅ®¥ {\fam 0 {\prmB}}.
+) [35
+
+
+
+] (datagen.tex
+ïÉÅ®¥ {\fam 0 {\prmC}}.
+) [36
+
+
+
+] (dic1.tex
+ïÉÅ®¥ {\fam 0 {\prmD}}.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--30
+[][]
+
+\hbox(0.0+0.0)x390.0
+.\beginR
+.\endR
+.\glue(\rightskip) 0.0
+
+[37
+
+
+
+]) [38] (dic2.tex
+ïÉÅ®¥ {\fam 0 {\prmE}}.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--30
+[][]
+
+\hbox(0.0+0.0)x390.0
+.\beginR
+.\endR
+.\glue(\rightskip) 0.0
+
+[39
+
+
+
+]) [40] (bib.tex [41
+
+
+
+] [42]) [43] [44
+
+] [45] (PROJECT.aux (intro.aux) (tin.aux) (history.aux) (algor.aux) (implemen.a
+ux) (proposed.aux) (conclude.aux)
+(source.aux) (approx.aux) (datagen.aux) (dic1.aux) (dic2.aux) (bib.aux))
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ )
+Output written on PROJECT.dvi (48 pages, 223892 bytes).

@@ -1,0 +1,129 @@
+% dvihplj 1.6h  21-Sep-1999  17:31
+%
+% Invocation: dvihplj @ljh /og=600 /po=prn /om=2000 /l:-5mm par.dvi
+ -pj:C:\WINDOWS\TEMP\dv3.mfj
+% Input file: par.dvi
+% Output file: PRN
+%
++first-page:*
++last-page:*
++double-sided:-
++skip-sides:0
++number-of-sides:65535
++copy-file:1
++copy-sheets:1
++backward:off
++left-margin:-5mm
++top-margin:0in
++height:297mm
++width:210mm
++transformation:0
++page-width:8.5in
++page-height:11in
++page-left-margin:1in
++page-top-margin:1in
++backside-offset-x:0in
++backside-offset-y:0in
++columns:1
++rows:1
++section-count:0
++section-size:0
++full-last-section:off
++fold-other:off
++page-shift:0in
++blank-pages:0
++batch-mode
++call-mfjob:on
++ask-mfjob:on
++font-load-limit:300
++metafont-mode:laserjetIV
++omit-graphics:off
++font-scaling:1
++max-drift:2
++font-size-tolerance:0.2
++use-tfm-files:off
++font-sizes::0,:h,:1,:2,:3,:4,:5,:6,:7,:8,:9
++magnification:
++resolution:600
++font-resolution:600
++graphics-resolution:0
++dvi-file:{,$DVIDRVINPUT:}@i
++font-files:$DVIDRVFONTS:pixel.ljh\@Rrdpi\@f{.pk,.pxl}
++graphics-files:{,$DVIDRVGRAPH:}{@Rrdpi\,}@PBf{@Ef,.msp,.pcx,.bmp}
++init-files:
++mfjob-file:C:\WINDOWS\TEMP\dv3.mfj
++font-libraries:$DVIDRVFONTS:ljh_{base,more}
++default-output-file:prn
++page-list-file:
++response-files:{,$EMTEX:data\}@f
++font-subst-files:
++transcript-file:@d.dlg
++virtual-fonts:
++fontlib-file:
++verbosity:2
++unit:in
++use-ems:on
++use-xms:on
++pause:off
++full-page-bitmap:off
++clear-fonts:0
++final-reset:on
++font-offset:0
++printer-resolution:600
++initial-reset:on
++job-offset:off
++memory:2000
++optimize-graphics:on
++printer-model:laserjet
++compression:0
++close:0
++negative-top-offset:on
++fonts-per-side:16
++xon-xoff:off
++delete-fonts:on
++draft:default
++initial-formfeed:off
++final-formfeed:on
++download-limit:32767
++paper:
++set-paper:off
++source:0
+@
+
+' TeX output 1997.10.15:2242'
+Loading font cmcsc10 scaled 1000  (d:\texfonts\ljh_base.fli [cmcsc10])
+Loading font sflt7 scaled 1000  (d:\texfonts\ljh_more.fli [sflt7])
+Loading font sfitl10 scaled 1000  (d:\texfonts\ljh_more.fli [sfitl10])
+Loading font sflt10 scaled 1000  (d:\texfonts\ljh_more.fli [sflt10])
+Loading font cmtt10 scaled 1000  (d:\texfonts\ljh_base.fli [cmtt10])
+Loading font cmr10 scaled 1000  (d:\texfonts\ljh_base.fli [cmr10])
+Loading page pointers... 1 input page, 1 output sheet.
+ [1] <68096+13159,1,1>
+Characters downloaded to printer:  187
+Characters printed using graphics: 0
+
+Memory usage:
+Strings                          16        512
+Page buffers                      2      20480
+Sorted page buffers               0          0
+Sorted page index                 0          0
+Position stack                   12        336
+Font table                        6        432
+Font indices                      6         36
+Page table                        1         50
+Characters                     1152      36864
+Raster data                     626     133567
+VF characters                     0          0
+VF macros                         0          0
+Graphics                          0          0
+Lines                             0          0
+Font library directories          0          0
+Band buffer                       0          0
+TOTAL                                   192277
+
+Number of deallocations:      0
+Temporary file size:          0
+EMS bytes used:               0
+XMS bytes used:               0
+External memory reads:        0
+External memory writes:       0

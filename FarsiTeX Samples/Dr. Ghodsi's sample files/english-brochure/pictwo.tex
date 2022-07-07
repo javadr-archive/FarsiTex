@@ -1,0 +1,20 @@
+\newbox\pictwobox
+\newdimen\pictwow
+\font\pictwoa=pictwoa at 57.816truept
+\font\pictwob=pictwob at 57.816truept
+\font\pictwoc=pictwoc at 57.816truept
+\font\pictwod=pictwod at 57.816truept
+\font\pictwoe=pictwoe at 57.816truept
+\setbox\pictwobox=\vbox{\hbox{%
+\pictwoa\char0\char1\pictwob\char0\char1}}
+\pictwow=\wd\pictwobox
+\setbox\pictwobox=\hbox{\vbox{\hsize=\pictwow
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\pictwoa\char0\char1\pictwob\char0\char1}
+\hbox{\pictwoc\char0\char1\pictwod\char0\char1}
+\hbox{\pictwod\char2\pictwoe\char0\char1\char2}}}
+\ifx\parbox\undefined
+    \def\setpictwo{\box\pictwobox}
+\else
+    \def\setpictwo{\parbox{\wd\pictwobox}{\box\pictwobox}}
+\fi

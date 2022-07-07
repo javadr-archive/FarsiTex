@@ -1,0 +1,30 @@
+StartFontMetrics 2.0
+Comment UniqueID 4250676
+Comment Panose 2 0 6 0 2 0 0 2 0 4
+FullName OmegaSerifFarsiOne
+FontName OmegaSerifFarsiOne
+FamilyName OmegaSerifFarsiOne
+Weight Medium
+Notice Copyright The Omega Project 1996
+Version 001.000
+IsFixedPitch false
+ItalicAngle 0.00
+FontBBox -123 -167 489 672
+Ascender 700
+Descender -200
+XHeight 500
+CapHeight 700
+UnderlinePosition -100
+UnderlineThickness 50
+StdHW 1000
+StdVW 1000
+EncodingScheme FontSpecific
+StartCharMetrics 6
+C 32 ; WX 500 ; N space ; B 0 0 0 0 ;
+C 37 ; WX 348 ; N percent ; B 10 -11 344 648 ;
+C 46 ; WX 278 ; N period ; B -123 -167 219 387 ;
+C 52 ; WX 531 ; N four ; B 48 0 480 672 ;
+C 53 ; WX 531 ; N five ; B 53 21 469 651 ;
+C 54 ; WX 531 ; N six ; B 42 21 489 662 ;
+EndCharMetrics
+EndFontMetrics

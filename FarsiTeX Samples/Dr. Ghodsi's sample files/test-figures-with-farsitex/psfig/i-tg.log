@@ -1,0 +1,14 @@
+This is e-TeX, Version 3.14159-2.1 (MiKTeX 2) (preloaded format=farsitex 2001.7.8)  9 SEP 2001 16:20
+entering extended mode
+**&farsitex I-TG
+(I-TG.tex
+LaTeX Version 2.09 <25 March 1992>
+! Undefined control sequence.
+<argument> \hbox {\psfig 
+                         {figure=i-TG.ps,height=400pt}}
+\put ...hbox to\z@ {\kern #1\unitlength #3
+                                          \hss }\ignorespaces 
+l.4 ...sfig{figure=i-TG.ps,height=400pt}}}
+                                          
+? x
+No pages of output.

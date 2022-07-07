@@ -1,0 +1,10 @@
+PWD /home/behdad/omega/farsi
+INPUT /opt/texlive/texmf-var/web2c/omega.fmt
+INPUT ./faanoos.tex
+OUTPUT faanoos.log
+INPUT /opt/texlive/texmf/tex/latex/tools/.tex
+INPUT ./cuni2ofa.ocp
+INPUT ./farsihack.ocp
+INPUT ./farsinorm.ocp
+INPUT ./faanoos.ocp
+OUTPUT faanoos.dvi

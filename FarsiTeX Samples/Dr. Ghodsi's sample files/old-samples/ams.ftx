@@ -1,0 +1,51 @@
+<ÒdocumentstyleÓa4,farsiÑÞarticle×
+<
+<·Úõ™‘ñ±Ú¨—ê‘¢ùÚ¥Úìóôû‘ÚøÚ÷õ‘¢û‘ýÚAMSÚ¾Americal Mathematical Society½
+<·Ú‚Ú“‘öÚ‡‡ƒŠÚ¤ø¥“ùÚ•ø¤÷‘¢¤
+<
+<·Ú—ø›ùÝÚ—ø›ùÝ
+<·ÚþöÚ•¤ø÷¢ùÚ“¤ýÚ›¤Ú“ùÚ“¨—ùýÚ¡—þ‘¤ý±Úams.zipÚ÷þ‘¥Ú¢¤¢Æ
+<·Ú—ø›ùÝÚ—ø›ùÝ
+<
+<ÒinputÞamssym×
+<
+<ÒbeginÞdocument×
+<ÒbeginÞcenter×
+<ÒLARGEÚ÷õ‘¢û‘ýÚAMS
+<ÒendÞcenter×
+<ÒsectionÞ¤ø©Ú÷¬’×
+<•¤ø÷¢ùýÚzipÚ“ù÷‘ô±Ú\tt ams.zipÚ¤Úûõ‘ö¯ø¤ÚîùÚÒFarsiTeXÒÚ¤Ú÷¬’Úõüî÷þ¢Ú“‘¥Úî÷þ¢Æ
+<•§Ú¥Ú÷¬’ŠÚ“¤ýÚ¨—ê‘¢ùÚ¥ÚþöÚ÷õ‘¢û‘ŠÚ¢¤Ú¢þ“‘ùýÚ•¤ø÷¢ùû‘ýÚò¥ôŠÚ¾þã÷ü
+<ì“ñÚ¥Ú\verb|{document}begin\|½ŠÚ“¥÷þ¢Ê
+<ÒbeginÞflushright×
+<\verb|{amssym}input\|
+<ÒendÞflushright×
+<
+<ÒsectionÞìóôû‘ýÚ›¢þ¢×
+<þöÚ“¨—ùŠÚ¨ùÚìóôÚ›¢þ¢Ú“ùÚìóôû‘ýÚ¤þ‘®üÚ®‘êùÚõüî÷¢Ê
+<ÒbeginÞcenter×
+<ÒbeginÞtabular×ÞÐllÐ×
+<\verb|\Bbb|Ú¸Ú“¤ýÚìóôÚ—ø¡‘óüŠÚõ™ñÚ$\Bbb{CNRQZ}$ÚÒÒÓÐ3ptÐÑ
+<\verb|\Scr|Ú¸Ú“¤ýÚìóôÚ—Ÿ¤þ¤ýŠÚõ™ñÚ$\Scr{ABCDEFGHIJKMNOPQRSTUVWXYZ}$
+<ÒÒÓÐ3ptÐÑ
+<\verb|\goth|Ú¸Ú“¤ýÚìóôÚðø—þíŠÚõ™ñÚ$\goth{ABCDEFGHIJKMNOPQRSTUVWXYZ}$
+<ÒendÞtabular×
+<ÒendÞcenter×
+<
+<“¤ýÚ¨—ê‘¢ùÚ¥Ú÷õ‘¢û‘ýÚêøëŠÚõ™ò³Ú¢¤Úø¤ø¢ýÚ—‘þ”Úî÷þ¢
+<ÒbeginÞflushright×
+<\verb|$\Bbb{E} = \goth{mc}^{2}$|
+<ÒendÞflushright×
+<—‘Ú¢¤Ú¡¤ø›üÚ$\Bbb{E} = \goth{mc}^{2}$Ú“ù¢¨–Úþ¢Æ
+<
+<¢ì–Úî÷þ¢ÚîùÚìóôû‘ýÚ—ø¡‘óüÚøÚ—Ÿ¤þ¤ýÚêìÁÚŸ¤øéÚ“¥¤ïÚ¤Ú¢¤÷¢
+<øÚêìÁÚìóôÚðø—þíÚ¨–ÚîùÚª‘õñÚŸ¤øéÚîøíÚûôÚõüªø¢Æ
+<
+<ÒsectionÞ÷õ‘¢û‘ýÚ›¢þ¢×
+<þöÚ÷õ‘¢û‘Ú“ùªîñÚ¢¨—ø¤û‘ýÚ›¢þ¢ÚŸ‘ó–Ú¤þ‘®üÚì‘“ñÚ¨—ê‘¢ù÷¢Æ
+<õ™ò³Úõü—øöÚ—‘þ”Úî¤¢Ú\verb|$\eth \leqslant \beth$|Úþ‘Ú
+<\verb|$\varnothing \subseteqq A$|Ú—‘Ú“ù¢¨–Úþ¢Ú$\eth \leqslant \beth$
+<þ‘É$\varnothing \subseteqq A$Æ
+<êú¤¨–±ÚþöÚ÷õ‘¢û‘Ú¢¤Ú•¤ø÷¢ùýÚ\tt amssymb.dviÚ®õþõùÚ¨–Æ
+<
+<ÒendÞdocument×

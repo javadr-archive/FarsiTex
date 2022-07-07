@@ -1,0 +1,3 @@
+>\def\multicols#1{\def\numberOfColumns{#1}}
+>\def\numberOfColumns{1}
+>\def\endmulticols{}

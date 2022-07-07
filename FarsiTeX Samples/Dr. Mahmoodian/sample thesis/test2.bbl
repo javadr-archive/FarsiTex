@@ -1,0 +1,167 @@
+\def\cprime{$'$}
+\begin{thebibliography}{10}
+%\input{besm1}
+\english
+\bibitem{MR99a:05010}
+{\sc D.~E. Bryant and B.~M. Maenhaut}, {\em Defining sets of ${G}$-designs},
+  Australas. J. Combin., 17 (1998), pp.~257--266.
+
+\bibitem{MR2000i:05033}
+{\sc G.~Chaudhry and J.~Seberry}, {\em Influence of entries in critical sets of
+  {R}oom squares}, Bull. Inst. Combin. Appl., 28 (2000), pp.~67--74.
+
+\bibitem{MR99j:94040}
+{\sc G.-R. Chaudhry, H.~Ghodosi, and J.~Seberry}, {\em Perfect secret sharing
+  schemes from {R}oom squares}, J. Combin. Math. Combin. Comput., 28 (1998),
+  pp.~55--61.
+\newblock Papers in honour of Anne Penfold Street.
+
+\bibitem{MR99b:05017}
+{\sc C.~Delaney, B.~D. Gray, K.~Gray, B.~M. Maenhaut, M.~J. Sharry, and A.~P.
+  Street}, {\em Pointwise defining sets and trade cores}, Australas. J.
+  Combin., 16 (1997), pp.~51--76.
+
+\bibitem{MR2000c:05029}
+{\sc L.~F. Fitina, J.~Seberry, and D.~Sarvate}, {\em On ${F}$-squares and their
+  critical sets}, Australas. J. Combin., 19 (1999), pp.~209--230.
+
+\bibitem{MR94j:05025}
+{\sc R.~A.~H. Gower}, {\em Minimal defining sets in a family of {S}teiner
+  triple systems}, Australas. J. Combin., 8 (1993), pp.~55--73.
+
+\bibitem{MR98h:51007}
+{\sc R.~A.~H. Gower}, {\em Defining sets for the {S}teiner triple systems from
+  affine spaces}, J. Combin. Des., 5 (1997), pp.~155--175.
+
+\bibitem{MR2000h:05033}
+{\sc M.~J. Grannell, T.~S. Griggs, and J.~Wallace}, {\em The smallest defining
+  set of a {S}teiner triple system}, Util. Math., 55 (1999), pp.~113--121.
+
+\bibitem{MR98f:05022}
+{\sc B.~D. Gray}, {\em Smallest defining sets of designs associated with
+  {P}{G}$\rm{(d,2)}$, journal = {Australas. J. Combin.}, fjournal = {The
+  Australasian Journal of Combinatorics}, volume = {16}, year = {1997}, pages =
+  {87--98}, issn = {1034-4942}, mrclass = {05B05 (05B30)}, mrnumber =
+  {98f:05022}, mrreviewer = {Esther R. Lamken},}.
+
+\bibitem{MR97g:05021}
+{\sc B.~D. Gray}, {\em Defining sets of simple designs}, Bull. Inst. Combin.
+  Appl., 19 (1997), pp.~23--26.
+
+\bibitem{MR2000f:05021}
+{\sc B.~D. Gray}, {\em Defining sets of projective planes and biplanes and
+  their residuals}, J. Combin. Math. Combin. Comput., 30 (1999), pp.~171--193.
+
+\bibitem{MR98d:05036}
+{\sc B.~D. Gray, N.~Hamilton, and C.~M. O'Keefe}, {\em On the size of a
+  smallest defining set of {P}{G}$\rm{(2,q)}$}, Bull. Inst. Combin. Appl., 21
+  (1997), pp.~91--94.
+
+\bibitem{MR2000d:05017}
+{\sc B.~D. Gray and C.~Ramsay}, {\em Some results on defining sets of
+  $t$-designs}, Bull. Austral. Math. Soc., 59 (1999), pp.~203--215.
+
+\bibitem{MR91m:05020}
+{\sc K.~Gray}, {\em Defining sets of single-transposition-free designs},
+  Utilitas Math., 38 (1990), pp.~97--103.
+
+\bibitem{MR92g:05030}
+{\sc K.~Gray}, {\em Further results on smallest defining sets of well-known
+  designs}, Australas. J. Combin., 1 (1990), pp.~91--100.
+\newblock Combinatorial mathematics and combinatorial computing, Vol.\ 1
+  (Brisbane, 1989).
+
+\bibitem{MR91e:05016}
+{\sc K.~Gray}, {\em On the minimum number of blocks defining a design}, Bull.
+  Austral. Math. Soc., 41 (1990), pp.~97--112.
+
+\bibitem{MR94d:05024}
+{\sc K.~Gray and A.~P. Street}, {\em Smallest defining sets of the five
+  nonisomorphic ${2}$-${(15,7,3)}$ designs}, Bull. Inst. Combin. Appl., 9
+  (1993), pp.~96--102.
+
+\bibitem{MR94m:05023}
+{\sc K.~Gray and A.~P. Street}, {\em The smallest defining set of the
+  $\rm{2}$-$\rm{(15,7,3)}$ design associated with {P}{G}$\rm{(3,2)}$: a
+  theoretical approach}, Bull. Inst. Combin. Appl., 11 (1994), pp.~77--83.
+
+\bibitem{MR94e:05039}
+{\sc C.~S. Greenhill}, {\em An algorithm for finding smallest defining sets of
+  $t$-designs}, J. Combin. Math. Combin. Comput., 14 (1993), pp.~39--60.
+
+\bibitem{MR96m:05022}
+{\sc C.~S. Greenhill and A.~P. Street}, {\em Smallest defining sets of some
+  small $t$-designs and relations to the {P}etersen graph}, Utilitas Math., 48
+  (1995), pp.~5--31.
+
+\bibitem{MR95k:05025}
+{\sc A.~Khodkar}, {\em Smallest defining sets for the $\rm{36}$ non-isomorphic
+  twofold triple systems of order nine}, J. Combin. Math. Combin. Comput., 17
+  (1995), pp.~209--215.
+
+\bibitem{MR97m:05022}
+{\sc G.~B. Khosrovshahi and H.~R. Maimani}, {\em Smallest defining sets for
+  $\rm{2}$-$\rm{(10,5,4)}$ designs}, Australas. J. Combin., 15 (1997),
+  pp.~31--35.
+
+\bibitem{MR1301405}
+{\sc T.~Kunkle and J.~Seberry}, {\em A few more small defining sets for
+  {S}{B}{I}{B}{D}$(\rm{4t-1,2t-1,t-1})$}, Bull. Inst. Combin. Appl., 12 (1994),
+  pp.~61--64.
+
+\bibitem{MR2000b:05023}
+{\sc E.~S. Mahmoodian, N.~Soltankhah, and A.~P. Street}, {\em On defining sets
+  of directed designs}, Australas. J. Combin., 19 (1999), pp.~179--190.
+
+\bibitem{MR97h:05022}
+{\sc T.~Moran}, {\em Corrigendum: ``{S}mallest defining sets for
+  $\rm{2}$-$\rm{(9,4,3)}$ and $\rm{3}$-$\rm{(10,5,3)}$ designs'' [{A}ustralas.\
+  {J}.\ {C}ombin.\ {\bf 10} (1994), 265--288; {M}{R} 95j:05036]}, Australas. J.
+  Combin., 14 (1996), pp.~311--312.
+
+\bibitem{MR2000a:05032}
+{\sc T.~Moran}, {\em Defining sets for $\rm{2-(19,9,4)}$ designs and a class of
+  {H}adamard designs}, Util. Math., 55 (1999), pp.~161--187.
+
+\bibitem{MR98d:05028}
+{\sc C.~Ramsay}, {\em An algorithm for enumerating trades in designs, with an
+  application to defining sets}, J. Combin. Math. Combin. Comput., 24 (1997),
+  pp.~3--31.
+
+\bibitem{MR97m:05033}
+{\sc C.~Ramsay}, {\em On a family of {S}{T}{S}$(v)$ whose smallest defining
+  sets contain at least $\rm{b/4}$ blocks}, Bull. Inst. Combin. Appl., 20
+  (1997), pp.~91--94.
+
+\bibitem{MR2001b:05053}
+{\sc C.~Ramsay}, {\em On the index of simple trades}, Australas. J. Combin., 20
+  (1999), pp.~207--221.
+
+\bibitem{MR94k:05028}
+{\sc D.~Sarvate and J.~Seberry}, {\em A note on small defining sets for some
+  {S}{B}{I}{B}{D}$(\rm{4t-1,2t-1,t-1})$}, Bull. Inst. Combin. Appl., 10 (1994),
+  pp.~26--32.
+
+\bibitem{MR93i:05019}
+{\sc J.~Seberry}, {\em Corrigendum: {O}n small defining sets for some
+  {S}{B}{I}{B}{D}$(\rm{4t-1, 2t-1, t-1})$[{B}ull.\ {I}nst.\ {C}ombin.\ {A}ppl.\
+  {\bf 4} (1992), 58--62; {M}{R} 92i:05037]}, Bull. Inst. Combin. Appl., 6
+  (1992), p.~62.
+
+\bibitem{MR92i:05037}
+{\sc J.~Seberry}, {\em On small defining sets for some
+  {S}{B}{I}{B}{D}$(\rm{4t-1,2t-1,t-1})$}, Bull. Inst. Combin. Appl., 4 (1992),
+  pp.~58--62.
+
+\bibitem{MR93c:05026}
+{\sc A.~P. Street}, {\em Defining sets for $t$-designs and critical sets for
+  {L}atin squares}, New Zealand J. Math., 21 (1992), pp.~133--144.
+\newblock New Zealand Mathematics Colloquium (Dunedin, 1991).
+
+\bibitem{MR96h:05021}
+{\sc A.~P. Street}, {\em Defining sets for block designs: an update}, in
+  Combinatorics advances (Tehran, 1994), Kluwer Acad. Publ., Dordrecht, 1995,
+  pp.~307--320.
+
+\end{thebibliography}
+\farsi

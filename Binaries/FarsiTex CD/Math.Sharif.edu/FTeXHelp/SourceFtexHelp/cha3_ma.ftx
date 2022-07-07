@@ -1,0 +1,800 @@
+<ÒchapterŞ×
+<ÒsectionŞõì¢õù×
+<ûõ‘öÚğø÷ùÚîùÚ¢¤Úê¬ñÚì“ñÚ£î¤Úª¢ŠÚªîñÚ¨‘¢ùıÚşíÚê‘şñÚ¢¤ÚÒFarsiTeXÒÚ“ùÚ¬ø¤–Ú¥ş¤Ú¨–ÊÚÒÒ
+<Ú\verb|{article}[farsi]documentstyle\|ÚÒÒ
+<Ú\verb|{document}begin\|ÚÒÒ
+<õöÚ¢¤Ú\verb| \FarsiTeX\|Ú—‘ş”Úõüî÷ôŠÚó£–“¡©Ú¨–ÆÚÒÒ
+<Ú\verb|%|Ú“ìşùıÚ¢¨—ø¤–ÚÒÒ
+<Ú\verb|{document}end\|ÚÒÒ
+<ŞÒsiahÚ—ø›ùÊ×Úäòõ–û‘ıÚ\verb|`\'|ŠÚ\verb|`}'|ŠÚ\verb|`{'|ŠÚ\verb|`]'|ÚøÚ\verb|`['|ÚûõğüÚ
+<äòôÚê‘¤¨üÚû¨—÷¢ÆÚ
+<
+<¢¤Ú¢õùŠÚ¢¨—ø¤–Úò¥ôÚ“‘Ú£î¤Úõ™‘ñÚ“ş‘öÚõüªø÷¢Æ
+<ÒsectionŞŸ¤øéş÷ü×
+<ÒsubsectionŞìóôû‘×
+<¢¨—ø¤ÚîóüÚ¨—ê‘¢ùÚ¥Úìóôû‘Ú“ùÚªîñÚ\verb|\}|ŞÒsmallÚ÷‘ôìóôÚõ—ö×Ú\verb|{|Úõü“‘ª¢ÆÚÒÒ
+<ÒmesalŞÒŞÒbksÚiranicÚşöÚõ—öÚş¤÷şíÚ¨–ÆÒ××ŞŞÒiranicÚşöÚõ—öÚş¤÷şíÚ¨–Æ××
+<¢¤ÚÒFTeXÒÚÚ÷¢¥ùÚøÚŸ‘ó–ÚìóôÚ¤Úõü—øöÚ—çşş¤Ú¢¢ÆÚ÷¢¥ùÚìóôû‘Ú“ùÚªîñÚ¥ş¤Úõü“‘ª¢Æ
+<ÒmesalŞÒŞÒbksÚtinyÚşöÚõ—öÚtinyÚ¨–ÆÒ×ÚÒÒÚ
+<ÚÒŞÒbksÚscriptsizeÚşöÚõ—öÚscriptsizeÚ¨–ÆÒ××ŞŞÒtinyÚşöÚõ—öÚtinyÚ¨–Æ×ÚÒÒ
+<ÚŞÒscriptsizeÚşöÚõ—öÚscriptsizeÚ¨–Æ××
+<÷¢¥ùıÚìóôû‘Ú“ùÚ—¤—ş’Ú¬ãø¢ıÚ“ùÚ¬ø¤–Ú¥ş¤Ú¨–ÚÒÒ
+<\verb|tiny\|ŠÚ\verb|scriptsize\|ŠÚ\verb|footnotesize\|ŠÚ\verb|small\|ŠÚ
+<Ú\verb|normalsize\|ŠÚ\verb|large\|ŠÚ\verb|Large\|ŠÚ\verb|LARGE\|ŠÚ\verb|huge\|ÚøÚ
+<Ú\verb|Huge\|ÚÒÒ
+<ûõ÷şöÚŸ‘ó–ÚìóôÚ“‘Ú¢¨—ø¤û‘ıÚ¥ş¤Ú—çşş¤Úõüî÷¢Æ
+<ÒmesalŞ
+<ÚÒŞÒbksÚsiahÚşöÚõ—öÚ¨ş‘ùÚ¨–ÆÒ×ÚÒÒÚ
+<ÚÒŞÒbksÚiranicÚşöÚõ—öÚş¤÷şíÚ¨–ÆÒ×ÚÒÒÚ
+<ÚÒŞÒbksÚkhabideÚşöÚõ—öÚ¡ø“ş¢ùÚ¨–ÆÒ×ÚÒÒÚ
+<ÚÒŞÒbksÚtookhaliÚşöÚõ—öÚ—ø¡‘óüÚ¨–ÆÒ×ÚÒÒÚ
+<ÚÒŞÒbksÚsayedarÚşöÚõ—öÚ¨‘şù¢¤Ú¨–ÆÒ×ÚÚ
+<×
+<Ş
+<ÚŞÒsiahÚşöÚõ—öÚ¨ş‘ùÚ¨–Æ×ÚÒÒÚ
+<ÚŞÒiranicÚşöÚõ—öÚş¤÷şíÚ¨–Æ×ÚÒÒÚ
+<ÚŞÒkhabideÚşöÚõ—öÚ¡ø“ş¢ùÚ¨–Æ×ÚÒÒÚ
+<ÚŞÒnormalsizeÚÒtookhaliÚşöÚõ—öÚ—ø¡‘óüÚ¨–Æ×ÚÒÒ
+<ÚŞÒnormalsizeÚÒsayedarÚşöÚõ—öÚ¨‘şù¢¤Ú¨–Æ×ÚÚ
+<×
+<ÒsubsectionŞ•‘¤ğ¤é×
+<“¤ıÚõª¡«Úî¤¢öÚ•‘¤ğ¤éÚî‘êüÚ¨–ÚşíÚ¨¯¤Ú¡‘óüÚì¤¤Ú¢ûş¢ÆÚ—ø›ùÚî÷ş¢Ú¨¯¤ıÚîùÚ÷øş¨ùıÚÒ·Ú¢¤ÚöÚ
+<“ùÚî‘¤Ú¤ê—ùÚ¨–Ú¨¯¤Ú¡‘óüÚõŸ¨ø’Ú÷õüªø¢ÆÒÒ
+<“ùÚ›‘ıÚşíÚ¨¯¤Ú¡‘óüŠÚõü—øöÚ¢¨—ø¤Ú\verb|par\|Ú¤Ú“ùÚî‘¤Ú“¤¢Æ
+<
+<ğ¤Ú“ùÚ÷—ú‘ıÚ•‘¤ğ¤éÚ÷¤¨ş¢ùş¢ÚøÚêìÁÚõü¡øûş¢ÚÚ“ùÚ“—¢ıÚ¨¯¤Ú“ã¢Ú“¤øş¢Ú¥Ú¢¨—ø¤Ú$\verb|\\|$Ú
+<Ú¾¢øÚõõş¥Úø¤øÚ“¢øöÚê‘¬óù½Úş‘Ú\verb|newline\|Ú¨—ê‘¢ùÚî÷ş¢ÆÒÒ
+<“—¢ıÚ•‘¤ğ¤éû‘Úõãõøò³Ú“‘Ú—ø¤ê—ğüÚª¤øáÚõüªø¢ÆÚğ¤Ú“¡øûş¢Ú“—¢ıÚ•‘¤ğ¤éÚ—ø¤ê—ğüÚ÷¢ª—ùÚ“‘ª¢Ú
+<¥Ú¢¨—ø¤Ú\verb|noindent\|Ú¢¤Ú“—¢ıÚ•‘¤ğ¤éÚ¨—ê‘¢ùÚî÷ş¢ÆÚ
+<ÒsubsectionŞ•‘¤ğ¤éÚò—şö×
+<“¤ıÚ÷øª—öÚşíÚş‘Ú“ş©Ú¥ÚşíÚ•‘¤ğ¤éÚò—şöŠÚ“‘Úshift+\verb|>|ÚŸ‘ó–Ú¡ÁÚ¤Ú“ùÚ÷ğóş¨üÚ—çşş¤Ú¢ûş¢ÆÚ
+<¢¤Úş÷›‘Ú“‘ş¢Ú¢¨—ø¤Ú\verb|\english|Ú¤Ú“—¢ıÚõ—öÚ—‘ş”Úî÷ş¢ÆÚ¨•§Úõ—öÚò—şöÚ—‘ş”Úªø¢ÆÚ¾Ÿ‘ó–Ú¡ÁÚ
+<Ÿ—õ‘³Ú“ùÚ÷ğóş¨üÚ“‘ª¢Úşã÷üÚ¥Ú¨õ–Ú”Ú¬êŸùÚ¢¤ÚŸ‘ñÚ÷øª—öÚ“‘ªş¢Æ½
+<ÒmesalŞ
+<ÒleftlineŞenglishÒbksÚ×ÒleftlineŞÚI am a \bks TeX\bks\ user.Ú×ÒleftlineŞÚfarsiÒbks×
+<×Ş
+>\leftline{\etext{I am a \TeX\ user.}}
+<×Ú
+<ÒsubsectionŞóş¨–û‘×
+<
+<ÒFarsiTeXÒÚÚ¨ùÚõŸşÁÚ“¤ıÚ¨‘¡—öÚóş¨–Ú¢¤¢Ê
+<\verb|itemize|ŠÚ\verb|enumerate|ÚøÚ\verb|description|Æ
+<¢¤Úû¤Ú¨ùŠÚû¤Úõø¤¢±Ú›¢ş¢±Úóş¨–Ú“‘ÚşíÚ¢¨—ø¤Ú\verb|item\|Úª¤øáÚõüªø¢Æ
+<óş¨–û‘ıÚõø¤¢“÷¢ıÚª¢ùÚ“‘ÚõŸşÁÚ\verb|itemize|ÚøÚóş¨–û‘ıÚªõ‘¤ù¢¤Ú“‘
+<õŸşÁÚ\verb|enumerate|Ú¢¤¨–Úõüªø÷¢Æ
+<“¤ıÚõ™‘ñÚ¨‘¡—‘¤
+<ÒbeginŞitemize×
+<ÚÚÒitemÚû¤Úä®øÚóş¨–Ú“‘ÚşíÚŞÒemÚ“¤¨’×Úäòõ–ğ£¤ıÚõüªø¢ÆÚÚ“¤¨’û‘ı
+<ÚÚÚÚÚÚÚÚşöÚóş¨–ŠÚ¢ş¤ùıÚ—ø•¤Úû¨—÷¢Æ
+<ÚÚÒitemÚóş¨–û‘Úõü—ø÷÷¢Ú¢¡ñÚşî¢şğ¤Úì¤¤Ú“ğş¤÷¢Æ
+<ÚÚÚÚÚÚÚÚÒbeginŞenumerate×
+<ÚÚÚÚÚÚÚÚÚÚÒitemÚ“¤¨’û‘ıÚä®‘ıÚşíÚóş¨–Úªõ‘¤ùğ£¤ıª¢ùŠÚä¢¢Úş‘
+<ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚŸ¤øéÚû¨—÷¢Æ
+<ÚÚÚÚÚÚÚÚÚÚÒitemÚû¤Úóş¨–ÚŸ¢ìñÚ“‘ş¢Ú¢øÚä®øÚ¢ª—ùÚ“‘ª¢Æ
+<ÚÚÚÚÚÚÚÚÒendŞenumerate×
+<ÚÚÚÚÚÚÚÚÒFarsiTeXÒÚŸ¢î™¤Ú—‘Úú‘¤Úõ¤ŸóùÚóş¨–Ú¢¡ñÚûôÚì“øñÚõüî÷¢ÚîùÚ¥ÚŸ¢Úò¥ô
+<ÚÚÚÚÚÚÚÚ“şª—¤Ú¨–Æ
+<
+<ÚÚÒitemÚ¡ÁÚ¡‘óüÚì“ñÚ¥ÚşíÚä®øÚ—‘»™ş¤ıÚ÷¢¤¢Æ
+<ÒendŞitemize×
+<“‘Úø¤ø¢ıÚ¥ş¤Ú—øóş¢Úª¢ù¨–Æ
+<ÒbeginŞquote×
+<\verb|{itemize}begin\|ÚÒÒ
+<\verb|item\  |Úû¤Úä®øÚóş¨–ÚÒldotsÒÚû¨—÷¢ÆÚÒÒ
+<\verb|item\  |Úóş¨–û‘Úõü—ø÷÷¢ÚÒldotsÒÚ“ğş¤÷¢ÆÚÒÒ
+<\verb|{enumerate}begin\    |ÚÒÒ
+<\verb|item\      |Ú“¤¨’û‘ıÚä®‘ıÚşíÚÒldotsÒÚû¨—÷¢ÆÚÒÒ
+<\verb|item\      |Úû¤Úóş¨–ÚŸ¢ìñÚÒldotsÒÚ¢ª—ùÚ“‘ª¢ÆÚÒÒ
+<\verb|{enumerate}end\    |ÚÒÒ
+<\verb| \FarsiTeX\    |Ÿ¢î™¤ÚÒldotsÒÚ“şª—¤Ú¨–ÆÚÒÒ
+<ÒÒ
+<\verb|item\  |Ú¡ÁÚ¡‘óüÚÒldotsÒÚ÷¢¤¢ÆÚÒÒ
+<\verb|{itemize}end\|
+<ÒendŞquote×
+<
+<¢¤ÚõŸşÁÚ\verb|description|Ú“¤¨’±Úõø¤¢û‘ŠÚ¢¤Ú¤ğøõ‘öÚ¡—ş‘¤ı±Ú¢¨—ø¤±
+<\verb|item\|Úõüş¢ÆÚ¾øÚ“şöÚ¢øÚìò’Úì¤¤Úõüğş¤¢½ÆÚõ™ò³Úõ—öÚ
+<
+<ÒbeginŞminipage×ŞĞ7cmĞ×
+<ÒbeginŞdescription×
+<ÒitemÓ¤ş‘÷ùÑÚø¨şóùıÚ¨–Úì‘“ñÚ“¤÷‘õù¤ş¥ıŠÚ›ú–ÚõŸ‘¨“ùÆÚ¤ş‘÷ùÚõü—ø÷¢Ú
+<ÚÚÚÚÚÚÚÚõşóşø÷ú‘ÚÚ¢¨—ø¤Ú¤Ú¢¤Ú¥õ‘öÚ“¨ş‘¤Úîø—‘ûüÚ›¤Úî÷¢ÆÚÚõ¤ø¥ùÚ¤ş‘÷ùû‘
+<ÚÚÚÚÚÚÚÚ÷÷‘öÚê¤ğş¤Úª¢ù÷¢ÚîùÚ—ì¤ş“‘³Ú¥÷¢ğüÚ“¢øöÚ÷ú‘ÚêóšÚõüªø¢ÆÚ
+<ÒitemÓ¬êŸùîóş¢ÑÚø¨şóùıÚ“¤ıÚ÷—ì‘ñ±Ú¯òä‘–Ú“ùÚ¤ş‘÷ùÆÚ
+<ÒitemÓ‘•ğ¤ÑÚø¨şóùıÚ“¤ıÚ‘”î¤¢öÚ¯òä‘–±Ú¡¤ø›üÚ¤ş‘÷ùÆÚõ¤ø¥ùÚ‘•ğ¤û‘ıÚ
+<ÚÚÚÚÚÚÚÚÚÚõ¡—óêüÚ“ùÚ“‘¥¤Úõ¢ù÷¢ÆÚ‘•ğ¤û‘ıÚ¤÷ğüÚóş¥¤ıÚ¥Úîşêş–Ú“‘òşüÚ
+<ÚÚÚÚÚÚÚÚÚÚ“¤¡ø¤¢¤Úû¨—÷¢Æ
+<ÒendŞdescription×
+<ÒendŞminipage×
+<
+<ÒvspaceŞĞ5mmĞ×
+<“‘Ú¢¨—ø¤û‘ıÚ
+<ÒbeginŞquote×
+<\verb|{description}begin\|ÚÒÒ
+<\verb|]item\|¤ş‘÷ù\verb|[|Úø¨şóùıÚ¨–ÚÒldotsÒÚêóšÚõüªø÷¢ÚÆÚÒÒ
+<\verb|]item\|¬êŸùîóş¢\verb|[|Úø¨şóùıÚ“¤ıÚÒldotsÒÚÚ¤ş‘÷ùÆÚÒÒ
+<\verb|]item\|‘•ğ¤\verb|[|Úø¨şóùıÚ“¤ıÚÒldotsÒÚÚû¨—÷¢ÆÚÚÚÒÒ
+<\verb|{description}end\|
+<ÒendŞquote×
+<—øóş¢Úª¢ùÚ¨–ÆÚ
+<ÒsubsectionŞ—÷àşôÚ¥Úø¨ÁÚ¨¯¤×
+<ğ¤ÚêìÁÚşíÚ¡ÁÚ¤Ú“¡øûşôÚ¢¤Úø¨ÁÚ¨¯¤Ú—÷àşôÚî÷şôÚ¥Ú¢¨—ø¤Ú\verb|}centerline\|Úõ—öÚ\verb|{|Ú¨—ê‘¢ùÚ
+<õüªø¢ÆÚ
+<ÒmesalŞ
+<Ÿ‘ó–Úä‘¢ıÚ¡ÁÚÒÒ
+<ÒbksÚcenterlineÒŞÚşöÚ¡ÁÚø¨ÁşöÚ¨–ÆÒ×
+<×
+<Ş
+<Ÿ‘ó–Úä‘¢ıÚ¡ÁÚÒÒ
+<ÒcenterlineŞşöÚ¡ÁÚø¨ÁşöÚ¨–Æ×
+<×
+<ğ¤Ú“ş©Ú¥ÚşíÚ¡ÁÚ¤Ú“¡øûşôÚ¢¤Úø¨ÁÚ¨¯¤Ú—÷àşôÚî÷şôÚ¥Ú¢¨—ø¤ÚÒÒÚ
+<\verb|{center}begin\|ÚÒÒ
+<õ—öÚÒÒ
+<\verb|{center}end\|ÚÒÒ
+<¨—ê‘¢ùÚõüî÷şôÆ
+<ÒmesalŞ
+<Ÿ‘ó–Úä‘¢ıÚ¡ÁÚÒÒ
+<ÒbksÚbeginÒŞcenterÒ×ÚÒÒ
+<¥¢ıÚÒbksÒbksÚÒÒ
+<¢¤Ú¯øñÚ—‘¤ş Ú÷¨‘öÚ“ùÚ¢÷“‘ñÚ¥¢ıÚ“ø¢ùÚ¨–Æ
+<ÒbksÚparÚÒÒ
+<¥¢ıÚûõø¤ùÚşîüÚ¥Ú¢è¢èùû‘ıÚ¬óüÚ“ª¤Ú¢¤Ú—õ‘ôÚä¬‘¤Ú—‘¤ş Ú“ø¢ùÚ¨–ÆÚÒÒ
+<ÒbksÚendÒŞcenterÒ×
+<×
+<Ş
+<Ÿ‘ó–Úä‘¢ıÚ¡ÁÚÒÒ
+<ÒbeginŞcenter×Ú
+<¥¢ıÚÚÒÒ
+<¢¤Ú¯øñÚ—‘¤ş Ú÷¨‘öÚ“ùÚ¢÷“‘ñÚ¥¢ıÚ“ø¢ùÚ¨–Æ
+<ÒparÚ
+<¥¢ıÚûõø¤ùÚşîüÚ¥Ú¢è¢èùû‘ıÚ¬óüÚ“ª¤Ú¢¤Ú—õ‘ôÚä¬‘¤Ú—‘¤ş Ú“ø¢ùÚ¨–ÆÚ
+<ÒendŞcenter×
+<×
+<ÒsubsectionŞ÷¢¥ùû‘×
+<÷¢¥ùÚ¢¤ÚÒFTeXŠÚ“‘Ú¨ùÚõª¡¬ùıÚäòõ–ŠÚõì¢¤ÚøÚøŸ¢Ú—ãşşöÚõüªø¢ÆÒÒ
+<Úäòõ–ŠÚÍÚş‘ÚÅÚ¨–ÚîùÚğ¤Ú—ãşşöÚ÷ªø¢Ú•ş©ê¤­ÚÍÚ¨–ÆÚÒÒ
+<õì¢¤ÚşíÚä¢¢Ú¬ŸşÚş‘Úäª‘¤ıÚ¨–ÆÒÒ
+<øŸ¢ÚşîüÚ¥ÚøŸ¢û‘şüÚ¨–ÚîùÚÒFTeXÚöÚ¤Úõüª÷‘¨¢ÚøÚ“ş‘öÚöÚó¥õüÚ¨–ÆÚ
+<øŸ¢û‘ıÚª÷‘¡—ùÚª¢ùıÚÒFTeXÚ¢¤Ú›¢øñÚ¥ş¤Ú“ş‘öÚª¢ùÚ¨–Ê
+<ÒbeginŞcenter×
+<ÒbeginŞtabular×ŞĞ|l|c|Ğ×ÒhlineÚ
+<ò—şöÚ¸Ú÷¢¥ùÚÒÒÚÒhlineÚ
+<ptÚ¸ÚÒÚÒÒÚÒhlineÚ
+<pcÚ¸Ú1pc=12ptÚÒÒÚÒhlineÚ
+<inÚ¸Ú1in=72.27ptÚÒÒÚÒhlineÚ
+<bpÚ¸Ú72bp=1inÚÒÒÚÒhlineÚ
+<cmÚ¸Ú2.54cm=1inÚÒÒÚÒhlineÚ
+<mmÚ¸Ú10mm=1cmÚÒÒÚÒhlineÚ
+<ddÚ¸Ú1157dd=1238ptÚÒÒÚÒhlineÚ
+<ccÚ¸Ú1cc=12ddÚÒÒÚÒhlineÚ
+<spÚ¸Ú65536sp=1ptÚÒÒÚÒhlineÚ
+<emÚ¸Ú÷¢¥ùÚõ—÷‘¨’Ú“‘ÚìóôÚ›‘¤ıÚÒÒÚÒhlineÚ
+<exÚ¸Ú—ì¤ş“‘Ú÷¬éÚemÚÒÒÚÒhlineÚ
+<ÒendŞtabular×
+<
+<ÒmboxŞÚÒsmallÚøŸ¢û‘ıÚ÷¢¥ùğş¤ıÚÒFTeXÚ×
+<ÒendŞcenter×
+<¥ÚşöÚ“ùÚ“ã¢Úû¤Ú›‘ÚîùÚ\verb|>|÷¢¥ù\verb|<|ÚÚ÷øª—şôŠÚõì¬ø¢Ú“ş‘öÚû¤Ú¨ùÚõª¡¬ùÚ¨–Ú¾êìÁÚäòõ–Ú¡—ş‘¤ıÚ¨–½Æ
+<ÒsubsectionŞê‘¬óùğ£¤ı×
+<ÒsubsubsectionÈŞê‘¬óùÚêìü×Ú
+<ğ¤Ú“¡øûşôÚê‘¬óùÚêìüÚ¢¤Úõ—öÚş›‘¢Úî÷şôÚ¥Ú¢¨—ø¤Ú\verb|hspace\|Ú“ªîñÚ¥ş¤Ú¨—ê‘¢ùÚõüî÷şôÊ
+<ÒcenterlineŞÚÒbksÚ$*$hspaceÚÒŞ\verb|>|Ú÷¢¥ù\verb|<|Ò×Ú×
+<ŞÒbfÚ—ø›ùÊ×Ú$*$ÚşíÚ÷øş¨ùÚê‘¤¨üÚ¨–ÆÒÒ
+<äòõ–Ú$*$Ú¢¤ÚşöÚ¢¨—ø¤Ú¡—ş‘¤ıÚ¨–ÆÚø›ø¢ÚöÚ“¢şöÚõã÷‘¨–ÚîùÚ¢¤Úû¤Úª¤ş¯üÚŸ—õ‘³Úê‘¬óùÚğ£ª—ùÚ
+<ªø¢ÆÚ
+<ÒmesalŞ
+<¡òëÚÒbksÚhspaceÒŞ2cmÒ×Úûõø¤ùÚõçêøñÚøÚõìúø¤ÚøÚõàóøôÚõ‘÷¢ù×
+<Ş
+<¡òëÚÒhspaceŞ2cm×Úûõø¤ùÚõçêøñÚøÚõìúø¤ÚøÚõàóøôÚõ‘÷¢ù×
+<ÒsubsubsectionÈŞê‘¬óùÚäõø¢ı×
+<¢ìşì‘³Úõª‘“ùÚÚ\verb|hspace\|Ú¢¤Ú›ú–Úş›‘¢Úê‘¬óùÚäõø¢ıÚ¢¤Úõ—öÚ¨–ÚøÚ¢¨—ø¤ÚöÚ“ùÚªîñÚ¥ş¤Ú¨–Ê
+<ÒcenterlineŞÚÒbksÚ$*$vspaceÚÒŞ\verb|>|Ú÷¢¥ù\verb|<|Ò×Ú×
+<ÒmesalŞ
+<÷¨‘öÚ¡¤¢õ÷¢ÚÒbksÚparÚÒbksÚvspaceÒŞ1cmÒ×Ú
+<¥õ‘÷üÚõ—øó¢Úõüªø¢ÚÚîùÚ¡òëÚ“¤ıÚøÚ›¢ıÚ“‘ª¢×
+<Ş÷¨‘öÚ¡¤¢õ÷¢ÚÒparÚÚÒvspaceŞ1cm×Ú¥õ‘÷üÚõ—øó¢Úõüªø¢ÚÚîùÚ¡òëÚ“¤ıÚøÚ›¢ıÚ“‘ª¢×
+<ÒsubsectionŞ¤¨ôÚ¡Á×
+<ğ¤Ú“¡øûşôÚÚ¡¯üÚ“ùÚ÷¢¥ùıÚä¤­Úõ—öÚ“îªşôÚ¥Ú¢¨—ø¤Ú\verb|hrule\|Ú¨—ê‘¢ùÚõüî÷şôÆ
+<ÒmesalŞ
+<“ã®üÚ÷¨‘öÚ¤ÚŸşøöÚ÷‘¯ëÚ—ã¤şéÚî¤¢ù÷¢ÆÒbksÚparÒbksÚhrule
+<şöÚ—ã¤şéÚ¢¤¨–Ú¨–ÚøóüÚ“ã®üÚ÷¨‘öÚ¤ÚŸşøöÚ¡òìüÚ÷‘õş¢ù÷¢Æ×
+<Ş“ã®üÚ÷¨‘öÚ¤ÚŸşøöÚ÷‘¯ëÚ—ã¤şéÚî¤¢ù÷¢ÆÒparÒhrule
+<şöÚ—ã¤şéÚ¢¤¨–Ú¨–ÚøóüÚ“ã®üÚ÷¨‘öÚ¤ÚŸşøöÚ¡òìüÚ÷‘õş¢ù÷¢Æ×
+<
+<ğ¤Ú¢¤Úõş‘öÚ¨¯¤Ú¡¯üÚ“ùÚ÷¢¥ùıÚ¢ó¡øùÚ¤¨ôÚî÷şôÚ¥Ú¢¨—ø¤Ú
+<
+<ÒcenterlineŞÚÒbksÚruleÚÓ\verb|>|@÷¢¥ù@\verb|<|ÑÚ
+<ÒŞ\verb|>|@÷¢¥ù‚@\verb|<|Ò×ÚÒŞ\verb|>|@Ú÷¢¥ùƒ@\verb|<|Ò×Ú×
+<¨—ê‘¢ùÚõüî÷şôÆ
+<ŞÒsiahÚ—ø›ùÊ×Úäòõ–Ú@Úê‘¤¨üÚõü“‘ª¢ÆÒÒ
+<Ú\verb|>|Ú÷¢¥ùÚ\verb|<|Ú¡—ş‘¤ıÚõü“‘ª¢ÚøÚõª¡«Úõüî÷¢Úì¢¤Ú“‘ò—¤Ú¥Ú¨¯Ú
+<ä‘¢ıÚ¨¯¤Ú¾“‘Úäòõ–Úõ™“–½Úş‘Ú•‘şşö—¤Ú¾“‘Úäòõ–Úõ÷êü½Ú“‘ª¢ÆÚÒÒ
+<\verb|>|Ú÷¢¥ù‚Ú\verb|<|Ú¯øñÚ¡ÁÚ¤Úõª¡«Úõüî÷¢ÆÒÒ
+<\verb|>|Ú÷¢¥ùƒÚ\verb|<|Ú®¡‘õ–Ú¡ÁÚ¤Úõª¡«Úõüî÷¢Æ
+<ÒmesalŞ
+<›‘õãùÚ¢ş÷üÚ“‘ş¢Ú“¤ÚşíÚ÷—¡‘’Ú¡òìüÚ—îşùÚî÷¢ŠÚÒbksÚruleÓ@1mm@ÑÒŞ@1cm@Ò×ÒŞ@5pt@Ò×Ú
+<¨‘¨‘³ÚşöÚşíÚ÷—¡‘’Ú¡òìüÚ¨–ÚîùÚ¢õüÚ¢ş÷¢¤Ú“‘ª¢Úş‘Ú“ü¢şöÆ×
+<Ş›‘õãùÚ¢ş÷üÚ“‘ş¢Ú“¤ÚşíÚ÷—¡‘’Ú¡òìüÚ—îşùÚî÷¢ŠÚÚÒruleÓĞ1mmĞÑÚŞĞ1cmĞ×ŞĞ5ptĞ×Ú
+<¨‘¨‘³ÚşöÚşíÚ÷—¡‘’Ú¡òìüÚ¨–ÚîùÚ¢õüÚ¢ş÷¢¤Ú“‘ª¢Úş‘Ú“ü¢şöÆ×
+<ÒsubsectionŞ•‘ø¤ìü×
+<“¤ıÚğ£ª—öÚ•‘ø¤ìüÚşíÚä“‘¤–Ú¥Ú¢¨—ø¤Ú\verb|footnote\|Óªõ‘¤ùÑÒŞõ—öÚ•‘ø¤ìüÒ×Ú¨—ê‘¢ùÚõüî÷şôÆ
+<Ú¢¤Úş÷›‘ÚÓªõ‘¤ùÑÚ¡—ş‘¤ıÚõü“‘ª¢ÚøÚ“¤ıÚ¥õ‘÷üÚ¨–ÚîùÚ“¡øûşôÚªõ‘¤ùğ£¤ıÚ¢¨—üÚ÷›‘ôÚ¢ûşôÆÚ
+<¢¤ÚŸ‘ó–Úä‘¢ıŠÚªõ‘¤ùğ£¤ıÚ“¬ø¤–Ú—øõ‘—şíÚ¨–Æ
+<ÒmesalŞ
+<¢şöÚ¢¤Úõì‘ôÚäõñÚøÚ—ŸìëÚ“‘ş¢Ú÷ª‘öÚ¢û¢ÚîùÚ¢¤Ú¨—ì¤¤ÚşíÚ÷àôÚ¢ş÷üŠÚõ¤¢ôÚ¡òìü—¤Ú
+<äõñÚõüî÷÷¢ÒbksÚfootnoteÒŞ›‘õãùÚ¢ş÷üÚøÚ›‘õãùÚ¡òìüËÚ¢ş÷¢¤ıÚşíÚ÷—¡‘’Ú¡òìüÚ¨–ÆÚ¢î—¤Ú¨¤ø©ŠÚ
+<¤ø¥÷‘õùÚş¤öÒ×ÆÚÒbksÚparÒÒ
+<“ùÚøìâÚş÷îùÚÚ¤¨–ğøşüÚşíÚê®şó–Ú¡òìüÚ¨–Úõø¤¢Úõøêì–ÚûõùÚ¨–ÚøóüÚş÷îùÚ¤Úê®şó–Ú¨–Ú¡—òéÚ
+<ø›ø¢Ú¢¤¢ÒbksÚfootnoteÓ…ÑÒŞûõ‘öÚõ÷“âÒ×Æ×
+<Ş¢şöÚ¢¤Úõì‘ôÚäõñÚøÚ—ŸìëÚ“‘ş¢Ú÷ª‘öÚ¢û¢ÚîùÚ¢¤Ú¨—ì¤¤ÚşíÚ÷àôÚ¢ş÷üŠÚõ¤¢ôÚ¡òìü—¤Ú
+<äõñÚõüî÷÷¢ÒfootnotemarkÓÑÚÒfootnotetextÓ€ÑŞ$\,^1$›‘õãùÚ¢ş÷üÚøÚ›‘õãùÚ¡òìüËÚ
+<¢ş÷¢¤ıÚşíÚ÷—¡‘’Ú¡òìüÚ¨–ÆÚ¢î—¤Ú¨¤ø©ŠÚ¤ø¥÷‘õùÚş¤ö×ÆÚÒpar
+<“ùÚøìâÚş÷îùÚÚ¤¨–ğøşüÚşíÚê®şó–Ú¡òìüÚ¨–Úõø¤¢Úõøêì–ÚûõùÚ¨–ÚøóüÚş÷îùÚ¤Úê®şó–Ú¨–Ú¡—òéÚ
+<ø›ø¢Ú¢¤¢ÒfootnotemarkÓ…ÑÚÒfootnotetextÓ€ÑŞ$\,^5$ûõ‘öÚõ÷“â×Æ×
+<ÒsubsectionŞ÷ìñÚìøñ×
+<ÒFarsiTeXÒÚÚ¢øÚ
+<õŸşÁÒfootnoteŞõŸşÁÚ“ùÚ¬ø¤–ÚÒbksÚbeginÒŞ÷‘ôÚõŸşÁÒ×Úõ—öÚÒbksÚendÒŞ÷‘ôÚõŸşÁÒ×Ú¨—ê‘¢ùÚõüªø¢Æ×
+<Úõ¡—óéÚ“¤ıÚ÷õ‘ş©¢¢öÚ÷ìñÚìøñû‘Úê¤ûôÚî¤¢ù¨–Æ
+<õŸşÁÚ\verb|quote|Ú“¤ıÚ÷ìñÚìøñû‘ıÚîø—‘ùÚş‘ÚşíÚ¨¤ıÚ÷ìñÚìøñÚîø—‘ùÚîùÚ“‘
+<¡Áû‘ıÚ¡‘óüÚ›¢Úõüªø÷¢Ú—¢¤íÚ¢ş¢ùÚª¢ù¨–Æ
+<ÒmesalŞ
+<¢î‘¤–Úõüğøş¢ÊÒÒ
+<ÒbksÚbeginÒŞquoteÒ×ÒÒ
+<õöÚõü÷¢şªôŠÚ•§Úû¨—ôÆÒÒ
+<ÒbksÚendÒŞquoteÒ×
+<×Ş
+<¢î‘¤–Úõüğøş¢Ê
+<ÒbeginŞquote×
+<õöÚõü÷¢şªôŠÚ•§Úû¨—ôÆ
+<ÒendŞquote×Ú×
+<
+<õŸşÁÚ\verb|quotation|Ú÷ş¥Ú“¤ıÚ÷ìñÚìøñû‘ıÚ“ş©Ú¥ÚşíÚ•‘¤ğ¤éÚ¨–Æ
+<¯“ëÚõãõøñÚ•‘¤ğ¤éû‘ıÚõ—öÚ÷ìñª¢ùÚ“‘ÚşíÚ¡ÁÚ¡‘óüÚ›¢Úõüªø÷¢Æ
+<ÒsubsectionŞ›¢øñ“÷¢ı×
+<şöÚì¨õ–Ú¤Ú“‘ÚşíÚõ™‘ñÚª¤øáÚõüî÷şôÆ
+<ÒmesalŞ
+<ÒbksÚbeginÒŞtabularÒ×ÒŞ@$|$cl$|$r$||$@Ò×ÚÚÒÒ
+<¨—‘öÚ\&Úõ¤î¥Ú¨—‘öÚ\&Ú›õãş–ÚÒbksÒbksÚÒbksÚhlineÚÒÒ
+<ìôÚÚ\&ÚìôÚÚ\&Ú‰ˆ‡†ƒÚÒbksÒbksÚÒÒ
+<¡¤¨‘öÚ\&Úõªú¢Ú\&ÚÚˆ„ƒ‡ÚÒbksÒbksÚÒÒ
+<î¤õ‘öÚ\&Úî¤õ‘öÚ\&Úˆ€‰ƒ‚…ÚÒbksÒbksÚ
+<ÒbksÚendÒŞtabularÒ×
+<×
+<Ş
+<ÒvspaceŞĞ1exĞ×
+<ÒbeginŞtabular×ŞĞ|cl|r||Ğ×ÚÚ
+<¨—‘öÚ¸Úõ¤î¥Ú¨—‘öÚ¸Ú›õãş–ÚÚÒÒÚÒhlineÚ
+<ìôÚÚ¸ÚìôÚÚ¸Ú‰ˆ‡†ƒÚÒÒÚ
+<¡¤¨‘öÚ¸Úõªú¢Ú¸ÚÚˆ„ƒ‡ÚÚÒÒ
+<î¤õ‘öÚ¸Úî¤õ‘öÚ¸Úˆ€‰ƒ‚…ÚÚÒÒÚÚ
+<ÒendŞtabular×
+<×
+<ŞÒsiahÚ—ø›ùÊÚ×Úäòõ–û‘ıÚ@ÚøÚ\&ÒfootnoteŞ“‘Úshift+AÚ—øóş¢Úõüªø¢Æ×ÚÚê‘¤¨üÚû¨—÷¢ÆÚ
+<õª‘û¢ùÚõüªø¢Úõ¯‘ó’Úû¤Ú¨¯¤Ú›¢øñÚ“ùÚ¢÷“‘ñÚûôÚ÷øª—ùÚõüªø÷¢ÆÚ“¤ıÚ›¢¨‘¥ıÚõ¯‘ó’Ú¢øÚ¨—øöÚõ—øóüÚ
+<¥Ú\&Ú¾“‘Úshift+AÚ¢¤Úê‘¤¨üÚøÚshift+7Ú¢¤Ú÷ğóş¨ü½Ú¨—ê‘¢ùÚõüªø¢ÚøÚ÷—ú‘ıÚ—õ‘ôÚ¨¯¤û‘Ú“›¥Ú¨¯¤Ú
+<•‘ş‘÷üÚ¤Ú“‘ÚÒbksÒbksÚ¾¢øÚõõş¥Úø¤ø½Úõª¡«Úõüî÷şôÆÚûõ÷şöÚğ¤Ú“¡øûşôÚşíÚ¡ÁÚêìüÚ“şöÚ¢øÚ¨¯¤Ú
+<“îªşôÚ¥Ú¢¨—ø¤ÚÒbksÚhlineÚ¨—ê‘¢ùÚõüî÷şôÆÒÒ
+<Ÿ¤øéÚcŠÚlÚøÚrÚ÷ş¥Ú“¤ıÚş¢öÚ¨—øöû‘Ú“ùÚ—¤—ş’Ú“ùÚ¬ø¤–Úø¨ÁşöŠÚ¤¨–şöÚøÚ”şöÚõü“‘ª÷¢ÆÚÒÒ
+<ÒsectionŞê¤õøñ÷øş¨ü×
+<şîüÚ¥Úõ¥ş–û‘ıÚäõ¢ùÚÒFTeXŠÚ¨úøó–Ú—‘ş”ÚøÚ¥ş“‘şüÚê¤õøñû‘ıÚöÚ¨–ÚøöÚê‘¬óùû‘ıÚ¢ìşëÚøÚà¤şéÚ“ùÚ¯ø¤Ú
+<¡ø¢î‘¤Ú—÷àşôÚõüªø÷¢ÚøÚ÷ş‘¥ıÚ“ùÚ—ø›ùÚî‘¤“¤Ú“¤ıÚ—÷àşôÚ÷ú‘Ú÷ş¨–ÆÒÒ
+<¢¤ÚõŸşÁÚ¤ş‘®üÚûõùıÚõ—çş¤û‘Ú¾øÚ÷ùÚä¢¢½Ú“‘ÚìóôÚş—‘óşíÚõ¡¬ø«Ú¤ş‘®üÚŸ¤øéş÷üÚõüªø÷¢ÚîùÚ“‘ÚìóôÚ
+<ş—‘óşíÚõãõøóüÚõ—ê‘ø–Ú¨–Æ
+<ÒmesalŞ
+<ÒŞ\bks it x+yÒ×ÊÚş—‘óşíÚõãõøóüÚÒÒ
+<\$x+y\$ÊÚş—‘óşíÚ¤ş‘®üÚ
+<×
+<ŞÚŞ\it x+y×ÊÚş—‘óşíÚõãõøóüÚÒÒ
+<$x+y$ÊÚş—‘óşíÚ¤ş‘®üÚ
+<×
+<ŞÒsiahÚ—ø›ùÊ×Ú\bks itÚ÷ğóş¨üÚ¨–ÚÚøÚitÚêø÷–Úş—‘óşíÚ¨–ÆÒÒ
+<ÒsubsectionŞê¤õøñÚ“şöÚõ—ö×
+<ê¤õøóüÚîùÚ¢øÚ¯¤éÚöÚõ—öÚä‘¢ıÚ¨–ŠÚê¤õøñÚ“şöÚõ—öÚ÷‘õş¢ùÚõüªø¢ÆÚê¤õøñÚ“şöÚõ—öÚ“ùÚ¬ø¤–Ú
+<\$ê¤õøñ\$Úõü“‘ª¢ÚîùÚ\$Ú÷ğóş¨üÚ¨–ÆÚ
+<ÒmesalŞ“¤ıÚ™“‘–Úò¥ôÚ¨–Ú¤“¯ùıÚ\$x+y=3\$Ú“¤ì¤¤Ú“‘ª¢ÚîùÚ¢¤ÚöÚ\$x\$Úõ™“–Ú¨–Æ×Ú
+<Ş“¤ıÚ™“‘–Úò¥ôÚ¨–ÚîùÚ¤“¯ùıÚ$x+y=3$Ú“¤ì¤¤Ú“‘ª¢ÚîùÚ¢¤ÚöÚ$x$Úõ™“–Ú¨–Æ×Ú
+<ÒsubsectionŞê¤õøñû‘ıÚ›óøùÚş‘ê—ù×
+<û÷ğ‘õüÚîùÚşíÚê¤õøñÚ¤ş‘®üÚ“¤ıÚ›‘ğ¤ê—öÚ¢¤Úõ—öÚ¯øò÷üÚ¨–ÚøÚş‘
+<õúôÚ¨–Ú¾¯ø¤ıÚîùÚõü¡øûş¢ÚşíÚ¨¯¤Úõ›¥Ú¤Ú“ùÚ¡ø¢Ú¡—¬‘«Ú¢û¢½
+<ş‘Úõü¡øûş¢Ú“¤ıÚ¤›‘áû‘ıÚ“ã¢ıÚ“ùÚöÚªõ‘¤ùÚ“¢ûş¢Š
+<ŞÒemÚ›óøùÚ¢¢ù×Úõüªø¢Æ
+<ÒFarsiTeXÒÚ¢øÚõŸşÁÚ\verb|$$|Úê¤õøñÚ\verb|$$|ÚÚøÚ\verb|equation|Ú¤Ú“¤ı
+<şöÚî‘¤Úê¤ûôÚî¤¢ù¨–ËÚ—÷ú‘Ú—ê‘ø–ÚşöÚ¢øÚõŸşÁÚşöÚ¨–ÚîùÚ\verb|equation|
+<ê¤õøñÚ¤Úªõ‘¤ùğ£¤ıÚõüî÷¢Æ
+<ÒmesalŞ
+<“¤ıÚ™“‘–Úò¥ôÚ¨–ÚîùÚ¤“¯ùıÚ¥ş¤Ú“¤ì¤¤Ú“‘ª¢ÚÒÒ
+<ÒleftlineŞ\$\$x+y=3\$\$×ÚîùÚ¢¤ÚöÚ\$x\$Úõ™“–Ú¨–ÆÒÒ
+<“¤ıÚ™“‘–Úò¥ôÚ¨–ÚîùÚ¤“¯ùıÚ¥ş¤Ú“¤ì¤¤Ú“‘ª¢ÚÒÒ
+<ÒleftlineŞÒŞequationÒ×beginÒbks×ÚÒÒ
+<ÒleftlineŞÚx+y=3Ú×ÒÒ
+<ÒleftlineŞÒŞequationÒ×endÒbks×ÒÒ
+<îùÚ¢¤ÚöÚ\$x\$Úõ™“–Ú¨–Æ×
+<Ş“¤ıÚ™“‘–Úò¥ôÚ¨–ÚîùÚ¤“¯ùıÚ¥ş¤Ú“¤ì¤¤Ú“‘ª¢Ú
+<Ú$$x+y=3$$ÚîùÚ¢¤ÚöÚ$x$Úõ™“–Ú¨–ÆÒÒ
+<“¤ıÚ™“‘–Úò¥ôÚ¨–ÚîùÚ¤“¯ùıÚ¥ş¤Ú“¤ì¤¤Ú“‘ª¢Ú
+>\begin{equation}
+>x+y=3
+>\end{equation}
+<îùÚ¢¤ÚöÚ$x$Úõ™“–Ú¨–Æ×
+<ÒsubsectionŞäòôÚ¤ş‘®ü×
+<—ì¤ş“‘³ÚûõùıÚäòôÚ¤ş‘®üÚª÷‘¡—ùÚª¢ùÚ¤Ú¢¤ÚÒFarsiTeXÒÚõü—øöÚ—øóş¢Ú÷õø¢ÆÚ¢¨—ø¤û‘şüÚîùÚşöÚäòõ–û‘Ú¤Ú
+<—øóş¢Úõüî÷÷¢Ú¤Úõü—ø÷ş¢Ú¢¤Ú›¢øñÚ¥ş¤Ú•ş¢Úî÷ş¢Ú·ÒÒÓĞ3exĞÑ
+<·ÒcenterlineŞÒsmallÚäõóğ¤û‘ıÚ¢ø—‘şü×
+>%\vspace*{-5ex}%\begin{center}
+>\english
+>%\caption{äõóğ¤û‘ıÚ¢ø—‘şüÚ}
+>\begin{center}
+>\begin{tabular}{p{1in}p{1.1in}p{1.5in}p{1.1in}}
+>$\pm$\ \verb|\pm| & $\cap$\ \verb|\cap| & 
+>$\diamond$\ \verb|\diamond| & $\oplus$\ \verb|\oplus| \\
+>$\mp$\ \verb|\mp| & $\cup$\ \verb|\cup| & 
+>$\bigtriangleup$\ \verb|\bigtriangleup| & $\ominus$\ \verb|\ominus| \\
+>$\times$\ \verb|\times| & $\uplus$\ \verb|\uplus| & 
+>$\bigtriangledown$\ \verb|\bigtringledown| & $\otimes$\ \verb|\otimes| \\
+>$\div$\ \verb|\div| & $\sqcap$\ \verb|\sqcap| & 
+>$\triangleleft$\ \verb|\triangleleft| & $\oslash$\ \verb|\oslash| \\
+>$\ast$\ \verb|\ast| & $\sqcup$\ \verb|\sqcup| & 
+>$\triangleright$\ \verb|\triangleright| & $\odot$\ \verb|\odot| \\
+>$\star$\ \verb|\star| & $\vee$\ \verb|\vee| & 
+>$\lhd$\ \verb|\lhd| & $\bigcirc$\ \verb|\bigcirc| \\
+>$\circ$\ \verb|\circ| & $\wedge$\ \verb|\wedge| & 
+>$\rhd$\ \verb|\rhd| & $\dagger$\ \verb|\dagger| \\
+>$\bullet$\ \verb|\bullet| & $\setminus$\ \verb|\setminus| & 
+>$\unlhd$\ \verb|\unlhd| & $\ddagger$\ \verb|\ddagger| \\
+>$\cdot$\ \verb|\cdot| & $\wr$\ \verb|\wr| & 
+>$\unrhd$\ \verb|\unrhd| & $\amalg$\ \verb|\amalg| 
+>\end{tabular}
+>\end{center}
+>\farsi%\end{center}
+<·ÒcenterlineŞÒsmallÚäõóğ¤û‘ıÚ¢ø—‘şü×
+>%\vspace*{-5ex}%\begin{center}
+>\english\begin{center}
+>\begin{tabular}{p{1in}p{1.1in}p{1.5in}p{1.1in}}
+>$\leq$\ \verb|\leq| & $\geq$\ \verb|\geq| & 
+>$\equiv$\ \verb|\equiv| & $\models$\ \verb|\models| \\
+>$\prec$\ \verb|\prec| & $\succ$\ \verb|\succ| & 
+>$\sim$\ \verb|\sim| & $\perp$\ \verb|\perp| \\
+>$\preceq$\ \verb|\preceq| & $\succeq$\ \verb|\succeq| & 
+>$\simeq$\ \verb|\simeq| & $\mid$\ \verb|\mid| \\
+>$\ll$\ \verb|\ll| & $\gg$\ \verb|\gg| & 
+>$\asymp$\ \verb|\asymp| & $\parallel$\ \verb|\parallel| \\
+>$\subset$\ \verb|\subset| & $\supset$\ \verb|\supset| & 
+>$\approx$\ \verb|\approx| & $\bowtie$\ \verb|\bowtie| \\
+>$\smile$\ \verb|\smile| & $\subseteq$\ \verb|\subseteq| & 
+>$\supseteq$\ \verb|\supseteq| & $\cong$\ \verb|\cong| \\
+>$\frown$\ \verb|\frown| & $\sqsubset$\ \verb|\sqsubset| & 
+>$\sqsupset$\ \verb|\sqsupset| & $\neq$\ \verb|\neq| \\
+>$\propto$\ \verb|\propto| & $\sqsubseteq$\ \verb|\sqsubseteq| & 
+>$\sqsupseteq$\ \verb|\sqsupseteq| & $\doteq$\ \verb|\doteq| \\
+>$\vdash$\ \verb|\vdash| & $\dashv$\ \verb|\dashv| & 
+>$\in$\ \verb|\in| & $\ni$\ \verb|\ni| 
+>\end{tabular}\end{center}
+>\farsi
+<¢¤Ú›¢øñÚêøëÚû¤ğ‘ùÚ“¡øûşôÚ÷ìş­Úäòõ–Ú¤Ú‘”Úî÷şôÚ¥Ú¢¨—ø¤Ú\verb|\not|Úì“ñÚ¥Ú¢¨—ø¤ÚöÚäòõ–Ú¨—ê‘¢ùÚ
+<õüî÷şôÚ
+<ÒmesalŞõü¢÷şôÚ\$x\bks not\bks in X\$Ú•§Ú÷—ş›ùÚõüğş¤şôÚîùÚ\$X\bks not\bks subset Y\$×Ş
+<õü¢÷şôÚ$x\not\in X$Ú•§Ú÷—ş›ùÚõüğş¤şôÚîùÚ$X\not\subset Y$×
+>\english\begin{center}
+>\begin{tabular}{p{1.4in}p{1.4in}p{1.4in}}
+>$\int$\ \dspop{\int}\ \verb|\int| & $\bigsqcup$\ \dspop{\bigsqcup}\ \verb|\bigsqcup| & 
+>$\bigodot$\ \dspop{\bigodot}\ \verb|\bigodot| \\
+>$\oint$\ \dspop{\oint}\ \verb|\oint| & $\bigcap$\ \dspop{\bigcap}\ \verb|\bigcap| & 
+>$\bigoplus$\ \dspop{\bigoplus}\ \verb|\bigoplus| \\
+> & $\bigcup$\ \dspop{\bigcup}\ \verb|\bigcup| & 
+>$\bigotimes$\ \dspop{\bigotimes}\ \verb|\bigotimes| \\
+> & $\bigvee$\ \dspop{\bigvee}\ \verb|\bigvee| & 
+>$\biguplus$\ \dspop{\biguplus}\ \verb|\biguplus| \\
+> & $\bigwedge$\ \dspop{\bigwedge}\ \verb|\bigwedge| & 
+>$\prod$\ \dspop{\prod}\ \verb|\prod| \\
+> & $\sum$\ \dspop{\sum}\ \verb|\sum| & 
+>$\coprod$\ \dspop{\coprod}\ \verb|\coprod|
+>\end{tabular}\end{center}
+>\farsi
+<ÒsubsectionŞŸ¤øéÚşø÷‘÷ü×
+<¢¤Úî™¤Úê¤õøñû‘ıÚ¤ş‘®üÚŸ¤éÚşø÷‘÷üÚ“ùÚî‘¤Ú¤ê—ùÚ¨–ÆÚ¢¤ÚÒFarsiTeXÒÚûõùıÚŸ¤øéÚşø÷‘÷üÚ“‘Ú¢¨—ø¤û‘şüÚîùÚ
+<õã‘¢ñÚ÷‘ôÚ÷ú‘Ú¨–Ú—øóş¢Úõüªø÷¢ÆÚ
+<ÒmesalŞõŸşÁÚ¢ş¤ùıÚ“ùÚªã‘áÚ\$r\$Ú“¤“¤Ú¨–Ú“‘Ú\$2\bks pi r\$×Ş
+<õŸşÁÚ¢ş¤ùıÚ“ùÚªã‘áÚ$r$Ú“¤“¤Ú¨–Ú“‘Ú$2\pi r$×
+<¢¤Ú›¢øñÚ¥ş¤ÚûõùıÚŸ¤øéÚşø÷‘÷üÚ“‘Ú¢¨—ø¤Ú—øóş¢Úî÷÷¢ùıÚ÷ú‘Úõ¢ùÚ¨–ÆÚ
+>\english\begin{center}
+>\begin{tabular}{p{1in}p{1.2in}p{1.2in}p{1in}}
+>$\alpha$\ \verb|\alpha| & $\theta$\ \verb|\theta| & 
+> & $\tau$\ \verb|\tau| \\
+>$\beta$\ \verb|\beta| & $\vartheta$\ \verb|\vartheta| & 
+>$\pi$\ \verb|\pi| & $\upsilon$\ \verb|\upsilon|  \\
+>$\gamma$\ \verb|\gamma| & $\iota$\ \verb|\iota| & 
+>$\varpi$\ \verb|\varpi| & $\phi$\ \verb|\phi| \\
+>$\delta$\ \verb|\delta| & $\kappa$\ \verb|\kappa| & 
+>$\rho$\ \verb|\rho| & $\varphi$\ \verb|\varphi| \\
+>$\epsilon$\ \verb|\epsilon| & $\lambda$\ \verb|\lamda| & 
+>$\varrho$\ \verb|\avrrho| & $\chi$\ \verb|\chi| \\
+>$\varepsilon$\ \verb|\varepsilon| & $\mu$\ \verb|\mu| & 
+>$\sigma$\ \verb|\sigma| & $\psi$\ \verb|\psi| \\
+>$\zeta$\ \verb|\zeta| & $\nu$\ \verb|\nu| & 
+>$\varsigma$\ \verb|\varsigma| & $\omega$\ \verb|\omega| \\
+>$\eta$\ \verb|\eta| & $\xi$\ \verb|\xi| & 
+> &  \\[1ex] \hline \hline\\
+>$\Gamma$\ \verb|\Gamma| & $\Lambda$\ \verb|\Lambda| & 
+>$\Sigma$\ \verb|\Sigma| & $\Psi$\ \verb|\Psi| \\
+>$\Delta$\ \verb|\Delta| & $\Xi$\ \verb|\Xi| & 
+>$\Upsilon$\ \verb|\Upsilon| & $\Omega$\ \verb|\Omega| \\
+>$\Theta$\ \verb|\Theta| & $\Pi$\ \verb|\Pi| & 
+>$\Phi$\ \verb|\Phi| &  
+>\end{tabular}\end{center}
+>\farsi
+<ÒsubsectionŞäòõ–û‘ıÚ¢şğ¤×
+<
+<ÒparagraphŞäòôÚ•şî‘ö¢¤×
+<
+>\english
+>\begin{center}
+>\begin{tabular}{p{1.5in}p{1.7in}p{1.2in}p{1in}}
+>$\leftarrow$\ \verb|\leftarrow| & $\longleftarrow$\ \verb|\longleftarrow| & 
+>$\uparrow$\ \verb|\uparrow| \\
+>$\Leftarrow$\ \verb|\Leftarrow| & $\Longleftarrow$\ \verb|\Longleftarrow| & 
+>$\Uparrow$\ \verb|\Uparrow| \\
+>$\rightarrow$\ \verb|\rightarrow| & $\longrightarrow$\ \verb|\longrightarrow| & 
+>$\downarrow$\ \verb|\downarrow| \\
+>$\Rightarrow$\ \verb|\Rightarrow| & $\Longrightarrow$\ \verb|\Longrightarrow| & 
+>$\Downarrow$\ \verb|\Downarrow| \\
+>$\leftrightarrow$\ \verb|\leftrightarrow| & $\longleftrightarrow$\ \verb|\longleftrightarrow| & 
+>$\updownarrow$\ \verb|\updownarrow| \\
+>$\Leftrightarrow$\ \verb|\Leftrightarrow| & $\Longleftrightarrow$\ \verb|\Longleftrightarrow| & 
+>$\Updownarrow$\ \verb|\Updownarrow| \\
+>$\mapsto$\ \verb|\mapsto| & $\longmapsto$\ \verb|\longmapsto| & 
+>$\nearrow$\ \verb|\nearrow| \\
+>$\hookleftarrow$\ \verb|\hookleftarrow| & $\hookrightarrow$\ \verb|\hookrightarrow| & 
+>$\searrow$\ \verb|\searrow| \\
+>$\leftharpoonup$\ \verb|\leftharpoonup| & $\rightharpoonup$\ \verb|\rightharpoonup| & 
+>$\swarrow$\ \verb|\swarrow| \\
+>$\leftharpoondown$\ \verb|\leftharpoondown| & $\rightharpoondown$\ \verb|\rightharpoondown| & 
+>$\nwarrow$\ \verb|\nwarrow| \\
+> &  & $\leadsto$\ \verb|\leadsto| 
+>\end{tabular}\end{center}
+>\farsi
+<ÒparagraphŞ—ø“âÚª“ùÚóğ‘¤ş—õü×
+>\english
+>\begin{center}
+>\begin{tabular}{p{.3in}p{.7in}p{.3in}p{.7in}p{.3in}p{.7in}p{.3in}p{.7in}}
+>$\csc$ & \verb|\csc| & $\cot$ & \verb|\cot| & 
+>$\coth$ & \verb|\coth| & $\limsup$ & \verb|\limsup| \\
+>$\deg$ & \verb|\deg| & $\det$ & \verb|\det| & 
+>$\dim$ & \verb|\dim| & $\liminf$ & \verb|\liminf| \\
+>$\exp$ & \verb|\exp| & $\gcd$ & \verb|\gcd| & 
+>$\hom$ & \verb|\hom| & &  \\
+>$\inf$ & \verb|\inf| & $\ker$ & \verb|\ker| & 
+>$\lim$ & \verb|\lim| & & \\
+>$\ln$ & \verb|\ln| & $\lg$ & \verb|\lg| & 
+>$\log$ & \verb|\log| & & \\
+>$\min$ & \verb|\min| & $\max$ & \verb|\max| & 
+>$\Pr$ & \verb|\Pr| & & \\
+>$\sec$ & \verb|\sec| & $\sin$ & \verb|\sin| & 
+>$\sinh$ & \verb|\sinh| & $\arcsin$ & \verb|\arcsin| \\
+>$\arg$ & \verb|\arg| & $\cos$ & \verb|\cos| & 
+>$\cosh$ & \verb|\cosh| & $\arccos$ & \verb|\arccos| \\
+>$\sup$ & \verb|\sup| & $\tan$ & \verb|\tan| & 
+>$\tanh$ & \verb|\tanh| & $\arctan$ & \verb|\arctan| 
+>\end{tabular}\end{center}
+>\farsi
+<ÒsubsectionŞ—øöÚøÚ÷¢ş§×
+<“¤ıÚşöÚîùÚä¢¢Úş‘ÚŸ¤êüÚ¤Ú¢¤Ú—øöÚ•‘şùıÚì¤¤Ú¢ûşôÚ¥Úäòõ–Ú\^Ú¨—ê‘¢ùÚõüªø¢Æ
+<·ÒmesalŞ\$x\^\,2=4\$×ÚŞ$x^2=4$×
+<şöÚäòõ–Ú—÷ú‘Ú÷øş¨ùıÚ•§Ú¥Ú¡ø¢Ú¤Ú¢¤Ú—øöÚ÷øş¨ùÚì“ñÚ¥Ú¡ø¢Úì¤¤Úõü¢û¢Æ
+<·ÒmesalÚŞ\$x\^23=4\$×Ş$x^23=4$×
+<ğ¤Úò¥ôÚ“‘ª¢Ú“ş©Ú¥ÚşíÚ÷øş¨ùÚ¤Ú¢¤Ú—øöÚì¤¤Ú¢ûşôÚ“‘ş¨—üÚöÚ÷øş¨ùû‘Ú¤ÚÚ¢¡ñÚÒŞÚÒ×Úì¤¤Ú¢ûşôÆ
+<ÒmesalŞ
+<\$x\^\,2=4\$ÒbksÚparÒÒ
+<\$x\^\,23=4\$ÒbksÚparÒÒ
+<\$x\^\{23\}=4\$×
+<Ş$x^2=4$ÒÒ
+<$x^23=4$ÒÒ
+<$x^{23}=4$×
+<“¤ıÚğ£ª—öÚ$'$Ú¾äòõ–Ú•¤şô½Ú÷ş‘¥ıÚ“ùÚäòõ–Ú—øöÚ÷ş¨–Æ
+<ÒmesalŞ\$x'+x''=x'''\$×
+<Ş$x'+x''=x'''$×
+<“¤ıÚ÷¢ş§Ú¥Úäòõ–Ú\_Ú¾underline½Ú¨—ê‘¢ùÚõüªø¢ÆÚ¢¤Ú“ìşùÚõø¤¢Úõª‘“ùÚ—øöÚ¨–Æ
+<ÒmesalŞÚ\$x\_2=4\$ÒbksÚparÒÒ
+<\$x\_23=4\$ÒbksÚparÒÒ
+<\$x\_\{23\}=4\$×
+<Ş$x_2=4$ÒÒ
+<$x_23=4$ÒÒ
+<$x_{23}=4$×
+<—øóş¢Ú—øöÚøÚ÷¢ş§Ú“‘ÚûôÚ“¤ıÚşíÚ÷øş¨ùŠÚõª‘“ùÚ—øöÚøÚ÷¢ş§Ú“ùÚ—÷ú‘şüÚ¨–ÆÚ
+<ÒmesalŞ\$x\_\{12\}\^\,\{2\}=8\$×
+<Ş$x_{12}^{2}=8$×
+<ÒsubsubsectionÈŞ—øöÚøÚ÷¢ş§Ú÷¢Ú¨¯¤ı×
+<
+<ÒmesalŞÒbeginŞflushright×
+<\$\$ÒÒ
+<\bks sum\_\{i=1\bks atop\{j=1\}\}ÒÒ
+< \^\,\{j=n\bks atop\{i=m\}\}f(i,j)ÒÒ
+<\$\$
+<ÒendŞflushright×Ú×
+<Ş
+>$$\sum_{i=1 \atop{j=1}}^{j=n \atop{i=m}}f(i,j)$$
+<×
+<ş‘ÚşöÚõ™‘ñÚ•şş¢ù—¤Ú
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<\$\$ÒÒ
+<\bks sum\_\{i=1\bks atop\{j=1\bks\ttt{atop\{}k=1\}\}\}\^\,
+<\{k=K\bks atop\{j=n\bks\ttt{atop\{}i=m\}\}\}a\_\{ij\}\^\,kÚÒÒ
+<\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>\sum_{i=1 \atop{j=1\atop{k=1}}}^{k=K \atop{j=n\atop{i=m}}}a_{ij}^{k}
+>$$
+<×
+<ÒsubsectionŞê‘¬óùğ£¤ıÚ¢¤Úê¤õøñ×Ú
+<¢¤Úê¤õøñ÷øş¨üÚ¢¤ÚŸ‘ó–Úä‘¢ıÚê‘¬óùû‘Ú¢¤Ú÷à¤Úğ¤ê—ùÚ÷õüªø÷¢ÆÚ“¤ıÚş›‘¢Úê‘¬óùÚ¥Ú¢¨—ø¤û‘Úõü—øöÚ
+<¨—ê‘¢ùÚî¤¢Æ
+<ÒbeginŞcenter×
+<ÒbeginŞtabular×ŞĞ|r|r|Ğ×ÒhlineÚ
+<îóõùÚî÷—¤óüÚ¸Úäòõ–Úî÷—¤óüÚÒÒÒhlineÚ
+<\verb|\thinspace|Ú¸Ú\verb|\,|ÒÒÚÒhlineÚ
+<ÒÚÚ¸Ú\verb|\|\verb*| |ÚÚÒÒÚÒhlineÚ
+<·\verb|\thickspace|Ú¸ÚÒÚÒÒÚÒhlineÚ
+<\verb|\negthinspace|Ú¸ÚÒÚÒÒÚÒhlineÚ
+<·\verb|\negthickspace|Ú¸ÚÒÚÒÒÚÒhlineÚ
+<·\verb|\negmedspace|Ú¸ÚÒÚÒÒÚÒhlineÚ
+<\verb|\quad|Ú¸ÚÒÚÒÒÚÒhlineÚ
+<\verb|\qquad|Ú¸ÚÒÚÒÒÚÒhlineÚ
+<ÒendŞtabular×
+<ÒendŞcenter×
+<ÒmesalŞÚ
+<\$xx\$ÚÒÒ
+<\$x\bks,x\$ÚÒbksÒbksÚÚÒÒ
+<\$x\bks\ x\$ÚÒbksÒbksÚÒÒ
+<·\$x\bks thickspace x\$ÒbksÒbksÚÚÒÒ
+<\$x\bks\ttt{negthinspace} x\$ÚÒbksÒbksÚÚÒÒ
+<·\$x\bks negthickspace x\$ÒbksÒbksÚÚÒÒ
+<·\$x\bks negmedspace x\$ÒbksÒbksÚÚÒÒ
+<\$x\bks\ttt{quad} x\$ÒbksÒbksÚÚÒÒ
+<\$x\bks\ttt{qquad} x\$Ú
+<×Ú
+<Ş$xx$ÚÒÒ
+<$x\,x$ÚÚÚÒÒ
+<$x\ x$ÚÚÒÒ
+<·$x\thickspace x$ÚÚÒÒ
+<$x\negthinspace x$ÚÚÒÒ
+<·$x\negthickspace x$ÚÚÒÒ
+<·$x\negmedspace x$ÚÚÒÒ
+<$x\quad x$ÚÚÒÒ
+<$x\qquad x$
+<×
+<ÒsubsectionŞ¨ùÚ÷ì¯ù×
+<Ú\verb|\ldots|ÚøÚ\verb|\cdots|Ú“¤ıÚş›‘¢Ú¨ùÚ÷ì¯ùÚ¢¤Úê¤õøñû‘Úî‘¤Úõü¤ø÷¢ÆÚ¾ó“—ùÚ¥Ú
+<Ú\verb|\ldots|Ú¢¤Úõ—öÚõãõøóüÚûôÚ¨—ê‘¢ùÚõüªø¢Æ½Ú
+<
+<õãõøò³Ú“ã¢Ú¥Úäõóğ¤û‘ıÚ¢ø—‘şüÚ¾õ™ñÚ$+$ŠÚ$-$ÚøÚÒldotsÒÚ½ÚøÚäõóğ¤û‘ıÚ¤“¯ùıÚ¾õ™ñÚ$>$ŠÚ$<$ÚøÚ
+<ÒldotsÒÚ½ÚøÚäõóğ¤û‘ıÚ¤ş‘®üÚ¾õ™ñÚäòõ–û‘ıÚ$\int$ŠÚ$\sum$ÚøÚÒldotsÒÚ½Ú¥Ú\verb|\cdots|Ú¨—ê‘¢ùÚ
+<õüªø¢ÚøÚ¢¤Ú¢şğ¤Úõø¤¢Ú¥Ú\verb|\ldots|Ú¨—ê‘¢ùÚõüªø¢Æ
+<ÒmesalŞ
+<\$x\_\{1\}+x\_\{2\}+\bks\ttt{cdots}+x\_\{n\}\$ÚÒbksÚÒbksÚÒÒ
+<\$F(x\_\{1\},x\_\{2\},\bks\ttt{ldots},x\_\{n\})=0\$×
+<Ş$x_{1}+x_{2}+\cdots+x_{n}$ÚÒÒ
+<$F(x_{1},x_{2},\ldots,x_{n})=0$×
+<ÒsectionŞõ™‘ñû‘ÚøÚ—ø®şŸ‘–Ú“şª—¤Ú¢¤“‘¤ùıÚê¤õøñû‘ıÚ¤ş‘®ü×
+<ÒmesalŞ
+<¢¤Ú¤ş‘®üÚäõøõüŠÚ“‘¥ùû‘Ú¤Ú“ùÚ¬ø¤–Ú\$(u,v)\$ÚøÚ\$(u,\bks\ttt{infty})\$Ú—ã¤şéÚõüî÷şôÆÚ÷şöÚ
+<“‘¥ùıÚşíÚûõ¨‘şğüÚ¥Ú\$a\$Ú¨–Úğ¤Ú\$a\$Úõ—ãóëÚ“ùÚşöÚ“‘¥ùÚ“‘ª¢ÆÚ¢÷ª›øÚ“‘ş¢Ú—ø›ùÚ¢ª—ùÚ“‘ª¢Ú
+<îùÚ\$\bks\ttt{infty}\$Ú¬¤ê‘³ÚşíÚäòõ–Ú¨–Ú÷ùÚşíÚä¢¢ÆÚ—ø›ùÚ“ùÚşöÚ÷î—ùÚ“¨ş‘¤ÚŸ‘¥Úûõş–Ú¨–ÚøöÚ
+<¡şóüÚ¥ø¢Úõê‘ûşõüÚøöÚ\$\bks\ttt{lim}\_\{x\bks\ttt{to}\bks\ttt{infty}\}f(x)\$Ú¤Úõã¤êüÚõüî÷şôÆÚ
+<ÒbksÚ\ttt{par}Úû÷ğ‘õüÚîùÚõª—ëÚ¤Úõã¤êüÚõüî÷şôÚÒbeginŞflushright×Ú
+<\$\$ÚÒÒ
+<Ú\bks\ttt{lim}\_\{x\bks\ttt{to}\bks\ttt{infty}\}ÚÒÒ
+<Ú\bks\ttt{frac}\{f(x)-f(a)\}\{x-a\}ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×Úê¤­Úõüî÷şôÚîùÚ—‘“âÚ\$f\$Ú¢¤ÚşíÚûõ¨‘şğüÚ¥Ú\$a\$Ú—ã¤şéÚª¢ùÚøÚ•şø¨—ùÚ“‘ª¢Æ×
+<Ş
+<¢¤Ú¤ş‘®üÚäõøõüŠÚ“‘¥ùû‘Ú¤Ú“ùÚ¬ø¤–Ú$(u,v)$ÚøÚ$(u,\infty)$Ú—ã¤şéÚõüî÷şôÆÚ÷şöÚ
+<“‘¥ùıÚşíÚûõ¨‘şğüÚ¥Ú$a$Ú¨–Úğ¤Ú$a$Úõ—ãóëÚ“ùÚşöÚ“‘¥ùÚ“‘ª¢ÆÚ¢÷ª›øÚ“‘ş¢Ú—ø›ùÚ¢ª—ùÚ“‘ª¢Ú
+<îùÚ$\infty$Ú¬¤ê‘³ÚşíÚäòõ–Ú¨–Ú÷ùÚşíÚä¢¢ÆÚ—ø›ùÚ“ùÚşöÚ÷î—ùÚ“¨ş‘¤ÚŸ‘¥Úûõş–Ú¨–ÚøöÚ
+<¡şóüÚ¥ø¢Úõê‘ûşõüÚøöÚ$\lim_{x\to\infty}f(x)$Ú¤Úõã¤êüÚõüî÷şôÆÚ
+<ÒparÚû÷ğ‘õüÚîùÚõª—ëÚ¤Úõã¤êüÚõüî÷şôÚÚ
+>$$
+>\lim_{x\to\infty}Ú
+>\frac{f(x)-f(a)}{x-a}Ú
+>$$Ú
+<ê¤­Úõüî÷şôÚîùÚ—‘“âÚ$f$Ú¢¤ÚşíÚûõ¨‘şğüÚ¥Ú$a$Ú—ã¤şéÚª¢ùÚøÚ•şø¨—ùÚ“‘ª¢Æ
+<×
+<
+<ğ¤Ú“¡øûşôÚ¥Úäòõ–û‘ıÚ$\cdot$Úş‘Ú$\times$Ú“¤ıÚ®¤’Ú¨—ê‘¢ùÚî÷şôÚ“ùÚ—¤—ş’Ú¥Ú¢¨—ø¤û‘ıÚ
+<Ú\verb|\cdot|ÚøÚ\verb|\times|Ú¨—ê‘¢ùÚõüî÷şôÆÚ
+<ÒmesalŞ
+<Ú\$(a\bks\ttt{cdot} b)(a\bks\ttt{times} b)\$
+<×Ş
+<Ú$(a\cdot b)(a\times b)$
+<×
+<
+<ÒparagraphŞî¨¤×Ú¤Ú“‘Ú¢¨—ø¤Ú\verb|\frac{}{}|ÚîùÚ¬ø¤–Úî¨¤Ú¤Ú“ùÚä÷øöÚ¤ğøõ‘öÚøñÚøÚõ¡¤šÚöÚ¤Ú“ùÚä÷øöÚ
+<¤ğøõ‘öÚ¢øôÚõüø¤şôÆÚ
+<ÒmesalŞ
+<ÒleftlineŞ\$\$\bks\ttt{frac}\{a+b\}\{c+d\}\$\$×
+<×Ş
+>$$\frac{a+b}{c+d}$$
+<×
+<
+<ÒparagraphŞ®¤ş’Ú¢ø›õóùı×Ú¤Ú“‘Ú¢¨—ø¤Ú\verb|{ \choose }|Ú—øóş¢Úõüî÷şôÆÚ
+<ÒmesalŞ
+<ÒleftlineŞ\$\$\{n\bks\ttt{choose} r\}=\bks\ttt{frac}\{n!\}\{r!(n-r)!\}\$\$×
+<×Ş
+>$${n\choose r}=\frac{n!}{r!(n-r)!}$$
+<×
+<ÒparagraphŞûô¤¥ı×Úõ—¢øñ—¤şöÚªîñÚûô¤¥ıÚ“ùÚ¬ø¤–Ú¥ş¤Ú¨–Ú
+<ÒmesalŞ
+<Ú\$a\bks\ttt{equiv} v\bks\ttt{pmod}\{\bks\ttt{theta}\}\$
+<×Ş
+<Ú$a\equiv v\pmod{\theta}$
+<×
+<ÒparagraphŞõŸ¢ø¢Úî÷÷¢ùû‘×Ú•¤÷—¥ÚøÚî¤øªùÚ÷õø÷ùû‘şüÚ¥ÚõŸ¢ø¢Úî÷÷¢ùû‘Úû¨—÷¢ŠÚîùÚ“¤ıÚõŸ¢ø¢Úî¤¢öÚ
+<ì¨õ—üÚ¥ÚşíÚê¤õøñÚ“ùÚî‘¤Úõü¤ø÷¢ÆÚ
+<ÒmesalŞ
+<Ú\$[(a*b)+(c*d)]\^\,2\$
+<×Ş
+<Ú$[(a*b)+(c*d)]^2$
+<×
+<õŸ¢ø¢Úî÷÷¢ùû‘Ú¤Úõü—øöÚ÷ì¢¤Ú“¥¤ïÚî¤¢Ú—‘ÚşíÚê¤õøñÚ¤Ú“ùÚ¯ø¤Úî‘õñÚŸ‘¯ùÚî÷÷¢ÆÚ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\bks\ttt{left}(\bks\ttt{frac}\{1+x\}ÚÒÒ
+<Ú\{2+y\^\,2\}\bks\ttt{right})\^\,2ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>\left(\frac{1+x}{2+y^2}\right)^2
+>$$
+<×
+<¢¨—ø¤û‘ıÚ\verb|\left|ÚøÚ\verb|\right|Ú“ùÚÒFarsiTeXÚõüêúõ‘÷÷¢ÚîùÚ÷¢¥ùıÚ•¤÷—¥û‘Ú¤Ú¢¤¨–Ú÷—¡‘’Ú
+<î÷¢Ú¾“¨—ùÚ“ùÚ÷¢¥ùıÚ÷õ‘¢û‘şüÚîùÚ¢¡ñÚ•¤÷—¥û‘Ú“ùÚî‘¤Ú“¤¢ùÚª¢ùÚ¨–Æ½
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\bks\ttt{left}$|$\bks\ttt{frac}\{a+b\}\{2\}\bks\ttt{right}$|$ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×Ú
+<ş‘Ú
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\bks\ttt{left}\bks$|$A\^\,2\bks\ttt{right}\bks$|$\bks\tt{leq} 1ÚÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×Ú
+<×Ş
+>$$
+>\left|\frac{a+b}{2}\right|
+>$$
+<ş‘Ú
+>$$
+>\left\|A^2\right\|\leq 1
+>$$
+<×
+<ÒparagraphŞ÷—ğ¤ñ×Ú¢¨—ø¤Ú÷—ğ¤ñÚ\verb|\int|Ú¨–ÆÚŸ¢Ú•‘şşöÚ“ùÚ¬ø¤–ÚşíÚ÷¢ş§ÚøÚŸ¢Ú“‘òÚ“ùÚ¬ø¤–Ú
+<şíÚ—øöÚõª¡«Úõüªø÷¢ÆÚ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<ÚÚ\bks\ttt{int}\_\{-1\}\^\,\{1\}\bks\ttt{sqrt}ÒÒ
+<Ú\{1-x\^\,2\}\bks,dx=\bks\ttt{frac}\{\bks\ttt{pi}\}\{2\}ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>\int_{-1}^{1}\sqrt{1-x^2}\,dx=\frac{\pi}{2}
+>$$
+<×
+<ÒparagraphŞî¨‘÷–û‘ıÚ¤ş‘®ü×Úõ—¢øñ—¤şöÚî¨‘÷–û‘ıÚ¤ş‘®üŠÚú‘¤Úî¨‘÷–Ú¥ş¤Úõü“‘ª÷¢ÆÚ
+<ÒmesalŞ
+<Ú\$\bks\ttt{bar}\{a\}\$ÚÚøÚ
+<Ú\$\bks\ttt{hat}\{a\}\$ÚøÚ
+<Ú\$\bks\ttt{tilde}\{a\}\$ÚÚøÚ
+<Ú\$\bks\ttt{vec}\{a\}\$Ú
+<×Ş
+<Ú$\bar{a}$ÚøÚ
+<Ú$\hat{a}$ÚøÚ
+<Ú$\tilde{a}$ÚøÚ
+<Ú$\vec{a}$Ú
+<×
+<ÒparagraphŞõ‘—¤ş§û‘×Úõ‘—¤ş§û‘Ú¤Úõü—øöÚ¢¤ÚõŸşÁÚ¤şùÚ—øóş¢Úî¤¢ÆÚ¤şùÚõŸş¯üÚ¨–ÚîùÚ¢¤Úê¤õøñû‘ıÚ
+<¤ş‘®üÚ¨—ê‘¢ùÚõüªø¢ÚøÚ¨‘¡—‘¤ÚöÚª“‘û–Ú¥ş‘¢ıÚ“ùÚ›¢øñû‘Ú¢¤¢Æ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\bks\ttt{begin\{array\}\{cccc\}}ÚÒÒ
+<ÚÚa+b+c \& uv \& x-y \& 27 \bks\bksÚÒÒ
+<ÚÚa+b \& u+v \& z \& 134ÚÒÒ
+<ÚÚ\bks\ttt{end\{array\}}ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>\begin{array}{cccc}
+>a+b+c & uv & x-y & 27 \\
+>a+b & u+v & z & 134
+>\end{array}
+>$$
+<×
+<îùÚ¤ğøõ‘öû‘ıÚò¥ôÚª‘õñÚşîüÚ¥ÚŸ¤øéÚ\ttt{c}Ú¾ø¨Áşö½ŠÚ\ttt{l}Ú¾”şö½Úş‘Ú\ttt{r}Ú¾¤¨–şö½Ú“¤ıÚû¤Ú
+<¨—øöÚõü“‘ª¢ÆÚ¢¤Úõ™‘ñÚ¡ş¤ÚûõùıÚ¨—øöû‘Úø¨ÁşöÚª¢ù÷¢Æ
+<
+<“¤ıÚ—øóş¢Úõ‘—¤ş§Ú¢øÚ¢¨—ø¤Ú\verb|\matrix|ÚøÚ\verb|\pmatrix|ÚûôÚø›ø¢Ú¢¤÷¢ÚîùÚ÷ú‘Ú¤Ú“‘Úõ™‘ñÚ
+<—ø®şÚõü¢ûşôÚ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<ÚA=\bks\ttt{pmatrix\{}a+b+c \& uv \bks\ttt{cr}ÚÒÒ
+<Úa+b \& u+v \}ÚÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<øÚ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\bks\ttt{matrix\{}a+b+c \& uv \bks\ttt{cr}ÚÒÒ
+<Úa+b \& u+v \}ÚÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>A=\pmatrix{a+b+c & uv \cr
+>a+b & u+v}
+>$$
+<øÚ
+>$$
+>\matrix{a+b+c & uv \cr
+>a+b & u+v}
+>$$
+<×
+<ÒparagraphŞ¤şªùû‘×Ú¢¨—ø¤Ú\verb|\sqrt|Ú¤şªùÚ¢øôÚ¤Ú—øóş¢Úõüî÷¢ÆÚ
+<ÒmesalŞ
+<Ú\$\bks\ttt{sqrt}\{a+2b\}\$
+<×Ş
+<Ú$\sqrt{a+2b}$
+<×
+<“¤ıÚ¤şªùıÚ$n$ÒŠ‹‹ÒŠôÚì¨õ–Ú¡—ş‘¤ıÚ¢¨—ø¤Ú\verb|\sqrt|Ú¤Ú“‘ş¢Ú“ş‘ø¤şôÆÚ
+<ÒmesalŞ
+<Ú\$\bks\ttt{sqrt}[k-1]\{x\^\,k-a\}\$
+<×Ş
+<Ú$\sqrt[k-1]{x^k-1}$
+<×
+<ÒparagraphŞõ—ö×Ú“‘Ú¨—ê‘¢ùÚ¥Ú¢¨—ø¤Ú\verb|\mbox|Úõü—øöÚ¢¤Úê¤õøñû‘¾ıÚ›óøùÚş‘ê—ù½Úõ—öÚ®‘êùÚ÷õø¢Æ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\}¯“ëÚê¤­a=b\bks\ttt{quad}\bks\ttt{mbox\{}ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>a=b\quad\mbox{¯“ëÚê¤­}
+>$$
+<×
+<—ø›ùÚ¢ª—ùÚ“‘ªş¢ÚîùÚğ¤Ú“¡øûşôÚõ—öÚ¤Ú¢¤Ú›‘şüÚø¤¢Úî÷şôÚîùÚ÷¢¥ùıÚöÚ÷¢¥ùıÚõãõøóüÚ÷ş¨–Ú
+<¾õ™ò³Ú¢¤Ú—øöÚş‘Ú÷¢ş§½Ú“‘ş¢Ú÷¢¥ùıÚöÚ¤Ú¡ø¢õ‘öÚ—çşş¤Ú¢ûşôÆÚ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<Ú\}\}—øöA\^\,\{\bks\ttt{mbox\{\bks{scriptsize}}ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>A^{\mbox{\scriptsize—øöÚ}}
+>$$
+<×
+<“¤ıÚ÷øª—öÚõ—öÚ÷ğóş¨üÚ¢¤Úê¤õøñû‘ŠÚ“‘ş¢Úõ—öÚ÷ğóş¨üÚ¤Ú“şöÚ¢øÚ¢¨—ø¤Ú\verb|\InE{}|ÚøÚ
+<Ú\verb|\EnE{}|Úì¤¤Ú¢ûşôÆÚ
+<ÒmesalŞ
+<ÒbeginŞflushright×
+<Ú\$\$ÚÒÒ
+<ÚA=X\bks\ttt{quad}ÚÒÒ
+<Ú\}¯“ëÚóôÚ\bks\ttt{mbox\{\bks{InE\{\}Fatou\bks{EnE\{\}}}}ÚÒÒ
+<Ú\$\$
+<ÒendŞflushright×
+<×Ş
+>$$
+>A=X\quad\mbox{\InE{}Fatou\EnE{} ¯“ëÚóô}
+>$$
+<×

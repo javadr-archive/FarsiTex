@@ -1,0 +1,40 @@
+\DeclareFontFamily{OT1}{f456}{}
+
+\DeclareFontShape{OT1}{f456}{m}{n}{ 
+   <-> farsi456
+}{}
+\DeclareFontShape{OT1}{f456}{m}{sc}{
+   <-> ssub * farsi456/m/n
+}{}
+\DeclareFontShape{OT1}{f456}{m}{it}{
+   <-> ssub * farsi456/m/n
+}{}
+\DeclareFontShape{OT1}{f456}{m}{sl}{
+   <-> ssub * farsi456/m/n
+}{}
+\DeclareFontShape{OT1}{f456}{m}{itsc}{
+   <-> ssub * farsi456/m/n
+}{}
+\DeclareFontShape{OT1}{f456}{m}{slsc}{
+   <-> ssub * farsi456/m/n
+}{}
+\DeclareFontShape{OT1}{f456}{bx}{n}{
+   <-> farsi456b
+}{}
+\DeclareFontShape{OT1}{f456}{bx}{sc}{
+   <-> ssub * farsi456/bx/n
+}{}
+\DeclareFontShape{OT1}{f456}{bx}{it}{
+   <-> ssub * farsi456/bx/n
+}{}
+\DeclareFontShape{OT1}{f456}{bx}{itsc}{
+   <-> ssub * farsi456/bx/n
+}{}
+\DeclareFontShape{OT1}{f456}{bx}{sl}{
+   <-> ssub * farsi456/bx/n
+}{}
+\DeclareFontShape{OT1}{f456}{bx}{slsc}{
+   <-> ssub * farsi456/bx/n
+}{}
+
+\endinput

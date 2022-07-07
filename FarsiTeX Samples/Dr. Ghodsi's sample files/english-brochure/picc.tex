@@ -1,0 +1,26 @@
+\newbox\piccbox
+\newdimen\piccw
+\font\picca=picca at 57.816truept
+\font\piccb=piccb at 57.816truept
+\font\piccc=piccc at 57.816truept
+\font\piccd=piccd at 57.816truept
+\font\picce=picce at 57.816truept
+\font\piccf=piccf at 57.816truept
+\font\piccg=piccg at 57.816truept
+\font\picch=picch at 57.816truept
+\font\picci=picci at 57.816truept
+\font\piccj=piccj at 57.816truept
+\setbox\piccbox=\vbox{\hbox{%
+\picca\char0\char1\piccb\char0\char1\piccc\char0}}
+\piccw=\wd\piccbox
+\setbox\piccbox=\hbox{\vbox{\hsize=\piccw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picca\char0\char1\piccb\char0\char1\piccc\char0}
+\hbox{\piccc\char1\piccd\char0\char1\picce\char0\char1}
+\hbox{\piccf\char0\char1\piccg\char0\char1\picch\char0}
+\hbox{\picch\char1\picci\char0\char1\char2\piccj\char0}}}
+\ifx\parbox\undefined
+    \def\setpicc{\box\piccbox}
+\else
+    \def\setpicc{\parbox{\wd\piccbox}{\box\piccbox}}
+\fi

@@ -1,0 +1,104 @@
+This is Omega, Version 3.141592-1.23.2.3 (Web2C 7.5.4) (format=lambda 2006.4.27)
+27 JAN 2008 22:55
+Copyright (c) 1994--2000 John Plaice and Yannis Haralambous
+**fandoc.tex
+(fandoc.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for english, spanish, russian, greek, in
+uit, dumylang, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (faanoos.sty
+Package: faanoos 2002/10/20 faanoos Transliteration for Persian Unicode Text
+
+(/usr/share/texmf/tex/lambda/base/omega.sty
+LaTeX Info: Redefining \ttfamily on input line 15.
+
+(/usr/share/texmf/tex/plain/omega/grlccode.tex
+Greek lccodes...
+)) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+LaTeX Font Info:    Try loading font information for OT1+f456 on input line 85.
+
+ (ot1f456.fd)) (poem.sty
+2004/09/27 Environments for Setting Persian Poetry
+\versewidth=\dimen103
+\verse@i=\box26
+\verse@ii=\box27
+\c@poem@no=\count87
+) (/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count88
+\calc@Bcount=\count89
+\calc@Adimen=\dimen104
+\calc@Bdimen=\dimen105
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count90
+) (fandoc.aux)
+\openout1 = `fandoc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+omlgc on input line 15
+.
+
+(/usr/share/texmf/tex/lambda/base/ot1omlgc.fd)
+LaTeX Font Info:    Try loading font information for OT1+omarb on input line 15
+.
+
+(/usr/share/texmf/tex/lambda/base/ot1omarb.fd)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+ (hafez.tex [1]) (fatiha.tex
+Missing character: There is no ^^^^0653 in font omarab!
+)
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+
+ []
+
+[2] (fandoc.aux) ) 
+Here is how much of Omega's memory you used:
+ 643 strings out of 28489
+ 7187 string characters out of 1183432
+ 521542 words of memory out of 2000000
+ 534 multiletter control sequences out of 65536
+34 fonts 262 hyphenation exceptions out of 1000
+ 30i,7n,18p,3416b,365s stack positions out of 1500i,400n,600p,200000b,5000s
+
+Output written on fandoc.dvi (2 pages, 335192 bytes).

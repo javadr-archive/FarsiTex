@@ -1,0 +1,9 @@
+This is e-TeX, Version 3.14159-2.1 (MiKTeX 2) (preloaded format=etex 2007.6.18)  18 JUN 2007 19:59
+entering extended mode
+**&farsitex SOURCEFTEX
+(SOURCEFTEX.tex
+! Undefined control sequence.
+l.1 \documentstyle
+                  [farsi,ffancyhe,fancybox,adad]{report}
+? x
+No pages of output.

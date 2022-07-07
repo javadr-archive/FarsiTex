@@ -1,0 +1,198 @@
+%%
+%%  This file is a part of FarsiTeX, a Persian/English typesetting system.
+%%
+%%  Copyright (C) 1996 Hassan Abolhassani
+%%  Copyright (C) 1996-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%%
+%%  FarsiTeX is free software; you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation; either version 2 of the License, or
+%%  (at your option) any later version.
+%%
+%%  FarsiTeX is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%
+%%  You should have received a copy of the GNU General Public License
+%%  along with FarsiTeX; if not, write to the Free Software
+%%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%%  USA.
+%%
+%%  Any licensing or usage questions should be directed to Roozbeh
+%%  Pournader <roozbeh@sharif.edu>.
+%%
+
+\def\filename{farsi.sty}
+\def\fileversion{0.51beta}
+\def\filedate{29 December 2000}
+\typeout{Farsi style, R. Pournader and H. Abolhassani, The FarsiTeX Project Group.}
+\typeout{Version \fileversion, \filedate}
+
+\begingroup \newlinechar`\/
+\expandafter\ifx\csname FarsiTeX\endcsname\relax
+\errmessage{%[A
+  Non-FarsiTeX format file; \filename\space can only be used with FarsiTeX./%
+! Enter h if you need more information%
+}
+\aftergroup\stop
+\fi
+\endgroup
+
+% This is needed for e-TeX. --RP
+% Added: 14 May 1998
+
+\TeXXeTstate=1
+
+% Here is some changes that should be executed after reading
+% the main style file. (e.g., article.sty)
+
+\def\@biblabel#1{[#1]}
+\def\l@section{\noindent\@dottedtocline{1}{1.5em}{2.3em}}
+\def\l@figure{\noindent\@dottedtocline{1}{1.5em}{2.3em}}
+\let\l@table\l@figure
+
+\pagenumbering{arabic}
+
+\def\labelenumi{\if@farsi\beginL(\arabic{enumi}\endL\else%
+\arabic{enumi}.\fi}
+\def\theenumi{\beginL{\arabic{enumi}}\endL}
+\def\labelenumii{%
+\if@farsi)\alph{enumii}(%
+\else
+(\alph{enumii})\fi%
+}%
+\def\theenumii{\alph{enumii}}
+\def\p@enumii{\theenumi}
+\def\labelenumiii{%
+\beginL\roman{enumiii}.\endL
+}
+\def\theenumiii{\beginL\roman{enumiii}\endL}
+\def\p@enumiii{\beginL\theenumi(\theenumii)\endL}
+\def\labelenumiv{\beginL\Alph{enumiv}.\endL}
+\def\theenumiv{\beginL\Alph{enumiv}\endL}
+\def\p@enumiv{\beginL\p@enumiii\theenumiii\endL}
+
+\def\descriptionlabel#1{\hspace\labelsep \bf #1}
+\def\description{\list{}{\labelwidth\z@ \itemindent-
+ \if@farsi\rightmargin\else\leftmargin\fi
+ \let\makelabel\descriptionlabel}}
+\let\enddescription\endlist
+
+\def\verse{\let\\=\@centercr
+\if@farsi
+ \list{}{\itemsep\z@ \itemindent -1.5em
+ \listparindent \itemindent
+ \leftmargin\rightmargin\advance\rightmargin 1.5em}\item[]
+\else
+ \list{}{\itemsep\z@ \itemindent -1.5em
+ \listparindent \itemindent
+ \rightmargin\leftmargin\advance\leftmargin 1.5em}\item[]
+ \fi}
+\let\endverse\endlist
+
+\def\quotation{\list{}{\listparindent 1.5em
+ \itemindent\listparindent
+  \if@farsi
+    \leftmargin\rightmargin
+  \else
+    \rightmargin\leftmargin
+  \fi
+  \parsep 0pt plus 1pt}\item[]}
+\let\endquotation=\endlist
+
+\def\quote{\list{}{\if@farsi\leftmargin\rightmargin
+\else\rightmargin\leftmargin\fi}\item[]}
+\let\endquote=\endlist
+
+\long\def\@makecaption#1#2{
+ \vskip 10pt
+ \setbox\@tempboxa\hbox{#1: #2}
+ \ifdim \wd\@tempboxa >\hsize \if@farsi\beginR\fi#1: #2\par%
+ \else \hbox
+to\hsize{\if@farsi\beginR\fi\hfil\box\@tempboxa\hfil%
+\if@farsi\endR\fi}
+ \fi}
+
+\let\oldps@headings\ps@headings
+\let\oldps@myheadings\ps@myheadings
+\def\ps@headings{%
+   \def\sl{\khabide}
+   \oldps@headings
+   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+   \def\@oddhead{\beginR\tempodd\endR}\fi
+   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+   \def\@evenhead{\beginR\tempeven\endR}\fi
+}
+
+\def\ps@myheadings{%
+   \def\sl{\khabide}
+   \oldps@myheadings
+   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+   \def\@oddhead{\beginR\tempodd\endR}\fi
+   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+   \def\@evenhead{\beginR\tempeven\endR}\fi
+}
+\pagenumbering{farsifoo}
+\ifx\@empty\@oddhead\else\pagestyle{headings}\fi
+
+\def\@outputdblcol{\farsioutputdblcol}
+
+\advance\textheight by -10\baselineskip
+
+%% added to solve reference problem (13 Aug 1998) --RP
+\def\ref#1{\beginR\pnazok\oldref{#1}\endR}
+
+%% added to solve tabular* problem (24 Oct 1998) --RP
+\expandafter \let \csname endtabular*\endcsname = \endtabular
+
+%% added to make `fnsymbol's better (24 Oct 1998) --RP
+\def\@fnsymbol#1{\ifcase#1\or *\or **\or ***\or \ddagger\or
+   \ddagger\ddagger\or \ddagger\ddagger\ddagger\or \mathchar "278
+   \or \mathchar "27B\or \| \or \dagger\or \dagger\dagger\else\@ctrerr
+   \fi\relax}
+
+%% added to remove extra space between \section and \subsection
+%% (7 Dec 1998) --RP
+\def\@startsection#1#2#3#4#5#6{%\if@noskipsec \leavevmode \fi
+   \par \@tempskipa #4\relax
+   \@afterindenttrue
+   \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \@afterindentfalse\fi
+   \if@nobreak \everypar{}\else
+     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}\fi \@ifstar
+     {\@ssect{#3}{#4}{#5}{#6}}{\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+
+
+\input ftoday.sty	 % added Aug 96
+
+\farsieqno		 % equation numbers are set in
+			 % farsi (user can call \englisheqno)
+
+\mathfnumber		 % numbers in math mode is typeset
+			 % in farsi (user can call \mathenumber)
+
+\ffootnoterule		 % foot note rule is typeset in farsi style
+			 % (user can call \effotnoterule to
+			 % typeset in english)
+
+\def\contentsname{êúÂ¨´ õ€À¤›‘–} % –‘›¤¢÷õ –¨¤úê
+\def\listfigurename{óƒÆ´ ªØ‘ñ}  %    ñ‘îª –¨þó
+\def\listtablename{óƒÆ´ ›Àøñ}	 %    ñø¢› –¨þó
+\def\refname{õÂ›â}		 %	   â›¤õ
+\def\indexname{êúÂ¨´ óÔ±‘þü}	 % üþ‘“êó –¨¤úê
+\def\figurename{ªØÛ}		 %	     ñîª
+\def\tablename{›Àøñ}		 %	    ñø¢›
+\def\abstractname{ØƒÀù}	 %	   ù¢þî
+%\def\appendixname{®Þ‘þÝ}	 %	   ôþ‘õ®
+\def\appendixname{•ƒ¨´}	 %	   –¨øþ•
+\def\partname{“¿Ç}		 %	     ©¡“
+\def\chaptername{êÊÛ}		 %	     ñ¬ê
+%\def\bibname{õÂ›â}		 %	   â›¤õ
+\def\bibname{îµ‘’÷‘õ‚}		 %	ùõ‘÷’‘—î
+
+\def\thefootnote{\oldarabic{footnote}}
+\farsi
+
+\endinput
+%%
+%% End of file `farsi.sty'.

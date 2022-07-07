@@ -1,0 +1,575 @@
+\documentstyle[fancybox]{article}
+\input{icpcpl}
+\input{acm}
+\input{boloon}
+\input{trophy}
+\input{picone}
+\input{pictwo}
+\input{isiran}
+
+\font\arm=arm25
+\font\tfont=cmssbx10 scaled 1400
+\font\sfont=cmssdc10 scaled 1400
+\font\addfont=cmssi9
+\newfont{\bigman}{cmss17}
+%\fancypage{%
+\setlength{\fboxsep}{5mm}
+%\fbox}{}
+\hyphenpenalty=1000
+\pagestyle{empty}
+
+\newenvironment{ilist}{     %itemized list with bullete
+\begin{list}{$\bullet$}{\rightmargin=0mm\leftmargin=4mm
+    \labelwidth=2mm\labelsep=2mm\setlength{\parsep}{\parskip}
+    \setlength{\listparindent}{\parindent}
+    }}{\end{list}}
+
+\newcounter{mnum}
+\newenvironment{mlist}{\setcounter{mnum}{0}     % 1) 2) 3)
+\begin{list}{\arabic{mnum}.}{\usecounter{mnum}\rightmargin=0mm\leftmargin=4mm
+    \labelwidth=4mm\labelsep=2mm\setlength{\parsep}{\parskip}
+    \setlength{\listparindent}{\parindent}
+    }}{\end{list}}
+
+%\renewenvironment{description}{
+%\begin{list}{\bf}{\rightmargin=0mm\leftmargin=6mm
+%    \labelwidth=4mm\labelsep=2mm\setlength{\parsep}{\parskip}
+%    \setlength{\listparindent}{\parindent}
+%    }}{\end{list}}
+
+
+\newlength{\myleng}
+\newenvironment{myshbox}
+    {\noindent\begin{Sbox}%
+      \setlength{\fboxsep}{3mm}
+      \setlength{\myleng}{70mm}%
+      \addtolength{\myleng}{-2\fboxsep}%
+      \addtolength{\myleng}{-2\fboxrule}%
+      \begin{minipage}{\myleng}}%\begin{center}}%
+{%\end{center}
+\end{minipage}\end{Sbox}\shadowbox{\TheSbox}}%
+
+\newenvironment{myfbox}
+    {\noindent\begin{Sbox}%
+      %\setlength{\fboxsep}{5mm}
+      \setlength{\myleng}{79mm}%
+      %\addtolength{\myleng}{-2\fboxsep}%
+      %\addtolength{\myleng}{-2\fboxrule}%
+      \begin{minipage}{\myleng}}%\begin{center}}%
+{%\end{center}
+\end{minipage}\end{Sbox}\fbox{\TheSbox}}%
+
+
+
+\textwidth=297.3mm
+\textheight=210cm
+%\oddsidemargin=-26.7mm
+\oddsidemargin=-25.4mm
+\topmargin=-28.5mm
+
+
+
+
+\newsavebox{\pageone}
+\savebox{\pageone}{
+\begin{myfbox}
+\vbox to 18cm{
+\vfill
+\vspace*{1mm}
+\centerline{\setacm\kern1cm\raise-13.5mm\hbox{\arm a}}
+\vspace*{5mm}
+\centerline{\seticpcpl}
+\vfill
+\centerline{\setisiran}
+\vfill
+\begin{center}
+{\tfont Asia Region, Tehran Site } \\[5mm]
+{\sfont Computer Engineering Department}\\[1mm]
+{\sfont Sharif University of Technology}\\[1mm]
+{\sfont Tehran, Iran}\\[3mm]
+{\sfont November 7-8 2001  (Aban 16-17, 1380)}
+\end{center}
+}
+\end{myfbox}
+}
+
+
+\newsavebox{\pagetwo}
+\savebox{\pagetwo}{
+\begin{myfbox}
+\vbox to 18cm{
+\centerline{{\addfont In The Name of God}}
+\vfill
+\parindent=5mm
+\section*{\bigman The Contest}
+%\baselineskip=0.95\baselineskip
+The\, ACM\, International\,  Collegiate\,  Programming  Contest (ACM/ICPC)
+is the largest programming contest
+among university and college students 
+in the world.
+This contest was initiated 25 years ago by
+ACM  and seeks to 
+engage academics and the information technology industry in 
+shining the spotlight on the next generation of computing professionals 
+and scholars, and to encourage the development of and
+to recognize excellent team work, programming skills, and problem-solving 
+talent.  
+
+\indent
+ACM (Association for Computing Machinery), funded in 1947, is the world's first 
+educational and scientific computing society
+
+\indent
+The contest is a two-tiered competition among teams of students representing
+institutions of higher education. Teams first compete in the regional contests
+held around the world from September to November each year. The winning
+team from each regional contest advances to the ACM/ICPC 
+World Finals, normally held the following
+March to mid-April. Additional high-ranking teams may be invited to the
+World Finals as wild card teams.
+
+Last year 2700 teams from 1079 universities of 70 countries
+participated in the regional contests around the world. 64 teams
+from 22 countries advanced to the World Finals in Vancouver, Canada,
+among which 14 teams were from Asian countries. 
+
+\vspace*{2mm}
+\noindent
+\begin{minipage}{4cm}
+\parindent=5mm
+
+\indent 
+82 teams participated in Tehran contest
+last year and two teams from Sharif University of Technology (SUT) and
+Ferdowsi University of Mashad advanced to the 2001 World Finals. The
+team from SUT was awarded a prestigious silver medal and ranked 9th overall and 2nd among 
+all  Asian teams.
+\end{minipage}
+\hfill \settrophy
+\vfill
+}
+\end{myfbox}
+}
+
+
+
+\newsavebox{\pagethree}
+\savebox{\pagethree}{
+\begin{myfbox}
+\vbox to 18cm{
+\parindent=5mm
+\section*{\bigman Tehran Site}
+
+For the third year, Sharif University of Technology 
+will be hosting
+the ACM/ICPC regional contest as one of the 8 sites in Asia.
+Other sites are Dhaka in Bangladeh, Kanpur in India, Hakodate
+in Japan, Shanghai in China, Taejon in Korea, Hong Kong, Singapore, and Taiwan.
+
+%\vspace*{1mm}
+%\noindent
+%\begin{minipage}{4.5cm}
+%\parindent=5mm\indent
+\indent
+The Tehran contest is scheduled to be held in 
+SUT during
+7-8 November 2001 (Aban 16-17, 1379).  We are expecting  about
+80 teams of university  students from Iran and
+countries in the west of Asia and the Middle East.
+%\end{minipage}
+%\hfill\setacmbloo
+%\vspace*{1mm}
+
+%\indent
+%Asia region director will be present in the contest
+%as the ACM representative.
+
+\indent
+The winning teams of Tehran contest will  automatically
+advance to  the 26th
+ACM/ICPC world finals to be held in Hawaii, USA, in March 20-24, 2002.
+ACM and IBM will bear part of the travelling expenses
+(up to US\$4000) for each advancing team.
+
+
+
+\section*{\bigman Computing Environment}
+Each team will use a single  workstation with environment
+similar to the Word Finals. 
+Delphi and
+C++ are the available programming languages. The details of
+the programming environment will be available in the contest website.
+
+
+
+\vfill
+\begin{center}
+\setpicone
+\end{center}
+\vfill
+
+}
+\end{myfbox}
+}
+
+
+
+
+%-------------------------------------
+\newsavebox{\pagefour}
+\savebox{\pagefour}{
+\begin{myfbox}
+\vbox to 18cm{ %was 18
+\section*{\bigman Summary of Rules and Judging}
+{\baselineskip=0.93\baselineskip
+\begin{ilist}
+\itemsep=1mm
+\item
+Each team consists of up to three contestants. Each contestant must be a
+student enrolled in a university.
+At most one contestant of each team may hold a B.S. degree.
+
+\item Each team can participate in at most two regional contests in any Asian site each year.
+
+\item Only one team from a given institution may advance to the World Finals.
+
+\item A special prize will be awarded to the best all-girl team and a slot in the World Finals 
+may be given  to best such team in Asia.
+\item
+Contestants may bring resource materials such as books, manuals, and
+program listings. Contestants may not bring any machine-readable
+versions of software or data.
+
+\item Eight or nine problems will be posed in English to be solved in 5 hours.
+
+\item
+Each submitted solution to a problem is
+judged as accepted or rejected by a judge, and the team is notified of the
+results online.
+
+
+\item
+Teams are ranked according to the most problems solved.
+Teams with the same number of solved problems
+are ranked by the least total time.
+The total time is the sum of the time consumed for each \underline{solved} problem. 
+This is  the time elapsed from the beginning of the
+contest to the submittal of the accepted run plus 20 penalty minutes for
+every rejected run for that problem regardless of submittal time.
+\end{ilist}
+
+
+\section*{\bigman Problem Selection}
+The scientific committee is responsible for preparing the contest problems
+which are selected from those proposed by its
+member and received from the participating teams. 
+All universities are asked to contribute to this important task.
+A call for problem proposal will be sent out.
+
+\hspace*{3mm}
+So far as possible, the problems will avoid
+dependence on detailed knowledge of a particular application area or
+programming language.
+
+
+
+
+%\newpage
+
+
+
+}}
+\end{myfbox}
+}
+
+
+
+
+%-------------------------------------
+\newsavebox{\pagefive}
+\savebox{\pagefive}{
+\begin{myfbox}
+\vbox to 18cm{
+%\begin{description}
+%\item[ ] \hspace*{5mm} 
+%\end{description}
+
+%\vfill
+%\newpage
+
+
+\section*{\bigman Registration Steps}
+{\baselineskip=0.94\baselineskip
+\begin{mlist}
+\itemsep=1mm
+\item Register your teams  as early as possible
+   at  site: {\tt http://www.baylor.edu/acmicpc}. 
+   Follow the registration link.  The names of the team members can be finalized
+   later.
+\item Send (or fax) the receipt of registration fee payment (this must be
+      received by the first deadline to use the discount fee). Additional
+      team registrations is allowed after early registrations are complete.
+\item By the final deadline, send us an official letter from your university
+      officials containing the names of the participating team
+      members.
+\item Finalize your online registration (names, addresses, etc.) by
+     the mentioned deadline.
+\end{mlist}
+
+
+\section*{\bigman Limits on the Number of Teams}
+There is a limit of two teams from each university, and a limit on 
+the total number of teams that we can accept (about 80).  Universities that had a team 
+with rank below 15 in  last contest, can register  more teams with our 
+prior approval.
+
+
+\section*{\bigman Deadlines}
+\begin{description}
+\itemsep=1mm
+\item[Sept 13  (Shahrivar 22):]  \ \\
+         Deadline to use the discount registration fee for local teams.
+         A copy of the payment receipt should be received by this date.
+         
+\item[October 11 (Mehr 19):]  \ \\
+         Deadline for registration of local teams at the ACM/ICPC office. 
+         All documents must be received by this date.
+         Registration may be closed after this deadline.
+
+
+\item[October 21 (Mehr 30): ]  \ \\
+         Online registration of ALL teams 
+         should be complete by this date.
+
+\item[October 1:] Participation confirmation for foreign teams.
+\end{description}
+
+\vfill
+}}
+\end{myfbox}
+}
+
+
+
+
+
+
+%-------------------------------------------------------------
+
+\newsavebox{\pagesix}
+\savebox{\pagesix}{
+\begin{myfbox}
+\vbox to 18cm{
+
+
+\section*{\bigman  Registration Fees}
+
+%The registration fees for each team:
+
+\noindent
+%\begin{minipage}{7cm}
+\begin{center}
+\small
+\begin{tabular}{|l|c|c|}
+\hline
+Fee for  &     Sept 13, 2001  & Oct 22, 2001  \\   
+each team       &   (Shahrivar 22)  & (Mehr 31) \\ \hline\hline
+From Iran &  250,000 Rials  & 350,000 Rials \\ \hline
+From Abroad%\footnote{
+%Registration fees can be waived for 
+%foreign teams from  certain neighboring countries.
+%}
+%  &      \$50  &      \$50 \\ \hline
+   &      Free  &     Free  \\ \hline
+\end{tabular}
+\end{center}
+%\end{minipage}
+
+{\baselineskip=0.94\baselineskip
+Local registration fees should be paid to account \#: 
+727.65, Bank Markazi Iran, in the name of the Sharif University of Technology. 
+
+\vspace*{-1mm}
+\section*{\bigman Foreign Teams}
+Most foreign teams  need visas for entering into Iran. These
+teams should prepare well in advance and send us all visa correspondence by 
+Oct.~1.
+
+\vspace*{-1mm}
+\section*{\bigman  Travel Fund}
+Each foreign team is paid some travel fund of at least \$200.00 by the ACM.
+
+\vspace*{-1mm}
+\section*{\bigman  Accommodations}
+There is no accommodation available in the university at the time of contest.
+Iranian teams should take care of their own accommodations. We can help
+them with hotel reservations, if needed. We will make hotel reservations
+for foreign teams.
+
+
+
+}
+\vfill
+
+\begin{center}
+\setpictwo
+\end{center}
+
+}
+\end{myfbox}
+}
+
+
+%-------------------------------------------------------------------
+
+\newsavebox{\pageseven}
+\savebox{\pageseven}{
+\begin{myfbox}
+\vbox to 18cm{
+
+\section*{\bigman Steering Committee}
+\begin{description}
+\baselineskip=.95\baselineskip
+\item[Honorary Chair:] \ \\
+       Prof. Saeed Sohrabpour, Chancellor, \\ Sharif University
+     of Technology 
+\item[Asia Region Director:] \ \\
+      Prof. C. J. Hwang,  Computer Science dept.,
+                            South West Texas State University, USA
+\item[Tehran Site Director:] \ \\ Dr. Mohammad Ghodsi
+\item[Department Chair:] \ \\ Dr. Ghassem Miremadi
+%\item[Executive Committee Chair:] \ \\  
+%             Dr. Hassan Mirian
+
+\item[Scientific Committee:] \ \\ 
+             Dr. Rasool Jalili, Chair \\
+             Mr. Ramtin Khosravi, Chief Judge \\
+             Dr. Mohammad Ghodsi \\
+             Mr. Ghassem JaberiPur, \\
+             Mr. Bahman Pourvatan,  \\
+             Mr. Farshad Rostamabadi, \\
+             Mr. Bashir Sajjad, \\
+             Mr. Ehsan ChiniForooshan, \\
+             Mr. Mehdi Mirzazadeh, \\
+             Mr. Mohammad Safari
+
+%\item[Chief Judge:] \ \\ 
+%             Mr. Ramtin Khosravi
+
+
+\item[System:] \ \\ 
+             Mr. Mohammad H. Khansari, Chair
+             Mr. Kamran Bavar, system
+
+\item[Executive Director:] \ \\  
+             Mr. Hooshangnia
+
+\item[Public Relations and Publications:] \ \\ 
+             Mr. Hashem Habibi, Chair,\\
+             Mrs. Shahindokht Shahnazi , \\
+             Mr. Masoud Mohajer, \\
+             Mr. Mohsen Iranfard
+
+\item[International  Relations:] \ \\ 
+             Dr. Ali Movaghar
+
+\item[Office:] \ \\ 
+           Mrs. Shahindokht Shahnazi 
+                  
+\end{description}
+\vfill
+%{\tiny
+%SUT: Sharif University of Technology \\[-2mm]
+%AKUT: AmirKabir University of Technology \\[-2mm]
+%IUST: Iran University of Science and Technology 
+%}
+
+}
+\end{myfbox}
+}
+
+
+
+\newsavebox{\pageeight}
+\savebox{\pageeight}{
+\begin{myfbox}
+\vbox to 18cm{
+
+\section*{\bigman Contact}
+
+\hbox{\hss
+\begin{myshbox}
+\addfont
+ACM/ICPC Tehran Site, \\
+Computer Engineering Department, \\
+Sharif University of Technology, \\
+P.O.Box 11365-9517, Tehran, Iran. \\
+Phone: +98 21 602-2714, \\ Fax: +98 21 600-5616/601-2983 \\
+Email: acmicpc@sharif.ac.ir, \\
+Homepage:   http://sharif.ac.ir/\char'176 acmicpc 
+\end{myshbox}\hss}
+\par
+\noindent{\small\it More information  can be found from
+the ACM main site at
+{\tt http://www.baylor.edu/acmicpc}.}
+\vfil
+\centerline{\setboloon}
+\vfil
+\noindent\hspace{2mm}
+\begin{minipage}{\textwidth}
+\begin{center}
+{\bigman  Main Supporter} \\
+\vspace*{3mm}
+Isiran Company \\
+\vspace*{4mm}
+{\bigman  Other Supporters} \\
+\vspace*{3mm}
+\small
+ Ministry of Science, Research, and Technology, \\
+ Iran High Council of Informatics,  \\
+ Iran Telecommunication Research Center, \\
+ Ministry of Telecommunications, \\
+ Tehran Municipality 
+ 
+\end{center}
+\end{minipage}
+\vfil
+}
+\end{myfbox}
+}
+
+
+
+\newsavebox{\emptypage}
+\savebox{\emptypage}{
+\begin{myfbox}
+\vbox to 18cm{
+\ \ 
+\vfill
+\ \ 
+}
+\end{myfbox}
+}
+
+
+
+\begin{document}
+
+
+%\hbox to \hsize{\kern3.8mm\usebox{\pagetwo}\kern7.6mm\usebox{\pagethree}\kern7.6mm\usebox{\pagefour}\hfil}
+%\hbox to \hsize{\kern3.8mm\usebox{\pagetwo}\kern7.5mm\usebox{\pagethree}\kern7.5mm\usebox{\pagefour}\hfil}
+\hbox to \hsize{\hfil\usebox{\pagetwo}\hfil\hfil\usebox{\pagethree}\hfil\hfil\usebox{\pagefour}\kern2mm\hfil}
+
+\newpage
+\hbox to \hsize{\hfil\usebox{\pageeight}\hfil\hfil\usebox{\pagesix}\hfil\hfil\usebox{\pageseven}\kern2mm\hfil}
+
+
+\newpage
+\hbox to \hsize{\hfil\usebox{\pagefive}\hfil\hfil\usebox{\emptypage}\hfil\hfil\usebox{\emptypage}\hfil}
+
+
+\newpage
+\hbox to \hsize{\hfil\usebox{\pageone}\hfil\hfil\usebox{\emptypage}\hfil\hfil\usebox{\emptypage}\hfil}
+
+
+\end{document}

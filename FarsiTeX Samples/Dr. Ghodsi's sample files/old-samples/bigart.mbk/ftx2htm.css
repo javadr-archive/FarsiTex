@@ -1,0 +1,169 @@
+/*Simplified Arabic Fixed;Tahoma;Traditional Arabic;Times New Roman;*/
+/*Simplified Arabic;Courier New;Arial;Arabic Transparent;Andalus;*/
+body
+{
+	background-image: none;
+	background-color: #F0FFFF;
+	color: #000000;
+	font-size: 110%;/*85%;*/
+	font-family: Times New Roman;
+	margin: 10pt;
+	text-align: justify;
+}
+
+.title
+{
+	font-family: Times New Roman;
+	font-size: 140%;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.date, .author
+{
+	font-family: Arial, Sans-Serif, Times New Roman;
+	font-size: 120%;
+	color: #000000;
+	font-weight: bold;
+	text-direction: rtl;
+	text-align: center;
+}
+
+.part
+{
+}
+
+.chapter
+{
+}
+
+.abstract, .section
+{
+	font-family: Times New Roman;
+	font-size: 110%;
+	color: #FF0F0F;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.subsection
+{
+	font-family: Times New Roman;
+	font-size: 105%;
+	color: #0F0F0F;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.subsubsection
+{
+}
+
+.paragraph
+{
+}
+
+.subparagraph
+{
+}
+
+.thebibliography
+{
+	font-family: Times New Roman;
+	font-size: 110%;
+	color: #000000;
+	margin: 0pt;
+	font-weight: bold;
+}
+
+.table
+{
+	text-align: center;
+}
+
+.cal
+{
+	font-family: Comic Sans MS;/* FONT FACE = Comic Sans MS */
+}
+
+pre
+{
+	font-family: Times New Roman;
+	font-size: 85%;
+	font-style: italic;
+}
+
+code
+{
+	font-family: Times New Roman;
+	font-size: 85%;
+	font-style: italic;
+}
+
+.farsi
+{
+	direction: rtl;
+	text-align: Justify;
+}
+
+.english
+{
+	direction: ltr;
+	text-align: left;
+}
+
+small.tiny
+{
+	font-size: xx-small;
+}
+
+small.scriptsize
+{
+	font-size: xx-small;
+}
+
+small.footnotesize
+{
+	font-size: x-small;
+}
+
+small.small
+{
+	font-size: small;
+}
+
+big.large
+{
+	font-size: large;
+}
+
+big.xlarge
+{
+	font-size: x-large;
+}
+
+big.xxlarge
+{
+	font-size: xx-large;
+}
+
+big.huge
+{
+	font-size: xx-large;
+}
+
+big.xhuge
+{
+	font-size: xx-large;
+}
+
+.normalsize
+{
+	font-size: 100%;
+}
+
+.suptex
+{
+	font-size: 100%;
+}

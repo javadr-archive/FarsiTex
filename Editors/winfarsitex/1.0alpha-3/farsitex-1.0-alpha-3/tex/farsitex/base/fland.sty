@@ -1,0 +1,68 @@
+%%
+%%  This file is a part of FarsiTeX, a Persian/English typesetting system.
+%%
+%%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%%
+%%  FarsiTeX is free software; you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation; either version 2 of the License, or
+%%  (at your option) any later version.
+%%
+%%  FarsiTeX is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%
+%%  You should have received a copy of the GNU General Public License
+%%  along with FarsiTeX; if not, write to the Free Software
+%%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%%  USA.
+%%
+%%  Any licensing or usage questions should be directed to Roozbeh
+%%  Pournader <roozbeh@sharif.edu>.
+%%
+
+
+\newdimen\@rotdimen
+\newbox\@rotbox
+
+\def\@vspec#1{\special{ps:#1}}%  passes #1 verbatim to the output
+\def\@rotstart#1{\@vspec{gsave currentpoint currentpoint translate
+   #1 neg exch neg exch translate}}% #1 can be any origin-fixing transformation
+\def\@rotfinish{\@vspec{currentpoint grestore moveto}}% gets back in synch
+\def\@rotr#1{\@rotdimen=\ht#1\advance\@rotdimen by\dp#1%
+   \hbox to\@rotdimen{\hskip\ht#1\vbox to\wd#1{\@rotstart{90 rotate}%
+   \box#1\vss}\hss}\@rotfinish}
+\def\@rotl#1{\@rotdimen=\ht#1\advance\@rotdimen by\dp#1%
+   \hbox to\@rotdimen{\vbox to\wd#1{\vskip\wd#1\@rotstart{270 rotate}%
+   \box#1\vss}\hss}\@rotfinish}%
+\def\@rotu#1{\@rotdimen=\ht#1\advance\@rotdimen by\dp#1%
+   \hbox to\wd#1{\hskip\wd#1\vbox to\@rotdimen{\vskip\@rotdimen
+   \@rotstart{-1 dup scale}\box#1\vss}\hss}\@rotfinish}%
+\def\@rotf#1{\hbox to\wd#1{\hskip\wd#1\@rotstart{-1 1 scale}%
+   \box#1\hss}\@rotfinish}%
+\def\rotate{\@ifnextchar[{\@rotate}{\@rotate[l]}}
+\def\@rotate[#1]#2{\setbox\@rotbox=\hbox{#2}\@nameuse{@rot#1}\@rotbox}
+
+\let\LS@makecol=\@makecol
+\let\LS@makefcolumn=\@makefcolumn
+\def\LS@rot{%
+  \setbox\@outputbox\vbox{\hbox{\rotate[r]{\box\@outputbox}}}}
+\def\landscape{%
+  \clearpage
+  \begingroup
+  \vsize=\textwidth
+  \hsize=\textheight
+  \linewidth=\hsize
+  \columnwidth=\hsize
+  \@colroom=\vsize
+  \textheight=\vsize
+  \@colht=\vsize
+  \def\@makecol{\LS@makecol\LS@rot}%
+  \def\@makefcolumn##1{\LS@makefcolumn{##1}\LS@rot}}
+\def\endlandscape{%
+  \clearpage
+  \endgroup
+  \global\@colht=\textheight
+  \global\vsize=\textheight
+  \global\@colroom=\textheight}

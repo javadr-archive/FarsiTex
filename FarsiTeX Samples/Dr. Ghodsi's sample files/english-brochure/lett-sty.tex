@@ -1,0 +1,70 @@
+\textwidth=15cm
+\textheight=23cm
+\hoffset=-1.5cm
+\topmargin=-23mm
+
+\font\arm=arm25
+\font\mainf=cmssbx10 scaled 1400
+\font\subf=cmssdc10 scaled 1400
+\font\topf=cmssi9
+
+\newsavebox{\logo}
+\savebox{\logo}{\parbox[b]{3cm}{
+                                \begin{center}
+                                        \ \vskip-2cm
+                                        {\small In His Name} \\
+                                        {\arm a} \\ \vskip-1mm
+                                \end{center}
+}}
+\newsavebox{\lefttitle}
+\savebox{\lefttitle}{\parbox[b]{12.5cm}{
+\begin{flushright}
+ {\mainf ACM International Collegiate Programming Contest} \\[2mm]
+ {\mainf Asia Region, Tehran Site} \\[3mm]
+ {\subf Sharif University of Technology} \\[2mm]
+ {\subf 19-21 Nov. 1999} \\[3mm]
+\end{flushright}}}
+
+
+\newsavebox{\bottombox}
+\savebox{\bottombox}{\parbox[b]{16cm}{
+   \vskip1mm
+   \hrule height 3pt
+   \vskip1.5mm
+   \hskip2mm\begin{minipage}{15.8cm}
+   \topf
+   ACM/ICPC Tehran Site, Computer Engineering Department,
+   Sharif University of Technology, P.O.Box 11365-9517 \\[-1mm]
+   Tehran, Iran. \kern5mm 
+   Phone: +98 21 602-2714, Fax: +98 21 600-5616/601-2983 \\[-1mm]
+Email: { acmicpc@sharif.ac.ir}, Homepage: {  http://www.sharif.ac.ir/\char'176 acmicpc} 
+   \end{minipage}
+}}
+
+
+\def\letterhead{\vbox{\hbox to 16cm{\kern5mm\usebox{\lethd}\hss}
+                      \vskip21cm
+                      \hbox to 16cm{\kern5mm\usebox{\bottombox}\hss}
+                      \vskip-23cm
+                      }}
+
+\normalsize
+
+
+\newsavebox{\lethd}
+\savebox{\lethd}{\parbox[b]{16cm}{
+   \usebox{\logo}\hfill\usebox{\lefttitle}
+   \vskip1mm
+   \hrule height 3pt
+   \vskip1mm}}
+
+
+\def\letterhead{\vbox{\hbox to 16cm{\hss\usebox{\lethd}\kern5mm}
+                      \vskip21cm
+                      \hbox to 16cm{\hss\usebox{\bottombox}\kern5mm}
+                      \vskip-23cm
+                      }}
+
+\normalsize
+
+

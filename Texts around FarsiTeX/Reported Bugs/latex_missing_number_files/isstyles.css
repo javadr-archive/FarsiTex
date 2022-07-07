@@ -1,0 +1,104 @@
+/* GLOBALLY REDEFINED HTML ITEMS */
+	body { font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000 ; font-weight: normal ; margin: 0px;}
+	td, ul, ol { font-family: Verdana, Arial, Helvetica, sans-serif; }
+	li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%;}
+	p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%; margin-top: 4px; margin-bottom: 4px; padding-top: 4px; padding-bottom: 4px;}
+	pre { font-family: Courier, mono; font-size: 12px;}	
+	tt { font-family: Courier; font-size: 14px;}
+	small { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000;}
+	A:hover { color:#993333;}
+	A.topnav:hover { color:#FFFFFF;}
+	/* H1 is for the heading of all pages */
+	H1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; color: #990000; margin-bottom: 4px; margin-top: 0px;}
+	/* H2 - H4 should be used and treated normally */
+	H2, H3, H4 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; color: #990000; margin-bottom: 4px;}
+	/* H5 is for significant content which should remain the same size as the rest of the text */
+	H2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #000000; margin-bottom: 4px;}
+	H3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; color: #000000; margin-bottom: 4px;}
+	H5 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%; margin-top: 0px; margin-bottom: -8px; padding-top: 4px; padding-bottom: 0px; font-weight: bold; color: #000000;}
+	H6 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 70%; font-weight: bold; color: #990000; margin-bottom: -8px;}
+
+	/* Prevents nested "li" items from repeatedly shrinking by 80% of previous size */
+	li li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%;}
+	
+/* SITEWIDE */ 
+	/* Classes for the header only */
+	.topnav { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF; background-color: #4C4C4C;}
+	.islogobg { font-size: 2px; background-image: url(http://web.mit.edu/is/images/header_logo_shim.gif); background-repeat: repeat-x;}
+	.headerbg { font-size: 2px; background-image: url(http://web.mit.edu/is/images/header_top_bg.gif); background-repeat: repeat-x;}
+	.search { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #cccccc; font-weight: bold;}
+	.quicklinks { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height: 22px;}
+	.skip {	visibility: hidden; font-size: xx-small; letter-spacing: -10px; display: none;}
+	
+	/* Classes for the text content of the site */
+	.default {font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;	color: #000000;	font-weight: normal;}
+	.subheads { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; color: #990000;}
+	.subjectheads { font-size: 90%; font-weight: bold; color: #FFFFFF; background-color: #4C4C4C;}
+	.text { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%;}
+	.text-whitebg { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%; background-color: #FFFFFF;}
+	.text-yellowbg { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%; background-color: #FFFFCC;}
+	.text-beigebg { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%; background-color: #CCCC99;}
+	.smalltext { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;}
+	.anchormenu { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000;}
+
+
+/* LISTS */
+	/* Below are Classes for ordered lists. See comment for list type  */
+	.lalphalist { list-style-type: lower-alpha;}		/* Lower Alpha */
+	.ualphalist { list-style-type: upper-alpha;}		/* Upper Alpha */
+	.lromanlist { list-style-type: lower-roman;}		/* Lower Roman */
+	.uromanlist { list-style-type: upper-roman;}		/* Upper Roman */
+	
+	/* Below is a class to add 8px spacing to the top of a UL within a table cell */
+	.tablelist 	{ font-family: Verdana, Arial, Helvetica, sans-serif; margin-top: 12px; margin-bottom: 12px;}
+
+
+/* FOR TABLES */
+	/* Apply this class to table cells that are stretched vertically by a NS6 bug in HTML 4.01 */
+	.NS6HeightCtrl { font-size: 2px;}
+
+	/* Class to set a horizontal dotted line. Apply this class to a table cell */
+	.dottedbg { font-size: 2px; background-image: url(http://web.mit.edu/is/images/line_leftdot.gif); background-repeat: repeat-x;}
+
+	/* For "tips", and other tables fully surrounded 1px borders */
+	.border-all { background-color: #FFFFCC; border: 1px solid #CCCC99;}/* Yellow BG, dark green outline */
+	.border-all-wht { background-color: #FFFFFF; border: 1px solid #CCCC99;}/* White BG, dark green outline */
+	.border-all-blank { border: 1px solid #CCCC99;}						/* No BG, dark green outline */
+	
+	/* Prevents "li" items nested in tables from shrinking by 80% of previous size */
+	.tableli { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19px;}
+
+	/* For tables and/or cells with 1 pixel borders. (See Style Guide for explanation on application) */
+	/* 'l' indicates left, 'r' right, 't' top, and 'b' bottom */
+	.border-l-r-b { border-bottom-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; border-bottom-color: #CCCC99; border-left-color: #CCCC99; background-color: #FFFFCC; border-right-color: #CCCC99;}
+	.border-l-b { border-bottom-width: 1px; border-left-width: 1px; border-bottom-style: solid; border-left-style: solid; border-bottom-color: #CCCC99; border-left-color: #CCCC99; background-color: #FFFFCC;}
+	.border-r-b { border-bottom-width: 1px; border-right-width: 1px; border-bottom-style: solid; border-right-style: solid; border-right-color: #CCCC99; border-bottom-color: #CCCC99; background-color: #FFFFCC;}
+	.border-l { border-left-width: 1px; border-left-style: solid; border-left-color: #CCCC99; background-color: #FFFFCC;}
+	.border-r { border-right-width: 1px; border-right-style: solid; border-right-color: #CCCC99; background-color: #FFFFCC;}
+	.border-t { border-top-width: 1px; border-top-style: solid; border-top-color: #CCCC99; background-color: #FFFFCC;}
+	.border-b { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCCC99; background-color: #FFFFCC;}
+	.border-l-r-b-whitebg { border-bottom-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; border-bottom-color: #CCCC99; border-left-color: #CCCC99; background-color: #FFFFFF; border-right-color: #CCCC99;}
+	.border-r-b-whitebg { border-bottom-width: 1px; border-right-width: 1px; border-bottom-style: solid; border-right-style: solid; border-right-color: #CCCC99; border-bottom-color: #CCCC99; background-color: #FFFFFF;}
+
+	/* An alternate border method, to be used when it is critical that NS4 sees a border. (See Style Guide for explanation on application) */
+	.ns4-border          { border-collapse: collapse; border-width: 1px; border-style: solid; border-color: #CCCC99;}
+	.ns4-border TD       { border-width: 1px; border-style: solid; border-color: #CCCC99;}
+
+
+/* FOR INDIVIDUAL PAGES */
+	/* News Page and Stock Answers Pages (apply <em> to make Italic on news page) */
+	.datequestion { font-family: Verdana, Arial, Helvetica, sans-serif; color: #666633; font-weight: normal ;}
+
+	/* Home Page Only */ 
+	.frontLogo { background-image: url(http://web.mit.edu/is/images/home_header_islogo.gif); background-repeat: no-repeat;}
+	.frontCircle { background-image: url(http://web.mit.edu/is/images/home_circle_bg.gif); background-repeat: no-repeat;}
+	
+	/* RSS Feeds */
+	.feeds { margin: 0px; padding: 0px; }
+	.rss_title, rss_title a { font-family: Verdana, Arial, Sans-Serif; font-size: 100%;	font-weight:bold; margin: 5px 0; padding: 0; letter-spacing: 1px;}
+	.rss_items { list-style-type : none; margin: 0px; padding: 0px; margin-bottom: 15px;}
+	.rss_item  { font-family: verdana, arial, sans-serif; font-weight: none; margin: 0px 0; margin-top: 6px; margin-bottom: 6px; }
+	.rss_item a:link { text-decoration : underline; color: #006699; font-weight: bold; }
+	.rss_item a:visited { text-decoration : underline; color: #666666; font-weight: bold; }
+	.rss_item a:hover { text-decoration : underline; color: #993333; }
+	.rss_date { font-size: 100%; font-weight : normal; }

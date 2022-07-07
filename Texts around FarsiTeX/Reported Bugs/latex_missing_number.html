@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><!-- For help with customizing IS&T Web page templates see http://web.mit.edu/ist/admin/styleguide/ or contact isweb@mit.edu" --><!-- Change text within title tags below to the title of your page --><title>I'm getting a "Missing number, treated as zero" error</title>
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><!-- Page Last Modified: 08/01/2003 --><!-- Insert "author" "keywords" and "description" meta tags here --><!-- For help with meta tags see http://web.mit.edu/ist/web/reference/create/metatags.html -->
+
+
+
+
+
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content=""><!-- Please do not modify links to stylesheet or JavaScript --><!-- For help with style sheets see http://web.mit.edu/ist/admin/styleguide/stylesheets.html -->
+
+
+
+<link rel="stylesheet" href="latex_missing_number_files/isstyles.css" type="text/css">
+<script language="JavaScript" type="text/javascript" src="latex_missing_number_files/rollover.js"></script></head><body alink="#000000" bgcolor="#ffffff" link="#006699" marginheight="0" marginwidth="0" text="#000000" vlink="#666666">
+
+
+<!--Begin Information Systems topnav - PLEASE DO NOT EDIT THIS CODE -->
+
+<table bgcolor="#993333" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <form method="get" action="http://gb-server.mit.edu/search"></form>
+    <tbody><tr> 
+      <!-- Begin image shims for accessibility purposes -->
+      <!-- TD has no width set because NS6 is buggy -->
+      <td rowspan="2" class="islogobg" align="left" height="73" nowrap="nowrap" valign="top"><a href="#startcontent" accesskey="4"><img src="latex_missing_number_files/header_logo-5px-shim.gif" alt="Skip to content Accesskey=4" border="0" height="73" width="5"></a><a href="#subnavigation" accesskey="3"><img src="latex_missing_number_files/header_logo-5px-shim.gif" alt="Skip to sub-navigation Accesskey=3" border="0" height="73" width="5"></a><a href="http://web.mit.edu/ist/accessibility.html" accesskey="7"><img src="latex_missing_number_files/header_logo-3px-shim.gif" alt="View our Accessibility Options" border="0" height="73" width="3"></a></td>
+      <!-- End image shims for accessibility purposes -->
+      <td rowspan="2" class="islogobg" align="left" height="73" valign="top" width="207"><a href="http://web.mit.edu/ist/index.html"><img src="latex_missing_number_files/header_is.gif" alt="MIT Information Systems" border="0" height="73" width="207"></a></td>
+      <td class="topnav" align="left" bgcolor="#ffffff" height="43" nowrap="nowrap" valign="middle" width="100%"><a href="http://web.mit.edu/ist/index.html" class="topnav" accesskey="2" title="Access Key: Alt (or control) + 2">Home</a><img src="latex_missing_number_files/spacer.gif" alt="" height="8" width="5"> 
+        <a href="http://web.mit.edu/ist/about/index.html" class="topnav" title="about IS&amp;T, and our contact info">About 
+        IS&amp;T</a><img src="latex_missing_number_files/spacer.gif" alt="" height="8" width="5"> 
+        <a href="http://web.mit.edu/ist/contact.html" class="topnav" accesskey="0" title="Access Key: Alt (or control) + 0">Contact 
+        IS&amp;T</a><img src="latex_missing_number_files/spacer.gif" alt="" height="8" width="5"> 
+        <a href="http://web.mit.edu/ist/sitemap.html" class="topnav" accesskey="6" title="Access Key: Alt (or control) + 6">Site 
+        Map</a><img src="latex_missing_number_files/spacer.gif" alt="" height="8" width="15"></td>
+      <td class="topnav" align="right" bgcolor="#ffffff" height="43" nowrap="nowrap" valign="middle" width="50%">
+
+
+
+<!-- Begin search fields -->
+<span class="search">Search</span>
+<img src="latex_missing_number_files/spacer.gif" alt="" height="1" width="3"> 
+<label for="search" accesskey="s">
+<input id="search" name="q" size="10" class="quicklinks" type="text"></label>
+<img src="latex_missing_number_files/spacer.gif" alt="" height="1" width="1"> 
+<input name="restrict" value="ist" type="hidden">
+<input name="proxyreload" value="1" type="hidden">
+<input name="site" value="mit" type="hidden">
+<input name="client" value="mit" type="hidden">
+<input name="output" value="xml_no_dtd" type="hidden">
+<input name="proxystylesheet" value="http://web.mit.edu/ist/styles/google-ist2.xsl" type="hidden">
+<label for="go">
+<input id="go" name="submit" src="latex_missing_number_files/icon_go.gif" alt="Go" align="top" type="image">
+</label>
+<a href="http://web.mit.edu/ist/search/" class="topnav" accesskey="5" title="Access Key: Alt (or control) + 5">Advanced Search</a>
+<img src="latex_missing_number_files/spacer.gif" alt="" height="1" width="3"> 
+<!-- End search fields -->
+
+
+</td>
+    </tr>
+    <tr> 
+      <td colspan="2" class="headerbg" align="right" height="30" nowrap="nowrap" valign="top"><a href="http://web.mit.edu/ist/start/index.html" onmouseover="img1.src=img1ovr.src;" onmouseout="img1.src=img1off.src;"><img src="latex_missing_number_files/header_start_up.gif" name="img1" alt="Getting Started" border="0" height="30" width="163"></a><a href="http://web.mit.edu/ist/services/index.html" onmouseover="img2.src=img2ovr.src;" onmouseout="img2.src=img2off.src;"><img src="latex_missing_number_files/header_service_up.gif" alt="Getting Services by Topic or Alphabetically " name="img2" border="0" height="30" width="167"></a><a href="http://web.mit.edu/ist/help/index.html" onmouseover="img3.src=img3ovr.src;" onmouseout="img3.src=img3off.src;"><img src="latex_missing_number_files/header_help_up.gif" alt="Getting Help" name="img3" border="0" height="30" width="137"></a></td>
+    </tr>
+  
+</tbody></table>
+<!-- End Information Systems topnav -->
+<table border="0" cellpadding="0" cellspacing="0" width="98%">
+  <tbody><tr> 
+    <td align="left" valign="top" width="179"> 
+      <!--Left Nav -->
+      <table border="0" cellpadding="0" cellspacing="0" width="220">
+        <tbody><tr> 
+          <td colspan="3" align="center" valign="top" width="408"><br>
+  <img src="latex_missing_number_files/owl.gif" alt=""></td>
+        </tr>
+      </tbody></table>
+<!-- http://web.mit.edu/ist/images/circle_sm_atic_img.jpg -->
+      <!-- END Left Nav -->
+      <a id="subnavigation" name="subnavigation"></a> <img src="latex_missing_number_files/title_search-answers.gif" alt="On This Page" height="20" width="206"><br> 
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr> 
+          <td width="12"><img src="latex_missing_number_files/spacer.gif" alt="" height="10" width="27"></td>
+          <td nowrap="nowrap" valign="top" width="165"> 
+<form method="get" action="http://gb-server.mit.edu/search">
+<input name="q" size="25" maxlength="255" value="" type="text">
+<!-- <input type='submit' name='btnG' value='Search'/> -->
+<input name="site" value="mit" type="hidden">
+<input name="client" value="mit" type="hidden">
+<input name="proxystylesheet" value="http://web.mit.edu/xsl/google-mit.xsl" type="hidden">
+<input name="output" value="xml_no_dtd" type="hidden">
+
+<input name="as_dt" value="i" type="hidden">
+<input name="as_sitesearch" value="web.mit.edu/answers" type="hidden">
+<p><a href="http://gb-server.mit.edu/basics.html">[Help]</a></p>
+
+</form>
+
+
+              &nbsp;&nbsp;
+            </td></tr>
+        <tr> 
+          <td colspan="3"><img src="latex_missing_number_files/title_quicklinks.gif" alt="Quick Links" height="20" width="206"></td>
+        </tr>
+        <tr> 
+          <td> </td>
+          <td> 
+<p><a href="http://web.mit.edu/answers/">Top Level</a></p>
+            </td>
+          <td> </td>
+        </tr>
+        <tr> 
+          <td colspan="3"><img src="latex_missing_number_files/title_relatedlinks.gif" alt="Related Links" height="20" width="206"></td>
+        </tr>
+        <tr> 
+          <td> </td>
+          <td> 
+<p><a href="http://web.mit.edu/consult/www/ask.html">Ask OLC a question</a></p>
+<p><a href="http://web.mit.edu/consult/www/">Athena Consulting Homepage</a></p>
+            <p> </p>
+<p><a href="http://itinfo.mit.edu/answer">Helpdesk Stock Answers (for
+            Mac/PC questions)</a></p>
+
+            </td>
+          <td> </td>
+        </tr>
+        <tr><td width="3"><img src="latex_missing_number_files/spacer.gif" alt="" height="1" width="30"></td>
+        </tr>
+      </tbody></table></td>
+ <!-- Main page content -->
+    <td align="left" valign="top"> <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr> 
+          <td width="100%"> <a id="startcontent" name="startcontent"></a><a name="top"></a><br> 
+
+<blockquote><b>I'm getting a "Missing number, treated as zero" error</b></blockquote>
+<p></p><pre>One of the major changes between LaTeX2.09 to LaTeX2e is in the way
+postscript fonts are handled.  Styles which work under 2.09 will break
+under 2e (and even under 2e emulation of 2.09).  If you are latexing a
+file which uses a style such as times, newcen, or helvetica, you may
+see an error of the form
+
+     ! Missing number, treated as zero.
+     &lt;to be read again&gt; 
+                        p
+     l.3 \begin{document}
+
+If this happens, you will need to make sure that you are using a 2e
+style instead of a 2.09 style.  The 2e styles are present in the
+newtex locker, so a simple way to get the correct styles is to do:
+
+       athena% add -f newtex
+       athena% latex filename.tex
+
+
+
+</pre>
+	  </td>
+  </tr>
+</tbody></table>
+</td></tr></tbody></table>
+
+<!-- begin Information Systems footer -->
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+    <td colspan="3" height="16"></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="13"></td>
+    <td valign="middle" width="207"><a href="http://web.mit.edu/"><img src="latex_missing_number_files/footer_mit_logo.gif" alt="MIT" border="0" height="36" width="62"></a></td>
+    <td class="text"><a href="http://web.mit.edu/ist/index.html" accesskey="2" title="Access Key: Alt (or control) + 2">Home</a> | <a href="http://web.mit.edu/ist/start/index.html" title="learn the basics of computing and communications">Getting Started</a> | <a href="http://web.mit.edu/ist/services/index.html" title="find information, products, and services">Getting Services</a> | <a href="http://web.mit.edu/ist/help/index.html" accesskey="8" title="Access Key: Alt (or control) + 8">Getting Help</a> | <a href="http://web.mit.edu/ist/about/index.html" title="about IS&amp;T, and our contact info">About IS&amp;T</a> | <a href="http://web.mit.edu/ist/accessibility.html" accesskey="7" title="Access Key: Alt (or control) + 7">Accessibility</a><br>
+      Ask a <a href="http://web.mit.edu/consult/www/ask.html">technology question</a> or send a <a href="mailto:ostock@mit.edu" accesskey="0" title="Access Key: Alt (or control) + 0">comment 
+      about this web page</a>.</td>
+  </tr>
+</tbody></table>
+<br>
+<!-- Begin MIT-use only web reporting counter -->
+<img src="latex_missing_number_files/tally.gif" alt="" height="1" width="1"> 
+<!-- End MIT-use only web reporting counter -->
+<!-- end Information Systems footer -->
+</body></html>

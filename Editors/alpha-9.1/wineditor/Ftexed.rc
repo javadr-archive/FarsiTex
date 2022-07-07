@@ -1,0 +1,654 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Ftexed.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Ftexed.ico"
+IDR_NONAMETYPE          ICON    DISCARDABLE     "res\\FtexedDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_EN_CARET            BITMAP  DISCARDABLE     "RES\\bitmap1.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "RES\\splash.bmp"
+IDB_FA_CARET            BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_FTEX_PROJECT        BITMAP  DISCARDABLE     "RES\\Ftexpro.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "RES\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  19, 18
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_FARSI
+    BUTTON      ID_ENGLISH
+    SEPARATOR
+    BUTTON      ID_RUN
+    BUTTON      ID_DVI
+    BUTTON      ID_DVIPS
+    BUTTON      ID_GS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "FarsiTeX Editor &Manual",     IDD_READ_HELP
+        MENUITEM "&About FarsiTeX",             ID_APP_ABOUT
+        MENUITEM "Visit FarsiTeX &Homepage",    IDD_VISIT_HOMEPAGE
+    END
+END
+
+IDR_NONAMETYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Import Clipboard\tCtrl+I",   ID_EDIT_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Move to Line\tCtrl+M",       ID_EDIT_GO
+        MENUITEM "&Search\tCtrl+R",             ID_EDIT_SEARCH
+        MENUITEM "Search &Again\tCtrl+L",       ID_EDIT_SEARCHAGAIN
+        MENUITEM "&Replace\tCtrl+T",            ID_EDIT_REPLACE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+        POPUP "&Options"
+        BEGIN
+            MENUITEM "&Always Start Next Line in Farsi Mode", 
+                                                    ID_VIEW_DEF_MODE
+            MENUITEM "Preserve Caret State After Enter Is Pressed", 
+                                                    ID_VIEW_OPTIONS_DEF_CARET_NEXT
+
+            MENUITEM "Caret Mode Switching Affects Farsi Text", 
+                                                    ID_VIEW_OPTIONS_CARETCASE
+
+            MENUITEM "Synta&x Highlighting On",     ID_SYNTAXOFF
+        END
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Run"
+    BEGIN
+        MENUITEM "Run &FarsiTeX\tCtrl+F9",      ID_RUN_RUN
+        MENUITEM "Run &View\tCtrl+F8",          ID_RUN_VIEW
+        MENUITEM "&Convert FTX to TeX\tCtrl+F7", ID_RUN_CNVRT
+        MENUITEM "&DVIPS\tCtrl+F11",            ID_RUN_PS
+        MENUITEM "Run &GSView\tCtrl+F12",       ID_RUN_GS
+        MENUITEM "Convert FTX to &Unicode\tCtrl+F5", ID_RUN_FTXTOUNI
+        MENUITEM "&Make Index\tCtrl+F3",        ID_RUN_MKIND
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "FarsiTeX Editor &Manual",     IDD_READ_HELP
+        MENUITEM "&About FarsiTeX",             ID_APP_ABOUT
+        MENUITEM "Visit FarsiTeX &Homepage",    IDD_VISIT_HOMEPAGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_EDIT_SEARCHAGAIN,    VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_EDIT_GO,             VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_EDIT_SEARCH,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_EDIT_IMPORT,         VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F3,          ID_RUN_MKIND,           VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_RUN_FTXTOUNI,        VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          ID_RUN_CNVRT,           VIRTKEY, CONTROL, NOINVERT
+    VK_F8,          ID_RUN_VIEW,            VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_RUN_RUN,             VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         ID_RUN_PS,              VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         ID_RUN_GS,              VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 328, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FarsiTeX"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Dismiss",IDOK,290,189,32,14,WS_GROUP
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,48,5,228,88
+    LTEXT           " FarsiTeX is a FREE Persian/English bidirectional typesetting system based on Donald Knuth's TeX Program. TeX and his friend METAFONT have served mathematicians and technical writers all over",
+                    IDC_STATIC,6,99,312,16
+    LTEXT           " Unlike many other Persian document preparation systems, FarsiTeX is not only very powerful in mathematical typesetting but also takes advantage of the powers of a generic markup language.",
+                    IDC_STATIC,6,123,308,17
+    PUSHBUTTON      "FarsiTeX Project Members",IDC_VIEWTEAM,114,189,90,14
+    LTEXT           "the world for many years and helped them to write prettier and easier.",
+                    IDC_STATIC,6,115,216,8
+    LTEXT           " Please visit http://www.farsitex.org for reporting bugs, making suggestions, and downloading latest releases.",
+                    IDC_STATIC,6,145,308,17
+    LTEXT           " FarsiTeX Software has been developed by FarsiTeX Project Team and is distributed under GPL License.",
+                    IDC_STATIC,7,167,290,16
+END
+
+IDD_GOTO DIALOG DISCARDABLE  0, 0, 161, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Move to Line"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GOTO_Line,14,22,129,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Go to",IDOK,24,46,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,46,38,14
+END
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 292, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Search"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,24,50,14
+    LTEXT           "Press Ctrl + G when you want to change the mode  from Farsi to English and vice versa.",
+                    IDC_STATIC,9,16,200,34
+END
+
+IDD_DIALOGPRINT DIALOG DISCARDABLE  0, 0, 186, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,109,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,24,50,14
+    GROUPBOX        "Select Printer",IDC_STATIC,15,7,65,78
+    CONTROL         "HP LJ",IDC_RADIOHPLJ,"Button",BS_AUTORADIOBUTTON,29,18,
+                    35,10
+    CONTROL         "HP LJH",IDC_RADIOHPLJH,"Button",BS_AUTORADIOBUTTON,29,
+                    30,41,10
+    CONTROL         "LQ L",IDC_RADIOLQL,"Button",BS_AUTORADIOBUTTON,29,43,31,
+                    10
+    CONTROL         "LQ M",IDC_RADIOLQM,"Button",BS_AUTORADIOBUTTON,29,56,33,
+                    10
+    CONTROL         "LQ H",IDC_RADIOLQH,"Button",BS_AUTORADIOBUTTON,29,69,33,
+                    10
+    EDITTEXT        IDC_EDITFROMPAGE,30,100,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITTOPAGE,100,100,54,14,ES_AUTOHSCROLL
+    LTEXT           "To Page:",IDC_STATIC,85,88,30,8
+    LTEXT           "From Page:",IDC_STATIC,18,88,37,8
+    LTEXT           "To File:",IDC_STATIC,18,129,24,8
+    EDITTEXT        IDC_EDITTOFILE,28,141,145,14,ES_AUTOHSCROLL
+END
+
+IDD_REPLACE DIALOG DISCARDABLE  0, 0, 321, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Find Next",IDC_FIND_NEXT,264,4,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,264,58,50,14
+    LTEXT           "Find what :",IDC_STATIC,17,85,36,8
+    LTEXT           "Replace with :",IDC_STATIC,7,100,46,8
+    PUSHBUTTON      "&Replace",IDC_REPLACE,264,22,50,14
+    LTEXT           "Press Ctrl + G when you want to change the mode  from Farsi to English and vice versa.",
+                    IDC_STATIC,20,17,200,23
+    PUSHBUTTON      "Replace &All",IDC_REPLACE_ALL,264,40,50,14
+END
+
+IDD_ABOUTTEAM DIALOG DISCARDABLE  0, 0, 328, 286
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FarsiTeX Project Team"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Dismiss",IDOK,291,269,32,14,WS_GROUP
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,13,1,300,34
+    LTEXT           "* Mohammad Ghodsi, Ph.D. (Project Director)",IDC_STATIC,
+                    19,47,143,8
+    LTEXT           "* Roozbeh Pournader (Typesetting Engine, Technical Manager)",
+                    IDC_STATIC,19,57,218,8
+    LTEXT           "* Mehrdad Sabetzadeh (FarsiTeX Editor for Windows) ",
+                    IDC_STATIC,19,67,171,8
+    LTEXT           "* Shiva Nejati (FarsiTeX Editor for Windows, Farsi MakeIndex) ",
+                    IDC_STATIC,19,77,197,8
+    LTEXT           "* Okhtay Ilghami (FarsiTeX Editor for Windows) ",
+                    IDC_STATIC,19,87,150,8
+    LTEXT           "* Hadi Karimi (Azin and Titr Fonts) ",IDC_STATIC,19,97,
+                    108,8
+    LTEXT           "* Behdad Esfahbod (Website Administration, Quality Assurance) ",
+                    IDC_STATIC,19,107,202,8
+    LTEXT           "* Mehran Mehr (FarsiTeX Editor for DOS) ",IDC_STATIC,19,
+                    127,131,8
+    LTEXT           "* Mohammad Bakuii (FarsiTeX to HTML) ",IDC_STATIC,19,
+                    117,130,8
+    LTEXT           "* Mohammad Mahdian (Typesetting Engine)",IDC_STATIC,19,
+                    137,138,8
+    LTEXT           "* Massoud Babaiezadeh  (Quality Assurance)",IDC_STATIC,
+                    19,157,142,8
+    LTEXT           "* Bardia Hesam  (Quality Assurance)",IDC_STATIC,19,147,
+                    114,8
+    LTEXT           "* Mohammad Toossi (Linux Editor)",IDC_STATIC,19,177,108,
+                    8
+    LTEXT           "* Hassan Abolhasani (Typesetting Engine) ",IDC_STATIC,
+                    19,200,135,8
+    LTEXT           "* Mehran Sharghi (Scientific Farsi Fonts) ",IDC_STATIC,
+                    171,200,128,8
+    LTEXT           "* Kiarash Bazargan (FarsiTeX Editor for DOS) ",
+                    IDC_STATIC,19,210,144,8
+    LTEXT           "You can find our personal cantact information at http://www.farsitex.org/team.php",
+                    IDC_STATIC,29,242,259,8
+    LTEXT           "However, we will ONLY answer questions about licensing if you contact us directly. Any bug reports or suggestions must be made through FarsiTeX bugs/suggestions lists.",
+                    IDC_STATIC,27,250,274,18
+    LTEXT           "* Sasan Dashtinezhad (Website Administration)",
+                    IDC_STATIC,171,219,148,8
+    LTEXT           "* Parvaneh Asghari (Traffic Font)",IDC_STATIC,171,210,
+                    104,8
+    LTEXT           "* Jafar Haghollahi (Farsi Fonts) ",IDC_STATIC,19,229,98,
+                    8
+    LTEXT           "* Jamshid Yousefi (Titr Font)",IDC_STATIC,19,219,88,8
+    LTEXT           "Current Members:",IDC_STATIC,9,37,56,8
+    LTEXT           "* Yousof Mortazavi (Linux Editor)",IDC_STATIC,19,167,
+                    103,8
+    LTEXT           "Previous Members:",IDC_STATIC,9,190,61,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Ftexed MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Ftexed\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Ftexed.EXE\0"
+            VALUE "ProductName", "Ftexed Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOGPRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_ABOUTTEAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 323
+        BOTTOMMARGIN, 285
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "FarsiTeX Editor Alpha 9.1"
+    IDR_NONAMETYPE          "\nUntitled\nFarsiTeX\nFarsiTeX Files (*.ftx)\n.ftx\nFarsiTeX.Document\nFarsiTeX Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FarsiTeX Editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_TEXT5                "                                        "
+    ID_LnCol                "                            "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display information about FarsiTeX\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_GO              "Go to line number specified by user"
+    ID_FARSI                "Farsi mode\nFarsi"
+    ID_ENGLISH              "English mode\nEnglish"
+    ID_SEARCH               "Search for the specified word\nSearch"
+    ID_SearchAgain          "Search again for the specified word\nSearch again"
+    ID_EDIT_SEARCH          "Search for the specified word\nSearch"
+    ID_EDIT_SEARCHAGAIN     "Search again for the word specified by user\nSearch again"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RUN                  "Run FarsiTeX\nRun"
+    ID_GS                   "Run GS View\nGSView"
+    ID_SYNTAXOFF            "Toggles syntax highlighting feature."
+    ID_DVI                  "Run View\nView"
+    ID_BUTTON32795          "DVI to PS\nDVIPS"
+    ID_DVIPS                "Run DVIPS\nDVIPS"
+    IDD_READ_HELP           "Launch the default web browser and view FarsiTeX Editor manual\nManual"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_IMPORT          "Import Windows Clipboard into FarsiTeX Editor internal clipboard\nImport Clipboard"
+    IDD_VISIT_HOMEPAGE      "Visit FarsiTeX Homepage on the World-Wide Web\nHomepage"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Ftexed.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

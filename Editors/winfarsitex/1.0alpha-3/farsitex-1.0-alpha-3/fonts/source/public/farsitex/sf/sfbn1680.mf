@@ -1,0 +1,259 @@
+%******************************************************************************
+%*                          P A R A M E T E R S                               *
+%******************************************************************************
+origsize     :=  12;                       % Font size in Pt.
+fontsize := origsize * 1.4;
+bolding      :=1.04;                       % Factor of bolding.
+slant        :=  0;
+%*********************** Units of mesurments *************************
+u#           := 1mm# * (fontsize/153);
+v#           :=1.04mm# * (fontsize/153);
+
+ending_width#            := 1.7mm#;
+arc_width#               := 5.3mm#;
+horiz_width#             := 4.8mm# *(fontsize/153)*bolding;
+body_height#             :=31.0mm# *(fontsize/153);
+body_depth#              :=19.6mm# *(fontsize/153);
+
+%************************ Ending Up ********************************
+endingupdir_noon_group   :=53.0; %For Big & Last cases of :
+                                 %  Noon, Ghaf, Ye, Sin, Shin, Sad, Zad, Lam.
+endingupdir_be_group     :=54.0; %For Big & Last case of :
+                                 %  Be, Pe, Te, Se, Fe, Kaf, Gaf.
+startdir_endingup        :=165;
+
+%************************ Horiz Mid ********************************
+horizmiddir_noon_group   :=223;  %For Big & Last cases of :
+                                 %  Noon, Ghaf, Ye, Sin, Shin, Sad, Zad, Lam.
+horizmiddir_be_group     :=202;  %For Big & Last case of :
+                                 %  Be, Pe, Te, Se, Fe, Kaf, Gaf.
+horizmiddir_ye_group     :=215;  %For Big & Last case of : Ye.
+
+horizmidpenang_noon_group:= 60;
+horizmidpenang_be_group  := 55;
+horizmidpenang_ye_group  := 56;
+
+%*************************** Alaem ********************************
+paren_height#            := 29.0mm# *(fontsize/153);
+gume_height#             := 16.5mm# *(fontsize/153);
+math_axis#               := 11.2mm# *(fontsize/153);
+dot_size#                :=  5.4mm# *(fontsize/153)*bolding;
+
+%*************************** Digits ********************************
+yek_start_width#         := 6.2mm#;
+yek_tail_width#          := 2.0mm#;
+num_height#              := 25.6mm# *(fontsize/153);
+do_tooth_width#          := 2.0mm#;
+se_tooth_width#          := 2.0mm#;
+haft_lstart_width#       := 7.0mm#;
+haft_rstart_width#       := 6.5mm#;
+
+
+%************************** Spacing ********************************
+cheshmi#                 := 3.8mm#*(fontsize/153);
+spc_adad#                := 2.0mm#*(fontsize/153);
+
+%*************************** Point *********************************
+point_rotation_ang       :=0;
+point_top_ang            :=90;
+point_radius#            :=2.0mm#;
+point_corn_rad#          :=0.8mm#;
+
+%*************************** Neck **********************************
+fbe_neck_width#          :=3mm#;   % For First cases of :
+fbe_neck_penang          :=165;    %   Be, Pe, Te, Se, Noon, Ye.
+sin_neck_width#          :=2.1mm#; % For First and Big cases of :
+sin_neck_penang          :=171;    %   Sin, Shin.
+sad_neck_width#          :=2.7mm#; % For :
+sad_neck_penang          :=145;    %   Sad, Zad, Ta, Za.
+jim_neck_width#          :=3.35mm#;% For :
+jim_neck_penang          :=111;    %   Jim, Che, He, Khe
+bigjim_neck_width#       :=2.8mm#; % For big and last cases of:
+bigjim_neck_penang       :=135;    %   Jim, Che, He, Khe
+re_neck_width#           :=2.62mm#;% For : Re & Ze.
+dal_neck_width#          :=2.70mm#;% For : Re & Ze.
+he_neck_width#           :=4.20mm#;% For first He.
+
+%************************** A L E F ********************************
+alef_head_ang            :=63;
+alef_head_width#         :=5.9mm#;
+alef_width#              :=3mm#;
+alef_diff#               :=.65mm#;
+
+%*************************** E I N *********************************
+ein_r_width#             :=3.6mm#;
+mein_r_neckwidth#        :=4.2mm#;
+mein_l_neckwidth#        :=3.8mm#;
+mein_neck_width#         :=2.9mm#;
+ein_neck_width#          :=2.8mm#;
+ein_xtail_length#        :=9.9mm#;
+
+%*************************** J I M *********************************
+endang_jimhat            :=66;
+startdir_jimhat          :=48;
+jim_endheight_ratio      :=0.504;
+jim_startheight_ratio    :=0.675;
+bigjim_endheight_ratio   :=0.94;
+bigjim_startheight_ratio :=0.5;
+
+jim_tail_startwidth#     :=5.3mm#;
+jim_tail_endwidth#       :=4.7mm#;
+jim_xtail_length#        :=9.0mm#;
+jim_xtail_width#         :=ending_width#;
+jim_conection_width#     :=2.6mm#;
+
+%***************************** Za **********************************
+za_end_width#            :=2mm#;
+
+%***************************** Ye **********************************
+ye_tneckwidth#           :=2.0mm#;
+ye_bneckwidth#           :=4.2mm#;
+lye_tneckwidth#          :=4.0mm#;
+lye_mneckwidth#          :=4.8mm#;
+
+
+%***************************** Re **********************************
+re_end_length#           :=6.6mm#; % For big cases of  Re & Ze
+lre_end_length#          :=6.0mm#; % For last cases of  Re & Ze
+re_end_dir               :=158;    % For  Re & Ze
+re_tail_width#           :=4.4mm#; % For  Re & Ze
+
+%***************************** Dal *********************************
+dal_end_height#          :=4.83mm#;% For big case of  Dal & Zal
+dal_end_width#           :=4.8mm#; % For  Dal & Zal
+
+%***************************** He **********************************
+he_tneckwidth#           :=5.5mm#;
+he_lneckwidth#           :=2.2mm#;
+he_bneckwidth#           :=5.0mm#;
+he_trneckwidth#          :=2.6mm#;
+he_brneckwidth#          :=3.1mm#;
+bhe_rneckwidth#          :=4.0mm#;
+bhe_eneckwidth#          :=2.4mm#;
+lhe_topwidth#            :=3.6mm#;
+lhe_tneckwidth#          :=3.4mm#;
+lhe_lneckwidth#          :=6.2mm#;
+
+%***************************** Vav *********************************
+vav_rneckwidth#          :=3.8mm#;
+vav_lneckwidth#          :=3.2mm#;
+vav_tneckwidth#          :=5.0mm#;
+lvav_rneckwidth#         :=3.05mm#;
+lvav_lneckwidth#         :=2.35mm#;
+lvav_tneckwidth#         :=4.4mm#;
+vav_height#              :=11mm#;    % Height of head of big Vav
+lvav_height#             :=10.4mm#;  % Height of head of last Vav
+vav_end_length#          :=6.3mm#;
+vav_end_dir              :=151;
+
+%***************************** Mim *********************************
+mim_rneckwidth#          :=4.6mm#;
+mim_tneckwidth#          :=4.7mm#;
+mim_lneckwidth#          :=3.0mm#;
+mim_dneckwidth#          :=5.2mm#;
+mmim_rneckwidth#         :=6.0mm#;
+mmim_tneckwidth#         :=3.5mm#;
+mmim_lneckwidth#         :=3.0mm#;
+mmim_dneckwidth#         :=4.8mm#;
+lmim_rneckwidth#         :=5.0mm#;
+lmim_lneckwidth#         :=4.8mm#;
+bmim_mheadwidth#         :=5.0mm#;
+bmim_eheadwidth#         :=5.4mm#;
+mim_ttailwidth#          :=3.8mm#;
+mim_mtailwidth#          :=3.0mm#;
+mim_dtailwidth#          :=2mm#;
+mim_height_fact          :=1;        % Height factor of head of mid & first Mim
+lmim_height_fact         :=1;        % Height factor of head of last Mim
+
+%**************************** Ghaf *********************************
+ghaf_rneckwidth#          :=2.4mm#;
+ghaf_lneckwidth#          :=2.6mm#;
+ghaf_tneckwidth#          :=5.4mm#;
+
+%***************************** Lam *********************************
+lam_neck_width#          :=3.0mm#;   %For First & Mid case of Lam
+lam_diff#                :=.5mm#;
+
+%***************************** Kaf *********************************
+kaf_neck_width#          :=2.1mm#;
+kaf_s_head_width#        :=4.3mm#;
+kaf_e_head_width#        :=3.5mm#;
+kaf_head_angle           :=75;
+kaf_t_width#             :=4.0mm#;
+kaf_m_width#             :=3.6mm#;
+gaf_s_head_width#        :=3.0mm#;
+gaf_e_head_width#        :=2.9mm#;
+
+%************************* Miceleanous *****************************
+startpenwidth_sad#       :=2.6mm#; % For  Sad, Zad, Ta, Za.
+
+%******************** Start Pen Angle Tooth ************************
+startpenang_tooth_noon   := 67;  % For Last case of :
+                                 %   Noon, Sin, Shin, Sad, Zad And
+                                 % And Big case of :
+                                 %   Be, Pe, Te, Se.
+
+startpenang_tooth_be     := 62;  % For First case of :
+                                 %   Be, Pe, Te, Se, Noon, Ye.
+
+startpenang_tooth_re     := 69;  % For Big & Last cases of :
+                                 %   Re, Ze
+
+startpenang_tooth_sin    := 81;  % For Big & First cases of : Sin, Shin.
+
+startpenang_tooth_he     := 77;  % For Big $ First cases of : He
+
+startpenang_tooth_dal    := 76;  % For Big cases of dal, Zal.
+
+startpenang_ldal         := 71;  % For Last cases of dal, Zal.
+
+startpenang_bnoon        := 62;  % For Big case of Noon.
+
+
+%********************* Start Pen Width Tooth ************************
+startpenwidth_tooth_be#  := 4.65mm#; % For Last case of :
+                                     %   Noon, Sin, Shin, Sad, Zad, La
+                                     % And Big case of :
+                                     %   Be, Pe, Te, Se, Dal, Zal, Re,
+                                     %   Ze, La.
+
+startpenwidth_tooth_fbe# := 4.2mm#;  % For First cases of :
+                                     %   Be, Pe, Te, Se, Noon, Ye.
+
+startpenwidth_tooth_bhe# := 5.2mm#;  % For Big  case of  He
+
+startpenwidth_tooth_re#  := 4.3mm#;  % For Last case of : Re, Ze.
+
+startpenwidth_dal#       := 3.9mm#;  % For Last case of : Dal, Zal.
+
+startpenwidth_tooth_sin# := 5.1mm#;  % For Big & First case of Sin,Shin.
+
+startpenwidth_tooth_he#  := 5.9mm#;  % For First case of : He
+
+startpenwidth_tooth_noon#:= 4.6mm#;  % For Big case of  Noon.
+
+%********************* Start Direction Tooth *************************
+startdir_tooth_be        :=302;  % For Last case of :
+                                 %   Noon, Sin, Shin, Sad, Zad
+                                 % And Big case of : Be, Pe, Te, Se
+                                 % And First case of : Be,Pe,Te,Se,Noon,Ye.
+
+startdir_tooth_sin       :=313;  % For Big and First cases of :
+                                 %   Sin, Shin.
+
+startdir_re              :=306;  % For  Re & Ze
+
+%************************* Tooth Parameter ***************************
+left_tooth_length#    := 6.5mm#;
+left_tooth_height#    := 8.5mm#;
+tooth_ang             := 75;
+
+%************************** Pen Width ********************************
+tiny#                 := 1.6mm#; 
+tooth_width#          := 1.8mm#;
+num_width#            := 2.0mm#;
+erab_width#           := 2.2mm#;
+fine#                 := 1.0mm#;
+rule#                 := 2.5mm#;
+
+input sf_all

@@ -1,0 +1,50 @@
+{ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=B24f6dhqSR-CgLZiS1ATUuoTkDbjxnRfA7rWEA8CNtwGg7w8QARgBIOHmmwIoAzgAUOOn_qT9_____wFg7YLvg9QPoAG5p7T_A6oBEnNvZnRkcmlua19zZl9wYWdlc7IBD3NvdXJjZWZvcmdlLm5ldLoBCTcyOHg5MF9qc8gBAdoBKGh0dHA6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvZmFyc2l0ZXiAAgGoAwHoA-YD6APbBegDBegD4AX1AwAEAAA&amp;num=1&amp;adurl=http://manageengine.adventnet.com/products/netflow/netflow-traffic-analysis.html%3Fadwords33ntc%26CampaignID%3D100201308%26CampaignID%3D2007200&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.netflowanalyzer.com"; 
+google_ad.line1 = "Free IP Traffic Analyzer"; 
+google_ad.line2 = "Free IP traffic analysis and"; 
+google_ad.line3 = "reporting tool using NetFlow."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BK7dBdhqSR-CgLZiS1ATUuoTkDZSytCOMx6eRA8CNtwGAxBMQAhgCIOHmmwIoAzgAUIytwN4FYO2C74PUD6oBEnNvZnRkcmlua19zZl9wYWdlc7IBD3NvdXJjZWZvcmdlLm5ldLoBCTcyOHg5MF9qc8gBAdoBKGh0dHA6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvZmFyc2l0ZXioAwHoA-YD6APbBegDBegD4AX1AwAEAAA&amp;num=2&amp;adurl=http://www.visual-paradigm.com&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.visual-paradigm.com"; 
+google_ad.line1 = "Free UML 2.1 Design Tool"; 
+google_ad.line2 = "Visually develop applications with"; 
+google_ad.line3 = "Roundtrip model to code, ERD \x26amp; DB"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BPNtRdhqSR-CgLZiS1ATUuoTkDen1oiXJ0dfhA8CNtwGAxBMQAxgDIOHmmwIoAzgAUImRicz6_____wFg7YLvg9QPoAHBkKf-A6oBEnNvZnRkcmlua19zZl9wYWdlc7IBD3NvdXJjZWZvcmdlLm5ldLoBCTcyOHg5MF9qc8gBAdoBKGh0dHA6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvZmFyc2l0ZXiAAgGoAwHoA-YD6APbBegDBegD4AX1AwAEAAA&amp;num=3&amp;adurl=http://www.2x.com/thinclientserver/free-thin-clients.htm&amp;client=ca-ostg_js"; 
+google_ad.visible_url = "www.2x.com/free-thin-clients/"; 
+google_ad.line1 = "Get Free Thin Clients"; 
+google_ad.line2 = "and start saving time \x26amp; money"; 
+google_ad.line3 = "with thin client computing and 2X"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://services.google.com/feedback/abg?url=http://sourceforge.net/projects/farsitex&amp;hl=en&amp;client=ca-ostg_js&amp;adU=www.netflowanalyzer.com&amp;adT=Free+IP+Traffic+Analyzer&amp;adU=www.visual-paradigm.com&amp;adT=Free+UML+2.1+Design+Tool&amp;adU=www.2x.com/free-thin-clients/&amp;adT=Get+Free+Thin+Clients&amp;done=1"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}

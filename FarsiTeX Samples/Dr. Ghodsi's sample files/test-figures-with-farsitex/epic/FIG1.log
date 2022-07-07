@@ -1,0 +1,30 @@
+This is e-TeX, Version 3.141592-2.2 (MiKTeX 2.4) (preloaded format=farsitex 2007.5.28)  10 JUN 2007 16:18
+entering extended mode
+**&farsitex FIG1
+(FIG1.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+LaTeX error.  See LaTeX manual for explanation.
+              Type  H <return>  for immediate help.
+! \dashlinestretch undefined.
+\@latexerr ...for immediate help.}\errmessage {#1}
+                                                  
+\@ifundefined ...fx \csname #1\endcsname \relax #2
+                                                  \else #3\fi 
+\renewcommand ...ring #1\space undefined}\@ehc }{}
+                                                  \@ifnextchar [{\@reargdef ...
+l.9 {\renewcommand{\dashlinestretch}
+                                    {30}
+? x
+ 
+Here is how much of TeX's memory you used:
+ 8 strings out of 95535
+ 83 string characters out of 1143684
+ 56371 words of memory out of 1049081
+ 3569 multiletter control sequences out of 35000
+ 919 words of font info for 5 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 8i,0n,7p,69b,16s stack positions out of 1500i,500n,5000p,200000b,32768s
+No pages of output.

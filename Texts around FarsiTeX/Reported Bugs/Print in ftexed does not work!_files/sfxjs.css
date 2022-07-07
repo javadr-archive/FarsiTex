@@ -1,0 +1,8 @@
+.column li span,#searchform span{display:none;padding:.1em}
+.dwn{background:url("http://images.sourceforge.net/sfx/plus.gif") 0 .1em no-repeat;cursor:pointer;left:0;margin:0;padding:0 .4em;position:absolute;text-decoration:none;z-index:1}
+.dwns{background:url("http://images.sourceforge.net/sfx/plus.gif") 0 .2em no-repeat;cursor:pointer;margin:0;padding:0 .3em;position:absolute;right:-1.4em;text-decoration:none;top:0;z-index:1}
+.hide{display:none}
+.tdwn{background:url("http://images.sourceforge.net/sfx/plus.gif") 0 .1em no-repeat;cursor:pointer;padding:0 0 0 15px;z-index:1}
+.tup{background:url("http://images.sourceforge.net/sfx/minus.gif") 0 .1em no-repeat;cursor:pointer;padding:0 0 0 15px;z-index:2}
+.up{background:url("http://images.sourceforge.net/sfx/minus.gif") 0 .1em no-repeat;cursor:pointer;left:0;margin:0;padding:0 .4em;position:absolute;text-decoration:none;z-index:2}
+.ups{background:url("http://images.sourceforge.net/sfx/minus.gif") 0 .2em no-repeat;cursor:pointer;margin:0 0 0 -0.3em;padding:0 .3em;position:absolute;right:-1.4em;text-decoration:none;z-index:2}

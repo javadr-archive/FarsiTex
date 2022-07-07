@@ -1,0 +1,192 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+code[  1] := 141;              %*** A
+code[  2] := 145;              %*** last  Alef
+code[  3] := 144;              %*** Alef
+code[  4] := 146;              %*** big   Be
+code[  5] := 176;              %*** last  Be
+code[  6] := 177;              %*** mid   Be
+code[  7] := 147;              %*** first Be
+code[  8] := 148;              %*** big   pe
+code[  9] := 178;              %*** last  pe
+code[ 10] := 179;              %*** mid   pe
+code[ 11] := 149;              %*** first pe
+code[ 12] := 150;              %*** big   te
+code[ 13] := 180;              %*** last  te
+code[ 14] := 181;              %*** mid   te
+code[ 15] := 151;              %*** first te
+code[ 16] := 152;              %*** big   se
+code[ 17] := 182;              %*** last  se
+code[ 18] := 183;              %*** mid   se
+code[ 19] := 153;              %*** first se
+code[ 20] := 154;              %*** big   jim
+code[ 21] := 184;              %*** last  jim
+code[ 22] := 185;              %*** mid   jim
+code[ 23] := 155;              %*** first jim
+code[ 24] := 156;              %*** big   che
+code[ 25] := 186;              %*** last  che
+code[ 26] := 187;              %*** mid   che
+code[ 27] := 157;              %*** first che
+code[ 28] := 158;              %*** big   ha
+code[ 29] := 188;              %*** last  ha
+code[ 30] := 189;              %*** mid   ha
+code[ 31] := 159;              %*** first ha
+code[ 32] := 160;              %*** big   khe
+code[ 33] := 190;              %*** last  khe
+code[ 34] := 191;              %*** mid   khe
+code[ 35] := 161;              %*** first khe
+code[ 36] := 162;              %*** big   dal
+code[ 37] := 192;              %*** last  dal
+code[ 38] := 163;              %*** big   zal
+code[ 39] := 193;              %*** last  zal
+code[ 40] := 164;              %*** big   re
+code[ 41] := 194;              %*** last  re
+code[ 42] := 165;              %*** big   ze
+code[ 43] := 195;              %*** last  ze
+code[ 44] := 166;              %*** big   je
+code[ 45] := 196;              %*** last  je
+code[ 46] := 167;              %*** big   sin
+code[ 47] := 197;              %*** last  sin
+code[ 48] := 198;              %*** mid   sin
+code[ 49] := 168;              %*** first sin
+code[ 50] := 169;              %*** big   shin
+code[ 51] := 199;              %*** last  shin
+code[ 52] := 200;              %*** mid   shin
+code[ 53] := 170;              %*** first shin
+code[ 54] := 171;              %*** big   sad
+code[ 55] := 201;              %*** last  sad
+code[ 56] := 202;              %*** mid   sad
+code[ 57] := 172;              %*** first sad
+code[ 58] := 173;              %*** big   zad
+code[ 59] := 203;              %*** last  zad
+code[ 60] := 204;              %*** mid   zad
+code[ 61] := 174;              %*** first zad
+code[ 62] := 175;              %*** big   ta
+code[ 63] := 205;              %*** last  ta
+code[ 64] := 206;              %*** mid   ta
+code[ 65] := 207;              %*** first ta
+code[ 66] := 224;              %*** big   za
+code[ 67] := 208;              %*** last  za
+code[ 68] := 209;              %*** mid   za
+code[ 69] := 210;              %*** first za
+code[ 70] := 225;              %*** big   ein
+code[ 71] := 226;              %*** last  ein
+code[ 72] := 227;              %*** mid   ein
+code[ 73] := 228;              %*** first ein
+code[ 74] := 229;              %*** big   ghein
+code[ 75] := 230;              %*** last  ghein
+code[ 76] := 231;              %*** mid   ghein
+code[ 77] := 232;              %*** first ghein
+code[ 78] := 233;              %*** big   fe
+code[ 79] := 211;              %*** last  fe
+code[ 80] := 212;              %*** mid   fe
+code[ 81] := 234;              %*** first fe
+code[ 82] := 235;              %*** big   ghaf
+code[ 83] := 213;              %*** last  ghaf
+code[ 84] := 214;              %*** mid   ghaf
+code[ 85] := 236;              %*** first ghaf
+code[ 86] := 237;              %*** big   kaf
+code[ 87] := 215;              %*** last  kaf
+code[ 88] := 216;              %*** mid   kaf
+code[ 89] := 238;              %*** first kaf
+code[ 90] := 239;              %*** big   gaf
+code[ 91] := 217;              %*** last  gaf
+code[ 92] := 218;              %*** mid   gaf
+code[ 93] := 240;              %*** first gaf
+code[ 94] := 241;              %*** big   lam
+code[ 95] := 219;              %*** last  lam
+code[ 96] := 220;              %*** mid   lam
+code[ 97] := 243;              %*** first lam
+code[ 98] := 244;              %*** big   mim
+code[ 99] := 221;              %*** last  mim
+code[100] := 222;              %*** mid   mim
+code[101] := 245;              %*** first mim
+code[102] := 246;              %*** big   noon
+code[103] := 223;              %*** last  noon
+code[104] := 128;              %*** mid   noon
+code[105] := 247;              %*** first noon
+code[106] := 248;              %*** big   vav
+code[107] := 129;              %*** last  vav
+code[108] := 249;              %*** big   he
+code[109] := 130;              %*** last  he
+code[110] := 250;              %*** mid   he
+code[111] := 251;              %*** first he
+code[112] := 253;              %*** big   ye
+code[113] := 252;              %*** last  ye
+code[114] := 131;              %*** mid   ye
+code[115] := 254;              %*** first ye
+code[116] := 132;              %*** big   la
+code[117] := 133;              %*** last  la
+code[118] := 143;              %*** big   hamzeh
+code[119] := 142;              %*** first hamzeh
+code[120] := 255;              %*** mid   hamzeh
+code[121] := 134;              %*** big   circled te
+code[122] := 135;              %*** last  circled te
+
+code[130] :=  46;              %*** "."
+code[131] :=  58;              %*** ":"
+code[132] :=  44;              %*** ","
+code[133] :=  59;              %*** ";"
+code[134] :=  40;              %*** "("
+code[135] :=  41;              %*** ")"
+code[136] :=  63;              %*** "?"
+code[137] :=  33;              %*** "!"
+code[138] :=  37;              %*** "%"
+code[139] :=  34;              %*** l_gume
+code[140] :=  39;              %*** r_gume
+code[141] :=  43;              %*** "+"
+code[142] :=  45;              %*** "-" Minus
+code[143] :=  61;              %*** "="
+code[144] :=  47;              %*** "/"
+code[145] := 139;              %*** "‹" Tireh
+code[146] :=  93;              %*** "["
+code[147] :=  91;              %*** "]"
+code[148] :=  42;              %*** "/" Persian Decimal Point
+
+code[150] :=  97;              %*** Tashdid
+code[151] :=  98;              %*** Hamzeh
+code[152] :=  99;              %*** Kasreh
+code[153] := 100;              %*** fathe
+code[154] := 101;              %*** Zamehh
+code[155] := 102;              %*** FTanvin
+code[156] := 103;              %*** ZTanvin
+code[157] := 104;              %*** Saken
+code[158] := 105;              %*** Small Alef
+
+code[160] :=  90;              %*** Sefr
+code[161] :=  48;              %*** Sefr (hollow)
+code[162] :=  49;              %*** Yek
+code[163] :=  50;              %*** Do
+code[164] :=  51;              %*** Se
+code[165] :=  52;              %*** Char
+code[166] :=  53;              %*** Panj
+code[167] :=  54;              %*** Shesh
+code[168] :=  55;              %*** Haft
+code[169] :=  56;              %*** Hasht
+code[170] :=  57;              %*** Noh
+
+%--RP
+code[171] := 138;              %*** Small Tireh

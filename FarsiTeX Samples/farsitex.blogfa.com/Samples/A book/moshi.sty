@@ -1,0 +1,1384 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%In the name of GOD
+\def\@ptsize{0}                                                         %{for size
+%\@namedef{ds@19pt}{\def\file{C:\Program Files\MiKTeX\tex\latex209\base\rep19.sty}}                                     %
+\@namedef{ds@10pt}{\def\@ptsize{0}}                                     %
+\@namedef{ds@11pt}{\def\@ptsize{1}}                                     %
+\@namedef{ds@12pt}{\def\@ptsize{2}}                                     %
+\def\ds@draft{\overfullrule 5pt}                                        %
+%\input{rep19.sty}
+\newbox\myboxx
+\newbox\mmbox
+\def\setm#1{\setbox\myboxx\hbox{$\ds#1$}}
+\def\hm{\h*{\wd\myboxx}}
+\def\setmm#1#2{\setbox\myboxx\hbox{$#1$}\setbox\mmbox\hbox{$#2$}}
+\def\hmm{\h*{\wd\myboxx}\h*{-\wd\mmbox}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% input %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ds@twoside{\@twosidetrue \@mparswitchtrue}
+\def\ds@draft{\overfullrule 5pt}
+\@options                                                               %
+\input rep1\@ptsize.sty\relax                                           %}
+\input{amssym}
+\input{epsf}
+\newcounter{oddpage}
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% item %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\labelenumi{{\rm\theenumi-}}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumii{{\rm(\theenumii)}}
+\def\theenumii{\alph{enumii}}
+\def\p@enumii{\theenumi}
+\def\labelenumiii{{\rm\theenumiii.}}
+\def\theenumiii{{\roman{enumiii}}}
+\def\p@enumiii{\theenumi(\theenumii)}
+\def\labelenumiv{{\rm\theenumiv.}}
+\def\theenumiv{\Alph{enumiv}}
+\def\p@enumiv{\p@enumiii\theenumiii}
+
+\def\labelitemi{$\bullet$}
+\def\labelitemii{\bf --}
+\def\labelitemiii{$\ast$}
+\def\labelitemiv{$\cdot$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter {part}
+\newcounter {chapter}
+\newcounter {section}[chapter]
+\newcounter {subsection}[section]
+\newcounter {subsubsection}[subsection]
+\newcounter {paragraph}[subsubsection]
+\newcounter {subparagraph}[paragraph]
+\def\thepart {\Roman{part}}
+\def\thechapter {\beginL\arabic{chapter}\endL}
+\def\thesection {\thechapter-\beginL\arabic{section}\endL}
+\def\thesubsection {\thesection-\beginL\arabic{subsection}\endL}
+\def\thesubsubsection {\thesubsection-\beginL\arabic{subsubsection}\endL}
+\def\theparagraph {\thesubsubsection-\beginL\arabic{paragraph}\endL}
+\def\thesubparagraph {\theparagraph-\beginL\arabic{subparagraph}\endL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{topnumber}{2}                                               %
+\def\topfraction{.7}                                                    %
+\setcounter{bottomnumber}{1}                                            %
+\def\bottomfraction{.3}                                                 %
+\setcounter{totalnumber}{3}                                             %
+\def\textfraction{.2}                                                   %
+\def\floatpagefraction{.5}                                              %
+\setcounter{dbltopnumber}{2}                                            %
+\def\dbltopfraction{.7}                                                 %
+\def\dblfloatpagefraction{.5}                                           %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% names %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\appendixname{•‰ƒ‰¨‰´}
+\def\partname{“‰¿‰Ç}
+\def\chaptername{ê‰Ê‰Û}
+\def\@chapapp{\chaptername}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% chapter head %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@makechapterhead#1{\markboth{#1}{#1}{
+\cleardoublepage \vspace*{10pt}\parindent 0pt
+\thispagestyle{empty}
+ %\ifnum \c@secnumdepth >\m@ne
+ \huge\siah \chaptername\thechapter \par\vspace*{15pt} \raggedright\vskip 15pt %\fi
+ \Huge \bf #1\par
+ \nobreak \vskip 30pt } }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% chapters head %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@makeschapterhead#1{\markboth{#1}{#1}{
+\cleardoublepage \vspace*{10pt}\parindent 0pt
+\thispagestyle{empty}
+ %\ifnum \c@secnumdepth >\m@ne
+ \huge\siah \chaptername\thechapter \par\vspace*{15pt} \raggedright\vskip 15pt %\fi
+ \Huge \bf #1\par
+ \nobreak \vskip 30pt } }
+%%%%%%%%%%%%%%%%%%%%%%%%% abstract of chapter %%%%%%%%%%%%%%%%%%%%%%%%%%%\fcountpagenum
+\newenvironment{abstractofchapter}{
+\thispagestyle{moshiplain}\pagestyle{moshiplain}
+\parindent 5pt\baselineskip=8mm\normalsize%
+\vspace*{5mm}\par%
+}{\cleardoublepage\pagestyle{headings}\vspace*{-34mm} \rm\par}
+%\def\abstractofchapter#1{\begin{center}\parbox[t]{.7\textwidth}{\vskip 5pt
+%\parindent 5pt\baselineskip=8mm
+%\normalsize\rm #1}\end{center}\thispagestyle{moshiplain}\clearpage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% chapter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\normalpagenum
+\def\l@chapter#1#2{\addpenalty{-\@highpenalty}%\setlength{\topmargin}{15mm}%
+   \vskip 1em\vskip 1.0em plus\p@
+   \@tempdima 1.5em
+   \begingroup
+     \parindent \z@ \rightskip \@pnumwidth
+     \parfillskip -\@pnumwidth
+     \bf
+     \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+     \bf\Large #1\rm\hfill\ \par
+     \penalty\@highpenalty
+   \endgroup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% part %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\l@part#1#2{\addpenalty{-\@highpenalty}
+ \addvspace{2.25em plus 1pt} \begingroup
+ \@tempdima 3em \parindent \z@ \rightskip \@pnumwidth \parfillskip
+ -\@pnumwidth
+ {\large \bf \leavevmode #1\hfil \hbox to\@pnumwidth{\hss #2}}\par
+ \nobreak \global\@nobreaktrue \everypar{\global\@nobreakfalse\everypar{}}
+\endgroup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% chapter pagestyle %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ps@moshiplain{\let\@mkboth\markboth
+ \def\@oddfoot{}%\hfill\pnazok\fcnt{\value{page}}\hfill}%%%%%%%%%%%%%%%%%%%Right footing.
+ \def\@evenfoot{}%\hfill\pnazok\fcnt{\value{page}}\hfill}%%%%%%%%%%%%%%%%%%Left footing.
+ \def\@evenhead{}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Left heading.
+ \def\@oddhead{}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Right heading.
+
+ \def\sectionmark##1{\markright {\ifnum \c@secnumdepth >\z@
+   \fi ##1}}
+% \def\chaptermark##1{\markboth {\ifnum \c@secnumdepth >\m@ne
+%      \fi ##1}{}}%
+}
+\let\oldps@moshiplain\ps@moshiplain
+\def\ps@moshiplain{%
+   \def\sl{\khabide}
+   \oldps@moshiplain
+   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+   \def\@oddhead{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempodd\endR\english
+                 \fi}\fi
+   \ifx\@empty\@oddfoot\else\let\tempodd\@oddfoot
+   \def\@oddfoot{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempodd\endR\english
+                 \fi}\fi
+   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+   \def\@evenhead{\if@farsi \beginR\tempodd\endR
+                 \else \\farsi\beginR\tempeven\endR\english
+                 \fi}\fi
+   \ifx\@empty\@evenfoot\else\let\tempeven\@evenfoot
+   \def\@evenfoot{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempeven\endR\english
+                 \fi}\fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% content pagestyle %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ps@moshicontentsplain{\let\@mkboth\markboth
+ \def\@oddfoot{\hfill\pnazok\fcntt{\value{page}}\hfill}%%%%%%%%%%%%%%%%%%Right footing.
+ \def\@evenfoot{\hfill\pnazok\fcntt{\value{page}}\hfill}%%%%%%%%%%%%%%%%%Left footing.
+ \def\@evenhead{}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Left heading.
+ \def\@oddhead{}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Right heading.
+
+ \def\sectionmark##1{\markright {\ifnum \c@secnumdepth >\z@
+   \fi ##1}}
+% \def\chaptermark##1{\markboth {\ifnum \c@secnumdepth >\m@ne
+%      \fi ##1}{}}%
+}
+\let\oldps@moshicontentsplain\ps@moshicontentsplain
+\def\ps@moshicontentsplain{%
+   \def\sl{\khabide}
+   \oldps@moshicontentsplain
+   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+   \def\@oddhead{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempodd\endR\english
+                 \fi}\fi
+   \ifx\@empty\@oddfoot\else\let\tempodd\@oddfoot
+   \def\@oddfoot{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempodd\endR\english
+                 \fi}\fi
+   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+   \def\@evenhead{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempeven\endR\english
+                 \fi}\fi
+   \ifx\@empty\@evenfoot\else\let\tempeven\@evenfoot
+   \def\@evenfoot{\if@farsi \beginR\tempodd\endR
+                 \else \farsi\beginR\tempeven\endR\english
+                 \fi}\fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% pagestyle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thepage{\beginL\arabic{page}\endL}
+\def\ps@headings{\let\@mkboth\markboth
+ \def\@oddfoot{}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Right footing.
+ \def\@evenfoot{}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Left footing.
+ \def\@evenhead{\arabic{page}\ \hrulefill\ \leftmark}%%%%%%%%Left heading.
+ \def\@oddhead{\rightmark\ \hrulefill\ \arabic{page}}%%%%%%%%%Right heading.
+
+ \def\sectionmark##1{\markright {\ifnum \c@secnumdepth >\z@
+   \fi ##1}}
+ \def\chaptermark##1{\markboth {\ifnum \c@secnumdepth >\m@ne
+      \fi ##1}{}}%
+}
+\let\oldps@headings\ps@headings
+\def\ps@headings{%
+   \def\sl{\khabide}
+   \oldps@headings
+   \ifx\@empty\@oddhead\else\let\tempodd\@oddhead
+   \def\@oddhead{\if@farsi \hbox to\textwidth{\beginR\tempodd\endR}
+                 \else \farsi\beginR\tempodd\endR\english
+                 \fi}\fi
+   \ifx\@empty\@oddfoot\else\let\tempodd\@oddfoot
+   \def\@oddfoot{\if@farsi \hbox to\textwidth{\beginR\tempodd\endR}
+                 \else \farsi\beginR\tempodd\endR\english
+                 \fi}\fi
+   \ifx\@empty\@evenhead\else\let\tempeven\@evenhead
+   \def\@evenhead{\if@farsi \hbox to\textwidth{\beginR\tempeven\endR}
+                 \else \farsi\beginR\tempeven\endR\english
+                 \fi}\fi
+   \ifx\@empty\@evenfoot\else\let\tempeven\@evenfoot
+   \def\@evenfoot{\if@farsi \hbox to\textwidth{\beginR\tempeven\endR}
+                 \else \farsi\beginR\tempeven\endR\english
+                 \fi}\fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% kpage %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\kpage{\newpage%
+\setcounter{shomareh}{0}%
+\addcontentsline{toc}{section}{ ¡‰¢¥õ‰‘ş‰ü\arabic{chapter}}%
+\h*{4mm}{\large\bf ¡‰¢¥õ‰‘ş‰ü\arabic{chapter}}\vskip5mm%
+\markboth{¡‰¢¥õ‰‘ş‰ü\arabic{chapter}}{¡‰¢¥õ‰‘ş‰ü\arabic{chapter}}%
+\thispagestyle{empty}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% footnote %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thefootnote{\oldarabic{footnote}}
+\def\footnoterule{\kern 3\p@
+ \hrule width 1\columnwidth
+ \kern 2.6\p@}
+\@addtoreset{footnote}{section}
+\long\def\@makefntext#1{\parindent 1em\noindent
+ \hbox to 1.8em{\hss$^{\@thefnmark}$}\,#1}
+\footnotesep 13 pt
+%\ffootnoterule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% eleftnote %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\eleftnote}[1]{\if@twoside \relax%
+   \addtocounter{footnote}{1}$^{\arabic{footnote}}\hskip -1sp $
+   \marginpar{\relax
+   %\parbox[c]{2.6cm}{\baselineskip=7mm\vskip0mm
+   \beginL $^{\arabic{footnote}}$\h*{-1mm}{\footnotesize #1}\beginR%\vskip3mm}
+}\fi\hskip 1sp }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% oleftnote %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\leftnote}[1]{\if@twoside \relax%
+   \addtocounter{footnote}{1}$^{\arabic{footnote}}\hskip -1sp $
+   \marginpar{\relax
+   %\parbox[c]{2.6cm}{\baselineskip=7mm\vskip0mm
+   $^{\arabic{footnote}}$\h*{-1mm}{\footnotesize #1}%\vskip3mm}
+}\fi\hskip 1sp }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% leftfigure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcounter{figure}[chapter]
+%\def\figurename{ª‰Ø‰Û}
+%\newcommand{\figure}[1]{\relax%
+%   \addtocounter{figure}{1}
+%   \marginpar{\parbox[c]{3cm}{\baselineskip=3mm\vskip-20mm #1
+%   \vskip-10mm\footnotesize\figurename\arabic{chapter}-\arabic{figure}.
+%   }
+%}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% pic %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{picture}
+\makeatletter
+\@addtoreset{picture}{chapter}
+\def\picture#1#2{\par%
+\addtocounter{picture}{1}%
+\edef\@currentlabel{\arabic{chapter}-\arabic{picture}}%
+\parbox[c]{\textwidth}{
+#1
+\parbox[b]{.24\textwidth}{\hfill\beginR
+ª‰Ø‰Û )\arabic{chapter}-\arabic{picture}(:}
+\parbox[t]{.6\textwidth}{\small\beginR
+#2}
+\parbox[c]{.14\textwidth}{}
+\vskip5mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% table %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{table}
+\makeatletter
+\@addtoreset{table}{chapter}
+\def\table#1#2{\par%
+\addtocounter{table}{1}%
+\edef\@currentlabel{\arabic{chapter}-\arabic{table}}%
+\parbox[c]{\textwidth}{
+#1
+\parbox[b]{.24\textwidth}{\hfill\beginR
+›‰Àøñ )\arabic{chapter}-\arabic{table}(:}
+\parbox[t]{.6\textwidth}{\small\beginR
+#2}
+\parbox[c]{.14\textwidth}{}
+\vskip5mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@pnumwidth{1.55em}
+\def\@tocrmarg {2.55em}
+\def\@dotsep{4.5}
+\setcounter{tocdepth}{2}
+\def\contentsname{}
+\def\tableofcontents{%\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn\fi
+\pagestyle{moshicontentsplain}
+\contentsname
+ \@starttoc{toc}\if@restonecol\twocolumn\fi\newpage\pagestyle{headings}
+ }
+\def\l@chapter#1#2{\addpenalty{-\@highpenalty}
+ \vskip 1.0em plus 1pt \@tempdima 1.5em \begingroup
+ \parindent \z@ \rightskip \@pnumwidth
+ \parfillskip -\@pnumwidth
+ \bf \leavevmode \advance\leftskip\@tempdima \hskip -\leftskip #1\nobreak\hfil
+\nobreak\hbox to\@pnumwidth{\beginR\hfill{\beginL\bf\hss #2}}\par
+ \penalty\@highpenalty \endgroup}
+\def\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+\def\l@subsection{\@dottedtocline{2}{3.8em}{3.2em}}
+\def\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
+\def\l@paragraph{\@dottedtocline{4}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
+\newif\if@restonecol
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% equation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\resettheequation{\def\theequation{\beginL\arabic{equation}~‹‰‹‰~\thechapter\endL}}
+\resettheequation
+\@addtoreset{equation}{chapter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% mhmmath %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{mhmmath}{\par\noindent\beginL$\ds}{$\par\no\endL\h*{-1mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% theorem %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{theocount}
+\makeatletter
+\@addtoreset{theocount}{chapter}%\refstepcounter{theocount}%
+\def\thetheo{\arabic{theocount}}
+\newcounter{exampcount}
+\makeatletter
+\@addtoreset{exampcount}{chapter}
+\def\theexamp{\arabic{exampcount}}
+\newcounter{notecount}
+\makeatletter
+\@addtoreset{notecount}{chapter}
+\def\thenote{\arabic{notecount}}
+\newenvironment{theo}{%
+\addtocounter{theocount}{1}%
+\edef\@currentlabel{\thetheo}%
+\par\noindent%
+\hbox{{\bf ì‰Ì‰ƒ‰‚}\ \thetheo:\  \sl}}{\rm\par}
+\newenvironment{prop}{%
+\addtocounter{theocount}{1}%
+\edef\@currentlabel{\thetheo}%
+\par\noindent%
+\hbox{{\bf ğ‰Ã¤ù}\ \thetheo:\  \sl}}{\rm\par}
+\newenvironment{deff}{%
+\par\noindent%
+\hbox{{\bf —‰ã‰Âş‰Ó}:\  \sl}}{\rm\par}
+\newenvironment{lemma}{%
+\addtocounter{theocount}{1}%
+\edef\@currentlabel{\thetheo}%
+\par\noindent%
+\hbox{{\bf ó‰İ}\ \thetheo:\  \sl}}{\rm\par}
+\newenvironment{coro}{%
+\addtocounter{theocount}{1}%
+\edef\@currentlabel{\thetheo}%
+\par\noindent%
+\hbox{{\bf ÷‰µ‰ƒ‰¹‰‚}\ \thetheo:\  }}{\rm\par}
+\newenvironment{examp}{%
+\addtocounter{exampcount}{1}%
+\edef\@currentlabel{\theexamp}%
+\par\noindent%
+\hbox{{\bf õ‰·‰‘ñ}\ \theexamp.\  }}{\rm\par}
+\newenvironment{note}{%
+\addtocounter{notecount}{1}%
+\edef\@currentlabel{\thenote}%
+\par\noindent%
+\hbox{{\bf ÷‰Ø‰µ‰‚}\ \thenote:\  }}{\rm\par}
+\newenvironment{taza}{%
+\par\noindent%
+\hbox{{\bf —‰Áî‰Â.}\ }}{\rm\par}
+\newenvironment{remark}{%
+\addtocounter{notecount}{1}%
+\edef\@currentlabel{\thenote}%
+\par\noindent%
+\hbox{{\bf ÷‰Ø‰µ‰‚}\ \thenote:\ }}{\rm\par}
+\newenvironment{ppage}{\edef\@currentlabel{\beginL\arabic{page}\endL}}{}
+\def\pagelabel#1{\begin{ppage}\label{#1}\end{ppage}}
+\def\mylabel#1{\label{#1}\pagelabel{p#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%new%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\farsi
+\mathfnumber
+\normalsize
+\TeXXeTstate=1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% farsi page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ps@plain \pagenumbering{arabic} \onecolumn \if@twoside\else\raggedbottom\fi
+\def\fcnt#1{\ifcase#1\or
+\InF{} ş‰× \EnF{}\or\InF{} ¢ø \EnF{}\or\InF{} ¨‰‚ \EnF{}\or\InF{} ‰ú‰‘¤ \EnF{}\or\InF{} •‰€‰¸ \EnF{}\or\InF{} ª‰Ç \EnF{}
+\or\InF{} û‰Ô‰´ \EnF{}\or\InF{} û‰È‰´ \EnF{}\or\InF{} ÷‰‚ \EnF{}\or\InF{} ¢ù \EnF{}\or
+\InF{} ş‰‘¥¢ù \EnF{}\or\InF{} ¢ø¥¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ã¢ù \EnF{}\or\InF{} ‰ú‰‘¤¢ù \EnF{}\or\InF{} •‰‘÷‰Ã¢ù \EnF{}
+\or\InF{} ª‰‘÷‰Ã¢ù \EnF{}\or\InF{} û‰Ô‰Àù \EnF{}\or\InF{} û‰¹‰Àù \EnF{}\or\InF{} ÷‰¥¢ù \EnF{}\or\InF{} “‰ƒ‰Æ‰´ \EnF{}
+\or\InF{} “‰ƒ‰Æ‰´ ø ş‰× \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø ¢ø \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø ¨‰‚ \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} “‰ƒ‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø û‰Ô‰´ \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø û‰È‰´ \EnF{}\or\InF{} “‰ƒ‰Æ‰´ ø ÷‰‚ \EnF{}\or\InF{} ¨‰ü \EnF{}
+\or\InF{} ¨‰ü ø ş‰× \EnF{}\or\InF{} ¨‰ü ø ¢ø \EnF{}\or\InF{} ¨‰ü ø ¨‰‚ \EnF{}\or\InF{} ¨‰ü ø ‰ú‰‘¤ \EnF{}\or\InF{} ¨‰ü ø •‰€‰¸ \EnF{}
+\or\InF{} “‰ƒ‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} ¨‰ü ø û‰Ô‰´ \EnF{}\or\InF{} ¨‰ü ø û‰È‰´ \EnF{}\or\InF{} ¨‰ü ø ÷‰‚ \EnF{}\or\InF{} ‰ú‰Û \EnF{}
+\or\InF{} ‰ú‰Û ø ş‰× \EnF{}\or\InF{} ‰ú‰Û ø ¢ø \EnF{}\or\InF{} ‰ú‰Û ø ¨‰‚ \EnF{}\or\InF{} ‰ú‰Û ø ‰ú‰‘¤ \EnF{}\or\InF{} ‰ú‰Û ø •‰€‰¸ \EnF{}
+\or\InF{} ‰ú‰Û ø ª‰Ç \EnF{}\or\InF{} ‰ú‰Û ø û‰Ô‰´ \EnF{}\or\InF{} ‰ú‰Û ø û‰È‰´ \EnF{}\or\InF{} ‰ú‰Û ø ÷‰‚ \EnF{}\or\InF{} •‰€‰¹‰‘ù \EnF{}
+\or\InF{} •‰€‰¹‰‘ù ø ş‰× \EnF{}\or\InF{} •‰€‰¹‰‘ù ø ¢ø \EnF{}\or\InF{} •‰€‰¹‰‘ù ø ¨‰‚ \EnF{}\or\InF{} •‰€‰¹‰‘ù ø ‰ú‰‘¤ \EnF{}\or\InF{} •‰€‰¹‰‘ù ø •‰€‰¸ \EnF{}
+\or\InF{} •‰€‰¹‰‘ù ø ª‰Ç \EnF{}\or\InF{} •‰€‰¹‰‘ù ø û‰Ô‰´ \EnF{}\or\InF{} •‰€‰¹‰‘ù ø û‰È‰´ \EnF{}\or\InF{} •‰€‰¹‰‘ù ø ÷‰‚ \EnF{}\or\InF{} ª‰Ê‰´ \EnF{}
+\or\InF{} ª‰Ê‰´ ø ş‰× \EnF{}\or\InF{} ª‰Ê‰´ ø ¢ø \EnF{}\or\InF{} ª‰Ê‰´ ø ¨‰‚ \EnF{}\or\InF{} ª‰Ê‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} ª‰Ê‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} ª‰Ê‰´ ø ª‰Ç \EnF{}\or\InF{} ª‰Ê‰´ ø û‰Ô‰´ \EnF{}\or\InF{} ª‰Ê‰´ ø û‰È‰´ \EnF{}\or\InF{} ª‰Ê‰´ ø ÷‰‚ \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ \EnF{}
+\or\InF{} û‰Ô‰µ‰‘¢ ø ş‰× \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø ¢ø \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø ¨‰‚ \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø •‰€‰¸ \EnF{}
+\or\InF{} û‰Ô‰µ‰‘¢ ø ª‰Ç \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø û‰Ô‰´ \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø û‰È‰´ \EnF{}\or\InF{} û‰Ô‰µ‰‘¢ ø ÷‰‚ \EnF{}\or\InF{} û‰È‰µ‰‘¢ \EnF{}
+\or\InF{} û‰È‰µ‰‘¢ ø ş‰× \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø ¢ø \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø ¨‰‚ \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø •‰€‰¸ \EnF{}
+\or\InF{} û‰È‰µ‰‘¢ ø ª‰Ç \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø û‰Ô‰´ \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø û‰È‰´ \EnF{}\or\InF{} û‰È‰µ‰‘¢ ø ÷‰‚ \EnF{}\or\InF{} ÷‰¢ \EnF{}
+\or\InF{} ÷‰¢ ø ş‰× \EnF{}\or\InF{} ÷‰¢ ø ¢ø \EnF{}\or\InF{} ÷‰¢ ø ¨‰‚ \EnF{}\or\InF{} ÷‰¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ÷‰¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ÷‰¢ ø ª‰Ç \EnF{}\or\InF{} ÷‰¢ ø û‰Ô‰´ \EnF{}\or\InF{} ÷‰¢ ø û‰È‰´ \EnF{}\or\InF{} ÷‰¢ ø ÷‰‚ \EnF{}\or\InF{} ¬‰À \EnF{}
+\or\InF{} ¬‰À ø ş‰× \EnF{}\or\InF{} ¬‰À ø ¢ø \EnF{}\or\InF{} ¬‰À ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø ¢ù \EnF{}
+\or\InF{} ¬‰À ø ş‰‘¥¢ù \EnF{}\or\InF{} ¬‰À ø ¢ø¥¢ù \EnF{}\or\InF{} ¬‰À ø ¨‰ƒ‰Ã¢ù \EnF{}\or\InF{} ¬‰À ø ‰ú‰‘¤¢ù \EnF{}\or\InF{} ¬‰À ø •‰‘÷‰Ã¢ù \EnF{}
+\or\InF{} ¬‰À ø ª‰‘÷‰Ã¢ù \EnF{}\or\InF{} ¬‰À ø û‰Ô‰Àù \EnF{}\or\InF{} ¬‰À ø û‰¹‰Àù \EnF{}\or\InF{} ¬‰À ø ÷‰¥¢ù \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ \EnF{}
+\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ş‰× \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ¢ø \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø ¨‰ü \EnF{}
+\or\InF{} ¬‰À ø ¨‰ü ø ş‰× \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø ¢ø \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø “‰ƒ‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø ¨‰ü ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û \EnF{}
+\or\InF{} ¬‰À ø ‰ú‰Û ø ş‰× \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø ¢ø \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø ‰ú‰Û ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø ‰ú‰Û ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù \EnF{}
+\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø ş‰× \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø ¢ø \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø •‰€‰¹‰‘ù ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ \EnF{}
+\or\InF{} ¬‰À ø ª‰Ê‰´ ø ş‰× \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø ¢ø \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø ª‰Ê‰´ ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø ª‰Ê‰´ ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ \EnF{}
+\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø ş‰× \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø ¢ø \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø û‰Ô‰µ‰‘¢ ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ \EnF{}
+\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø ş‰× \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø ¢ø \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø û‰È‰µ‰‘¢ ø ÷‰‚ \EnF{}\or\InF{} ¬‰À ø ÷‰¢ \EnF{}
+\or\InF{} ¬‰À ø ÷‰¢ ø ş‰× \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø ¢ø \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø ¨‰‚ \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ¬‰À ø ÷‰¢ ø ª‰Ç \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø û‰Ô‰´ \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø û‰È‰´ \EnF{}\or\InF{} ¬‰À ø ÷‰¢ ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¢ù \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ş‰‘¥¢ù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¢ø¥¢ù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ƒ‰Ã¢ù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰‘¤¢ù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰‘÷‰Ã¢ù \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ª‰‘÷‰Ã¢ù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰Àù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰¹‰Àù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¥¢ù \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø “‰ƒ‰Æ‰´ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ¨‰ü ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ‰ú‰Û ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø •‰€‰¹‰‘ù ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ª‰Ê‰´ ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰Ô‰µ‰‘¢ ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø û‰È‰µ‰‘¢ ø ÷‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø ş‰× \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø ¢ø \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø ¨‰‚ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø ‰ú‰‘¤ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø •‰€‰¸ \EnF{}
+\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø ª‰Ç \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø û‰Ô‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø û‰È‰´ \EnF{}\or\InF{} ¢øş‰Æ‰´ ø ÷‰¢ ø ÷‰‚ \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À \EnF{}
+\or\InF{} ¨‰ƒ‰Ê‰À ø ş‰× \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ¢ø \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ¨‰‚ \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ‰ú‰‘¤ \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø •‰€‰¸ \EnF{}
+\or\InF{} ¨‰ƒ‰Ê‰À ø ª‰Ç \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø û‰Ô‰´ \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø û‰È‰´ \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ÷‰‚ \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ¢ù \EnF{}
+\or\InF{} ¨‰ƒ‰Ê‰À ø ş‰‘¥¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ¢ø¥¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ¨‰ƒ‰Ã¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ‰ú‰‘¤¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø •‰‘÷‰Ã¢ù \EnF{}
+\or\InF{} ¨‰ƒ‰Ê‰À ø ª‰‘÷‰Ã¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø û‰Ô‰Àù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø û‰¹‰Àù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø ÷‰¥¢ù \EnF{}\or\InF{} ¨‰ƒ‰Ê‰À ø “‰ƒ‰Æ‰´ \EnF{}
+\else\InF{} ¡‰ƒ‰Ü‰ü \EnF{}\fi}
+
+\def\fcountpagenum{\def\thepage{\beginR\pnazok\fcnt{\value{page}}\endR}}
+\def\normalpagenum{\def\thepage{\number\value{page}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% farsi page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ps@plain \pagenumbering{arabic} \onecolumn \if@twoside\else\raggedbottom\fi
+\def\fcntt#1{\ifcase#1\or
+\InF{} ó‰Ó \EnF{}\or\InF{} ’ \EnF{}\or\InF{} ” \EnF{}\or\InF{} – \EnF{}\or\InF{} ˜ \EnF{}\or\InF{} š \EnF{}
+\or\InF{} œ \EnF{}\or\InF{}  \EnF{}\or\InF{}   \EnF{}\or\InF{} ¢ \EnF{}\or\InF{} £ \EnF{}\or\InF{} ¤ \EnF{}
+\or\InF{} ¥ \EnF{}\or\InF{} ¦ \EnF{}\or\InF{} § \EnF{}\or\InF{} © \EnF{}\or\InF{} « \EnF{}\or\InF{} ­ \EnF{}
+\or\InF{} ¯ \EnF{}\or\InF{} à \EnF{}\or\InF{} á \EnF{}\or\InF{} å \EnF{}\or\InF{} é \EnF{}\or\InF{} ë \EnF{}
+\or\InF{} í \EnF{}\or\InF{} ï \EnF{}\or\InF{} ñ \EnF{}\or\InF{} ô \EnF{}\or\InF{} ö \EnF{}\or\InF{} ø \EnF{}
+\or\InF{} ù \EnF{}\or\InF{} ı \EnF{}\else\InF{} ¡‰ƒ‰Ü‰ü \EnF{}\fi}
+
+\def\afcountpagenum{\def\thepage{\beginR\pnazok\fcntt{\value{page}}\endR}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% math function %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\Arcsin{{\mathop{\hbox{\InE{}\rm Arcsin\EnE{}}}\nolimits}}
+\def\Arccos{{\mathop{\hbox{\InE{}\rm Arccos\EnE{}}}\nolimits}}
+\def\Arcsec{{\mathop{\hbox{\InE{}\rm Arcsec\EnE{}}}\nolimits}}
+\def\Arccsc{{\mathop{\hbox{\InE{}\rm Arccsc\EnE{}}}\nolimits}}
+\def\Arctan{{\mathop{\hbox{\InE{}\rm Arctan\EnE{}}}\nolimits}}
+\def\Arccot{{\mathop{\hbox{\InE{}\rm Arccot\EnE{}}}\nolimits}}
+\def\Arcsinh{{\mathop{\hbox{\InE{}\rm Arcsinh\EnE{}}}\nolimits}}
+\def\Arccosh{{\mathop{\hbox{\InE{}\rm Arccosh\EnE{}}}\nolimits}}
+\def\Arcsech{{\mathop{\hbox{\InE{}\rm Arcsech\EnE{}}}\nolimits}}
+\def\Arccsch{{\mathop{\hbox{\InE{}\rm Arccsch\EnE{}}}\nolimits}}
+\def\Arctanh{{\mathop{\hbox{\InE{}\rm Arctanh\EnE{}}}\nolimits}}
+\def\Arccoth{{\mathop{\hbox{\InE{}\rm Arccoth\EnE{}}}\nolimits}}
+\def\cosec{{\mathop{\hbox{\InE{}\rm cosec\h*{2pt}\EnE{}}}\nolimits}}
+\def\csch{{\mathop{\hbox{\InE{}\rm csch\EnE{}}}\nolimits}}
+\def\sech{{\mathop{\hbox{\InE{}\rm sech\EnE{}}}\nolimits}}
+\def\chh{{\mathop{\hbox{\InE{}\rm ch\EnE{}}}\nolimits}}
+\def\shh{{\mathop{\hbox{\InE{}\rm sh\EnE{}}}\nolimits}}
+\def\Max{{\mathop{\hbox{\InE{}\rm Max\EnE{}}}\nolimits}}
+\def\Min{{\mathop{\hbox{\InE{}\rm Min\EnE{}}}\nolimits}}
+\def\tr{{\mathop{\hbox{\InE{}\rm tr\EnE{}}}\nolimits}}
+\def\adj{{\mathop{\hbox{\InE{}\rm adj\EnE{}}}\nolimits}}
+\def\diiv{{\mathop{\hbox{\InE{}\rm div\EnE{}}}\nolimits}}
+\def\curl{{\mathop{\hbox{\InE{}\rm curl\EnE{}}}\nolimits}}
+\def\optimize{{\mathop{\hbox{\InE{}\rm optimize\EnE{}}}\nolimits}}
+\def\proj{{\mathop{\hbox{\InE{}\rm proj\EnE{}}}\nolimits}}
+\def\Span{{\mathop{\hbox{\InE{}\rm Span\EnE{}}}\nolimits}}
+\def\sspan{{\mathop{\hbox{\InE{}\rm span\EnE{}}}\nolimits}}
+\def\rank{{\mathop{\hbox{\InE{}\rm rank\EnE{}}}\nolimits}}
+\def\Rank{{\mathop{\hbox{\InE{}\rm Rank\EnE{}}}\nolimits}}
+\def\cotf{{\mathop{\hbox{\InE{}\footnotesize\rm cot\EnE{}}}\nolimits}}
+\def\sgn{{\mathop{\hbox{\InE{}\rm sgn\EnE{}}}\nolimits}}
+\def\reg{{\mathop{\hbox{\InE{}\rm reg\EnE{}}}\nolimits}}
+\def\rec{{\mathop{\hbox{\InE{}\rm rec\EnE{}}}\nolimits}}
+\def\card{{\mathop{\hbox{\InE{}\rm card\EnE{}}}\nolimits}}
+\def\grad{{\mathop{\hbox{\InE{}\rm grad\EnE{}}}\nolimits}}
+\def\Hop{{\mathop{\hbox{\InE{}\h*{-1mm}\fts\rm Hop\EnE{}}}\nolimits}}
+\def\vol{{\mathop{\hbox{\InE{}\rm vol\EnE{}}}\nolimits}}
+\def\Iso{{\mathop{\hbox{\InE{}\rm Iso\EnE{}}}\nolimits}}
+\def\Imm{{\mathop{\hbox{\InE{}\rm Im\EnE{}}}\nolimits}}
+\def\Ree{{\mathop{\hbox{\InE{}\rm Re\EnE{}}}\nolimits}}
+\def\sing{{\mathop{\hbox{\InE{}\rm sing\EnE{}}}\nolimits}}
+\def\Supp{{\mathop{\hbox{\InE{}\rm Supp\EnE{}}}\nolimits}}
+\def\Spec{{\mathop{\hbox{\InE{}\rm Spec\EnE{}}}\nolimits}}
+\def\Ric{{\mathop{\hbox{\InE{}\rm Ric\EnE{}}}\nolimits}}
+\def\diam{{\mathop{\hbox{\InE{}\rm diam\EnE{}}}\nolimits}}
+\def\III{{\mathop{\hbox{\InE{}\rm I\hskip-1ptI\hskip-1ptI\EnE{}}}\nolimits}}
+\def\II{{\mathop{\hbox{\InE{}\rm I\hskip-1ptI\EnE{}}}\nolimits}}
+\def\I{{\mathop{\hbox{\InE{}\rm I\EnE{}}}\nolimits}}
+
+\def\tm#1{\mathop{\hbox{\InE{}\rm #1\EnE{}}}\nolimits}
+
+\def\i{{\rm)\InE{}i\EnE{}(\hspace*{2mm}}}
+\def\ii{{\rm)\InE{}ii\EnE{}(\hspace*{2mm}}}
+\def\iii{{\rm)\InE{}iii\EnE{}(\hspace*{2mm}}}
+\def\iv{{\rm)\InE{}iv\EnE{}(\hspace*{2mm}}}
+\def\v{{\rm)\InE{}v\EnE{}(\hspace*{2mm}}}
+\def\vi{{\rm)\InE{}vi\EnE{}(\hspace*{2mm}}}
+\def\vii{{\rm)\InE{}vii\EnE{}(\hspace*{2mm}}}
+\def\viii{{\rm)\InE{}viii\EnE{}(\hspace*{2mm}}}
+\def\ix{{\rm)\InE{}ix\EnE{}(\hspace*{2mm}}}
+\def\x{{\rm)\InE{}x\EnE{}(\hspace*{2mm}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%
+\def\wt{\widetilde}
+\def\sk{\stackrel}
+\def\ep{\epsffile}
+\def\epx{\epsfxsize}
+\def\epy{\epsfysize}
+\def\en{\english}
+\def\fa{\farsi}
+\def\men{\mathenumber}
+\def\mfn{\mathfnumber}
+\def\no{\noindent}
+\def\ft{\footnote}
+\def\fts{\footnotesize}
+\def\sts{\scriptsize}
+\def\h{\hspace}
+\def\v{\vspace}
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\ra{\rightarrow}
+\def\lgra{\longrightarrow}
+\def\la{\leftarrow}
+\def\lgla{\longleftarrow}
+\def\lra{\leftrightarrow}
+\def\lglra{\longleftrightarrow}
+\def\Ra{\Rightarrow}
+\def\Lgra{\Longrightarrow}
+\def\La{\Leftarrow}
+\def\Lgla{\Longleftarrow}
+\def\Lra{\Leftrightarrow}
+\def\Lglra{\Longleftrightarrow}
+\def\lgmt{\longmapsto}
+\def\hra{\hookrightarrow}
+\def\ora{\overrightarrow}
+\def\ola{\overleftarrow}
+\def\dra{\dashrightarrow}
+\def\dla{\dashleftarrow}
+\def\Lggra{=\h*{-.6mm}\Lgra}
+\def\Lgggra{=\h*{-.6mm}\Lggra}
+\def\Lggggra{=\h*{-.6mm}\Lgggra}
+\def\Lgggggra{=\h*{-.6mm}\Lggggra}
+\def\Lggggggra{=\h*{-.6mm}\Lgggggra}
+\def\Lgggggggra{=\h*{-.6mm}\Lggggggra}
+\def\Lggggggggra{=\h*{-.6mm}\Lgggggggra}
+\def\Lgggggggggra{=\h*{-.6mm}\Lggggggggra}
+\def\Lggggggggggra{=\h*{-.6mm}\Lgggggggggra}
+\def\Lgggggggggggra{=\h*{-.6mm}\Lggggggggggra}
+\def\Lggggggggggggra{=\h*{-.6mm}\Lgggggggggggra}
+\def\Lgggggggggggggra{=\h*{-.6mm}\Lggggggggggggra}
+\def\Lggggggggggggggra{=\h*{-.6mm}\Lgggggggggggggra}
+\def\lggra{-\h*{-2mm}\lgra}
+\def\lgggra{-\h*{-1.5mm}\lggra}
+\def\lggggra{-\h*{-1.5mm}\lgggra}
+\def\lgggggra{-\h*{-1.5mm}\lggggra}
+\def\lggggggra{-\h*{-1.5mm}\lgggggra}
+\def\lgggggggra{-\h*{-1.5mm}\lggggggra}
+\def\lggggggggra{-\h*{-1.5mm}\lgggggggra}
+\def\lgggggggggra{-\h*{-1.5mm}\lggggggggra}
+\def\lggggggggggra{-\h*{-1.5mm}\lgggggggggra}
+\def\lgggggggggggra{-\h*{-1.5mm}\lggggggggggra}
+\def\lggggggggggggra{-\h*{-1.5mm}\lgggggggggggra}
+\def\lgggggggggggggra{-\h*{-1.5mm}\lggggggggggggra}
+\def\lggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggra}
+\def\lgggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggra}
+\def\lggggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggggra}
+\def\lgggggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggggra}
+\def\lggggggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggggggra}
+\def\lgggggggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggggggra}
+\def\lggggggggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggggggggra}
+\def\lgggggggggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggggggggra}
+\def\lggggggggggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggggggggggra}
+\def\lgggggggggggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggggggggggra}
+\def\lggggggggggggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggggggggggggra}
+\def\lgggggggggggggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggggggggggggra}
+\def\lggggggggggggggggggggggggggra{-\h*{-1.5mm}\lgggggggggggggggggggggggggra}
+\def\lgggggggggggggggggggggggggggra{-\h*{-1.5mm}\lggggggggggggggggggggggggggra}
+\def\={=\h*{-.6mm}=}
+\def\ee{=\h*{-.6mm}\=}
+\def\eee{=\h*{-.6mm}\ee}
+\def\eeee{=\h*{-.6mm}\eee}
+\def\eeeee{=\h*{-.6mm}\eeee}
+\def\eeeeee{=\h*{-.6mm}\eeeee}
+\def\eeeeeee{=\h*{-.6mm}\eeeeee}
+\def\eeeeeeee{=\h*{-.6mm}\eeeeeee}
+\def\eeeeeeeee{=\h*{-.6mm}\eeeeeeee}
+\def\eeeeeeeeee{=\h*{-.6mm}\eeeeeeeee}
+\def\eeeeeeeeeee{=\h*{-.6mm}\eeeeeeeeee}
+\def\eeeeeeeeeeee{=\h*{-.6mm}\eeeeeeeeeee}
+\def\eeeeeeeeeeeee{=\h*{-.6mm}\eeeeeeeeeeee}
+\def\eeeeeeeeeeeeee{=\h*{-.6mm}\eeeeeeeeeeeee}
+\def\nea{\nearrow}
+\def\sea{\searrow}
+\def\nwa{\nwarrow}
+\def\swa{\swarrow}
+\def\ua{\uparrow}
+\def\da{\downarrow}
+\def\thra{\twoheadrightarrow}
+\def\thla{\twoheadleftarrow}
+\def\rat{\rightarrowtail}
+\def\lat{\leftarrowtail}
+\def\sb{\subset}
+\def\sp{\supset}
+\def\sbe{\subseteq}
+\def\spe{\supseteq}
+\def\ss{$\Large\star$}
+\def\s{\sqrt}
+\def\bs{\backslash}
+\def\ce{\centerline}
+\def\ol{\overline}
+\def\ul{\underline}
+\def\obr{\overbrace}
+\def\ubr{\underbrace}
+\def\ulc{\ulcorner}
+\def\urc{\urcorner}
+\def\ch{\choose}
+\def\pl{\plus}
+\def\opl{\oplus}
+\def\bopl{\bigoplus}
+\def\omi{\ominus}
+\def\ti{\times}
+\def\oti{\otimes}
+\def\boti{\bigotimes}
+\def\eps{\epsilon}
+\def\vep{\varepsilon}
+\def\vp{\varphi}
+\def\al{\alpha}
+\def\be{\beta}
+\def\de{\delta}
+\def\De{\Delta}
+\def\th{\theta}
+\def\Th{\Theta}
+\def\om{\omega}
+\def\Om{\Omega}
+\def\si{\sigma}
+\def\Si{\Sigma}
+\def\ga{\gamma}
+\def\Ga{\Gamma}
+\def\ka{\kappa}
+\def\na{\nabla}
+\def\pa{\partial}
+\def\lm{\lambda}
+\def\Lm{\Lambda}
+\def\ff#1#2{\fd{_{#1}}{^{#2}}}
+\def\mbig#1{\left#1\gvs{15pt}\right.}
+\def\N{\Bbb N}
+\def\Z{\Bbb Z}
+\def\R{\Bbb R}
+\def\C{\Bbb C}
+\def\Q{\Bbb Q}
+\def\A{{\cal{A}}}
+\def\B{{\cal{B}}}
+\def\M{{\cal{M}}}
+\def\P{{\cal{P}}}
+\def\Cc{{\cal{C}}}
+\def\X{{\goth{X}}}
+\def\J{{\cal{J}}}
+\def\K{{\cal{K}}}
+\def\L{{\cal{L}}}
+\def\F{{\cal{F}}}
+\def\Y{{\cal{Y}}}
+\def\K{{\cal{K}}}
+\def\ld{\ds\lim}
+\def\ldn{\ds\lim_{n\to+\infty}}
+\def\sd{\ds\sum}
+\def\sdn{\ds\sum_{n=1}^{\infty}}
+\def\sdna{\ds\sum_{n=1}^{\infty}a_n}
+\def\sdnb{\ds\sum_{n=1}^{\infty}b_n}
+\def\sdno{\ds\sum_{n=0}^{\infty}}
+\def\sdnoa{\ds\sum_{n=0}^{\infty}a_n}
+\def\sdnob{\ds\sum_{n=0}^{\infty}b_n}
+\def\sdk{\ds\sum_{k=1}^{\infty}}
+\def\sdka{\ds\sum_{k=1}^{\infty}a_k}
+\def\sdkb{\ds\sum_{k=1}^{\infty}b_k}
+\def\sdko{\ds\sum_{k=0}^{\infty}}
+\def\sdkoa{\ds\sum_{k=0}^{\infty}a_k}
+\def\sdkob{\ds\sum_{k=0}^{\infty}b_k}
+\def\f{\frac}
+\def\fd{\ds\frac}
+\def\fdt#1#2{{\ds\ts\frac{#1}{#2}}}
+\def\fb{\farmbox}
+\def\lf{\L\big(f(t)\big)}
+\def\zarb#1#2{\big<#1,#2\big>}
+\def\Zarb#1#2{\Big<#1,#2\Big>}
+\def\lh#1#2{\ds\lim_{h\to0}\f{f(#1)-f(#2)}h}
+\def\li{\ds\lim_{x\to x_0}}
+\def\l#1{\ds\lim_{x\to#1}}
+\def\muc{\multicolumn}
+\def\arc#1{\sk{\frown}{#1}}
+\def\kamel#1{\fdp My=#1=\fp Nx}
+\def\yds{y=\ds\sum_{n=0}^\infty a_nx^n}
+\def\dss{\ds\sum_{n=0}a_nx^n}
+\def\soi{\ds\sum_{n=1}^\infty}
+\def\szi{\ds\sum_{n=0}^\infty}
+\def\szik{\ds\sum_{k=0}^\infty}
+\def\qlq{\quad\Lgra\quad}
+\def\slq{\ \Lgra\quad}
+\def\qls{\quad\Lgra\ }
+\def\sls{\ \Lgra\ }
+\def\qoq{\quad\fb{\InF{} ø \EnF{}}\quad}
+\def\soq{\ \fb{\InF{} ø \EnF{}}\quad}
+\def\qos{\quad\fb{\InF{} ø \EnF{}}\ }
+\def\sos{\ \fb{\InF{} ø \EnF{}}\ }
+\def\fo{\fb{\InF{} ø \EnF{}}}
+\def\qskq#1#2{\quad\sk{#1\ }{#2}\quad}
+\def\ssks#1#2{\ \sk{#1\ }{#2}\ }
+\def\sskq#1#2{\ \sk{#1\ }{#2}\quad}
+\def\qsks#1#2{\quad\sk{#1\ }{#2}\ }
+\def\qmq#1#2#3{\quad\mathop{#1}_{#2\ }^{#3\ }\quad}
+\def\skfb#1{\h*{-5pt}\sk{\fb{\fts\beginR#1\endR}\h*{8pt}}}
+\def\qskfbq#1#2{\quad\h*{-5pt}\sk{\fb{\fts\beginR#1\endR}\h*{8pt}}#2\quad}
+\def\sskfbq#1#2{\ \h*{-5pt}\sk{\fb{\fts\beginR#1\endR}\h*{8pt}}#2\quad}
+\def\qskfbs#1#2{\quad\h*{-5pt}\sk{\fb{\fts\beginR#1\endR}\h*{8pt}}#2\ }
+\def\sskfbs#1#2{\ \h*{-5pt}\sk{\fb{\fts\beginR#1\endR}\h*{8pt}}#2\ }
+\def\skf#1{\sk{\fb{\h*{-1mm}\fts\beginR#1\endR}}}
+\def\degr{{{\h*{-2pt}}^\circ}}
+\def\arra#1#2{\arraycolsep#1\rcas{#2}}
+\def\mat#1{\left(\arraycolsep3pt\rcas{.7}\begin{array}{ccccc}#1\end{array}\right)}
+\def\bor#1{\left[\arraycolsep3pt\rcas{.7}\begin{array}{ccccc}#1\end{array}\right]}
+\def\dem#1{\left|\arraycolsep3pt\rcas{.7}\begin{array}{ccccc}#1\end{array}\right|}
+\def\tiv#1{\left|\arraycolsep3pt\rcas{.7}\begin{array}{ccc}i&j&k\\#1\end{array}\right|}
+\def\tic#1{\left|\arraycolsep3pt\rcas{.7}\begin{array}{ccc}i&j&k\\[5pt]\fdp{}x&\fdp{}y&\fdp{}z\\[7pt]#1\end{array}\right|}
+\def\set#1{\left\{\arraycolsep0pt\rcas{0}\begin{array}{ll}#1\end{array}\right.}
+\def\sets#1{\left\{\arraycolsep0pt\rcas{0}\begin{array}{r<{\ }l}#1\end{array}\right.}
+\def\func#1{\left\{\arraycolsep0pt\rcas{0}\begin{array}{l>{\h*{5mm}\ }c}#1\end{array}\right.}
+\def\borr#1#2{\mat{#1\\[4pt]#2}}
+\def\gvs#1{\vbox{\vspace*{#1}}}
+\def\ddf#1{\fd d{d #1}}
+\def\fdd#1#2{\fd{d #1}{d #2}}
+\def\fp#1#2{\f{\pa #1}{\pa #2}}
+\def\fdp#1#2{\fd{\pa #1}{\pa #2}}
+\def\fpp{\fdp{F_2}x-\fp{F_1}y}
+\def\i#1#2{\ds\int_{#1}^{#2}}
+\def\ointint{\ds{\int\hskip-3.6mm\bigcirc\hskip-3.15mm\int}}
+\def\intf{\h*{-2mm}\fb{\small\beginR%
+÷‰µ‰Ú‰Âñ%
+\endR}}
+
+\newcounter{testshomar}
+\@addtoreset{testshomar}{chapter}
+\makeatletter
+\newbox\testbox
+\newbox\onebox
+\newbox\twobox
+\newbox\threebox
+\newbox\fourbox
+\newbox\maxbox
+\newbox\suratbox
+\newbox\saalbox
+\newbox\testtestbox
+\newbox\testesaalbox
+%\if\wd{\onebox{#3}}<13cm
+%\onebox{#4\hfill\ }
+%\onebox{#5\hfill\ }
+%\onebox{#6\hfill\ }%\fi
+\def\fouritem#1#2#3#4{\par
+\hbox to1\hsize{\beginR
+\hbox to.241\hsize{#1 \hfill\ }
+\hbox to.241\hsize{#2 \hfill\ }
+\hbox to.241\hsize{#3 \hfill\ }
+\hbox to.241\hsize{#4 \hfill\ }\hfill\ \endR}}
+\def\twoitem#1#2{\par
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{#1 \hfill\ }
+\hbox to.49\hsize{#2 \hfill\ }\hfill\ \endR}}
+\def\gozineh#1#2#3#4{\beginR\no
+\setbox\onebox\hbox{#1}
+\setbox\twobox\hbox{#2}
+\setbox\threebox\hbox{#3}
+\setbox\fourbox\hbox{#4}
+\setbox\maxbox\hbox{#1}
+\ifdim \wd \twobox >\wd \maxbox
+\setbox\maxbox\hbox{#2}
+\fi
+\ifdim \wd \threebox >\wd \maxbox
+\setbox\maxbox\hbox{#3}
+\fi
+\ifdim \wd \fourbox >\wd \maxbox
+\setbox\maxbox\hbox{#4}
+\fi
+\ifdim \wd \maxbox < .20\textwidth
+\hbox to1\hsize{\beginR
+\hbox to.241\hsize{\hbox to.05\hsize{\hfill 1(\ }\ #1 \hfill\ }
+\hbox to.241\hsize{\hbox to.05\hsize{\hfill 2(\ }\ #2 \hfill\ }
+\hbox to.241\hsize{\hbox to.05\hsize{\hfill 3(\ }\ #3 \hfill\ }
+\hbox to.241\hsize{\hbox to.05\hsize{\hfill 4(\ }\ #4 \hfill\ }\hfill\ \endR}
+\else
+\ifdim \wd \maxbox < .45\textwidth
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 1(\ }\ #1 \hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 2(\ }\ #2 \hfill\ }\hfill\ \endR}
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 3(\ }\ #3 \hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 4(\ }\ #4 \hfill\ }\hfill\ \endR}
+\else
+\hbox to.051\hsize{\hfill 1(\ }\ #1\\
+\hbox to.051\hsize{\hfill 2(\ }\ #2\\
+\hbox to.051\hsize{\hfill 3(\ }\ #3\\
+\hbox to.051\hsize{\hfill 4(\ }\ #4\\
+\fi\fi\endR}
+%\setbox\testtestbox\hbox{$\bullet$\ {\bf —‰Æ‰´ :\ }}
+\def\testesaal#1#2#3{
+\setbox\suratbox\hbox{#3 #1}
+\setbox\saalbox\hbox{{\small\bf#2}}
+\setbox\testesaalbox\hbox{#3 #1 {\small\bf#2}}
+\ifdim \wd \testesaalbox < 1.02\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \h*{-3mm} \hfill{{\small\bf #2}}\\
+\else \ifdim \wd \suratbox < \textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else \ifdim \wd \testesaalbox < 2\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \suratbox < 2\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \testesaalbox < 3\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \suratbox < 3\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \testesaalbox < 4\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \suratbox < 4\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else
+{\Huge ş‰€‰¹‰‘ ª‰Ø‰‘ñ ¢¤¢}
+\fi\fi\fi\fi\fi\fi\fi\fi}
+\def\testname{—‰Æ‰´}
+\def\pagename{¬‰Ô‰½‰‚}
+\def\test#1#2#3#4#5#6{\addtocounter{testshomar}{1}%
+\edef\@currentlabel{\testname\arabic{testshomar}\ ¥ \chaptername\arabic{chapter}\ ¢¤\ ¬‰Ô‰½‰‚\arabic{page}}%
+\par\parbox[c]{\textwidth}{\baselineskip=10mm\vskip2mm%
+\testesaal{#1}{#2}{{\bf —‰Æ‰´\ \arabic{testshomar}:\ }}%
+\gozineh{#3}{#4}{#5}{#6}
+}\par}
+\newcounter{shomareh}
+\makeatletter
+\def\newtest#1#2#3#4#5{\addtocounter{shomareh}{1}
+\par\parbox[c]{\textwidth}{\baselineskip=10mm\vskip2mm
+{\beginR\hbox{\hsize=10mm{\arabic{shomareh}-\ }}\endR} #1\\
+\gozineh{#2}{#3}{#4}{#5}
+}\par\vskip-3mm}
+\def\ktestesaal#1#2#3{
+\setbox\suratbox\hbox{#3 #1}
+\setbox\saalbox\hbox{{\small\bf#2}}
+\setbox\testesaalbox\hbox{#1 {\small\bf#2}}
+\ifdim \wd \testesaalbox < 0.95\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \h*{-3mm} \hfill{{\small\bf #2}}\\
+\else \ifdim \wd \suratbox < \textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else \ifdim \wd \testesaalbox < 2\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \suratbox < 2\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \testesaalbox < 3\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \suratbox < 3\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \testesaalbox < 4\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \hfill{{\small\bf #2}}\\
+\else
+\ifdim \wd \suratbox < 4\textwidth
+\baselineskip=7.5mm
+{\beginR\hbox{#3}\endR}#1 \par\hfill{{\small\bf #2}}\\
+\else
+{\Huge ş‰€‰¹‰‘ ª‰Ø‰‘ñ ¢¤¢}
+\fi\fi\fi\fi\fi\fi\fi\fi}
+\def\ktest#1#2#3#4#5#6{\addtocounter{shomareh}{1}%\par
+\parbox[c]{\textwidth}{\baselineskip=10mm\vskip2mm
+\ktestesaal{#1}{#2}{\large\siah\arabic{shomareh}-\ }
+\gozineh{#3}{#4}{#5}{#6}
+\vskip-6mm}}
+\def\shgozineh#1#2#3#4{\beginR\no
+\setbox\onebox\hbox{#1}
+\setbox\twobox\hbox{#2}
+\setbox\threebox\hbox{#3}
+\setbox\fourbox\hbox{#4}
+\setbox\maxbox\hbox{#1}
+\ifdim \wd \twobox >\wd \maxbox
+\setbox\maxbox\hbox{#2}
+\fi
+\ifdim \wd \threebox >\wd \maxbox
+\setbox\maxbox\hbox{#3}
+\fi
+\ifdim \wd \fourbox >\wd \maxbox
+\setbox\maxbox\hbox{#4}
+\fi
+\ifdim \wd \maxbox < .20\textwidth
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 1(\ }\ #1 \hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 2(\ }\ #2 \hfill\ }\hfill\ \endR}
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 3(\ }\ #3 \hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 4(\ }\ #4 \hfill\ }\hfill\ \endR}
+\else
+\hbox to.051\hsize{\hfill 1(\ }\ #1\\
+\hbox to.051\hsize{\hfill 2(\ }\ #2\\
+\hbox to.051\hsize{\hfill 3(\ }\ #3\\
+\hbox to.051\hsize{\hfill 4(\ }\ #4
+\fi\endR}
+\def\newshtest#1#2#3#4#5#6{\addtocounter{shomareh}{1}%
+\par\parbox[c]{\textwidth}{\baselineskip=8mm%
+\parbox[c]{.7\textwidth}{\baselineskip=10mm\vskip3mm%
+{\beginR\hbox{\hsize=10mm{\arabic{shomareh}-\ }}\endR} #1\\%
+\shgozineh{#2}{#3}{#4}{#5}
+}\parbox[c]{.3\textwidth}{\vspace*{-3mm}\hfill{#6}}
+}\par\vskip-3mm}
+\def\shekltest#1#2#3#4#5#6#7{\addtocounter{testshomar}{1}%
+\edef\@currentlabel{\arabic{chapter}-\arabic{testshomar}}%
+\par\parbox[c]{\textwidth}{\beginR%
+\parbox[c]{.70\textwidth}{\baselineskip=7mm\vskip3mm%
+{\beginR\hbox{\bf —‰Æ‰´\ \arabic{testshomar}:\ }\endR} #1 \hfill{{\small #2}}\\
+\shgozineh{#3}{#4}{#5}{#6}}
+\parbox[c]{.29\textwidth}{\vspace*{3mm}\hfill{#7}\hfill{\ }} \endR}\par}
+
+\def\kshekltest#1#2#3#4#5#6#7{\addtocounter{shomareh}{1}%\par
+\parbox[c]{\textwidth}{\baselineskip=10mm\vskip2mm
+\parbox[c]{.70\textwidth}{\baselineskip=7mm\vskip3mm
+{\large\siah\arabic{shomareh}-\ } #1 \hfill{{\small #2}}\\
+\shgozineh{#3}{#4}{#5}{#6}}
+\parbox[c]{.29\textwidth}{\vspace*{3mm}\hfill{#7}\hfill{\ }} \endR}\par}
+
+\def\newshekltest#1#2#3#4#5#6#7{\addtocounter{testshomar}{1}\par\parbox[c]{\textwidth}{\baselineskip=8mm
+\parbox[c]{.6\textwidth}{\baselineskip=10mm\vskip3mm
+{\beginR\hbox{\bf —‰Æ‰´\ \arabic{testshomar}:\ }\endR} #1 \hfill{{\small #2}}\\
+}\parbox[c]{.4\textwidth}{\vspace*{-3mm}\hfill{#7}}
+\gozineh{#3}{#4}{#5}{#6} }\par}
+\def\hal#1{\vskip-4mm\no
+{\beginR\hbox{{{\bf Ÿ‰Û :}\ {\bf ğ‰Ãş‰€‰‚ #1 ¢¤¨‰´ ¨‰´.\
+}}}\endR}}
+
+\def\newtestgozinehshekl#1#2#3#4#5{\addtocounter{shomareh}{1}
+\par\parbox[c]{\textwidth}{\baselineskip=10mm\vskip2mm
+{\beginR\hbox{\hsize=10mm{\arabic{shomareh}-\ }}\endR} #1\\
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 1(\ }\
+\parbox[c]{.45\textwidth}{#2}\hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 2(\ }\
+\parbox[c]{.45\textwidth}{#3}\hfill\ }\hfill\ \endR}\vskip-8mm
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 3(\ }\
+\parbox[c]{.45\textwidth}{#4}\hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill 4(\ }\
+\parbox[c]{.45\textwidth}{#5}\hfill\ }\hfill\ \endR}
+}\par}
+
+
+
+
+\def\yekr#1#2{%
+\hbox to1\hsize{\beginR
+\hbox to1.0\hsize{\hbox to.07\hsize{\hfill #1\ }\ #2 \hfill\ }\endR}\par\vskip0mm}
+\def\dota#1#2#3#4{
+\hbox to1\hsize{\beginL
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill #1\ }\ #2 \hfill\ }
+\hbox to.49\hsize{\hbox to.05\hsize{\hfill #3\ }\ #4 \hfill\ }\hfill\ \endL}}
+\def\yektr#1#2{\par
+\hbox to1\hsize{\beginR
+\hbox to1.0\hsize{\hbox to.07\hsize{\hfill #1\ }\ #2 \hfill\ }\hfill\ \endR}}
+\def\dotar#1#2#3#4{\par
+\hbox to1\hsize{\beginR
+\hbox to.49\hsize{\hbox to.07\hsize{\hfill #1\ }\ #2 \hfill\ }
+\hbox to.49\hsize{\hbox to.07\hsize{\hfill #3\ }\ #4 \hfill\ }\hfill\ \endR}}
+\def\setar#1#2#3#4#5#6{\par
+\hbox to1\hsize{\beginR
+\hbox to.32\hsize{\hbox to.05\hsize{\hfill #1\ }\ #2 \hfill\ }
+\hbox to.32\hsize{\hbox to.05\hsize{\hfill #3\ }\ #4 \hfill\ }
+\hbox to.32\hsize{\hbox to.05\hsize{\hfill #5\ }\ #6 \hfill\ }\hfill\ \endR}}
+\def\algozi#1#2#3#4{\par
+\hbox to1\hsize{\beginR
+\hbox to.245\hsize{\hbox to.07\hsize{\hfill ó‰Ó(\ }\ #1 \hfill\ }
+\hbox to.245\hsize{\hbox to.07\hsize{\hfill ’(\ }\ #2 \hfill\ }
+\hbox to.245\hsize{\hbox to.07\hsize{\hfill š(\ }\ #3 \hfill\ }
+\hbox to.245\hsize{\hbox to.07\hsize{\hfill ¢(\ }\ #4 \hfill\ }\hfill\ \endR}}
+\def\dotal#1#2#3#4{\par
+\hbox to1\hsize{\beginL
+\hbox to.49\hsize{\hbox to.07\hsize{\ \beginR #1\hfill\ \endR}\ \ #2 \hfill\ }
+\hbox to.49\hsize{\hbox to.07\hsize{\ \beginR #3\hfill\ \endR}\ \ #4 \hfill\ }\hfill\ \endL}\vskip2mm}
+\def\setal#1#2#3#4#5#6{\par
+\hbox to1\hsize{\beginL
+\hbox to.32\hsize{\hbox to.05\hsize{\ \beginR #1\hfill\ \endR}\ #2 \hfill\ }
+\hbox to.32\hsize{\hbox to.05\hsize{\ \beginR #3\hfill\ \endR}\ #4 \hfill\ }
+\hbox to.32\hsize{\hbox to.05\hsize{\ \beginR #5\hfill\ \endR}\ #6 \hfill\ }
+\hfill\ \endL}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% size %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{farsifoo}
+\setlength{\textwidth}{118mm}%210mm
+\setlength{\textheight}{190mm}%290mm
+\setlength{\parskip}{1mm}
+\setlength{\topmargin}{5mm}
+\setlength{\oddsidemargin}{15mm}%-25mm
+\setlength{\evensidemargin}{20mm}
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\arraystretch}{1}
+\def\rcas{\renewcommand{\arraystretch}}
+\def\rcbls{\renewcommand{\baselinestretch}}
+\def\bls{\baselineskip}
+\arraycolsep 5pt \tabcolsep 6pt \arrayrulewidth .4pt \doublerulesep 2pt
+\tabbingsep \labelsep
+\skip\@mpfootins = \skip\footins
+\fboxsep = 3pt \fboxrule = .4pt
+
+\headheight= 5pt
+\headsep= 20pt
+\footskip=36pt
+\hoffset=0pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%new%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%118.125in=300cm
+%one inch + \hoffset %1
+%one inch + \voffset %2
+\oddsidemargin = -0mm %3
+\evensidemargin = -0mm %3
+\topmargin = -1in %4
+\headheight = 1cm %5
+\headsep = 5mm %6
+\textheight = 190mm %7 %300mm
+\textwidth = 120mm %8 %210mm
+\marginparsep = 4mm %9
+\marginparwidth = 0mm %10
+\footskip = 15mm %11
+\marginparpush = 0pt
+\hoffset = 0pt
+\voffset = 2cm
+%\paperwidth = 597pt
+%\paperheight = 845pt
+\parskip = 1mm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% my subsection %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\mysubsection#1{\vskip3mm\par{\bf #1}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% my title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% my array %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@addtopreamble#1{\xdef\@preamble{\@preamble #1}}
+\def\@testpach{\@chclass
+ \ifnum \@lastchclass=6 \@ne \@chnum \@ne \else
+  \ifnum \@lastchclass=7 5 \else
+   \ifnum \@lastchclass=8 \tw@ \else
+    \ifnum \@lastchclass=9 \thr@@
+   \else \z@
+   \ifnum \@lastchclass = 10 \else
+   \edef\@nextchar{\expandafter\string\@nextchar}%
+   \@chnum
+   \if \@nextchar c\z@ \else
+    \if \@nextchar l\@ne \else
+     \if \@nextchar r\tw@ \else
+   \z@ \@chclass
+   \if\@nextchar |\@ne \else
+    \if \@nextchar !6 \else
+     \if \@nextchar @7 \else
+      \if \@nextchar <8 \else
+       \if \@nextchar >9 \else
+  10
+  \@chnum
+  \if \@nextchar m\thr@@\else
+   \if \@nextchar p4 \else
+    \if \@nextchar b5 \else
+   \z@ \@chclass \z@ \@preamerr \z@ \fi \fi \fi \fi
+   \fi \fi  \fi  \fi  \fi  \fi  \fi \fi \fi \fi \fi \fi}
+\def\@xexpast#1*#2#3#4\@@{%
+   \@tempcnta #2
+   \toks@={#1}\@temptokena={#3}%
+   \let\the@toksz\relax \let\the@toks\relax
+   \def\@tempa{\the@toksz}%
+   \ifnum\@tempcnta >0 \@whilenum\@tempcnta >0\do
+     {\edef\@tempa{\@tempa\the@toks}\advance \@tempcnta \m@ne}%
+       \let \@tempb \@xexpast \else
+       \let \@tempb \@xexnoop \fi
+   \def\the@toksz{\the\toks@}\def\the@toks{\the\@temptokena}%
+   \edef\@tempa{\@tempa}%
+   \expandafter \@tempb \@tempa #4\@@}
+\def\prepnext@tok{\advance \count@ \@ne
+   \toks\count@{}}
+\def\save@decl{\toks\count@ \expandafter{\@nextchar}}
+\def\insert@column{%
+   \the@toks \the \@tempcnta
+   \ignorespaces \@sharp \unskip
+   \the@toks \the \count@ \relax}
+\newdimen\col@sep
+\def\@acol{\@addtopreamble{\hskip\col@sep}}
+\def\@mkpream#1{\gdef\@preamble{}\@lastchclass 4 \@firstamptrue
+   \let\@sharp\relax \let\@startpbox\relax \let\@endpbox\relax
+   \@xexpast #1*0x\@@
+   \count@\m@ne
+   \let\the@toks\relax
+   \prepnext@tok
+   \expandafter \@tfor \expandafter \@nextchar
+    \expandafter :\expandafter =\@tempa \do
+   {\@testpach
+   \ifcase \@chclass \@classz \or \@classi \or \@classii
+     \or \save@decl \or \or \@classv \or \@classvi
+     \or \@classvii \or \@classviii  \or \@classix
+     \or \@classx \fi
+   \@lastchclass\@chclass}%
+   \ifcase\@lastchclass
+   \@acol \or
+   \or
+   \@acol \or
+   \@preamerr \thr@@ \or
+   \@preamerr \tw@ \@addtopreamble\@sharp \or
+   \or
+   \else  \@preamerr \@ne \fi
+   \def\the@toks{\the\toks}}
+\def\@classx{%
+  \ifcase \@lastchclass
+  \@acolampacol \or
+  \@addamp \@acol \or
+  \@acolampacol \or
+  \or
+  \@acol \@firstampfalse \or
+  \@addamp
+  \fi}
+\def\@classz{\@classx
+   \@tempcnta \count@
+   \prepnext@tok
+   \@addtopreamble{\ifcase \@chnum
+      \hfil
+      \d@llarbegin
+      \insert@column
+      \d@llarend \hfil \or
+      \hskip1sp\d@llarbegin \insert@column \d@llarend \hfil \or
+      \hfil\hskip1sp\d@llarbegin \insert@column \d@llarend \or
+   $\vcenter
+   \@startpbox{\@nextchar}\insert@column \@endpbox $\or
+   \vtop \@startpbox{\@nextchar}\insert@column \@endpbox \or
+   \vbox \@startpbox{\@nextchar}\insert@column \@endpbox
+  \fi}\prepnext@tok}
+\def\@classix{\ifnum \@lastchclass = \thr@@
+       \@preamerr \thr@@ \fi
+       \@classx}
+\def\@classviii{\ifnum \@lastchclass >\z@
+      \@preamerr 4\@chclass 6 \@classvi \fi}
+\def\@arrayrule{\@addtopreamble \vline}
+\def\@classvii{\ifnum \@lastchclass = \thr@@
+   \@preamerr \thr@@ \fi}
+\def\@classvi{\ifcase \@lastchclass
+      \@acol \or
+      \@addtopreamble{\hskip \doublerulesep}\or
+      \@acol \or
+      \@classvii
+      \fi}
+\def\@classii{\advance \count@ \m@ne
+   \save@decl\prepnext@tok}
+\def\@classv{\save@decl
+   \@addtopreamble{\d@llarbegin\the@toks\the\count@\relax\d@llarend}%
+   \prepnext@tok}
+\def\@classi{\@classvi
+   \ifcase \@chnum \@arrayrule \or
+      \@classv \fi}
+\def\@startpbox#1{\bgroup
+  \setlength\hsize{#1}\@arrayparboxrestore
+   \everypar{%
+      \vrule \@height \ht\@arstrutbox \@width \z@
+      \everypar{}}%
+   }
+\def\@endpbox{\@finalstrut\@arstrutbox \egroup\hfil}
+\def\@array[#1]#2{%
+  \@tempdima \ht \strutbox
+  \advance \@tempdima by\extrarowheight
+  \setbox \@arstrutbox \hbox{\vrule
+             \@height \arraystretch \@tempdima
+             \@depth \arraystretch \dp \strutbox
+             \@width \z@}%
+  \begingroup
+  \@mkpream{#2}%
+  \xdef\@preamble{\noexpand \ialign \@halignto
+                  \bgroup \@arstrut \@preamble
+                          \tabskip \z@ \cr}%
+  \endgroup
+  \@arrayleft
+  \if #1t\vtop \else \if#1b\vbox \else \vcenter \fi \fi
+  \bgroup
+  \let \@sharp ##\let \protect \relax
+  \lineskip \z@
+  \baselineskip \z@
+  \m@th
+  \let\\\@arraycr \let\tabularnewline\\\let\par\@empty \@preamble}
+\newdimen \extrarowheight
+\extrarowheight=0pt
+\def\@arstrut{\unhcopy\@arstrutbox}
+\def\@arraycr{\relax\iffalse{\fi\ifnum 0=`}\fi
+  \@ifstar \@xarraycr \@xarraycr}
+\def\@xarraycr{\@ifnextchar [%
+  \@argarraycr {\ifnum 0=`{}\fi\cr}}
+\def\@argarraycr[#1]{\ifnum0=`{}\fi\ifdim #1>\z@
+  \expandafter\@xargarraycr\else
+  \expandafter\@yargarraycr\fi{#1}}
+\def\@xargarraycr#1{\unskip
+  \@tempdima #1\advance\@tempdima \dp\@arstrutbox
+  \vrule \@depth\@tempdima \@width\z@ \cr}
+\def\@yargarraycr#1{\cr\noalign{\vskip #1}}
+\long\def\multicolumn#1#2#3{%
+   \multispan{#1}\begingroup
+   \def\@addamp{\if@firstamp \@firstampfalse \else
+                \@preamerr 5\fi}%
+   \@mkpream{#2}\@addtopreamble\@empty
+   \endgroup
+   \def\@sharp{#3}%
+   \@arstrut \@preamble
+   \null
+   \ignorespaces}
+\let\d@llarbegin\begingroup
+\let\d@llarend\endgroup
+\def\array{\col@sep\arraycolsep
+  \def\d@llarbegin{$}\let\d@llarend\d@llarbegin\gdef\@halignto{}%
+  \@tabarray}
+\def\@tabarray{\@ifnextchar[{\@array}{\@array[c]}}
+\def\tabular{\gdef\@halignto{}\@tabular}
+\expandafter\def\csname tabular*\endcsname#1{%
+       \setlength\dimen@{#1}%
+       \xdef\@halignto{to\the\dimen@}\@tabular}
+\def\@tabular{%
+  \leavevmode
+  \hbox \bgroup $\col@sep\tabcolsep \let\d@llarbegin\begingroup
+                                    \let\d@llarend\endgroup
+  \@tabarray}
+\def\endarray{\crcr \egroup \egroup \gdef\@preamble{}}
+\def\endtabular{\endarray $\egroup}
+\expandafter\let\csname endtabular*\endcsname=\endtabular
+\let\@ampacol=\relax        \let\@expast=\relax
+\let\@arrayclassiv=\relax   \let\@arrayclassz=\relax
+\let\@tabclassiv=\relax     \let\@tabclassz=\relax
+\let\@arrayacol=\relax      \let\@tabacol=\relax
+\let\@tabularcr=\relax      \let\@@endpbox=\relax
+\let\@argtabularcr=\relax   \let\@xtabularcr=\relax
+\def\@preamerr#1{\def\@tempd{{..} at wrong position: }%
+   \PackageError{array}{%
+   \ifcase #1 Illegal pream-token (\@nextchar): `c' used\or %0
+    Missing arg: token ignored\or                           %1
+    Empty preamble: `l' used\or                             %2
+    >\@tempd token ignored\or                               %3
+    <\@tempd changed to !{..}\or                            %4
+    Only one column-spec. allowed.\fi}\@ehc}                %5
+\def\newcolumntype#1{%
+  \edef\NC@char{\string#1}%
+  \@ifundefined{NC@find@\NC@char}%
+    {\@tfor\next:=<>clrmbp@!|\do{\if\noexpand\next\NC@char
+        \PackageWarning{array}%
+                       {Redefining primitive column \NC@char}\fi}%
+     \NC@list\expandafter{\the\NC@list\NC@do#1}}%
+    {\PackageWarning{array}{Column \NC@char\space is already defined}}%
+  \@namedef{NC@find@\NC@char}##1#1{\NC@{##1}}%
+  \@ifnextchar[{\newcol@{\NC@char}}{\newcol@{\NC@char}[0]}}
+\def\newcol@#1[#2]#3{\expandafter\@reargdef
+     \csname NC@rewrite@#1\endcsname[#2]{\NC@find#3}}
+\def\NC@#1{%
+  \@temptokena\expandafter{\the\@temptokena#1}\futurelet\next\NC@ifend}
+\def\NC@ifend{%
+  \ifx\next\relax
+    \else\@tempswatrue\expandafter\NC@rewrite\fi}
+\def\NC@do#1{%
+  \expandafter\let\expandafter\NC@rewrite
+    \csname NC@rewrite@\string#1\endcsname
+  \expandafter\let\expandafter\NC@find
+    \csname NC@find@\string#1\endcsname
+  \expandafter\@temptokena\expandafter{\expandafter}%
+        \expandafter\NC@find\the\@temptokena#1\relax}
+\def\showcols{{\def\NC@do##1{\let\NC@do\NC@show}\the\NC@list}}
+\def\NC@show#1{%
+  \typeout{Column #1\expandafter\expandafter\expandafter\NC@strip
+  \expandafter\meaning\csname NC@rewrite@#1\endcsname\@@}}
+\def\NC@strip#1:#2->#3 #4\@@{#2 -> #4}
+\newtoks\NC@list
+\newcolumntype{*}[2]{}
+\long\@namedef{NC@rewrite@*}#1#2{%
+  \count@#1
+  \loop
+  \ifnum\count@>\z@
+  \advance\count@\m@ne
+  \@temptokena\expandafter{\the\@temptokena#2}%
+  \repeat
+  \NC@find}
+\let\@xexpast\relax
+\let\@xexnoop\relax
+\def\save@decl{\toks \count@ = \expandafter\expandafter\expandafter
+                  {\expandafter\@nextchar\the\toks\count@}}
+\def\@mkpream#1{\gdef\@preamble{}\@lastchclass 4 \@firstamptrue
+   \let\@sharp\relax \let\@startpbox\relax \let\@endpbox\relax
+   \@temptokena{#1}\@tempswatrue
+   \@whilesw\if@tempswa\fi{\@tempswafalse\the\NC@list}%
+   \count@\m@ne
+   \let\the@toks\relax
+   \prepnext@tok
+   \expandafter \@tfor \expandafter \@nextchar
+    \expandafter :\expandafter =\the\@temptokena \do
+   {\@testpach
+   \ifcase \@chclass \@classz \or \@classi \or \@classii
+     \or \save@decl \or \or \@classv \or \@classvi
+     \or \@classvii \or \@classviii
+     \or \@classx
+     \or \@classx \fi
+   \@lastchclass\@chclass}%
+   \ifcase\@lastchclass
+   \@acol \or
+   \or
+   \@acol \or
+   \@preamerr \thr@@ \or
+   \@preamerr \tw@ \@addtopreamble\@sharp \or
+   \or
+   \else  \@preamerr \@ne \fi
+   \def\the@toks{\the\toks}}
+\let\@classix\relax
+\def\@classviii{\ifnum \@lastchclass >\z@\ifnum\@lastchclass=\tw@\else
+      \@preamerr 4\@chclass 6 \@classvi \fi\fi}
+\def\@classv{\save@decl
+   \expandafter\NC@ecs\@nextchar\extracolsep{}\extracolsep\@@@
+   \@addtopreamble{\d@llarbegin\the@toks\the\count@\relax\d@llarend}%
+   \prepnext@tok}
+\def\NC@ecs#1\extracolsep#2#3\extracolsep#4\@@@{\def\@tempa{#2}%
+  \ifx\@tempa\@empty\else\toks\count@={#1\tabskip#2\relax#3}\fi}
+\def\@tabarray{\@ifnextchar[{\@@array}{\@@array[c]}}
+\let\@@array\@array
+\def\endarray{\crcr \egroup \egroup \@arrayright \gdef\@preamble{}}
+\let\@arrayleft\@empty
+\let\@arrayright\@empty
+\newlength{\extratabsurround}
+\setlength{\extratabsurround}{2pt}
+\newlength{\backup@length}
+\newcommand{\firsthline}{%
+  \multicolumn1c{%
+    \global\backup@length\ht\@arstrutbox
+    \global\advance\backup@length\dp\@arstrutbox
+    \global\advance\backup@length\arrayrulewidth
+     \raise\extratabsurround\copy\@arstrutbox
+    }\\[-\backup@length]\hline
+}
+\newcommand{\lasthline}{\hline\multicolumn1c{%
+    \global\backup@length2\ht\@arstrutbox
+    \global\advance\backup@length2\dp\@arstrutbox
+    \global\advance\backup@length\arrayrulewidth
+    }\\[-\backup@length]%
+    \multicolumn1c{%
+       \lower\extratabsurround\copy\@arstrutbox
+       }%
+}
+\renewcommand\@xhline{\ifx\reserved@a\hline
+               \vskip\doublerulesep
+             \fi
+      \ifnum0=`{\fi}}
+\endinput

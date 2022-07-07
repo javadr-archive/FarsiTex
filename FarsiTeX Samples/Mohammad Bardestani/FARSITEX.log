@@ -1,0 +1,108 @@
+This is e-TeX, Version 3.14159-2.1 (MiKTeX 2) (preloaded format=farsitex 2007.6.16)  16 JUN 2007 20:09
+entering extended mode
+**&farsitex FARSITEX
+(FARSITEX.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+(C:\localtexmf\tex\latex209\base\book.sty
+Standard Document Style `book' <14 Jan 92>.
+(C:\localtexmf\tex\latex209\base\bk10.sty)
+\descriptionmargin=\dimen101
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+)
+(C:\localtexmf\tex\farsitex\base\deprecat\farsi.sty
+LaTeX Warning: Package `farsi' is deprecated. Use `persian' instead..
+(C:\localtexmf\tex\farsitex\base\persian.sty
+persian.sty, version 0.6, 27 September 2004
+(C:\localtexmf\tex\farsitex\base\persian\fcaption.tex)))
+(C:\localtexmf\tex\farsitex\base\ffancyhe.sty
+\headrulewidth=\dimen102
+\footrulewidth=\dimen103
+\plainheadrulewidth=\dimen104
+\plainfootrulewidth=\dimen105
+\headwidth=\dimen106
+) (latexcad.sty
+ latexcad.sty (V 1.9 Mar 98) - Support for LaTeXCAD drawing package. 
+ John Leis, leis@usq.edu.au Adapted from various CTAN sources. 
+\@drawingscale=\skip41
+\@dfltdrawingscale=\skip42
+\@pswidth=\skip43
+\@dfltpswidth=\skip44
+(rotate.sty
+\@rotdimen=\dimen107
+\@rotbox=\box26
+) (epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count88
+\d@lta=\count89
+\@delta=\dimen108
+\@@delta=\dimen109
+\@gridcnt=\count90
+\@joinkind=\count91
+\@dotgap=\dimen110
+\@ddotgap=\dimen111
+\@x@diff=\count92
+\@y@diff=\count93
+\x@diff=\dimen112
+\y@diff=\dimen113
+\@dotbox=\box27
+\num@segments=\count94
+\num@segmentsi=\count95
+\@datafile=\read1
+) (eepic.sty
+Extension to Epic and LaTeX. Version 1.1b - Released Febrary 7, 1988
+\@gphlinewidth=\count96
+\@eepictcnt=\count97
+\@tempdimc=\dimen114
+\maxovaldiam=\dimen115
+\@filltype=\box28
+) (C:\texmf\tex\generic\dvips\epsf.sty
+This is `epsf.tex' v2.7 <25 October 1996>
+\epsffilein=\read2
+\epsfframemargin=\dimen116
+\epsfframethickness=\dimen117
+\epsfrsize=\dimen118
+\epsftmp=\dimen119
+\epsftsize=\dimen120
+\epsfxsize=\dimen121
+\epsfysize=\dimen122
+\pspoints=\dimen123
+)) (C:\texmf\tex\plain\amsfonts\amssym.tex
+(C:\texmf\tex\plain\amsfonts\amssym.def
+\msafam=\mathgroup6
+\msbfam=\mathgroup7
+\eufmfam=\mathgroup8
+)) (C:\texmf\tex\generic\dvips\epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read3
+\epsfframemargin=\dimen124
+\epsfframethickness=\dimen125
+\epsfrsize=\dimen126
+\epsftmp=\dimen127
+\epsftsize=\dimen128
+\epsfxsize=\dimen129
+\epsfysize=\dimen130
+\pspoints=\dimen131
+\epsfnoopenhelp=\toks14
+)
+\c@thm=\count98
+\c@lem=\count99
+ (FARSITEX.aux) (FARSITEX.toc
+! Undefined control sequence.
+<argument> {\beginL \protect \pnazokxpt 
+                                        3\endL }
+\FO@l@chapter ...ox to\@pnumwidth {\hss #2
+                                          }\par \penalty \@highpenalt...
+l.1 ...eginL \protect \pnazokxpt 3\endL }}
+                                          
+? 

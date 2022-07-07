@@ -1,0 +1,76 @@
+This is Omega, Version 3.14159--1.23.2.1 (Web2C 7.4.5) (format=lambda 2004.3.10)
+1 APR 2004 08:58
+Copyright (c) 1994--2000 John Plaice and Yannis Haralambous
+**shamlou.tex
+(shamlou.tex
+LaTeX2e <2001/06/01> patch level 1
+Babel <v3.7h> and hyphenation patterns for english, spanish, russian, greek, in
+uit, dumylang, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (faanoos.sty
+Package: faanoos 2002/10/20 faanoos Transliteration for Persian Unicode Text
+
+(/usr/share/texmf/omega/lambda/base/omega.sty
+LaTeX Info: Redefining \ttfamily on input line 15.
+
+(/usr/share/texmf/omega/plain/base/grlccode.tex
+Greek lccodes...
+)) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+LaTeX Font Info:    Try loading font information for OT1+f456 on input line 85.
+
+ (ot1f456.fd)) (shamlou.aux)
+\openout1 = `shamlou.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+omlgc on input line 15
+.
+
+(/usr/share/texmf/omega/lambda/base/ot1omlgc.fd)
+LaTeX Font Info:    Try loading font information for OT1+omarb on input line 15
+.
+
+(/usr/share/texmf/omega/lambda/base/ot1omarb.fd)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+ [1] [2] [3] (shamlou.aux) ) 
+Here is how much of Omega's memory you used:
+ 500 strings out of 28736
+ 5246 string characters out of 1186913
+ 475628 words of memory out of 2000001
+ 423 multiletter control sequences out of 65536
+30 fonts 88 hyphenation exceptions out of 1000
+ 23i,7n,18p,21694b,297s stack positions out of 1500i,400n,600p,200000b,5000s
+
+Output written on shamlou.dvi (3 pages, 127064 bytes).

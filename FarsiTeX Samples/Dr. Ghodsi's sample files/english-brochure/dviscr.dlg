@@ -1,0 +1,154 @@
+% dviscr 1.6h  29-Jun-2001  18:54
+%
+% Invocation: dviscr @ljH /o=8 /fl=-1 /ocr=1 /tr1 BROCH01.DVI
+ -pj:C:\WINDOWS\TEMP\dv4.mfj
+% Input file: BROCH01.DVI
+%
++first-page:*
++last-page:*
++double-sided:-
++skip-sides:0
++number-of-sides:65535
++backward:off
++left-margin:0in
++top-margin:0in
++height:297mm
++width:210mm
++transformation:1
++page-width:8.5in
++page-height:11in
++page-left-margin:1in
++page-top-margin:1in
++backside-offset-x:0in
++backside-offset-y:0in
++columns:1
++rows:1
++section-count:0
++section-size:0
++full-last-section:off
++fold-other:off
++page-shift:0in
++blank-pages:0
++batch-mode
++call-mfjob:on
++ask-mfjob:on
++font-load-limit:-1
++metafont-mode:laserjetIV
++omit-graphics:off
++font-scaling:1
++max-drift:2
++font-size-tolerance:0.2
++use-tfm-files:off
++font-sizes::0,:h,:1,:2,:3,:4,:5,:6,:7,:8,:9
++magnification:
++resolution:600
++font-resolution:600
++graphics-resolution:0
++dvi-file:{,$DVIDRVINPUT:}@i
++font-files:$DVIDRVFONTS:pixel.ljh\@Rrdpi\@f{.pk,.pxl}
++graphics-files:{,$DVIDRVGRAPH:}{@Rrdpi\,}@PBf{@Ef,.msp,.pcx,.bmp}
++mfjob-file:C:\WINDOWS\TEMP\dv4.mfj
++font-libraries:$DVIDRVFONTS:ljh_{base,more}
++page-list-file:
++response-files:{,$EMTEX:data\}@f
++font-subst-files:
++transcript-file:@d.dlg
++virtual-fonts:
++fontlib-file:
++verbosity:2
++unit:in
++use-ems:on
++use-xms:on
++home-x:1in
++home-y:1in
++zoom:8
++adapter:0
++color:p2 +color:r1 +color:s2
++inverse:off
++ruler:off
++status-line:on
++ruler-unit:pt
++scaling:1
+@
+
+' TeX output 2001.06.29:1838'
+Loading font cmti9 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmti9])
+Loading font cmtt9 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmtt9])
+Loading font cmr9 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmr9])
+Loading font cmtt10 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmtt10])
+Loading font cmbx10 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmbx10])
+Loading font cmss17 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmss17])
+Loading font cmssi9 scaled 1000  (e:\tex\texfonts\pixel.ljh\600dpi\cmssi9.pk)
+Loading font cmssdc10 scaled 1400
+  (e:\tex\texfonts\pixel.ljh\840dpi\cmssdc10.pk)
+Loading font cmssbx10 scaled 1400
+  (e:\tex\texfonts\pixel.ljh\840dpi\cmssbx10.pk)
+Loading font arm25 scaled 1000  (e:\tex\texfonts\pixel.ljh\600dpi\arm25.pk)
+Loading font isirana scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\isirana.pk)
+Loading font pictwoe scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\pictwoe.pk)
+Loading font pictwod scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\pictwod.pk)
+Loading font pictwoc scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\pictwoc.pk)
+Loading font pictwob scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\pictwob.pk)
+Loading font pictwoa scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\pictwoa.pk)
+Loading font piconee scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\piconee.pk)
+Loading font piconed scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\piconed.pk)
+Loading font piconec scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\piconec.pk)
+Loading font piconeb scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\piconeb.pk)
+Loading font piconea scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\piconea.pk)
+Loading font trophyc scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\trophyc.pk)
+Loading font trophyb scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\trophyb.pk)
+Loading font trophya scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\trophya.pk)
+Loading font boloonc scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\boloonc.pk)
+Loading font boloonb scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\boloonb.pk)
+Loading font boloona scaled 1000
+  (e:\tex\texfonts\pixel.ljh\600dpi\boloona.pk)
+Loading font acma scaled 1000  (e:\tex\texfonts\pixel.ljh\600dpi\acma.pk)
+Loading font icpcc scaled 1000  (e:\tex\texfonts\pixel.ljh\600dpi\icpcc.pk)
+Loading font icpcb scaled 1000  (e:\tex\texfonts\pixel.ljh\600dpi\icpcb.pk)
+Loading font icpca scaled 1000  (e:\tex\texfonts\pixel.ljh\600dpi\icpca.pk)
+Loading font cmsy10 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmsy10])
+Loading font cmr10 scaled 1000  (e:\tex\texfonts\ljh_base.fli [cmr10])
+Loading page pointers... 4 input pages, 4 output sheets.
+ [1] [1] [2]
+
+Memory usage:
+Strings                          70       2048
+Page buffers                      3      30720
+Sorted page buffers               4      40960
+Sorted page index              3552      28416
+Position stack                   27        756
+Font table                       33       2376
+Font indices                     33        198
+Page table                        4          0
+Characters                     2304      73728
+Raster data                     193      18515
+VF characters                     0          0
+VF macros                         0          0
+Graphics                          0          0
+Lines                             0          0
+Font library directories          0          0
+Band buffer                       0          0
+TOTAL                                   197717
+
+Number of deallocations:   4402
+Temporary file size:          0
+EMS bytes used:               0
+XMS bytes used:          113152
+External memory reads:     5010
+External memory writes:     637

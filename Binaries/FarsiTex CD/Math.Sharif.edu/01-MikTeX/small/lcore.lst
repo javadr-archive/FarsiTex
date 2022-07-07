@@ -1,0 +1,24 @@
+Archive:  F:/work/miktex/manufacture/lcore.zip
+ Length    Date    Time    Name
+ ------    ----    ----    ----
+ 995383  04-27-99  08:59   miktex/bin/mfc42.dll
+ 266293  03-01-99  21:44   miktex/bin/MSVCRT.DLL
+  49152  01-20-01  22:06   miktex/bin/bz2mt20.dll
+ 204800  01-20-01  22:06   miktex/bin/dvimt20.dll
+ 139264  01-20-01  22:14   miktex/bin/ftmt20.dll
+  28672  01-20-01  22:05   miktex/bin/gnumt20.dll
+  45056  01-20-01  22:19   miktex/bin/libpbm.dll
+  20480  01-20-01  22:19   miktex/bin/libpgm.dll
+  94208  01-20-01  22:06   miktex/bin/libpng.dll
+  24576  01-20-01  22:20   miktex/bin/libpnm.dll
+  28672  01-20-01  22:20   miktex/bin/libppm.dll
+ 184320  01-20-01  22:07   miktex/bin/tiffmt20.dll
+  57344  01-20-01  22:07   miktex/bin/mcd.dll
+ 204800  01-20-01  22:06   miktex/bin/miktex20.dll
+  28672  01-20-01  22:08   miktex/bin/mikui.dll
+  61440  01-20-01  22:08   miktex/bin/mktex.dll
+  45056  01-20-01  22:05   miktex/bin/regxmt20.dll
+  36864  01-20-01  22:07   miktex/bin/psres.dll
+  61440  01-20-01  22:05   miktex/bin/zlibmt20.dll
+ ------                    -------
+2576492                    19 files

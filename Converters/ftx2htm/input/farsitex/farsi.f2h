@@ -1,0 +1,128 @@
+>\farsi
+>\renewcommand{\thepretheorem}{{\bf Theorem.}}
+>\newenvironment{pretheorem}
+>  {\par\thepretheorem }
+>  {}
+>\renewcommand{\theprelemma}{{\bf Lemma.}}
+>\newenvironment{prelemma}
+>  {\par\theprelemma }
+>  {}
+>\renewcommand{\theprealgorithm}{{\bf Algorithm.}}
+>\newenvironment{prealgorithm}
+>  {\par\theprealgorithm }
+>  {}
+>\renewcommand{\thepreexample}{{\bf Example.}}
+>\newenvironment{preexample}
+>  {\par\thepreexample }
+>  {}
+>\renewcommand{\thepreprob}{{\bf Prob.}}
+>\newenvironment{preprob}
+>  {\par\thepreprob }
+>  {}
+>\renewcommand{\thepreprobb}{{\bf Probb.}}
+>\newenvironment{preprobb}
+>  {\par\thepreprobb }
+>  {}
+>\renewcommand{\thepreconj}{{\bf Conj.}}
+>\newenvironment{preconj}
+>  {\par\thepreconj }
+>  {}
+>%%%%%%%%%%%%%%%
+>\mbkdef\title#1{\mbkdef\valtitle{#1}}
+>\mbkdef\valtitle{}
+>
+>\mbkdef\author#1{\mbkdef\valauthor{#1}}
+>\mbkdef\valauthor{}
+>
+>\mbkdef\date#1{\mbkdef\valdate{#1}}
+>\mbkdef\valdate{}
+>
+>\mbkdef\maketitle{\begin{titlepage}
+>{\Huge\bf \valtitle} \par
+>{\Large\bf \valauthor} \par
+>{\large \valdate} \par
+>\end{titlepage}%
+>}
+>
+>\mbkdef\titlepage{\newpage\begin{center}
+>  \thispagestyle{empty}
+>  \mbkdef\baselinestretch{1}}
+>  \mbkdef\endtitlepage{\end{center}\par\newpage}
+>
+>\mbkdef\abstract{\par {\large \abstractname} \par}
+>\mbkdef\abstract{\html{<P CLASS=abstract>}\abstractname\html{</P>}}
+>\mbkdef\endabstract{}
+>
+>\mbkdef\bibname{õ¤›â}
+>\mbkdef\abstractname{îþ¢ù}
+>\mbkdef\contentsname{êú¤¨–Úõ÷¢¤›‘–}
+>\mbkdef\listfigurename{óþ¨–Úªî‘ñ}
+>\mbkdef\listtablename{óþ¨–Ú›¢øñ}
+>\mbkdef\refname{õ¤›â}
+>\mbkdef\indexname{êú¤¨–Úóê“‘þü}
+>\mbkdef\figurename{ªîñ}
+>\mbkdef\tablename{›¢øñ}
+>%\mbkdef\appendixname{®õ‘þô}
+>\mbkdef\appendixname{•þø¨–}
+>\mbkdef\partname{“¡©}
+>\mbkdef\chaptername{ê¬ñ}
+>
+>\mbkdef\htmlbeforetail{
+>\addtoc\htmldeletefile{toc}
+>\addlof\htmldeletefile{lof}
+>\addlot\htmldeletefile{lot}}
+>\mbkdef\tableofcontents{
+>\mbkdef\addreftoc##1##2##3{\addref{##1}{##2}{##3}}
+>\mbkdef\addtoc{\htmlappend{toc}{\html[\value{olend}]{</OL>}}\htmlinput{toc}}}
+>\mbkdef\addreftoc#1#2#3{}
+>\mbkdef\addtoc{}
+>\htmlnewfile{toc}
+>\htmlappend{toc}{
+>\html{<BR><HR><DIV DIR=rtl ALIGN=right><P CLASS=bigxLarge>}\contentsname\html{</P>}
+>}
+>\mbkdef\listoffigures{
+>\mbkdef\addreflof##1##2##3{\addref{##1}{##2}{##3}}
+>\mbkdef\addlof{\htmlappend{lof}{\html{</OL>}}\htmlinput{lof}}}
+>\mbkdef\addreflof#1#2#3{}
+>\mbkdef\addlof{}
+>\htmlnewfile{lof}
+>\htmlappend{lof}{
+>\html{<BR><HR><DIV DIR=rtl ALIGN=right><P CLASS=bigxLarge>}\listfigurename\html{</P>}
+>\html{<OL>}}
+>\mbkdef\listoftables{
+>\mbkdef\addreflot##1##2##3{\addref{##1}{##2}{##3}}
+>\mbkdef\addlot{\htmlappend{lot}{\html{</OL>}}\htmlinput{lot}}}
+>\mbkdef\addreflot#1#2#3{}
+>\mbkdef\addlot{}
+>\htmlnewfile{lot}
+>\htmlappend{lot}{
+>\html{<BR><HR><DIV DIR=rtl ALIGN=right><P CLASS=bigxLarge>}\listtablename\html{</P>}
+>\html{<OL>}}
+>\newcounter{uniquekey}
+>\newcounter{olbegin}
+>\newcounter{olend}
+>\mbkcommand{\part}[om]{\seccmd{part}{1}{#2}}
+>\mbkcommand{\chapter}[om]{\seccmd{chapter}{2}{#2}}
+>\mbkcommand{\section}[om]{\seccmd{section}{3}{#2}}
+>\mbkcommand{\subsection}[om]{\seccmd{subsection}{4}{#2}}
+>\mbkcommand{\subsubsection}[om]{\seccmd{subsubsection}{5}{#2}}
+>\mbkcommand{\paragraph}[om]{\seccmd{paragraph}{6}{#2}}
+>\mbkcommand{\subparagraph}[om]{\seccmd{subparagraph}{7}{#2}}
+>\mbkcommand{\seccmd}[mmm]{\addtocounter{uniquekey}{1}
+>\html{<P CLASS=#1>}\addreftoc{todef}{tolist}{uniquekey}#3\html{</P>}
+>\addtocounter{olend}{-#2}
+>\addtocounter{olbegin}{#2}
+>\htmlappend{toc}{\html[\value{olend}]{</OL>}\html[\value{olbegin}]{<OL>}
+>\html{<LI>}\addreftoc{tolist}{todef}{uniquekey}#3}
+>\setcounter{olend}{#2}
+>\setcounter{olbegin}{-#2}}
+>\mbkcommand{\addref}[mmm]{\html{<A NAME=#1}\htmlvalue{#3}\html{><A HREF=##}\html{#2}\htmlvalue{#3}\html{>#2</A></A>}
+>}
+>\mbkcommand{\caption}[om]{\def\valcaption{#2}}
+>\mbkdef\valcaption{}
+>\mbkcommand{\writecaption}[mm]{\addtocounter{uniquekey}{1}
+>\html{<P ALIGN=center DIR=rtl>}\addref#1{todef}{tolist}{uniquekey}#2: \valcaption\html{</P>}
+>\htmlappend{#1}{
+>\html{<LI>}\addref#1{tolist}{todef}{uniquekey}\valcaption}}
+>\mbkdef\lofadd{\writecaption{lof}{\figurename}}
+>\mbkdef\lotadd{\writecaption{lot}{\tablename}}

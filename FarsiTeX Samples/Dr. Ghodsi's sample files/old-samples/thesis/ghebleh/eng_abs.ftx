@@ -1,0 +1,35 @@
+>\addtolength{\baselineskip}{1.ex}
+>\english
+>\mathenumber
+>\begin{englishabstract}
+>
+>In this thesis we have collected some of the results in list colrings
+>of graphs. Suppose that we have assigned some lists (sets) of colors
+>to the vertices of a graph $G$. By a list coloring for $G$ (from the
+>assigned lists) we mean a proper coloring in which each vertex takes
+>on a color from its own list. The thesis is divided into four chapters,
+>namely choosability, unique list coloring, list critical graphs, and
+>some applications.
+>
+>In the first chapter, we cite a theorem of Erd\"os, Rubin, and
+>Taylor, which characterizes 2--choosable graphs. We also cite a theorem
+>of S.~Gravier which constructs all graphs who are~not $k$--choosable.
+>Finally we narrate the well known List Coloring Conjecture~(LCC), which
+>claims that the chromatic and list chromatic indices of each graph are
+>the same. We quote some of the progresses made towards proving this
+>conjecture.
+>
+>In the second chapter, we cite some characterization
+>theorems, and we give the proof of a theorem which relates the concepts of
+>uniquely colorability and uniquely list colorability.
+>
+>In the third chapter, we study the concept of list critical graphs. We cite
+>a theorem which characterizes list critical graphs with list chromatic
+>number~3. We also cite a conjecture concerning the concept of list
+>criticality, which is equivalent to the~LCC.
+>
+>\englishkeywords{graph coloring, list coloring, uniquely colorable graphs,
+>uniquely list colorable graphs, critical graphs, list critical graphs}
+>\end{englishabstract}
+>\farsi
+>\addtolength{\baselineskip}{-1.ex}

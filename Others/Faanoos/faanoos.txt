@@ -1,0 +1,178 @@
+This is a simple documention of the faanoos transcription schema
+for Persian text.
+
+The transcription is a phonetic based one; means, you write 
+things how you pronounce them, with some hints for dictation.
+
+Consonants:
+
+The simple letters b, p, t, j, d, r, z, s, f, k, g, l, m, and n 
+map to their corresponding Persian letters.
+
+The next set is the combination with `h':
+
+th	=>	se senoghte
+ch	=>	tche
+kh	=>	khe
+dh	=>	zaal
+zh	=>	zhe (like in zhaale)
+sh	=>	she 
+gh	=>	ghaaf
+
+In this group `dh' is the most problematic one.
+There is also a shortcut for `th', it's the letter `c'.
+Another shortcut is for the sequence of letters `khe vaav', which 
+is `x'.  It should be used in words like `xaahar' and `xorshid'.
+
+Other consonants are:
+
+``	=>	hamze
+H	=>	he jimi
+S	=>	saad
+D	=>	zaad
+T	=>	te daste-daar
+Z	=>	ze daste-daar
+'	=>	ein
+q	=>	ghein
+h	=>	he gerd
+
+And some Arabic letters:
+
+K	=>	kaaf-e arabi
+"h	=>	teh gerd
+Y	=>	ye-ye arabi
+I	=>	alef maghsoore (ye-ye bedoone noghte)
+
+Too other consonants:
+
+v,w	=>	vaav, vaghti sedaaye ve dahad, maanande vasat
+y	=>	ye, vaghti sedaaye ye dahad, mesle yek
+
+`tashdid' is automatic, so you write `ammaa' to get
+`alef mim tashdid alef'.
+
+Vowels:
+
+Aa,AA		=>	aa-ye baa kolaah 
+aa		=>	alef, vaghti sedaaye aa dahad
+oo,eo,u		=>	vaav, vaghti sedaaye oo dahad
+ee,i,ea,ae	=>	ye, vaghti sedaaye ee dahad
+"A		=>	alef vasle
+
+Note: `eo' should be used in words like `cheon' and `neok',
+where the pronounciation is `o', but needs a `waw'.
+
+Note: `ae' should be used in words like `Hattae' and `moosae'
+where the pronounciation is `aa', but needs a `ye'.
+
+Exception: The combination `iy' generates one letter `ye', not 
+two.  It should be used in words like `piyaaz'.
+
+Diacritics: The letters a, e, o are ignored, so you can write
+`ketaab', and get `kaaf te alef be'.  When you want diacritics, 
+you state that explicitly by A, E, and O:
+
+A	=>	fathe
+E	=>	kasre
+O	=>	zamme
+aN	=>	alef + tanvine nasb
+AN	=>	tanvine nasb tanhaa
+EN	=>	tanvine jar
+ON	=>	tanvine zam
+"	=>	tashdid
+^	=>	sokoon
+@	=>	madd
+`	=>	hamze-ye baalaa
+`"	=>	hamze-ye paayin
+|	=>	alefe koochak
+
+Contextual analysis: This make the schema somehow inteligent. 
+They are responsible for puting a `he' letter at the end of 
+words like `khaane'.  The rules are:
+
+An `e' or `E' at the end of word, produces an extra `he' letter.
+An `o' or `O' at the end of word, produces an extra 'waaw' letter.
+
+The combination `-e' followed by non-letter, produces `kasre-ye 
+ezaafe', should be used in `ketaab-e man'.
+
+The combination `-ye' followed by non-letter, produces `ye 
+kasre-ye ezaafe', should be used in `khaane-ye man'.
+
+The combination `-ee' followed by non-letter, produces a
+non-joiner, and then `ye'.
+
+The combination `aa' at the beginning of word, will produce `aa 
+baa-kolaah', so you write `aakhar'.
+
+Words beginning with `a', `A', `e', `E', `o', `O', will be 
+preceded by an `alef' letter.  So you just write `aHmad', to get 
+`alef, he jimi, mim, daal'.
+
+Two words are exceptions to all rules: A single word of `o', will 
+produce a single `waaw'.  So you write `chehel o hasht'.
+And, a single word of `na', will produce `noon he'.
+
+Punctuation marks work too, no special rules; just one really important
+rule is that `-' means ZeroWidth Non-Joiner (`faaSele-ye majaazi'), like
+in `khaane-haa'.  And:
+
+<<	=>	Begin quotations
+>>	=>	End quotations
+---	=>	EM dash
+--	=>	EN dash
+
+Digits and math symbols:  Digits 0-9 produce Persian digits, and
+a period sorounded by digits will produce Persian decimal
+separator.  A single-quote sorounded by digits will produce 
+Persian thousands separator.
+
+faanoos.sty:
+
+By default, the package sets up the needed layers to input text.
+The document directions is still english.
+
+	\usepackage{faanoos}
+
+There are two basic environments:
+
+	\begin{farsi}matn-e faarsi\end{farsi}
+	\begin{latin}Latin text\end{latin}
+
+And two inline commands:
+
+	\textfarsi{zir-matn-e faarsi}
+	\textlatin{Latin sub-text}
+
+Package options:
+	farsi:  For Persian document layout.
+	kasre=off:  Turns off the generation of `kasre-ye ezafe',
+		so `ketaab-e' will generate `kaf te alef be'.
+	kasre=on:  Turns on the generation of `kasre-ye ezafe',
+		so `ketaab-e' will generate `kaf te alef be kasre'.
+	yeh=off:  Turns off the generation of `yeh-ye ezafe',
+		so `khaane-ye' will generate `khe alef noon he ye'.
+	yeh=on:  Turns on the generation of `yeh-ye ezafe',
+		so `khaane-ye' will generate `khe alef noon he'.
+	yeh=small:  Turns on the generation of `yeh-ye koochak',
+		so `khaane-ye' will generate `khe alef noon he-with-small-ye'.
+	tashdid=off:  Turns off the generation of `tashdid',
+		so `ammaa' will generate `alef mim alef'.
+	tashdid=on:  Turns on the generation of `tashdid',
+		so `ammaa' will generate `alef mim tashdid alef'.
+
+Notes:
+	`ketaab-E' will always generate `kaf te alef be kasre'.
+	`am"aa' will always generate `alef mim tashdid alef'.
+
+Defaults:
+	The package is by default loaded as:
+	
+	\usepackage[kasre=on,yeh=on,tashdid=on]{faanoos}
+
+	So for example to typeset a Persian document, without
+	`kasre ezafe' and `tashdid', one should use:
+
+	\usepackage[farsi,kasre=off,tashdid=off]{faanoos}
+
+End of file

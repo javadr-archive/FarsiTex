@@ -1,0 +1,39 @@
+This is pdfeTeX, Version 3.141592-1.30.6-2.2 (MiKTeX 2.5) (preloaded format=FarsiTeX 2008.9.11)  13 SEP 2008 01:04
+entering extended mode
+**&farsitex COLOR
+(COLOR.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+(C:\FarsiTeX\tex\latex209\base\oldarticle.sty
+Standard Document Style `article' <14 Jan 92>.
+(C:\FarsiTeX\tex\latex209\base\art10.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+)
+(C:\FarsiTeX\tex\farsitex\base\persian.sty
+persian.sty, version 0.6, 27 September 2004
+(C:\FarsiTeX\tex\farsitex\base\persian\fcaption.tex))
+(C:\FarsiTeX\tex\latex\graphics\fcolor.sty
+This is fcolor, the "color"'s twin for LaTeX 2.09
+(C:\FarsiTeX\tex\latex\00miktex\fcolor.cfg)
+(C:\FarsiTeX\tex\latex\graphics\fdvips.def)) (COLOR.aux) [1
+
+] [2] (COLOR.aux) ) 
+Here is how much of TeX's memory you used:
+ 395 strings out of 95073
+ 4315 string characters out of 1136121
+ 65651 words of memory out of 1054264
+ 4001 multiletter control sequences out of 60000
+ 7143 words of font info for 26 fonts, out of 1000000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 16i,6n,17p,222b,71s stack positions out of 5000i,500n,10000p,200000b,32768s
+
+Output written on COLOR.dvi (2 pages, 2540 bytes).

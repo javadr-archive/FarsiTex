@@ -1,0 +1,166 @@
+% dviscr 1.6h  21-Jan-2001  15:24
+%
+% Invocation: dviscr @ljH /o=8 /fl=-1 /ocr=1 PAPER-2.DVI
+ -pj:C:\WINDOWS\TEMP\dv1.mfj
+% Input file: PAPER-2.DVI
+%
++first-page:*
++last-page:*
++double-sided:-
++skip-sides:0
++number-of-sides:65535
++backward:off
++left-margin:0in
++top-margin:0in
++height:297mm
++width:210mm
++transformation:0
++page-width:8.5in
++page-height:11in
++page-left-margin:1in
++page-top-margin:1in
++backside-offset-x:0in
++backside-offset-y:0in
++columns:1
++rows:1
++section-count:0
++section-size:0
++full-last-section:off
++fold-other:off
++page-shift:0in
++blank-pages:0
++batch-mode
++call-mfjob:on
++ask-mfjob:on
++font-load-limit:-1
++metafont-mode:laserjetIV
++omit-graphics:off
++font-scaling:1
++max-drift:2
++font-size-tolerance:0.2
++use-tfm-files:off
++font-sizes::0,:h,:1,:2,:3,:4,:5,:6,:7,:8,:9
++magnification:
++resolution:600
++font-resolution:600
++graphics-resolution:0
++dvi-file:{,$DVIDRVINPUT:}@i
++font-files:$DVIDRVFONTS:pixel.ljh\@Rrdpi\@f{.pk,.pxl}
++graphics-files:{,$DVIDRVGRAPH:}{@Rrdpi\,}@PBf{@Ef,.msp,.pcx,.bmp}
++mfjob-file:C:\WINDOWS\TEMP\dv1.mfj
++font-libraries:$DVIDRVFONTS:ljh_{base,more}
++page-list-file:
++response-files:{,$EMTEX:data\}@f
++font-subst-files:
++transcript-file:@d.dlg
++virtual-fonts:
++fontlib-file:
++verbosity:2
++unit:in
++use-ems:on
++use-xms:on
++home-x:1in
++home-y:1in
++zoom:8
++adapter:0
++color:p2 +color:r1 +color:s2
++inverse:off
++ruler:off
++status-line:on
++ruler-unit:pt
++scaling:1
+@
+
+' TeX output 2001.01.21:1524'
+Loading font sflt7 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt7])
+Loading font sfitl10 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfitl10])
+Loading font cmcsc10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmcsc10])
+Loading font sfblt14 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfblt14])
+Loading font sflt14 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt14])
+Loading font sflt9 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt9])
+Loading font sfbitl12 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfbitl12])
+Loading font sflt12 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt12])
+Loading font sfshlt17 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfshlt17])
+Loading font sflt8 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt8])
+Loading font rmc12 scaled 1000  (d:\tex\texfonts\pixel.ljh\600dpi\rmc12.pk)
+Loading font h scaled 1000
+Warning 1206: +batch-mode: font h<600> replaced by h<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\h.tfm)
+Loading font g scaled 1000
+Warning 1206: +batch-mode: font g<600> replaced by g<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\g.tfm)
+Loading font e scaled 1000
+Warning 1206: +batch-mode: font e<600> replaced by e<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\e.tfm)
+Loading font d scaled 1000
+Warning 1206: +batch-mode: font d<600> replaced by d<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\d.tfm)
+Loading font c scaled 1000
+Warning 1206: +batch-mode: font c<600> replaced by c<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\c.tfm)
+Loading font b scaled 1000
+Warning 1206: +batch-mode: font b<600> replaced by b<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\b.tfm)
+Loading font a scaled 1000
+Warning 1206: +batch-mode: font a<600> replaced by a<600> /r
+  (d:\tex\ftex\tfm\FTEXETC\a.tfm)
+Loading font sflt10 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt10])
+Loading font sfmat10 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat10])
+Loading font sfmat9 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat9])
+Loading font sfmat7 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat7])
+Loading font sfmat6 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat6])
+Loading font sfmat5 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat5])
+Loading font lcircle10 scaled 1000
+  (d:\tex\texfonts\ljh_base.fli [lcircle10])
+Loading font cmex10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmex10])
+Loading font cmr10 scaled 1440  (d:\tex\texfonts\ljh_base.fli [cmr10])
+Loading font cmsy10 scaled 1200  (d:\tex\texfonts\ljh_base.fli [cmsy10])
+Loading font cmtt10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmtt10])
+Loading font cmti10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmti10])
+Loading font cmsy10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmsy10])
+Loading font cmmi10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmmi10])
+Loading font cmr10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr10])
+Loading font lasy9 scaled 1000  (d:\tex\texfonts\ljh_base.fli [lasy9])
+Loading font cmsy9 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmsy9])
+Loading font cmr9 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr9])
+Loading font cmti8 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmti8])
+Loading font cmsy8 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmsy8])
+Loading font cmr8 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr8])
+Loading font cmsy7 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmsy7])
+Loading font cmmi7 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmmi7])
+Loading font cmr7 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr7])
+Loading font cmsy6 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmsy6])
+Loading font cmsy5 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmsy5])
+Loading font cmmi5 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmmi5])
+Loading font cmr5 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr5])
+Warning 1209: do you want to call MFjob to generate 7 missing fonts now?
+Type Y, N, or ?: n
+You might want to delete the MFjob job file `C:\WINDOWS\TEMP\dv1.mfj'.
+Loading page pointers... 9 input pages, 9 output sheets.
+ [1]
+
+Memory usage:
+Strings                          93       2560
+Page buffers                      1      10240
+Sorted page buffers               2      20480
+Sorted page index              7056      56448
+Position stack                   34        952
+Font table                       46       3312
+Font indices                     46        276
+Page table                        9          0
+Characters                     3072      98304
+Raster data                      92      25641
+VF characters                     0          0
+VF macros                         0          0
+Graphics                          0          0
+Lines                             0          0
+Font library directories          0          0
+Band buffer                       0          0
+TOTAL                                   218213
+
+Number of deallocations:     66
+Temporary file size:          0
+EMS bytes used:           22016
+XMS bytes used:               0
+External memory reads:        1
+External memory writes:       5

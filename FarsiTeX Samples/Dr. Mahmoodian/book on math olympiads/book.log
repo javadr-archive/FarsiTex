@@ -1,0 +1,58 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.3) (preloaded format=farsitex 2007.11.6)  12 NOV 2007 15:42
+entering extended mode
+**&farsitex BOOK.tex
+(BOOK.tex
+LaTeX Version 2.09 <25 March 1992>
+Persian LaTeX2.09, FarsiTeX version 1.0, 27 September 2004
+ FarsiTeX Project Group: Abolhassani, Pournader, Esfahbod
+ farsitex.tex, version 0.2, 27 September 2004
+(olyii.sty
+
+Document Style `MaThesis' (Math Thesis)
+By Mohammad Ghebleh, 12 June 1999
+
+Standard Document Style `book' <14 Jan 92>.
+(bk10.sty)
+\descriptionmargin=\dimen101
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+) (C:\localtexmf\tex\farsitex\base\deprecat\farsi.sty
+LaTeX Warning: Package `farsi' is deprecated. Use `persian' instead..
+(C:\localtexmf\tex\farsitex\base\persian.sty
+persian.sty, version 0.6, 27 September 2004
+(C:\localtexmf\tex\farsitex\base\persian\fcaption.tex))) (2.sty) (fnum.sty)
+(C:\texmf\tex\generic\dvips\epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read1
+\epsfframemargin=\dimen102
+\epsfframethickness=\dimen103
+\epsfrsize=\dimen104
+\epsftmp=\dimen105
+\epsftsize=\dimen106
+\epsfxsize=\dimen107
+\epsfysize=\dimen108
+\pspoints=\dimen109
+\epsfnoopenhelp=\toks14
+) (amssym.tex (amssym.def
+\msafam=\mathgroup6
+\msbfam=\mathgroup7
+\eufmfam=\mathgroup8
+\eusmfam=\mathgroup9
+)) (BOOK.aux) [1
+
+] [2] [3] [4] (BOOK.toc
+! Undefined control sequence.
+<argument> \psiah 
+                  •\tireh ƒ\tireh È\tireh Ú\tireh Ô\tireh µ\tireh ‘¤
+\@dottedtocline ...avevmode \@tempdima #3\relax #4
+                                                  \nobreak \leaders \hbox {$...
+l.1 ...ireh Ô\tireh µ\tireh ‘¤}{\beginR ûÔ´\endR }
+                                                  
+? 

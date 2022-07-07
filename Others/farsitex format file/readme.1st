@@ -1,0 +1,6 @@
+
+Sometimes, the installation of MikTeX does not correctly generate 
+the needed format file.
+
+You can manually put the farsitex.efmt in Local TeXMF\miktex\fmt directory. 
+You should run 'mo' afterwards  to refresh.

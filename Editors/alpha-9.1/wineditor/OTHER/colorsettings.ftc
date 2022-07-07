@@ -1,0 +1,17 @@
+#You can define your color bindings, here.
+#Use '#' sign to write comments or comment out some colors.
+#Your comment lines should not exceed 1024 characters.
+
+#Empty lines are skipped, too.
+
+#The following line is commented out to get transparent background color.
+background:			DARK_BLUE
+english_background:		BLACK
+selection_background:		LIGHT_BLUE
+normal_farsi_text:		WHITE
+normal_english_text:		WHITE
+command_text:			YELLOW
+selected_text:			WHITE
+commented_text:			GRAY
+eraab_text:			DARK_PINK
+english_line_marker:		GREEN

@@ -1,0 +1,26 @@
+\newbox\picebox
+\newdimen\picew
+\font\picea=picea at 57.816truept
+\font\piceb=piceb at 57.816truept
+\font\picec=picec at 57.816truept
+\font\piced=piced at 57.816truept
+\font\picee=picee at 57.816truept
+\font\picef=picef at 57.816truept
+\font\piceg=piceg at 57.816truept
+\font\piceh=piceh at 57.816truept
+\font\picei=picei at 57.816truept
+\font\picej=picej at 57.816truept
+\setbox\picebox=\vbox{\hbox{%
+\picea\char0\char1\piceb\char0\char1\picec\char0}}
+\picew=\wd\picebox
+\setbox\picebox=\hbox{\vbox{\hsize=\picew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\picea\char0\char1\piceb\char0\char1\picec\char0}
+\hbox{\picec\char1\piced\char0\char1\picee\char0\char1}
+\hbox{\picef\char0\char1\piceg\char0\char1\piceh\char0}
+\hbox{\piceh\char1\picei\char0\char1\char2\picej\char0}}}
+\ifx\parbox\undefined
+    \def\setpice{\box\picebox}
+\else
+    \def\setpice{\parbox{\wd\picebox}{\box\picebox}}
+\fi

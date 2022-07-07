@@ -1,0 +1,48 @@
+%	Left FootNote Style File
+%	By: SuB
+%	E-mail: SuB.2007.SuB@gmial.com
+\typeout{********* 'leftfootnote' style file *********}
+\typeout{>>> By: SuB}
+\typeout{>>> E-mail: SuB.2007.SuB@gmail.com}
+\typeout{Last UpDate: <15 August 2007>}
+\makeatletter
+%
+%	Define \lfootnote
+\def\lfootnote{\@ifnextchar[ {\@lfootnote}{\@@lfootnote}}		% Chnaged: 15 Agu 2007
+\def\@lfootnote[#1]#2{\noparenglish\footnote[#1]{#2}\noparfarsi}	% Added: 15 Agu 2007
+\def\@@lfootnote#1{\noparenglish\footnote{#1}\noparfarsi}		% Added: 15 Agu 2007
+
+%	Define \noparfarsi (This command is as \farsi but it does not go to new paragraph
+\def\noparfarsi{%\if@farsi\else
+    \relax%\par
+    \s@tfnoindent
+    \global\def\t@bpre@mble{\beginR}\relax
+    \global\def\t@bpost@mble{\endR}\relax
+    \s@teverypart@ken
+    \global\def\rm{\nazok}\relax		% \relax added: 15 Aug 2007
+	\global\def\bf{\siah}\relax		% \relax added: 15 Aug 2007
+    \global\def\it{\iranic}\relax	% \relax added: 15 Aug 2007
+	\global\def\tt{\tahrir}\relax	% \relax added: 15 Aug 2007
+    \global\def\sl{\khabide}\relax	% \relax added: 15 Aug 2007
+    %\rm								  \rm deleted: 15 Agu 2007
+    \global\@farsitrue
+    \relax}
+
+
+%	Define \noparenglish (This command is as \english but it does not go to new paragraph
+\def\noparenglish{\if@farsi
+      \relax%\par
+      \s@tenoindent
+      \global\def\t@bpre@mble{}\relax		% \relax added: 15 Aug 2007
+      \global\def\t@bpost@mble{}\relax		% \relax added: 15 Aug 2007
+      \everypar{}\relax						% \relax added & \global deleted: 15 Aug 2007 
+      \global\def\rm{\protect\prm}\relax	% \relax added: 15 Aug 2007
+      \global\def\bf{\oldbf}\relax			% \relax added: 15 Aug 2007
+      \global\def\it{\protect\pit}\relax	% \relax added: 15 Aug 2007
+      \global\def\tt{\protect\ptt}\relax	% \relax added: 15 Aug 2007
+      \global\def\sl{\oldsl}\relax			% \relax added: 15 Aug 2007
+      %\rm										  \rm deleted: 15 Aug 2007
+      \global\@farsifalse
+\fi\relax}
+
+\endinput

@@ -1,0 +1,339 @@
+%
+%  This file is a part of Scientic Farsi (SF) fonts. SF fonts are a part
+%  of FarsiTeX, a Persian/English typesetting system.
+%
+%  Copyright (C) 1996 Mehran Sharghi
+%  Copyright (C) 1998-2001 Roozbeh Pournader <roozbeh@sharif.edu>
+%
+%  FarsiTeX is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  FarsiTeX is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with FarsiTeX; if not, write to the Free Software
+%  Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+%  USA.
+%
+%  Any licensing or usage questions should be directed to Roozbeh
+%  Pournader <roozbeh@sharif.edu>.
+%
+case:=1;
+def dot(suffix $,$$) =
+  filldraw z$l...z$$l...z$r...z$$r...cycle;
+enddef;
+
+def ammoc(suffix $,@)(expr jut,depth) = % reversed comma
+  pickup fine_pen;
+  penpos$(dot_size-fine,90);
+  penpos@1(.8ending_width-fine,90);
+  penpos@2(.8ending_width-fine,0);
+  penpos@3(.8ending_width-fine,-45);
+  z@1l=z$l;
+  lft x@2l=hround(x$-.5dot_size-jut)-2eps;
+  x@3=x$+.5u;
+  y@2=1/3[y@1,y@3];
+  top y@3l=vround(y$+.5dot_size+depth);
+  y_:=ypart((z@1{left}...z@2{up}...z@3) intersectiontimes
+                                                (z$r{left}..{right}z$l));
+  if y_<0: y_:=1; fi
+  filldraw z$l{right}..subpath (0,y_) of (z$r{left}..{right}z$l)--cycle; % dot
+  filldraw stroke z@1e{left}...z@2e{up}...z@3e;   % tail
+enddef;
+
+beginchar(code[130],12u#,dot_size#,0);                               % "."
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(dot_size-fine,0);
+  penpos2(dot_size-fine,90);
+  lft x1l=hround(.5w-.5dot_size);
+  bot y2l=0;
+  z1=z2;
+  dot(1,2);  % dot
+endchar;
+
+beginchar(code[131],12u#,18v#,0);                                    % ":"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(dot_size-fine,0);
+  penpos2(dot_size-fine,90);
+  lft x1l=hround(.5w-.5dot_size);
+  top y2r=h;
+  z1=z2;
+  dot(1,2);  % upper dot
+  penpos3(dot_size-fine,0);
+  penpos4(dot_size-fine,90);
+  x3=x1;
+  bot y4l=0;
+  z3=z4;
+  dot(3,4);  % lower dot
+endchar;
+
+beginchar(code[132],12u#,dot_size#+9.0u#,0);                         % ","
+  adjust_fit(0,0);
+  x1-.5dot_size=hround(.5w-.5dot_size);
+  y1-.5dot_size=0;
+  ammoc(1,a,.65u,h-dot_size);  % dot and tail
+endchar;
+
+beginchar(code[133],12u#,15v#+9v#,0);                                % ";"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(dot_size-fine,0);
+  penpos2(dot_size-fine,90);
+  lft x1l=hround(.5w-.5dot_size);
+  bot y2l=0;
+  z1=z2;
+  dot(1,2);  % lower dot
+  x3-.5dot_size=hround(.5w-.5dot_size);
+  ommac_tail:=9v;
+  top y3r = h-ommac_tail;
+  ammoc(3,a,.20u,ommac_tail);  % upper dot and tail
+endchar;
+
+beginchar(code[134],17.5u#,paren_height#,paren_height#-2math_axis#); % "("
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(.80ending_width-fine,0);
+  penpos2(.76horiz_width-fine,0);
+  penpos3(.80ending_width-fine,0);
+  rt x1r=rt x3r=hround(w-2.5u);
+  lft x2l=hround(x1-10.0u);
+  top y1=h;
+  y2=.5[y1,y3]=math_axis;
+  filldraw stroke z1e{3(x2e-x1e),y2-y1}...z2e...{3(x3e-x2e),y3-y2}z3e; % arc
+endchar;
+
+beginchar(code[135],17.5u#,paren_height#,paren_height#-2math_axis#); % ")"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(.80ending_width-fine,0);
+  penpos2(.76horiz_width-fine,0);
+  penpos3(.80ending_width-fine,0);
+  lft x1l=lft x3l=hround (2.5u);
+  rt x2r=hround(x1+10.0u);
+  top y1=h;
+  y2=.5[y1,y3]=math_axis;
+  filldraw stroke z1e{3(x2e-x1e),y2-y1}...z2e...{3(x3e-x2e),y3-y2}z3e; % arc
+endchar;
+
+beginchar(code[136],21u#,num_height#+.75dot_size#,0);                % "?"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos7(dot_size-fine,0);
+  penpos8(dot_size-fine,90);
+  lft x7r=hround(.5w+.62u+.5dot_size);
+  bot y8l=0;
+  z7=z8;
+  dot(7,8);  % dot
+  pickup fine_pen;
+  penpos2(.8ending_width-fine,+90);
+  penpos3(horiz_width-fine,180);
+  penpos4(.8ending_width-fine,-90);
+  penpos5(ending_width-fine,180);
+  penpos6(ending_width-fine,180);
+  x2=x4=x5=x6=x7;
+  lft x3r=hround(2.5u);
+  bot y6=vround(top y8r+max(.5dot_size,1));
+  top y2r=h;
+  y3=.75[y6,y2];
+  y4=.5[y6,y2];
+  y5=.1[y6,y2];
+  {{interim superness:=more_super;
+    filldraw stroke pulled_super_arc.e(2,3)(superpull)  &
+               subpath(0,1) of super_arc.e(3,4)..z5e---z6e\\}}; % arc and stem
+pickup tiny_pen;
+  penpos1(max(.9ending_width-tiny,0),0);
+  penpos0(arc_width-tiny,0);
+  rt x1r=hround (w-2.5u);
+  y1=y3;
+  bulb(2,1,0);  % bulb
+endchar;
+
+beginchar(code[137],12u#,num_height#+.75dot_size#,0);                % "!"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos3(dot_size-fine,0);
+  penpos4(dot_size-fine,90);
+  lft x3l=hround(.5w-.5dot_size);
+  bot y4l=0;
+  z3=z4;
+  dot(3,4);  % dot
+  pickup fine_pen; 
+  temp_top := round(dot_size-fine);
+  temp_end := round(ending_width-fine);
+  if (temp_top-temp_end) mod 2 <> 0 : 
+     temp_end := max(temp_end-1,0);
+  fi;
+  penpos1(temp_top,0);
+  penpos2(temp_end,0);
+  lft x1l=hround(.5w-.5dot_size);          y1=h-max(.5dot_size,2);
+      x2 =x0;                          bot y2=vround(top y4r+max(.5dot_size,1));
+      x0 =lft x1l+(rt x1r-lft x1l)/2;  top y0=vround(h);
+  filldraw z1l...z0...z1r---z2r--z2l---cycle; % stem and bulb
+endchar;
+
+percent_height#:=num_height#+.75dot_size#;
+beginchar(code[138],22u#,percent_height#,.1percent_height#);         % "%"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos3(dot_size-fine,0);
+  penpos4(dot_size-fine,90);
+  rt x3r=hround(w-2.5u);
+  bot y4l=0;
+  z3=z4;
+  dot(3,4);  % lower dot
+  penpos5(dot_size-fine,0);
+  penpos6(dot_size-fine,90);
+  lft x5l=hround(2.5u);
+  top y6r=round(h-d);
+  z5=z6;
+  dot(5,6);  % upper dot
+  pickup rule_pen;
+  rt x1=hround(w-3u)+eps;
+  top y1=h+eps;
+  lft x2=hround 3u-eps;
+  bot y2=-d-eps;
+  draw z1--z2;  % diagonal
+endchar;
+
+beginchar(code[139],20.5u#,gume_height#,.2gume_height#);             % "(("
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(.80ending_width-fine,0);
+  penpos2(.60horiz_width-fine,0);
+  penpos3(.80ending_width-fine,0);
+  rt x1r=rt x3r=hround(w-11.5u);
+  lft x2l=hround(x1-6.5u);
+  top y1=h;
+  y2=.5[y1,y3]=(h-d)/2;
+  filldraw stroke z1e{3(x2e-x1e),y2-y1}...z2e...{3(x3e-x2e),y3-y2}z3e; % arc
+  penpos4(.80ending_width-fine,0);
+  penpos5(.60horiz_width-fine,0);
+  penpos6(.80ending_width-fine,0);
+  rt x4r=rt x6r=hround(w-2.5u);
+  lft x5l=hround(x4-6.5u);
+  top y4=h;
+  y5=.5[y4,y6]=(h-d)/2;
+  filldraw stroke z4e{3(x5e-x4e),y5-y4}...z5e...{3(x6e-x5e),y6-y5}z6e; % arc
+endchar;
+
+beginchar(code[140],20.5u#,gume_height#,.2gume_height#);             % "))"
+  adjust_fit(0,0);
+  pickup fine_pen;
+  penpos1(.80ending_width-fine,0);
+  penpos2(.60horiz_width-fine,0);
+  penpos3(.80ending_width-fine,0);
+  lft x1l=lft x3l=hround (2.5u);
+  rt x2r=hround(x1+6.5u);
+  top y1=h;
+  y2=.5[y1,y3]=(h-d)/2;
+  filldraw stroke z1e{3(x2e-x1e),y2-y1}...z2e...{3(x3e-x2e),y3-y2}z3e; % arc
+  penpos4(.80ending_width-fine,0);
+  penpos5(.60horiz_width-fine,0);
+  penpos6(.80ending_width-fine,0);
+  lft x4l=lft x6l=hround (11.5u);
+  rt x5r=hround(x4+6.5u);
+  top y4=h;
+  y5=.5[y4,y6]=(h-d)/2;
+  filldraw stroke z4e{3(x5e-x4e),y5-y4}...z5e...{3(x6e-x5e),y6-y5}z6e; % arc
+endchar;
+
+beginchar(code[141],35u#,15u#+math_axis#,0);                         % "+"
+  adjust_fit(0,0);
+  pickup rule_pen;
+  x1=x2=good.x .5w;
+  top y1=h+eps;
+  .5[y1,y2]=math_axis;
+  lft x3=hround 2.5u-eps;
+  x4=w-x3;
+  y3=y4=math_axis;
+  draw z1--z2;  % stem
+  draw z3--z4;  % crossbar
+endchar;
+
+beginchar(code[142],35u#,math_axis#,0);                              % "-"
+  adjust_fit(0,0);
+  pickup rule_pen;
+  lft x1=hround 2.5u-eps;
+  x2=w-x1;
+  y1=y2=math_axis;
+  draw z1--z2;
+endchar;
+
+beginchar(code[143],35u#,math_axis#+7u#,0);                          % "="
+  adjust_fit(0,0);
+  pickup rule_pen;
+  lft x1=hround 2.5u-eps;
+  x3=x1;
+  x2=x4=w-x1;
+  y1=y2;
+  y3=y4;
+  y1-y3=2(h-math_axis);
+  .5[y1,y3]=math_axis;
+  draw z1--z2;  % upper bar
+  draw z3--z4;  % lower bar
+endchar;
+
+beginchar(code[144],22.5u#,paren_height#,paren_height#-2math_axis#); % "/"
+  adjust_fit(0,0);
+  pickup rule_pen;
+  rt x1=hround(w-2.5u)+eps;
+  top y1=h+eps;
+  lft x2=hround 2.5u-eps;
+  bot y2=-d-eps;
+  draw z1--z2;  % diagonal
+endchar;
+
+beginchar(code[145],9u#,horiz_width#,0);                             % "‹" Tire
+  case:=3;
+  adjust_fit(0,0);
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(horiz_width-tiny, 90);
+  x1=0;  x2=w;
+  bot y1.l = bot y2.l = 0;
+  filldraw stroke z1e--z2e;
+endchar;
+
+case:=1;
+beginchar(code[146],12.2u#,paren_height#,paren_height#-2math_axis#); % "["
+adjust_fit(0,0);
+  pickup rule_pen;
+  top y1=h;
+  bot y2=-d;
+  lft x1=lft x2=hround(6u);
+  draw z1--z2;  % stem
+  x3=x5=x1; rt x4=rt x6=ceiling(w-.96u)+eps; y3=y4=y1; y5=y6=y2;
+  draw z3--z4;  % upper bar
+  draw z5--z6;  % lower bar
+endchar;
+
+beginchar(code[147],12.2u#,paren_height#,paren_height#-2math_axis#); % "]"
+  adjust_fit(0,0);
+  pickup rule_pen;
+  top y1=h;
+  bot y2=-d;
+  rt x1=rt x2=hround(w-6u);
+  draw z1--z2;  % stem
+  x3=x5=x1; lft x4=lft x6=floor .96u-eps; y3=y4=y1; y5=y6=y2;
+  draw z3--z4;  % upper bar
+  draw z5--z6;  % lower bar
+endchar;
+
+% added Nov 1998 for new tireh algorithm
+beginchar(code[171],6u#,horiz_width#,0);                             % "‹" Tire
+  case:=3;
+  adjust_fit(0,0);
+  pickup tiny_pen;
+  penpos1(horiz_width-tiny, 90);
+  penpos2(horiz_width-tiny, 90);
+  x1=0;  x2=w;
+  bot y1.l = bot y2.l = 0;
+  filldraw stroke z1e--z2e;
+endchar;

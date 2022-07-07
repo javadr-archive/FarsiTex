@@ -1,0 +1,171 @@
+@author Mehrdad Sabetzadeh
+@revision 15
+@lastupdate September 13, 2001
+
+***ALPHA 9.0 >>> ALPHA 9.1 $Date: September 13, 2001. 12:32 P.M.$***
+* Bug Fixes:
+1. Farsi text in left-to-right mode (inserted Farsi text) was not saved correctly
+in the presence of Taa (final form), Zaa (final form), Eraab symbols, Farsi Zarb sign (star),
+and Farsi Jam' Sign (plus).
+
+***ALPHA 8.7 >>> ALPHA 9.0 $Date: June 25, 2001. 17:00 P.M.$***
+* Bug Fixes:
+1. Minor typos corrected.
+* New Features:
+1. About dialog box was revised.
+
+***ALPHA 8.2 >>> ALPHA 8.7 $Date: June 22, 2001. 15:25 P.M.$***
+* Bug Fixes:
+1. Keyboard caret was one location right to the proper location after search
+operation found the requested string in a Farsi line.
+2. Up and down arrow keys did not suppress command/number modes.
+3. Farsi numbers in inserted mode were not handled properly.
+* New Features:
+1. An option was added to suppress dash special behavior when typing Farsi numbers.
+2. About dialog box now shows the list of all FarsiTeX Team members.
+
+***ALPHA 8.0 >>> ALPHA 8.2 $Date: June 18, 2001. 10:32 P.M.$***
+* New Features:
+1. Improved Run Menu (MakeIndex and Ftx2Uni)
+2. Option for enabling and disabling bracket/brace pairing.
+
+***ALPHA 7.6 >>> ALPHA 8.0 $Date: June 15, 2001. 6:50 P.M.$***
+* Bug Fixes:
+1. Farsi Khatte Teereh (like Farsi Momayez) did not behave properly when typing Farsi numbers.
+2. '>' at the very beginning of English lines was not highlighted when syntax highlighting flag
+was false. Note that the '>' at the beginning of English lines is a marker and should always be
+highlighted regardless of highlighting mode.
+3. Move to Line validity checks had an off by one error for the first line and the last line of
+4. Search operation treated English line marker ('>') as a character. This could
+even crash the editor when the line marker was removed when it was found.
+5. Search operation had an off-by-one error at starting point.
+* New Features:
+1. Text Import from Windows clipboard.
+2. Link to FarsiTeX Homepage from help menu.
+
+***ALPHA 7.1 >>> ALPHA 7.6 $Date: June 11, 2001. 9:33 P.M.$***
+* Bug Fixes:
+1. Memory leaked when a document was closed.
+2. Farsi Momayez caused an exit from Typing-Farsi-Number mode.
+3. '>' caused rendering problems when an English phrase starting with '>' was placed
+at the very beginning of a Farsi line.
+4. Converting a line from English to Farsi could make a line one character longer
+than the maximum allowed size.
+* New Features:
+1. Option for backup files.
+2. Option for permanently turning off syntax highlighting engine.
+
+***ALPHA 7.0 >>> ALPHA 7.1 $Date: June 6, 2001. 10:25 P.M.$***
+* Bug Fixes:
+1. Go-to-line command did not unselect selected text before moving to the given line.
+* New Features:
+1. FarsiTeX Icon was replaced with a new icon.
+
+***ALPHA 6.5 >>> ALPHA 7.0 $Date: June 5, 2001. 8:36 P.M.$***
+* Bug Fixes:
+1. Paste command did not remove selected text before pasting the clipboard into the document.
+2. Unselection logic was bogus.
+3. DviPs and View commands in Run menu searched for the active document file
+in current directory. This caused problems when multiple documents where being edited simultaneously.
+4. View command created a new instance of Yap program even if another instance 
+was already running.
+
+***ALPHA 6.1 >>> ALPHA 6.5 $Date: June 4, 2001. 7:22 P.M.$***
+* Bug Fixes:
+1. The editor tried to save unmodified files.
+2. Syntax highlighting engine was completely reviewed and revised.
+3. CTRLF, CTRLF, cTRLG, and ENTER keys actions were completely reviewed and revised.
+4. Due to an improper data representation in the editor, English '>' at the
+very beginning of non-empty Farsi lines could crash the Editor in all previous versions.
+
+***ALPHA 6.0 >>> ALPHA 6.1 $Date: May 25, 2001. 10:30 P.M.$***
+* Bug Fixes:
+1. "Replace All" crashed, when the clipboard was not empty.
+2. The project was compiled in "Release Mode" with "Optimization Disabled".
+
+***ALPHA 5.5 >>> ALPHA 6.0 $Date: May 24, 2001. 9:57 P.M.$***
+* Bug Fixes:
+1. In some rare cases, files were not saved before Run and Convert commands.
+2. Only the active splitter pane was kept up-to-date.
+3. Run menu hotkeys where not directly handled by Windows.
+4. If the visual extent of selected text in the smaller splitter pane
+gets larger than the client area of the smaller pane, cut (and delete) actions
+will leave the larger splitter pane client area in an invalid state.
+5. Editor's manual used low quality .jpg file.
+
+* New Features:
+1. Prestigious splash screen.
+
+
+***ALPHA 5.0 >>> ALPHA 5.5 $Date: May 22, 2001. 11:15 P.M.$***
+* Bug Fixes:
+1. Space in file paths or file names caused Run menu commands not to work properly.
+2. Horizontal splitter was removed.
+3. Horizontal scrolling happened too early when the caret approached the
+edges of the window.
+4. Caret mode did not switch back to Farsi after typing Farsi "\\".
+
+* New Features:
+1. Replace All Command
+2. Editor manual
+3. Improved options in View>>Options submenu.
+4. Refresh command in View menu.
+
+
+
+***EARLY ACCESS RELEASE >>> ALPHA 5.0 $Date: May 1, 2001. 10:24 P.M.$***
+* Bugs Fixes:
+1. Incorrect document display after line 320.
+2. '>' character converted Farsi lines to English lines, no matter
+where it was placed.
+3. Files were not saved before "run".
+4. Files were not saved before "convert".
+5. Keyboard caret was not hidden on losing input focus.
+6. Farsi letters were not correctly joined in the presentence of Eraab symbols
+(space after 'kasreh' and 'hamzeh' and ..., as reported on sourceforge)
+7. Keyboard caret was not placed at the beginning of selection after
+"Cut" operation.
+8. Delete key in English mode did not behave correctly at the end of line.
+9. No option was available to the user to stay in English mode.
+10. The user was allowed to create documents longer than 2048 lines in Win9x family.
+This caused incorrect display behavior in the editor's client area.
+11. CTRL+G in English mode had an off by one error when switching
+from Farsi text back to English at the end of line.
+12. Caret position was invalid after CTRL+Y when the document was
+scrolled to the bottom.
+13. A newly created line at the end of the document was not displayed.
+14. Concatenating two lines (through delete key) or pasting clipboard data into the
+document could cause general protection fault error.
+15. Farsi '>' symbol at the end of non-empty Farsi line switched the line to English Mode
+16. English '>' did not work on Farsi lines that ended with a trail of Farsi spaces.
+17. An English line could not be switched to farsi mode (CTRL+J is now
+in charge of doing this).
+18. ENTER immediately after words like ('CHAAY', 'ROOY', etc.) did not produce
+the correct form of 'YAA'.
+19. Delete key did not delete the whole selected area.
+20. SHIFT+SPACE on characters with 3 different shapes (YAA, HAA, etc.)
+produced wrong form of the character.
+21. .tex, .div, etc. files were not saved in the same directory as that of the
+.ftx file when invoking convert/run commands.
+22. Search operation could crash when using CTRL+L.
+23. Search dialog box did not display characters correctly when using FarsiTeX Editor
+on Win2000 with multiple Locales
+24. In some situations, keyboard caret position was invalid after GO TO LINE.
+25. Syntax highlighter engine ignored trailing Farsi spaces at the end of line, so
+the selected sequence of spaces at the end of line was not displayed.
+26. Backspace caused premature exit from command mode (If you made a
+typing mistake in a TeX command and used BACKSPACE, the caret transition
+operation after pressing '{' did happen).
+
+
+* New Features:
+1. Search & Replace
+2. Fully customizable colors.
+3. CTRL+LEFT, CTRL+RIGHT
+4. CTRL+HOME, CTRL+END
+5. CTRL+J (described in bug fixes)
+6. Color caret
+7. Hot keys for Run Menu commands.
+8. Improved Run Toolbar
+9. About dialog box
+10. Splash screen

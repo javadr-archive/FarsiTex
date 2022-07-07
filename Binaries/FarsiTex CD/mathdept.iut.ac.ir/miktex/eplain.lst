@@ -1,0 +1,31 @@
+Archive:  F:/work/miktex/manufacture/eplain.zip
+ Length    Date    Time    Name
+ ------    ----    ----    ----
+  22762  03-08-94  01:00   doc/eplain/arrow.texi
+  41569  12-09-97  08:28   doc/eplain/btxdoc.tex
+  18318  03-27-96  01:00   doc/eplain/copying.texi
+     58  03-08-94  01:00   doc/eplain/csindex.texi
+   8951  01-28-98  21:46   doc/eplain/eplain.aux
+  10744  01-28-98  21:46   doc/eplain/eplain.cp
+   6735  01-28-98  21:46   doc/eplain/eplain.cps
+ 370948  04-06-00  08:37   doc/eplain/eplain.dvi
+  16219  01-28-98  21:46   doc/eplain/eplain.fn
+  11339  01-28-98  21:46   doc/eplain/eplain.fns
+      0  01-28-98  21:46   doc/eplain/eplain.ky
+      0  01-28-98  21:46   doc/eplain/eplain.pg
+   7119  01-25-98  03:53   doc/eplain/eplain.texi
+   3298  01-28-98  21:46   doc/eplain/eplain.toc
+      0  01-28-98  21:46   doc/eplain/eplain.tp
+      0  01-28-98  21:46   doc/eplain/eplain.vr
+  10528  03-27-96  01:00   doc/eplain/freedom.texi
+    138  03-08-94  01:00   doc/eplain/index.texi
+   2432  03-08-94  01:00   doc/eplain/install.texi
+   2994  04-08-96  03:00   doc/eplain/intro.texi
+   3774  04-17-94  03:00   doc/eplain/invoke.texi
+   1700  12-10-97  00:59   doc/eplain/Makefile
+  20288  04-17-94  03:00   doc/eplain/progdef.texi
+  75059  12-06-97  05:28   doc/eplain/userdef.texi
+    121  02-22-99  13:28   tex/eplain/eplain.ini
+  78823  01-28-98  21:38   tex/eplain/eplain.tex
+ ------                    -------
+ 713917                    26 files

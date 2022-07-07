@@ -1,0 +1,15 @@
+\newbox\acmbloobox
+\newdimen\acmbloow
+\font\acmblooa=acmblooa at 57.816truept
+\setbox\acmbloobox=\vbox{\hbox{%
+\acmblooa\char0\char1}}
+\acmbloow=\wd\acmbloobox
+\setbox\acmbloobox=\hbox{\vbox{\hsize=\acmbloow
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\acmblooa\char0\char1}
+\hbox{\acmblooa\char2\char3}}}
+\ifx\parbox\undefined
+    \def\setacmbloo{\box\acmbloobox}
+\else
+    \def\setacmbloo{\parbox{\wd\acmbloobox}{\box\acmbloobox}}
+\fi

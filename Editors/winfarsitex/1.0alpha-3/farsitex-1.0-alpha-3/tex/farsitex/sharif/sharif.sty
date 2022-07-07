@@ -1,0 +1,60 @@
+% Name: SHARIF.STY
+% Author: Farzad Khandan, Sharif University of Technology.
+%%%%%%%%%
+% You need the ARM15 font in order to use this style.
+% Usage:
+% \documentstyle[sharif]{letter}
+% .
+% .
+% .
+% \begin{sharifletter}{ <To - address> }
+% ... (same as LaTeX except you can't use \address)
+% ...
+% \end{sharifletter}
+% .
+% .
+% .
+%%%%%%%%%
+% You can modify and distribute this file freely, but just keep
+% the second line unchanged.
+%%%%%%%%% 
+% Known Problems :
+% You will get one or more Overfull and/or Underfull messages when TeXing
+% your letter at the line containing the \closing command. The best way to 
+% solve this problem is just to ignore it!
+%%%%%%%%%
+%
+%
+\typeout{Document style option: SHARIF.STY, for LETTER document style.}
+\typeout{Written by Farzad Khandan, 1994.}
+%
+\font\arm=arm15
+%
+\def\universityaddress{Sharif University of Technolgy,\\
+ Azadi Ave.\\
+ P. O. Box 8639\\
+ Tehran, Iran.
+}
+\def\myheader{{\leftskip=0in \rightskip=0in
+\hbox to \hsize{{\arm\lower0.5ex\hbox{a}}%
+\hfill{\huge\sf Sharif University of Technology}}
+\vskip1pt
+\hrule
+\vskip1pt
+\begin{flushright}
+\footnotesize \universityaddress
+\end{flushright}
+\vskip2\baselineskip}}
+\newenvironment{sharifletter}[1]%
+{
+\leftskip=.5in
+\rightskip=.5in
+\address{\ \ \\ \ \ }
+\begin{letter}{\ }
+\myheader
+#1
+\par \vskip-\parskip
+}%
+{
+\end{letter}
+}

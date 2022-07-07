@@ -1,0 +1,30 @@
+>%                                                     In The Name of God
+>\documentstyle[farsi]{article}
+>%—ã¤þéÚªõ‘¤÷¢ùÚû‘þüÚîùÚªõ‘¤ùÚ•‘÷øþ§Úõø¤¢Ú÷Â¤Ú¤Ú¢¤Ú›¢øñÚ÷ðú¢¤ýÚõüÚî÷÷¢
+>\newcounter{foottemp1}
+>\newcounter{foottemp2}
+>\newcounter{foottemp3}
+>\begin{document}
+<¢¤Ú¥þ¤Ú“ùÚ—ã¤þéÚ“¤¡üÚ¥Úõ›õøäùÚû‘ýÚä¢¢Úõü•¤¢¥þôÊ
+>\begin{center}
+>\begin{tabular}{|c|c|}
+>\hline
+<ä¢¢ÚŸìþìüÚ
+>\footnotemark
+>\setcounter{foottemp1}{\value{footnote}}
+<¸Úª—¤íÚõ›õøäùÚä¢¢Úðøþ‘ÚøÚõ›õøäùÚä¢¢Úð÷ïÚÒÒÚÒhline
+<ä¢Úðøþ‘¸Úõ›õøäùÚä¢¢Úèþ¤Úð÷ïÚÒÒÚÒhline
+<ä¢¢Úð÷ïÚ
+>\footnotemark
+>\setcounter{foottemp2}{\value{footnote}}
+<¸Úõ›õøäùÚä¢¢ýÚîùÚ“¨ÁÚäª‘¤ýÚ÷ú‘Úõ—÷‘ø’Ú÷þ¨–ÆÒÒÚÒhline
+>\end{tabular}
+>\english
+>\footnotetext[\value{foottemp1}]{Real}%ì¤¤Ú¢¢öÚõ—öÚ•‘÷øþ§ÚÚ¢¤Ú•‘÷øþ§ÚÚ
+>\farsi
+>\footnotetext[\value{foottemp2}]{¬ô}%Úì¤¤Ú¢¢öÚõ—öÚÚ•‘÷øþ§Ú‚Ú¢¤Ú•‘÷øþ§Ú
+>\end{center}
+>\end{document}
+>%-------
+>% Email: sub.2007.sub@gmail.com
+<

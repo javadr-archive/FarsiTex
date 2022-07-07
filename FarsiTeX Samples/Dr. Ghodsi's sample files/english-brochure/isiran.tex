@@ -1,0 +1,14 @@
+\newbox\isiranbox
+\newdimen\isiranw
+\font\isirana=isirana at 57.816truept
+\setbox\isiranbox=\vbox{\hbox{%
+\isirana\char0}}
+\isiranw=\wd\isiranbox
+\setbox\isiranbox=\hbox{\vbox{\hsize=\isiranw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\isirana\char0}}}
+\ifx\parbox\undefined
+    \def\setisiran{\box\isiranbox}
+\else
+    \def\setisiran{\parbox{\wd\isiranbox}{\box\isiranbox}}
+\fi

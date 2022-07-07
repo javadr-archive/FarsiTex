@@ -1,0 +1,119 @@
+% dviscr 1.6h  17-Feb-2001  10:05
+%
+% Invocation: dviscr @ljH /o=6 /fl=-1 /ocr=1
+ D:\COURSES\DS-ALG\NOTES\SLIDES\T\SL.DVI -pj:C:\WINDOWS\TEMP\dv1.mfj
+% Input file: D:\COURSES\DS-ALG\NOTES\SLIDES\T\SL.DVI
+%
++first-page:*
++last-page:*
++double-sided:-
++skip-sides:0
++number-of-sides:65535
++backward:off
++left-margin:0in
++top-margin:0in
++height:297mm
++width:210mm
++transformation:0
++page-width:8.5in
++page-height:11in
++page-left-margin:1in
++page-top-margin:1in
++backside-offset-x:0in
++backside-offset-y:0in
++columns:1
++rows:1
++section-count:0
++section-size:0
++full-last-section:off
++fold-other:off
++page-shift:0in
++blank-pages:0
++batch-mode
++call-mfjob:on
++ask-mfjob:on
++font-load-limit:-1
++metafont-mode:laserjetIV
++omit-graphics:off
++font-scaling:1
++max-drift:2
++font-size-tolerance:0.2
++use-tfm-files:off
++font-sizes::0,:h,:1,:2,:3,:4,:5,:6,:7,:8,:9
++magnification:
++resolution:600
++font-resolution:600
++graphics-resolution:0
++dvi-file:{,$DVIDRVINPUT:}@i
++font-files:$DVIDRVFONTS:pixel.ljh\@Rrdpi\@f{.pk,.pxl}
++graphics-files:{,$DVIDRVGRAPH:}{@Rrdpi\,}@PBf{@Ef,.msp,.pcx,.bmp}
++mfjob-file:C:\WINDOWS\TEMP\dv1.mfj
++font-libraries:$DVIDRVFONTS:ljh_{base,more}
++page-list-file:
++response-files:{,$EMTEX:data\}@f
++font-subst-files:
++transcript-file:@d.dlg
++virtual-fonts:
++fontlib-file:
++verbosity:2
++unit:in
++use-ems:on
++use-xms:on
++home-x:1in
++home-y:1in
++zoom:6
++adapter:0
++color:p2 +color:r1 +color:s2
++inverse:off
++ruler:off
++status-line:on
++ruler-unit:pt
++scaling:1
+@
+
+' TeX output 2000.04.22:1636'
+Loading font cmtt10 scaled 1728  (d:\tex\texfonts\ljh_base.fli [cmtt10])
+Loading font sflt11 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt11])
+Loading font sfshlt14 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfshlt14])
+Loading font sfblt20 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfblt20])
+Loading font sfblt25 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfblt25])
+Loading font sfblt17 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfblt17])
+Loading font sflt12 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sflt12])
+Loading font sfmat17 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat17])
+Loading font sfmat12 scaled 1000  (d:\tex\texfonts\ljh_more.fli [sfmat12])
+Loading font lcirclew10 scaled 1000
+  (d:\tex\texfonts\ljh_base.fli [lcirclew10])
+Loading font cmex10 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmex10])
+Loading font cmsy10 scaled 1728  (d:\tex\texfonts\ljh_base.fli [cmsy10])
+Loading font cmmi10 scaled 1728  (d:\tex\texfonts\ljh_base.fli [cmmi10])
+Loading font cmr17 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr17])
+Loading font cmmi12 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmmi12])
+Loading font cmr12 scaled 1000  (d:\tex\texfonts\ljh_base.fli [cmr12])
+Loading page pointers... 3 input pages, 3 output sheets.
+ [1]
+
+Memory usage:
+Strings                          36       1024
+Page buffers                      1      10240
+Sorted page buffers               1      10240
+Sorted page index              7062      56496
+Position stack                   13        364
+Font table                       16       1152
+Font indices                     16         96
+Page table                        3        150
+Characters                     1792      57344
+Raster data                      68      56185
+VF characters                     0          0
+VF macros                         0          0
+Graphics                          0          0
+Lines                             0          0
+Font library directories          0          0
+Band buffer                       0          0
+TOTAL                                   193291
+
+Number of deallocations:      0
+Temporary file size:          0
+EMS bytes used:               0
+XMS bytes used:               0
+External memory reads:        0
+External memory writes:       0
