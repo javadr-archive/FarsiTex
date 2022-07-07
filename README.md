@@ -1,2 +1,3 @@
 # FarsiTex
- This repository archives Farsi-TeX bundle and its related stuff. 
+ ---
+ FarsiTeX is a free Persian/English bidirectional typesetting system based on Donald Knuth's TeX Program.
